@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Memory Manager</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+    .conversation-item:hover { background: #1a1a2e; }
+    .platform-badge { font-size: 0.65rem; padding: 1px 6px; border-radius: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    .platform-chatgpt { background: #10a37f20; color: #10a37f; border: 1px solid #10a37f40; }
+    .platform-claude { background: #d4a57420; color: #d4a574; border: 1px solid #d4a57440; }
+    .platform-deepseek { background: #4d79ff20; color: #4d79ff; border: 1px solid #4d79ff40; }
+    .platform-gemini { background: #4285f420; color: #4285f4; border: 1px solid #4285f440; }
+    .highlight { background: #fbbf2440; color: #fbbf24; padding: 0 2px; border-radius: 2px; }
+    .message-preview {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      font-size: 0.8rem;
+      color: #9ca3af;
+      line-height: 1.4;
+    }
+    input[type="search"]::-webkit-search-cancel-button { display: none; }
+    .stats-card { background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 8px; padding: 12px; }
+    .fade-in { animation: fadeIn 0.2s ease-in; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+    .empty-state { text-align: center; padding: 40px 20px; color: #6b7280; }
+    .empty-state svg { margin: 0 auto 12px; opacity: 0.5; }
+    .detail-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 100;
+      display: flex; align-items: flex-start; justify-content: center; padding-top: 20px;
+    }
+    .detail-panel {
+      background: #111827; border: 1px solid #374151; border-radius: 12px;
+      width: calc(100% - 20px); max-width: 600px; max-height: calc(100vh - 40px);
+      overflow-y: auto; padding: 20px;
+    }
+    .msg-bubble { padding: 10px 14px; border-radius: 10px; margin-bottom: 8px; max-width: 90%; font-size: 0.85rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
+    .msg-user { background: #1e3a5f; margin-left: auto; border-bottom-right-radius: 2px; }
+    .msg-assistant { background: #1f2937; margin-right: auto; border-bottom-left-radius: 2px; }
+  </style>
+</head>
+<body>
+  <div id="app" class="flex flex-col h-screen">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-[#0f0f0f] border-b border-gray-800 px-4 py-3">
+      <div class="flex items-center gap-2 mb-3">
+        <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+        </svg>
+        <h1 class="text-base font-semibold text-white">AI Memory</h1>
+        <span id="stats-badge" class="ml-auto text-xs text-gray-500"></span>
+      </div>
+
+      <!-- Search -->
+      <div class="relative">
+        <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search conversations..."
+          class="w-full pl-9 pr-3 py-2 bg-gray-900 border border-gray-700 rounded-lg text-sm text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500"
+        />
+      </div>
+
+      <!-- Platform Filter -->
+      <div class="flex gap-1.5 mt-2.5 overflow-x-auto pb-0.5">
+        <button data-filter="all" class="filter-btn active px-2.5 py-1 text-xs rounded-full bg-purple-500/20 text-purple-400 border border-purple-500/30 font-medium">All</button>
+        <button data-filter="chatgpt" class="filter-btn px-2.5 py-1 text-xs rounded-full bg-gray-800 text-gray-400 border border-gray-700 hover:border-gray-600">ChatGPT</button>
+        <button data-filter="claude" class="filter-btn px-2.5 py-1 text-xs rounded-full bg-gray-800 text-gray-400 border border-gray-700 hover:border-gray-600">Claude</button>
+        <button data-filter="deepseek" class="filter-btn px-2.5 py-1 text-xs rounded-full bg-gray-800 text-gray-400 border border-gray-700 hover:border-gray-600">DeepSeek</button>
+      </div>
+    </header>
+
+    <!-- Conversation List -->
+    <main id="conversation-list" class="flex-1 overflow-y-auto px-2 py-2">
+      <div class="empty-state" id="empty-state">
+        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+        </svg>
+        <p class="text-sm font-medium">No conversations yet</p>
+        <p class="text-xs mt-1">Start chatting on ChatGPT, Claude, or DeepSeek to capture conversations.</p>
+      </div>
+    </main>
+
+    <!-- Stats Footer -->
+    <footer id="stats-footer" class="hidden border-t border-gray-800 px-4 py-2 bg-[#0f0f0f]">
+      <div class="flex justify-between text-xs text-gray-500">
+        <span id="stats-conversations">0 conversations</span>
+        <span id="stats-messages">0 messages</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Detail Overlay (hidden by default) -->
+  <div id="detail-overlay" class="detail-overlay hidden">
+    <div class="detail-panel" id="detail-panel">
+      <div class="flex items-center justify-between mb-3">
+        <h2 id="detail-title" class="text-sm font-semibold text-white truncate flex-1 mr-2"></h2>
+        <button id="detail-close" class="text-gray-400 hover:text-white p-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div id="detail-meta" class="flex items-center gap-2 mb-3 text-xs text-gray-500"></div>
+      <div id="detail-messages" class="space-y-2"></div>
+      <div class="flex gap-2 mt-4 pt-3 border-t border-gray-800">
+        <button id="detail-open" class="flex-1 px-3 py-1.5 text-xs bg-purple-500/20 text-purple-400 rounded-lg border border-purple-500/30 hover:bg-purple-500/30">Open Original</button>
+        <button id="detail-delete" class="px-3 py-1.5 text-xs bg-red-500/20 text-red-400 rounded-lg border border-red-500/30 hover:bg-red-500/30">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
