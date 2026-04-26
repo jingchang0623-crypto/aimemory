@@ -42,3 +42,6 @@ data/
 
 # uploads
 uploads/
+
+__pycache__/
+*.pyc

@@ -1,8 +1,9 @@
-import { Conversation, Message, SearchResult, StorageStats, Platform } from './types';
+import { Conversation, Message, SearchResult, StorageStats, Platform, ChatGPTMemory } from './types';
 
 const DB_NAME = 'ai-memory';
-const DB_VERSION = 1;
+const DB_VERSION = 2;
 const CONVERSATIONS_STORE = 'conversations';
+const MEMORIES_STORE = 'memories';
 
 let dbInstance: IDBDatabase | null = null;
 
@@ -21,6 +22,12 @@ export function openDB(): Promise<IDBDatabase> {
         store.createIndex('platform', 'platform', { unique: false });
         store.createIndex('createdAt', 'createdAt', { unique: false });
         store.createIndex('updatedAt', 'updatedAt', { unique: false });
+      }
+      if (!db.objectStoreNames.contains(MEMORIES_STORE)) {
+        const memStore = db.createObjectStore(MEMORIES_STORE, { keyPath: 'id' });
+        memStore.createIndex('createdAt', 'createdAt', { unique: false });
+        memStore.createIndex('updatedAt', 'updatedAt', { unique: false });
+        memStore.createIndex('source', 'source', { unique: false });
       }
     };
 
@@ -212,5 +219,88 @@ export async function getStats(): Promise<StorageStats> {
     };
 
     request.onerror = () => reject(request.error);
+  });
+}
+
+// ─── Memory Store ───────────────────────────────────────────────────────────
+
+export async function saveMemory(memory: ChatGPTMemory): Promise<void> {
+  const db = await openDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(MEMORIES_STORE, 'readwrite');
+    const store = tx.objectStore(MEMORIES_STORE);
+    const existing = store.get(memory.id);
+    existing.onsuccess = () => {
+      const now = Date.now();
+      const record: ChatGPTMemory = {
+        ...memory,
+        createdAt: existing.result?.createdAt ?? memory.createdAt ?? now,
+        updatedAt: now,
+      };
+      store.put(record);
+    };
+    tx.oncomplete = () => resolve();
+    tx.onerror = () => reject(tx.error);
+  });
+}
+
+export async function saveMemories(memories: ChatGPTMemory[]): Promise<void> {
+  const db = await openDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(MEMORIES_STORE, 'readwrite');
+    const store = tx.objectStore(MEMORIES_STORE);
+    const now = Date.now();
+    for (const mem of memories) {
+      const existing = store.get(mem.id);
+      existing.onsuccess = () => {
+        store.put({
+          ...mem,
+          createdAt: existing.result?.createdAt ?? mem.createdAt ?? now,
+          updatedAt: now,
+        });
+      };
+    }
+    tx.oncomplete = () => resolve();
+    tx.onerror = () => reject(tx.error);
+  });
+}
+
+export async function listMemories(limit: number = 100): Promise<ChatGPTMemory[]> {
+  const db = await openDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(MEMORIES_STORE, 'readonly');
+    const store = tx.objectStore(MEMORIES_STORE);
+    const index = store.index('updatedAt');
+    const request = index.openCursor(null, 'prev');
+    const results: ChatGPTMemory[] = [];
+    request.onsuccess = (event) => {
+      const cursor = (event.target as IDBRequest<IDBCursorWithValue>).result;
+      if (!cursor || results.length >= limit) { resolve(results); return; }
+      results.push(cursor.value);
+      cursor.continue();
+    };
+    request.onerror = () => reject(request.error);
+  });
+}
+
+export async function deleteMemory(id: string): Promise<void> {
+  const db = await openDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(MEMORIES_STORE, 'readwrite');
+    const store = tx.objectStore(MEMORIES_STORE);
+    store.delete(id);
+    tx.oncomplete = () => resolve();
+    tx.onerror = () => reject(tx.error);
+  });
+}
+
+export async function getMemoryStats(): Promise<{ count: number }> {
+  const db = await openDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(MEMORIES_STORE, 'readonly');
+    const store = tx.objectStore(MEMORIES_STORE);
+    const countReq = store.count();
+    countReq.onsuccess = () => resolve({ count: countReq.result });
+    countReq.onerror = () => reject(countReq.error);
   });
 }

@@ -12,6 +12,8 @@ import { defineContentScript } from 'wxt/utils/define-content-script';
  *  - POST /backend-api/conversation  (new message / response)
  *  - GET  /backend-api/conversations  (conversation list)
  *  - GET  /backend-api/conversation/[id] (single conversation)
+ *  - GET  /backend-api/memories       (ChatGPT memory list)
+ *  - POST/PUT/PATCH/DELETE /backend-api/memories (memory mutations)
  */
 
 // Script that runs in the page's MAIN world to intercept fetch
@@ -86,7 +88,7 @@ const INJECTED_SCRIPT = `
         }).catch(() => {});
       }
 
-      // Intercept conversation list endpoint
+      // Intercept conversations list endpoint
       if (url.includes('/backend-api/conversations') && !url.includes('/conversation/')) {
         const cloned = response.clone();
         cloned.json().then(data => {
@@ -99,6 +101,58 @@ const INJECTED_SCRIPT = `
             }
           }, '*');
         }).catch(() => {});
+      }
+
+      // Intercept ChatGPT memories endpoint
+      if (url.includes('/backend-api/memories') && !url.includes('/backend-api/memories/')) {
+        const cloned = response.clone();
+        cloned.json().then(data => {
+          // ChatGPT memories API returns { items: [...] } or { memories: [...] }
+          const items = data?.items || data?.memories || (Array.isArray(data) ? data : []);
+          if (items.length > 0) {
+            window.postMessage({
+              type: 'AIMEMORY_CHATGPT_MEMORIES',
+              source: 'ai-memory-extension',
+              data: {
+                endpoint: 'memories_list',
+                memories: items.map(item => ({
+                  id: item.id || item.uuid || ('mem-' + Date.now() + '-' + Math.random().toString(36).slice(2, 8)),
+                  content: item.content || item.text || item.body || '',
+                  category: item.category || item.type || undefined,
+                  created_at: item.created_at || item.createdAt || item.timestamp || undefined,
+                  updated_at: item.updated_at || item.updatedAt || undefined,
+                })),
+              }
+            }, '*');
+          }
+        }).catch(() => {});
+      }
+
+      // Also intercept POST/DELETE to /backend-api/memories (new/deleted memory)
+      if (url.includes('/backend-api/memories') && args[1]?.method) {
+        const method = args[1].method.toUpperCase();
+        if (method === 'POST' || method === 'PUT' || method === 'PATCH' || method === 'DELETE') {
+          const cloned = response.clone();
+          cloned.json().then(data => {
+            if (data && (data.content || data.text || data.id)) {
+              window.postMessage({
+                type: 'AIMEMORY_CHATGPT_MEMORIES',
+                source: 'ai-memory-extension',
+                data: {
+                  endpoint: 'memory_mutation',
+                  memory: {
+                    id: data.id || data.uuid || ('mem-' + Date.now() + '-' + Math.random().toString(36).slice(2, 8)),
+                    content: data.content || data.text || data.body || '',
+                    category: data.category || data.type || undefined,
+                    created_at: data.created_at || data.createdAt || undefined,
+                    updated_at: data.updated_at || data.updatedAt || undefined,
+                  },
+                  method: method,
+                }
+              }, '*');
+            }
+          }).catch(() => {});
+        }
       }
     } catch (e) {
       // Silently ignore interception errors
@@ -222,6 +276,17 @@ export default defineContentScript({
             sendToBackground(data.conversationId, data.title, data.messages);
           }
         }
+
+        // Handle intercepted ChatGPT memories
+        if (event.data.type === 'AIMEMORY_CHATGPT_MEMORIES') {
+          const { data } = event.data;
+          console.log('[AI Memory] Captured ChatGPT memories:', data.endpoint);
+          if (data.endpoint === 'memories_list') {
+            sendMemoriesToBackground(data.memories);
+          } else if (data.endpoint === 'memory_mutation' && data.method !== 'DELETE') {
+            sendMemoriesToBackground([data.memory]);
+          }
+        }
       } catch (e) {
         console.error('[AI Memory] Error processing message:', e);
       }
@@ -287,5 +352,15 @@ function sendToBackground(conversationId: string, title: string, messages: Array
     },
   }).catch((err) => {
     console.warn('[AI Memory] Could not send to background:', err);
+  });
+}
+
+function sendMemoriesToBackground(memories: Array<{ id: string; content: string; category?: string; created_at?: string; updated_at?: string }>) {
+  browser.runtime.sendMessage({
+    type: 'MEMORY_CAPTURED',
+    platform: 'chatgpt',
+    data: { memories },
+  }).catch((err) => {
+    console.warn('[AI Memory] Could not send memories to background:', err);
   });
 }

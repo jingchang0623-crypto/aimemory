@@ -40,3 +40,22 @@ export interface CaptureEvent {
     url: string;
   };
 }
+
+// ─── ChatGPT Memory ─────────────────────────────────────────────────────────
+
+export interface ChatGPTMemory {
+  id: string;
+  content: string;
+  category?: string;
+  createdAt: number;
+  updatedAt: number;
+  source: 'chatgpt-api' | 'chatgpt-dom';
+}
+
+export interface MemoryCaptureEvent {
+  type: 'MEMORY_CAPTURED';
+  platform: 'chatgpt';
+  data: {
+    memories: Array<{ id: string; content: string; category?: string; created_at?: string; updated_at?: string }>;
+  };
+}

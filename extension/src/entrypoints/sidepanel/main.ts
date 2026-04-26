@@ -1,5 +1,5 @@
 import { browser } from 'wxt/browser';
-import type { Conversation, SearchResult, StorageStats } from '../../lib/types';
+import type { Conversation, SearchResult, StorageStats, ChatGPTMemory } from '../../lib/types';
 
 // State
 let allConversations: Conversation[] = [];
@@ -8,6 +8,8 @@ let searchResults: SearchResult[] | null = null;
 let activeFilter: string = 'all';
 let searchQuery: string = '';
 let currentDetail: Conversation | null = null;
+let allMemories: ChatGPTMemory[] = [];
+let showingMemories: boolean = false;
 
 // DOM Elements
 const searchInput = document.getElementById('search-input') as HTMLInputElement;
@@ -32,10 +34,12 @@ const filterBtns = document.querySelectorAll('.filter-btn') as NodeListOf<HTMLBu
 async function init() {
   setupEventListeners();
   await loadConversations();
+  await loadMemories();
   await updateStats();
   // Auto-refresh every 10 seconds
   setInterval(async () => {
     await loadConversations();
+    await loadMemories();
     await updateStats();
   }, 10000);
 }
@@ -112,11 +116,92 @@ async function loadConversations() {
     });
     if (response?.success) {
       allConversations = response.conversations || [];
-      applyFilters();
+      if (!showingMemories) applyFilters();
     }
   } catch (e) {
     console.error('[AI Memory SidePanel] Failed to load conversations:', e);
   }
+}
+
+async function loadMemories() {
+  try {
+    const response = await sendExtensionMessage({
+      type: 'LIST_MEMORIES',
+      limit: 200,
+    });
+    if (response?.success) {
+      allMemories = response.memories || [];
+      if (showingMemories) renderMemoryList();
+    }
+  } catch (e) {
+    console.error('[AI Memory SidePanel] Failed to load memories:', e);
+  }
+}
+
+function renderMemoryList() {
+  const existingItems = conversationList.querySelectorAll('.conversation-item, .memory-item');
+  existingItems.forEach(item => item.remove());
+
+  if (allMemories.length === 0) {
+    emptyState.classList.remove('hidden');
+    emptyState.style.display = '';
+    emptyState.querySelector('p:first-of-type')!.textContent = 'No memories yet';
+    emptyState.querySelector('p:last-of-type')!.textContent = 'ChatGPT memories will appear here when captured from /backend-api/memories.';
+    return;
+  }
+
+  emptyState.classList.add('hidden');
+
+  for (const mem of allMemories) {
+    const item = createMemoryItem(mem);
+    conversationList.appendChild(item);
+  }
+}
+
+function createMemoryItem(mem: ChatGPTMemory): HTMLElement {
+  const item = document.createElement('div');
+  item.className = 'memory-item conversation-item fade-in cursor-pointer rounded-lg px-3 py-2.5 transition-colors border border-transparent hover:border-gray-700';
+
+  const timeAgo = formatTimeAgo(mem.updatedAt);
+  const categoryHtml = mem.category ? `<span class="memory-badge">${escapeHtml(mem.category)}</span>` : '';
+  const sourceLabel = mem.source === 'chatgpt-api' ? 'ChatGPT API' : 'ChatGPT DOM';
+
+  item.innerHTML = `
+    <div class="flex items-start gap-2">
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center gap-1.5 mb-1">
+          <span class="memory-badge">💡 Memory</span>
+          ${categoryHtml}
+          <span class="text-xs text-gray-600">${timeAgo}</span>
+          <span class="text-xs text-gray-700 ml-auto">${sourceLabel}</span>
+        </div>
+        <p class="memory-content">${escapeHtml(mem.content.slice(0, 300))}</p>
+      </div>
+    </div>
+  `;
+
+  item.addEventListener('click', () => showMemoryDetail(mem));
+  return item;
+}
+
+function showMemoryDetail(mem: ChatGPTMemory) {
+  detailTitle.textContent = '💡 ChatGPT Memory';
+  detailMeta.innerHTML = `
+    <span class="memory-badge">${mem.source === 'chatgpt-api' ? 'ChatGPT API' : 'ChatGPT DOM'}</span>
+    ${mem.category ? `<span class="memory-badge">${escapeHtml(mem.category)}</span>` : ''}
+    <span>${formatTimeAgo(mem.updatedAt)}</span>
+    <span>Created: ${new Date(mem.createdAt).toLocaleDateString()}</span>
+  `;
+
+  detailMessages.innerHTML = '';
+  const bubble = document.createElement('div');
+  bubble.className = 'msg-bubble msg-assistant';
+  bubble.textContent = mem.content;
+  detailMessages.appendChild(bubble);
+
+  detailOpen.disabled = true;
+  detailOpen.classList.add('opacity-50');
+  detailOverlay.classList.remove('hidden');
 }
 
 async function updateStats() {
@@ -124,10 +209,12 @@ async function updateStats() {
     const response = await sendExtensionMessage({ type: 'GET_STATS' });
     if (response?.success) {
       const stats: StorageStats = response.stats;
-      statsBadge.textContent = `${stats.conversationCount} saved`;
+      const memStatsResp = await sendExtensionMessage({ type: 'GET_MEMORY_STATS' });
+      const memCount = memStatsResp?.success ? memStatsResp.stats.count : 0;
+      statsBadge.textContent = `${stats.conversationCount} saved${memCount > 0 ? ` · ${memCount} 💡` : ''}`;
       statsConversations.textContent = `${stats.conversationCount} conversations`;
-      statsMessages.textContent = `${stats.messageCount} messages`;
-      if (stats.conversationCount > 0) {
+      statsMessages.textContent = `${stats.messageCount} messages${memCount > 0 ? ` · ${memCount} memories` : ''}`;
+      if (stats.conversationCount > 0 || memCount > 0) {
         statsFooter.classList.remove('hidden');
       }
     }
@@ -158,6 +245,14 @@ async function performSearch() {
 }
 
 function applyFilters() {
+  // Handle memory filter
+  if (activeFilter === 'memory') {
+    showingMemories = true;
+    renderMemoryList();
+    return;
+  }
+  showingMemories = false;
+
   if (searchResults) {
     // When searching, use search results and apply platform filter
     filteredConversations = searchResults
@@ -303,6 +398,10 @@ function escapeRegex(str: string): string {
 browser.runtime.onMessage.addListener((message: any) => {
   if (message?.type === 'NEW_CONVERSATION_SAVED') {
     loadConversations();
+    updateStats();
+  }
+  if (message?.type === 'NEW_MEMORIES_SAVED') {
+    loadMemories();
     updateStats();
   }
 });

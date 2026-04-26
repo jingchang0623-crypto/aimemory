@@ -48,6 +48,9 @@
     .msg-bubble { padding: 10px 14px; border-radius: 10px; margin-bottom: 8px; max-width: 90%; font-size: 0.85rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
     .msg-user { background: #1e3a5f; margin-left: auto; border-bottom-right-radius: 2px; }
     .msg-assistant { background: #1f2937; margin-right: auto; border-bottom-left-radius: 2px; }
+    .memory-badge { font-size: 0.65rem; padding: 1px 6px; border-radius: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; background: #fbbf2420; color: #fbbf24; border: 1px solid #fbbf2440; }
+    .memory-item:hover { background: #2a2a1e; }
+    .memory-content { font-size: 0.8rem; color: #d4d4aa; line-height: 1.5; white-space: pre-wrap; }
   </style>
 </head>
 <body>
@@ -81,6 +84,7 @@
         <button data-filter="chatgpt" class="filter-btn px-2.5 py-1 text-xs rounded-full bg-gray-800 text-gray-400 border border-gray-700 hover:border-gray-600">ChatGPT</button>
         <button data-filter="claude" class="filter-btn px-2.5 py-1 text-xs rounded-full bg-gray-800 text-gray-400 border border-gray-700 hover:border-gray-600">Claude</button>
         <button data-filter="deepseek" class="filter-btn px-2.5 py-1 text-xs rounded-full bg-gray-800 text-gray-400 border border-gray-700 hover:border-gray-600">DeepSeek</button>
+        <button data-filter="memory" class="filter-btn px-2.5 py-1 text-xs rounded-full bg-gray-800 text-gray-400 border border-gray-700 hover:border-gray-600">💡 Memories</button>
       </div>
     </header>
 
