@@ -11,6 +11,20 @@ export const metadata: Metadata = {
     url: "https://aimemory.pro",
     siteName: "AI Memory",
     type: "website",
+    images: [
+      {
+        url: "https://aimemory.pro/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "AI Memory - Save & Search Your ChatGPT History",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Memory - Save & Search Your ChatGPT History",
+    description: "Import, search and organize all your AI conversations. The best free ChatGPT history extension. 100% private.",
+    images: ["https://aimemory.pro/og-image.png"],
   },
   alternates: {
     canonical: "https://aimemory.pro",

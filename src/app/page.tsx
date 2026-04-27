@@ -75,6 +75,23 @@ export default function Home() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "AI Memory",
+            "url": "https://aimemory.pro",
+            "description": "Save, search and organize your AI conversations from ChatGPT, Claude, DeepSeek and Gemini. 100% private, free forever.",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://aimemory.pro/?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })
+        }}
+      />
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100">
@@ -87,7 +104,8 @@ export default function Home() {
             <nav className="hidden md:flex items-center gap-6">
               <Link href="/features" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Features</Link>
               <Link href="/chrome-extension" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Extension</Link>
-              <Link href="/blog/chatgpt-history-extension" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Blog</Link>
+              <Link href="/blog" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Blog</Link>
+              <Link href="/pricing" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Pricing</Link>
               <button
                 onClick={scrollToUpload}
                 className="px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition-colors"
@@ -364,9 +382,12 @@ export default function Home() {
             <span className="text-lg">🧠</span>
             <span className="font-semibold text-gray-900">AI Memory</span>
           </div>
-          <div className="flex gap-6 text-sm text-gray-400">
+          <div className="flex gap-6 text-sm text-gray-400 flex-wrap justify-center">
             <Link href="/features" className="hover:text-gray-600 transition-colors">Features</Link>
             <Link href="/chrome-extension" className="hover:text-gray-600 transition-colors">Extension</Link>
+            <Link href="/blog" className="hover:text-gray-600 transition-colors">Blog</Link>
+            <Link href="/pricing" className="hover:text-gray-600 transition-colors">Pricing</Link>
+            <Link href="/docs/mcp" className="hover:text-gray-600 transition-colors">MCP Server</Link>
             <Link href="/privacy" className="hover:text-gray-600 transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-gray-600 transition-colors">Terms</Link>
           </div>
