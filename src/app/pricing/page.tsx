@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import WaitlistForm from './WaitlistForm';
 
 export const metadata: Metadata = {
   title: 'Pricing - AI Memory | Free Forever, Pro Features Coming',
@@ -104,13 +105,7 @@ export default function PricingPage() {
                 <span><strong>Knowledge Graph</strong> — visualize connections across conversations</span>
               </li>
             </ul>
-            <button
-              disabled
-              className="block w-full text-center bg-blue-100 text-blue-600 py-3 rounded-lg font-semibold cursor-not-allowed"
-            >
-              Join Waitlist
-            </button>
-            <p className="text-center text-sm text-gray-400 mt-3">Notify me when Pro launches</p>
+            <WaitlistForm />
           </div>
         </div>
 

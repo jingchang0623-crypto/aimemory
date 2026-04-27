@@ -177,6 +177,13 @@ const blogPosts = [
     category: '中文指南',
     date: '2026-04-27',
   },
+  {
+    title: '🇨🇳 ChatGPT记忆管理完全指南：备份、搜索、跨平台同步',
+    description: 'ChatGPT记忆满了怎么办？完整教程教你如何备份ChatGPT对话、跨平台管理AI记忆、搜索历史对话。',
+    href: '/blog/chatgpt-jiyi-guanli',
+    category: '中文指南',
+    date: '2026-04-28',
+  },
 ];
 
 const categories = ['All', 'Export Guides', 'Extensions', 'Troubleshooting', 'Guides', 'Comparisons', 'Technical', '中文指南'];
