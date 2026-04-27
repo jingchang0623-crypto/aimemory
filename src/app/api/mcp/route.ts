@@ -141,7 +141,7 @@ export async function POST(request: NextRequest) {
             const limit = (args.limit as number) || 10;
 
             try {
-              let results = searchConversations(query, limit * 2); // fetch extra for platform filtering
+              let results = searchConversations(query, 'public', limit * 2); // fetch extra for platform filtering
               
               // Filter by platform if specified
               if (platform) {
@@ -243,7 +243,7 @@ export async function POST(request: NextRequest) {
             const maxTokens = (args.max_tokens as number) || 2000;
 
             try {
-              const results = searchConversations(topic, 5);
+              const results = searchConversations(topic, 'public', 5);
               const totalChars = maxTokens * 4;
               let usedChars = 0;
               const context: Array<{ title: string; platform: string; snippet: string }> = [];
@@ -291,14 +291,14 @@ export async function POST(request: NextRequest) {
             const offset = (args.offset as number) || 0;
 
             try {
-              let conversations = getAllConversations(limit + (platform ? limit : 0), offset);
+              let conversations = getAllConversations('public', limit + (platform ? limit : 0), offset);
               
               if (platform) {
                 conversations = conversations.filter((c: { platform: string }) => c.platform?.toLowerCase() === platform.toLowerCase());
                 conversations = conversations.slice(0, limit);
               }
 
-              const total = getConversationCount();
+              const total = getConversationCount('public');
 
               const memories = conversations.map((c: { id: string; title: string; platform: string; created_at: string; updated_at: string; message_count: number; tags: string }) => ({
                 id: c.id,

@@ -1,16 +1,27 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { searchConversations, getAllConversations, getConversationCount } from '@/lib/db';
+import { v4 as uuidv4 } from 'uuid';
+
+function getSessionId(request: NextRequest): string {
+  const cookie = request.cookies.get('aim_session');
+  if (cookie?.value) return cookie.value;
+  return '';  // No session = no data
+}
 
 export async function GET(request: NextRequest) {
   try {
+    const sessionId = getSessionId(request);
+    if (!sessionId) {
+      return NextResponse.json({ success: true, conversations: [], results: [], total: 0 });
+    }
+
     const { searchParams } = new URL(request.url);
     const query = searchParams.get('q');
     const limit = parseInt(searchParams.get('limit') || '20');
     const offset = parseInt(searchParams.get('offset') || '0');
 
     if (query) {
-      // Full-text search
-      const results = searchConversations(query, limit);
+      const results = searchConversations(query, sessionId, limit);
       return NextResponse.json({
         success: true,
         query,
@@ -18,9 +29,8 @@ export async function GET(request: NextRequest) {
         total: results.length,
       });
     } else {
-      // List all conversations
-      const conversations = getAllConversations(limit, offset);
-      const total = getConversationCount();
+      const conversations = getAllConversations(sessionId, limit, offset);
+      const total = getConversationCount(sessionId);
       return NextResponse.json({
         success: true,
         conversations,

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Link from 'next/link';
 import FileUpload from '@/components/FileUpload';
 import SearchBox from '@/components/SearchBox';
@@ -11,10 +11,15 @@ export default function Home() {
   const [refreshTrigger, setRefreshTrigger] = useState(0);
   const [selectedConversation, setSelectedConversation] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'upload' | 'search' | 'browse'>('upload');
+  const uploadRef = useRef<HTMLDivElement>(null);
 
   const handleUploadComplete = () => {
     setRefreshTrigger((prev) => prev + 1);
     setActiveTab('browse');
+  };
+
+  const scrollToUpload = () => {
+    uploadRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -70,252 +75,302 @@ export default function Home() {
           })
         }}
       />
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="border-b border-gray-200 bg-white">
-        <div className="max-w-6xl mx-auto px-4 py-6">
+      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100">
+        <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-3xl font-bold text-gray-900">
-                🧠 AI Memory
-              </h1>
-              <p className="text-gray-600 mt-1">
-                Your AI conversations, organized and searchable
-              </p>
-            </div>
-            <nav className="flex gap-4">
-              <Link href="/chrome-extension" className="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
-                Chrome Extension
-              </Link>
+            <Link href="/" className="flex items-center gap-2">
+              <span className="text-xl">🧠</span>
+              <span className="text-lg font-semibold text-gray-900 tracking-tight">AI Memory</span>
+            </Link>
+            <nav className="hidden md:flex items-center gap-6">
+              <Link href="/features" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Features</Link>
+              <Link href="/chrome-extension" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Extension</Link>
+              <Link href="/blog/chatgpt-history-extension" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Blog</Link>
               <button
-                onClick={() => setActiveTab('upload')}
-                className={`px-4 py-2 rounded-lg transition-colors ${
-                  activeTab === 'upload'
-                    ? 'bg-blue-600 text-white'
-                    : 'text-gray-600 hover:bg-gray-100'
-                }`}
+                onClick={scrollToUpload}
+                className="px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition-colors"
               >
-                Upload
-              </button>
-              <button
-                onClick={() => setActiveTab('search')}
-                className={`px-4 py-2 rounded-lg transition-colors ${
-                  activeTab === 'search'
-                    ? 'bg-blue-600 text-white'
-                    : 'text-gray-600 hover:bg-gray-100'
-                }`}
-              >
-                Search
-              </button>
-              <button
-                onClick={() => setActiveTab('browse')}
-                className={`px-4 py-2 rounded-lg transition-colors ${
-                  activeTab === 'browse'
-                    ? 'bg-blue-600 text-white'
-                    : 'text-gray-600 hover:bg-gray-100'
-                }`}
-              >
-                Browse
+                Try Free
               </button>
             </nav>
           </div>
         </div>
       </header>
 
-      {/* Hero Section - Pain Points */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Tired of Losing Your AI Conversations?
-          </h2>
-          <p className="text-xl mb-8 text-blue-100">
-            ChatGPT forgets. Claude starts fresh. Your valuable insights disappear.
-            <br />
-            <strong>AI Memory keeps everything searchable forever.</strong>
+      {/* Hero — The Problem + Solution in 5 seconds */}
+      <section className="pt-20 pb-16 px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-50 text-red-600 rounded-full text-sm mb-6">
+            <span className="w-2 h-2 bg-red-400 rounded-full animate-pulse"></span>
+            ChatGPT memory limit: 1,500 words
+          </div>
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 tracking-tight leading-tight mb-6">
+            Your AI knows things.<br />
+            <span className="text-gray-400">You just can't find them.</span>
+          </h1>
+          <p className="text-xl text-gray-500 leading-relaxed mb-8 max-w-2xl mx-auto">
+            Hundreds of conversations. Thousands of insights. All buried in ChatGPT, Claude, and DeepSeek — with no way to search across them. <strong className="text-gray-700">Until now.</strong>
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div className="bg-white/10 rounded-lg p-4">
-              <div className="text-2xl mb-2">😤</div>
-              <p className="text-sm">&quot;ChatGPT conversation too long and it forgot my instructions&quot;</p>
-            </div>
-            <div className="bg-white/10 rounded-lg p-4">
-              <div className="text-2xl mb-2">😰</div>
-              <p className="text-sm">&quot;I can&apos;t find that important conversation from last week&quot;</p>
-            </div>
-            <div className="bg-white/10 rounded-lg p-4">
-              <div className="text-2xl mb-2">😩</div>
-              <p className="text-sm">&quot;I keep re-explaining the same context to different AIs&quot;</p>
-            </div>
-          </div>
-          <label className="inline-block px-8 py-4 bg-white text-blue-600 text-lg font-semibold rounded-lg cursor-pointer hover:bg-blue-50 transition-colors">
-            Upload Your First Export (Free)
-            <input
-              type="file"
-              accept=".json,.txt,.zip,.md"
-              onChange={(e) => {
-                const file = e.target.files?.[0];
-                if (file) {
-                  // Trigger upload
-                  setActiveTab('upload');
-                }
-              }}
-              className="hidden"
-            />
-          </label>
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="max-w-6xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="p-6 bg-white rounded-xl border border-gray-200">
-            <div className="text-3xl mb-3">📤</div>
-            <h3 className="font-semibold text-lg mb-2">Import Everything</h3>
-            <p className="text-gray-600 text-sm">
-              Upload exports from ChatGPT, Claude, DeepSeek, Gemini. 
-              Supports JSON, TXT, and ZIP files.
-            </p>
-          </div>
-          <div className="p-6 bg-white rounded-xl border border-gray-200">
-            <div className="text-3xl mb-3">🔍</div>
-            <h3 className="font-semibold text-lg mb-2">Full-Text Search</h3>
-            <p className="text-gray-600 text-sm">
-              Search across ALL your conversations by content, not just titles. 
-              Find any discussion instantly.
-            </p>
-          </div>
-          <div className="p-6 bg-white rounded-xl border border-gray-200">
-            <div className="text-3xl mb-3">🔒</div>
-            <h3 className="font-semibold text-lg mb-2">100% Private</h3>
-            <p className="text-gray-600 text-sm">
-              Your data stays on your device. No cloud uploads, no tracking, 
-              no data selling. Ever.
-            </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <button
+              onClick={scrollToUpload}
+              className="px-6 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-colors text-base"
+            >
+              Upload Your Chats — It's Free
+            </button>
+            <Link
+              href="/blog/chatgpt-history-extension"
+              className="px-6 py-3 border border-gray-200 text-gray-600 font-medium rounded-lg hover:border-gray-300 transition-colors text-base"
+            >
+              How to Export →
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-4 py-8">
-        {/* Tab Content */}
-        <div className="mb-8">
-          {activeTab === 'upload' && (
-            <FileUpload onUploadComplete={handleUploadComplete} />
-          )}
-          {activeTab === 'search' && (
-            <SearchBox onSelect={setSelectedConversation} />
-          )}
-          {activeTab === 'browse' && (
-            <ConversationList
-              refreshTrigger={refreshTrigger}
-              onSelect={setSelectedConversation}
-            />
+      {/* The "aha moment" — Visual proof */}
+      <section className="pb-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gray-50 rounded-2xl border border-gray-200 p-8 md:p-12">
+            <div className="text-center mb-8">
+              <p className="text-sm font-medium text-gray-400 uppercase tracking-wider mb-2">What you'll see after uploading</p>
+              <h2 className="text-2xl font-bold text-gray-900">Every conversation. Instantly searchable.</h2>
+            </div>
+            {/* Mock search UI */}
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+              <div className="border-b border-gray-100 p-4">
+                <div className="flex items-center gap-3 bg-gray-50 rounded-lg px-4 py-3">
+                  <span className="text-gray-400">🔍</span>
+                  <span className="text-gray-400 text-sm">Search across 500+ conversations...</span>
+                  <span className="ml-auto text-xs text-gray-300 bg-gray-200 px-2 py-0.5 rounded">⌘K</span>
+                </div>
+              </div>
+              <div className="divide-y divide-gray-50">
+                <div className="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-xs px-1.5 py-0.5 bg-green-50 text-green-600 rounded font-medium">ChatGPT</span>
+                    <span className="text-xs text-gray-400">3 days ago</span>
+                  </div>
+                  <p className="text-sm font-medium text-gray-900">How to implement OAuth2 with refresh tokens in Node.js</p>
+                  <p className="text-xs text-gray-500 mt-1">...the <mark className="bg-yellow-100 text-gray-900 rounded px-0.5">refresh token</mark> should be stored in an httpOnly cookie, not localStorage. Here's the middleware...</p>
+                </div>
+                <div className="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-xs px-1.5 py-0.5 bg-purple-50 text-purple-600 rounded font-medium">Claude</span>
+                    <span className="text-xs text-gray-400">1 week ago</span>
+                  </div>
+                  <p className="text-sm font-medium text-gray-900">React Server Components vs client-side rendering performance</p>
+                  <p className="text-xs text-gray-500 mt-1">...RSC can reduce your JavaScript bundle by <mark className="bg-yellow-100 text-gray-900 rounded px-0.5">40-60%</mark> because the server renders the component tree and sends HTML...</p>
+                </div>
+                <div className="px-4 py-3 hover:bg-gray-50 cursor-pointer">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-xs px-1.5 py-0.5 bg-blue-50 text-blue-600 rounded font-medium">DeepSeek</span>
+                    <span className="text-xs text-gray-400">2 weeks ago</span>
+                  </div>
+                  <p className="text-sm font-medium text-gray-900">PostgreSQL query optimization for large datasets</p>
+                  <p className="text-xs text-gray-500 mt-1">...create a composite index on <mark className="bg-yellow-100 text-gray-900 rounded px-0.5">(user_id, created_at DESC)</mark> — this covers 90% of your query patterns...</p>
+                </div>
+              </div>
+              <div className="border-t border-gray-100 px-4 py-3 bg-gray-50/50 flex items-center justify-between">
+                <span className="text-xs text-gray-400">3 results from 524 conversations</span>
+                <span className="text-xs text-blue-600 font-medium">View all →</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The real problem — Relatable scenarios */}
+      <section className="pb-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">Sound familiar?</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-6 bg-red-50/50 rounded-xl border border-red-100">
+              <div className="text-2xl mb-3">🔄</div>
+              <h3 className="font-semibold text-gray-900 mb-2">The repeated conversation</h3>
+              <p className="text-sm text-gray-600">You explained your tech stack to ChatGPT last month. Now you're starting over because you can't find that conversation.</p>
+            </div>
+            <div className="p-6 bg-orange-50/50 rounded-xl border border-orange-100">
+              <div className="text-2xl mb-3">🪦</div>
+              <h3 className="font-semibold text-gray-900 mb-2">The lost breakthrough</h3>
+              <p className="text-sm text-gray-600">Claude helped you debug a complex issue. The solution was brilliant. But the conversation is buried under 200 others.</p>
+            </div>
+            <div className="p-6 bg-blue-50/50 rounded-xl border border-blue-100">
+              <div className="text-2xl mb-3">🏝️</div>
+              <h3 className="font-semibold text-gray-900 mb-2">The platform silo</h3>
+              <p className="text-sm text-gray-600">Your best insights are split across ChatGPT, Claude, and DeepSeek. No way to search them all together.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works — Simple 3 steps */}
+      <section className="pb-20 px-6 bg-gray-50 py-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-3">30 seconds. Zero setup.</h2>
+          <p className="text-gray-500 text-center mb-12">No account needed. No extension to install. Just upload and search.</p>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-10 h-10 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold mx-auto mb-4">1</div>
+              <h3 className="font-semibold text-gray-900 mb-2">Export from ChatGPT</h3>
+              <p className="text-sm text-gray-500">Settings → Data Controls → Export Data. You'll get a ZIP file.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-10 h-10 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold mx-auto mb-4">2</div>
+              <h3 className="font-semibold text-gray-900 mb-2">Drop it here</h3>
+              <p className="text-sm text-gray-500">Upload the ZIP. We parse everything automatically — titles, messages, timestamps.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-10 h-10 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold mx-auto mb-4">3</div>
+              <h3 className="font-semibold text-gray-900 mb-2">Search everything</h3>
+              <p className="text-sm text-gray-500">Find any conversation instantly. Across all your AI platforms.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why this matters — The insight */}
+      <section className="py-20 px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-sm mb-6">
+            💡 The insight
+          </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            You've spent hundreds of hours teaching AI about your work.<br />
+            <span className="text-gray-400">Don't let that knowledge disappear.</span>
+          </h2>
+          <p className="text-lg text-gray-500 leading-relaxed">
+            Every conversation you've had with ChatGPT, Claude, or DeepSeek contains insights about your projects, your code, your thinking. 
+            AI Memory makes all of it searchable — so you never have to explain the same thing twice.
+          </p>
+        </div>
+      </section>
+
+      {/* Upload Section — The CTA */}
+      <section ref={uploadRef} id="upload" className="py-20 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Try it now</h2>
+            <p className="text-gray-500">Upload your ChatGPT, Claude, or DeepSeek export. Your data stays in your browser.</p>
+          </div>
+          
+          {/* Tab Navigation */}
+          <div className="flex justify-center gap-1 mb-8 bg-gray-100 p-1 rounded-lg w-fit mx-auto">
+            <button
+              onClick={() => setActiveTab('upload')}
+              className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                activeTab === 'upload' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
+              }`}
+            >
+              📤 Upload
+            </button>
+            <button
+              onClick={() => setActiveTab('search')}
+              className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                activeTab === 'search' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
+              }`}
+            >
+              🔍 Search
+            </button>
+            <button
+              onClick={() => setActiveTab('browse')}
+              className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                activeTab === 'browse' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
+              }`}
+            >
+              📚 Browse
+            </button>
+          </div>
+
+          {/* Tab Content */}
+          <div className="max-w-2xl mx-auto">
+            {activeTab === 'upload' && <FileUpload onUploadComplete={handleUploadComplete} />}
+            {activeTab === 'search' && <SearchBox onSelect={setSelectedConversation} />}
+            {activeTab === 'browse' && <ConversationList refreshTrigger={refreshTrigger} onSelect={setSelectedConversation} />}
+          </div>
+
+          {/* Conversation Detail Modal */}
+          {selectedConversation && (
+            <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-50">
+              <div className="w-full max-w-4xl max-h-[90vh] overflow-y-auto">
+                <ConversationDetail conversationId={selectedConversation} onClose={() => setSelectedConversation(null)} />
+              </div>
+            </div>
           )}
         </div>
+      </section>
 
-        {/* Conversation Detail Modal */}
-        {selectedConversation && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-            <div className="w-full max-w-4xl max-h-[90vh] overflow-y-auto">
-              <ConversationDetail
-                conversationId={selectedConversation}
-                onClose={() => setSelectedConversation(null)}
-              />
-            </div>
+      {/* Supported Platforms */}
+      <section className="py-16 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-sm text-gray-400 mb-6">Works with all major AI platforms</p>
+          <div className="flex flex-wrap justify-center gap-4">
+            {[
+              { name: 'ChatGPT', color: 'bg-green-50 text-green-700 border-green-100' },
+              { name: 'Claude', color: 'bg-purple-50 text-purple-700 border-purple-100' },
+              { name: 'DeepSeek', color: 'bg-blue-50 text-blue-700 border-blue-100' },
+              { name: 'Gemini', color: 'bg-orange-50 text-orange-700 border-orange-100' },
+              { name: 'ChatMemo', color: 'bg-gray-50 text-gray-700 border-gray-100' },
+            ].map((p) => (
+              <span key={p.name} className={`px-4 py-2 rounded-lg border text-sm font-medium ${p.color}`}>
+                {p.name}
+              </span>
+            ))}
           </div>
-        )}
+        </div>
+      </section>
 
-        {/* How It Works */}
-        <section className="mt-12 p-8 bg-white rounded-xl border border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            How It Works
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="text-4xl mb-4">1️⃣</div>
-              <h3 className="font-semibold mb-2">Export Your Chats</h3>
-              <p className="text-sm text-gray-600">
-                Go to ChatGPT Settings → Data Controls → Export Data. 
-                Or Claude Settings → Privacy → Export Data.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl mb-4">2️⃣</div>
-              <h3 className="font-semibold mb-2">Upload Here</h3>
-              <p className="text-sm text-gray-600">
-                Drop your export file (ZIP or JSON) and we&apos;ll 
-                automatically parse and organize everything.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl mb-4">3️⃣</div>
-              <h3 className="font-semibold mb-2">Search & Browse</h3>
-              <p className="text-sm text-gray-600">
-                Find any conversation instantly with full-text search. 
-                Never lose valuable AI insights again.
-              </p>
-            </div>
-          </div>
-        </section>
+      {/* Privacy Promise */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="text-3xl mb-4">🔒</div>
+          <h2 className="text-xl font-bold text-gray-900 mb-3">100% private. Your data never leaves your browser.</h2>
+          <p className="text-gray-500">
+            No accounts. No cloud uploads. No tracking. Everything is processed locally in your browser using IndexedDB. 
+            We literally cannot see your conversations.
+          </p>
+        </div>
+      </section>
 
-        {/* SEO Links */}
-        <section className="mt-12 p-8 bg-gray-50 rounded-xl">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">
-            Guides & Resources
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <Link href="/blog/chatgpt-history-extension" className="text-blue-600 hover:underline text-sm font-medium">
-              ChatGPT History Extension
-            </Link>
-            <Link href="/blog/chatgpt-export-extension" className="text-blue-600 hover:underline text-sm font-medium">
-              ChatGPT Export Extension
-            </Link>
-            <Link href="/blog/export-chatgpt" className="text-blue-600 hover:underline text-sm">
-              Export ChatGPT
-            </Link>
-            <Link href="/blog/export-claude" className="text-blue-600 hover:underline text-sm">
-              Export Claude
-            </Link>
-            <Link href="/blog/chatgpt-conversation-too-long" className="text-blue-600 hover:underline text-sm">
-              Conversation Too Long
-            </Link>
-            <Link href="/blog/chatgpt-not-saving" className="text-blue-600 hover:underline text-sm">
-              Not Saving Chats
-            </Link>
-            <Link href="/blog/find-old-chatgpt" className="text-blue-600 hover:underline text-sm">
-              Find Old Conversations
-            </Link>
-            <Link href="/blog/chatgpt-memory-full" className="text-blue-600 hover:underline text-sm">
-              Memory Full
-            </Link>
-            <Link href="/blog/export-deepseek" className="text-blue-600 hover:underline text-sm">
-              Export DeepSeek
-            </Link>
-            <Link href="/blog/export-gemini" className="text-blue-600 hover:underline text-sm">
-              Export Gemini
-            </Link>
-            <Link href="/blog/ai-duihua-daochu" className="text-blue-600 hover:underline text-sm">
-              🇨🇳 AI对话导出工具
-            </Link>
+      {/* Blog / Resources — SEO links */}
+      <section className="py-16 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-xl font-bold text-gray-900 mb-6 text-center">Guides & Resources</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {[
+              { title: 'ChatGPT History Extension', href: '/blog/chatgpt-history-extension' },
+              { title: 'Export ChatGPT', href: '/blog/export-chatgpt' },
+              { title: 'Export Claude', href: '/blog/export-claude' },
+              { title: 'Export DeepSeek', href: '/blog/export-deepseek' },
+              { title: 'Memory Full Fix', href: '/blog/chatgpt-memory-full' },
+              { title: 'Find Old Conversations', href: '/blog/find-old-chatgpt' },
+              { title: 'Conversation Too Long', href: '/blog/chatgpt-conversation-too-long' },
+              { title: '🇨🇳 AI对话导出工具', href: '/blog/ai-duihua-daochu' },
+            ].map((link) => (
+              <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
+                {link.title}
+              </Link>
+            ))}
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
       {/* Footer */}
-      <footer className="border-t border-gray-200 mt-16">
-        <div className="max-w-6xl mx-auto px-4 py-8 text-center text-gray-500">
-          <p>AI Memory — Your conversations, preserved forever</p>
-          <div className="flex justify-center gap-6 mt-3 text-sm">
-            <Link href="/features" className="hover:text-gray-700">Features</Link>
-            <Link href="/pricing" className="hover:text-gray-700">Pricing</Link>
-            <Link href="/docs/mcp" className="hover:text-gray-700">MCP Server</Link>
-            <Link href="/chrome-extension" className="hover:text-gray-700">Chrome Extension</Link>
-            <Link href="/privacy" className="hover:text-gray-700">Privacy</Link>
-            <Link href="/terms" className="hover:text-gray-700">Terms</Link>
+      <footer className="border-t border-gray-100 py-12 px-6">
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex items-center gap-2">
+            <span className="text-lg">🧠</span>
+            <span className="font-semibold text-gray-900">AI Memory</span>
           </div>
-          <p className="text-sm mt-2">
-            🔒 100% private • Your data stays on your device
-          </p>
+          <div className="flex gap-6 text-sm text-gray-400">
+            <Link href="/features" className="hover:text-gray-600 transition-colors">Features</Link>
+            <Link href="/chrome-extension" className="hover:text-gray-600 transition-colors">Extension</Link>
+            <Link href="/privacy" className="hover:text-gray-600 transition-colors">Privacy</Link>
+            <Link href="/terms" className="hover:text-gray-600 transition-colors">Terms</Link>
+          </div>
+          <p className="text-xs text-gray-300">Your conversations, searchable forever.</p>
         </div>
       </footer>
     </div>

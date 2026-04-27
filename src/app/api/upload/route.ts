@@ -4,13 +4,21 @@ import { parseTxtExport } from '@/lib/parser-txt';
 import { insertConversation, insertMessage } from '@/lib/db';
 import { v4 as uuidv4 } from 'uuid';
 
-async function processConversations(conversations: any[]) {
+// Get or create session ID from cookie
+function getSessionId(request: NextRequest): string {
+  const cookie = request.cookies.get('aim_session');
+  if (cookie?.value) return cookie.value;
+  return uuidv4();
+}
+
+async function processConversations(conversations: any[], sessionId: string) {
   let totalMessages = 0;
   for (const conv of conversations) {
     const convId = conv.id || uuidv4();
     
     insertConversation({
       id: convId,
+      sessionId,
       title: conv.title,
       platform: conv.platform,
       createdAt: conv.createdAt,
@@ -36,6 +44,7 @@ async function processConversations(conversations: any[]) {
 
 export async function POST(request: NextRequest) {
   try {
+    const sessionId = getSessionId(request);
     const contentType = request.headers.get('content-type') || '';
     let fileName: string;
     let fileContent: string;
@@ -133,14 +142,26 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Save to database
-    const totalMessages = await processConversations(conversations);
+    // Save to database with session isolation
+    const totalMessages = await processConversations(conversations, sessionId);
 
-    return NextResponse.json({
+    // Set session cookie and return result
+    const response = NextResponse.json({
       success: true,
       conversations: conversations.length,
       messages: totalMessages,
+      sessionId,
     });
+
+    response.cookies.set('aim_session', sessionId, {
+      httpOnly: true,
+      secure: true,
+      sameSite: 'lax',
+      maxAge: 365 * 24 * 60 * 60, // 1 year
+      path: '/',
+    });
+
+    return response;
 
   } catch (error) {
     console.error('Upload error:', error);
