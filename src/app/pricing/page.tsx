@@ -97,8 +97,8 @@ export default function PricingPage() {
                 <span><strong>Cross-Platform Sync</strong> — memories flow between AI tools</span>
               </li>
               <li className="flex items-start">
-                <span className="text-blue-500 mr-2 mt-1">🖥️</span>
-                <span><strong>MCP Server</strong> — deep integration with AI workflows</span>
+                <span className="text-blue-500 mr-2 mt-1">🔄</span>
+                <span><strong>Cloud Sync</strong> — encrypted sync across devices</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-500 mr-2 mt-1">📊</span>
@@ -120,7 +120,7 @@ export default function PricingPage() {
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">When will Pro features launch?</h3>
-              <p className="text-gray-600">We are actively building memory injection, AI analysis, and MCP server features. Join the waitlist to get early access and a founding member discount.</p>
+              <p className="text-gray-600">We are actively building memory injection, AI analysis, and cloud sync features. Join the waitlist to get early access and a founding member discount.</p>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Will there be a lifetime deal?</h3>
