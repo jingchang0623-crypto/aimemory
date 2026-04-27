@@ -18,6 +18,58 @@ export default function Home() {
   };
 
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the best ChatGPT history extension?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Memory is the best free ChatGPT history extension. It lets you import, search, and organize all your ChatGPT conversations in one place. Unlike other extensions, AI Memory also supports Claude, DeepSeek, and Gemini, with 100% local storage for complete privacy."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I export my ChatGPT conversations?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Go to ChatGPT Settings → Data Controls → Export Data. Click Export and wait for the email with your download link. Then upload the ZIP file to AI Memory for instant searchable storage."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is AI Memory free to use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, AI Memory is completely free. You can upload unlimited conversations, search across all your AI chats, and use the Chrome extension at no cost. All data stays on your device."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which AI platforms does AI Memory support?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Memory supports ChatGPT, Claude, DeepSeek, and Gemini. You can import conversations from all these platforms and search them in one unified interface."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is my data private with AI Memory?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, AI Memory is 100% private. All your data stays on your device — there are no cloud uploads, no tracking, and no data selling. Your conversations never leave your browser."
+                }
+              }
+            ]
+          })
+        }}
+      />
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Header */}
       <header className="border-b border-gray-200 bg-white">
@@ -212,6 +264,12 @@ export default function Home() {
             Guides & Resources
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <Link href="/blog/chatgpt-history-extension" className="text-blue-600 hover:underline text-sm font-medium">
+              ChatGPT History Extension
+            </Link>
+            <Link href="/blog/chatgpt-export-extension" className="text-blue-600 hover:underline text-sm font-medium">
+              ChatGPT Export Extension
+            </Link>
             <Link href="/blog/export-chatgpt" className="text-blue-600 hover:underline text-sm">
               Export ChatGPT
             </Link>
@@ -244,11 +302,18 @@ export default function Home() {
       <footer className="border-t border-gray-200 mt-16">
         <div className="max-w-6xl mx-auto px-4 py-8 text-center text-gray-500">
           <p>AI Memory — Your conversations, preserved forever</p>
+          <div className="flex justify-center gap-6 mt-3 text-sm">
+            <Link href="/features" className="hover:text-gray-700">Features</Link>
+            <Link href="/chrome-extension" className="hover:text-gray-700">Chrome Extension</Link>
+            <Link href="/privacy" className="hover:text-gray-700">Privacy</Link>
+            <Link href="/terms" className="hover:text-gray-700">Terms</Link>
+          </div>
           <p className="text-sm mt-2">
             🔒 100% private • Your data stays on your device
           </p>
         </div>
       </footer>
     </div>
+    </>
   );
 }
