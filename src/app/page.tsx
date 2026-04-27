@@ -294,6 +294,9 @@ export default function Home() {
             <Link href="/blog/export-gemini" className="text-blue-600 hover:underline text-sm">
               Export Gemini
             </Link>
+            <Link href="/blog/ai-duihua-daochu" className="text-blue-600 hover:underline text-sm">
+              🇨🇳 AI对话导出工具
+            </Link>
           </div>
         </section>
       </main>
@@ -304,6 +307,7 @@ export default function Home() {
           <p>AI Memory — Your conversations, preserved forever</p>
           <div className="flex justify-center gap-6 mt-3 text-sm">
             <Link href="/features" className="hover:text-gray-700">Features</Link>
+            <Link href="/pricing" className="hover:text-gray-700">Pricing</Link>
             <Link href="/chrome-extension" className="hover:text-gray-700">Chrome Extension</Link>
             <Link href="/privacy" className="hover:text-gray-700">Privacy</Link>
             <Link href="/terms" className="hover:text-gray-700">Terms</Link>
