@@ -346,7 +346,7 @@ export default function Home() {
           <div className="text-3xl mb-4">🔒</div>
           <h2 className="text-xl font-bold text-gray-900 mb-3">100% private. Your data never leaves your browser.</h2>
           <p className="text-gray-500">
-            No accounts. No cloud uploads. No tracking. Everything is processed locally in your browser using IndexedDB. 
+No accounts. No cloud uploads. No tracking. Your data is stored on our server in an isolated session — only you can access it with your session cookie. Delete anytime with one click.
             We literally cannot see your conversations.
           </p>
         </div>

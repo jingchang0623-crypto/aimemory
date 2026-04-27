@@ -110,7 +110,7 @@ export default function MCPDocsPage() {
               <p className="text-sm"><strong>Endpoint:</strong> <code className="bg-gray-100 px-2 py-1 rounded">https://aimemory.pro/api/mcp</code></p>
               <p className="text-sm mt-2"><strong>Protocol:</strong> <code className="bg-gray-100 px-2 py-1 rounded">MCP 2024-11-05 (JSON-RPC 2.0)</code></p>
               <p className="text-sm mt-2"><strong>Transport:</strong> <code className="bg-gray-100 px-2 py-1 rounded">Streamable HTTP (POST)</code></p>
-              <p className="text-sm mt-2"><strong>Authentication:</strong> None required (public endpoint)</p>
+              <p className="text-sm mt-2"><strong>Authentication:</strong> Session cookie required (upload data first at aimemory.pro)</p>
             </div>
             <p className="text-sm text-gray-500 mt-4">Compatible with: Windsurf, Cline, Continue, Zed, and 100+ other MCP clients.</p>
           </div>

@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { searchConversations, getAllConversations, getConversationCount } from '@/lib/db';
-import { v4 as uuidv4 } from 'uuid';
 
 function getSessionId(request: NextRequest): string {
   const cookie = request.cookies.get('aim_session');
