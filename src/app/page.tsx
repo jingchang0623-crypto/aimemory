@@ -308,6 +308,7 @@ export default function Home() {
           <div className="flex justify-center gap-6 mt-3 text-sm">
             <Link href="/features" className="hover:text-gray-700">Features</Link>
             <Link href="/pricing" className="hover:text-gray-700">Pricing</Link>
+            <Link href="/docs/mcp" className="hover:text-gray-700">MCP Server</Link>
             <Link href="/chrome-extension" className="hover:text-gray-700">Chrome Extension</Link>
             <Link href="/privacy" className="hover:text-gray-700">Privacy</Link>
             <Link href="/terms" className="hover:text-gray-700">Terms</Link>

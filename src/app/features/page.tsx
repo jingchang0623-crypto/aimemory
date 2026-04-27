@@ -31,12 +31,17 @@ const features = [
     title: 'Cross-Platform Unified Management',
     description: 'View and manage conversations from every AI platform in a single, unified interface.',
   },
+  {
+    icon: '🖥️',
+    title: 'MCP Server',
+    description: 'Connect AI Memory to Claude Desktop, Cursor, and 100+ other MCP-compatible AI tools. Search your conversation history directly from your AI assistant.',
+  },
 ];
 
 const upcoming = [
   { icon: '💉', title: 'Memory Injection', description: 'Inject past conversation context into new AI sessions automatically.' },
   { icon: '🧠', title: 'AI Analysis', description: 'Get AI-powered summaries, insights, and knowledge extraction from your conversations.' },
-  { icon: '🖥️', title: 'MCP Server', description: 'Model Context Protocol server for deep integration with AI tools and workflows.' },
+  { icon: '🔄', title: 'Cross-Platform Sync', description: 'Sync your memories across devices with end-to-end encryption.' },
 ];
 
 const comparison = [
@@ -47,7 +52,7 @@ const comparison = [
   { feature: 'No account required', aimemory: true, chatmemo: false, aiexporter: true },
   { feature: 'Cross-platform unified view', aimemory: true, chatmemo: false, aiexporter: false },
   { feature: 'Memory injection (upcoming)', aimemory: true, chatmemo: false, aiexporter: false },
-  { feature: 'MCP Server (upcoming)', aimemory: true, chatmemo: false, aiexporter: false },
+  { feature: 'MCP Server (100+ clients)', aimemory: true, chatmemo: false, aiexporter: false },
 ];
 
 function CheckIcon() {

@@ -1,8 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 // MCP Server for AI Memory
-// Implements Model Context Protocol (JSON-RPC 2.0) 
+// Implements Model Context Protocol (JSON-RPC 2.0)
 // Tools: add_memory, search_memory, get_context, list_memories
+// Now connected to SQLite FTS5 database
+
+import db, { searchConversations, getAllConversations, getConversationCount } from '@/lib/db';
 
 interface MCPRequest {
   jsonrpc: '2.0';
@@ -72,6 +75,13 @@ const TOOLS = [
   },
 ];
 
+// Helper: truncate text to approximate token count (1 token ≈ 4 chars)
+function truncateToTokens(text: string, maxTokens: number): string {
+  const maxChars = maxTokens * 4;
+  if (text.length <= maxChars) return text;
+  return text.slice(0, maxChars) + '...[truncated]';
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body: MCPRequest = await request.json();
@@ -99,7 +109,7 @@ export async function POST(request: NextRequest) {
             },
             serverInfo: {
               name: 'ai-memory-mcp',
-              version: '1.0.0',
+              version: '1.1.0',
             },
           },
         } satisfies MCPResponse);
@@ -129,24 +139,51 @@ export async function POST(request: NextRequest) {
             const query = args.query as string;
             const platform = args.platform as string | undefined;
             const limit = (args.limit as number) || 10;
-            
-            // Return placeholder response - in production, query SQLite FTS5
-            return NextResponse.json({
-              jsonrpc: '2.0',
-              id,
-              result: {
-                content: [{
-                  type: 'text',
-                  text: JSON.stringify({
-                    query,
-                    platform,
-                    results: [],
-                    total: 0,
-                    message: 'MCP Server ready. Connect your database to enable full search.',
-                  }),
-                }],
-              },
-            } satisfies MCPResponse);
+
+            try {
+              let results = searchConversations(query, limit * 2); // fetch extra for platform filtering
+              
+              // Filter by platform if specified
+              if (platform) {
+                results = results.filter((r: { platform: string }) => r.platform?.toLowerCase() === platform.toLowerCase());
+              }
+              results = results.slice(0, limit);
+
+              const formatted = results.map((r: { id: string; title: string; platform: string; snippet?: string; updated_at: string }) => ({
+                id: r.id,
+                title: r.title,
+                platform: r.platform,
+                snippet: r.snippet || '',
+                lastUpdated: r.updated_at,
+              }));
+
+              return NextResponse.json({
+                jsonrpc: '2.0',
+                id,
+                result: {
+                  content: [{
+                    type: 'text',
+                    text: JSON.stringify({
+                      query,
+                      platform,
+                      results: formatted,
+                      total: formatted.length,
+                    }),
+                  }],
+                },
+              } satisfies MCPResponse);
+            } catch (e) {
+              return NextResponse.json({
+                jsonrpc: '2.0',
+                id,
+                result: {
+                  content: [{
+                    type: 'text',
+                    text: JSON.stringify({ query, platform, results: [], total: 0, error: String(e) }),
+                  }],
+                },
+              } satisfies MCPResponse);
+            }
           }
 
           case 'add_memory': {
@@ -155,44 +192,97 @@ export async function POST(request: NextRequest) {
             const platform = (args.platform as string) || 'manual';
             const tags = (args.tags as string[]) || [];
 
-            return NextResponse.json({
-              jsonrpc: '2.0',
-              id,
-              result: {
-                content: [{
-                  type: 'text',
-                  text: JSON.stringify({
-                    success: true,
-                    id: `mem_${Date.now()}`,
-                    title,
-                    platform,
-                    tags,
-                    message: 'Memory added successfully.',
-                  }),
-                }],
-              },
-            } satisfies MCPResponse);
+            try {
+              const { v4: uuidv4 } = await import('uuid');
+              const convId = uuidv4();
+              const msgId = uuidv4();
+              const now = new Date().toISOString();
+
+              db.prepare(`
+                INSERT INTO conversations (id, title, platform, created_at, updated_at, tags, message_count)
+                VALUES (?, ?, ?, ?, ?, ?, 1)
+              `).run(convId, title, platform, now, now, JSON.stringify(tags));
+
+              db.prepare(`
+                INSERT INTO messages (id, conversation_id, role, content, timestamp)
+                VALUES (?, ?, 'user', ?, ?)
+              `).run(msgId, convId, content, now);
+
+              return NextResponse.json({
+                jsonrpc: '2.0',
+                id,
+                result: {
+                  content: [{
+                    type: 'text',
+                    text: JSON.stringify({
+                      success: true,
+                      id: convId,
+                      title,
+                      platform,
+                      tags,
+                    }),
+                  }],
+                },
+              } satisfies MCPResponse);
+            } catch (e) {
+              return NextResponse.json({
+                jsonrpc: '2.0',
+                id,
+                result: {
+                  content: [{
+                    type: 'text',
+                    text: JSON.stringify({ success: false, error: String(e) }),
+                  }],
+                },
+              } satisfies MCPResponse);
+            }
           }
 
           case 'get_context': {
             const topic = args.topic as string;
             const maxTokens = (args.max_tokens as number) || 2000;
 
-            return NextResponse.json({
-              jsonrpc: '2.0',
-              id,
-              result: {
-                content: [{
-                  type: 'text',
-                  text: JSON.stringify({
-                    topic,
-                    max_tokens: maxTokens,
-                    context: [],
-                    message: 'MCP Server ready. Connect your database to enable context retrieval.',
-                  }),
-                }],
-              },
-            } satisfies MCPResponse);
+            try {
+              const results = searchConversations(topic, 5);
+              const totalChars = maxTokens * 4;
+              let usedChars = 0;
+              const context: Array<{ title: string; platform: string; snippet: string }> = [];
+
+              for (const r of results as Array<{ title: string; platform: string; snippet?: string }>) {
+                const snippet = r.snippet || '';
+                if (usedChars + snippet.length > totalChars) {
+                  const remaining = totalChars - usedChars;
+                  if (remaining > 100) {
+                    context.push({ title: r.title, platform: r.platform, snippet: snippet.slice(0, remaining) + '...' });
+                  }
+                  break;
+                }
+                context.push({ title: r.title, platform: r.platform, snippet });
+                usedChars += snippet.length;
+              }
+
+              return NextResponse.json({
+                jsonrpc: '2.0',
+                id,
+                result: {
+                  content: [{
+                    type: 'text',
+                    text: JSON.stringify({ topic, context, sourcesUsed: context.length }),
+                  }],
+                },
+              } satisfies MCPResponse);
+            } catch (e) {
+              return NextResponse.json({
+                jsonrpc: '2.0',
+                id,
+                result: {
+                  content: [{
+                    type: 'text',
+                    text: JSON.stringify({ topic, context: [], error: String(e) }),
+                  }],
+                },
+              } satisfies MCPResponse);
+            }
           }
 
           case 'list_memories': {
@@ -200,23 +290,48 @@ export async function POST(request: NextRequest) {
             const limit = (args.limit as number) || 20;
             const offset = (args.offset as number) || 0;
 
-            return NextResponse.json({
-              jsonrpc: '2.0',
-              id,
-              result: {
-                content: [{
-                  type: 'text',
-                  text: JSON.stringify({
-                    platform,
-                    limit,
-                    offset,
-                    memories: [],
-                    total: 0,
-                    message: 'MCP Server ready. Connect your database to enable listing.',
-                  }),
-                }],
-              },
-            } satisfies MCPResponse);
+            try {
+              let conversations = getAllConversations(limit + (platform ? limit : 0), offset);
+              
+              if (platform) {
+                conversations = conversations.filter((c: { platform: string }) => c.platform?.toLowerCase() === platform.toLowerCase());
+                conversations = conversations.slice(0, limit);
+              }
+
+              const total = getConversationCount();
+
+              const memories = conversations.map((c: { id: string; title: string; platform: string; created_at: string; updated_at: string; message_count: number; tags: string }) => ({
+                id: c.id,
+                title: c.title,
+                platform: c.platform,
+                createdAt: c.created_at,
+                updatedAt: c.updated_at,
+                messageCount: c.message_count,
+                tags: JSON.parse(c.tags || '[]'),
+              }));
+
+              return NextResponse.json({
+                jsonrpc: '2.0',
+                id,
+                result: {
+                  content: [{
+                    type: 'text',
+                    text: JSON.stringify({ platform, memories, total, offset, limit }),
+                  }],
+                },
+              } satisfies MCPResponse);
+            } catch (e) {
+              return NextResponse.json({
+                jsonrpc: '2.0',
+                id,
+                result: {
+                  content: [{
+                    type: 'text',
+                    text: JSON.stringify({ platform, memories: [], total: 0, error: String(e) }),
+                  }],
+                },
+              } satisfies MCPResponse);
+            }
           }
 
           default:
@@ -248,11 +363,11 @@ export async function POST(request: NextRequest) {
 export async function GET() {
   return NextResponse.json({
     name: 'AI Memory MCP Server',
-    version: '1.0.0',
+    version: '1.1.0',
     description: 'Model Context Protocol server for AI Memory - search, add, and retrieve context from your AI conversation history.',
     protocol: 'MCP',
     protocolVersion: '2024-11-05',
     tools: TOOLS.map(t => t.name),
-    documentation: 'https://aimemory.pro/features',
+    documentation: 'https://aimemory.pro/docs/mcp',
   });
 }
