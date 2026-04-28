@@ -372,6 +372,9 @@ No accounts. No cloud uploads. No tracking. Your data is stored on our server in
               { title: 'Best AI Memory Extension 2026', href: '/blog/best-ai-memory-extension-2026' },
               { title: 'Save ChatGPT Conversations', href: '/blog/save-chatgpt-conversations' },
               { title: 'AI Chat History Manager', href: '/blog/ai-chat-history-manager' },
+              { title: 'ChatGPT Memory Limit', href: '/blog/chatgpt-memory-limit' },
+              { title: 'Export All ChatGPT Data', href: '/blog/export-all-chatgpt-data' },
+              { title: '🇨🇳 ChatGPT数据备份指南', href: '/blog/chatgpt-shuju-beifen' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}

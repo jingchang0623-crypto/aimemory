@@ -13,6 +13,7 @@ export default function Footer() {
               <li><Link href="/chrome-extension" className="hover:text-white transition">Chrome Extension</Link></li>
               <li><Link href="/docs/mcp" className="hover:text-white transition">MCP Server</Link></li>
               <li><Link href="/changelog" className="hover:text-white transition">Changelog</Link></li>
+              <li><Link href="/about" className="hover:text-white transition">About</Link></li>
             </ul>
           </div>
           <div>

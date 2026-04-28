@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.11.0',
+    date: '2026-04-29',
+    title: 'SEO Expansion + About Page + Chinese Market',
+    tags: ['SEO', 'Content', 'E-E-A-T'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT Memory Limit Explained" — pain-point keyword targeting users with full memory, FAQPage schema (6 questions)',
+        'New blog: "How to Export All ChatGPT Data" — high-intent keyword with 4 methods, API code examples, FAQPage schema (6 questions)',
+        'New blog: "ChatGPT数据备份与恢复完全指南" — Chinese market expansion, targeting data backup/export demand from DeepSeek/豆包 users',
+        'About page (/about) — E-E-A-T signal for Google, SoftwareApplication JSON-LD schema, mission/principles/team content',
+      ],
+      improved: [
+        'Blog count now 35 posts (31 English + 4 Chinese)',
+        'Sitemap updated to 45 URLs (41 existing + 3 blogs + 1 about page)',
+        'Chinese content library expanded from 3 to 4 posts',
+      ],
+    },
+  },
+  {
     version: 'v0.10.0',
     date: '2026-04-28',
     title: 'SEO Expansion + Security Hardening',

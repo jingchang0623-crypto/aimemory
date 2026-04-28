@@ -297,6 +297,16 @@ export const blogPosts: BlogPost[] = [
     tags: ['跨平台', 'AI', '对话管理', 'chatgpt', 'claude', 'deepseek', '中文'],
     lang: 'zh',
   },
+  {
+    slug: 'chatgpt-shuju-beifen',
+    title: 'ChatGPT数据备份与恢复完全指南（2026最新）',
+    description: '如何备份ChatGPT数据？本文详细介绍4种ChatGPT数据导出和备份方法，包括官方导出、Chrome扩展、API接口等。',
+    category: '中文指南',
+    date: '2026-04-29',
+    readTime: '8 min',
+    tags: ['ChatGPT', '数据备份', '导出', '中文', 'guide'],
+    lang: 'zh',
+  },
   // === Guides ===
   {
     slug: 'search-chatgpt-history',
@@ -337,6 +347,29 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-28',
     readTime: '11 min',
     tags: ['comparison', 'manager', 'chatgpt', 'claude', 'tools', 'organization'],
+    lang: 'en',
+  },
+  // === ChatGPT Memory Limit (pain-point keyword) ===
+  {
+    slug: 'chatgpt-memory-limit',
+    title: 'ChatGPT Memory Limit Explained - How to Fix It (2026)',
+    description: 'ChatGPT memory limit reached? Learn exactly how much memory ChatGPT has, why it fills up, and 5 ways to fix it. Free tool included.',
+    category: 'Guides',
+    date: '2026-04-29',
+    readTime: '10 min',
+    tags: ['chatgpt', 'memory', 'limit', 'guide', 'troubleshooting'],
+    lang: 'en',
+  },
+  // === Export All Data (high-intent keyword) ===
+  {
+    slug: 'export-all-chatgpt-data',
+    title: 'How to Export All ChatGPT Data - Complete Guide (2026)',
+    description: 'Learn how to export all your ChatGPT data step by step. Covers conversations, memories, settings, and files. Multiple methods explained.',
+    category: 'Export Guides',
+    date: '2026-04-29',
+    readTime: '12 min',
+    keywords: ['export all chatgpt data', 'how to export chatgpt data', 'chatgpt data export', 'download chatgpt data'],
+    tags: ['chatgpt', 'export', 'data', 'backup', 'guide'],
     lang: 'en',
   },
   // === Save Conversations Guide (high-value keyword) ===
