@@ -276,6 +276,27 @@ export const blogPosts: BlogPost[] = [
     tags: ['chatgpt', 'memory', 'guide', 'management', 'settings'],
     lang: 'en',
   },
+  // === Round 16: Memory Settings + Chinese Cross-Platform ===
+  {
+    slug: 'chatgpt-memory-settings',
+    title: 'ChatGPT Memory Settings: How to Enable, Manage & Optimize (2026)',
+    description: 'Complete guide to ChatGPT memory settings. Learn how to enable memory, manage stored facts, control what ChatGPT remembers, and optimize your AI experience.',
+    category: 'Guides',
+    date: '2026-04-28',
+    readTime: '8 min',
+    tags: ['chatgpt', 'memory', 'settings', 'guide', 'management'],
+    lang: 'en',
+  },
+  {
+    slug: 'kuaping-tai-ai-duihua-guanli',
+    title: '跨平台AI对话管理工具推荐：ChatGPT/Claude/DeepSeek一站式管理',
+    description: '最好用的跨平台AI对话管理工具。一站式管理ChatGPT、Claude、DeepSeek的所有对话记录，支持全文搜索、导出备份和记忆注入。',
+    category: '中文指南',
+    date: '2026-04-28',
+    readTime: '10 min',
+    tags: ['跨平台', 'AI', '对话管理', 'chatgpt', 'claude', 'deepseek', '中文'],
+    lang: 'zh',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */
