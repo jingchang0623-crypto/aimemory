@@ -4,14 +4,12 @@ import type { NextRequest } from 'next/server';
 export function middleware(request: NextRequest) {
   const response = NextResponse.next();
 
-  // Security headers
+  // Security headers (single source of truth — do NOT duplicate in nginx)
   response.headers.set('X-Frame-Options', 'DENY');
   response.headers.set('X-Content-Type-Options', 'nosniff');
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
-  response.headers.set('X-XSS-Protection', '1; mode=block');
   response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
-
-  // HSTS - always set since site is HTTPS-only behind nginx proxy
+  // HSTS — set here AND in nginx (deploy nginx config to remove this duplication)
   response.headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
 
   // CSP - allow inline styles (needed for Tailwind), block inline scripts except Next.js
