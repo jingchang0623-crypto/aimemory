@@ -17,6 +17,45 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.8.0',
+    date: '2026-04-28',
+    title: 'SEO Expansion + Comparison Content + Footer Component',
+    tags: ['SEO', 'Content', 'UX'],
+    changes: {
+      added: [
+        'New blog: "How to Search ChatGPT History" — targets high-intent search keyword',
+        'New blog: "ChatGPT vs Claude vs DeepSeek: Complete Comparison 2026" — long-tail comparison keyword',
+        'Shared Footer component (src/components/Footer.tsx) — 4-column navigation with Product, Resources, Compare, Legal sections',
+        'Homepage guides section expanded with 2 new blog links',
+      ],
+      improved: [
+        'Blog count now 30 posts (27 English + 3 Chinese)',
+        'Sitemap updated to 38 URLs',
+      ],
+    },
+  },
+  {
+    version: 'v0.7.0',
+    date: '2026-04-28',
+    title: 'Blog Architecture Refactor + ChatGPT Memory SEO',
+    tags: ['SEO', 'Architecture', 'Content'],
+    changes: {
+      added: [
+        'Centralized blog data registry (src/lib/blog-data.ts) — powers index, related posts, sitemap',
+        'Shared BlogLayout component with Breadcrumbs JSON-LD and Related Posts',
+        'New blog post: "ChatGPT Memory: Complete Guide" targeting high-volume keyword',
+        'New blog post: "ChatGPT Memory Settings" — targets settings-related keywords',
+        'New Chinese blog: "跨平台AI对话管理" — targets Chinese cross-platform management keyword',
+        'FAQPage structured data on ChatGPT Memory guide for rich snippets',
+        'Internal cross-linking via intelligent related posts (tag-based matching)',
+      ],
+      improved: [
+        'Blog pages now have consistent header, footer, and breadcrumb navigation',
+        'Blog infrastructure ready for scaling to 50+ posts without code duplication',
+      ],
+    },
+  },
+  {
     version: 'v0.6.0',
     date: '2026-04-28',
     title: 'Blog Architecture + High-Value SEO Content',

@@ -297,6 +297,28 @@ export const blogPosts: BlogPost[] = [
     tags: ['跨平台', 'AI', '对话管理', 'chatgpt', 'claude', 'deepseek', '中文'],
     lang: 'zh',
   },
+  // === Guides ===
+  {
+    slug: 'search-chatgpt-history',
+    title: 'How to Search ChatGPT History: Find Any Conversation (2026)',
+    description: 'Learn how to search your ChatGPT conversation history and find old chats. Multiple methods explained: built-in search, export search, and the AI Memory extension.',
+    category: 'Guides',
+    date: '2026-04-28',
+    readTime: '10 min',
+    tags: ['chatgpt', 'search', 'history', 'guide', 'export'],
+    lang: 'en',
+  },
+  // === Comparisons ===
+  {
+    slug: 'chatgpt-vs-claude-vs-deepseek',
+    title: 'ChatGPT vs Claude vs DeepSeek: Complete Comparison (2026)',
+    description: 'In-depth comparison of ChatGPT, Claude, and DeepSeek AI assistants. Features, pricing, memory, coding ability, and which one is best for your workflow.',
+    category: 'Comparisons',
+    date: '2026-04-28',
+    readTime: '12 min',
+    tags: ['chatgpt', 'claude', 'deepseek', 'comparison', 'review'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

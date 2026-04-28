@@ -1,5 +1,6 @@
 import { browser } from 'wxt/browser';
 import { defineContentScript } from 'wxt/utils/define-content-script';
+import { setupInjectionListener } from '../lib/injection-handler';
 
 /**
  * DeepSeek Content Script
@@ -20,6 +21,9 @@ export default defineContentScript({
 
   main(ctx) {
     console.log('[AI Memory] DeepSeek content script loaded');
+    
+    // Set up injection listener for memory injection from sidepanel
+    setupInjectionListener();
 
     let currentConversationId: string | null = null;
     let captureTimeout: ReturnType<typeof setTimeout> | null = null;

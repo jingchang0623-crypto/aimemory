@@ -1,5 +1,12 @@
 import { browser } from 'wxt/browser';
 import type { Conversation, SearchResult, StorageStats, ChatGPTMemory } from '../../lib/types';
+import { 
+  exportConversation, 
+  exportMultipleConversations, 
+  downloadExport, 
+  generateExportFilename,
+  type ExportFormat 
+} from '../../lib/export';
 
 // State
 let allConversations: Conversation[] = [];
@@ -29,6 +36,7 @@ const detailDelete = document.getElementById('detail-delete') as HTMLButtonEleme
 
 // Platform filter buttons
 const filterBtns = document.querySelectorAll('.filter-btn') as NodeListOf<HTMLButtonElement>;
+const exportAllBtn = document.getElementById('export-all-btn') as HTMLButtonElement;
 
 // Initialize
 async function init() {
@@ -67,6 +75,11 @@ function setupEventListeners() {
       activeFilter = btn.dataset.filter || 'all';
       applyFilters();
     });
+  });
+
+  // Export all button
+  exportAllBtn.addEventListener('click', () => {
+    showExportAllDialog();
   });
 
   // Detail panel close
@@ -160,7 +173,7 @@ function renderMemoryList() {
 
 function createMemoryItem(mem: ChatGPTMemory): HTMLElement {
   const item = document.createElement('div');
-  item.className = 'memory-item conversation-item fade-in cursor-pointer rounded-lg px-3 py-2.5 transition-colors border border-transparent hover:border-gray-700';
+  item.className = 'memory-item conversation-item fade-in rounded-lg px-3 py-2.5 transition-colors border border-transparent hover:border-gray-700';
 
   const timeAgo = formatTimeAgo(mem.updatedAt);
   const categoryHtml = mem.category ? `<span class="memory-badge">${escapeHtml(mem.category)}</span>` : '';
@@ -177,11 +190,67 @@ function createMemoryItem(mem: ChatGPTMemory): HTMLElement {
         </div>
         <p class="memory-content">${escapeHtml(mem.content.slice(0, 300))}</p>
       </div>
+      <button class="inject-btn flex-shrink-0 px-2 py-1 text-xs bg-purple-600 hover:bg-purple-500 text-white rounded transition-colors" 
+              data-memory-id="${mem.id}" 
+              title="Inject into active chat input">
+        💉 Inject
+      </button>
     </div>
   `;
 
-  item.addEventListener('click', () => showMemoryDetail(mem));
+  // Click on memory content shows detail
+  const contentArea = item.querySelector('.flex-1') as HTMLElement;
+  contentArea.addEventListener('click', () => showMemoryDetail(mem));
+
+  // Click on inject button
+  const injectBtn = item.querySelector('.inject-btn') as HTMLButtonElement;
+  injectBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    injectMemoryToChat(mem, injectBtn);
+  });
+
   return item;
+}
+
+/**
+ * Inject memory content into the active tab's chat input
+ */
+async function injectMemoryToChat(mem: ChatGPTMemory, btn: HTMLButtonElement) {
+  const originalText = btn.textContent;
+  btn.textContent = '⏳ Injecting...';
+  btn.disabled = true;
+
+  try {
+    const response = await sendExtensionMessage({
+      type: 'INJECT_MEMORY',
+      content: mem.content,
+    });
+
+    if (response?.success) {
+      btn.textContent = '✅ Done!';
+      btn.classList.remove('bg-purple-600', 'hover:bg-purple-500');
+      btn.classList.add('bg-green-600');
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.classList.remove('bg-green-600');
+        btn.classList.add('bg-purple-600', 'hover:bg-purple-500');
+        btn.disabled = false;
+      }, 2000);
+    } else {
+      throw new Error(response?.error || 'Injection failed');
+    }
+  } catch (err) {
+    console.error('[AI Memory SidePanel] Injection failed:', err);
+    btn.textContent = '❌ Failed';
+    btn.classList.remove('bg-purple-600', 'hover:bg-purple-500');
+    btn.classList.add('bg-red-600');
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.classList.remove('bg-red-600');
+      btn.classList.add('bg-purple-600', 'hover:bg-purple-500');
+      btn.disabled = false;
+    }, 3000);
+  }
 }
 
 function showMemoryDetail(mem: ChatGPTMemory) {
@@ -198,6 +267,16 @@ function showMemoryDetail(mem: ChatGPTMemory) {
   bubble.className = 'msg-bubble msg-assistant';
   bubble.textContent = mem.content;
   detailMessages.appendChild(bubble);
+
+  // Add inject button in detail view
+  const injectContainer = document.createElement('div');
+  injectContainer.className = 'mt-4 flex justify-end';
+  const injectBtn = document.createElement('button');
+  injectBtn.className = 'inject-detail-btn px-4 py-2 bg-purple-600 hover:bg-purple-500 text-white rounded transition-colors';
+  injectBtn.textContent = '💉 Inject into Chat';
+  injectBtn.addEventListener('click', () => injectMemoryToChat(mem, injectBtn));
+  injectContainer.appendChild(injectBtn);
+  detailMessages.appendChild(injectContainer);
 
   detailOpen.disabled = true;
   detailOpen.classList.add('opacity-50');
@@ -318,10 +397,25 @@ function createConversationItem(conv: Conversation): HTMLElement {
           <span class="text-xs text-gray-600">${messageCount} message${messageCount !== 1 ? 's' : ''}</span>
         </div>
       </div>
+      <button class="export-conv-btn flex-shrink-0 px-2 py-1 text-xs bg-gray-700 hover:bg-gray-600 text-gray-300 rounded transition-colors" 
+              data-conv-id="${conv.id}" 
+              title="Export conversation">
+        📥
+      </button>
     </div>
   `;
 
-  item.addEventListener('click', () => showDetail(conv));
+  // Click on conversation content shows detail
+  const contentArea = item.querySelector('.flex-1') as HTMLElement;
+  contentArea.addEventListener('click', () => showDetail(conv));
+
+  // Click on export button
+  const exportBtn = item.querySelector('.export-conv-btn') as HTMLButtonElement;
+  exportBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showExportDialog(conv);
+  });
+
   return item;
 }
 
@@ -342,6 +436,21 @@ function showDetail(conv: Conversation) {
     detailMessages.appendChild(bubble);
   }
 
+  // Add export button in detail view
+  const exportContainer = document.createElement('div');
+  exportContainer.className = 'mt-4 flex justify-end gap-2';
+  
+  const exportFormats: ExportFormat[] = ['markdown', 'json', 'txt', 'csv'];
+  for (const format of exportFormats) {
+    const btn = document.createElement('button');
+    btn.className = 'px-3 py-1.5 text-xs bg-gray-700 hover:bg-gray-600 text-gray-300 rounded transition-colors';
+    btn.textContent = `📥 ${format.toUpperCase()}`;
+    btn.addEventListener('click', () => exportSingleConversation(conv, format));
+    exportContainer.appendChild(btn);
+  }
+  
+  detailMessages.appendChild(exportContainer);
+
   detailOpen.disabled = !conv.url;
   detailOpen.classList.toggle('opacity-50', !conv.url);
   detailOverlay.classList.remove('hidden');
@@ -350,6 +459,133 @@ function showDetail(conv: Conversation) {
 function closeDetail() {
   currentDetail = null;
   detailOverlay.classList.add('hidden');
+}
+
+/**
+ * Show export dialog for a conversation
+ */
+function showExportDialog(conv: Conversation) {
+  // Create a simple dropdown menu
+  const existingMenu = document.querySelector('.export-menu');
+  if (existingMenu) existingMenu.remove();
+
+  const menu = document.createElement('div');
+  menu.className = 'export-menu bg-gray-800 border border-gray-700 rounded-lg shadow-xl py-1';
+  menu.style.cssText = 'min-width: 160px;';
+
+  const formats: { format: ExportFormat; label: string; icon: string }[] = [
+    { format: 'markdown', label: 'Markdown', icon: '📝' },
+    { format: 'json', label: 'JSON', icon: '🔧' },
+    { format: 'txt', label: 'Plain Text', icon: '📄' },
+    { format: 'csv', label: 'CSV', icon: '📊' },
+  ];
+
+  for (const { format, label, icon } of formats) {
+    const item = document.createElement('button');
+    item.className = 'w-full px-4 py-2 text-left text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors';
+    item.textContent = `${icon} ${label}`;
+    item.addEventListener('click', () => {
+      exportSingleConversation(conv, format);
+      menu.remove();
+    });
+    menu.appendChild(item);
+  }
+
+  document.body.appendChild(menu);
+
+  // Position the menu near the cursor
+  const rect = (event as MouseEvent).target instanceof Element 
+    ? ((event as MouseEvent).target as Element).getBoundingClientRect()
+    : { top: 100, right: 200 };
+  
+  menu.style.top = `${rect.top}px`;
+  menu.style.left = `${rect.right + 8}px`;
+
+  // Close menu when clicking outside
+  const closeMenu = (e: MouseEvent) => {
+    if (!menu.contains(e.target as Node)) {
+      menu.remove();
+      document.removeEventListener('click', closeMenu);
+    }
+  };
+  setTimeout(() => document.addEventListener('click', closeMenu), 0);
+}
+
+/**
+ * Show export all dialog
+ */
+function showExportAllDialog() {
+  const conversations = showingMemories ? [] : filteredConversations;
+  if (conversations.length === 0) return;
+
+  // Create a simple dropdown menu
+  const existingMenu = document.querySelector('.export-menu');
+  if (existingMenu) existingMenu.remove();
+
+  const menu = document.createElement('div');
+  menu.className = 'export-menu bg-gray-800 border border-gray-700 rounded-lg shadow-xl py-1';
+  menu.style.cssText = 'min-width: 200px;';
+
+  const header = document.createElement('div');
+  header.className = 'px-4 py-2 text-xs text-gray-500 border-b border-gray-700';
+  header.textContent = `Export ${conversations.length} conversations`;
+  menu.appendChild(header);
+
+  const formats: { format: ExportFormat; label: string; icon: string }[] = [
+    { format: 'markdown', label: 'Markdown', icon: '📝' },
+    { format: 'json', label: 'JSON', icon: '🔧' },
+    { format: 'txt', label: 'Plain Text', icon: '📄' },
+    { format: 'csv', label: 'CSV', icon: '📊' },
+  ];
+
+  for (const { format, label, icon } of formats) {
+    const item = document.createElement('button');
+    item.className = 'w-full px-4 py-2 text-left text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors';
+    item.textContent = `${icon} ${label}`;
+    item.addEventListener('click', () => {
+      exportAllConversations(format);
+      menu.remove();
+    });
+    menu.appendChild(item);
+  }
+
+  document.body.appendChild(menu);
+
+  // Position the menu near the button
+  const rect = exportAllBtn.getBoundingClientRect();
+  menu.style.top = `${rect.bottom + 4}px`;
+  menu.style.right = '16px';
+
+  // Close menu when clicking outside
+  const closeMenu = (e: MouseEvent) => {
+    if (!menu.contains(e.target as Node)) {
+      menu.remove();
+      document.removeEventListener('click', closeMenu);
+    }
+  };
+  setTimeout(() => document.addEventListener('click', closeMenu), 0);
+}
+
+/**
+ * Export a single conversation
+ */
+function exportSingleConversation(conv: Conversation, format: ExportFormat) {
+  const content = exportConversation(conv, { format, includeMetadata: true, includeTimestamps: true });
+  const filename = generateExportFilename(conv, format);
+  downloadExport(content, filename, format);
+}
+
+/**
+ * Export all visible conversations
+ */
+function exportAllConversations(format: ExportFormat) {
+  const conversations = showingMemories ? [] : filteredConversations;
+  if (conversations.length === 0) return;
+
+  const content = exportMultipleConversations(conversations, { format, includeMetadata: true, includeTimestamps: true });
+  const date = new Date().toISOString().split('T')[0];
+  const filename = `ai-memory-all-conversations-${date}.${format === 'markdown' ? 'md' : format}`;
+  downloadExport(content, filename, format);
 }
 
 function formatTimeAgo(timestamp: number): string {

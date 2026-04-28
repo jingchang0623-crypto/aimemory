@@ -108,6 +108,35 @@ export default defineBackground(() => {
           return { success: true, stats: memStats };
         }
 
+        case 'INJECT_MEMORY': {
+          // Forward injection request to the active tab's content script
+          try {
+            const tabs = await browser.tabs.query({ active: true, currentWindow: true });
+            if (!tabs || tabs.length === 0) {
+              return { success: false, error: 'No active tab found' };
+            }
+
+            const activeTab = tabs[0];
+            if (!activeTab.id) {
+              return { success: false, error: 'Active tab has no ID' };
+            }
+
+            // Send message to content script in the active tab
+            const response = await browser.tabs.sendMessage(activeTab.id, {
+              type: 'INJECT_MEMORY_TO_INPUT',
+              content: message.content,
+            });
+
+            return response || { success: false, error: 'No response from content script' };
+          } catch (err) {
+            console.error('[AI Memory] Failed to inject memory:', err);
+            return { 
+              success: false, 
+              error: err instanceof Error ? err.message : 'Failed to inject. Make sure you have a chat page open.' 
+            };
+          }
+        }
+
         default:
           return { success: false, error: 'Unknown message type' };
       }

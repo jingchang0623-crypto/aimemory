@@ -1,5 +1,6 @@
 import { browser } from 'wxt/browser';
 import { defineContentScript } from 'wxt/utils/define-content-script';
+import { setupInjectionListener } from '../lib/injection-handler';
 
 /**
  * ChatGPT Content Script
@@ -213,6 +214,9 @@ export default defineContentScript({
 
   main(ctx) {
     console.log('[AI Memory] ChatGPT content script loaded');
+    
+    // Set up injection listener for memory injection from sidepanel
+    setupInjectionListener();
 
     // Inject the fetch interceptor script into the page's MAIN world
     const script = document.createElement('script');

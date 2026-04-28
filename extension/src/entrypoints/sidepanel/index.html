@@ -51,6 +51,7 @@
     .memory-badge { font-size: 0.65rem; padding: 1px 6px; border-radius: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; background: #fbbf2420; color: #fbbf24; border: 1px solid #fbbf2440; }
     .memory-item:hover { background: #2a2a1e; }
     .memory-content { font-size: 0.8rem; color: #d4d4aa; line-height: 1.5; white-space: pre-wrap; }
+    .export-menu { position: fixed; z-index: 200; }
   </style>
 </head>
 <body>
@@ -63,6 +64,9 @@
         </svg>
         <h1 class="text-base font-semibold text-white">AI Memory</h1>
         <span id="stats-badge" class="ml-auto text-xs text-gray-500"></span>
+        <button id="export-all-btn" class="ml-2 px-2 py-1 text-xs bg-gray-800 hover:bg-gray-700 text-gray-400 rounded border border-gray-700 hover:border-gray-600 transition-colors" title="Export all conversations">
+          📥 Export All
+        </button>
       </div>
 
       <!-- Search -->

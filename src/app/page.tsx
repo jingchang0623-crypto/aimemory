@@ -367,6 +367,8 @@ No accounts. No cloud uploads. No tracking. Your data is stored on our server in
               { title: 'Conversation Too Long', href: '/blog/chatgpt-conversation-too-long' },
               { title: '🇨🇳 AI对话导出工具', href: '/blog/ai-duihua-daochu' },
               { title: '🇨🇳 ChatGPT记忆管理指南', href: '/blog/chatgpt-jiyi-guanli' },
+              { title: 'Search ChatGPT History', href: '/blog/search-chatgpt-history' },
+              { title: 'ChatGPT vs Claude vs DeepSeek', href: '/blog/chatgpt-vs-claude-vs-deepseek' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}
