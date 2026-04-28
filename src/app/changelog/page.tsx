@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.13.0',
+    date: '2026-04-29',
+    title: 'Rich Snippets + New Keywords + FAQPage Schema Expansion',
+    tags: ['SEO', 'Structured Data', 'Content'],
+    changes: {
+      added: [
+        'New blog: \"ChatGPT History Viewer\" — targets \"chatgpt history viewer\", \"view chatgpt history\", \"browse chatgpt conversations\" keywords, FAQPage schema (6 questions)',
+        'New blog: \"Claude Memory\" — targets \"claude memory\", \"claude ai memory\", \"claude vs chatgpt memory\" competitor keywords, FAQPage schema (6 questions)',
+      ],
+      improved: [
+        'FAQPage JSON-LD structured data added to 5 high-value blogs: best-ai-memory-extension-2026, chatgpt-not-saving, chatgpt-memory-full, chatgpt-to-claude-migration, export-chatgpt',
+        'Total blogs with FAQPage rich snippets: 18 out of 40 (45% coverage)',
+        'Blog count now 40 posts (35 English + 5 Chinese)',
+        'Sitemap updated to 52 URLs',
+        'Homepage Guides section updated with 2 new blog links',
+      ],
+    },
+  },
+  {
     version: 'v0.12.0',
     date: '2026-04-29',
     title: 'SEO Expansion + Compare & FAQ Pages + Privacy Content',

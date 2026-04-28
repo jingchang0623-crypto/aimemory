@@ -14,6 +14,61 @@ export const metadata: Metadata = {
 };
 
 export default function ChatGPTToClaudeMigration() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Can I directly import ChatGPT conversations into Claude?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No, Claude does not have an import feature for ChatGPT data. The best workaround is to export your ChatGPT conversations and upload them to AI Memory, where you can search and reference them while working in Claude or any other AI platform.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Will I lose my ChatGPT conversations if I switch to Claude?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Your ChatGPT conversations will remain in your OpenAI account even after switching to Claude. However, they will not be accessible inside Claude. Export your data first using ChatGPT Settings → Data Controls → Export Data and store it in AI Memory for ongoing access.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is Claude better than ChatGPT for coding?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Claude excels at large-scale code refactors and understanding complex codebases thanks to its 200K token context window. ChatGPT is strong for quick scripting and plugin integration. Many developers use both platforms and keep their full history in AI Memory for cross-platform access.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I transfer my ChatGPT history to Claude?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Go to ChatGPT Settings → Data Controls → Export Data to download a ZIP file of all conversations. Upload this ZIP to AI Memory, which will parse and index every conversation. You can then search your ChatGPT history while working in Claude for seamless context transfer.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the difference between ChatGPT and Claude context windows?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatGPT supports a 128K token context window, while Claude offers 200K tokens. This means Claude can process more information in a single conversation, making it better for analyzing long documents, large codebases, or multi-hour transcripts without losing earlier context.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I search my ChatGPT history while using Claude?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Not natively, since each platform is isolated. However, with AI Memory you can keep a browser tab open or use the MCP server to search your full conversation archive while working in Claude. This provides the closest experience to a unified cross-platform AI memory.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <header className="border-b border-gray-200 bg-white">
@@ -26,6 +81,8 @@ export default function ChatGPTToClaudeMigration() {
 
       <main className="max-w-4xl mx-auto px-4 py-12">
         <article className="prose lg:prose-xl max-w-none">
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+
           <h1>
             Switching from ChatGPT to Claude? Here&apos;s How to Keep Your
             Conversations

@@ -8,6 +8,61 @@ export const metadata: Metadata = {
 };
 
 export default function ChatGPTNotSaving() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Why are my ChatGPT conversations not saving?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatGPT conversations may not save due to server outages, browser cache clearing, logging out and back in, or using a different device or browser. Account issues can also cause conversations to disappear from your sidebar.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How can I recover lost ChatGPT conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You can try checking your email for ChatGPT notification links, using the Data Controls export feature to download all conversations as a ZIP file, or searching your browser history for chat.openai.com or chatgpt.com URLs to find past sessions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does ChatGPT automatically back up my conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatGPT stores conversations on its servers, but they can disappear due to technical issues. There is no built-in automatic backup to an external location. Using a tool like AI Memory with its Chrome extension ensures conversations are saved independently.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I prevent losing ChatGPT conversations in the future?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Export your ChatGPT data regularly from Settings → Data Controls → Export Data, install the AI Memory Chrome Extension for automatic real-time backup, and upload your exports to AI Memory for permanent searchable storage.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I recover a ChatGPT conversation that was deleted?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'If a conversation was deleted by ChatGPT due to a bug or server issue, the export feature may still include it. Go to Settings → Data Controls → Export Data and check the ZIP file. Deleted conversations often remain in the export even if they are not visible in the sidebar.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is there a way to search old ChatGPT conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatGPT only offers basic title-based search in the sidebar. For full-text search across all your conversations, export your data and import it into AI Memory, which indexes every message for instant keyword and semantic search.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <header className="border-b border-gray-200 bg-white">
@@ -20,6 +75,8 @@ export default function ChatGPTNotSaving() {
 
       <main className="max-w-4xl mx-auto px-4 py-12">
         <article className="prose lg:prose-xl max-w-none">
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+
           <h1>ChatGPT Not Saving Conversations? Here&apos;s What to Do</h1>
           <p className="text-xl text-gray-600">
             Your ChatGPT conversations disappeared? Here&apos;s how to recover them and prevent future data loss.

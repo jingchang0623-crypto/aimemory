@@ -417,6 +417,30 @@ export const blogPosts: BlogPost[] = [
     tags: ['chatgpt', 'privacy', 'data', 'gdpr', 'security'],
     lang: 'en',
   },
+  // === ChatGPT History Viewer (high-intent keyword) ===
+  {
+    slug: 'chatgpt-history-viewer',
+    title: 'ChatGPT History Viewer: How to Browse & Search All Your Conversations (2026)',
+    description: 'Need a better way to view ChatGPT history? Learn why the native sidebar fails and how AI Memory gives you full-text search, timeline view, and cross-platform conversation browsing.',
+    category: 'Guides',
+    date: '2026-04-29',
+    readTime: '9 min',
+    keywords: ['chatgpt history viewer', 'view chatgpt history', 'browse chatgpt conversations', 'chatgpt conversation viewer'],
+    tags: ['chatgpt', 'history', 'viewer', 'search', 'guide'],
+    lang: 'en',
+  },
+  // === Claude Memory (competitor keyword) ===
+  {
+    slug: 'claude-memory',
+    title: 'Claude Memory: How It Works, Limitations & Cross-Platform Solutions (2026)',
+    description: 'Complete guide to Claude AI memory feature. How Claude remembers conversations, its limitations vs ChatGPT memory, and how to manage memories across both platforms.',
+    category: 'Guides',
+    date: '2026-04-29',
+    readTime: '10 min',
+    keywords: ['claude memory', 'claude ai memory', 'claude memory feature', 'claude vs chatgpt memory'],
+    tags: ['claude', 'memory', 'comparison', 'cross-platform', 'guide'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

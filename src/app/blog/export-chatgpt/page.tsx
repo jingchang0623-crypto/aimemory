@@ -8,6 +8,61 @@ export const metadata: Metadata = {
 };
 
 export default function ExportChatGPTGuide() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How do I export my ChatGPT conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Go to ChatGPT Settings → Data Controls → Export Data, click the Export button, and wait for an email from OpenAI with a download link. The ZIP file typically arrives within 1-5 minutes and contains all your conversations in JSON format.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What format does ChatGPT export use?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatGPT exports as a ZIP file containing conversations.json (all conversations in JSON format), chat.html (a browser-viewable version), and any files you uploaded to ChatGPT. The JSON format is the most useful for importing into tools like AI Memory.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How long does it take to receive the ChatGPT export?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'OpenAI typically sends the export email within 1-5 minutes, though it can take up to 24 hours during peak times. Check your spam folder if you do not see the email. You can also re-request the export if the link expires.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I export ChatGPT conversations for free?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, the ChatGPT data export feature is completely free and available on all plans including the free tier. Simply go to Settings → Data Controls → Export Data. You can request an export at any time without any cost.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I search through exported ChatGPT conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The exported JSON file is difficult to search manually. Upload your ChatGPT export ZIP to AI Memory, which will automatically parse, index, and make every conversation instantly searchable with full-text search across all messages.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does exporting ChatGPT data delete my conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No, exporting your data creates a downloadable copy without affecting your existing conversations. Your chats will remain accessible in ChatGPT as usual. The export simply gives you an additional backup of everything.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <header className="border-b border-gray-200 bg-white">
@@ -20,6 +75,8 @@ export default function ExportChatGPTGuide() {
 
       <main className="max-w-4xl mx-auto px-4 py-12">
         <article className="prose lg:prose-xl max-w-none">
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+
           <h1>How to Export Your ChatGPT Conversations</h1>
           <p className="text-xl text-gray-600">
             A complete guide to downloading and preserving your ChatGPT chat history

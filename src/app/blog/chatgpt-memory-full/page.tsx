@@ -8,6 +8,61 @@ export const metadata: Metadata = {
 };
 
 export default function ChatGPTMemoryFull() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What happens when ChatGPT memory is full?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'When ChatGPT memory reaches its limit of approximately 1,500 words, the system begins automatically removing older memories to make room for new ones. You will not receive a notification when memories are deleted, and important context from past conversations may be silently lost.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I free up space in ChatGPT memory?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Go to Settings → Personalization → Memory and review your saved memories. Click the X button next to any memory you no longer need to delete it individually. You can also move important context to Custom Instructions, which persist across all conversations without using memory space.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I increase the ChatGPT memory limit?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No, there is currently no way to increase the ChatGPT memory limit. It is a fixed cap of approximately 1,500 words regardless of your subscription plan. The best workaround is to export your conversations and use a dedicated memory tool like AI Memory for unlimited storage.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the difference between ChatGPT memory and custom instructions?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Custom instructions are static text you write once that appear in every conversation, while ChatGPT memory is dynamic and automatically extracts facts from your conversations. Custom instructions are for things you always want to tell ChatGPT; memory is for things you want it to learn on its own.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I export ChatGPT memories before they are deleted?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatGPT does not have a direct memory export feature. However, you can go to Settings → Data Controls → Export Data to download your full conversation history as a ZIP file. Upload this to AI Memory to preserve all your conversations and make them permanently searchable.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is AI Memory better than ChatGPT built-in memory?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'AI Memory offers unlimited storage, full-text search across all messages, cross-platform support for ChatGPT, Claude, DeepSeek, and Gemini, and local-first privacy. ChatGPT memory is limited to 1,500 words, cannot be exported, and only works within ChatGPT.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <header className="border-b border-gray-200 bg-white">
@@ -20,6 +75,8 @@ export default function ChatGPTMemoryFull() {
 
       <main className="max-w-4xl mx-auto px-4 py-12">
         <article className="prose lg:prose-xl max-w-none">
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+
           <h1>ChatGPT Memory Full? Here&apos;s What to Do</h1>
           <p className="text-xl text-gray-600">
             Your ChatGPT memory is at capacity. Here&apos;s how to manage it and keep your AI context safe.
