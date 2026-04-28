@@ -11,10 +11,8 @@ export function middleware(request: NextRequest) {
   response.headers.set('X-XSS-Protection', '1; mode=block');
   response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
 
-  // Only set HSTS on production
-  if (request.nextUrl.hostname === 'aimemory.pro') {
-    response.headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
-  }
+  // HSTS - always set since site is HTTPS-only behind nginx proxy
+  response.headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
 
   // CSP - allow inline styles (needed for Tailwind), block inline scripts except Next.js
   response.headers.set(
