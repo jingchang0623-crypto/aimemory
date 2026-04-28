@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.10.0',
+    date: '2026-04-28',
+    title: 'SEO Expansion + Security Hardening',
+    tags: ['SEO', 'Security'],
+    changes: {
+      added: [
+        'New blog: "How to Save ChatGPT Conversations" — high-intent save/backup keyword with FAQPage schema (6 questions)',
+        'New blog: "Best AI Chat History Manager" — comparison keyword with top 5 tools ranked and FAQPage schema',
+        'FAQPage structured data (JSON-LD) on new blog posts for Google rich snippets',
+      ],
+      improved: [
+        'Blog count now 32 posts (29 English + 3 Chinese)',
+        'Sitemap updated to 41 URLs',
+        'Security: removed deprecated X-XSS-Protection header, eliminated duplicate security headers',
+        'Security: enabled HSTS header, disabled x-powered-by',
+      ],
+    },
+  },
+  {
     version: 'v0.9.0',
     date: '2026-04-28',
     title: 'Unified Footer + SEO Comparison Blog',
