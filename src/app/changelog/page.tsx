@@ -17,6 +17,25 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.6.0',
+    date: '2026-04-28',
+    title: 'Blog Architecture + High-Value SEO Content',
+    tags: ['SEO', 'Architecture', 'Content'],
+    changes: {
+      added: [
+        'Centralized blog data registry (src/lib/blog-data.ts) — powers index, related posts, sitemap',
+        'Shared BlogLayout component with Breadcrumbs JSON-LD and Related Posts',
+        'New blog post: "ChatGPT Memory: Complete Guide" targeting high-volume keyword',
+        'FAQPage structured data on ChatGPT Memory guide for rich snippets',
+        'Internal cross-linking via intelligent related posts (tag-based matching)',
+      ],
+      improved: [
+        'Blog pages now have consistent header, footer, and breadcrumb navigation',
+        'Blog infrastructure ready for scaling to 50+ posts without code duplication',
+      ],
+    },
+  },
+  {
     version: 'v0.5.0',
     date: '2026-04-28',
     title: 'MCP Server + Chinese Market Launch',

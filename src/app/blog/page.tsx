@@ -184,6 +184,13 @@ const blogPosts = [
     category: '中文指南',
     date: '2026-04-28',
   },
+  {
+    title: 'ChatGPT Memory: Complete Guide to Managing Your AI Memory (2026)',
+    description: 'Everything about ChatGPT memory — how it works, its limits, how to manage settings, and better alternatives for storing your AI conversations permanently.',
+    href: '/blog/chatgpt-memory',
+    category: 'Guides',
+    date: '2026-04-28',
+  },
 ];
 
 const categories = ['All', 'Export Guides', 'Extensions', 'Troubleshooting', 'Guides', 'Comparisons', 'Technical', '中文指南'];
