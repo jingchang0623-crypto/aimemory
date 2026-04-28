@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Changelog - AI Memory | Product Updates & New Features',
@@ -16,6 +17,25 @@ export const metadata: Metadata = {
 };
 
 const releases = [
+  {
+    version: 'v0.9.0',
+    date: '2026-04-28',
+    title: 'Unified Footer + SEO Comparison Blog',
+    tags: ['UX', 'SEO', 'Infrastructure'],
+    changes: {
+      added: [
+        'New blog: "Best AI Memory Extension in 2026" — top 5 comparison with feature table, targeting high-intent "best" keyword',
+        'Footer component integrated into BlogLayout — all blog pages now have consistent 4-column footer navigation',
+        'Footer component added to 6 standalone pages: Features, Privacy, Terms, Chrome Extension, MCP Docs, Pricing, Changelog',
+      ],
+      improved: [
+        'Blog count now 31 posts (28 English + 3 Chinese)',
+        'Sitemap updated to 39 URLs',
+        'Internal link density improved — Footer provides consistent cross-linking across all pages',
+        'All pages now share identical navigation structure (Product, Resources, Compare, Legal)',
+      ],
+    },
+  },
   {
     version: 'v0.8.0',
     date: '2026-04-28',
@@ -251,18 +271,7 @@ export default function ChangelogPage() {
         </div>
       </main>
 
-      <footer className="border-t border-gray-200 bg-gray-50 py-8">
-        <div className="max-w-4xl mx-auto px-4 text-center text-gray-500 text-sm">
-          <p>AI Memory — Your conversations, preserved forever</p>
-          <div className="mt-2 space-x-4">
-            <Link href="/features" className="hover:text-gray-700">Features</Link>
-            <Link href="/pricing" className="hover:text-gray-700">Pricing</Link>
-            <Link href="/changelog" className="hover:text-gray-700">Changelog</Link>
-            <Link href="/privacy" className="hover:text-gray-700">Privacy</Link>
-            <Link href="/terms" className="hover:text-gray-700">Terms</Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Footer from '@/components/Footer';
 import { getRelatedPosts, type BlogPost, SITE_URL, BLOG_BASE } from '@/lib/blog-data';
 
 interface BlogLayoutProps {
@@ -101,21 +102,7 @@ export default function BlogLayout({ slug, title, category, date, readTime, chil
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 mt-16">
-        <div className="max-w-4xl mx-auto px-4 py-8">
-          <div className="flex flex-wrap gap-6 text-sm">
-            <Link href="/" className="text-white hover:text-blue-400">🧠 AI Memory</Link>
-            <Link href="/features" className="hover:text-white">Features</Link>
-            <Link href="/chrome-extension" className="hover:text-white">Extension</Link>
-            <Link href="/blog" className="hover:text-white">Blog</Link>
-            <Link href="/pricing" className="hover:text-white">Pricing</Link>
-            <Link href="/docs/mcp" className="hover:text-white">MCP Server</Link>
-            <Link href="/privacy" className="hover:text-white">Privacy</Link>
-            <Link href="/terms" className="hover:text-white">Terms</Link>
-          </div>
-          <p className="text-xs text-gray-500 mt-4">Your conversations, searchable forever.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'Features & Pricing - AI Memory',
@@ -175,6 +176,7 @@ export default function FeaturesPage() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

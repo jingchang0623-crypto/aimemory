@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'AI Memory MCP Server - Connect to Claude Desktop, Cursor & More',
@@ -213,19 +214,7 @@ Content-Type: application/json
         </section>
       </main>
 
-      <footer className="border-t border-gray-200 bg-gray-50 py-8">
-        <div className="max-w-4xl mx-auto px-4 text-center text-gray-500 text-sm">
-          <p>AI Memory — Your conversations, preserved forever</p>
-          <div className="mt-2 space-x-4">
-            <Link href="/features" className="hover:text-gray-700">Features</Link>
-            <Link href="/docs/mcp" className="hover:text-gray-700">MCP Server</Link>
-            <Link href="/pricing" className="hover:text-gray-700">Pricing</Link>
-            <Link href="/chrome-extension" className="hover:text-gray-700">Chrome Extension</Link>
-            <Link href="/privacy" className="hover:text-gray-700">Privacy</Link>
-            <Link href="/terms" className="hover:text-gray-700">Terms</Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
