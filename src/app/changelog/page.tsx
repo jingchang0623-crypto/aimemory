@@ -18,6 +18,27 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.12.0',
+    date: '2026-04-29',
+    title: 'SEO Expansion + Compare & FAQ Pages + Privacy Content',
+    tags: ['SEO', 'Content', 'UX'],
+    changes: {
+      added: [
+        'New blog: "How to Export ChatGPT to PDF" — high-intent export keyword, 4 methods compared, FAQPage schema (6 questions)',
+        'New blog: "How to Use ChatGPT Memory" — tutorial keyword, step-by-step guide, FAQPage schema (6 questions)',
+        'New blog: "ChatGPT Data Privacy" — timely privacy keyword, GDPR coverage, platform comparison, FAQPage schema (6 questions)',
+        'Compare page (/compare) — competitive SEO targeting "ai memory comparison" keywords, feature comparison table, head-to-head sections',
+        'FAQ page (/faq) — 20 questions across 5 categories, FAQPage JSON-LD schema for Google rich snippets, accordion UI',
+      ],
+      improved: [
+        'Blog count now 38 posts (33 English + 5 Chinese)',
+        'Sitemap updated to 50 URLs (45 existing + 3 blogs + 2 pages)',
+        'Homepage Guides section updated with 3 new blog links',
+        'Content coverage expanded: privacy, tutorial, PDF export, competitive comparison',
+      ],
+    },
+  },
+  {
     version: 'v0.11.0',
     date: '2026-04-29',
     title: 'SEO Expansion + About Page + Chinese Market',

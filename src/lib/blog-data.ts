@@ -383,6 +383,40 @@ export const blogPosts: BlogPost[] = [
     tags: ['chatgpt', 'save', 'export', 'backup', 'guide'],
     lang: 'en',
   },
+  // === Export ChatGPT to PDF (high-value keyword) ===
+  {
+    slug: 'export-chatgpt-to-pdf',
+    title: 'How to Export ChatGPT to PDF — 4 Methods Compared (2026)',
+    description: 'Learn how to export ChatGPT conversations to PDF format. 4 easy methods: browser print, official export + convert, Chrome extension, and copy-paste. Free tools included.',
+    category: 'Export Guides',
+    date: '2026-04-29',
+    readTime: '11 min',
+    keywords: ['export chatgpt to pdf', 'chatgpt to pdf', 'save chatgpt as pdf', 'chatgpt export pdf'],
+    tags: ['chatgpt', 'export', 'pdf', 'guide', 'backup'],
+    lang: 'en',
+  },
+  // === How to Use ChatGPT Memory (tutorial keyword) ===
+  {
+    slug: 'how-to-use-chatgpt-memory',
+    title: 'How to Use ChatGPT Memory - Complete Tutorial (2026)',
+    description: 'Step-by-step tutorial on how to use ChatGPT memory feature. Enable memory, view saved facts, manage settings, and learn when you need an external tool.',
+    category: 'Guides',
+    date: '2026-04-29',
+    readTime: '10 min',
+    tags: ['chatgpt', 'memory', 'tutorial', 'guide', 'settings'],
+    lang: 'en',
+  },
+  // === ChatGPT Data Privacy (timely keyword) ===
+  {
+    slug: 'chatgpt-data-privacy',
+    title: 'ChatGPT Data Privacy: What You Need to Know (2026)',
+    description: 'Complete guide to ChatGPT data privacy. What OpenAI stores, how conversations are used for training, GDPR rights, and how to protect your data.',
+    category: 'Privacy',
+    date: '2026-04-29',
+    readTime: '12 min',
+    tags: ['chatgpt', 'privacy', 'data', 'gdpr', 'security'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */
