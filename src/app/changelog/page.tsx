@@ -18,6 +18,23 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.15.0',
+    date: '2026-04-29',
+    title: 'Full FAQPage Coverage + 2 New Comparison Blogs',
+    tags: ['SEO', 'Content', 'Structured Data'],
+    changes: {
+      added: [
+        'New blog: ChatGPT vs Claude Memory — deep comparison of memory features across platforms',
+        'New blog: Best AI Memory Management Tools 2026 — category keyword targeting with 5-tool comparison',
+      ],
+      improved: [
+        'FAQPage JSON-LD added to all 15 remaining blogs — now 100% coverage (42/42 blogs)',
+        'Blogs updated: ai-conversation-disappeared, ai-duihua-daochu, best-ai-conversation-manager-2026, chatgpt-context-window-limit, chatgpt-conversation-history-search, chatgpt-conversation-too-long, chatgpt-jiyi-guanli, chatgpt-memory-full-fix, chatgpt-vs-claude, chatmemo-export, chat-memo-vs-ai-memory, export-claude, export-deepseek, export-gemini, mcp-server-guide',
+        'Sitemap expanded to 54 URLs',
+      ],
+    },
+  },
+  {
     version: 'v0.14.0',
     date: '2026-04-29',
     title: 'FAQPage Schema Expansion — 60% Rich Snippet Coverage',

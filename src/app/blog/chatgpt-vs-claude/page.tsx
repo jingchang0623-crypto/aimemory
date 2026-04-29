@@ -8,8 +8,59 @@ export const metadata: Metadata = {
 };
 
 export default function ChatGPTVsClaude() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is the difference between ChatGPT and Claude?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatGPT is developed by OpenAI and has a 128K token context window, while Claude is developed by Anthropic and supports a 200K token context window. Both offer JSON exports and web-based interfaces, but differ in training approaches and response styles.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which has a larger context window, ChatGPT or Claude?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Claude has a larger context window at 200K tokens, compared to ChatGPT's 128K tokens. This means Claude can process and retain more information in a single conversation.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I export conversations from both ChatGPT and Claude?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'For ChatGPT: go to Settings → Data Controls → Export Data. For Claude: go to Settings → Privacy → Export Data. Both platforms deliver a JSON export via email. You can then upload both exports to AI Memory for unified search.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I search across ChatGPT and Claude conversations at the same time?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. AI Memory lets you upload exports from both ChatGPT and Claude, then search across all your AI conversations in one place with full-text search, platform filtering, and usage tracking.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is ChatGPT or Claude better for coding?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Both ChatGPT and Claude are capable coding assistants. Claude's larger context window (200K tokens) can be advantageous for analyzing large codebases, while ChatGPT offers strong code generation. The best choice depends on your specific workflow and preferences.",
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">

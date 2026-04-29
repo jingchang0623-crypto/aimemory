@@ -8,8 +8,59 @@ export const metadata: Metadata = {
 };
 
 export default function ExportDeepSeekGuide() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How do I export my DeepSeek conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The easiest way is to use the ChatMemo browser extension, which automatically saves DeepSeek conversations. Install it from the Chrome Web Store, visit chat.deepseek.com, and ChatMemo will save your chats. Then export and upload to AI Memory.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does DeepSeek have a built-in export feature?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'DeepSeek does not have a built-in data export feature like ChatGPT or Claude. The best ways to export are using the ChatMemo browser extension for automatic saving, or manually copying conversations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the ChatMemo extension for DeepSeek?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatMemo is a free Chrome extension that automatically saves your AI conversations from DeepSeek and other platforms. It stores data locally and lets you export your chats as TXT files for backup or import into tools like AI Memory.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I manually copy DeepSeek conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, for individual conversations you can open the chat in DeepSeek, select all text with Ctrl+A (Cmd+A on Mac), copy it, and paste into a TXT file. Then upload the file to AI Memory for searchable storage.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why should I export my DeepSeek conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Exporting your DeepSeek conversations lets you back up important discussions, search across all your AI chats with full-text search, consolidate conversations from multiple platforms, and easily migrate between AI tools.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">

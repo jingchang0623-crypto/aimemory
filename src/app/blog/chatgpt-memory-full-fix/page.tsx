@@ -8,8 +8,67 @@ export const metadata: Metadata = {
 };
 
 export default function ChatGPTMemoryFullFix() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What happens when ChatGPT memory is full?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "When ChatGPT reaches its memory limit, it stops saving new memories. In some cases, it may silently remove older memories to make room for new ones. You won't always be notified, which means important context can disappear without warning.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How many memories can ChatGPT store?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "OpenAI doesn't publicly disclose the exact limit, but users typically report hitting the cap after saving 50-150 distinct memory entries, depending on their length and complexity. The limit appears to be based on total token count rather than a fixed number of entries.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: "Can I increase ChatGPT's memory limit?",
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No. The memory limit is set by OpenAI and cannot be increased by users, even on ChatGPT Plus or Team plans. The only solution is to manage existing memories or use an external tool like AI Memory for unlimited storage.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does clearing ChatGPT memory affect my conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No. Clearing memory only removes saved facts and preferences — your conversation history remains intact. However, ChatGPT will lose context about you and may give less personalized responses until you re-teach it your preferences.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is ChatGPT memory the same as conversation history?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No. Conversation history is the log of your past chats. Memory is a separate system where ChatGPT saves facts about you across conversations. You can have a full conversation history with no memories, or many memories with deleted conversation history.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I back up ChatGPT memories before deleting them?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Export your ChatGPT data via Settings → Data Controls → Export Data, then import the downloaded ZIP file into AI Memory for permanent searchable storage. Never delete memories without backing them up first.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">

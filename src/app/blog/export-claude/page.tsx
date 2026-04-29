@@ -8,8 +8,67 @@ export const metadata: Metadata = {
 };
 
 export default function ExportClaudeGuide() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How do I export my Claude conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Go to Claude Settings, click on Privacy in the left sidebar, then click the Export Data button. Claude will prepare your data and send you an email with a download link containing your conversation archive.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How long does the Claude export download link last?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The Claude export download link expires in 24 hours. Be sure to download your data promptly after receiving the email from Anthropic. If the link expires, you can request a new export.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What format does Claude export use?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Claude exports your conversations as a JSON file inside a ZIP archive. The JSON contains all your conversation history and can be imported into tools like AI Memory for searchable storage.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I export Claude conversations from the mobile app?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No, the Claude data export feature is only available on the web version at claude.ai. It is not available through the mobile app. You need to use a desktop browser to request an export.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does exporting Claude data delete my conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No, exporting your data creates a downloadable copy without affecting your existing conversations. Your chats will remain accessible in Claude as usual. However, Claude does not support importing conversations back.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I search through exported Claude conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Upload your Claude export JSON file to AI Memory at aimemory.pro. AI Memory will automatically parse, index, and make every conversation instantly searchable with full-text search across all messages.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">

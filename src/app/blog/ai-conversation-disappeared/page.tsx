@@ -14,8 +14,59 @@ export const metadata: Metadata = {
 };
 
 export default function AIConversationDisappeared() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Can I recover a ChatGPT conversation that disappeared?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, in many cases. The most reliable method is to request a data export from ChatGPT Settings → Data Controls → Export Data. OpenAI retains your data even if it doesn\'t appear in the sidebar. You can also try logging in from a different device or checking your browser history for the direct conversation URL.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why did my ChatGPT chat history go blank?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'This usually happens due to a server-side bug, an account login issue (you may be logged into a different account), or a browser problem. Try logging out and back in, clearing your cache, or using a different browser.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does ChatGPT delete old conversations automatically?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatGPT does not automatically delete conversations under normal circumstances. However, conversations may become inaccessible due to platform bugs, account issues, or if you manually delete them. Data on inactive accounts may eventually be purged per OpenAI\'s data retention policies.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I permanently save AI conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The best approach is to use a dedicated backup tool like AI Memory. It automatically captures, stores, and indexes all your conversations. Alternatively, you can manually export your data regularly from each platform\'s settings.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I recover a deleted Claude conversation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Claude (by Anthropic) does not currently offer a data export feature like ChatGPT. If you deleted a conversation, it may not be recoverable. This is why proactive backup with a tool like AI Memory\'s Chrome extension is essential to capture conversations in real-time.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">

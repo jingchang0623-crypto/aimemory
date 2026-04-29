@@ -441,6 +441,28 @@ export const blogPosts: BlogPost[] = [
     tags: ['claude', 'memory', 'comparison', 'cross-platform', 'guide'],
     lang: 'en',
   },
+  {
+    slug: 'chatgpt-vs-claude-memory',
+    title: 'ChatGPT vs Claude Memory: Which AI Remembers Better? (2026)',
+    description: 'Complete comparison of ChatGPT memory vs Claude memory — how they work, storage limits, export options, and which AI remembers better.',
+    category: 'Comparisons',
+    date: '2026-04-29',
+    readTime: '12 min',
+    keywords: ['chatgpt vs claude memory', 'chatgpt memory vs claude memory', 'claude memory feature', 'ai memory comparison'],
+    tags: ['chatgpt', 'claude', 'memory', 'comparison', 'cross-platform'],
+    lang: 'en',
+  },
+  {
+    slug: 'ai-memory-management-tools-2026',
+    title: 'Best AI Memory Management Tools in 2026',
+    description: 'Comprehensive guide to the best AI memory management tools in 2026. Compare AI Memory, Chat Memo, Mem0, Supermemory and more.',
+    category: 'Comparisons',
+    date: '2026-04-29',
+    readTime: '14 min',
+    keywords: ['ai memory management tools', 'best ai memory tool', 'ai memory manager', 'ai conversation manager 2026'],
+    tags: ['tools', 'comparison', 'memory', 'cross-platform', 'guide'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

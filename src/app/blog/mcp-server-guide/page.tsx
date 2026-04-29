@@ -8,8 +8,67 @@ export const metadata: Metadata = {
 };
 
 export default function MCPServerBlogPage() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is the Model Context Protocol (MCP)?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The Model Context Protocol is an open standard created by Anthropic that lets AI assistants connect to external tools and data sources. It works like a universal plug that any AI tool can use to access your data. Over 113 clients support it as of April 2026.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I set up AI Memory MCP server with Claude Desktop?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Open your Claude Desktop configuration file (claude_desktop_config.json), add the AI Memory MCP server with URL https://aimemory.pro/api/mcp and transport set to http, save the file, and restart Claude Desktop. You should see AI Memory listed in the MCP servers section.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I connect AI Memory to Cursor via MCP?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Open Cursor, go to Settings then MCP, click Add New MCP Server, enter AI Memory as the name, select HTTP as the type, and set the URL to https://aimemory.pro/api/mcp. Click Save and Cursor will verify the connection automatically.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What tools does the AI Memory MCP server expose?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'AI Memory exposes four MCP tools: search_memory for full-text search across conversations, add_memory for saving new conversations, get_context for retrieving relevant context snippets, and list_memories for browsing recent conversations with filtering and pagination.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is the AI Memory MCP server private and secure?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, all data is stored locally by default. The MCP endpoint only accesses your own conversations, and you can self-host for complete control. There is no third-party data sharing.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which AI tools support the AI Memory MCP server?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Any MCP-compatible client can connect, including Claude Desktop, Cursor, Windsurf, Cline, and over 100 other tools. The Model Context Protocol is supported by a growing ecosystem of AI assistants and development tools.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">🧠 AI Memory</Link>

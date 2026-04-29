@@ -8,8 +8,59 @@ export const metadata: Metadata = {
 };
 
 export default function ChatGPTConversationTooLong() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Why does ChatGPT forget earlier parts of a conversation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatGPT has a context window limit (128K tokens for GPT-4). When a conversation exceeds this limit, earlier messages fall outside the window and ChatGPT can no longer access them, causing it to "forget" previous instructions and context.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the maximum conversation length for ChatGPT?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'GPT-4 supports a context window of approximately 128K tokens (roughly 96,000 words). However, performance and attention to older messages degrades well before hitting the hard limit.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I fix ChatGPT losing context in long conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You can fix context loss by exporting and starting fresh with a summary, using Custom Instructions for persistent settings, creating a summary prompt, using Projects or GPTs for persistent context, or using AI Memory to maintain cross-conversation context.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I keep ChatGPT conversations searchable after exporting?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Tools like AI Memory let you export all your ChatGPT conversations and make them fully searchable, so you never lose important context even after starting new conversations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does Custom Instructions persist across ChatGPT conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. ChatGPT Custom Instructions persist across all conversations and do not count against the context window limit. They are an effective way to keep key requirements active without repeating them in every chat.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">

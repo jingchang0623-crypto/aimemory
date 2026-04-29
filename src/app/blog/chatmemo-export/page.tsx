@@ -8,8 +8,59 @@ export const metadata: Metadata = {
 };
 
 export default function ChatMemoExportGuide() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How do I export conversations from ChatMemo?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Click the ChatMemo extension icon in your browser, open Settings (gear icon), then select "Export" or "Export All". ChatMemo will download a ZIP file containing TXT files for each saved conversation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What format does ChatMemo export conversations in?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatMemo exports conversations as a ZIP archive containing individual TXT files. Each TXT file uses [User] and [Assistant] markers to indicate the conversation structure.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I import ChatMemo conversations into AI Memory?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Yes. Go to aimemory.pro and upload the ChatMemo ZIP file directly, or upload individual TXT files. AI Memory supports ChatMemo's TXT format and will automatically parse the conversation structure.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why should I migrate from ChatMemo to AI Memory?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'AI Memory offers full-text search across all conversations, works in any browser (not just Chrome), provides web-based access from any device, and lets you combine ChatGPT, Claude, and ChatMemo data in one searchable platform.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is my data private when importing to AI Memory?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Your data stays 100% private after importing to AI Memory. All conversations become instantly searchable, and you can browse them by date or platform while maintaining full control over your data.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">

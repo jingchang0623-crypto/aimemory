@@ -9,8 +9,67 @@ export const metadata: Metadata = {
 };
 
 export default function ChatMemoVsAIMemory() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is the difference between Chat Memo and AI Memory?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Chat Memo is a Chrome extension that auto-saves AI conversations from 7 platforms including ChatGPT, Gemini, Claude, DeepSeek, Doubao, and Kimi. AI Memory is a web-based tool with a companion extension that covers 4 platforms but offers superior FTS5 full-text search, fuzzy matching, and web-based access from any device.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is Chat Memo free? Is AI Memory free?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, both Chat Memo and AI Memory are completely free to use. There are no paid tiers, subscriptions, or hidden costs for either tool.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which tool has better search, Chat Memo or AI Memory?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'AI Memory has significantly better search. It uses SQLite FTS5 full-text search with fuzzy matching and ranked results, while Chat Memo only offers basic keyword matching. If finding old conversations quickly is a priority, AI Memory is the stronger choice.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do Chat Memo and AI Memory keep my data private?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, both tools store all conversation data locally in your browser. Neither tool uploads your chats to any external server. Your privacy is fully protected with either choice.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I use Chat Memo and AI Memory at the same time?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Since both tools store data locally, there is no conflict in running them side by side. You could use Chat Memo for its broader platform support and AI Memory for its superior search capabilities.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which AI platforms does AI Memory support?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'AI Memory currently supports 4 platforms: ChatGPT, Claude, DeepSeek, and Gemini. Chat Memo supports 7 platforms, adding support for Chinese AI platforms like Doubao and Kimi.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">

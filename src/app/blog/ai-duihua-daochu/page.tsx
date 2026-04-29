@@ -19,8 +19,67 @@ export const metadata: Metadata = {
 };
 
 export default function AIDialogueExportGuide() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: '如何导出ChatGPT的对话记录？',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '登录ChatGPT后，点击左下角头像进入Settings，选择Data Controls，然后点击Export Data。OpenAI会将包含所有对话的ZIP文件发送到你的邮箱。',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: '导出的AI对话数据安全吗？',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '是的。使用AI Memory等工具时，所有数据都存储在你的本地设备上，不会上传到任何服务器。AI Memory使用浏览器本地存储（IndexedDB），完全离线运行。',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: '支持导出哪些AI平台的对话？',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '目前支持ChatGPT、Claude、DeepSeek、Gemini四个主流AI平台的对话导出和管理。',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: '导出的对话文件是什么格式？',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatGPT和Claude导出JSON格式，DeepSeek支持JSON和TXT格式，Gemini通过Google Takeout导出。AI Memory支持解析所有这些格式。',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: '如何批量管理多个AI平台的对话？',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '分别从各平台导出对话后，将所有文件打包成ZIP上传到AI Memory。AI Memory会自动识别文件来源并解析对话内容，提供统一的全文搜索功能。',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: '有没有自动保存AI对话的方法？',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '可以使用AI Memory Chrome扩展自动检测并保存你在ChatGPT、Claude、DeepSeek、Gemini上的新对话，无需手动导出操作。',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">

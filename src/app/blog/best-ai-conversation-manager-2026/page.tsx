@@ -8,8 +8,59 @@ export const metadata: Metadata = {
 };
 
 export default function BestAIConversationManager2026() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is an AI conversation manager?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'An AI conversation manager is a tool that helps you store, organize, search, and manage your conversations with AI assistants like ChatGPT, Claude, and others. Think of it as a search engine for your AI chat history.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why not just use ChatGPT\'s built-in search?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatGPT\'s search only looks at conversation titles, not the actual message content. A dedicated conversation manager like AI Memory searches through the full text of every message, making it far more useful for finding past conversations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is it safe to export and store my AI conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'It depends on the tool. AI Memory stores everything locally in your browser, so your data never leaves your device. Cloud-based tools like Echoes store data on external servers, which may be a concern for sensitive conversations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I search across multiple AI platforms at once?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes! AI Memory supports importing from ChatGPT, Claude, DeepSeek, Gemini, and others. Once imported, you can search across all platforms with a single query.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which conversation manager is best for developers?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'AI Memory is ideal for developers because it indexes code snippets in conversations, supports full-text search with code-aware tokenization, and is open-source so you can extend it.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">

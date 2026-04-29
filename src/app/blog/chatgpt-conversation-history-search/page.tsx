@@ -8,8 +8,59 @@ export const metadata: Metadata = {
 };
 
 export default function ChatGPTConversationHistorySearch() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Can I search ChatGPT conversations by content?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Not with ChatGPT\'s built-in search. It only searches titles. To search by content, you need to export your data and use a tool like AI Memory for full-text search.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I find an old ChatGPT conversation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Try the sidebar search first with keywords from the title. If that doesn\'t work, export your data and search the JSON file, or import into AI Memory for instant full-text search across all messages.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does ChatGPT save all my conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, all conversations are saved to your account (unless you\'re in temporary chat mode). However, ChatGPT may occasionally fail to save conversations due to technical issues.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I search across multiple AI platforms at once?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes! AI Memory supports importing from ChatGPT, Claude, DeepSeek, Gemini, and more. You can search all your AI conversations in one place with full-text search.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the best way to search ChatGPT conversation history?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The best method is to export your ChatGPT data and import it into AI Memory, which creates a full-text search index using SQLite FTS5. This lets you search message content, code snippets, and more — not just titles.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">

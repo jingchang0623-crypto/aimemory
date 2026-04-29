@@ -8,8 +8,59 @@ export const metadata: Metadata = {
 };
 
 export default function ChatGPTContextWindowLimit() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What happens when I exceed the ChatGPT context window?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatGPT silently drops the oldest messages from context to stay within the limit. It won\'t warn you — the responses just gradually become less relevant as earlier context is lost.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does ChatGPT remember previous conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No, each conversation is independent (unless you use the Memory feature for specific facts). The context window only applies within a single conversation. To maintain context across conversations, use AI Memory to search your history.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is there a way to increase the ChatGPT context window?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You can\'t increase it beyond what the model supports. However, ChatGPT Pro and API access may provide access to models with larger context windows. The best workaround is managing your conversations efficiently.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I know how many tokens I\'ve used in ChatGPT?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatGPT\'s web interface doesn\'t show a token counter. However, the model typically begins to degrade noticeably when you\'re within 80–90% of the context limit. If responses start feeling less relevant, it\'s time for a fresh conversation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does the ChatGPT Memory feature solve the context window problem?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Partially. ChatGPT\'s Memory feature stores key facts about you across conversations, but it\'s limited in scope. For full conversation history search, AI Memory provides comprehensive access to everything you\'ve discussed.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">

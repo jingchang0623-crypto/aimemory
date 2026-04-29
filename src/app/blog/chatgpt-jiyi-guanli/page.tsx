@@ -18,8 +18,67 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPost() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'ChatGPT记忆满了怎么办？',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '当ChatGPT记忆达到上限时，你需要手动删除不重要的记忆来腾出空间。更好的方案是使用AI Memory导出并管理所有对话，突破1500词的限制。',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: '如何导出ChatGPT全部对话记录？',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '打开ChatGPT，进入Settings → Data Controls → Export Data，确认导出后等待邮件通知，下载ZIP文件即可获得所有对话的JSON格式数据。',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: '有哪些跨平台AI对话管理工具？',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '目前主流的AI对话管理工具有AI Memory、Chat Memo和AI Exporter。其中AI Memory支持多平台导入、全文搜索、记忆注入和MCP Server等功能，且完全免费。',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: '什么是AI记忆注入？',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '记忆注入是AI Memory的核心功能，能够将你过去的对话上下文自动注入到新的AI会话中，让AI真正记住你说过的每句话，突破ChatGPT原生1500词的记忆限制。',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'AI Memory支持哪些AI平台？',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '目前支持ChatGPT、Claude、DeepSeek和Gemini四个主流AI平台，并且还在持续扩展对更多AI平台的支持。',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'AI Memory的MCP Server是什么？',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'MCP（Model Context Protocol）是一个开放标准，让AI助手可以连接外部数据源。AI Memory的MCP Server让你可以通过Claude Desktop、Cursor等工具直接搜索你的对话历史。',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-xl font-bold text-gray-900">🧠 AI Memory</Link>
