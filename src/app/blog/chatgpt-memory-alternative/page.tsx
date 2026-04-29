@@ -6,10 +6,65 @@ export const metadata: Metadata = {
   description: 'Looking for ChatGPT memory alternatives? Compare the best AI memory tools in 2026. See why third-party memory solutions outperform ChatGPT\'s built-in memory.',
   keywords: ['chatgpt memory alternative', 'best ai memory tool', 'chatgpt memory replacement', 'ai memory tool 2026', 'chatgpt memory vs third party', 'alternative to chatgpt memory'],
 };
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Is there a free alternative to ChatGPT memory?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Yes. AI Memory offers a free tier that includes full-text search, import, and storage. It's significantly more capable than ChatGPT's built-in memory and costs nothing to start.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I use ChatGPT memory and AI Memory at the same time?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Absolutely. Many users keep ChatGPT's memory active for quick preferences while using AI Memory as their comprehensive, searchable knowledge base. They complement each other well.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Will AI Memory work with ChatGPT Plus?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. AI Memory works alongside any ChatGPT plan — Free, Plus, Team, or Enterprise. It captures and stores your conversations regardless of your subscription level.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How is AI Memory different from just saving conversations to a folder?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Saving conversation exports to a folder gives you raw JSON files that are difficult to search or browse. AI Memory parses, indexes, and makes everything full-text searchable. It's the difference between a pile of documents and a research database.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: "Can AI Memory replace ChatGPT's memory feature entirely?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "For storage and search — yes, and it's far superior. For real-time personalization within ChatGPT conversations, you'll still benefit from ChatGPT's native memory. The ideal setup is using both: ChatGPT memory for in-session context and AI Memory for everything else.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is my data secure with AI Memory?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'AI Memory takes data security seriously. Your conversations are encrypted in transit and at rest. You maintain ownership of your data and can export or delete it at any time.',
+      },
+    },
+  ],
+};
 
 export default function ChatGPTMemoryAlternative() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">

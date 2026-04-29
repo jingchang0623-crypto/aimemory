@@ -18,6 +18,19 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.14.0',
+    date: '2026-04-29',
+    title: 'FAQPage Schema Expansion — 60% Rich Snippet Coverage',
+    tags: ['SEO', 'Structured Data'],
+    changes: {
+      improved: [
+        'FAQPage JSON-LD added to 5 high-value blogs: chatgpt-history-extension, chatgpt-export-extension, chatgpt-memory-backup, chatgpt-memory-alternative, find-old-chatgpt',
+        'Total blogs with FAQPage rich snippets: 25 out of 42 (60% coverage)',
+        'Targeted highest-traffic keywords first: "chatgpt history extension" (trend avg 21), "chatgpt export extension" (avg 8)',
+      ],
+    },
+  },
+  {
     version: 'v0.13.0',
     date: '2026-04-29',
     title: 'Rich Snippets + New Keywords + FAQPage Schema Expansion',

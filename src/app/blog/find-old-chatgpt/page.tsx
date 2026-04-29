@@ -7,9 +7,68 @@ export const metadata: Metadata = {
   keywords: ['find old chatgpt conversation', 'chatgpt conversation history search', 'search chatgpt history', 'find old chatgpt ai', 'chatgpt conversation not found'],
 };
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How do I find old ChatGPT conversations?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'You can use ChatGPT\'s built-in sidebar search (which only searches titles), export your data and search the JSON file manually, or use a tool like AI Memory that provides full-text search across all your conversations by content.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Why can\'t I find my old ChatGPT conversation?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'ChatGPT\'s sidebar only displays recent conversations and its search feature only matches conversation titles, not content. If you didn\'t give your chat a descriptive title, it may be buried deep in your history and difficult to locate.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I search ChatGPT conversations by content?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'By default, ChatGPT only lets you search by conversation title. To search by content, you need to export your ChatGPT data and search the JSON file manually, or use a dedicated tool like AI Memory that offers full-text content search.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do I export my ChatGPT conversation history?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Go to ChatGPT Settings, then click Data Controls, and select Export Data. You will receive a downloadable ZIP file containing your conversations in JSON format, which you can then search through or import into other tools.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does ChatGPT delete old conversations?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'ChatGPT does not automatically delete old conversations. They remain in your account, but they can be hard to find because the sidebar only shows recent chats and the search only matches titles. Your conversations are still there — they are just difficult to locate.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the best way to organize and search ChatGPT chats?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The best approach is to export your ChatGPT data and use a tool like AI Memory that provides full-text search, highlighted matches, and cross-platform search. This lets you instantly find any conversation by searching for keywords in the actual content.',
+      },
+    },
+  ],
+};
+
 export default function FindOldChatGPT() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">

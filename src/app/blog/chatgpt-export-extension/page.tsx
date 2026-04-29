@@ -8,6 +8,61 @@ export const metadata: Metadata = {
 };
 
 export default function ChatGPTExportExtension() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is the best ChatGPT export extension?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'AI Memory is the best ChatGPT export extension because it offers automatic saving via a Chrome extension, full-text search across all conversations, multi-platform support for ChatGPT, Claude, Gemini, and DeepSeek, and 100% local privacy — all for free.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is there an official ChatGPT export extension from OpenAI?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No. OpenAI provides a built-in data export feature (Settings → Data Controls → Export Data), but it is not a browser extension and is quite basic. The export delivers a ZIP file containing your conversations as raw JSON. Third-party tools like AI Memory provide much more functionality on top of this export.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is it safe to use a ChatGPT export extension?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'It depends on the extension. Some extensions upload your conversations to external servers, which is a privacy risk. AI Memory processes everything locally in your browser — your data never leaves your device. Always check an extension\'s privacy policy before installing it.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I export ChatGPT conversations to a searchable database?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Install the AI Memory Chrome extension to automatically save new conversations, or export your data from ChatGPT (Settings → Data Controls → Export Data) and upload the ZIP file to AI Memory. It will parse, format, and index every conversation for full-text search.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does a ChatGPT export extension work with the free plan?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. The AI Memory Chrome extension works with both ChatGPT Free and ChatGPT Plus. It captures conversations regardless of your subscription tier. The manual import feature also works with exports from any ChatGPT plan.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What happens to my exported ChatGPT data if ChatGPT changes its interface?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'AI Memory is more resilient than scraping-based extensions. The Chrome extension uses stable APIs and data formats rather than relying on ChatGPT\'s DOM structure. If you are importing manually, the JSON export format is controlled by OpenAI and is unlikely to change drastically.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <header className="border-b border-gray-200 bg-white">
@@ -20,6 +75,8 @@ export default function ChatGPTExportExtension() {
 
       <main className="max-w-4xl mx-auto px-4 py-12">
         <article className="prose lg:prose-xl max-w-none">
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+
           <h1>Best ChatGPT Export Extension: How to Save, Export &amp; Search All Your Conversations</h1>
           <p className="text-xl text-gray-600">
             If you use ChatGPT daily, your conversation history is a goldmine of insights, decisions, and knowledge. But ChatGPT&apos;s built-in tools for exporting and searching that history are limited. A good ChatGPT export extension solves this — letting you save, organize, and instantly find any past conversation. Here&apos;s everything you need to know.

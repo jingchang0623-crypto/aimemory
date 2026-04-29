@@ -7,9 +7,68 @@ export const metadata: Metadata = {
   keywords: ['chatgpt history extension', 'chatgpt conversation history', 'save chatgpt history', 'chatgpt history search', 'export chatgpt conversations', 'chatgpt chat backup', 'chatgpt history tool'],
 };
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is a ChatGPT history extension?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A ChatGPT history extension is a tool that helps you save, search, and manage your ChatGPT conversation history beyond what the built-in sidebar offers. The best extensions provide full-text search across message content, multi-platform support, and local privacy — like AI Memory.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do I save my entire ChatGPT conversation history?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'To save your ChatGPT history, go to Settings > Data Controls > Export Data in ChatGPT to download a ZIP file of all your conversations. Then upload that ZIP to AI Memory, which parses every conversation and indexes the full text for instant search. For ongoing backup, install the AI Memory Chrome extension to auto-save new conversations.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I search inside my ChatGPT conversations?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'ChatGPT built-in search only looks at conversation titles. To search inside the actual messages, you need a dedicated history extension with full-text search. AI Memory uses SQLite FTS5 to index every word in every conversation, giving you instant results when searching message content — not just titles.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is AI Memory free for managing ChatGPT history?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, AI Memory is completely free and open-source. There are no premium tiers, no usage limits, and no hidden costs. You can import and search unlimited conversations without paying anything. The Chrome extension that auto-saves new conversations is also free.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do I export all my ChatGPT conversations at once?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Open ChatGPT, click your profile icon, go to Settings > Data Controls, and click Export Data. ChatGPT will email you a download link (usually within minutes) containing a ZIP file with all your conversations in JSON format. Upload that ZIP to AI Memory to get a searchable archive of every conversation.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is my ChatGPT data private when using AI Memory?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. AI Memory processes and stores everything locally in your browser using IndexedDB and SQLite compiled to WebAssembly. No data is sent to external servers, no analytics are collected, and no account is required. Your conversations stay 100% private on your device.',
+      },
+    },
+  ],
+};
+
 export default function ChatGPTHistoryExtension() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">

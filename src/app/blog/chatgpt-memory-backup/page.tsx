@@ -8,6 +8,61 @@ export const metadata: Metadata = {
 };
 
 export default function ChatGPTMemoryBackup() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How do I backup my ChatGPT memories?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You can backup ChatGPT memories by going to Settings → Data Controls → Export Data, which downloads a ZIP file with all your data including conversations. For memories specifically, you can also manually screenshot or copy them from Settings → Personalization → Memory, or use AI Memory to automatically parse and store your exported data.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does ChatGPT automatically backup memories?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No. ChatGPT stores memories on OpenAI\'s servers, but there is no user-facing backup or versioning system. If a memory is deleted — either by you or by the system when it\'s full — it\'s gone permanently. Regular manual backups are essential.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I restore deleted ChatGPT memories?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No. Once a memory is deleted from ChatGPT, there is no way to restore it through the ChatGPT interface. This is why regular backups are essential. If you\'ve previously exported your data, you may be able to recover some information from that export.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How often should I backup my ChatGPT data?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Heavy daily users should backup weekly, moderate users should backup monthly, and everyone should backup before any major change like clearing memory or switching accounts. If you notice ChatGPT acting differently or forgetting things, backup immediately.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What format does ChatGPT export data come in?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ChatGPT exports data as a ZIP file containing JSON files. Conversations are in conversations.json and memories may be in a separate file. The format is machine-readable but not easily browsable without tools like AI Memory which transforms the data into a searchable knowledge base.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the best tool to backup ChatGPT memories?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'AI Memory is the most comprehensive tool for backing up ChatGPT memories. It offers one-click import of your ChatGPT export file, full-text search across all conversations, permanent secure storage, and cross-platform support for ChatGPT, Claude, Gemini, and more.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <header className="border-b border-gray-200 bg-white">
@@ -20,6 +75,8 @@ export default function ChatGPTMemoryBackup() {
 
       <main className="max-w-4xl mx-auto px-4 py-12">
         <article className="prose lg:prose-xl max-w-none">
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+
           <h1>How to Backup ChatGPT Memory: Complete Guide</h1>
           <p className="text-xl text-gray-600">
             Your ChatGPT memories represent months of personalized context. One accidental deletion, account issue, or policy change could wipe them out. Here&apos;s how to backup everything — and why you should do it today.
