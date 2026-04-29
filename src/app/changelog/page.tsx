@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.19.0',
+    date: '2026-04-30',
+    title: 'Developer & Backup Niche + Claude Projects Coverage',
+    tags: ['SEO', 'Content', 'Developers'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT Conversation Backup Guide" — targets "chatgpt conversation backup" and "backup chatgpt chats" high-intent keywords, FAQPage schema (6 questions)',
+        'New blog: "Claude Projects Guide" — targets trending "claude projects" keyword with comparison to ChatGPT Custom Instructions, FAQPage schema (6 questions)',
+        'New blog: "AI Memory for Developers" — developer audience targeting Cursor, Windsurf, GitHub Copilot users, FAQPage schema (6 questions)',
+      ],
+      improved: [
+        'Blog registry expanded to 54 posts (50 English + 4 Chinese)',
+        'Sitemap expanded to 66 URLs',
+        'New categories: Developers (coding assistant memory), Backup (data preservation)',
+      ],
+    },
+    },
+    {
     version: 'v0.18.0',
     date: '2026-04-30',
     title: 'Platform Expansion: Kimi AI, Microsoft Copilot & ChatGPT Canvas',

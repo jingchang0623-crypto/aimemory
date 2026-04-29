@@ -389,6 +389,9 @@ No accounts. No cloud uploads. No tracking. Your data is stored on our server in
               { title: 'ChatGPT Canvas Guide', href: '/blog/chatgpt-canvas-guide' },
               { title: 'Export Kimi AI', href: '/blog/export-kimi-ai' },
               { title: 'Export Microsoft Copilot', href: '/blog/export-microsoft-copilot' },
+              { title: 'ChatGPT Conversation Backup', href: '/blog/chatgpt-conversation-backup-guide' },
+              { title: 'Claude Projects Guide', href: '/blog/claude-projects-guide' },
+              { title: 'AI Memory for Developers', href: '/blog/ai-memory-for-developers' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}
