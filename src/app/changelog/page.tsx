@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.17.0',
+    date: '2026-04-30',
+    title: 'Pain-Point & Migration Keywords + Blue Ocean Platform Coverage',
+    tags: ['SEO', 'Content', 'Keywords'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT Memory Not Working" — pain-point troubleshooting guide targeting "chatgpt memory not working" keyword, FAQPage schema (6 questions)',
+        'New blog: "Transfer ChatGPT to Claude" — migration guide targeting "transfer chatgpt to claude" keyword, FAQPage schema (6 questions)',
+        'New blog: "Perplexity AI History" — blue ocean keyword targeting emerging Perplexity AI platform, FAQPage schema (6 questions)',
+      ],
+      improved: [
+        'Blog registry expanded to 50 posts (44 English + 4 Chinese + 2 new)',
+        'Sitemap expanded to 60 URLs',
+        'New category: Migration (cross-platform conversation transfer)',
+        'New category: Platforms (AI platform-specific guides)',
+      ],
+    },
+  },
+  {
     version: 'v0.16.0',
     date: '2026-04-29',
     title: 'Platform-Specific Memory Guides + Conversation Organization',
