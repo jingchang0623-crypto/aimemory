@@ -18,6 +18,19 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.18.0',
+    date: '2026-04-30',
+    title: 'Platform Expansion: Kimi AI, Microsoft Copilot & ChatGPT Canvas',
+    tags: ['SEO', 'Content', 'Platforms'],
+    changes: {
+      added: [
+        'New blog: "Export Kimi AI Conversations" — Chinese market expansion targeting Moonshot AI\'s Kimi platform, FAQPage schema (6 questions)',
+        'New blog: "Export Microsoft Copilot Chat History" — Microsoft ecosystem coverage targeting Edge/Windows/M365 users, FAQPage schema (6 questions)',
+        'New blog: "ChatGPT Canvas Guide" — new feature guide targeting high-volume "chatgpt canvas" keyword, FAQPage schema (6 questions)',
+      ],
+    },
+    },
+    {
     version: 'v0.17.0',
     date: '2026-04-30',
     title: 'Pain-Point & Migration Keywords + Blue Ocean Platform Coverage',
