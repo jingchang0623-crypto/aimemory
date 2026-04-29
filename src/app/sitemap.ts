@@ -326,6 +326,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/blog/ai-memory-management-tools-2026`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
+    },
+    {
+      url: `${baseUrl}/blog/gemini-memory`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/deepseek-memory`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/organize-ai-conversations`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
       priority: 0.8,
     },
   ];

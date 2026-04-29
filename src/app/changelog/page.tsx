@@ -17,6 +17,24 @@ export const metadata: Metadata = {
 };
 
 const releases = [
+    {
+    version: 'v0.16.0',
+    date: '2026-04-29',
+    title: 'Platform-Specific Memory Guides + Conversation Organization',
+    tags: ['SEO', 'Content', 'Cross-Platform'],
+    changes: {
+      added: [
+        'New blog: "Gemini Memory" — comprehensive guide to Google Gemini memory feature, targeting "gemini memory" / "google gemini memory" keywords, FAQPage schema (6 questions)',
+        'New blog: "DeepSeek Memory" — targets "deepseek memory" / "does deepseek have memory" pain-point keywords, FAQPage schema (6 questions)',
+        'New blog: "How to Organize AI Conversations" — cross-platform organization guide targeting "organize ai conversations" keywords, FAQPage schema (6 questions)',
+      ],
+      improved: [
+        'All 4 AI platforms now have dedicated memory guides (ChatGPT, Claude, DeepSeek, Gemini)',
+        'Sitemap expanded to 57 URLs',
+        'Homepage Guides section updated with 3 new blog links',
+      ],
+    },
+  },
   {
     version: 'v0.15.0',
     date: '2026-04-29',
