@@ -642,6 +642,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['chatgpt', 'pricing', 'comparison', 'team', 'plans'],
     lang: 'en',
   },
+  // === ChatGPT Team Deep Dive ===
+  {
+    slug: 'chatgpt-team-features',
+    title: 'ChatGPT Team Features: Everything You Need to Know (2026)',
+    description: 'Complete guide to ChatGPT Team features, pricing, and benefits. Learn about extended context, admin console, shared GPTs, and how to manage team conversations.',
+    category: 'Guides',
+    date: '2026-04-30',
+    readTime: '15 min',
+    keywords: ['chatgpt team features', 'chatgpt team pricing', 'chatgpt for teams', 'openai chatgpt team', 'chatgpt team vs plus', 'chatgpt workspace'],
+    tags: ['chatgpt', 'team', 'features', 'pricing', 'workspace', 'enterprise'],
+    lang: 'en',
+  },
   // === Blue Ocean Platforms ===
   {
     slug: 'export-grok-ai',

@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.22.0',
+    date: '2026-04-30',
+    title: 'Blog Index Refactor + ChatGPT Team Features Deep Dive',
+    tags: ['SEO', 'Architecture', 'Content'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT Team Features: Everything You Need to Know" — deep dive targeting "chatgpt team features", "chatgpt team pricing", "chatgpt for teams", FAQPage schema (6 questions)',
+      ],
+      improved: [
+        'Blog index page refactored to use centralized blog-data.ts registry — all 61 posts now visible (was 27)',
+        'Blog index now shows read time and language badges for each post',
+        'Blog index category filter expanded: added Platforms, Migration, Developers, Privacy',
+        'BlogPosting JSON-LD schema now covers all posts (was partial)',
+        'Sitemap expanded to 73 URLs',
+      ],
+    },
+    },
+    {
     version: 'v0.21.0',
     date: '2026-04-30',
     title: 'High-Value Comparison Keywords + Cross-Platform Migration + Pricing Analysis',
