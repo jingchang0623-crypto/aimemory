@@ -18,6 +18,23 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.23.0',
+    date: '2026-04-30',
+    title: 'Custom Instructions + Workspace Guide — High-Intent Keywords',
+    tags: ['SEO', 'Content', 'Enterprise'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT Custom Instructions: Complete Guide with Examples" — high-volume keyword targeting "chatgpt custom instructions", "custom instructions vs memory", FAQPage schema (6 questions), role-based examples (engineer, PM, data scientist, marketer, student)',
+        'New blog: "ChatGPT Workspace Guide: Team & Enterprise Setup" — enterprise keyword targeting "chatgpt workspace", "chatgpt for business", "chatgpt enterprise", FAQPage schema (6 questions), Team vs Enterprise comparison table',
+      ],
+      improved: [
+        'Blog registry expanded to 66 posts (62 English + 4 Chinese)',
+        'Sitemap expanded to 75 URLs',
+        'Homepage guides section expanded with 2 new blog links',
+      ],
+    },
+    },
+    {
     version: 'v0.22.0',
     date: '2026-04-30',
     title: 'Blog Index Refactor + ChatGPT Team Features Deep Dive',

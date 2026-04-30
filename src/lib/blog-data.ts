@@ -666,6 +666,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['grok', 'export', 'x-ai', 'twitter', 'cross-platform'],
     lang: 'en',
   },
+  // === ChatGPT Workspace Guide (enterprise/team keyword) ===
+  {
+    slug: 'chatgpt-workspace-guide',
+    title: 'ChatGPT Workspace Guide: Team & Enterprise Setup for Business (2026)',
+    description: 'Complete guide to ChatGPT workspace for teams and enterprises. Set up, manage, and optimize your ChatGPT team workspace for business.',
+    category: 'Guides',
+    date: '2026-04-30',
+    readTime: '16 min',
+    keywords: ['chatgpt workspace', 'chatgpt team workspace', 'chatgpt for business', 'chatgpt enterprise', 'chatgpt workspace setup'],
+    tags: ['chatgpt', 'workspace', 'team', 'enterprise', 'business', 'admin'],
+    lang: 'en',
+  },
   // === Feature Guides ===
   {
     slug: 'chatgpt-shared-conversations',
@@ -676,6 +688,18 @@ export const blogPosts: BlogPost[] = [
     readTime: '11 min',
     keywords: ['chatgpt shared conversations', 'chatgpt share link', 'share chatgpt conversation', 'chatgpt public link', 'chatgpt conversation sharing'],
     tags: ['chatgpt', 'sharing', 'privacy', 'export'],
+    lang: 'en',
+  },
+  // === Custom Instructions Guide ===
+  {
+    slug: 'chatgpt-custom-instructions',
+    title: 'ChatGPT Custom Instructions: Complete Guide with Examples (2026)',
+    description: 'Master ChatGPT custom instructions with real examples. Learn how to set up, optimize, and combine custom instructions with memory for better AI conversations.',
+    category: 'Guides',
+    date: '2026-04-30',
+    readTime: '14 min',
+    keywords: ['chatgpt custom instructions', 'how to use chatgpt custom instructions', 'chatgpt custom instructions examples', 'chatgpt custom instructions vs memory', 'chatgpt personalized responses'],
+    tags: ['chatgpt', 'custom-instructions', 'memory', 'personalization', 'settings'],
     lang: 'en',
   },
 ];
