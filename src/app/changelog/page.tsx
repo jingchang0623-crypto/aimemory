@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.25.0',
+    date: '2026-05-01',
+    title: 'ChatGPT Projects + Cross-Platform Search + Coding Comparison — Developer Focus',
+    tags: ['SEO', 'Content', 'Developers'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT Projects: Complete Guide" — targeting trending "chatgpt projects" feature keyword, FAQPage schema (6 questions), 5-step walkthrough, Projects vs regular conversations comparison table',
+        'New blog: "How to Search Across All AI Chats" — high-intent product keyword, 5 methods comparison, AI Memory FTS5 cross-platform search solution, FAQPage schema (6 questions)',
+        'New blog: "Claude vs ChatGPT for Coding" — high-volume developer comparison keyword, side-by-side comparison table (9 categories), pricing breakdown, FAQPage schema (6 questions)',
+      ],
+      improved: [
+        'Blog registry expanded to 71 posts (67 English + 4 Chinese)',
+        'Sitemap expanded to 81 URLs',
+        'Homepage guides section expanded with 3 new blog links',
+        'Fixed research-progress.sh cron script (converted from bash to Python for cron compatibility)',
+      ],
+    },
+    },
+    {
     version: 'v0.24.0',
     date: '2026-05-01',
     title: 'Claude Artifacts + Delete History + Pro vs Plus — Trending Keywords',

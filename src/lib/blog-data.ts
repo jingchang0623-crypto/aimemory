@@ -738,6 +738,42 @@ export const blogPosts: BlogPost[] = [
     tags: ['chatgpt', 'pricing', 'plans', 'comparison', 'pro', 'plus', 'memory'],
     lang: 'en',
   },
+  // === ChatGPT Projects Guide (trending feature keyword) ===
+  {
+    slug: 'chatgpt-projects-guide',
+    title: 'ChatGPT Projects: Complete Guide to Organizing Your AI Workflows (2026)',
+    description: 'Everything you need to know about ChatGPT Projects — how to create, use, and organize projects for software development, content creation, data analysis, and more.',
+    category: 'Guides',
+    date: '2026-05-01',
+    readTime: '16 min',
+    keywords: ['chatgpt projects', 'chatgpt project feature', 'how to use chatgpt projects', 'chatgpt projects guide', 'chatgpt organize conversations'],
+    tags: ['chatgpt', 'projects', 'organization', 'workflow', 'productivity', 'guide'],
+    lang: 'en',
+  },
+  // === Search All AI Chats (high-intent product keyword) ===
+  {
+    slug: 'search-all-ai-chats',
+    title: 'How to Search Across All Your AI Chats: Complete Guide (2026)',
+    description: 'Learn how to search across ChatGPT, Claude, DeepSeek, and Gemini conversations. Compare 5 methods including native search, browser tools, and AI Memory for cross-platform search.',
+    category: 'Guides',
+    date: '2026-05-01',
+    readTime: '14 min',
+    keywords: ['search ai chats', 'find ai conversation', 'search chatgpt history', 'cross-platform ai search', 'ai conversation search'],
+    tags: ['search', 'cross-platform', 'chatgpt', 'claude', 'deepseek', 'organization', 'guide'],
+    lang: 'en',
+  },
+  // === Claude vs ChatGPT for Coding (high-volume developer keyword) ===
+  {
+    slug: 'claude-vs-chatgpt-coding',
+    title: 'Claude vs ChatGPT for Coding: Which AI Is Better for Developers? (2026)',
+    description: 'Comprehensive comparison of Claude and ChatGPT for coding — code quality, debugging, context windows, language support, pricing, and best practices for developers.',
+    category: 'Comparisons',
+    date: '2026-05-01',
+    readTime: '18 min',
+    keywords: ['claude vs chatgpt coding', 'best ai for coding 2026', 'chatgpt vs claude developers', 'ai coding assistant comparison', 'claude vs chatgpt for developers'],
+    tags: ['claude', 'chatgpt', 'coding', 'comparison', 'developers', 'programming'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */
