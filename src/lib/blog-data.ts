@@ -606,6 +606,42 @@ export const blogPosts: BlogPost[] = [
     tags: ['developer', 'cursor', 'coding', 'memory', 'search'],
     lang: 'en',
   },
+  // === ChatGPT vs Gemini Comparison (high-value keyword) ===
+  {
+    slug: 'chatgpt-vs-gemini',
+    title: 'ChatGPT vs Gemini 2026: Memory, Features & Data Export Compared',
+    description: 'ChatGPT vs Gemini in 2026 — compare memory, context windows, data export, pricing, code features, and more. Find out which AI assistant is right for you.',
+    category: 'Comparisons',
+    date: '2026-04-30',
+    readTime: '14 min',
+    keywords: ['chatgpt vs gemini', 'gemini vs chatgpt', 'is gemini better than chatgpt', 'chatgpt or gemini', 'google gemini vs chatgpt 2026'],
+    tags: ['chatgpt', 'gemini', 'comparison', 'ai-memory', 'data-export'],
+    lang: 'en',
+  },
+  // === Cross-Platform Migration Guide ===
+  {
+    slug: 'export-import-ai-chat-history',
+    title: 'How to Export and Import AI Chat History Across Platforms',
+    description: 'Complete guide to exporting and importing AI chat history from ChatGPT, Claude, DeepSeek, Gemini, and more. Transfer conversations seamlessly across platforms.',
+    category: 'Guides',
+    date: '2026-04-30',
+    readTime: '15 min',
+    keywords: ['export import ai chat history', 'transfer ai conversations', 'move chatgpt to claude', 'ai chat migration', 'export ai conversations'],
+    tags: ['export', 'import', 'migration', 'cross-platform', 'backup', 'chat-history'],
+    lang: 'en',
+  },
+  // === ChatGPT Pricing Comparison ===
+  {
+    slug: 'chatgpt-team-vs-plus-vs-free',
+    title: 'ChatGPT Team vs Plus vs Free 2026: Complete Plan Comparison',
+    description: 'Compare ChatGPT Free, Plus, Team, and Enterprise plans in 2026. Features, pricing, memory limits, data export — find the right plan for your needs.',
+    category: 'Comparisons',
+    date: '2026-04-30',
+    readTime: '13 min',
+    keywords: ['chatgpt team vs plus', 'chatgpt free vs paid', 'chatgpt plus worth it 2026', 'chatgpt pricing', 'chatgpt plans comparison'],
+    tags: ['chatgpt', 'pricing', 'comparison', 'team', 'plans'],
+    lang: 'en',
+  },
   // === Blue Ocean Platforms ===
   {
     slug: 'export-grok-ai',

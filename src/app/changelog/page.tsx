@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.21.0',
+    date: '2026-04-30',
+    title: 'High-Value Comparison Keywords + Cross-Platform Migration + Pricing Analysis',
+    tags: ['SEO', 'Content', 'Comparisons'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT vs Gemini 2026" — comparison keyword targeting "chatgpt vs gemini", "is gemini better than chatgpt", feature comparison table, FAQPage schema (6 questions)',
+        'New blog: "How to Export and Import AI Chat History" — cross-platform migration guide targeting "export import ai chat history", "transfer ai conversations", FAQPage schema (6 questions)',
+        'New blog: "ChatGPT Team vs Plus vs Free 2026" — pricing comparison targeting "chatgpt team vs plus", "chatgpt free vs paid", FAQPage schema (6 questions)',
+      ],
+      improved: [
+        'Blog registry expanded to 60 posts (56 English + 4 Chinese)',
+        'Sitemap expanded to 72 URLs',
+        'New categories: Cross-Platform Migration, Pricing Comparisons',
+        'Homepage guides section expanded with 3 new blog links',
+      ],
+    },
+    },
+    {
     version: 'v0.20.0',
     date: '2026-04-30',
     title: 'Blue Ocean Platform + Pain-Point Keywords + Privacy Guide',
