@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.20.0',
+    date: '2026-04-30',
+    title: 'Blue Ocean Platform + Pain-Point Keywords + Privacy Guide',
+    tags: ['SEO', 'Content', 'Blue Ocean'],
+    changes: {
+      added: [
+        'New blog: "How to Delete ChatGPT Memory" — pain-point keyword targeting "how to delete chatgpt memory", "clear chatgpt memory", FAQPage schema (6 questions)',
+        'New blog: "Export Grok AI Conversations" — blue ocean platform targeting X/Twitter Grok AI with zero competition, FAQPage schema (6 questions)',
+        'New blog: "ChatGPT Shared Conversations" — feature-specific keyword targeting "chatgpt shared conversations", privacy concerns coverage, FAQPage schema (6 questions)',
+      ],
+      improved: [
+        'Blog registry expanded to 57 posts (53 English + 4 Chinese)',
+        'Sitemap expanded to 69 URLs',
+        'New categories: Blue Ocean (emerging AI platforms), Feature Guides (ChatGPT features)',
+        'Homepage guides section expanded with 3 new blog links',
+      ],
+    },
+    },
+    {
     version: 'v0.19.0',
     date: '2026-04-30',
     title: 'Developer & Backup Niche + Claude Projects Coverage',

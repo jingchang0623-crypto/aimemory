@@ -185,6 +185,17 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
   {
+    slug: 'delete-chatgpt-memory',
+    title: 'How to Delete ChatGPT Memory - Complete 2026 Guide',
+    description: "Learn how to delete ChatGPT memory step-by-step. 3 methods to clear ChatGPT memory, remove saved memories, and manage your AI privacy. Includes a safer alternative that preserves your data.",
+    category: 'Guides',
+    date: '2026-04-30',
+    readTime: '12 min',
+    keywords: ['how to delete chatgpt memory', 'delete chatgpt memories', 'clear chatgpt memory', 'remove chatgpt saved memories', 'chatgpt memory management'],
+    tags: ['chatgpt', 'memory', 'delete', 'privacy'],
+    lang: 'en',
+  },
+  {
     slug: 'ai-conversation-disappeared',
     title: 'AI Conversation Disappeared? How to Recover',
     description: 'Your AI conversation disappeared? Learn how to recover lost ChatGPT, Claude and DeepSeek conversations.',
@@ -593,6 +604,30 @@ export const blogPosts: BlogPost[] = [
     readTime: '14 min',
     keywords: ['cursor ai memory', 'ai coding assistant memory', 'developer ai conversations', 'ai pair programming memory', 'search cursor history'],
     tags: ['developer', 'cursor', 'coding', 'memory', 'search'],
+    lang: 'en',
+  },
+  // === Blue Ocean Platforms ===
+  {
+    slug: 'export-grok-ai',
+    title: 'How to Export Grok AI Conversations - Complete Guide',
+    description: 'Export your Grok AI (X/Twitter) conversations with multiple methods. Save, search, and manage Grok chats alongside ChatGPT and Claude.',
+    category: 'Export Guides',
+    date: '2026-04-30',
+    readTime: '12 min',
+    keywords: ['export grok ai', 'grok ai conversations', 'save grok conversations', 'grok ai history', 'x ai export', 'twitter grok export'],
+    tags: ['grok', 'export', 'x-ai', 'twitter', 'cross-platform'],
+    lang: 'en',
+  },
+  // === Feature Guides ===
+  {
+    slug: 'chatgpt-shared-conversations',
+    title: 'ChatGPT Shared Conversations - Complete Guide',
+    description: 'Everything about ChatGPT shared conversation links — how to share, privacy concerns, limitations, and better alternatives for conversation management.',
+    category: 'Guides',
+    date: '2026-04-30',
+    readTime: '11 min',
+    keywords: ['chatgpt shared conversations', 'chatgpt share link', 'share chatgpt conversation', 'chatgpt public link', 'chatgpt conversation sharing'],
+    tags: ['chatgpt', 'sharing', 'privacy', 'export'],
     lang: 'en',
   },
 ];

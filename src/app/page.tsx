@@ -392,6 +392,9 @@ No accounts. No cloud uploads. No tracking. Your data is stored on our server in
               { title: 'ChatGPT Conversation Backup', href: '/blog/chatgpt-conversation-backup-guide' },
               { title: 'Claude Projects Guide', href: '/blog/claude-projects-guide' },
               { title: 'AI Memory for Developers', href: '/blog/ai-memory-for-developers' },
+              { title: 'Delete ChatGPT Memory', href: '/blog/delete-chatgpt-memory' },
+              { title: 'Export Grok AI', href: '/blog/export-grok-ai' },
+              { title: 'ChatGPT Shared Conversations', href: '/blog/chatgpt-shared-conversations' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}
