@@ -9,8 +9,7 @@ export function middleware(request: NextRequest) {
   response.headers.set('X-Content-Type-Options', 'nosniff');
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
   response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
-  // HSTS — set here AND in nginx (deploy nginx config to remove this duplication)
-  response.headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+  // HSTS is set in nginx (edge proxy) — do NOT duplicate here
 
   // CSP - allow inline styles (needed for Tailwind), block inline scripts except Next.js
   response.headers.set(
