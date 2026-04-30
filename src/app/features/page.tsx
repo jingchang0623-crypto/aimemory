@@ -1,9 +1,13 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Features & Pricing - AI Memory',
   description: 'Explore AI Memory features: import from ChatGPT, Claude, DeepSeek & Gemini. Full-text search, Chrome extension auto-save, 100% private local storage.',
+  alternates: {
+    canonical: 'https://aimemory.pro/features',
+  },
 };
 
 const features = [

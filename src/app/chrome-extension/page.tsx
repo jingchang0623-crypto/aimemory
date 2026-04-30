@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'AI Memory Chrome Extension - Auto-Save AI Conversations',
   description: 'Download the AI Memory Chrome extension to automatically save your ChatGPT, Claude, DeepSeek and Gemini conversations. Never lose an AI chat again.',
   keywords: ['Chrome extension', 'AI memory', 'ChatGPT extension', 'Claude extension', 'save AI chats'],
+  alternates: {
+    canonical: 'https://aimemory.pro/chrome-extension',
+  },
 };
 
 export default function ChromeExtension() {

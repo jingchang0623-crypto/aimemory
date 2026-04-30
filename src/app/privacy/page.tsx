@@ -1,9 +1,13 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Privacy Policy - AI Memory',
   description: 'AI Memory privacy policy. All data is stored locally on your device. No cloud uploads, no tracking, no third-party data sharing.',
+  alternates: {
+    canonical: 'https://aimemory.pro/privacy',
+  },
 };
 
 export default function PrivacyPage() {

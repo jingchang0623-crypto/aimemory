@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Pricing - AI Memory | Free Forever, Pro Features Coming',
   description: 'AI Memory is free for personal use. Import unlimited conversations from ChatGPT, Claude, DeepSeek & Gemini. Pro features coming soon.',
   keywords: ['AI memory pricing', 'chatgpt extension free', 'AI conversation manager pricing'],
+  alternates: {
+    canonical: 'https://aimemory.pro/pricing',
+  },
 };
 
 export default function PricingPage() {

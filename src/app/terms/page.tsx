@@ -1,9 +1,13 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Terms of Service - AI Memory',
   description: 'AI Memory terms of service. Free tool, no warranty, you own your data.',
+  alternates: {
+    canonical: 'https://aimemory.pro/terms',
+  },
 };
 
 export default function TermsPage() {
