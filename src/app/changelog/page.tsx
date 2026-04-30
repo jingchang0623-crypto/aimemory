@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.24.0',
+    date: '2026-05-01',
+    title: 'Claude Artifacts + Delete History + Pro vs Plus — Trending Keywords',
+    tags: ['SEO', 'Content', 'Claude'],
+    changes: {
+      added: [
+        'New blog: "Claude Artifacts: Complete Guide" — targeting extremely trending "claude artifacts" keyword, FAQPage schema (6 questions), Artifacts vs Canvas comparison table, 6 practical use cases',
+        'New blog: "How to Delete ChatGPT History" — high-volume pain-point keyword, FAQPage schema (6 questions), GDPR coverage, export-before-delete workflow with AI Memory CTA',
+        'New blog: "ChatGPT Pro vs Plus vs Free" — commercial-intent pricing keyword, FAQPage schema (6 questions), full pricing comparison table, plan recommendation guide',
+      ],
+      improved: [
+        'Blog registry expanded to 69 posts (65 English + 4 Chinese)',
+        'Sitemap expanded to 78 URLs',
+        'Homepage guides section expanded with 3 new blog links',
+      ],
+    },
+    },
+    {
     version: 'v0.23.0',
     date: '2026-04-30',
     title: 'Custom Instructions + Workspace Guide — High-Intent Keywords',

@@ -702,6 +702,42 @@ export const blogPosts: BlogPost[] = [
     tags: ['chatgpt', 'custom-instructions', 'memory', 'personalization', 'settings'],
     lang: 'en',
   },
+  // === Claude Artifacts Guide (trending high-volume keyword) ===
+  {
+    slug: 'claude-artifacts-guide',
+    title: 'Claude Artifacts: Complete Guide to Creating Code, Documents & More (2026)',
+    description: 'Everything you need to know about Claude Artifacts — how to use them, best use cases for code, documents, diagrams, and websites, plus how to save and search your artifacts across sessions.',
+    category: 'Guides',
+    date: '2026-05-01',
+    readTime: '18 min',
+    keywords: ['claude artifacts', 'claude ai artifacts', 'how to use claude artifacts', 'claude artifacts guide', 'claude artifacts vs chatgpt canvas', 'claude artifacts examples'],
+    tags: ['claude', 'artifacts', 'guide', 'code', 'documents', 'productivity'],
+    lang: 'en',
+  },
+  // === Delete ChatGPT History (high-volume pain-point keyword) ===
+  {
+    slug: 'delete-chatgpt-history',
+    title: 'How to Delete ChatGPT History: Complete Guide (2026)',
+    description: 'Step-by-step guide to deleting your ChatGPT history on web, mobile, and API. Learn why you should export before deleting and how AI Memory preserves your knowledge permanently.',
+    category: 'Guides',
+    date: '2026-05-01',
+    readTime: '10 min',
+    keywords: ['delete chatgpt history', 'how to delete chatgpt conversations', 'clear chatgpt history', 'remove chatgpt data', 'chatgpt data deletion'],
+    tags: ['chatgpt', 'privacy', 'delete', 'history', 'export', 'gdpr'],
+    lang: 'en',
+  },
+  // === ChatGPT Pro vs Plus (commercial-intent pricing keyword) ===
+  {
+    slug: 'chatgpt-pro-vs-plus',
+    title: 'ChatGPT Pro vs Plus vs Free: Complete Pricing Comparison (2026)',
+    description: 'Compare all ChatGPT plans side by side — Free, Plus ($20/mo), Pro ($200/mo), Team, and Enterprise. Find out which plan is right for you and how memory works across all tiers.',
+    category: 'Guides',
+    date: '2026-05-01',
+    readTime: '12 min',
+    keywords: ['chatgpt pro vs plus', 'chatgpt pricing', 'chatgpt pro', 'chatgpt $200', 'chatgpt plans comparison', 'is chatgpt pro worth it'],
+    tags: ['chatgpt', 'pricing', 'plans', 'comparison', 'pro', 'plus', 'memory'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */
