@@ -27,8 +27,11 @@ export async function generateMetadata(): Promise<Metadata> {
       description: "Import, search and organize all your AI conversations. The best free ChatGPT history extension. 100% private.",
       images: ["https://aimemory.pro/og-image.png"],
     },
-    // canonical is per-page — each page should define its own via metadata export
-    // Root canonical removed to avoid all pages pointing to homepage
+    alternates: {
+      canonical: 'https://aimemory.pro',
+    },
+    // Each child page overrides canonical with its own path via metadata export.
+    // This root canonical only applies to pages that don't export their own (e.g. homepage 'use client').
   };
 }
 
