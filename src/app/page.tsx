@@ -440,6 +440,9 @@ No accounts. No cloud uploads. No tracking. Your data is stored on our server in
               { title: 'ChatGPT Deep Research Guide', href: '/blog/chatgpt-deep-research-guide' },
               { title: 'AI Memory for Business', href: '/blog/ai-memory-for-business' },
               { title: 'Build a Second Brain with AI', href: '/blog/second-brain-ai' },
+              { title: 'ChatGPT Projects vs Memory vs Custom Instructions', href: '/blog/chatgpt-projects-vs-memory-vs-custom-instructions' },
+              { title: 'MCP Protocol for AI Memory', href: '/blog/mcp-protocol-ai-memory-explained' },
+              { title: 'Export AI: Markdown vs PDF vs JSON', href: '/blog/export-ai-conversations-formats' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}

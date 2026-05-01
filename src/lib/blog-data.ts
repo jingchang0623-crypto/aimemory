@@ -947,6 +947,42 @@ export const blogPosts: BlogPost[] = [
     tags: ['productivity', 'second-brain', 'knowledge-management', 'chatgpt', 'claude', 'organization'],
     lang: 'en',
   },
+  // === MCP Protocol AI Memory Explained (SEO pillar page) ===
+  {
+    slug: 'mcp-protocol-ai-memory-explained',
+    title: 'MCP Protocol for AI Memory: Complete Technical Guide (2026)',
+    description: 'Understand how the MCP (Model Context Protocol) connects AI tools like Claude Desktop and Cursor to persistent memory storage. Learn JSON-RPC 2.0 architecture, 113+ supported clients, and how aimemory.pro\'s MCP server works.',
+    category: 'Technical',
+    date: '2026-05-02',
+    readTime: '22 min',
+    keywords: ['mcp protocol ai memory', 'model context protocol', 'mcp protocol', 'mcp ai memory', 'json-rpc 2.0 mcp', 'mcp architecture'],
+    tags: ['mcp', 'protocol', 'technical', 'ai-memory', 'json-rpc', 'architecture', 'claude', 'cursor'],
+    lang: 'en',
+  },
+  // === ChatGPT Projects vs Memory vs Custom Instructions (comparison keyword) ===
+  {
+    slug: 'chatgpt-projects-vs-memory-vs-custom-instructions',
+    title: 'ChatGPT Projects vs Memory vs Custom Instructions: Complete Guide (2026)',
+    description: 'Confused about ChatGPT Projects vs Memory vs Custom Instructions? This guide explains each feature, compares them side by side, and shows you how to use them together.',
+    category: 'Comparisons',
+    date: '2026-05-02',
+    readTime: '15 min',
+    keywords: ['chatgpt projects vs memory vs custom instructions', 'chatgpt memory vs custom instructions', 'chatgpt projects vs memory', 'chatgpt personalization features'],
+    tags: ['chatgpt', 'memory', 'projects', 'custom-instructions', 'comparison'],
+    lang: 'en',
+  },
+  // === Export Formats Comparison (high-intent keyword) ===
+  {
+    slug: 'export-ai-conversations-formats',
+    title: 'Export AI Conversations to Markdown, PDF, or JSON: Best Formats Compared (2026)',
+    description: 'Complete comparison of AI conversation export formats: JSON, Markdown, PDF, and TXT. Learn which format is best for developers, documentation, sharing, and archiving your ChatGPT, Claude, and DeepSeek conversations.',
+    category: 'Export Guides',
+    date: '2026-05-02',
+    readTime: '15 min',
+    keywords: ['export ai conversations', 'ai conversation formats', 'export chatgpt markdown', 'export chatgpt pdf', 'export chatgpt json', 'ai conversation export format'],
+    tags: ['export', 'markdown', 'pdf', 'json', 'formats', 'chatgpt', 'claude'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

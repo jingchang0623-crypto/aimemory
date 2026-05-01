@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.31.0',
+    date: '2026-05-02',
+    title: 'Strategic SEO: Cross-Feature Comparison + MCP Education + Export Formats',
+    tags: ['SEO', 'Comparison', 'MCP', 'Export', 'Content'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT Projects vs Memory vs Custom Instructions: Complete Guide (2026)" — high-intent comparison keyword targeting the 3 ChatGPT personalization features, comparison table across 9 dimensions, FAQPage schema (6 questions)',
+        'New blog: "MCP Protocol for AI Memory Explained (2026)" — developer-focused educational content targeting "mcp protocol ai memory", covers JSON-RPC 2.0 architecture, 113+ supported clients, aimemory.pro MCP server details, FAQPage schema (6 questions)',
+        'New blog: "Export AI Conversations to Markdown, PDF, or JSON (2026)" — export format comparison targeting "export ai conversations markdown pdf json", code examples in Python/JavaScript, FAQPage schema (6 questions)',
+      ],
+      improved: [
+        'Blog registry expanded to 89 posts (85 English + 4 Chinese)',
+        'Sitemap expanded to 97 URLs',
+        'Homepage guides section updated with 3 new blog links',
+        'New content angles: feature comparison education, MCP developer community, export format decision-making',
+      ],
+    },
+    },
+    {
     version: 'v0.30.0',
     date: '2026-05-01',
     title: 'Deep Research + Enterprise + Second Brain — New Audience Expansion',
