@@ -18,6 +18,26 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.28.0',
+    date: '2026-05-01',
+    title: 'Cross-Platform Search + Gemini Coverage + Plugin Positioning — SEO Expansion',
+    tags: ['SEO', 'Content', 'Search', 'Gemini', 'Plugin'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT Memory Plugin: Best Tools to Enhance AI Memory" — targets "chatgpt memory plugin", "chatgpt memory extension", comparison table of 5 plugins, FAQPage schema (6 questions)',
+        'New blog: "How to Save & Export Gemini Conversations" — targets "save gemini conversations", "export gemini chat", 4 methods compared, FAQPage schema (6 questions)',
+        'New blog: "How to Search Across All Your AI Conversations" — targets "search ai conversations", "find old ai chats", 5 methods compared, FAQPage schema (6 questions)',
+      ],
+      improved: [
+        'Blog registry expanded to 80 posts (76 English + 4 Chinese)',
+        'Sitemap expanded to 90 URLs',
+        'Gemini platform coverage expanded (2 blogs now)',
+        'Core use case (search) now has dedicated landing page',
+        'Plugin/extension keyword coverage strengthened',
+      ],
+    },
+    },
+    {
     version: 'v0.27.0',
     date: '2026-05-01',
     title: 'MCP Ecosystem + Competitive Positioning — Strategic SEO Expansion',

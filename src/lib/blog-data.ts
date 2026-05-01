@@ -842,6 +842,42 @@ export const blogPosts: BlogPost[] = [
     tags: ['claude', 'mcp', 'setup', 'desktop', 'tutorial', 'ai-memory', 'guide'],
     lang: 'en',
   },
+  // === ChatGPT Memory Plugin (high-intent product keyword) ===
+  {
+    slug: 'chatgpt-memory-plugin',
+    title: 'ChatGPT Memory Plugin: Best Tools to Enhance AI Memory (2026)',
+    description: 'Looking for a ChatGPT memory plugin? Compare the best memory extensions for ChatGPT in 2026. Save, search, and reuse all your AI conversations.',
+    category: 'Tools',
+    date: '2026-05-01',
+    readTime: '12 min',
+    keywords: ['chatgpt memory plugin', 'chatgpt memory extension', 'chatgpt memory addon', 'chatgpt memory tool', 'enhance chatgpt memory'],
+    tags: ['chatgpt', 'memory', 'plugin', 'extension', 'tools', 'comparison', 'guide'],
+    lang: 'en',
+  },
+  // === Save Gemini Conversations (platform-specific keyword) ===
+  {
+    slug: 'save-gemini-conversations',
+    title: 'How to Save & Export Gemini Conversations (2026 Guide)',
+    description: 'Learn how to save and export your Google Gemini conversations. 4 methods compared: Google Takeout, copy-paste, API, and AI Memory extension.',
+    category: 'Tutorial',
+    date: '2026-05-01',
+    readTime: '10 min',
+    keywords: ['save gemini conversations', 'export gemini chat', 'gemini chat history', 'download gemini conversations', 'gemini data export'],
+    tags: ['gemini', 'export', 'save', 'tutorial', 'backup', 'google', 'guide'],
+    lang: 'en',
+  },
+  // === Search AI Conversations (core use case keyword) ===
+  {
+    slug: 'search-ai-conversations',
+    title: 'How to Search Across All Your AI Conversations (2026)',
+    description: 'Learn how to search across all your AI conversations from ChatGPT, Claude, Gemini, and more. Compare 5 methods for finding old AI chats.',
+    category: 'Tutorial',
+    date: '2026-05-01',
+    readTime: '11 min',
+    keywords: ['search ai conversations', 'find old ai chats', 'search chatgpt history', 'ai chat search tool', 'search across ai platforms'],
+    tags: ['search', 'conversations', 'cross-platform', 'tutorial', 'ai-memory', 'guide'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

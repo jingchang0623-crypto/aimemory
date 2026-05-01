@@ -413,6 +413,9 @@ No accounts. No cloud uploads. No tracking. Your data is stored on our server in
               { title: 'Claude Desktop MCP Setup', href: '/blog/claude-desktop-mcp-setup' },
               { title: 'Best MCP Tools for AI', href: '/blog/mcp-tools-for-ai' },
               { title: 'Mem0 Alternative', href: '/blog/mem0-alternative' },
+              { title: 'ChatGPT Memory Plugin', href: '/blog/chatgpt-memory-plugin' },
+              { title: 'Save Gemini Conversations', href: '/blog/save-gemini-conversations' },
+              { title: 'Search AI Conversations', href: '/blog/search-ai-conversations' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}
