@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.27.0',
+    date: '2026-05-01',
+    title: 'MCP Ecosystem + Competitive Positioning — Strategic SEO Expansion',
+    tags: ['SEO', 'MCP', 'Comparison', 'Competitive', 'Content'],
+    changes: {
+      added: [
+        'New blog: "Claude Desktop MCP Setup Tutorial" — step-by-step guide targeting "claude desktop mcp setup", "how to connect MCP to Claude", FAQPage schema (6 questions)',
+        'New blog: "Best MCP Tools and Servers for AI" — comprehensive MCP ecosystem guide targeting "mcp tools for ai", "best mcp servers", 18 servers categorized, comparison table',
+        'New blog: "Mem0 Alternative" — competitive positioning targeting "mem0 alternative", "mem0 vs ai memory", positions AI Memory as consumer-friendly alternative',
+      ],
+      improved: [
+        'Blog registry expanded to 77 posts (73 English + 4 Chinese)',
+        'Sitemap expanded to 87 URLs',
+        'Strategic MCP content cluster strengthened (4 MCP blogs total)',
+        'Competitive positioning against Mem0 (54.1K stars, $24M funding)',
+      ],
+    },
+    },
+    {
     version: 'v0.26.0',
     date: '2026-05-01',
     title: 'MCP Server Guide + Claude Memory + Cross-Platform Backup — Strategic Content',

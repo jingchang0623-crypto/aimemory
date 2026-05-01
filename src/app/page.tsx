@@ -410,6 +410,9 @@ No accounts. No cloud uploads. No tracking. Your data is stored on our server in
               { title: 'MCP Server Setup Guide', href: '/blog/mcp-server-setup-guide' },
               { title: 'Claude Memory Limit', href: '/blog/claude-memory-limit' },
               { title: 'Backup AI Conversations', href: '/blog/backup-all-ai-conversations' },
+              { title: 'Claude Desktop MCP Setup', href: '/blog/claude-desktop-mcp-setup' },
+              { title: 'Best MCP Tools for AI', href: '/blog/mcp-tools-for-ai' },
+              { title: 'Mem0 Alternative', href: '/blog/mem0-alternative' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}
