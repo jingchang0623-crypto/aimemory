@@ -18,6 +18,27 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.32.0',
+    date: '2026-05-02',
+    title: 'Trending Comparisons + Developer MCP + Gemini Deep Research',
+    tags: ['SEO', 'Comparison', 'MCP', 'Developer', 'Gemini', 'Content'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT Canvas vs Claude Artifacts: Complete Comparison (2026)" — high-value comparison targeting "chatgpt canvas vs claude artifacts", 11-row feature comparison table, FAQPage schema (6 questions)',
+        'New blog: "How to Use MCP with Cursor: Complete Developer Guide (2026)" — developer-focused targeting "mcp cursor" / "cursor mcp setup", step-by-step mcp.json configuration with AI Memory MCP server (https://aimemory.pro/api/mcp), FAQPage schema (6 questions)',
+        'New blog: "Gemini Deep Research: Complete Guide to Google\'s AI Research Mode (2026)" — targets trending "gemini deep research" keyword, comparison with ChatGPT Deep Research, FAQPage schema (6 questions)',
+      ],
+      fixed: [
+        'Sitemap: added 2 missing blog URLs (mcp-tools-for-ai, mem0-alternative)',
+      ],
+      improved: [
+        'Blog registry expanded to 90 posts (86 English + 4 Chinese)',
+        'Sitemap expanded to 100 URLs',
+        'New content angles: AI workspace comparison (Canvas/Artifacts), developer MCP integration (Cursor), trending Google feature (Gemini Deep Research)',
+      ],
+    },
+    },
+    {
     version: 'v0.31.0',
     date: '2026-05-02',
     title: 'Strategic SEO: Cross-Feature Comparison + MCP Education + Export Formats',

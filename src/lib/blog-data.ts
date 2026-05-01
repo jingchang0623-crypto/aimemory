@@ -983,6 +983,42 @@ export const blogPosts: BlogPost[] = [
     tags: ['export', 'markdown', 'pdf', 'json', 'formats', 'chatgpt', 'claude'],
     lang: 'en',
   },
+  // === ChatGPT Canvas vs Claude Artifacts (comparison, trending) ===
+  {
+    slug: 'chatgpt-canvas-vs-claude-artifacts',
+    title: 'ChatGPT Canvas vs Claude Artifacts: Complete Comparison (2026)',
+    description: 'Detailed comparison of ChatGPT Canvas and Claude Artifacts — two powerful AI workspace features. Learn the differences, strengths, and when to use each tool for coding, writing, and collaboration.',
+    category: 'Comparisons',
+    date: '2026-05-02',
+    readTime: '16 min',
+    keywords: ['chatgpt canvas vs claude artifacts', 'chatgpt canvas', 'claude artifacts', 'ai workspace tools', 'chatgpt canvas guide', 'claude artifacts guide'],
+    tags: ['chatgpt', 'claude', 'canvas', 'artifacts', 'comparison', 'workspace', 'productivity'],
+    lang: 'en',
+  },
+  // === MCP Cursor Setup Guide (developer, MCP strategy) ===
+  {
+    slug: 'mcp-cursor-setup-guide',
+    title: 'How to Use MCP with Cursor: Complete Developer Guide (2026)',
+    description: 'Step-by-step guide to setting up MCP servers in Cursor IDE. Connect AI Memory\'s MCP server to search, add, and manage your AI conversations directly from your code editor.',
+    category: 'Technical',
+    date: '2026-05-02',
+    readTime: '18 min',
+    keywords: ['mcp cursor', 'cursor mcp setup', 'mcp server cursor', 'cursor mcp server', 'cursor ide mcp', 'mcp configuration cursor'],
+    tags: ['mcp', 'cursor', 'developer', 'setup', 'ide', 'ai-memory', 'technical'],
+    lang: 'en',
+  },
+  // === Gemini Deep Research Guide (trending Google feature) ===
+  {
+    slug: 'gemini-deep-research-guide',
+    title: 'Gemini Deep Research: Complete Guide to Google\'s AI Research Mode (2026)',
+    description: 'Master Gemini Deep Research — Google\'s powerful AI research feature. Learn how to use it, best prompts, comparison with ChatGPT Deep Research, and how to save your research with AI Memory.',
+    category: 'AI Platform Guides',
+    date: '2026-05-02',
+    readTime: '17 min',
+    keywords: ['gemini deep research', 'google gemini deep research', 'gemini research mode', 'gemini vs chatgpt deep research', 'google ai research tool'],
+    tags: ['gemini', 'google', 'deep-research', 'ai-research', 'comparison', 'chatgpt'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */
