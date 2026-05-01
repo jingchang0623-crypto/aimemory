@@ -6,11 +6,13 @@ import FileUpload from '@/components/FileUpload';
 import SearchBox from '@/components/SearchBox';
 import ConversationList from '@/components/ConversationList';
 import ConversationDetail from '@/components/ConversationDetail';
+import StatsDashboard from '@/components/StatsDashboard';
+import ExportButton from '@/components/ExportButton';
 
 export default function Home() {
   const [refreshTrigger, setRefreshTrigger] = useState(0);
   const [selectedConversation, setSelectedConversation] = useState<string | null>(null);
-  const [activeTab, setActiveTab] = useState<'upload' | 'search' | 'browse'>('upload');
+  const [activeTab, setActiveTab] = useState<'upload' | 'search' | 'browse' | 'stats'>('upload');
   const uploadRef = useRef<HTMLDivElement>(null);
 
   const handleUploadComplete = () => {
@@ -300,13 +302,29 @@ export default function Home() {
             >
               📚 Browse
             </button>
+            <button
+              onClick={() => setActiveTab('stats')}
+              className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                activeTab === 'stats' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
+              }`}
+            >
+              📊 Stats
+            </button>
           </div>
 
           {/* Tab Content */}
           <div className="max-w-2xl mx-auto">
             {activeTab === 'upload' && <FileUpload onUploadComplete={handleUploadComplete} />}
             {activeTab === 'search' && <SearchBox onSelect={setSelectedConversation} />}
-            {activeTab === 'browse' && <ConversationList refreshTrigger={refreshTrigger} onSelect={setSelectedConversation} />}
+            {activeTab === 'browse' && (
+              <div>
+                <div className="flex justify-end mb-3">
+                  <ExportButton variant="button" />
+                </div>
+                <ConversationList refreshTrigger={refreshTrigger} onSelect={setSelectedConversation} />
+              </div>
+            )}
+            {activeTab === 'stats' && <StatsDashboard refreshTrigger={refreshTrigger} />}
           </div>
 
           {/* Conversation Detail Modal */}

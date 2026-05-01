@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import ExportButton from './ExportButton';
 
 interface Message {
   id: string;
@@ -70,12 +71,15 @@ export default function ConversationDetail({
               {conversation.platform} • {conversation.messages.length} messages
             </p>
           </div>
-          <button
-            onClick={onClose}
-            className="text-gray-500 hover:text-gray-700"
-          >
-            ✕
-          </button>
+          <div className="flex items-center gap-2">
+            <ExportButton conversationId={conversationId} conversationTitle={conversation.title} variant="icon" />
+            <button
+              onClick={onClose}
+              className="text-gray-500 hover:text-gray-700"
+            >
+              ✕
+            </button>
+          </div>
         </div>
       </div>
 
