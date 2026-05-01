@@ -419,6 +419,9 @@ No accounts. No cloud uploads. No tracking. Your data is stored on our server in
               { title: 'AI Memory Standard', href: '/blog/ai-memory-standard' },
               { title: 'Connect MCP to Any AI', href: '/blog/connect-mcp-to-ai' },
               { title: 'DeepSeek Memory Guide', href: '/blog/deepseek-ai-complete-guide' },
+              { title: 'ChatGPT Deep Research Guide', href: '/blog/chatgpt-deep-research-guide' },
+              { title: 'AI Memory for Business', href: '/blog/ai-memory-for-business' },
+              { title: 'Build a Second Brain with AI', href: '/blog/second-brain-ai' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}

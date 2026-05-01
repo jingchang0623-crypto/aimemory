@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.30.0',
+    date: '2026-05-01',
+    title: 'Deep Research + Enterprise + Second Brain — New Audience Expansion',
+    tags: ['SEO', 'Enterprise', 'Productivity', 'Research', 'B2B'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT Deep Research: Complete Guide to AI-Powered Research (2026)" — targets trending "chatgpt deep research" keyword, step-by-step guide, comparison table, FAQPage schema (6 questions)',
+        'New blog: "AI Memory for Business: Enterprise Knowledge Management Guide (2026)" — B2B angle targeting "ai memory for business", "enterprise ai memory", ROI analysis, FAQPage schema (6 questions)',
+        'New blog: "How to Build a Second Brain with AI: Complete Guide (2026)" — targets "second brain ai" trending topic, productivity angle, comparison table vs Notion/Obsidian, FAQPage schema (6 questions)',
+      ],
+      improved: [
+        'Blog registry expanded to 86 posts (82 English + 4 Chinese)',
+        'Sitemap expanded to 94 URLs',
+        'New audience segments: researchers (Deep Research), enterprises (B2B), productivity enthusiasts (Second Brain)',
+        'Homepage guides section updated with 3 new blog links',
+      ],
+    },
+    },
+    {
     version: 'v0.29.0',
     date: '2026-05-01',
     title: 'AI Memory Standard + MCP Connectivity + DeepSeek China Market — Strategic SEO Expansion',
