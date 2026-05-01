@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.26.0',
+    date: '2026-05-01',
+    title: 'MCP Server Guide + Claude Memory + Cross-Platform Backup — Strategic Content',
+    tags: ['SEO', 'Content', 'MCP', 'Claude', 'Backup'],
+    changes: {
+      added: [
+        'New blog: "MCP Server Setup Guide" — comprehensive MCP protocol guide targeting "mcp server setup", "model context protocol" keywords, 8-client comparison table, FAQPage schema (6 questions), positions AI Memory MCP Server as the go-to solution',
+        'New blog: "Claude Memory Limit: Everything You Need to Know" — targets "claude memory limit", "claude memory full" pain-point keywords, Claude vs ChatGPT vs Gemini memory comparison table, FAQPage schema (6 questions)',
+        'New blog: "How to Backup All Your AI Conversations" — cross-platform backup guide targeting "backup ai conversations", "save ai chat history", platform-by-platform backup methods for 7 AI platforms, FAQPage schema (6 questions)',
+      ],
+      improved: [
+        'Blog registry expanded to 72 posts (68 English + 4 Chinese)',
+        'Sitemap expanded to 84 URLs',
+        'Homepage guides section expanded with 3 new blog links',
+        'Strategic MCP content supports P0 MCP Server open source launch',
+      ],
+    },
+    },
+    {
     version: 'v0.25.0',
     date: '2026-05-01',
     title: 'ChatGPT Projects + Cross-Platform Search + Coding Comparison — Developer Focus',

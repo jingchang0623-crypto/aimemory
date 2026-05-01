@@ -277,6 +277,17 @@ export const blogPosts: BlogPost[] = [
     tags: ['mcp', 'protocol', 'technical', 'integration'],
     lang: 'en',
   },
+  {
+    slug: 'mcp-server-setup-guide',
+    title: 'How to Set Up MCP Server: Complete Guide for AI Memory',
+    description: 'Learn how to set up MCP server with Claude Desktop, Cursor, Windsurf, Cline, and more. Complete model context protocol setup guide for AI Memory integration.',
+    category: 'Technical',
+    date: '2026-05-01',
+    readTime: '18 min',
+    keywords: ['mcp server setup', 'model context protocol setup', 'mcp server ai', 'how to use mcp server'],
+    tags: ['mcp', 'protocol', 'technical', 'integration', 'setup', 'ai-memory', 'guide'],
+    lang: 'en',
+  },
   // === 中文指南 ===
   {
     slug: 'ai-duihua-daochu',
@@ -772,6 +783,29 @@ export const blogPosts: BlogPost[] = [
     readTime: '18 min',
     keywords: ['claude vs chatgpt coding', 'best ai for coding 2026', 'chatgpt vs claude developers', 'ai coding assistant comparison', 'claude vs chatgpt for developers'],
     tags: ['claude', 'chatgpt', 'coding', 'comparison', 'developers', 'programming'],
+    lang: 'en',
+  },
+  // === Claude Memory Limit (pain-point keyword) ===
+  {
+    slug: 'claude-memory-limit',
+    title: 'Claude Memory Limit: Everything You Need to Know (2026)',
+    description: 'Claude memory limit reached? Learn exactly how Claude memory works, its limits for projects and conversations, what happens when memory is full, and how to manage it effectively.',
+    category: 'Guides',
+    date: '2026-05-01',
+    readTime: '16 min',
+    keywords: ['claude memory limit', 'claude memory full', 'claude memory not working', 'how to clear claude memory', 'claude projects memory'],
+    tags: ['claude', 'memory', 'limit', 'guide', 'troubleshooting', 'projects'],
+    lang: 'en',
+  },
+  {
+    slug: 'backup-all-ai-conversations',
+    title: 'How to Backup All Your AI Conversations: Complete Guide (2026)',
+    description: 'Complete guide to backing up AI conversations across every platform — ChatGPT, Claude, DeepSeek, Gemini, Perplexity, Grok, and Copilot. Manual and automated methods compared.',
+    category: 'Guides',
+    date: '2026-05-01',
+    readTime: '18 min',
+    keywords: ['backup ai conversations', 'save ai chat history', 'ai conversation backup', 'export all ai chats', 'cross-platform ai backup'],
+    tags: ['backup', 'export', 'chatgpt', 'claude', 'deepseek', 'gemini', 'perplexity', 'guide', 'data'],
     lang: 'en',
   },
 ];

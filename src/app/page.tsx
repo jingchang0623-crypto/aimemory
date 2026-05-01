@@ -407,6 +407,9 @@ No accounts. No cloud uploads. No tracking. Your data is stored on our server in
               { title: 'ChatGPT Projects Guide', href: '/blog/chatgpt-projects-guide' },
               { title: 'Search All AI Chats', href: '/blog/search-all-ai-chats' },
               { title: 'Claude vs ChatGPT for Coding', href: '/blog/claude-vs-chatgpt-coding' },
+              { title: 'MCP Server Setup Guide', href: '/blog/mcp-server-setup-guide' },
+              { title: 'Claude Memory Limit', href: '/blog/claude-memory-limit' },
+              { title: 'Backup AI Conversations', href: '/blog/backup-all-ai-conversations' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}
