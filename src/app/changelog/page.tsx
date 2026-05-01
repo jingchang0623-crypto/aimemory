@@ -18,6 +18,27 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.29.0',
+    date: '2026-05-01',
+    title: 'AI Memory Standard + MCP Connectivity + DeepSeek China Market — Strategic SEO Expansion',
+    tags: ['SEO', 'MCP', 'DeepSeek', 'Standard', 'China', 'Strategy'],
+    changes: {
+      added: [
+        'New blog: "The AI Memory Standard" — positions aimemory.pro as the cross-platform memory standard, targets "ai memory standard", "ai memory protocol", comparison table of 5 platforms',
+        'New blog: "Connect MCP Server to Any AI Assistant" — comprehensive MCP setup guide for Claude Desktop, ChatGPT, Cursor, Windsurf, targets "mcp server setup", "mcp claude desktop"',
+        'New blog: "DeepSeek AI Memory Complete Guide 2026" — bilingual EN/CN guide targeting "deepseek memory", "DeepSeek记忆管理", fills China market gap with zero competitor coverage',
+      ],
+      improved: [
+        'Blog registry expanded to 83 posts (79 English + 4 Chinese)',
+        'Sitemap expanded to 91 URLs',
+        'MCP server ecosystem coverage strengthened (4 blogs now)',
+        'DeepSeek platform coverage expanded (3 blogs now)',
+        'Cross-platform memory standard narrative established (first-mover positioning)',
+        'China market content expanded with bilingual DeepSeek guide',
+      ],
+    },
+    },
+    {
     version: 'v0.28.0',
     date: '2026-05-01',
     title: 'Cross-Platform Search + Gemini Coverage + Plugin Positioning — SEO Expansion',
