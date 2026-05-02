@@ -18,6 +18,19 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.34.0',
+    date: '2026-05-02',
+    title: 'Strategic SEO Blogs — Developer APIs, B2B Teams, o3 Memory',
+    tags: ['Blog', 'SEO', 'Developer', 'Teams', 'o3', 'API', 'MCP'],
+    changes: {
+      added: [
+        'New blog: \"ChatGPT API Memory\" — developer-focused guide covering OpenAI Assistants API, MCP protocol, vector databases, and AI Memory MCP server for building custom memory systems. FAQPage schema (6 questions), code examples, comparison table.',
+        'New blog: \"AI Memory for Teams\" — B2B team deployment guide covering ChatGPT Team vs Claude Team vs AI Memory, team architecture, MCP integration for developer teams, security & privacy. FAQPage schema (6 questions).',
+        'New blog: \"ChatGPT o3 Memory Changes\" — timeliness piece covering o3/o4-mini/GPT-4.5 memory handling, reasoning chain preservation, context window comparison, cross-platform memory management. FAQPage schema (6 questions).',
+      ],
+    },
+  },
+  {
     version: 'v0.33.0',
     date: '2026-05-02',
     title: 'Developer Guides — Getting Started + MCP Quickstart',

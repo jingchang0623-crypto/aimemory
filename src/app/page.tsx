@@ -448,6 +448,9 @@ No accounts. No cloud uploads. No tracking. Your data is stored on our server in
               { title: 'Gemini Deep Research Guide', href: '/blog/gemini-deep-research-guide' },
               { title: '🚀 Getting Started Guide', href: '/guides/getting-started' },
               { title: '⚡ MCP Quickstart', href: '/guides/mcp-quickstart' },
+              { title: 'ChatGPT API Memory', href: '/blog/chatgpt-api-memory' },
+              { title: 'AI Memory for Teams', href: '/blog/ai-memory-for-teams' },
+              { title: 'ChatGPT o3 Memory Changes', href: '/blog/chatgpt-o3-memory-changes' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}

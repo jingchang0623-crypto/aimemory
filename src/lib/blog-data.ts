@@ -1019,6 +1019,42 @@ export const blogPosts: BlogPost[] = [
     tags: ['gemini', 'google', 'deep-research', 'ai-research', 'comparison', 'chatgpt'],
     lang: 'en',
   },
+  // === ChatGPT API Memory (developer keyword) ===
+  {
+    slug: 'chatgpt-api-memory',
+    title: 'ChatGPT API Memory: Build Custom AI Memory Systems (2026)',
+    description: 'Learn how to build custom memory systems for ChatGPT using APIs, MCP protocol, and open-source tools. Developer guide to AI conversation memory integration.',
+    category: 'Technical',
+    date: '2026-05-02',
+    readTime: '18 min',
+    keywords: ['chatgpt api memory', 'chatgpt memory api', 'ai memory api', 'mcp memory server', 'chatgpt developer api', 'custom ai memory'],
+    tags: ['chatgpt', 'api', 'developer', 'mcp', 'technical', 'memory', 'integration'],
+    lang: 'en',
+  },
+  // === AI Memory for Teams (B2B keyword) ===
+  {
+    slug: 'ai-memory-for-teams',
+    title: 'AI Memory for Teams: Share & Search Team AI Conversations (2026)',
+    description: 'Guide to team AI memory management. Share ChatGPT, Claude, and DeepSeek conversations across your team. Cross-platform search, MCP integration, and secure team deployment.',
+    category: 'Teams',
+    date: '2026-05-02',
+    readTime: '16 min',
+    keywords: ['ai memory for teams', 'team ai memory', 'share chatgpt conversations', 'team ai chat', 'collaborative ai memory', 'chatgpt team memory'],
+    tags: ['teams', 'collaboration', 'enterprise', 'chatgpt', 'claude', 'sharing', 'deployment'],
+    lang: 'en',
+  },
+  // === ChatGPT o3 Memory Changes (timeliness keyword) ===
+  {
+    slug: 'chatgpt-o3-memory-changes',
+    title: 'ChatGPT o3 Memory: What Changed in 2026',
+    description: 'Everything you need to know about ChatGPT o3 memory in 2026. How o3, o4-mini, and GPT-4.5 handle memory differently. Save and search all your AI conversations.',
+    category: 'AI Platform Guides',
+    date: '2026-05-02',
+    readTime: '15 min',
+    keywords: ['chatgpt o3 memory', 'o3 memory', 'chatgpt memory 2026', 'gpt-4.5 memory', 'o4-mini memory', 'chatgpt reasoning memory'],
+    tags: ['chatgpt', 'o3', 'o4-mini', 'memory', 'reasoning', 'gpt-4.5', 'comparison'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */
