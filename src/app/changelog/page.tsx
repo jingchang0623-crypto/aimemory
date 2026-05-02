@@ -18,6 +18,26 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.38.0',
+    date: '2026-05-03',
+    title: 'Security & Enterprise SEO — Trust-Building Content + Privacy Fix',
+    tags: ['Security', 'Enterprise', 'SEO', 'Privacy', 'Blog'],
+    changes: {
+      added: [
+        'New blog: "AI Memory Security Guide 2026" — comprehensive guide covering AI conversation security risks, data protection best practices, regulatory compliance (GDPR/CCPA/AI Act), and how AI Memory handles security. Targets "ai memory security" and "chatgpt data security" keywords. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "ChatGPT Enterprise Memory" — enterprise-focused guide covering ChatGPT Enterprise vs Team vs Plus memory features, cross-platform search for teams, MCP server deployment, compliance & governance. Targets "chatgpt enterprise memory" and "ai memory for enterprise" keywords. FAQPage JSON-LD (6 questions), Article schema.',
+      ],
+      fixed: [
+        'Features page comparison table: corrected "100% local/private" to "Session-isolated private storage" — aligns with the Round 46 privacy messaging unification.',
+      ],
+      improved: [
+        'Sitemap expanded to 112 URLs (+2 new blog pages)',
+        'Blog registry expanded to 99 posts (95 English + 4 Chinese)',
+        'Homepage Guides section: +2 new links (Security Guide, Enterprise Memory)',
+      ],
+    },
+    },
+    {
     version: 'v0.37.0',
     date: '2026-05-03',
     title: 'Critical Bug Fixes — Privacy Claims, Waitlist, Parsers',

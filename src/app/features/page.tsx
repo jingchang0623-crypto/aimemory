@@ -53,7 +53,7 @@ const comparison = [
   { feature: 'Multi-platform import', aimemory: true, chatmemo: false, aiexporter: false },
   { feature: 'Full-text search', aimemory: true, chatmemo: true, aiexporter: false },
   { feature: 'Chrome extension auto-save', aimemory: true, chatmemo: true, aiexporter: false },
-  { feature: '100% local/private', aimemory: true, chatmemo: false, aiexporter: true },
+  { feature: 'Session-isolated private storage', aimemory: true, chatmemo: false, aiexporter: true },
   { feature: 'No account required', aimemory: true, chatmemo: false, aiexporter: true },
   { feature: 'Cross-platform unified view', aimemory: true, chatmemo: false, aiexporter: false },
   { feature: 'Memory injection (upcoming)', aimemory: true, chatmemo: false, aiexporter: false },

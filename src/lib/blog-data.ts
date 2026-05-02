@@ -1079,6 +1079,32 @@ export const blogPosts: BlogPost[] = [
     tags: ['supermemory', 'comparison', 'alternative', 'open-source', 'mcp', 'memory'],
     lang: 'en',
   },
+
+  // === AI Memory Security Guide 2026 ===
+  {
+    slug: 'ai-memory-security-guide',
+    title: 'AI Memory Security Guide 2026 — Protect Your ChatGPT & AI Conversations',
+    description: 'Complete guide to AI conversation security in 2026. Learn how to protect your ChatGPT, Claude & DeepSeek data from leaks, unauthorized access & training misuse.',
+    category: 'Guides',
+    date: '2026-05-03',
+    readTime: '10 min',
+    keywords: ['ai memory security', 'chatgpt data security', 'protect ai conversations', 'ai conversation privacy', 'ai data protection', 'chatgpt security risks'],
+    tags: ['security', 'privacy', 'enterprise', 'data-protection', 'compliance', 'best-practices'],
+    lang: 'en',
+  },
+
+  // === ChatGPT Enterprise Memory 2026 ===
+  {
+    slug: 'chatgpt-enterprise-memory',
+    title: 'ChatGPT Enterprise Memory — AI Memory Management for Teams (2026)',
+    description: 'How enterprise teams manage AI conversation memory across ChatGPT Enterprise, Claude & DeepSeek. Cross-platform search, compliance, MCP server deployment.',
+    category: 'Enterprise',
+    date: '2026-05-03',
+    readTime: '12 min',
+    keywords: ['chatgpt enterprise memory', 'ai memory for enterprise', 'team ai memory management', 'enterprise ai tools', 'chatgpt team memory', 'ai compliance'],
+    tags: ['enterprise', 'teams', 'chatgpt', 'mcp', 'compliance', 'deployment'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */
