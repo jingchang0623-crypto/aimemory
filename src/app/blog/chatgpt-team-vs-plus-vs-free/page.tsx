@@ -32,8 +32,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const tags = ['chatgpt', 'pricing', 'comparison', 'plans', 'team', 'enterprise'];
-
 const faqJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',

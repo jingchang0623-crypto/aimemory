@@ -32,7 +32,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const tags = ['chatgpt', 'gemini', 'comparison', 'ai-memory', 'data-export'];
 
 const faqJsonLd = {
   '@context': 'https://schema.org',

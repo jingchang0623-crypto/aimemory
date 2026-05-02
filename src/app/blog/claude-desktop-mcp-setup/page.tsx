@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const tags = ['claude', 'mcp', 'setup', 'desktop', 'tutorial', 'ai-memory', 'guide'];
 
 const faqJsonLd = {
   '@context': 'https://schema.org',

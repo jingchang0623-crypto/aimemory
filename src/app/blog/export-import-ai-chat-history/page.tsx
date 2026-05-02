@@ -34,7 +34,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const tags = ['export', 'import', 'migration', 'cross-platform', 'backup', 'chat-history'];
 
 const faqJsonLd = {
   '@context': 'https://schema.org',

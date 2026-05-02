@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.35.0',
+    date: '2026-05-02',
+    title: 'MCP Server Package + GPT-5 Memory Guide + Homepage Social Proof',
+    tags: ['MCP', 'Package', 'GPT-5', 'Blog', 'Homepage', 'Conversion'],
+    changes: {
+      added: [
+        'MCP Server standalone Python package: `pip install aimemory-mcp-server` — proper pyproject.toml, hatchling build, console script entry point, MIT license. Enables 113+ MCP clients to install and run locally.',
+        'New blog: \\"GPT-5 Memory: Complete Guide (2026)\\" — targets trending \\"gpt-5 memory\\" keyword. Covers GPT-5 vs GPT-4 memory differences, 1,500-word limit, cross-platform comparison table, FAQPage schema (6 questions).',
+        'Homepage social proof section: 95+ guides, 5 platforms, 113+ MCP clients, 100% private metrics bar with platform badges.',
+        'MCP docs page: Standalone server download section with pip install instructions, Claude Desktop local config, Cursor local config, 5 tools documentation.',
+      ],
+      improved: [
+        'Sitemap expanded to 108 URLs (1 new blog page)',
+        'Blog registry expanded to 96 posts (92 English + 4 Chinese)',
+        'Homepage conversion: trust signals between hero and product demo sections',
+      ],
+    },
+    },
+    {
     version: 'v0.34.0',
     date: '2026-05-02',
     title: 'Strategic SEO Blogs — Developer APIs, B2B Teams, o3 Memory',

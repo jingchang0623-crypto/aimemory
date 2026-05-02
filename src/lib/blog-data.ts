@@ -1055,6 +1055,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['chatgpt', 'o3', 'o4-mini', 'memory', 'reasoning', 'gpt-4.5', 'comparison'],
     lang: 'en',
   },
+  // === GPT-5 Memory Guide (trending keyword) ===
+  {
+    slug: 'gpt5-memory-guide',
+    title: 'GPT-5 Memory: Complete Guide to ChatGPT Memory Features (2026)',
+    description: 'Everything about GPT-5 memory in 2026 — how it works, limits, differences from GPT-4, and how to search all your GPT-5 conversations.',
+    category: 'AI Platform Guides',
+    date: '2026-05-02',
+    readTime: '16 min',
+    keywords: ['gpt-5 memory', 'chatgpt memory', 'gpt-5 memory limit', 'gpt-5 memory features', 'chatgpt gpt-5', 'gpt5 memory guide'],
+    tags: ['chatgpt', 'gpt-5', 'memory', 'export', 'search', 'comparison', 'guide'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

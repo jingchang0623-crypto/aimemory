@@ -150,6 +150,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Social Proof — Trust Signals */}
+      <section className="pb-12 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 text-center">
+            <div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">95+</div>
+              <div className="text-xs text-gray-500 mt-1">SEO Guides Published</div>
+            </div>
+            <div className="w-px h-8 bg-gray-200 hidden md:block" />
+            <div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">5</div>
+              <div className="text-xs text-gray-500 mt-1">AI Platforms Supported</div>
+            </div>
+            <div className="w-px h-8 bg-gray-200 hidden md:block" />
+            <div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">113+</div>
+              <div className="text-xs text-gray-500 mt-1">MCP Clients Compatible</div>
+            </div>
+            <div className="w-px h-8 bg-gray-200 hidden md:block" />
+            <div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">100%</div>
+              <div className="text-xs text-gray-500 mt-1">Private & Local</div>
+            </div>
+          </div>
+          <div className="flex justify-center items-center gap-4 mt-6 text-xs text-gray-400">
+            <span className="bg-gray-100 px-2 py-1 rounded">ChatGPT</span>
+            <span className="bg-gray-100 px-2 py-1 rounded">Claude</span>
+            <span className="bg-gray-100 px-2 py-1 rounded">DeepSeek</span>
+            <span className="bg-gray-100 px-2 py-1 rounded">Gemini</span>
+            <span className="bg-gray-100 px-2 py-1 rounded">Kimi</span>
+          </div>
+        </div>
+      </section>
+
       {/* The "aha moment" — Visual proof */}
       <section className="pb-20 px-6">
         <div className="max-w-4xl mx-auto">
@@ -451,6 +485,7 @@ No accounts. No cloud uploads. No tracking. Your data is stored on our server in
               { title: 'ChatGPT API Memory', href: '/blog/chatgpt-api-memory' },
               { title: 'AI Memory for Teams', href: '/blog/ai-memory-for-teams' },
               { title: 'ChatGPT o3 Memory Changes', href: '/blog/chatgpt-o3-memory-changes' },
+              { title: 'GPT-5 Memory Guide', href: '/blog/gpt5-memory-guide' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}

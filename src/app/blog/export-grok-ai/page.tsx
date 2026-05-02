@@ -32,7 +32,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const tags = ['grok', 'export', 'x-ai', 'twitter'];
 
 const faqJsonLd = {
   '@context': 'https://schema.org',

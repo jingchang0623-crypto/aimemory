@@ -117,6 +117,79 @@ export default function MCPDocsPage() {
           </div>
         </section>
 
+        {/* Standalone MCP Server */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Standalone MCP Server (Local)</h2>
+          <div className="bg-white rounded-xl border border-gray-200 p-8">
+            <p className="text-gray-600 mb-4">
+              Run AI Memory as a <strong>local MCP server</strong> on your machine — fully offline, no cloud dependency. Install via pip and connect to any MCP client.
+            </p>
+            <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
+              <p className="text-green-800 text-sm font-medium">🆕 New: Install via pip — one command setup</p>
+            </div>
+            <pre className="bg-gray-900 text-gray-100 rounded-lg p-6 overflow-x-auto text-sm mb-4">
+{`# Install
+pip install aimemory-mcp-server
+
+# Run (stdio mode)
+aimemory-mcp-server`}
+            </pre>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3 mt-6">Claude Desktop Config (Local)</h3>
+            <pre className="bg-gray-900 text-gray-100 rounded-lg p-6 overflow-x-auto text-sm mb-4">
+{`{
+  "mcpServers": {
+    "ai-memory": {
+      "command": "aimemory-mcp-server",
+      "env": {
+        "AIMEMORY_DB": "/path/to/your/aimemory.db"
+      }
+    }
+  }
+}`}
+            </pre>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3 mt-6">Cursor Config (Local)</h3>
+            <pre className="bg-gray-900 text-gray-100 rounded-lg p-6 overflow-x-auto text-sm mb-4">
+{`{
+  "mcpServers": {
+    "ai-memory": {
+      "command": "aimemory-mcp-server",
+      "env": {
+        "AIMEMORY_DB": "/path/to/your/aimemory.db"
+      }
+    }
+  }
+}`}
+            </pre>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3 mt-6">5 Local Tools</h3>
+            <div className="grid md:grid-cols-2 gap-3 mt-4">
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="text-sm font-medium text-gray-900">🔍 search_memories</p>
+                <p className="text-xs text-gray-500">Full-text search with FTS5 syntax</p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="text-sm font-medium text-gray-900">💾 save_memory</p>
+                <p className="text-xs text-gray-500">Save new memories with tags & source</p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="text-sm font-medium text-gray-900">📋 list_memories</p>
+                <p className="text-xs text-gray-500">Browse memories with tag filtering</p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="text-sm font-medium text-gray-900">✏️ update_memory</p>
+                <p className="text-xs text-gray-500">Edit existing memory content & tags</p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="text-sm font-medium text-gray-900">🗑️ delete_memory</p>
+                <p className="text-xs text-gray-500">Permanently remove a memory</p>
+              </div>
+            </div>
+            <p className="text-sm text-gray-500 mt-4">
+              Source code: <a href="https://github.com/jingchang0623-crypto/aimemory" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">GitHub</a> • 
+              Package: <code className="bg-gray-100 px-1 rounded">pip install aimemory-mcp-server</code>
+            </p>
+          </div>
+        </section>
+
         {/* API Reference */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">API Reference</h2>

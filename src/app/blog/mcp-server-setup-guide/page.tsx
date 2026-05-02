@@ -34,7 +34,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const tags = ['mcp', 'protocol', 'technical', 'integration', 'setup', 'ai-memory', 'guide'];
 
 const faqJsonLd = {
   '@context': 'https://schema.org',
