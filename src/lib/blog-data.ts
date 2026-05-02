@@ -1105,6 +1105,19 @@ export const blogPosts: BlogPost[] = [
     tags: ['enterprise', 'teams', 'chatgpt', 'mcp', 'compliance', 'deployment'],
     lang: 'en',
   },
+
+  // === ChatGPT Agent Mode Memory 2026 ===
+  {
+    slug: 'chatgpt-agent-mode-memory',
+    title: 'ChatGPT Agent Mode Memory: Save & Search Agent Conversations (2026)',
+    description: 'Complete guide to ChatGPT Agent Mode memory and conversation history. Learn how to save, search, and manage autonomous agent sessions with 3 proven methods.',
+    category: 'ChatGPT',
+    date: '2026-05-03',
+    readTime: '16 min',
+    keywords: ['chatgpt agent mode memory', 'chatgpt agent memory', 'agent mode conversation history', 'save agent mode chats', 'chatgpt agent conversations', 'agent mode history'],
+    tags: ['chatgpt', 'agent-mode', 'memory', 'conversation-history', 'automation', 'search'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

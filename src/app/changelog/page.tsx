@@ -18,6 +18,22 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.39.0',
+    date: '2026-05-03',
+    title: '100th Blog Milestone — ChatGPT Agent Mode Memory',
+    tags: ['Milestone', 'SEO', 'Agent Mode', 'Blog', '100 Posts'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT Agent Mode Memory" — 100th blog post milestone! Comprehensive guide covering how ChatGPT Agent Mode generates complex multi-step conversations, why memory management matters for agent sessions, 3 methods to save agent conversations, and how AI Memory auto-captures agent sessions. Targets "chatgpt agent mode memory" and "agent mode conversation history" emerging keywords. FAQPage JSON-LD (6 questions), Article schema.',
+      ],
+      improved: [
+        'Sitemap expanded to 113 URLs (+1 new blog page)',
+        'Blog registry expanded to 100 posts — major content milestone for SEO authority',
+        'Homepage Guides section: +1 new link (Agent Mode Memory)',
+      ],
+    },
+    },
+    {
     version: 'v0.38.0',
     date: '2026-05-03',
     title: 'Security & Enterprise SEO — Trust-Building Content + Privacy Fix',

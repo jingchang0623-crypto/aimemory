@@ -488,6 +488,7 @@ No accounts required. No third-party access. Your conversations are stored in an
               { title: 'Supermemory vs AI Memory', href: '/blog/supermemory-vs-ai-memory' },
               { title: 'AI Memory Security Guide', href: '/blog/ai-memory-security-guide' },
               { title: 'ChatGPT Enterprise Memory', href: '/blog/chatgpt-enterprise-memory' },
+              { title: 'ChatGPT Agent Mode Memory', href: '/blog/chatgpt-agent-mode-memory' },
               { title: '🔌 MCP Server', href: '/mcp-server' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
