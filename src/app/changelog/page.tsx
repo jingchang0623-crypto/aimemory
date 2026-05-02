@@ -18,6 +18,23 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.36.0',
+    date: '2026-05-02',
+    title: 'MCP Server Landing Page + Supermemory Comparison — Product Positioning',
+    tags: ['MCP', 'Landing Page', 'Supermemory', 'Comparison', 'Product', 'SEO'],
+    changes: {
+      added: [
+        'New MCP Server landing page (`/mcp-server`): Marketing-focused product page showcasing the pip package, 10-second install, 5 tools, setup guides for Claude Desktop/Cursor/Windsurf/VS Code, local vs cloud comparison, and FAQPage JSON-LD (6 questions). SoftwareApplication schema for rich snippets.',
+        'New blog: "Supermemory vs AI Memory" — Competitor comparison targeting 22K-star Supermemory. Feature-by-feature table, architecture comparison, audience recommendations. FAQPage JSON-LD (6 questions), Article schema, internal links to related posts.',
+      ],
+      improved: [
+        'Sitemap expanded to 110 URLs (+2: /mcp-server, /blog/supermemory-vs-ai-memory)',
+        'Blog registry expanded to 97 posts (93 English + 4 Chinese)',
+        'Homepage Guides section: +2 new links (MCP Server page, Supermemory comparison)',
+      ],
+    },
+    },
+    {
     version: 'v0.35.0',
     date: '2026-05-02',
     title: 'MCP Server Package + GPT-5 Memory Guide + Homepage Social Proof',

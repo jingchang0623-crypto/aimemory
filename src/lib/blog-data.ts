@@ -1067,6 +1067,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['chatgpt', 'gpt-5', 'memory', 'export', 'search', 'comparison', 'guide'],
     lang: 'en',
   },
+  // === Supermemory vs AI Memory (competitor comparison) ===
+  {
+    slug: 'supermemory-vs-ai-memory',
+    title: 'Supermemory vs AI Memory — Open Source AI Memory Comparison (2026)',
+    description: 'Detailed comparison of Supermemory and AI Memory. Features, privacy, pricing, MCP support, and which tool is better for managing your AI conversation history.',
+    category: 'Comparisons',
+    date: '2026-05-02',
+    readTime: '8 min',
+    keywords: ['supermemory vs ai memory', 'supermemory alternative', 'supermemory review', 'ai memory tool comparison', 'open source ai memory', 'supermemory github'],
+    tags: ['supermemory', 'comparison', 'alternative', 'open-source', 'mcp', 'memory'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */
