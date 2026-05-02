@@ -18,6 +18,22 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.33.0',
+    date: '2026-05-02',
+    title: 'Developer Guides — Getting Started + MCP Quickstart',
+    tags: ['Guides', 'MCP', 'Developer', 'Onboarding', 'Documentation'],
+    changes: {
+      added: [
+        'New guide: "Getting Started with AI Memory" — comprehensive step-by-step onboarding guide covering upload, search, Chrome extension, and MCP setup. SEO-optimized for "how to use ai memory" / "ai memory setup guide". FAQPage schema (6 questions), Article JSON-LD.',
+        'New guide: "MCP Server Quickstart" — developer-focused MCP setup guide for Claude Desktop, Cursor, Windsurf, VS Code, and Cline. Remote vs Local mode comparison table, 5 tools documentation, usage examples, troubleshooting. FAQPage schema (6 questions), SoftwareApplication JSON-LD.',
+      ],
+      improved: [
+        'Sitemap expanded to 104 URLs (2 new guide pages)',
+        'Homepage Guides section expanded with Getting Started and MCP Quickstart links',
+      ],
+    },
+    },
+    {
     version: 'v0.32.0',
     date: '2026-05-02',
     title: 'Trending Comparisons + Developer MCP + Gemini Deep Research',

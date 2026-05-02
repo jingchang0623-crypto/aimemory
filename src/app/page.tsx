@@ -446,6 +446,8 @@ No accounts. No cloud uploads. No tracking. Your data is stored on our server in
               { title: 'ChatGPT Canvas vs Claude Artifacts', href: '/blog/chatgpt-canvas-vs-claude-artifacts' },
               { title: 'MCP with Cursor Guide', href: '/blog/mcp-cursor-setup-guide' },
               { title: 'Gemini Deep Research Guide', href: '/blog/gemini-deep-research-guide' },
+              { title: '🚀 Getting Started Guide', href: '/guides/getting-started' },
+              { title: '⚡ MCP Quickstart', href: '/guides/mcp-quickstart' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}
