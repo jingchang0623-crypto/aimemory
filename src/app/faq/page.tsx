@@ -32,7 +32,7 @@ const faqCategories = [
       },
       {
         q: 'Is AI Memory really free?',
-        a: 'Yes, all core features are completely free with unlimited local storage. You can upload, search, and browse your conversations without any limits. The optional Pro plan ($6.9/month) adds cloud sync with end-to-end encryption and advanced AI analysis features.',
+        a: 'Yes, all core features are completely free with unlimited storage. You can upload, search, and browse your conversations without any limits. The optional Pro plan ($6.9/month) adds cloud sync with end-to-end encryption and advanced AI analysis features.',
       },
       {
         q: 'Do I need to install anything?',
@@ -68,15 +68,15 @@ const faqCategories = [
     questions: [
       {
         q: 'Is my data private?',
-        a: 'Yes. AI Memory uses a local-first architecture — all your data is stored in your browser\'s IndexedDB by default. No data is sent to any server unless you explicitly enable the optional cloud sync feature (Pro plan with end-to-end encryption).',
+        a: 'Yes. AI Memory stores your data in an isolated session on our server — only you can access it with your session cookie. No tracking, no ads, no data selling. You can export or delete everything with one click.',
       },
       {
         q: 'Can AI Memory read my conversations?',
-        a: 'No. When using local storage (the default), your data never leaves your browser. We literally cannot see your conversations. If you enable cloud sync, data is encrypted with AES-256-GCM before leaving your device — we can\'t decrypt it.',
+        a: 'No. Your data is stored in an isolated session that only you can access. We have no ability to view your conversations. You can export or delete everything with one click at any time.',
       },
       {
         q: 'How do I delete my data?',
-        a: 'You can delete individual conversations or all data with one click on the upload page. Since data is stored locally in your browser, clearing your browser data also removes everything from AI Memory.',
+        a: 'You can delete individual conversations or all data with one click on the upload page. You can also export your data at any time before deleting.',
       },
       {
         q: 'Is AI Memory GDPR compliant?',

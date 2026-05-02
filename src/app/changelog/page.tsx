@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.37.0',
+    date: '2026-05-03',
+    title: 'Critical Bug Fixes — Privacy Claims, Waitlist, Parsers',
+    tags: ['Bug Fix', 'Privacy', 'DeepSeek', 'Gemini', 'Parser', 'Database'],
+    changes: {
+      fixed: [
+        'Fixed contradictory privacy claims: homepage and multiple pages claimed both "100% local storage" and "stored on our server." All privacy messaging now accurately describes session-isolated server storage.',
+        'Waitlist API: migrated from in-memory Map() to SQLite persistent storage. Signups no longer lost on server restart.',
+        'DeepSeek export parser: users can now import DeepSeek conversation exports (JSON format with chat_list, messages, or bulk array). Previously the UI claimed support but imports would fail.',
+        'Gemini export parser: users can now import Gemini/Bard conversations exported via Google Takeout (events/messages/contents format).',
+      ],
+      improved: [
+        'Privacy messaging unified across homepage, features, pricing, FAQ, chrome-extension, and layout metadata pages.',
+        'Parser error message now lists all supported formats: ChatGPT, Claude, DeepSeek, Gemini.',
+      ],
+    },
+    },
+    {
     version: 'v0.36.0',
     date: '2026-05-02',
     title: 'MCP Server Landing Page + Supermemory Comparison — Product Positioning',

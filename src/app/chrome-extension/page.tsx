@@ -57,7 +57,7 @@ export default function ChromeExtension() {
             <div className="text-4xl mb-4">🔒</div>
             <h3 className="font-semibold mb-2">100% Private</h3>
             <p className="text-sm text-gray-600">
-              All data stays on your device, never uploaded
+              All data stored in session-isolated private storage
             </p>
           </div>
         </div>

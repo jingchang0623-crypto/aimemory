@@ -174,7 +174,192 @@ export function parseClaudeExport(data: any): Conversation[] {
   return conversations;
 }
 
+// DeepSeek export format detection and parsing
+interface DeepSeekMessage {
+  role: 'user' | 'assistant';
+  content: string;
+}
+
+interface DeepSeekConversation {
+  id?: string;
+  title?: string;
+  conversation_id?: string;
+  create_time?: string | number;
+  update_time?: string | number;
+  created_at?: string;
+  updated_at?: string;
+  messages?: DeepSeekMessage[];
+  chat_messages?: Array<{ role: string; content: string }>;
+}
+
+function isDeepSeekExport(data: any): boolean {
+  // DeepSeek exports: chat_list key, or conversations with messages/chat_messages
+  if (data.chat_list && Array.isArray(data.chat_list)) return true;
+  // Single conversation with messages in DeepSeek format
+  if (data.messages && Array.isArray(data.messages) && data.messages.length > 0 &&
+      data.messages[0].role && !data.mapping && !data.chat_messages) return true;
+  // DeepSeek bulk export as array
+  if (Array.isArray(data) && data.length > 0 && data[0].messages && !data[0].mapping) return true;
+  return false;
+}
+
+export function parseDeepSeekExport(data: any): Conversation[] {
+  const conversations: Conversation[] = [];
+
+  function parseOne(conv: DeepSeekConversation, index?: number): Conversation {
+    const rawMessages = conv.messages || conv.chat_messages || [];
+    const messages: Message[] = rawMessages.map((msg, i) => ({
+      id: `deepseek-${index ?? 0}-${i}`,
+      role: msg.role === 'user' ? 'user' : 'assistant',
+      content: msg.content || '',
+    }));
+
+    const convId = conv.id || conv.conversation_id || uuidv4();
+    const createdAt = conv.create_time || conv.created_at;
+    const updatedAt = conv.update_time || conv.updated_at;
+
+    return {
+      id: convId,
+      title: conv.title || 'Untitled Conversation',
+      platform: 'deepseek',
+      messages,
+      createdAt: typeof createdAt === 'number' ? new Date(createdAt * 1000).toISOString() : (createdAt || new Date().toISOString()),
+      updatedAt: typeof updatedAt === 'number' ? new Date(updatedAt * 1000).toISOString() : (updatedAt || new Date().toISOString()),
+    };
+  }
+
+  // Handle chat_list wrapper
+  if (data.chat_list && Array.isArray(data.chat_list)) {
+    data.chat_list.forEach((conv: DeepSeekConversation, i: number) => {
+      if (conv.messages || conv.chat_messages) {
+        conversations.push(parseOne(conv, i));
+      }
+    });
+    return conversations;
+  }
+
+  // Handle single conversation
+  if (data.messages || data.chat_messages) {
+    conversations.push(parseOne(data));
+    return conversations;
+  }
+
+  // Handle array of conversations
+  if (Array.isArray(data)) {
+    data.forEach((item, i) => {
+      if (item.messages || item.chat_messages) {
+        conversations.push(parseOne(item, i));
+      }
+    });
+  }
+
+  return conversations;
+}
+
+// Gemini export format detection and parsing (via Google Takeout)
+interface GeminiMessage {
+  author?: string;
+  role?: string;
+  content?: string;
+  text?: string;
+  parts?: Array<{ text: string }>;
+}
+
+interface GeminiConversation {
+  conversation_id?: string;
+  id?: string;
+  create_time?: string;
+  update_time?: string;
+  title?: string;
+  events?: GeminiMessage[];
+  messages?: GeminiMessage[];
+  contents?: GeminiMessage[];
+}
+
+function isGeminiExport(data: any): boolean {
+  // Google Takeout Gemini/Bard format
+  if (data.events && Array.isArray(data.events)) return true;
+  // Alternative Gemini format with contents
+  if (data.contents && Array.isArray(data.contents) && data.contents.length > 0 &&
+      (data.contents[0].role || data.contents[0].author)) return true;
+  // Gemini conversations wrapper
+  if (data.conversations && Array.isArray(data.conversations)) return true;
+  return false;
+}
+
+function extractGeminiText(msg: GeminiMessage): string {
+  if (msg.content) return msg.content;
+  if (msg.text) return msg.text;
+  if (msg.parts && Array.isArray(msg.parts)) {
+    return msg.parts.map(p => p.text || '').join('\n');
+  }
+  return '';
+}
+
+function mapGeminiRole(msg: GeminiMessage): 'user' | 'assistant' {
+  const role = (msg.author || msg.role || '').toLowerCase();
+  if (role === 'user' || role === 'human') return 'user';
+  return 'assistant';
+}
+
+export function parseGeminiExport(data: any): Conversation[] {
+  const conversations: Conversation[] = [];
+
+  function parseOne(conv: GeminiConversation): Conversation {
+    const rawMessages = conv.events || conv.messages || conv.contents || [];
+    const messages: Message[] = rawMessages
+      .filter(msg => extractGeminiText(msg).trim())
+      .map((msg, i) => ({
+        id: `gemini-${conversations.length}-${i}`,
+        role: mapGeminiRole(msg),
+        content: extractGeminiText(msg),
+      }));
+
+    const convId = conv.conversation_id || conv.id || uuidv4();
+
+    return {
+      id: convId,
+      title: conv.title || 'Untitled Conversation',
+      platform: 'gemini',
+      messages,
+      createdAt: conv.create_time || new Date().toISOString(),
+      updatedAt: conv.update_time || new Date().toISOString(),
+    };
+  }
+
+  // Handle conversations wrapper
+  if (data.conversations && Array.isArray(data.conversations)) {
+    data.conversations.forEach((conv: GeminiConversation) => {
+      const parsed = parseOne(conv);
+      if (parsed.messages.length > 0) conversations.push(parsed);
+    });
+    return conversations;
+  }
+
+  // Handle single conversation
+  if (data.events || data.messages || data.contents) {
+    const parsed = parseOne(data);
+    if (parsed.messages.length > 0) conversations.push(parsed);
+    return conversations;
+  }
+
+  return conversations;
+}
+
 export function parseExportFile(data: any): Conversation[] {
+  // Try DeepSeek format first (most specific)
+  if (isDeepSeekExport(data)) {
+    const results = parseDeepSeekExport(data);
+    if (results.length > 0) return results;
+  }
+
+  // Try Gemini format
+  if (isGeminiExport(data)) {
+    const results = parseGeminiExport(data);
+    if (results.length > 0) return results;
+  }
+
+  // Fall back to ChatGPT/Claude detection
   const platform = detectPlatform(data);
   
   switch (platform) {
@@ -183,6 +368,6 @@ export function parseExportFile(data: any): Conversation[] {
     case 'claude':
       return parseClaudeExport(data);
     default:
-      throw new Error('Unable to detect platform. Please ensure you uploaded a valid ChatGPT or Claude export file.');
+      throw new Error('Unable to detect platform. Supported formats: ChatGPT (JSON), Claude (JSON), DeepSeek (JSON), Gemini (JSON via Google Takeout). Please ensure you uploaded a valid export file.');
   }
 }

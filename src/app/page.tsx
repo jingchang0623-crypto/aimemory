@@ -38,7 +38,7 @@ export default function Home() {
                 "name": "What is the best ChatGPT history extension?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "AI Memory is the best free ChatGPT history extension. It lets you import, search, and organize all your ChatGPT conversations in one place. Unlike other extensions, AI Memory also supports Claude, DeepSeek, and Gemini, with 100% local storage for complete privacy."
+                  "text": "AI Memory is the best free ChatGPT history extension. It lets you import, search, and organize all your ChatGPT conversations in one place. Unlike other extensions, AI Memory also supports Claude, DeepSeek, and Gemini, with session-isolated server storage for complete privacy."
                 }
               },
               {
@@ -54,7 +54,7 @@ export default function Home() {
                 "name": "Is AI Memory free to use?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, AI Memory is completely free. You can upload unlimited conversations, search across all your AI chats, and use the Chrome extension at no cost. All data stays on your device."
+                  "text": "Yes, AI Memory is completely free. You can upload unlimited conversations, search across all your AI chats, and use the Chrome extension at no cost. All data is stored in session-isolated server storage."
                 }
               },
               {
@@ -70,7 +70,7 @@ export default function Home() {
                 "name": "Is my data private with AI Memory?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, AI Memory is 100% private. All your data stays on your device — there are no cloud uploads, no tracking, and no data selling. Your conversations never leave your browser."
+                  "text": "Yes, AI Memory is 100% private. Your data is stored in an isolated session on our server — only you can access it with your session cookie. There is no tracking, no ads, and no data selling. You can export or delete everything with one click."
                 }
               }
             ]
@@ -307,7 +307,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-2xl font-bold text-gray-900 mb-2">Try it now</h2>
-            <p className="text-gray-500">Upload your ChatGPT, Claude, or DeepSeek export. Your data stays in your browser.</p>
+            <p className="text-gray-500">Upload your ChatGPT, Claude, or DeepSeek export. Your data stays in your session — only you can access it.</p>
           </div>
           
           {/* Tab Navigation */}
@@ -396,10 +396,9 @@ export default function Home() {
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-3xl mx-auto text-center">
           <div className="text-3xl mb-4">🔒</div>
-          <h2 className="text-xl font-bold text-gray-900 mb-3">100% private. Your data never leaves your browser.</h2>
+          <h2 className="text-xl font-bold text-gray-900 mb-3">100% Private. Session-Isolated. You Own Your Data.</h2>
           <p className="text-gray-500">
-No accounts. No cloud uploads. No tracking. Your data is stored on our server in an isolated session — only you can access it with your session cookie. Delete anytime with one click.
-            We literally cannot see your conversations.
+No accounts required. No third-party access. Your conversations are stored in an isolated session on our server — only you can access them with your session cookie. No tracking, no ads, no data selling. Export or delete everything with one click. We literally cannot see your conversations.
           </p>
         </div>
       </section>

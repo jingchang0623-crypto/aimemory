@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Features & Pricing - AI Memory',
-  description: 'Explore AI Memory features: import from ChatGPT, Claude, DeepSeek & Gemini. Full-text search, Chrome extension auto-save, 100% private local storage.',
+  description: 'Explore AI Memory features: import from ChatGPT, Claude, DeepSeek & Gemini. Full-text search, Chrome extension auto-save, session-isolated private storage.',
   alternates: {
     canonical: 'https://aimemory.pro/features',
   },
@@ -28,8 +28,8 @@ const features = [
   },
   {
     icon: '🔒',
-    title: '100% Private — Local Storage',
-    description: 'All data stays on your device. No cloud uploads, no servers, no tracking. Your conversations are yours alone.',
+    title: '100% Private — Session-Isolated Storage',
+    description: 'Your data is stored in an isolated session on our server. Only you can access it with your session cookie. No tracking, no data selling.',
   },
   {
     icon: '🌐',
@@ -156,7 +156,7 @@ export default function FeaturesPage() {
               <li>✓ Unlimited conversation imports</li>
               <li>✓ Full-text search</li>
               <li>✓ Chrome extension auto-save</li>
-              <li>✓ 100% local storage</li>
+              <li>✓ Session-isolated private storage</li>
             </ul>
           </div>
         </section>

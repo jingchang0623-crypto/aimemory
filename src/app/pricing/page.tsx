@@ -58,7 +58,7 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start">
                 <span className="text-green-500 mr-2 mt-1">✓</span>
-                <span>100% local storage — your data never leaves your device</span>
+                <span>Session-isolated private storage — only you can access your data</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-500 mr-2 mt-1">✓</span>
@@ -132,7 +132,7 @@ export default function PricingPage() {
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Is my data safe?</h3>
-              <p className="text-gray-600">100%. All data is stored locally on your device. We never upload your conversations to any server. Even with Pro, your data stays private.</p>
+              <p className="text-gray-600">100%. Your data is stored in an isolated session on our server — only you can access it with your session cookie. No tracking, no data selling. You can export or delete everything with one click.</p>
             </div>
           </div>
         </div>

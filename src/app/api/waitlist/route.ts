@@ -1,8 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
+import db from '@/lib/db';
 
-// In-memory waitlist store (persists during server lifetime)
-// In production, replace with a database table or external service
-const waitlist: Map<string, { email: string; timestamp: string; source: string }> = new Map();
+// Ensure waitlist table exists
+db.exec(`
+  CREATE TABLE IF NOT EXISTS waitlist (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT UNIQUE NOT NULL,
+    timestamp TEXT NOT NULL,
+    source TEXT DEFAULT 'pricing'
+  );
+`);
 
 export async function POST(request: NextRequest) {
   try {
@@ -27,28 +34,30 @@ export async function POST(request: NextRequest) {
 
     // Check for duplicate
     const normalizedEmail = email.toLowerCase().trim();
-    if (waitlist.has(normalizedEmail)) {
+    const existing = db.prepare('SELECT id FROM waitlist WHERE email = ?').get(normalizedEmail) as { id: number } | undefined;
+    if (existing) {
+      const position = (db.prepare('SELECT COUNT(*) as cnt FROM waitlist WHERE id <= ?').get(existing.id) as { cnt: number }).cnt;
       return NextResponse.json({
         success: true,
         message: 'You are already on the waitlist!',
-        position: Array.from(waitlist.keys()).indexOf(normalizedEmail) + 1,
+        position,
       });
     }
 
     // Add to waitlist
-    waitlist.set(normalizedEmail, {
-      email: normalizedEmail,
-      timestamp: new Date().toISOString(),
-      source,
-    });
+    db.prepare('INSERT INTO waitlist (email, timestamp, source) VALUES (?, ?, ?)').run(
+      normalizedEmail,
+      new Date().toISOString(),
+      source
+    );
 
-    // Log for monitoring (remove in production or use proper logging)
-    console.log(`[Waitlist] New signup: ${normalizedEmail} from ${source}. Total: ${waitlist.size}`);
+    const total = (db.prepare('SELECT COUNT(*) as cnt FROM waitlist').get() as { cnt: number }).cnt;
+    console.log(`[Waitlist] New signup: ${normalizedEmail} from ${source}. Total: ${total}`);
 
     return NextResponse.json({
       success: true,
       message: 'You have been added to the waitlist!',
-      position: waitlist.size,
+      position: total,
     });
   } catch (error) {
     console.error('[Waitlist] Error:', error);
@@ -60,8 +69,9 @@ export async function POST(request: NextRequest) {
 }
 
 export async function GET() {
+  const total = (db.prepare('SELECT COUNT(*) as cnt FROM waitlist').get() as { cnt: number }).cnt;
   return NextResponse.json({
-    total: waitlist.size,
+    total,
     message: 'Waitlist is active',
   });
 }
