@@ -1248,6 +1248,19 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
 
+  // === Claude Code Memory ===
+  {
+    slug: 'claude-code-memory',
+    title: 'Claude Code Memory: Save & Export Your Coding Sessions (2026)',
+    description: 'Complete guide to saving, exporting, and searching Claude Code conversations. Learn how to preserve your AI coding sessions with CLAUDE.md, /memory, and AI Memory.',
+    category: 'AI Platform Guides',
+    date: '2026-05-04',
+    readTime: '12 min',
+    keywords: ['claude code memory', 'claude code export', 'save claude code conversations', 'claude code history', 'claude code sessions'],
+    tags: ['claude-code', 'developer', 'coding', 'memory', 'export', 'cli', 'anthropic'],
+    lang: 'en',
+  },
+
   // === AI Coding Assistant Memory ===
   {
     slug: 'ai-coding-assistant-memory',
@@ -1258,6 +1271,32 @@ export const blogPosts: BlogPost[] = [
     readTime: '15 min',
     keywords: ['ai coding assistant memory', 'save coding ai conversations', 'cursor memory', 'copilot conversation history', 'claude code memory'],
     tags: ['developer', 'coding', 'cursor', 'copilot', 'claude-code', 'windsurf', 'comparison', 'memory'],
+    lang: 'en',
+  },
+
+  // === Cursor AI Memory ===
+  {
+    slug: 'cursor-ai-memory',
+    title: 'Cursor AI Memory: Save & Search Your Coding History (2026)',
+    description: 'Learn how to save, export, and search your Cursor AI coding conversations. Complete guide to managing Cursor memory and preserving your AI-assisted code.',
+    category: 'AI Platform Guides',
+    date: '2026-05-04',
+    readTime: '12 min',
+    keywords: ['cursor ai memory', 'cursor export conversations', 'save cursor ai chats', 'cursor code history'],
+    tags: ['cursor', 'developer', 'coding', 'memory', 'export', 'ide', 'ai-coding'],
+    lang: 'en',
+  },
+
+  // === Ollama Memory ===
+  {
+    slug: 'ollama-memory',
+    title: 'Ollama Memory: Save & Search Local AI Conversations (2026)',
+    description: 'Complete guide to saving, exporting, and searching your Ollama local AI conversations. Learn how to manage local LLM chat history and never lose important AI interactions.',
+    category: 'AI Platform Guides',
+    date: '2026-05-04',
+    readTime: '14 min',
+    keywords: ['ollama memory', 'save ollama conversations', 'local ai memory', 'ollama chat history'],
+    tags: ['ollama', 'local-ai', 'privacy', 'memory', 'export', 'llm', 'developer'],
     lang: 'en',
   },
 

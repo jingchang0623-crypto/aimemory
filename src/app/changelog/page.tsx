@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.44.0',
+    date: '2026-05-04',
+    title: 'AI Coding & Local LLM Coverage — Claude Code, Cursor & Ollama Memory Guides',
+    tags: ['SEO', 'Claude Code', 'Cursor', 'Ollama', 'Local AI', 'Developer'],
+    changes: {
+      added: [
+        'New blog: Claude Code Memory — save & export CLI coding sessions',
+        'New blog: Cursor AI Memory — save & search IDE conversations',
+        'New blog: Ollama Memory — manage local AI chat history',
+        'Homepage guides section: +3 new platform memory links',
+      ],
+      improved: [
+        'Expanded AI Platform Guides to cover CLI agents (Claude Code) and local AI (Ollama)',
+        'Sitemap expanded to 127 URLs (+3 developer-focused guides)',
+      ],
+    },
+  },
+  {
     version: 'v0.43.0',
     date: '2026-05-03',
     title: 'Voice Mode & Writing Comparison — 3 Strategic SEO Blogs + Homepage Refresh',
