@@ -1222,6 +1222,45 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
 
+  // === ChatGPT Voice Mode Guide ===
+  {
+    slug: 'chatgpt-voice-mode-guide',
+    title: 'ChatGPT Voice Mode Guide 2026 — Save & Search Voice Conversations',
+    description: 'Complete guide to ChatGPT Voice Mode in 2026. Learn how voice conversations work, their memory limitations, and how to save, export, and search your voice chat history.',
+    category: 'AI Platform Guides',
+    date: '2026-05-03',
+    readTime: '14 min',
+    keywords: ['chatgpt voice mode', 'chatgpt voice conversations', 'save chatgpt voice chat', 'chatgpt voice mode memory', 'chatgpt advanced voice mode'],
+    tags: ['chatgpt', 'voice', 'memory', 'export', 'conversation-history', 'privacy'],
+    lang: 'en',
+  },
+
+  // === Claude vs ChatGPT for Writing ===
+  {
+    slug: 'claude-vs-chatgpt-writing',
+    title: 'Claude vs ChatGPT for Writing 2026 — Complete Comparison Guide',
+    description: 'Compare Claude and ChatGPT for creative writing, technical writing, copywriting, and more. Detailed analysis of strengths, weaknesses, and real examples.',
+    category: 'Comparisons',
+    date: '2026-05-03',
+    readTime: '16 min',
+    keywords: ['claude vs chatgpt for writing', 'best ai for writing', 'chatgpt vs claude writing quality', 'ai writing comparison', 'claude writing'],
+    tags: ['claude', 'chatgpt', 'comparison', 'writing', 'creative-writing', 'technical-writing'],
+    lang: 'en',
+  },
+
+  // === AI Coding Assistant Memory ===
+  {
+    slug: 'ai-coding-assistant-memory',
+    title: 'Best AI Coding Assistant Memory 2026 — Save & Search Coding Conversations',
+    description: 'Compare AI coding assistant memory features across Cursor, GitHub Copilot, Claude Code, Windsurf, and ChatGPT. Learn how to save and search your coding AI conversations.',
+    category: 'Comparisons',
+    date: '2026-05-03',
+    readTime: '15 min',
+    keywords: ['ai coding assistant memory', 'save coding ai conversations', 'cursor memory', 'copilot conversation history', 'claude code memory'],
+    tags: ['developer', 'coding', 'cursor', 'copilot', 'claude-code', 'windsurf', 'comparison', 'memory'],
+    lang: 'en',
+  },
+
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

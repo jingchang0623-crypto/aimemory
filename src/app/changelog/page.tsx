@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.43.0',
+    date: '2026-05-03',
+    title: 'Voice Mode & Writing Comparison — 3 Strategic SEO Blogs + Homepage Refresh',
+    tags: ['SEO', 'Voice Mode', 'Writing', 'Coding', 'Blog', 'Homepage'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT Voice Mode Guide 2026" — comprehensive guide covering standard vs Advanced Voice Mode, voice conversation memory, 3 saving methods, privacy concerns, voice vs text comparison table. Targets untapped "chatgpt voice mode" and "chatgpt voice conversations" keywords. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "Claude vs ChatGPT for Writing 2026" — detailed comparison across 6 writing categories (creative, technical, copywriting, academic, email, code docs). 12-row comparison table. Targets "claude vs chatgpt for writing" and "best ai for writing" keywords. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "Best AI Coding Assistant Memory 2026" — comparison of memory features across Cursor, GitHub Copilot, Claude Code, Windsurf, and ChatGPT for developers. Targets "ai coding assistant memory" and "cursor memory" keywords. FAQPage JSON-LD (6 questions), Article schema.',
+      ],
+      improved: [
+        'Homepage Guides section: +23 blog links added (was 86, now ~109) — all previously missing blogs now linked for better internal linking and crawlability',
+        'Sitemap expanded to 124 URLs (+3 new blog pages)',
+        'Blog registry expanded to 111 posts',
+      ],
+    },
+    },
+    {
     version: 'v0.42.0',
     date: '2026-05-03',
     title: 'New AI Platform Coverage — Grok, Perplexity & ChatGPT Temporary Chat',
