@@ -1,9 +1,16 @@
-'use client';
-
+import type { Metadata } from 'next';
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
 
 const slug = 'cursor-ai-memory';
+
+export const metadata: Metadata = {
+  title: 'Cursor AI Memory: Save & Search Your Coding History (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/cursor-ai-memory',
+  },
+};
+
 
 export default function CursorAIMemory() {
   const faqJsonLd = {

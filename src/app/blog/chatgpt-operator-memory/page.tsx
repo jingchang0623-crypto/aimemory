@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'chatgpt-operator-memory';
+
+export const metadata: Metadata = {
+  title: 'ChatGPT Operator Memory: How to Save & Search Agent Conversations (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-operator-memory',
+  },
+};
+
 
 export default function ChatGPTOperatorMemory() {
   const faqJsonLd = {

@@ -1,9 +1,16 @@
-'use client';
-
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'delete-chatgpt-history';
+
+export const metadata: Metadata = {
+  title: 'How to Delete ChatGPT History: Complete Guide (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/delete-chatgpt-history',
+  },
+};
+
 
 const faqJsonLd = {
   '@context': 'https://schema.org',

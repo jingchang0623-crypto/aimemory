@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'ChatGPT Memory Full? How to Manage & Export Your AI Memory',
   description: 'ChatGPT memory is full? Learn how to manage, export, and backup your ChatGPT memories. Free up space and keep your AI context safe.',
   keywords: ['chatgpt memory full', 'chatgpt memory limit', 'chatgpt memory settings', 'chatgpt saved memory full', 'manage chatgpt memory'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-memory-full',
+  },
 };
 
 export default function ChatGPTMemoryFull() {

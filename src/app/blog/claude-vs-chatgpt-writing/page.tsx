@@ -1,10 +1,17 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import type { Metadata } from 'next';
 
 const slug = 'claude-vs-chatgpt-writing';
+
+export const metadata: Metadata = {
+  title: 'Claude vs ChatGPT for Writing 2026 — Complete Comparison Guide | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/claude-vs-chatgpt-writing',
+  },
+};
+
 
 export default function ClaudeVsChatGPTWriting() {
   const faqJsonLd = {

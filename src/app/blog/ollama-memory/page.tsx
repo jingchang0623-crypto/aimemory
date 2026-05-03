@@ -1,9 +1,16 @@
-'use client';
-
+import type { Metadata } from 'next';
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
 
 const slug = 'ollama-memory';
+
+export const metadata: Metadata = {
+  title: 'Ollama Memory: Save & Search Local AI Conversations (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ollama-memory',
+  },
+};
+
 
 export default function OllamaMemory() {
   const faqJsonLd = {

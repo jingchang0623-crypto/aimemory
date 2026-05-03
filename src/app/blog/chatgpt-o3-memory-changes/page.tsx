@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'chatgpt-o3-memory-changes';
+
+export const metadata: Metadata = {
+  title: 'ChatGPT o3 Memory: What Changed in 2026 | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-o3-memory-changes',
+  },
+};
+
 
 export default function ChatGPTO3MemoryChanges() {
   const faqJsonLd = {

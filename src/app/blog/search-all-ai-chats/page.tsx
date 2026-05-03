@@ -1,9 +1,16 @@
-'use client';
-
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'search-all-ai-chats';
+
+export const metadata: Metadata = {
+  title: 'How to Search Across All Your AI Chats: Complete Guide (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/search-all-ai-chats',
+  },
+};
+
 
 const faqJsonLd = {
   '@context': 'https://schema.org',

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'ChatGPT Conversation Too Long? Here\'s How to Fix It - AI Memory',
   description: 'ChatGPT conversation getting too long and losing context? Learn how to manage long conversations, export them, and search across all your chats with AI Memory.',
   keywords: ['chatgpt conversation too long', 'chatgpt conversation limit', 'chatgpt context window', 'chatgpt context limit', 'chatgpt conversation length limit'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-conversation-too-long',
+  },
 };
 
 export default function ChatGPTConversationTooLong() {

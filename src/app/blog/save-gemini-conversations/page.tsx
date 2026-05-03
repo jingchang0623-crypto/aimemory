@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'save-gemini-conversations';
+
+export const metadata: Metadata = {
+  title: 'How to Save & Export Gemini Conversations (2026 Guide) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/save-gemini-conversations',
+  },
+};
+
 
 export default function SaveGeminiConversations() {
   const faqJsonLd = {

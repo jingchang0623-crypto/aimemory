@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Best ChatGPT Memory Alternatives in 2026 (Why You Need One)',
   description: 'Looking for ChatGPT memory alternatives? Compare the best AI memory tools in 2026. See why third-party memory solutions outperform ChatGPT\'s built-in memory.',
   keywords: ['chatgpt memory alternative', 'best ai memory tool', 'chatgpt memory replacement', 'ai memory tool 2026', 'chatgpt memory vs third party', 'alternative to chatgpt memory'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-memory-alternative',
+  },
 };
 const faqJsonLd = {
   '@context': 'https://schema.org',

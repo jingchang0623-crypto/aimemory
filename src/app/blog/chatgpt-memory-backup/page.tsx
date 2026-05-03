@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'How to Backup ChatGPT Memory: Complete Guide (Never Lose Your AI Context)',
   description: 'Learn how to backup ChatGPT memory and never lose your AI context again. Complete guide to exporting, saving, and protecting your ChatGPT memories in 2026.',
   keywords: ['chatgpt memory backup', 'backup chatgpt memories', 'save chatgpt memory', 'export chatgpt memory', 'chatgpt memory backup tool', 'save chatgpt conversations'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-memory-backup',
+  },
 };
 
 export default function ChatGPTMemoryBackup() {

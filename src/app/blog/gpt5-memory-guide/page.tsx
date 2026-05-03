@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'gpt5-memory-guide';
+
+export const metadata: Metadata = {
+  title: 'GPT-5 Memory: Complete Guide to ChatGPT Memory Features (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/gpt5-memory-guide',
+  },
+};
+
 
 export default function GPT5MemoryGuide() {
   const faqJsonLd = {

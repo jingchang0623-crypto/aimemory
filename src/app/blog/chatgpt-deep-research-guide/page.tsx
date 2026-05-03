@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'chatgpt-deep-research-guide';
+
+export const metadata: Metadata = {
+  title: 'ChatGPT Deep Research: Complete Guide to AI-Powered Research (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-deep-research-guide',
+  },
+};
+
 
 export default function ChatGPTDeepResearchGuide() {
   const faqJsonLd = {

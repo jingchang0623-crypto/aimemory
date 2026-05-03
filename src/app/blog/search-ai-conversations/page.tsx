@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'search-ai-conversations';
+
+export const metadata: Metadata = {
+  title: 'How to Search Across All Your AI Conversations (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/search-ai-conversations',
+  },
+};
+
 
 export default function SearchAIConversations() {
   const faqJsonLd = {

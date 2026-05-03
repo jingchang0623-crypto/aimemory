@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'perplexity-memory-guide';
+
+export const metadata: Metadata = {
+  title: 'Perplexity AI Memory Guide: Save, Search & Manage Your Threads (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/perplexity-memory-guide',
+  },
+};
+
 
 export default function PerplexityMemoryGuide() {
   const faqJsonLd = {

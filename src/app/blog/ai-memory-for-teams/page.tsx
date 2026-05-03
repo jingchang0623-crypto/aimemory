@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'ai-memory-for-teams';
+
+export const metadata: Metadata = {
+  title: 'AI Memory for Teams: Share & Search Team AI Conversations (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-memory-for-teams',
+  },
+};
+
 
 export default function AIMemoryForTeams() {
   const faqJsonLd = {

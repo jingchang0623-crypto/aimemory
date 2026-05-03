@@ -1,10 +1,17 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import type { Metadata } from 'next';
 
 const slug = 'chatgpt-voice-mode-guide';
+
+export const metadata: Metadata = {
+  title: 'ChatGPT Voice Mode Guide 2026 — Save & Search Voice Conversations | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-voice-mode-guide',
+  },
+};
+
 
 export default function ChatGPTVoiceModeGuide() {
   const faqJsonLd = {

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'How to Export ChatMemo Conversations & Import to AI Memory',
   description: 'Export your ChatMemo saved conversations and import them into AI Memory for powerful full-text search across all your AI chats.',
   keywords: ['ChatMemo export', 'ChatMemo to AI Memory', 'ChatMemo conversations', 'AI chat backup', 'ChatGPT chat export'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatmemo-export',
+  },
 };
 
 export default function ChatMemoExportGuide() {

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'ChatGPT vs Claude: Which AI is Better? Export & Compare Guide 2026',
   description: 'Compare ChatGPT and Claude AI assistants. Learn how to export conversations from both platforms and analyze them side-by-side with AI Memory.',
   keywords: ['ChatGPT vs Claude', 'compare AI', 'ChatGPT Claude comparison', 'AI assistant comparison', 'export AI conversations'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-vs-claude',
+  },
 };
 
 export default function ChatGPTVsClaude() {

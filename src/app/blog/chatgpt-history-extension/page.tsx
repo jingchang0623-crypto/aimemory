@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Best ChatGPT History Extension in 2026: Save, Search & Export All Conversations',
   description: 'Looking for a ChatGPT history extension? Compare the top 5 tools to save, search, and export your ChatGPT conversation history. Find lost chats, search message content, and never lose context again.',
   keywords: ['chatgpt history extension', 'chatgpt conversation history', 'save chatgpt history', 'chatgpt history search', 'export chatgpt conversations', 'chatgpt chat backup', 'chatgpt history tool'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-history-extension',
+  },
 };
 
 const faqJsonLd = {

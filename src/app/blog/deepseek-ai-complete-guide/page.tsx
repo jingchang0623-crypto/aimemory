@@ -1,10 +1,17 @@
-'use client';
-
 import Link from 'next/link';
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'deepseek-ai-complete-guide';
+
+export const metadata: Metadata = {
+  title: 'DeepSeek AI Memory Complete Guide 2026 | DeepSeek记忆管理完整指南 | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/deepseek-ai-complete-guide',
+  },
+};
+
 
 const faqJsonLd = {
   '@context': 'https://schema.org',

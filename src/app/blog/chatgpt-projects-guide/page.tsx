@@ -1,9 +1,16 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 
 const slug = 'chatgpt-projects-guide';
+
+export const metadata: Metadata = {
+  title: 'ChatGPT Projects: Complete Guide to Organizing Your AI Workflows (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-projects-guide',
+  },
+};
+
 
 const faqJsonLd = {
   '@context': 'https://schema.org',

@@ -1,9 +1,16 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 
 const slug = 'claude-artifacts-guide';
+
+export const metadata: Metadata = {
+  title: 'Claude Artifacts: Complete Guide to Creating Code, Documents & More (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/claude-artifacts-guide',
+  },
+};
+
 
 const faqJsonLd = {
   '@context': 'https://schema.org',

@@ -1,9 +1,16 @@
-'use client';
-
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'ai-memory-standard';
+
+export const metadata: Metadata = {
+  title: 'The AI Memory Standard: Why Cross-Platform Memory is the Future | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-memory-standard',
+  },
+};
+
 
 const faqJsonLd = {
   '@context': 'https://schema.org',

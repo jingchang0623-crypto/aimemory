@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'claude-sonnet-4-memory';
+
+export const metadata: Metadata = {
+  title: 'Claude Sonnet 4 Memory: Complete Guide to Managing Your AI Conversations (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/claude-sonnet-4-memory',
+  },
+};
+
 
 export default function ClaudeSonnet4Memory() {
   const faqJsonLd = {

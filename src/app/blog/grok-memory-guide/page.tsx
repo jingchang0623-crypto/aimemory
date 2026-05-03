@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'grok-memory-guide';
+
+export const metadata: Metadata = {
+  title: 'Grok Memory Guide: How to Save, Export & Search Grok AI Conversations (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/grok-memory-guide',
+  },
+};
+
 
 export default function GrokMemoryGuide() {
   const faqJsonLd = {

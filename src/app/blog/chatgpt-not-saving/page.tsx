@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'ChatGPT Not Saving Conversations? Here\'s How to Recover & Backup',
   description: 'ChatGPT not saving your conversations or lost chat history? Learn how to recover lost chats and backup all your conversations with AI Memory.',
   keywords: ['chatgpt not saving conversations', 'chatgpt lost chat history', 'chatgpt lost chats', 'chatgpt conversation not found', 'recover chatgpt conversations'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-not-saving',
+  },
 };
 
 export default function ChatGPTNotSaving() {

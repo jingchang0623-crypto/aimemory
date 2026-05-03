@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'chatgpt-memory-plugin';
+
+export const metadata: Metadata = {
+  title: 'ChatGPT Memory Plugin: Best Tools to Enhance AI Memory (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-memory-plugin',
+  },
+};
+
 
 export default function ChatGPTMemoryPlugin() {
   const faqJsonLd = {

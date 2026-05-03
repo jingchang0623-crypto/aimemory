@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description:
     'Compare Chat Memo and AI Memory for managing your AI conversations. Features, privacy, pricing, and which tool is right for you.',
   keywords: ['chat memo', 'ai memory', 'chat memo alternative', 'ai conversation manager'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chat-memo-vs-ai-memory',
+  },
 };
 
 export default function ChatMemoVsAIMemory() {

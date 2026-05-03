@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'second-brain-ai';
+
+export const metadata: Metadata = {
+  title: 'How to Build a Second Brain with AI: Complete Guide (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/second-brain-ai',
+  },
+};
+
 
 export default function SecondBrainAI() {
   const faqJsonLd = {

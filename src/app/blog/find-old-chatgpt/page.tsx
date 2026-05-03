@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Find Old ChatGPT Conversations - Search & Recover Past Chats',
   description: 'Can\'t find an old ChatGPT conversation? Learn how to search, find, and recover past ChatGPT chats. Full-text search across all your AI conversations.',
   keywords: ['find old chatgpt conversation', 'chatgpt conversation history search', 'search chatgpt history', 'find old chatgpt ai', 'chatgpt conversation not found'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/find-old-chatgpt',
+  },
 };
 
 const faqJsonLd = {

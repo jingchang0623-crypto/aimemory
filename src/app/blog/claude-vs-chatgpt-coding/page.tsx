@@ -1,9 +1,16 @@
-'use client';
-
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'claude-vs-chatgpt-coding';
+
+export const metadata: Metadata = {
+  title: 'Claude vs ChatGPT for Coding: Which AI Is Better for Developers? (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/claude-vs-chatgpt-coding',
+  },
+};
+
 
 const faqJsonLd = {
   '@context': 'https://schema.org',

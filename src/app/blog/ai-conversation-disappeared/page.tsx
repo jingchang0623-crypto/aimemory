@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     'recover chatgpt conversation',
     'chatgpt chat history missing',
   ],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-conversation-disappeared',
+  },
 };
 
 export default function AIConversationDisappeared() {

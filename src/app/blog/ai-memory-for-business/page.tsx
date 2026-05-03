@@ -1,10 +1,17 @@
-'use client';
-
 import Link from 'next/link';
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'ai-memory-for-business';
+
+export const metadata: Metadata = {
+  title: 'AI Memory for Business: Enterprise Knowledge Management Guide (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-memory-for-business',
+  },
+};
+
 
 export default function AIMemoryForBusinessPage() {
   const faqJsonLd = {

@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'chatgpt-temporary-chat-vs-memory';
+
+export const metadata: Metadata = {
+  title: 'ChatGPT Temporary Chat vs Memory Mode: Complete Guide (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-temporary-chat-vs-memory',
+  },
+};
+
 
 const faqJsonLd = {
   '@context': 'https://schema.org',

@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'chatgpt-enterprise-memory';
+
+export const metadata: Metadata = {
+  title: 'ChatGPT Enterprise Memory — AI Memory Management for Teams (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-enterprise-memory',
+  },
+};
+
 
 export default function ChatGPTEnterpriseMemory() {
   const faqJsonLd = {

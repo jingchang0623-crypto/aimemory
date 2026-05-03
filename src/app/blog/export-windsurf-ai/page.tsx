@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'export-windsurf-ai';
+
+export const metadata: Metadata = {
+  title: 'How to Export Windsurf AI Conversations - Complete Guide (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/export-windsurf-ai',
+  },
+};
+
 
 export default function ExportWindsurfAI() {
   const faqJsonLd = {

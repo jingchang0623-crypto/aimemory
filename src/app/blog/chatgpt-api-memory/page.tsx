@@ -1,9 +1,16 @@
-'use client';
-
+import type { Metadata } from 'next';
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
 
 const slug = 'chatgpt-api-memory';
+
+export const metadata: Metadata = {
+  title: 'ChatGPT API Memory: Build Custom AI Memory Systems (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-api-memory',
+  },
+};
+
 
 export default function ChatGPTAPIMemory() {
   const faqJsonLd = {

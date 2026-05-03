@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     'migrate chatgpt conversations',
     'chatgpt claude comparison',
   ],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-to-claude-migration',
+  },
 };
 
 export default function ChatGPTToClaudeMigration() {

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'How to Export Gemini Conversations - Complete Guide 2026',
   description: 'Step-by-step guide to export your Google Gemini AI conversation history. Download all your chats and import them into AI Memory for permanent searchable storage.',
   keywords: ['Gemini export', 'export Gemini conversations', 'Google Gemini data', 'Gemini chat history', 'backup Gemini'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/export-gemini',
+  },
 };
 
 export default function ExportGeminiGuide() {

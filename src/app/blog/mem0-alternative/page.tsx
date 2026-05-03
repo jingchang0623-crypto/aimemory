@@ -1,9 +1,16 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'mem0-alternative';
+
+export const metadata: Metadata = {
+  title: 'Mem0 Alternative: AI Memory vs Mem0 — Which Should You Choose? (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/mem0-alternative',
+  },
+};
+
 
 export default function Mem0Alternative() {
   const faqJsonLd = {

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'How to Export DeepSeek Conversations - Complete Guide 2026',
   description: 'Step-by-step guide to export your DeepSeek AI conversation history. Download all your chats and import them into AI Memory for permanent searchable storage.',
   keywords: ['DeepSeek export', 'export DeepSeek conversations', 'DeepSeek data download', 'DeepSeek chat history', 'backup DeepSeek'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/export-deepseek',
+  },
 };
 
 export default function ExportDeepSeekGuide() {

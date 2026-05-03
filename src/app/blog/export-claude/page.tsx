@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'How to Export Claude Conversations - Complete Guide 2026',
   description: 'Step-by-step guide to export your Claude AI conversation history. Download all your chats and import them into AI Memory for permanent searchable storage.',
   keywords: ['Claude export', 'export Claude conversations', 'Claude data download', 'Claude chat history', 'backup Claude'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/export-claude',
+  },
 };
 
 export default function ExportClaudeGuide() {

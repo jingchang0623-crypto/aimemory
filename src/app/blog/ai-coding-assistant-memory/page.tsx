@@ -1,10 +1,17 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import type { Metadata } from 'next';
 
 const slug = 'ai-coding-assistant-memory';
+
+export const metadata: Metadata = {
+  title: 'Best AI Coding Assistant Memory 2026 — Save & Search Coding Conversations | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-coding-assistant-memory',
+  },
+};
+
 
 export default function AICodingAssistantMemory() {
   const faqJsonLd = {

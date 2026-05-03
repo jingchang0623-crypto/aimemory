@@ -1,9 +1,16 @@
-'use client';
-
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'connect-mcp-to-ai';
+
+export const metadata: Metadata = {
+  title: 'How to Connect MCP Server to Any AI Assistant (2026 Guide) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/connect-mcp-to-ai',
+  },
+};
+
 
 const faqJsonLd = {
   '@context': 'https://schema.org',

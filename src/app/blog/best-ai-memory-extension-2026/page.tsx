@@ -1,8 +1,15 @@
-'use client';
-
 import BlogLayout from '@/components/BlogLayout';
+import type { Metadata } from 'next';
 
 const slug = 'best-ai-memory-extension-2026';
+
+export const metadata: Metadata = {
+  title: 'Best AI Memory Extension in 2026 - Top 5 Compared | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/best-ai-memory-extension-2026',
+  },
+};
+
 
 export default function BestAIMemoryExtension2026() {
   const faqJsonLd = {

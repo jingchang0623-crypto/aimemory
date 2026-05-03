@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'How to Export ChatGPT Conversations - Complete Guide 2026',
   description: 'Step-by-step guide to export your ChatGPT conversation history. Download all your chats as JSON and import them into AI Memory for permanent searchable storage.',
   keywords: ['ChatGPT export', 'export ChatGPT conversations', 'ChatGPT data download', 'ChatGPT chat history', 'backup ChatGPT'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/export-chatgpt',
+  },
 };
 
 export default function ExportChatGPTGuide() {

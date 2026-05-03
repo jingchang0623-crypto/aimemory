@@ -1,10 +1,17 @@
-'use client';
-
+import type { Metadata } from 'next';
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 
 const slug = 'claude-code-memory';
+
+export const metadata: Metadata = {
+  title: 'Claude Code Memory: Save & Export Your Coding Sessions (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/claude-code-memory',
+  },
+};
+
 
 export default function ClaudeCodeMemory() {
   const faqJsonLd = {

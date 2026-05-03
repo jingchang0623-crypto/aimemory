@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'ChatGPT Memory Full? 5 Ways to Fix It (2026 Guide)',
   description: 'ChatGPT memory full? Learn 5 proven ways to fix ChatGPT memory limit issues. Export, clean up, and never lose your AI context again with this complete 2026 guide.',
   keywords: ['chatgpt memory full fix', 'chatgpt memory limit', 'chatgpt memory full solution', 'chatgpt memory full', 'fix chatgpt memory', 'chatgpt memory limit reached'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-memory-full-fix',
+  },
 };
 
 export default function ChatGPTMemoryFullFix() {

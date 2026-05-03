@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'ChatGPT Context Window Explained: Limits & Solutions 2026',
   description: 'Understand ChatGPT\'s 128K token context window limit, why long conversations degrade, and 5 practical solutions to maintain quality responses. Plus how AI Memory helps across conversations.',
   keywords: ['chatgpt context window', 'chatgpt context window limit', 'conversation too long', 'chatgpt context length', 'chatgpt token limit', 'chatgpt forgets conversation'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-context-window-limit',
+  },
 };
 
 export default function ChatGPTContextWindowLimit() {

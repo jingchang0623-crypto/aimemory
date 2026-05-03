@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'How to Search Your ChatGPT Conversation History - 3 Methods',
   description: 'ChatGPT search only finds titles, not conversation content. Learn 3 methods to search your full ChatGPT conversation history including full-text search with AI Memory.',
   keywords: ['chatgpt conversation history search', 'find old chatgpt', 'search chatgpt chats', 'chatgpt search conversations', 'search chatgpt history', 'find chatgpt conversation'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-conversation-history-search',
+  },
 };
 
 export default function ChatGPTConversationHistorySearch() {

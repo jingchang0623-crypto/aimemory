@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Best ChatGPT Export Extension: Save & Search All Your Conversations (2026)',
   description: 'Looking for a ChatGPT export extension? Compare the best tools to export, backup, and search your ChatGPT conversations. AI Memory is the top free option for managing your AI chat history.',
   keywords: ['chatgpt export extension', 'chatgpt export tool', 'save chatgpt conversations', 'chatgpt data export', 'chatgpt conversation backup', 'export chatgpt chats', 'chatgpt export chrome extension', 'chatgpt history exporter'],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-export-extension',
+  },
 };
 
 export default function ChatGPTExportExtension() {

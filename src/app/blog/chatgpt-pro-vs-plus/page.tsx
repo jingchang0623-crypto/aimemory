@@ -1,9 +1,16 @@
-'use client';
-
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
 const slug = 'chatgpt-pro-vs-plus';
+
+export const metadata: Metadata = {
+  title: 'ChatGPT Pro vs Plus vs Free: Complete Pricing Comparison (2026) | AI Memory Blog',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/chatgpt-pro-vs-plus',
+  },
+};
+
 
 const faqJsonLd = {
   '@context': 'https://schema.org',
