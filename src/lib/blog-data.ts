@@ -1118,6 +1118,32 @@ export const blogPosts: BlogPost[] = [
     tags: ['chatgpt', 'agent-mode', 'memory', 'conversation-history', 'automation', 'search'],
     lang: 'en',
   },
+
+  // === Claude Opus 4 Memory ===
+  {
+    slug: 'claude-opus-4-memory',
+    title: 'Claude Opus 4 Memory: Complete Guide to Managing Your AI Conversations (2026)',
+    description: 'Everything about Claude Opus 4 memory system — 200K context window, memory limits, how to save and export conversations, and cross-platform search.',
+    category: 'AI Platform Guides',
+    date: '2026-05-03',
+    readTime: '12 min',
+    keywords: ['claude opus 4 memory', 'claude opus 4 memory limit', 'claude opus 4 context window', 'save claude opus 4 conversations', 'claude memory export'],
+    tags: ['claude', 'opus-4', 'memory', 'context-window', 'export', 'ai-platform'],
+    lang: 'en',
+  },
+
+  // === Export Windsurf AI ===
+  {
+    slug: 'export-windsurf-ai',
+    title: 'How to Export Windsurf AI Conversations - Complete Guide (2026)',
+    description: 'Step-by-step guide to exporting Windsurf AI conversations. Save, backup and search your Windsurf chat history with 3 proven methods.',
+    category: 'Export Guides',
+    date: '2026-05-03',
+    readTime: '10 min',
+    keywords: ['export windsurf conversations', 'windsurf ai memory', 'save windsurf chat', 'windsurf conversation history', 'windsurf vs cursor memory'],
+    tags: ['windsurf', 'export', 'codeium', 'ai-ide', 'conversation-history', 'backup'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

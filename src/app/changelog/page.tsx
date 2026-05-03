@@ -18,6 +18,23 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.40.0',
+    date: '2026-05-03',
+    title: 'Platform Expansion — Claude Opus 4 & Windsurf AI Coverage',
+    tags: ['SEO', 'Claude Opus 4', 'Windsurf', 'Export', 'Blog'],
+    changes: {
+      added: [
+        'New blog: \"Claude Opus 4 Memory\" — comprehensive guide to Claude\'s latest model memory system, 200K context window, memory limits, 4 export methods, and comparison table (Opus 4 vs GPT-5 vs Gemini 2.5 Pro). Targets \"claude opus 4 memory\" and \"claude opus 4 context window\" emerging keywords. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: \"Export Windsurf AI Conversations\" — first-ever guide covering Codeium\'s Windsurf AI IDE conversation export. 3 export methods, Windsurf vs Cursor vs Copilot comparison table. Targets untapped \"windsurf ai memory\" and \"export windsurf conversations\" keywords. FAQPage JSON-LD (6 questions), Article schema.',
+      ],
+      improved: [
+        'Sitemap expanded to 115 URLs (+2 new blog pages)',
+        'Blog registry expanded to 100 posts',
+        'Homepage Guides section: +2 new links (Claude Opus 4, Windsurf)',
+      ],
+    },
+    },
+    {
     version: 'v0.39.0',
     date: '2026-05-03',
     title: '100th Blog Milestone — ChatGPT Agent Mode Memory',
