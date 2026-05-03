@@ -494,6 +494,9 @@ No accounts required. No third-party access. Your conversations are stored in an
               { title: 'Export Poe AI Conversations', href: '/blog/export-poe-ai' },
               { title: 'ChatGPT Operator Memory Guide', href: '/blog/chatgpt-operator-memory' },
               { title: 'Claude Sonnet 4 Memory Guide', href: '/blog/claude-sonnet-4-memory' },
+              { title: 'Grok Memory Guide', href: '/blog/grok-memory-guide' },
+              { title: 'Perplexity AI Memory Guide', href: '/blog/perplexity-memory-guide' },
+              { title: 'ChatGPT Temporary Chat vs Memory', href: '/blog/chatgpt-temporary-chat-vs-memory' },
               { title: '🔌 MCP Server', href: '/mcp-server' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">

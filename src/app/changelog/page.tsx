@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.42.0',
+    date: '2026-05-03',
+    title: 'New AI Platform Coverage — Grok, Perplexity & ChatGPT Temporary Chat',
+    tags: ['SEO', 'Grok', 'Perplexity', 'ChatGPT', 'Blog'],
+    changes: {
+      added: [
+        'New blog: "Grok Memory Guide 2026" — comprehensive guide covering xAI Grok memory system, 128K context window, 4 export methods, Grok vs ChatGPT vs Claude comparison table. Targets untapped "grok memory" and "grok ai memory" keywords. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "Perplexity AI Memory Guide 2026" — complete guide to Perplexity threads, Library, Collections, and Spaces. 4 export methods, Perplexity vs ChatGPT comparison table. Targets "perplexity memory" and "perplexity ai memory" keywords. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "ChatGPT Temporary Chat vs Memory Mode" — explains the confusing difference between temporary chat and memory-enabled chats. Privacy implications, when to use each, 10-row comparison table. Targets "chatgpt temporary chat" and "chatgpt incognito mode" keywords. FAQPage JSON-LD (6 questions), Article schema.',
+      ],
+      improved: [
+        'Sitemap expanded to 121 URLs (+3 new blog pages)',
+        'Blog registry expanded to 108 posts',
+        'Homepage Guides section: +3 new links (Grok, Perplexity, Temporary Chat)',
+      ],
+    },
+    },
+    {
     version: 'v0.41.0',
     date: '2026-05-03',
     title: 'Untapped Keywords — Poe, Operator & Claude Sonnet 4 Coverage',

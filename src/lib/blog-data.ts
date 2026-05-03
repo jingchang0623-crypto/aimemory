@@ -1183,6 +1183,45 @@ export const blogPosts: BlogPost[] = [
     tags: ['claude', 'sonnet-4', 'memory', 'context-window', 'export', 'ai-platform'],
     lang: 'en',
   },
+  // === ChatGPT Temporary Chat vs Memory Mode (comparison keyword) ===
+  {
+    slug: 'chatgpt-temporary-chat-vs-memory',
+    title: 'ChatGPT Temporary Chat vs Memory Mode: Complete Guide (2026)',
+    description: 'ChatGPT Temporary Chat vs Memory mode explained. Learn when to use temporary chat (incognito mode) vs memory-enabled chats, privacy implications, and how to manage both effectively.',
+    category: 'Comparisons',
+    date: '2026-05-03',
+    readTime: '14 min',
+    keywords: ['chatgpt temporary chat', 'chatgpt temporary chat vs memory', 'chatgpt no memory mode', 'chatgpt incognito mode', 'chatgpt privacy mode'],
+    tags: ['chatgpt', 'memory', 'temporary-chat', 'privacy', 'comparison', 'incognito'],
+    lang: 'en',
+  },
+
+  // === Grok Memory Guide ===
+  {
+    slug: 'grok-memory-guide',
+    title: 'Grok Memory Guide: How to Save, Export & Search Grok AI Conversations (2026)',
+    description: 'Complete guide to Grok AI memory management. Learn how Grok memory works, how to save and export conversations, and search across all your Grok chats.',
+    category: 'AI Platform Guides',
+    date: '2026-05-03',
+    readTime: '12 min',
+    keywords: ['grok memory', 'grok ai memory', 'xai grok memory', 'grok conversation history', 'save grok conversations', 'grok memory guide'],
+    tags: ['grok', 'xai', 'memory', 'export', 'conversation-history', 'ai-platform'],
+    lang: 'en',
+  },
+
+  // === Perplexity AI Memory Guide ===
+  {
+    slug: 'perplexity-memory-guide',
+    title: 'Perplexity AI Memory Guide: Save, Search & Manage Your Threads (2026)',
+    description: 'Complete guide to Perplexity AI memory and conversation management. Learn how Perplexity threads work, export conversations, and search across all your AI chats.',
+    category: 'AI Platform Guides',
+    date: '2026-05-03',
+    readTime: '11 min',
+    keywords: ['perplexity memory', 'perplexity ai memory', 'perplexity conversation history', 'save perplexity conversations', 'perplexity threads'],
+    tags: ['perplexity', 'memory', 'threads', 'search', 'conversation-history', 'ai-platform'],
+    lang: 'en',
+  },
+
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */
