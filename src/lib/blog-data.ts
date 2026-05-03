@@ -1144,6 +1144,45 @@ export const blogPosts: BlogPost[] = [
     tags: ['windsurf', 'export', 'codeium', 'ai-ide', 'conversation-history', 'backup'],
     lang: 'en',
   },
+
+  // === Export Poe AI ===
+  {
+    slug: 'export-poe-ai',
+    title: 'How to Export Poe AI Conversations - Complete Guide (2026)',
+    description: 'Step-by-step guide to exporting Poe AI conversations. Save, backup and search your Poe chat history across GPT-4, Claude, Gemini, and more.',
+    category: 'Export Guides',
+    date: '2026-05-03',
+    readTime: '10 min',
+    keywords: ['export poe conversations', 'poe ai export', 'save poe chat history', 'poe conversation backup', 'export poe to pdf'],
+    tags: ['poe', 'export', 'multi-model', 'quora', 'conversation-history', 'backup'],
+    lang: 'en',
+  },
+
+  // === ChatGPT Operator Memory ===
+  {
+    slug: 'chatgpt-operator-memory',
+    title: 'ChatGPT Operator Memory: How to Save & Search Agent Conversations (2026)',
+    description: 'Complete guide to managing ChatGPT Operator conversations. Learn how Operator memory works, how to save agent sessions, and search across all your AI conversations.',
+    category: 'AI Platform Guides',
+    date: '2026-05-03',
+    readTime: '12 min',
+    keywords: ['chatgpt operator memory', 'chatgpt operator save conversations', 'chatgpt operator conversation history', 'operator chatgpt export', 'chatgpt agent memory'],
+    tags: ['chatgpt', 'operator', 'agent', 'memory', 'conversation-history', 'export'],
+    lang: 'en',
+  },
+
+  // === Claude Sonnet 4 Memory ===
+  {
+    slug: 'claude-sonnet-4-memory',
+    title: 'Claude Sonnet 4 Memory: Complete Guide to Managing Your AI Conversations (2026)',
+    description: 'Everything about Claude Sonnet 4 memory limits, context window size, how to save and export conversations, and cross-platform memory management.',
+    category: 'AI Platform Guides',
+    date: '2026-05-03',
+    readTime: '12 min',
+    keywords: ['claude sonnet 4 memory', 'claude sonnet 4 context window', 'claude sonnet 4 memory limit', 'save claude sonnet 4 conversations', 'claude sonnet memory'],
+    tags: ['claude', 'sonnet-4', 'memory', 'context-window', 'export', 'ai-platform'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

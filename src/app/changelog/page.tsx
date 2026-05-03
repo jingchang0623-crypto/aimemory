@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.41.0',
+    date: '2026-05-03',
+    title: 'Untapped Keywords — Poe, Operator & Claude Sonnet 4 Coverage',
+    tags: ['SEO', 'Poe', 'Operator', 'Claude Sonnet 4', 'Blog'],
+    changes: {
+      added: [
+        'New blog: "Export Poe AI Conversations" — first-ever guide covering Poe by Quora multi-model platform (GPT-4, Claude, Gemini, Llama). 3 export methods, Poe vs ChatGPT vs Claude comparison table. Targets untapped "export poe conversations" and "poe ai export" keywords. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "ChatGPT Operator Memory" — comprehensive guide to managing ChatGPT Operator browser agent conversations. Covers context window usage, 3 saving methods, Operator vs Agent Mode vs Regular comparison table. Targets "chatgpt operator memory" and "chatgpt operator save conversations" emerging keywords. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "Claude Sonnet 4 Memory" — complete guide to Anthropic\'s most popular model memory system. 200K context window, 4 saving methods, Sonnet 4 vs Opus 4 vs Haiku 3.5 comparison table. Targets "claude sonnet 4 memory" and "claude sonnet 4 context window" keywords. FAQPage JSON-LD (6 questions), Article schema.',
+      ],
+      improved: [
+        'Sitemap expanded to 118 URLs (+3 new blog pages)',
+        'Blog registry expanded to 103 posts',
+        'Homepage Guides section: +3 new links (Poe, Operator, Sonnet 4)',
+      ],
+    },
+    },
+    {
     version: 'v0.40.0',
     date: '2026-05-03',
     title: 'Platform Expansion — Claude Opus 4 & Windsurf AI Coverage',
