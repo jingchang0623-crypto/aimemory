@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.45.0',
+    date: '2026-05-04',
+    title: 'Privacy & Comparison SEO — 3 Strategic Blog Posts + Homepage Stats Fix',
+    tags: ['SEO', 'Privacy', 'ChatGPT Memory', 'Perplexity', 'Custom GPTS'],
+    changes: {
+      added: [
+        'New blog: "How to Turn Off ChatGPT Memory" — comprehensive privacy guide covering desktop, mobile, API, and temporary chat alternatives. Targets high-intent "turn off chatgpt memory" keyword. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "ChatGPT vs Perplexity: AI Memory Compared" — 14-row feature comparison covering memory systems, context windows, web search, citations, organization, export, and pricing. Targets "chatgpt vs perplexity" keyword. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "How to Export ChatGPT Custom GPTs" — 5 methods for backing up custom GPT configurations, knowledge files, and actions. Targets "export chatgpt gpts" high-intent keyword. FAQPage JSON-LD (6 questions), Article schema.',
+      ],
+      improved: [
+        'Homepage: Updated "SEO Guides Published" stat from 95+ to 115+ to reflect actual content count',
+        'Homepage Guides section: +3 new blog links (Turn Off Memory, ChatGPT vs Perplexity, Export Custom GPTs)',
+        'Sitemap expanded to 130 URLs (+3 new blog pages)',
+        'Blog registry expanded to 115 posts',
+      ],
+    },
+    },
+    {
     version: 'v0.44.0',
     date: '2026-05-04',
     title: 'AI Coding & Local LLM Coverage — Claude Code, Cursor & Ollama Memory Guides',
@@ -34,7 +53,7 @@ const releases = [
         'Sitemap expanded to 127 URLs (+3 developer-focused guides)',
       ],
     },
-  },
+    },
   {
     version: 'v0.43.0',
     date: '2026-05-03',

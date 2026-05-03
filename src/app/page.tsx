@@ -155,7 +155,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 text-center">
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gray-900">95+</div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">115+</div>
               <div className="text-xs text-gray-500 mt-1">SEO Guides Published</div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
@@ -524,6 +524,9 @@ No accounts required. No third-party access. Your conversations are stored in an
               { title: 'ChatGPT vs Claude Memory', href: '/blog/chatgpt-vs-claude-memory' },
               { title: 'AI Memory Management Tools', href: '/blog/ai-memory-management-tools-2026' },
               { title: '🔌 MCP Server', href: '/mcp-server' },
+              { title: 'Turn Off ChatGPT Memory', href: '/blog/turn-off-chatgpt-memory' },
+              { title: 'ChatGPT vs Perplexity', href: '/blog/chatgpt-vs-perplexity' },
+              { title: 'Export Custom GPTs', href: '/blog/export-chatgpt-gpts' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}

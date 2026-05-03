@@ -1145,6 +1145,19 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
 
+  // === Export ChatGPT Custom GPTs ===
+  {
+    slug: 'export-chatgpt-gpts',
+    title: 'How to Export ChatGPT Custom GPTs - Complete Guide (2026)',
+    description: 'Step-by-step guide to exporting, backing up, and saving ChatGPT Custom GPTs. Covers GPT configurations, conversation history, knowledge files, and AI Memory integration.',
+    category: 'Export Guides',
+    date: '2026-05-04',
+    readTime: '18 min',
+    keywords: ['export chatgpt custom gpts', 'chatgpt gpt export', 'backup custom gpts', 'save chatgpt gpts', 'export gpt configurations'],
+    tags: ['chatgpt', 'export', 'custom-gpts', 'backup', 'guide'],
+    lang: 'en',
+  },
+
   // === Export Poe AI ===
   {
     slug: 'export-poe-ai',
@@ -1297,6 +1310,32 @@ export const blogPosts: BlogPost[] = [
     readTime: '14 min',
     keywords: ['ollama memory', 'save ollama conversations', 'local ai memory', 'ollama chat history'],
     tags: ['ollama', 'local-ai', 'privacy', 'memory', 'export', 'llm', 'developer'],
+    lang: 'en',
+  },
+
+  // === ChatGPT vs Perplexity Comparison ===
+  {
+    slug: 'chatgpt-vs-perplexity',
+    title: 'ChatGPT vs Perplexity: AI Memory Compared (2026)',
+    description: 'In-depth comparison of ChatGPT and Perplexity AI memory features. Learn how each platform stores, recalls, and manages your conversations — and how AI Memory unifies both.',
+    category: 'Comparisons',
+    date: '2026-05-04',
+    readTime: '14 min',
+    keywords: ['ChatGPT vs Perplexity', 'ChatGPT memory vs Perplexity', 'AI memory comparison', 'Perplexity AI memory', 'ChatGPT memory feature'],
+    tags: ['chatgpt', 'perplexity', 'comparison', 'memory', 'ai-platform', 'research'],
+    lang: 'en',
+  },
+
+  // === Turn Off ChatGPT Memory ===
+  {
+    slug: 'turn-off-chatgpt-memory',
+    title: 'How to Turn Off ChatGPT Memory — Complete Guide (2026)',
+    description: 'Step-by-step guide to turning off ChatGPT memory on web, mobile, and API. Learn how to disable memory, delete saved memories, use temporary chat mode, and protect your privacy.',
+    category: 'ChatGPT Guides',
+    date: '2026-05-04',
+    readTime: '14 min',
+    keywords: ['turn off chatgpt memory', 'disable chatgpt memory', 'chatgpt memory off', 'chatgpt memory settings', 'chatgpt temporary chat'],
+    tags: ['chatgpt', 'memory', 'privacy', 'settings', 'temporary-chat', 'disable', 'tutorial'],
     lang: 'en',
   },
 
