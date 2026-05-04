@@ -1378,6 +1378,45 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
 
+  // === NotebookLM Export ===
+  {
+    slug: 'notebooklm-export',
+    title: 'How to Export NotebookLM Conversations — Save & Search Your Notes (2026)',
+    description: 'Complete guide to exporting Google NotebookLM conversations. Learn 4 methods to save, backup, and search your NotebookLM notes and AI interactions permanently.',
+    category: 'Export Guides',
+    date: '2026-05-04',
+    readTime: '11 min',
+    keywords: ['notebooklm export', 'export notebooklm conversations', 'save notebooklm notes', 'notebooklm to pdf', 'notebooklm backup'],
+    tags: ['notebooklm', 'google', 'export', 'notes', 'backup', 'search', 'guide'],
+    lang: 'en',
+  },
+
+  // === AI Memory for Students ===
+  {
+    slug: 'ai-memory-for-students',
+    title: 'AI Memory for Students: Organize Your AI Study Sessions (2026)',
+    description: 'How students use AI Memory to organize ChatGPT, Claude, and Gemini study sessions. Save research, essay drafts, math solutions, and exam prep in one searchable place.',
+    category: 'Use Cases',
+    date: '2026-05-04',
+    readTime: '12 min',
+    keywords: ['ai memory for students', 'chatgpt for studying', 'organize ai study sessions', 'save chatgpt conversations for studying', 'ai study tool'],
+    tags: ['students', 'education', 'studying', 'chatgpt', 'claude', 'gemini', 'organize', 'use-case'],
+    lang: 'en',
+  },
+
+  // === Self-Hosted AI Memory ===
+  {
+    slug: 'self-hosted-ai-memory',
+    title: 'Self-Hosted AI Memory: Local vs Cloud Comparison Guide (2026)',
+    description: 'Complete guide to self-hosted AI memory solutions. Compare local SQLite, MCP server, Docker, and cloud SaaS options. Full privacy, data sovereignty, and setup instructions.',
+    category: 'Technical',
+    date: '2026-05-04',
+    readTime: '13 min',
+    keywords: ['self hosted ai memory', 'local ai memory', 'ai memory privacy', 'offline ai memory tool', 'ai memory mcp server'],
+    tags: ['self-hosted', 'privacy', 'local', 'mcp', 'docker', 'sqlite', 'technical', 'guide'],
+    lang: 'en',
+  },
+
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

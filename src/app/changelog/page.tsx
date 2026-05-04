@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.47.0',
+    date: '2026-05-04',
+    title: '3 Strategic SEO Blogs — NotebookLM Export, Student Use Case, Self-Hosted Guide',
+    tags: ['SEO', 'NotebookLM', 'Students', 'Self-Hosted', 'Privacy', 'MCP'],
+    changes: {
+      added: [
+        'New blog: "How to Export NotebookLM Conversations" — 4 export methods (manual copy, print-to-PDF, Chrome extension, API), comparison table, best practices. Targets "notebooklm export" — Google\'s trending AI tool with zero competitor coverage. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "AI Memory for Students" — 5 student use cases (research, essay writing, math/science, language learning, exam prep), step-by-step setup guide, privacy/academic integrity section. Targets "ai memory for students" — massive underserved audience. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "Self-Hosted AI Memory" — local vs cloud comparison, 4 deployment options (MCP server, Docker, extension-only, cloud SaaS), setup guide, security best practices. Targets "self hosted ai memory" — growing privacy-conscious developer audience. FAQPage JSON-LD (6 questions), Article schema.',
+      ],
+      improved: [
+        'Sitemap expanded to 136 URLs (+3 new blog pages)',
+        'Blog registry expanded to 123 posts',
+        'New "Use Cases" category for audience-specific content',
+        'New "Technical" category for developer-focused content',
+      ],
+    },
+    },
+    {
     version: 'v0.46.0',
     date: '2026-05-04',
     title: 'Article Schema Coverage + 3 High-Intent SEO Blogs — Technical SEO Perfection',
