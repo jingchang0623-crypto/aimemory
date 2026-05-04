@@ -18,6 +18,27 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.50.0',
+    date: '2026-05-05',
+    title: '3 Strategic SEO Blogs + MCP Docs v1.1.0 Update — Research, Sync, NotebookLM',
+    tags: ['SEO', 'Research', 'Sync', 'NotebookLM', 'MCP', 'Academic', 'Comparison'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT Memory for Research: Complete Academic Guide (2026)" — targets researchers and PhD students, literature review workflows, methodology management. Targets "chatgpt memory for research" keyword. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "How to Sync AI Conversations Across Devices: Complete Guide (2026)" — 4 sync methods compared, cross-platform solution. Targets "sync chatgpt across devices" keyword. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "ChatGPT Memory vs Google NotebookLM: Which is Better? (2026)" — 11-feature comparison table, use case analysis, AI Memory as bridge solution. Targets "chatgpt memory vs notebooklm" keyword. FAQPage JSON-LD (6 questions), Article schema.',
+      ],
+      fixed: [
+        'MCP Docs page: Updated version badge from "MCP v1.0" to "MCP v1.1.0" to match actual API version.',
+        'MCP Docs page: Added missing tools (get_conversation, delete_memory) to the tools grid — now shows all 6 tools.',
+      ],
+      improved: [
+        'Sitemap expanded to 145 URLs (+3 new blog pages)',
+        'Blog registry expanded to 132 posts',
+      ],
+    },
+    },
+    {
     version: 'v0.49.0',
     date: '2026-05-04',
     title: '3 Strategic SEO Blogs + MCP Server Version Fix — Desktop, Grok, Agent Memory',

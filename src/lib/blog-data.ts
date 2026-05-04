@@ -1488,6 +1488,36 @@ export const blogPosts: BlogPost[] = [
     tags: ['ai', 'agent', 'memory', 'mcp', 'server', 'claude', 'cursor', 'persistent', 'context', 'technical'],
     lang: 'en',
   },
+  {
+    slug: 'chatgpt-memory-for-research',
+    title: 'ChatGPT Memory for Research: Complete Academic Guide (2026)',
+    description: 'Learn how to use ChatGPT memory for academic research, literature review, and paper writing. Complete guide for researchers, PhD students, and academics.',
+    category: 'Research',
+    date: '2026-05-05',
+    readTime: '14 min',
+    tags: ['chatgpt', 'memory', 'research', 'academic', 'literature', 'phd', 'methodology', 'knowledge'],
+    lang: 'en',
+  },
+  {
+    slug: 'sync-ai-conversations-across-devices',
+    title: 'How to Sync AI Conversations Across Devices: Complete Guide (2026)',
+    description: 'Learn how to sync your ChatGPT, Claude, and DeepSeek conversations across all your devices. Compare official sync, export/import, Chrome extensions, and AI Memory.',
+    category: 'Guides',
+    date: '2026-05-05',
+    readTime: '12 min',
+    tags: ['sync', 'devices', 'cross-platform', 'chatgpt', 'claude', 'backup', 'multi-device', 'guide'],
+    lang: 'en',
+  },
+  {
+    slug: 'chatgpt-memory-vs-notebooklm',
+    title: 'ChatGPT Memory vs Google NotebookLM: Which is Better? (2026)',
+    description: 'Deep comparison of ChatGPT Memory and Google NotebookLM for knowledge management. Learn which tool is better for research, note-taking, and AI conversation memory.',
+    category: 'Comparison',
+    date: '2026-05-05',
+    readTime: '15 min',
+    tags: ['chatgpt', 'memory', 'notebooklm', 'google', 'comparison', 'research', 'knowledge', 'documents'],
+    lang: 'en',
+  },
 
 ];
 

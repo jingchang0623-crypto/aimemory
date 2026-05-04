@@ -20,7 +20,7 @@ export default function MCPDocsPage() {
 
       <main className="max-w-4xl mx-auto px-4 py-12">
         <section className="text-center mb-16">
-          <div className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">MCP v1.0</div>
+          <div className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">MCP v1.1.0</div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">AI Memory MCP Server</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Connect your AI assistants to your conversation history via the Model Context Protocol.
@@ -51,6 +51,14 @@ export default function MCPDocsPage() {
             <div className="bg-gray-50 rounded-lg p-4">
               <h3 className="font-semibold text-gray-900 mb-2">📋 list_memories</h3>
               <p className="text-sm text-gray-600">Browse recent conversations with optional platform filtering and pagination.</p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-4">
+              <h3 className="font-semibold text-gray-900 mb-2">💬 get_conversation</h3>
+              <p className="text-sm text-gray-600">Retrieve a full conversation with all messages by ID.</p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-4">
+              <h3 className="font-semibold text-gray-900 mb-2">🗑️ delete_memory</h3>
+              <p className="text-sm text-gray-600">Delete a specific conversation or all data for your session.</p>
             </div>
           </div>
         </section>
