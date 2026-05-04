@@ -18,6 +18,33 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.48.0',
+    date: '2026-05-04',
+    title: 'MCP Server v1.1.0 + Chrome Extension Fixes + 3 Strategic SEO Blogs',
+    tags: ['MCP', 'Chrome Extension', 'SEO', 'Cross-Platform', 'Memory Comparison'],
+    changes: {
+      added: [
+        'MCP Server v1.1.0: Added 2 new tools — get_conversation (retrieve full conversation by ID) and delete_memory (delete specific or all data). Now 6 tools total.',
+        'MCP Server: isError field on error responses for proper MCP client error handling. Input validation on all tools. Improved error messages with details.',
+        'MCP Server: GET endpoint now returns plain info object (not JSON-RPC framed). notifications/initialized returns 204 No Content per spec.',
+        'New blog: "How to Sync AI Conversations Across Devices" — 4 sync methods (native, extension, MCP, manual), comparison table, step-by-step setup. Targets "sync ai conversations" keyword.',
+        'New blog: "ChatGPT vs Claude vs Gemini vs DeepSeek: Which AI Remembers Best?" — head-to-head memory comparison with test results, recommendations by use case. Targets "which ai remembers best" keyword.',
+        'New blog: "MCP Memory Server: Connect Any AI to Your Conversation History" — complete MCP setup guide for Claude Desktop, Cursor, and 113+ clients. Targets "mcp memory server" keyword.',
+      ],
+      fixed: [
+        'Chrome Extension: Removed remote Tailwind CDN script (Chrome Web Store blocker). Replaced with comprehensive inline CSS for all utility classes.',
+        'Chrome Extension: Added Gemini filter button to sidepanel. Users can now filter conversations by Gemini platform.',
+        'Chrome Extension: Updated empty state message to include Gemini in supported platforms list.',
+      ],
+      improved: [
+        'Sitemap expanded to 139 URLs (+3 new blog pages)',
+        'Blog registry expanded to 126 posts',
+        'Homepage Guides section updated with 3 new blog links',
+        'MCP Server version bumped to 1.1.0',
+      ],
+    },
+    },
+    {
     version: 'v0.47.0',
     date: '2026-05-04',
     title: '3 Strategic SEO Blogs — NotebookLM Export, Student Use Case, Self-Hosted Guide',

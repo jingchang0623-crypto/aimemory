@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Memory Manager</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -14,6 +13,92 @@
       min-height: 100vh;
       overflow-y: auto;
     }
+    /* Layout utilities */
+    .flex { display: flex; }
+    .flex-col { flex-direction: column; }
+    .flex-1 { flex: 1; }
+    .flex-wrap { flex-wrap: wrap; }
+    .items-center { align-items: center; }
+    .justify-between { justify-content: space-between; }
+    .gap-1 { gap: 4px; }
+    .gap-1\.5 { gap: 6px; }
+    .gap-2 { gap: 8px; }
+    .h-screen { height: 100vh; }
+    .overflow-y-auto { overflow-y: auto; }
+    .overflow-x-auto { overflow-x: auto; }
+    .relative { position: relative; }
+    .sticky { position: sticky; }
+    .top-0 { top: 0; }
+    .z-50 { z-index: 50; }
+    .ml-auto { margin-left: auto; }
+    .ml-2 { margin-left: 8px; }
+    .mr-2 { margin-right: 8px; }
+    .mb-3 { margin-bottom: 12px; }
+    .mt-1 { margin-top: 4px; }
+    .mt-2 { margin-top: 8px; }
+    .mt-2\.5 { margin-top: 10px; }
+    .mt-4 { margin-top: 16px; }
+    .px-2 { padding-left: 8px; padding-right: 8px; }
+    .px-2\.5 { padding-left: 10px; padding-right: 10px; }
+    .px-3 { padding-left: 12px; padding-right: 12px; }
+    .px-4 { padding-left: 16px; padding-right: 16px; }
+    .py-1 { padding-top: 4px; padding-bottom: 4px; }
+    .py-1\.5 { padding-top: 6px; padding-bottom: 6px; }
+    .py-2 { padding-top: 8px; padding-bottom: 8px; }
+    .py-3 { padding-top: 12px; padding-bottom: 12px; }
+    .pb-0\.5 { padding-bottom: 2px; }
+    .pt-3 { padding-top: 12px; }
+    .pl-9 { padding-left: 36px; }
+    .pr-3 { padding-right: 12px; }
+    .p-1 { padding: 4px; }
+    .w-4 { width: 16px; }
+    .w-5 { width: 20px; }
+    .w-12 { width: 48px; }
+    .h-4 { height: 16px; }
+    .h-5 { height: 20px; }
+    .h-12 { height: 48px; }
+    .text-xs { font-size: 0.75rem; }
+    .text-sm { font-size: 0.875rem; }
+    .text-base { font-size: 1rem; }
+    .font-medium { font-weight: 500; }
+    .font-semibold { font-weight: 600; }
+    .truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .flex-1 { flex: 1; }
+    .rounded { border-radius: 4px; }
+    .rounded-lg { border-radius: 8px; }
+    .rounded-full { border-radius: 9999px; }
+    .border { border: 1px solid; }
+    .border-b { border-bottom: 1px solid; }
+    .border-t { border-top: 1px solid; }
+    .border-gray-700 { border-color: #374151; }
+    .border-gray-800 { border-color: #1f2937; }
+    .bg-\[#0f0f0f\] { background: #0f0f0f; }
+    .bg-gray-800 { background: #1f2937; }
+    .bg-gray-900 { background: #111827; }
+    .text-white { color: #fff; }
+    .text-gray-400 { color: #9ca3af; }
+    .text-gray-500 { color: #6b7280; }
+    .text-purple-400 { color: #a78bfa; }
+    .placeholder-gray-500::placeholder { color: #6b7280; }
+    .bg-purple-500\/20 { background: rgba(139,92,246,0.2); }
+    .border-purple-500\/30 { border-color: rgba(139,92,246,0.3); }
+    .space-y-2 > * + * { margin-top: 8px; }
+    .transition-colors { transition: color 0.15s, background-color 0.15s, border-color 0.15s; }
+    .focus\:outline-none:focus { outline: none; }
+    .focus\:border-purple-500:focus { border-color: #8b5cf6; }
+    .focus\:ring-1:focus { box-shadow: 0 0 0 1px rgba(139,92,246,0.5); }
+    .hover\:bg-gray-700:hover { background: #374151; }
+    .hover\:border-gray-600:hover { border-color: #4b5563; }
+    .hover\:text-white:hover { color: #fff; }
+    .hover\:bg-purple-500\/30:hover { background: rgba(139,92,246,0.3); }
+    .hover\:bg-red-500\/30:hover { background: rgba(239,68,68,0.3); }
+    .hidden { display: none !important; }
+    /* Absolute positioning */
+    .absolute { position: absolute; }
+    .left-3 { left: 12px; }
+    .top-1\/2 { top: 50%; }
+    .-translate-y-1\/2 { transform: translateY(-50%); }
+    /* Component styles */
     .conversation-item:hover { background: #1a1a2e; }
     .platform-badge { font-size: 0.65rem; padding: 1px 6px; border-radius: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
     .platform-chatgpt { background: #10a37f20; color: #10a37f; border: 1px solid #10a37f40; }
@@ -52,6 +137,10 @@
     .memory-item:hover { background: #2a2a1e; }
     .memory-content { font-size: 0.8rem; color: #d4d4aa; line-height: 1.5; white-space: pre-wrap; }
     .export-menu { position: fixed; z-index: 200; }
+    .filter-btn { cursor: pointer; white-space: nowrap; }
+    .filter-btn.active { background: rgba(139,92,246,0.2); color: #a78bfa; border-color: rgba(139,92,246,0.3); }
+    .stat-num { font-size: 1.5rem; font-weight: 700; color: #a78bfa; }
+    .stat-label { font-size: 0.7rem; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em; }
   </style>
 </head>
 <body>
@@ -78,7 +167,7 @@
           type="search"
           id="search-input"
           placeholder="Search conversations..."
-          class="w-full pl-9 pr-3 py-2 bg-gray-900 border border-gray-700 rounded-lg text-sm text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500"
+          class="w-full pl-9 pr-3 py-2 bg-gray-900 border border-gray-700 rounded-lg text-sm text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1"
         />
       </div>
 
@@ -88,6 +177,7 @@
         <button data-filter="chatgpt" class="filter-btn px-2.5 py-1 text-xs rounded-full bg-gray-800 text-gray-400 border border-gray-700 hover:border-gray-600">ChatGPT</button>
         <button data-filter="claude" class="filter-btn px-2.5 py-1 text-xs rounded-full bg-gray-800 text-gray-400 border border-gray-700 hover:border-gray-600">Claude</button>
         <button data-filter="deepseek" class="filter-btn px-2.5 py-1 text-xs rounded-full bg-gray-800 text-gray-400 border border-gray-700 hover:border-gray-600">DeepSeek</button>
+        <button data-filter="gemini" class="filter-btn px-2.5 py-1 text-xs rounded-full bg-gray-800 text-gray-400 border border-gray-700 hover:border-gray-600">Gemini</button>
         <button data-filter="memory" class="filter-btn px-2.5 py-1 text-xs rounded-full bg-gray-800 text-gray-400 border border-gray-700 hover:border-gray-600">💡 Memories</button>
       </div>
     </header>
@@ -99,7 +189,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
         </svg>
         <p class="text-sm font-medium">No conversations yet</p>
-        <p class="text-xs mt-1">Start chatting on ChatGPT, Claude, or DeepSeek to capture conversations.</p>
+        <p class="text-xs mt-1">Start chatting on ChatGPT, Claude, DeepSeek, or Gemini to capture conversations.</p>
       </div>
     </main>
 

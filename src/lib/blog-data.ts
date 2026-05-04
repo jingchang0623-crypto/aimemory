@@ -1417,6 +1417,45 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
 
+  // === Sync AI Conversations ===
+  {
+    slug: 'sync-ai-conversations',
+    title: 'How to Sync AI Conversations Across Devices (2026 Guide)',
+    description: 'Learn how to sync your ChatGPT, Claude, and DeepSeek conversations across all your devices. 4 methods to keep AI memory accessible everywhere.',
+    category: 'Guides',
+    date: '2026-05-04',
+    readTime: '14 min',
+    keywords: ['sync ai conversations', 'ai memory sync', 'sync chatgpt across devices', 'ai conversation sync', 'cross device ai memory'],
+    tags: ['sync', 'devices', 'cross-platform', 'chatgpt', 'claude', 'deepseek', 'gemini', 'mcp', 'extension'],
+    lang: 'en',
+  },
+
+  // === Which AI Remembers Best ===
+  {
+    slug: 'which-ai-remembers-best',
+    title: 'ChatGPT vs Claude vs Gemini vs DeepSeek: Which AI Remembers Best? (2026)',
+    description: 'Comprehensive comparison of AI memory features across ChatGPT, Claude, Gemini, and DeepSeek. Find out which AI remembers your conversations best in 2026.',
+    category: 'Comparisons',
+    date: '2026-05-04',
+    readTime: '15 min',
+    keywords: ['which ai remembers best', 'ai memory comparison 2026', 'chatgpt vs claude memory', 'gemini memory vs chatgpt', 'deepseek memory'],
+    tags: ['comparison', 'chatgpt', 'claude', 'gemini', 'deepseek', 'memory', 'features', 'review'],
+    lang: 'en',
+  },
+
+  // === MCP Memory Server ===
+  {
+    slug: 'mcp-memory-server',
+    title: 'MCP Memory Server: Connect Any AI to Your Conversation History',
+    description: 'Connect any MCP-compatible AI assistant to your entire conversation history. Learn how the MCP memory server lets Claude, ChatGPT, Cursor and more search across all your past AI conversations.',
+    category: 'Technical',
+    date: '2026-05-04',
+    readTime: '20 min',
+    keywords: ['mcp memory server', 'mcp ai memory', 'connect ai to memory', 'model context protocol memory', 'ai conversation memory server'],
+    tags: ['mcp', 'memory', 'server', 'claude', 'chatgpt', 'cursor', 'technical', 'guide', 'api'],
+    lang: 'en',
+  },
+
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */
