@@ -67,8 +67,38 @@ export default function BestAIMemoryExtension2026() {
     ],
   };
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Best AI Memory Extension in 2026 - Top 5 Compared',
+    description: 'Looking for the best AI memory extension in 2026? Compare the top 5 tools for saving, searching, and reusing AI conversations across ChatGPT, Claude, DeepSeek, and Gemini.',
+    url: 'https://aimemory.pro/blog/best-ai-memory-extension-2026',
+    datePublished: '2026-04-28',
+    dateModified: '2026-05-04',
+    author: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://aimemory.pro/og-image.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://aimemory.pro/blog/best-ai-memory-extension-2026',
+    },
+    image: 'https://aimemory.pro/og-image.png',
+  };
+
   return (
     <BlogLayout slug={slug} title="Best AI Memory Extension in 2026" category="Comparisons" date="2026-04-28" readTime="11 min">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       
       <p className="lead">

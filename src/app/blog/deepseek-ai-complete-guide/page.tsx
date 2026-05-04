@@ -84,6 +84,35 @@ const webPageJsonLd = {
   },
 };
 
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'DeepSeek AI Memory Complete Guide 2026',
+  description: 'Complete guide to DeepSeek AI memory management. Learn how to export, search, and unify DeepSeek conversations with ChatGPT and Claude using AI Memory.',
+  url: 'https://aimemory.pro/blog/deepseek-ai-complete-guide',
+  datePublished: '2026-05-01',
+  dateModified: '2026-05-04',
+  author: {
+    '@type': 'Organization',
+    name: 'AI Memory',
+    url: 'https://aimemory.pro',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'AI Memory',
+    url: 'https://aimemory.pro',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://aimemory.pro/og-image.png',
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://aimemory.pro/blog/deepseek-ai-complete-guide',
+  },
+  image: 'https://aimemory.pro/og-image.png',
+};
+
 export default function DeepSeekAICompleteGuide() {
   return (
     <BlogLayout
@@ -93,6 +122,10 @@ export default function DeepSeekAICompleteGuide() {
       date="2026-05-01"
       readTime="18 min"
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}

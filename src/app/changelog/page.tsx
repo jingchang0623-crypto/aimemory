@@ -18,6 +18,26 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.46.0',
+    date: '2026-05-04',
+    title: 'Article Schema Coverage + 3 High-Intent SEO Blogs — Technical SEO Perfection',
+    tags: ['SEO', 'Structured Data', 'ChatGPT Memory', 'AI Tools', 'Migration'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT Memory: Complete Guide to How It Works (2026)" — comprehensive guide covering memory feature mechanics, 1,500-word limit, management, and comparison with AI Memory. Targets "chatgpt memory" primary keyword. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "AI Memory Tools Compared: 7 Best Options for 2026" — 7-tool comparison table (AI Memory, Mem0, Chat Memo, Supermemory, AI Context Flow, ChatGPT native, Claude native) with pricing, features, and platforms. Targets "ai memory tools" category keyword. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "How to Switch from ChatGPT to Claude (Keep Your Memory)" — migration guide covering export-import, MCP setup, and cross-platform memory transfer. Targets "switch chatgpt to claude" high-intent keyword. FAQPage JSON-LD (6 questions), Article schema.',
+      ],
+      improved: [
+        'Article JSON-LD structured data added to 11 blogs that were missing it — now 118/118 blogs (100%) have complete structured data coverage (FAQPage + Article + BreadcrumbList)',
+        'Blogs fixed: ai-memory-for-business, ai-memory-for-teams, best-ai-memory-extension-2026, chatgpt-api-memory, chatgpt-memory-plugin, chatgpt-o3-memory-changes, deepseek-ai-complete-guide, gpt5-memory-guide, mem0-alternative, save-gemini-conversations, search-ai-conversations',
+        'Sitemap expanded to 133 URLs (+3 new blog pages)',
+        'Blog registry expanded to 118 posts',
+        'Homepage Guides section updated with 3 new blog links',
+      ],
+    },
+    },
+    {
     version: 'v0.45.0',
     date: '2026-05-04',
     title: 'Privacy & Comparison SEO — 3 Strategic Blog Posts + Homepage Stats Fix',

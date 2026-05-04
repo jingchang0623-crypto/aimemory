@@ -527,6 +527,9 @@ No accounts required. No third-party access. Your conversations are stored in an
               { title: 'Turn Off ChatGPT Memory', href: '/blog/turn-off-chatgpt-memory' },
               { title: 'ChatGPT vs Perplexity', href: '/blog/chatgpt-vs-perplexity' },
               { title: 'Export Custom GPTs', href: '/blog/export-chatgpt-gpts' },
+              { title: 'ChatGPT Memory Guide 2026', href: '/blog/chatgpt-memory-guide-2026' },
+              { title: 'AI Memory Tools Compared', href: '/blog/ai-memory-comparison-2026' },
+              { title: 'Switch ChatGPT to Claude', href: '/blog/chatgpt-to-claude-migration-guide' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}

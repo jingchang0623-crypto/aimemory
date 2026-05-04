@@ -83,8 +83,38 @@ export default function ChatGPTMemoryPlugin() {
     },
   };
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'ChatGPT Memory Plugin: Best Tools to Enhance AI Memory (2026)',
+    description: 'Looking for a ChatGPT memory plugin? Compare the best memory extensions for ChatGPT in 2026. Save, search, and reuse all your AI conversations.',
+    url: 'https://aimemory.pro/blog/chatgpt-memory-plugin',
+    datePublished: '2026-05-01',
+    dateModified: '2026-05-04',
+    author: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://aimemory.pro/og-image.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://aimemory.pro/blog/chatgpt-memory-plugin',
+    },
+    image: 'https://aimemory.pro/og-image.png',
+  };
+
   return (
     <BlogLayout slug={slug} title="ChatGPT Memory Plugin: Best Tools to Enhance AI Memory (2026)" category="Tools" date="2026-05-01" readTime="12 min">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }} />
 

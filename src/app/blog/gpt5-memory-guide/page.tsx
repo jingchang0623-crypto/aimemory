@@ -83,8 +83,38 @@ export default function GPT5MemoryGuide() {
     },
   };
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'GPT-5 Memory: Complete Guide to ChatGPT Memory Features (2026)',
+    description: 'Everything about GPT-5 memory in 2026 — how it works, limits, differences from GPT-4, and how to search all your GPT-5 conversations.',
+    url: 'https://aimemory.pro/blog/gpt5-memory-guide',
+    datePublished: '2026-05-02',
+    dateModified: '2026-05-04',
+    author: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://aimemory.pro/og-image.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://aimemory.pro/blog/gpt5-memory-guide',
+    },
+    image: 'https://aimemory.pro/og-image.png',
+  };
+
   return (
     <BlogLayout slug={slug} title="GPT-5 Memory: Complete Guide to ChatGPT Memory Features (2026)" category="AI Platform Guides" date="2026-05-02" readTime="16 min">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }} />
 

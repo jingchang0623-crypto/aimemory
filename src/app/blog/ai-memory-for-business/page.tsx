@@ -85,6 +85,35 @@ export default function AIMemoryForBusinessPage() {
     },
   };
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'AI Memory for Business: Enterprise Knowledge Management Guide (2026)',
+    description: 'The complete guide to using AI memory for business. Learn how enterprises use AI Memory to capture knowledge, improve onboarding, ensure compliance, and boost team productivity.',
+    url: 'https://aimemory.pro/blog/ai-memory-for-business',
+    datePublished: '2026-05-01',
+    dateModified: '2026-05-04',
+    author: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://aimemory.pro/og-image.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://aimemory.pro/blog/ai-memory-for-business',
+    },
+    image: 'https://aimemory.pro/og-image.png',
+  };
+
   return (
     <BlogLayout
       slug={slug}
@@ -100,6 +129,10 @@ export default function AIMemoryForBusinessPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
       <h1>

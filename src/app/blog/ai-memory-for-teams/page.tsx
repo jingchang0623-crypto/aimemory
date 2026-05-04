@@ -83,8 +83,41 @@ export default function AIMemoryForTeams() {
     },
   };
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'AI Memory for Teams: Share and Search Team AI Conversations (2026)',
+    description: 'Guide to team AI memory management. Share ChatGPT, Claude, and DeepSeek conversations across your team. Cross-platform search, MCP integration, and secure team deployment.',
+    url: 'https://aimemory.pro/blog/ai-memory-for-teams',
+    datePublished: '2026-05-02',
+    dateModified: '2026-05-04',
+    author: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://aimemory.pro/og-image.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://aimemory.pro/blog/ai-memory-for-teams',
+    },
+    image: 'https://aimemory.pro/og-image.png',
+  };
+
   return (
     <BlogLayout slug={slug} title="AI Memory for Teams: Share & Search Team AI Conversations (2026)" category="Teams" date="2026-05-02" readTime="16 min">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}

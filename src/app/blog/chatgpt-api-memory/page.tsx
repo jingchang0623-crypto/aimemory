@@ -83,8 +83,41 @@ export default function ChatGPTAPIMemory() {
     },
   };
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'ChatGPT API Memory: Build Custom AI Memory Systems (2026)',
+    description: 'Learn how to build custom memory systems for ChatGPT using APIs, MCP protocol, and open-source tools. Developer guide to AI conversation memory integration.',
+    url: 'https://aimemory.pro/blog/chatgpt-api-memory',
+    datePublished: '2026-05-02',
+    dateModified: '2026-05-04',
+    author: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://aimemory.pro/og-image.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://aimemory.pro/blog/chatgpt-api-memory',
+    },
+    image: 'https://aimemory.pro/og-image.png',
+  };
+
   return (
     <BlogLayout slug={slug} title="ChatGPT API Memory: Build Custom AI Memory Systems (2026)" category="Technical" date="2026-05-02" readTime="18 min">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}

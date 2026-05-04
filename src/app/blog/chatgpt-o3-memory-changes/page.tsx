@@ -83,8 +83,41 @@ export default function ChatGPTO3MemoryChanges() {
     },
   };
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'ChatGPT o3 Memory: What Changed in 2026',
+    description: 'Everything you need to know about ChatGPT o3 memory in 2026. How o3, o4-mini, and GPT-4.5 handle memory differently. Save and search all your AI conversations.',
+    url: 'https://aimemory.pro/blog/chatgpt-o3-memory-changes',
+    datePublished: '2026-05-02',
+    dateModified: '2026-05-04',
+    author: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://aimemory.pro/og-image.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://aimemory.pro/blog/chatgpt-o3-memory-changes',
+    },
+    image: 'https://aimemory.pro/og-image.png',
+  };
+
   return (
     <BlogLayout slug={slug} title="ChatGPT o3 Memory: What Changed in 2026" category="AI Platform Guides" date="2026-05-02" readTime="15 min">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}

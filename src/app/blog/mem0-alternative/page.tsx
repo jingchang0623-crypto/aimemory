@@ -94,8 +94,38 @@ export default function Mem0Alternative() {
     },
   };
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Mem0 Alternative: AI Memory vs Mem0 — Which Should You Choose? (2026)',
+    description: 'Looking for a Mem0 alternative? Compare AI Memory and Mem0 on features, pricing, privacy, and ease of use. Find the best open source memory layer for your AI conversations.',
+    url: 'https://aimemory.pro/blog/mem0-alternative',
+    datePublished: '2026-05-01',
+    dateModified: '2026-05-04',
+    author: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'AI Memory',
+      url: 'https://aimemory.pro',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://aimemory.pro/og-image.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://aimemory.pro/blog/mem0-alternative',
+    },
+    image: 'https://aimemory.pro/og-image.png',
+  };
+
   return (
     <BlogLayout slug={slug} title="Mem0 Alternative: AI Memory vs Mem0 — Which Should You Choose?" category="Comparison" date="2026-05-01" readTime="14 min">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }} />
 

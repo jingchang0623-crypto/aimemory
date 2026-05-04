@@ -1339,6 +1339,45 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
 
+  // === ChatGPT Memory Guide 2026 (high-value keyword) ===
+  {
+    slug: 'chatgpt-memory-guide-2026',
+    title: 'ChatGPT Memory: Complete Guide to How It Works (2026)',
+    description: 'Everything you need to know about ChatGPT memory in 2026. How it works, its 1,500-word limit, how to manage and delete memories, and better alternatives for power users.',
+    category: 'Guides',
+    date: '2026-05-04',
+    readTime: '14 min',
+    keywords: ['chatgpt memory', 'how does chatgpt memory work', 'chatgpt memory feature', 'chatgpt memory guide', 'chatgpt memory 2026'],
+    tags: ['chatgpt', 'memory', 'guide', 'tutorial', 'settings', 'management', 'alternative'],
+    lang: 'en',
+  },
+
+  // === AI Memory Tools Comparison 2026 (high-value keyword) ===
+  {
+    slug: 'ai-memory-comparison-2026',
+    title: 'AI Memory Tools Compared: 7 Best Options for 2026',
+    description: 'Comprehensive comparison of the 7 best AI memory tools in 2026. Compare AI Memory, Mem0, Chat Memo, Supermemory, AI Context Flow, ChatGPT native memory, and Claude native memory.',
+    category: 'Comparisons',
+    date: '2026-05-04',
+    readTime: '18 min',
+    keywords: ['ai memory tools', 'best ai memory tool', 'ai conversation memory', 'ai memory comparison 2026', 'memory tools compared'],
+    tags: ['comparison', 'tools', 'memory', 'ai-memory', 'mem0', 'chatmemo', 'supermemory', 'chatgpt', 'claude'],
+    lang: 'en',
+  },
+
+  // === ChatGPT to Claude Migration Guide (high-value keyword) ===
+  {
+    slug: 'chatgpt-to-claude-migration-guide',
+    title: 'How to Switch from ChatGPT to Claude (Keep Your Memory)',
+    description: 'Step-by-step guide to switching from ChatGPT to Claude without losing your conversation history. Learn how to export, migrate, and maintain your AI memory across both platforms.',
+    category: 'Migration',
+    date: '2026-05-04',
+    readTime: '16 min',
+    keywords: ['switch chatgpt to claude', 'chatgpt to claude', 'migrate chatgpt to claude', 'chatgpt to claude migration', 'keep memory switching ai'],
+    tags: ['chatgpt', 'claude', 'migration', 'export', 'mcp', 'memory', 'cross-platform', 'guide'],
+    lang: 'en',
+  },
+
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */
