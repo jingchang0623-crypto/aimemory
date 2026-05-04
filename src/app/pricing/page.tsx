@@ -64,6 +64,10 @@ export default function PricingPage() {
                 <span className="text-green-500 mr-2 mt-1">✓</span>
                 <span>No account required</span>
               </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2 mt-1">✓</span>
+                <span>MCP Server for AI tool integration</span>
+              </li>
             </ul>
             <Link
               href="/"
