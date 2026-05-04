@@ -18,6 +18,27 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.49.0',
+    date: '2026-05-04',
+    title: '3 Strategic SEO Blogs + MCP Server Version Fix — Desktop, Grok, Agent Memory',
+    tags: ['SEO', 'Desktop App', 'Grok', 'AI Agents', 'MCP', 'Comparison'],
+    changes: {
+      added: [
+        'New blog: "ChatGPT Desktop App Memory: Complete Guide (2026)" — desktop vs web differences, sync behavior, exclusive features (voice mode, screenshot capture, always-on-top). Targets "chatgpt desktop app memory" keyword. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "Grok AI vs ChatGPT: Memory, Features & Price Compared (2026)" — 17-feature comparison table, Grok\'s X/Twitter data advantage, memory gap analysis. Targets "grok vs chatgpt" keyword. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: "AI Agent Memory: How to Give Your AI Agents Persistent Context (2026)" — agent memory types, MCP Server integration, comparison with Mem0 and vector DBs. Targets "ai agent memory" keyword. FAQPage JSON-LD (6 questions), Article schema.',
+      ],
+      fixed: [
+        'MCP Server landing page: Fixed softwareVersion from "1.0.0" to "1.1.0" to match actual API version.',
+      ],
+      improved: [
+        'Sitemap expanded to 142 URLs (+3 new blog pages)',
+        'Blog registry expanded to 129 posts',
+        'Homepage Guides section updated with 3 new blog links',
+      ],
+    },
+    },
+    {
     version: 'v0.48.0',
     date: '2026-05-04',
     title: 'MCP Server v1.1.0 + Chrome Extension Fixes + 3 Strategic SEO Blogs',

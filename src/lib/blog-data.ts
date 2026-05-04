@@ -1222,6 +1222,19 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
 
+  // === Grok vs ChatGPT Comparison ===
+  {
+    slug: 'grok-vs-chatgpt',
+    title: 'Grok AI vs ChatGPT: Memory, Features & Price Compared (2026)',
+    description: 'In-depth Grok vs ChatGPT comparison covering memory, context window, pricing, real-time data, and features. Which AI assistant is better in 2026?',
+    category: 'Comparisons',
+    date: '2026-05-04',
+    readTime: '16 min',
+    keywords: ['grok vs chatgpt', 'grok ai vs chatgpt', 'grok vs chatgpt 2026', 'grok memory vs chatgpt memory', 'xAI grok comparison', 'grok pricing vs chatgpt pricing'],
+    tags: ['grok', 'chatgpt', 'comparison', 'xai', 'openai', 'memory', 'features', 'pricing'],
+    lang: 'en',
+  },
+
   // === Perplexity AI Memory Guide ===
   {
     slug: 'perplexity-memory-guide',
@@ -1453,6 +1466,26 @@ export const blogPosts: BlogPost[] = [
     readTime: '20 min',
     keywords: ['mcp memory server', 'mcp ai memory', 'connect ai to memory', 'model context protocol memory', 'ai conversation memory server'],
     tags: ['mcp', 'memory', 'server', 'claude', 'chatgpt', 'cursor', 'technical', 'guide', 'api'],
+    lang: 'en',
+  },
+  {
+    slug: 'chatgpt-desktop-app-memory',
+    title: 'ChatGPT Desktop App Memory: Complete Guide (2026)',
+    description: 'How ChatGPT desktop app memory works on Mac and Windows. Desktop vs web differences, sync behavior, and how to extend memory with AI Memory.',
+    category: 'Guides',
+    date: '2026-05-04',
+    readTime: '10 min',
+    tags: ['chatgpt', 'desktop', 'memory', 'mac', 'windows', 'guide', 'sync'],
+    lang: 'en',
+  },
+  {
+    slug: 'ai-agent-memory',
+    title: 'AI Agent Memory: How to Give Your AI Agents Persistent Context (2026)',
+    description: 'Complete guide to AI agent memory. Learn how to give your AI agents persistent context using MCP Server, vector databases, and conversation history.',
+    category: 'Technical',
+    date: '2026-05-04',
+    readTime: '12 min',
+    tags: ['ai', 'agent', 'memory', 'mcp', 'server', 'claude', 'cursor', 'persistent', 'context', 'technical'],
     lang: 'en',
   },
 

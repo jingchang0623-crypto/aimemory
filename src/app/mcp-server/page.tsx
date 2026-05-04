@@ -32,7 +32,7 @@ export default function MCPServerLanding() {
             "description": "Open-source MCP server that gives AI assistants persistent memory. Works with Claude Desktop, Cursor, ChatGPT, and 113+ MCP clients.",
             "url": "https://aimemory.pro/mcp-server",
             "downloadUrl": "https://pypi.org/project/aimemory-mcp-server/",
-            "softwareVersion": "1.0.0",
+            "softwareVersion": "1.1.0",
             "offers": {
               "@type": "Offer",
               "price": "0",
