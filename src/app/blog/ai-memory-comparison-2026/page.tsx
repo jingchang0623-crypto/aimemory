@@ -1,9 +1,13 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 
 const slug = 'ai-memory-comparison-2026';
+
+export const metadata: Metadata = {
+  title: 'AI Memory Tools Comparison 2026',
+  alternates: { canonical: 'https://aimemory.pro/blog/ai-memory-comparison-2026' },
+};
 
 const faqJsonLd = {
   '@context': 'https://schema.org',

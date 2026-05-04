@@ -1,9 +1,13 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 
 const slug = 'chatgpt-to-claude-migration-guide';
+
+export const metadata: Metadata = {
+  title: 'ChatGPT to Claude Migration Guide',
+  alternates: { canonical: 'https://aimemory.pro/blog/chatgpt-to-claude-migration-guide' },
+};
 
 const faqJsonLd = {
   '@context': 'https://schema.org',
