@@ -18,6 +18,23 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.51.0',
+    date: '2026-05-05',
+    title: '3 Strategic SEO Blogs — o4-mini Memory, Batch Export, MCP Developer Guide',
+    tags: ['SEO', 'o4-mini', 'Export', 'MCP', 'Developer', 'Batch', 'Reasoning'],
+    changes: {
+      added: [
+        'New blog: \"ChatGPT o4-mini Memory: How It Works & Limitations (2026)\" — targets reasoning model memory differences, o4-mini vs GPT-4o comparison. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: \"How to Export All AI Conversations at Once (2026 Guide)\" — batch export guide for ChatGPT/Claude/DeepSeek/Gemini/Kimi. FAQPage JSON-LD (6 questions), Article schema.',
+        'New blog: \"MCP AI Memory Server: Developer Integration Guide (2026)\" — complete MCP setup for Claude Desktop, Cursor, ChatGPT, Windsurf, Cline, Continue.dev. FAQPage JSON-LD (6 questions), Article schema.',
+      ],
+      improved: [
+        'Blog registry updated to 135 posts',
+        'Sitemap updated to 148 URLs',
+      ],
+    },
+  },
+  {
     version: 'v0.50.0',
     date: '2026-05-05',
     title: '3 Strategic SEO Blogs + MCP Docs v1.1.0 Update — Research, Sync, NotebookLM',

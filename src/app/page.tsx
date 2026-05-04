@@ -542,6 +542,9 @@ No accounts required. No third-party access. Your conversations are stored in an
               { title: 'ChatGPT Memory for Research', href: '/blog/chatgpt-memory-for-research' },
               { title: 'Sync AI Across Devices', href: '/blog/sync-ai-conversations-across-devices' },
               { title: 'ChatGPT vs NotebookLM', href: '/blog/chatgpt-memory-vs-notebooklm' },
+              { title: 'o4-mini Memory Guide', href: '/blog/chatgpt-o4-mini-memory' },
+              { title: 'Export All AI Chats', href: '/blog/export-all-ai-conversations-at-once' },
+              { title: 'MCP Developer Guide', href: '/blog/mcp-ai-memory-developer-guide' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}

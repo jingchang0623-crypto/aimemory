@@ -1518,6 +1518,36 @@ export const blogPosts: BlogPost[] = [
     tags: ['chatgpt', 'memory', 'notebooklm', 'google', 'comparison', 'research', 'knowledge', 'documents'],
     lang: 'en',
   },
+  {
+    slug: 'chatgpt-o4-mini-memory',
+    title: 'ChatGPT o4-mini Memory: How It Works & Limitations (2026)',
+    description: 'Complete guide to ChatGPT o4-mini memory in 2026. How reasoning models handle context differently, memory limitations, and how to maximize your AI memory across models.',
+    category: 'Guides',
+    date: '2026-05-05',
+    readTime: '13 min',
+    tags: ['chatgpt', 'o4-mini', 'memory', 'reasoning', 'gpt-4o', 'context', 'comparison'],
+    lang: 'en',
+  },
+  {
+    slug: 'export-all-ai-conversations-at-once',
+    title: 'How to Export All AI Conversations at Once (2026 Guide)',
+    description: 'Step-by-step guide to exporting all your AI conversations from ChatGPT, Claude, DeepSeek, Gemini, and Kimi at once. Backup and search everything in one place.',
+    category: 'Guides',
+    date: '2026-05-05',
+    readTime: '12 min',
+    tags: ['export', 'backup', 'chatgpt', 'claude', 'deepseek', 'gemini', 'kimi', 'batch'],
+    lang: 'en',
+  },
+  {
+    slug: 'mcp-ai-memory-developer-guide',
+    title: 'MCP AI Memory Server: Developer Integration Guide (2026)',
+    description: 'Complete developer guide to integrating the AI Memory MCP server with Claude Desktop, Cursor, ChatGPT, and more. Setup instructions, API reference, and code examples.',
+    category: 'Developers',
+    date: '2026-05-05',
+    readTime: '15 min',
+    tags: ['mcp', 'developer', 'api', 'claude', 'cursor', 'integration', 'server', 'protocol'],
+    lang: 'en',
+  },
 
 ];
 
