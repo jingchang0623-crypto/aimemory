@@ -1624,6 +1624,26 @@ export const blogPosts: BlogPost[] = [
     tags: ['search', 'cross-platform', 'chatgpt', 'claude', 'deepseek', 'gemini', 'mcp', 'chrome-extension', 'guide'],
     lang: 'en',
   },
+  {
+    slug: 'ai-memory-vs-memoryplugin',
+    title: 'AI Memory vs MemoryPlugin — Which AI Memory Tool is Better? (2026)',
+    description: 'Detailed comparison of AI Memory and MemoryPlugin. Compare pricing, platforms, memory injection, MCP server, local-first storage, and open source features.',
+    category: 'Comparison',
+    date: '2026-05-05',
+    readTime: '14 min',
+    tags: ['memoryplugin', 'comparison', 'ai-memory', 'mcp', 'memory-injection', 'local-first', 'open-source', 'pricing'],
+    lang: 'en',
+  },
+  {
+    slug: 'ai-memory-vs-ai-context-flow',
+    title: 'AI Memory vs AI Context Flow — Detailed Comparison (2026)',
+    description: 'In-depth comparison of AI Memory and AI Context Flow. Compare pricing, platforms, features, AppSumo deals, and developer experience.',
+    category: 'Comparison',
+    date: '2026-05-05',
+    readTime: '14 min',
+    tags: ['ai-context-flow', 'comparison', 'ai-memory', 'appsumo', 'lifetime-deal', 'mcp', 'pricing', 'developer'],
+    lang: 'en',
+  },
 
 ];
 
