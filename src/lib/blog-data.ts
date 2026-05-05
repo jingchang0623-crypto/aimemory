@@ -1558,6 +1558,36 @@ export const blogPosts: BlogPost[] = [
     tags: ['deepseek', 'memory', 'export', '中文', 'cross-platform'],
     lang: 'zh',
   },
+  {
+    slug: 'github-copilot-memory',
+    title: 'GitHub Copilot Memory Guide: Does Copilot Remember Your Code? (2026)',
+    description: 'Does GitHub Copilot have memory? Learn how Copilot handles context, its limitations, and how to build persistent memory for your AI coding sessions with AI Memory.',
+    category: 'Platforms',
+    date: '2026-05-05',
+    readTime: '15 min',
+    tags: ['copilot', 'github', 'memory', 'coding', 'ai-assistant', 'mcp'],
+    lang: 'en',
+  },
+  {
+    slug: 'perplexity-pro-memory',
+    title: 'Perplexity Pro Memory Guide: How Perplexity Stores Your Searches (2026)',
+    description: 'Complete guide to Perplexity Pro memory features, Collections, search history, and how to manage your Perplexity conversations with AI Memory.',
+    category: 'Platforms',
+    date: '2026-05-05',
+    readTime: '14 min',
+    tags: ['perplexity', 'memory', 'search', 'export', 'ai-search'],
+    lang: 'en',
+  },
+  {
+    slug: 'cline-ai-memory',
+    title: 'Cline AI Memory: MCP-Powered Persistent Coding Memory (2026)',
+    description: 'How to add persistent memory to Cline VS Code extension using MCP. Save coding conversations, debug sessions, and architecture decisions across sessions.',
+    category: 'Developer Tools',
+    date: '2026-05-05',
+    readTime: '13 min',
+    tags: ['cline', 'mcp', 'memory', 'coding', 'vs-code', 'developer'],
+    lang: 'en',
+  },
 
 ];
 

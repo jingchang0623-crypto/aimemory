@@ -551,6 +551,9 @@ No accounts required. No third-party access. Your conversations are stored in an
               { title: 'Export All AI Chats', href: '/blog/export-all-ai-conversations-at-once' },
               { title: 'MCP Developer Guide', href: '/blog/mcp-ai-memory-developer-guide' },
               { title: '🇨🇳 DeepSeek对话记忆管理', href: '/blog/deepseek-duihua-jili' },
+              { title: 'GitHub Copilot Memory', href: '/blog/github-copilot-memory' },
+              { title: 'Perplexity Pro Memory', href: '/blog/perplexity-pro-memory' },
+              { title: 'Cline AI Memory (MCP)', href: '/blog/cline-ai-memory' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}

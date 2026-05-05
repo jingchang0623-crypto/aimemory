@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.53.0',
+    date: '2026-05-05',
+    title: '3 Strategic SEO Blogs — GitHub Copilot Memory, Perplexity Pro, Cline MCP',
+    tags: ['SEO', 'Copilot', 'Perplexity', 'Cline', 'MCP', 'Platforms', 'Developer'],
+    changes: {
+      added: [
+        'GitHub Copilot Memory Guide — targets "github copilot memory" keyword, covers .github/copilot-instructions.md, MCP integration, comparison table',
+        'Perplexity Pro Memory Guide — targets "perplexity pro memory" keyword, covers Collections, Threads, search history limitations',
+        'Cline AI Memory Guide — targets "cline ai memory" keyword, MCP-powered persistent coding memory for VS Code extension users',
+      ],
+      improved: [
+        'Blog registry expanded to 139 posts (135 English + 4 Chinese)',
+        'Sitemap expanded to 152 URLs',
+        'New "Platforms" and "Developer Tools" category coverage for Copilot, Perplexity, Cline',
+      ],
+    },
+  },
+    {
     version: 'v0.52.0',
     date: '2026-05-05',
     title: 'MCP Server PyPI Ready + Homepage Stats + Chinese DeepSeek Guide',
