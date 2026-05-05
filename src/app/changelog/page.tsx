@@ -18,6 +18,23 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.55.0',
+    date: '2026-05-05',
+    title: 'Anuma Competitor Response — 2 New SEO Blogs + Homepage Stats Update',
+    tags: ['Competitor', 'Anuma', 'SEO', 'Comparison', 'Review'],
+    changes: {
+      added: [
+        'New blog: "AI Memory vs Anuma" — direct competitor comparison targeting "ai memory vs anuma" keyword, 16-feature comparison table, FAQPage JSON-LD (6 questions)',
+        'New blog: "Anuma AI Review 2026" — comprehensive review targeting "anuma ai review" keyword, Council Mode analysis, pricing breakdown, alternatives section, FAQPage JSON-LD (6 questions)',
+      ],
+      improved: [
+        'Homepage stats updated: 140+ → 146+ SEO guides published',
+        'Blog registry expanded to 146 posts',
+        'Sitemap expanded to 161 URLs',
+      ],
+    },
+  },
+  {
     version: 'v0.54.0',
     date: '2026-05-05',
     title: 'MCP Server v1.2.0 — 7 Tools + HTTP/SSE Transport + 3 SEO Blogs',

@@ -1644,6 +1644,26 @@ export const blogPosts: BlogPost[] = [
     tags: ['ai-context-flow', 'comparison', 'ai-memory', 'appsumo', 'lifetime-deal', 'mcp', 'pricing', 'developer'],
     lang: 'en',
   },
+  {
+    slug: 'ai-memory-vs-anuma',
+    title: 'AI Memory vs Anuma — Which AI Memory Tool Wins? (2026)',
+    description: 'In-depth comparison of AI Memory and Anuma AI. Compare pricing, privacy architecture, MCP server support, memory injection, platform coverage, and Council Mode.',
+    category: 'Comparison',
+    date: '2026-05-05',
+    readTime: '14 min',
+    tags: ['anuma', 'comparison', 'ai-memory', 'mcp', 'council-mode', 'encryption', 'multi-model', 'pricing'],
+    lang: 'en',
+  },
+  {
+    slug: 'anuma-ai-review',
+    title: 'Anuma AI Review (2026) — Features, Pricing, Pros, Cons & Best Alternatives',
+    description: 'Comprehensive Anuma AI review covering Council Mode, multi-model memory, pricing, privacy architecture, and the best alternatives including AI Memory.',
+    category: 'Review',
+    date: '2026-05-05',
+    readTime: '12 min',
+    tags: ['anuma', 'review', 'multi-model', 'council-mode', 'encryption', 'ai-memory', 'alternatives'],
+    lang: 'en',
+  },
 
 ];
 
