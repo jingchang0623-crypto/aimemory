@@ -1548,6 +1548,16 @@ export const blogPosts: BlogPost[] = [
     tags: ['mcp', 'developer', 'api', 'claude', 'cursor', 'integration', 'server', 'protocol'],
     lang: 'en',
   },
+  {
+    slug: 'deepseek-duihua-jili',
+    title: 'DeepSeek对话记忆管理完整指南 (2026)',
+    description: '全面解析DeepSeek对话记忆功能、聊天记录管理方案。学习如何导出DeepSeek对话、搜索历史记录，并使用AI Memory实现跨平台统一管理。',
+    category: '中文指南',
+    date: '2026-05-05',
+    readTime: '14 min',
+    tags: ['deepseek', 'memory', 'export', '中文', 'cross-platform'],
+    lang: 'zh',
+  },
 
 ];
 

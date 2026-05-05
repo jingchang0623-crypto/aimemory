@@ -18,6 +18,28 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.52.0',
+    date: '2026-05-05',
+    title: 'MCP Server PyPI Ready + Homepage Stats + Chinese DeepSeek Guide',
+    tags: ['MCP', 'PyPI', 'Homepage', 'DeepSeek', 'Chinese', 'Stats'],
+    changes: {
+      added: [
+        'New blog: "DeepSeek对话记忆管理完整指南 (2026)" — Chinese-language guide targeting DeepSeek users, covering memory features, export methods, cross-platform management. FAQPage JSON-LD (6 questions), Article schema.',
+        'Homepage social proof: Added "6 MCP Tools Available" stat counter alongside existing metrics.',
+      ],
+      fixed: [
+        'MCP Server package: Fixed version mismatch (0.1.0 → 1.1.0) in pyproject.toml and __init__.py to match landing page and docs.',
+        'MCP Server package: Added wheel build config (tool.hatch.build.targets.wheel) — both sdist and wheel now build successfully.',
+        'Homepage: Updated SEO guides count from 115+ to 135+ to reflect actual blog registry.',
+      ],
+      improved: [
+        'Blog registry updated to 136 posts (5 Chinese + 131 English)',
+        'Sitemap updated to 149 URLs',
+        'MCP Server PyPI package fully verified: aimemory-mcp-server v1.1.0 builds both sdist (.tar.gz) and wheel (.whl) successfully',
+      ],
+    },
+  },
+    {
     version: 'v0.51.0',
     date: '2026-05-05',
     title: '3 Strategic SEO Blogs — o4-mini Memory, Batch Export, MCP Developer Guide',

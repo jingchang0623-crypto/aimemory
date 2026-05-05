@@ -155,7 +155,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 text-center">
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gray-900">115+</div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">135+</div>
               <div className="text-xs text-gray-500 mt-1">SEO Guides Published</div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
@@ -167,6 +167,11 @@ export default function Home() {
             <div>
               <div className="text-2xl md:text-3xl font-bold text-gray-900">113+</div>
               <div className="text-xs text-gray-500 mt-1">MCP Clients Compatible</div>
+            </div>
+            <div className="w-px h-8 bg-gray-200 hidden md:block" />
+            <div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">6</div>
+              <div className="text-xs text-gray-500 mt-1">MCP Tools Available</div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
             <div>
@@ -545,6 +550,7 @@ No accounts required. No third-party access. Your conversations are stored in an
               { title: 'o4-mini Memory Guide', href: '/blog/chatgpt-o4-mini-memory' },
               { title: 'Export All AI Chats', href: '/blog/export-all-ai-conversations-at-once' },
               { title: 'MCP Developer Guide', href: '/blog/mcp-ai-memory-developer-guide' },
+              { title: '🇨🇳 DeepSeek对话记忆管理', href: '/blog/deepseek-duihua-jili' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}
