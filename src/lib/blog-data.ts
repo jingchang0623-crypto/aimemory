@@ -288,6 +288,17 @@ export const blogPosts: BlogPost[] = [
     tags: ['mcp', 'protocol', 'technical', 'integration', 'setup', 'ai-memory', 'guide'],
     lang: 'en',
   },
+  {
+    slug: 'mcp-server-installation-guide',
+    title: 'MCP Server Installation Guide - Step-by-Step Setup (2026)',
+    description: 'Complete MCP server installation guide. Install aimemory-mcp-server via pip, configure Claude Desktop, Cursor, VS Code & Windsurf. Covers HTTP/SSE transport, environment variables, and troubleshooting.',
+    category: 'Technical',
+    date: '2026-05-05',
+    readTime: '16 min',
+    keywords: ['mcp server installation guide', 'mcp server install', 'aimemory mcp server', 'mcp server pip install', 'mcp server configuration', 'model context protocol installation'],
+    tags: ['mcp', 'installation', 'technical', 'guide', 'setup', 'ai-memory', 'troubleshooting'],
+    lang: 'en',
+  },
   // === 中文指南 ===
   {
     slug: 'ai-duihua-daochu',
@@ -1586,6 +1597,31 @@ export const blogPosts: BlogPost[] = [
     date: '2026-05-05',
     readTime: '13 min',
     tags: ['cline', 'mcp', 'memory', 'coding', 'vs-code', 'developer'],
+    lang: 'en',
+  },
+
+  // === MCP Server for Claude ===
+  {
+    slug: 'mcp-server-for-claude',
+    title: 'MCP Server for Claude Desktop: Complete Setup Guide (2026)',
+    description: 'Set up an MCP server for Claude Desktop in minutes. Step-by-step guide to installing aimemory-mcp-server, configuring claude_desktop_config.json, and using 7 memory tools.',
+    category: 'Technical',
+    date: '2026-05-05',
+    readTime: '15 min',
+    keywords: ['mcp server for claude desktop', 'mcp server for claude', 'claude desktop mcp server', 'claude mcp server setup', 'aimemory mcp server'],
+    tags: ['mcp', 'claude', 'server', 'desktop', 'memory', 'setup', 'technical', 'guide'],
+    lang: 'en',
+  },
+  // === Search Across All AI Chats (high-intent cross-platform keyword) ===
+  {
+    slug: 'search-across-all-ai-chats',
+    title: 'How to Search Across All Your AI Chats in 2026 | Unified Search Guide',
+    description: 'Learn how to search across all your AI chats from ChatGPT, Claude, DeepSeek, Gemini, and Kimi. Compare web upload, MCP server, and Chrome extension methods for unified search.',
+    category: 'Guides',
+    date: '2026-05-05',
+    readTime: '15 min',
+    keywords: ['search across all ai chats', 'cross-platform ai search', 'unified ai chat search', 'ai conversation search tool', 'search ai conversations'],
+    tags: ['search', 'cross-platform', 'chatgpt', 'claude', 'deepseek', 'gemini', 'mcp', 'chrome-extension', 'guide'],
     lang: 'en',
   },
 

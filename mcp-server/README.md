@@ -85,7 +85,7 @@ Add to `~/.windsurf/config.json`:
 - 🔍 **Full-text search** — powered by SQLite FTS5 for fast, ranked results
 - 🏷️ **Tag-based organization** — categorize memories with tags
 - 💾 **Persistent storage** — memories survive restarts (SQLite)
-- 🔧 **5 core tools** — save, search, list, update, delete
+- 🔧 **7 core tools** — save, search, list, get, update, delete, stats
 - 🚀 **One-command install** — `pip install aimemory-mcp-server`
 - 🪶 **Zero config** — works out of the box with sensible defaults
 
@@ -165,6 +165,26 @@ Add to `~/.windsurf/config.json`:
 |-----------|------|----------|-------------|
 | `memory_id` | int | ✅ | ID of the memory to delete |
 
+### `get_memory` — Retrieve a memory by ID
+
+```json
+{
+  "memory_id": 42
+}
+```
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `memory_id` | int | ✅ | ID of the memory to retrieve |
+
+### `memory_stats` — Get memory store statistics
+
+```json
+{}
+```
+
+Returns total memory count, memories created in the last 7 days, and top tags distribution.
+
 ---
 
 ## Search Syntax
@@ -187,11 +207,34 @@ The search uses SQLite FTS5 syntax:
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `AIMEMORY_DB` | `./aimemory.db` | Path to the SQLite database file |
+| `AIMEMORY_TRANSPORT` | `stdio` | Transport mode: `stdio` (local) or `http` (remote via SSE) |
+| `AIMEMORY_PORT` | `8090` | Port for HTTP transport mode |
+| `AIMEMORY_HOST` | `0.0.0.0` | Host for HTTP transport mode |
 
 Set a custom database path:
 
 ```bash
 export AIMEMORY_DB="/path/to/your/aimemory.db"
+```
+
+### HTTP/SSE Transport (Remote Access)
+
+For remote access or integration with web-based MCP clients:
+
+```bash
+AIMEMORY_TRANSPORT=http AIMEMORY_PORT=8090 aimemory-mcp-server
+```
+
+Then configure your MCP client to connect via SSE:
+
+```json
+{
+  "mcpServers": {
+    "ai-memory": {
+      "url": "http://your-server:8090/sse"
+    }
+  }
+}
 ```
 
 Or in your MCP client configuration:

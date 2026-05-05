@@ -45,3 +45,4 @@ uploads/
 
 __pycache__/
 *.pyc
+mcp-server/dist/

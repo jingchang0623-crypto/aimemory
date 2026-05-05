@@ -4,7 +4,7 @@ AI Memory MCP Server
 A Model Context Protocol (MCP) server that provides persistent memory capabilities
 for AI assistants. Works with Claude Desktop, Cursor, VS Code, and 113+ MCP clients.
 
-Transport: stdio (local mode)
+Transport: stdio (local) or HTTP/SSE (remote via AIMEMORY_TRANSPORT=http)
 Storage: SQLite + FTS5 full-text search
 """
 
@@ -140,9 +140,82 @@ def delete_memory(memory_id: int) -> dict:
     return {"success": False, "message": f"Memory with id {memory_id} not found"}
 
 
+@mcp.tool()
+def get_memory(memory_id: int) -> dict:
+    """Retrieve a single memory by its ID.
+
+    Args:
+        memory_id: The ID of the memory to retrieve (required).
+
+    Returns:
+        The memory object with id, content, tags, source, created_at, and updated_at fields,
+        or an error if not found.
+    """
+    result = storage.get_memory(memory_id)
+    if result is None:
+        return {"error": f"Memory with id {memory_id} not found"}
+    return {
+        "id": result.id,
+        "content": result.content,
+        "tags": result.tags,
+        "source": result.source,
+        "created_at": result.created_at,
+        "updated_at": result.updated_at,
+    }
+
+
+@mcp.tool()
+def memory_stats() -> dict:
+    """Get statistics about your memory store.
+
+    Returns:
+        A dict with total count, tag distribution, and recent activity summary.
+    """
+    conn = storage.get_connection()
+    try:
+        total = conn.execute("SELECT COUNT(*) FROM memories").fetchone()[0]
+        tags_rows = conn.execute(
+            "SELECT tags FROM memories WHERE tags != '[]'"
+        ).fetchall()
+        tag_counts: dict[str, int] = {}
+        for row in tags_rows:
+            try:
+                for tag in __import__("json").loads(row[0]):
+                    tag_counts[tag] = tag_counts.get(tag, 0) + 1
+            except Exception:
+                pass
+        recent = conn.execute(
+            "SELECT COUNT(*) FROM memories WHERE created_at > datetime('now', '-7 days')"
+        ).fetchone()[0]
+        return {
+            "total_memories": total,
+            "memories_last_7_days": recent,
+            "top_tags": dict(sorted(tag_counts.items(), key=lambda x: -x[1])[:10]),
+        }
+    finally:
+        conn.close()
+
+
 def main():
-    """Entry point for the aimemory-mcp-server console script."""
-    mcp.run(transport="stdio")
+    """Entry point for the aimemory-mcp-server console script.
+
+    Supports two transport modes:
+      - stdio (default): For local use with Claude Desktop, Cursor, VS Code
+      - http: For remote access via HTTP/SSE, set AIMEMORY_TRANSPORT=http
+
+    Environment variables:
+      AIMEMORY_TRANSPORT: "stdio" (default) or "http"
+      AIMEMORY_PORT: Port for HTTP mode (default: 8090)
+      AIMEMORY_DB: Custom database path
+    """
+    import os
+    transport = os.environ.get("AIMEMORY_TRANSPORT", "stdio")
+    if transport == "http":
+        port = int(os.environ.get("AIMEMORY_PORT", "8090"))
+        host = os.environ.get("AIMEMORY_HOST", "0.0.0.0")
+        mcp.run(transport="sse", host=host, port=port)
+    else:
+        mcp.run(transport="stdio")
 
 
 if __name__ == "__main__":

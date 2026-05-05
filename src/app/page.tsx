@@ -155,7 +155,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 text-center">
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gray-900">135+</div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">140+</div>
               <div className="text-xs text-gray-500 mt-1">SEO Guides Published</div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
@@ -170,7 +170,7 @@ export default function Home() {
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gray-900">6</div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">7</div>
               <div className="text-xs text-gray-500 mt-1">MCP Tools Available</div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
@@ -554,6 +554,9 @@ No accounts required. No third-party access. Your conversations are stored in an
               { title: 'GitHub Copilot Memory', href: '/blog/github-copilot-memory' },
               { title: 'Perplexity Pro Memory', href: '/blog/perplexity-pro-memory' },
               { title: 'Cline AI Memory (MCP)', href: '/blog/cline-ai-memory' },
+              { title: 'MCP Server for Claude', href: '/blog/mcp-server-for-claude' },
+              { title: 'Search All AI Chats', href: '/blog/search-across-all-ai-chats' },
+              { title: 'MCP Installation Guide', href: '/blog/mcp-server-installation-guide' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}

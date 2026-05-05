@@ -20,7 +20,7 @@ export default function MCPDocsPage() {
 
       <main className="max-w-4xl mx-auto px-4 py-12">
         <section className="text-center mb-16">
-          <div className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">MCP v1.1.0</div>
+          <div className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">MCP v1.2.0 — 7 Tools + HTTP/SSE</div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">AI Memory MCP Server</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Connect your AI assistants to your conversation history via the Model Context Protocol.

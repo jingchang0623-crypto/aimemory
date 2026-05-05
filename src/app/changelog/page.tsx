@@ -18,6 +18,29 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.54.0',
+    date: '2026-05-05',
+    title: 'MCP Server v1.2.0 — 7 Tools + HTTP/SSE Transport + 3 SEO Blogs',
+    tags: ['MCP', 'Transport', 'SEO', 'HTTP', 'SSE', 'Tools'],
+    changes: {
+      added: [
+        'MCP Server v1.2.0: Added get_memory tool — retrieve individual memories by ID',
+        'MCP Server v1.2.0: Added memory_stats tool — get total count, recent activity, tag distribution',
+        'MCP Server v1.2.0: HTTP/SSE transport support — set AIMEMORY_TRANSPORT=http for remote access',
+        'New blog: "MCP Server for Claude Desktop" — targets "mcp server for claude" keyword, step-by-step setup guide',
+        'New blog: "Search Across All AI Chats" — targets "search across all ai chats" keyword, cross-platform search solutions',
+        'New blog: "MCP Server Installation Guide" — targets "mcp server installation guide" keyword, comprehensive setup for all clients',
+      ],
+      improved: [
+        'MCP Server: Upgraded from 5 to 7 tools (save, search, list, get, update, delete, stats)',
+        'MCP Server README: Added HTTP/SSE transport documentation with configuration examples',
+        'MCP Server: Built pip wheel and sdist ready for PyPI publication',
+        'Blog registry expanded to 140 posts',
+        'Sitemap expanded to 155 URLs',
+      ],
+    },
+  },
+    {
     version: 'v0.53.0',
     date: '2026-05-05',
     title: '3 Strategic SEO Blogs — GitHub Copilot Memory, Perplexity Pro, Cline MCP',

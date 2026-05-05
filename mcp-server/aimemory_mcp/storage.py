@@ -118,6 +118,18 @@ def search_memories(query: str, limit: int = 10) -> list[Memory]:
         conn.close()
 
 
+def get_memory(memory_id: int) -> Optional[Memory]:
+    """Retrieve a single memory by ID. Returns None if not found."""
+    conn = get_connection()
+    try:
+        row = conn.execute("SELECT * FROM memories WHERE id = ?", (memory_id,)).fetchone()
+        if row is None:
+            return None
+        return Memory(**dict(row))
+    finally:
+        conn.close()
+
+
 def list_memories(limit: int = 20, tag: Optional[str] = None) -> list[Memory]:
     """List memories, optionally filtered by tag. Returns newest first."""
     conn = get_connection()
