@@ -155,7 +155,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 text-center">
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gray-900">146+</div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">148+</div>
               <div className="text-xs text-gray-500 mt-1">SEO Guides Published</div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
@@ -307,6 +307,34 @@ export default function Home() {
         </div>
       </section>
 
+      {/* MCP Server CTA Section */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-violet-50 text-violet-600 rounded-full text-sm mb-6">
+            🔌 MCP Integration
+          </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Or give your AI persistent memory with MCP
+          </h2>
+          <p className="text-lg text-gray-500 leading-relaxed mb-8">
+            The MCP Server lets you search and retrieve memories directly from Claude Desktop,
+            Cursor, and 113+ other MCP clients — so your AI always has context about your work.
+          </p>
+          <div className="bg-gray-900 rounded-xl p-6 mb-8 text-left max-w-xl mx-auto">
+            <code className="text-green-400 text-sm font-mono">
+              <span className="text-gray-500">$ </span>pip install aimemory-mcp-server
+            </code>
+          </div>
+          <Link
+            href="/mcp-server"
+            className="inline-flex items-center gap-2 text-violet-600 font-medium hover:text-violet-700 transition-colors"
+          >
+            View full MCP setup instructions
+            <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+      </section>
+
       {/* Upload Section — The CTA */}
       <section ref={uploadRef} id="upload" className="py-20 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -436,6 +464,8 @@ No accounts required. No third-party access. Your conversations are stored in an
               { title: 'ChatGPT Data Privacy', href: '/blog/chatgpt-data-privacy' },
               { title: 'ChatGPT History Viewer', href: '/blog/chatgpt-history-viewer' },
               { title: 'Claude Memory Guide', href: '/blog/claude-memory' },
+              { title: 'AI Memory for Claude Desktop', href: '/blog/ai-memory-for-claude-desktop' },
+              { title: 'Give AI Persistent Memory', href: '/blog/give-ai-persistent-memory' },
               { title: 'Gemini Memory Guide', href: '/blog/gemini-memory' },
               { title: 'DeepSeek Memory Guide', href: '/blog/deepseek-memory' },
               { title: 'Organize AI Conversations', href: '/blog/organize-ai-conversations' },

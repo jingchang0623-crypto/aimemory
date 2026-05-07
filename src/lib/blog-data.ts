@@ -1664,6 +1664,28 @@ export const blogPosts: BlogPost[] = [
     tags: ['anuma', 'review', 'multi-model', 'council-mode', 'encryption', 'ai-memory', 'alternatives'],
     lang: 'en',
   },
+  {
+    slug: 'ai-memory-for-claude-desktop',
+    title: 'AI Memory for Claude Desktop: Add Persistent Memory in 2026',
+    description: 'Give Claude Desktop persistent memory with the AI Memory MCP Server. Remember project context, code patterns, meeting notes, and personal preferences across every conversation.',
+    category: 'Guides',
+    date: '2026-05-07',
+    readTime: '18 min',
+    keywords: ['claude desktop memory', 'claude desktop persistent memory', 'claude memory mcp server', 'claude desktop remember conversations'],
+    tags: ['claude', 'desktop', 'mcp', 'memory', 'persistent', 'guide'],
+    lang: 'en',
+  },
+  {
+    slug: 'give-ai-persistent-memory',
+    title: 'Give AI Persistent Memory with MCP Protocol (2026)',
+    description: 'Learn how to give AI persistent memory using the MCP protocol and AI Memory MCP Server. Compare with ChatGPT memory and Claude Projects. Step-by-step setup guide for unlimited AI memory.',
+    category: 'Guides',
+    date: '2026-05-07',
+    readTime: '15 min',
+    keywords: ['give ai persistent memory', 'mcp persistent memory', 'ai persistent memory', 'mcp memory server'],
+    tags: ['mcp', 'memory', 'persistent', 'guide', 'protocol', 'ai'],
+    lang: 'en',
+  },
 
 ];
 

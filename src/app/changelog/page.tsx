@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.56.0',
+    date: '2026-05-07',
+    title: 'MCP-Focused SEO + Homepage MCP CTA — 2 New Blogs + 163 Sitemap URLs',
+    tags: ['MCP', 'SEO', 'Claude Desktop', 'Homepage', 'Persistent Memory'],
+    changes: {
+      added: [
+        'New blog: "AI Memory for Claude Desktop" — comprehensive guide for adding persistent memory to Claude Desktop via MCP Server. Step-by-step setup, config paths for macOS/Windows/Linux, 6 FAQPage questions. Targets "claude desktop memory" and "claude desktop persistent memory" keywords.',
+        'New blog: "Give AI Persistent Memory with MCP" — educational guide on MCP protocol memory vs ChatGPT native memory vs Claude Projects. Targets "give ai persistent memory" and "mcp persistent memory" keywords. 6 FAQPage questions.',
+        'Homepage: New MCP Server CTA section with pip install code block and link to /mcp-server page — drives MCP adoption from homepage visitors.',
+      ],
+      improved: [
+        'Blog registry expanded to 148 posts',
+        'Sitemap expanded to 163 URLs',
+        'Homepage stats: SEO Guides count updated 146+ → 148+',
+      ],
+    },
+  },
+  {
     version: 'v0.55.0',
     date: '2026-05-05',
     title: 'Anuma Competitor Response — 2 New SEO Blogs + Homepage Stats Update',
