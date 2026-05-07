@@ -9,7 +9,6 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: "AI Memory - Save & Search Your ChatGPT History",
       description: "Import, search and organize all your AI conversations. The best free ChatGPT history extension. 100% private.",
-      url: "https://aimemory.pro",
       siteName: "AI Memory",
       type: "website",
       images: [
