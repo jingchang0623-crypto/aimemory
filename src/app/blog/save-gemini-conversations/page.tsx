@@ -116,7 +116,7 @@ export default function SaveGeminiConversations() {
     <BlogLayout slug={slug} title="How to Save & Export Gemini Conversations (2026 Guide)" category="Tutorial" date="2026-05-01" readTime="10 min">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/label+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }} />
 
       <p className="lead">
         Google Gemini has become one of the most popular AI assistants, but unlike ChatGPT, it doesn&apos;t have a simple
