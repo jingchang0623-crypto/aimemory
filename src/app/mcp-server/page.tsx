@@ -179,7 +179,7 @@ export default function MCPServerLanding() {
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
             <div>
-              <div className="text-2xl font-bold text-gray-900">5</div>
+              <div className="text-2xl font-bold text-gray-900">7</div>
               <div className="text-xs text-gray-500">Tools Included</div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
@@ -215,19 +215,21 @@ export default function MCPServerLanding() {
         </div>
       </section>
 
-      {/* 5 Tools */}
+      {/* 7 Tools */}
       <section className="pb-20 px-6 bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">5 powerful memory tools</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">7 powerful memory tools</h2>
           <p className="text-gray-500 text-center mb-12">Everything your AI assistant needs to remember, search, and manage your conversations.</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { icon: '🔍', name: 'search_memories', desc: 'Full-text search across all your saved conversations with FTS5 syntax support. Filter by platform, date, or tags.' },
               { icon: '💾', name: 'save_memory', desc: 'Save new conversations, insights, or memory snippets with automatic tagging and source attribution.' },
               { icon: '📋', name: 'list_memories', desc: 'Browse your memory library with tag filtering, date ranges, and pagination. See what your AI remembers.' },
+              { icon: '📌', name: 'get_memory', desc: 'Retrieve a specific memory by ID. Perfect for referencing exact conversations or insights your AI saved earlier.' },
               { icon: '✏️', name: 'update_memory', desc: 'Edit existing memories — update content, add tags, correct details. Keep your knowledge base accurate.' },
               { icon: '🗑️', name: 'delete_memory', desc: 'Remove outdated or irrelevant memories permanently. Full control over your data.' },
               { icon: '🧠', name: 'get_context', desc: 'Retrieve the most relevant context from past conversations for any topic. Perfect for continuing old threads.' },
+              { icon: '📊', name: 'memory_stats', desc: 'Get total memory count, recent activity, and tag distribution. Monitor what your AI remembers at a glance.' },
             ].map((tool) => (
               <div key={tool.name} className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
                 <div className="text-2xl mb-3">{tool.icon}</div>
