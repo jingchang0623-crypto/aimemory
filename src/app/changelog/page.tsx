@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.60.0',
+    date: '2026-05-08',
+    title: 'Round 71 — MCP Server Package Rebuild + Docs Fix + README GitHub URLs',
+    tags: ['MCP', 'PyPI', 'Docs', 'Bugfix'],
+    changes: {
+      fixed: [
+        'MCP Server docs: Fixed tool count from "5 Local Tools" to "7 Local Tools" — added missing get_memory and memory_stats',
+        'MCP Server README: Fixed GitHub URLs in Contributing and Links sections (aimemory/aimemory → jingchang0623-crypto/aimemory)',
+      ],
+      added: [
+        'MCP Server v1.2.0 package: Rebuilt wheel + sdist with corrected README, passed twine check validation',
+      ],
+      improved: [
+        'MCP Server: Package ready for PyPI publish — dist/ contains validated aimemory_mcp_server-1.2.0.whl and .tar.gz',
+        'Docs accuracy: /docs/mcp page now correctly shows all 7 local tools (search, save, list, get, update, delete, stats)',
+      ],
+    },
+  },
+  {
     version: 'v0.59.0',
     date: '2026-05-08',
     title: 'Round 70 — MCP Server PyPI Prep + Chrome Extension Icons Fix',

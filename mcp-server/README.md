@@ -313,10 +313,10 @@ Only one process should write to the database at a time. If you see lock errors,
 
 ## Contributing
 
-Contributions are welcome! Please see the [main repository](https://github.com/aimemory/aimemory) for details.
+Contributions are welcome! Please see the [main repository](https://github.com/jingchang0623-crypto/aimemory) for details.
 
 ```bash
-git clone https://github.com/aimemory/aimemory.git
+git clone https://github.com/jingchang0623-crypto/aimemory.git
 cd aimemory/mcp-server
 pip install -e ".[dev]"
 ```
@@ -333,5 +333,5 @@ MIT — see [LICENSE](https://opensource.org/licenses/MIT) for details.
 
 - 🌐 **Website**: [aimemory.pro](https://aimemory.pro)
 - 📦 **PyPI**: [pypi.org/project/aimemory-mcp-server](https://pypi.org/project/aimemory-mcp-server/)
-- 🐙 **GitHub**: [github.com/aimemory/aimemory](https://github.com/aimemory/aimemory)
+- 🐙 **GitHub**: [github.com/jingchang0623-crypto/aimemory](https://github.com/jingchang0623-crypto/aimemory)
 - 📋 **MCP Spec**: [modelcontextprotocol.io](https://modelcontextprotocol.io/)

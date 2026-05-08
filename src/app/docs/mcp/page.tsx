@@ -171,7 +171,7 @@ aimemory-mcp-server`}
   }
 }`}
             </pre>
-            <h3 className="text-lg font-semibold text-gray-900 mb-3 mt-6">5 Local Tools</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3 mt-6">7 Local Tools</h3>
             <div className="grid md:grid-cols-2 gap-3 mt-4">
               <div className="bg-gray-50 rounded-lg p-3">
                 <p className="text-sm font-medium text-gray-900">🔍 search_memories</p>
@@ -186,12 +186,20 @@ aimemory-mcp-server`}
                 <p className="text-xs text-gray-500">Browse memories with tag filtering</p>
               </div>
               <div className="bg-gray-50 rounded-lg p-3">
+                <p className="text-sm font-medium text-gray-900">📖 get_memory</p>
+                <p className="text-xs text-gray-500">Retrieve a single memory by ID</p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-3">
                 <p className="text-sm font-medium text-gray-900">✏️ update_memory</p>
                 <p className="text-xs text-gray-500">Edit existing memory content & tags</p>
               </div>
               <div className="bg-gray-50 rounded-lg p-3">
                 <p className="text-sm font-medium text-gray-900">🗑️ delete_memory</p>
                 <p className="text-xs text-gray-500">Permanently remove a memory</p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="text-sm font-medium text-gray-900">📊 memory_stats</p>
+                <p className="text-xs text-gray-500">Get total count, tags, recent activity</p>
               </div>
             </div>
             <p className="text-sm text-gray-500 mt-4">
