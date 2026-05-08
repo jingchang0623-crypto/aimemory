@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.57.0',
+    date: '2026-05-08',
+    title: 'Round 67 — Product Audit + Missing Blog Registration Fix + Optimization Roadmap',
+    tags: ['SEO', 'Audit', 'Bugfix', 'MCP', 'Blog'],
+    changes: {
+      added: [
+        'Registered missing blog: "Best MCP Servers 2026" added to blog-data.ts — was present as page but invisible to blog index, related posts, and sitemap',
+      ],
+      fixed: [
+        'blog-data.ts: best-mcp-servers-2026 slug was missing from registry (147 vs 148 directories) — now 148 entries matching 148 blog directories',
+        'sitemap.ts: Added best-mcp-servers-2026 URL (now 164 URLs)',
+      ],
+      improved: [
+        'Full product audit completed — identified key gaps: MCP Server not yet published to PyPI, Chrome Web Store not listed, Stripe payment not integrated',
+        'Homepage stats: 148+ SEO guides, 164 sitemap URLs',
+      ],
+    },
+  },
+    {
     version: 'v0.56.0',
     date: '2026-05-07',
     title: 'MCP-Focused SEO + Homepage MCP CTA — 2 New Blogs + 163 Sitemap URLs',
