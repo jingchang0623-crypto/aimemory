@@ -31,22 +31,12 @@ export default function MCPServerLanding() {
             "operatingSystem": "Cross-platform",
             "description": "Open-source MCP server that gives AI assistants persistent memory. Works with Claude Desktop, Cursor, ChatGPT, and 113+ MCP clients.",
             "url": "https://aimemory.pro/mcp-server",
-            "downloadUrl": "https://pypi.org/project/aimemory-mcp-server/",
-            "softwareVersion": "1.1.0",
+            "softwareVersion": "1.2.0",
             "offers": {
               "@type": "Offer",
               "price": "0",
               "priceCurrency": "USD"
             },
-            "author": {
-              "@type": "Organization",
-              "name": "AI Memory"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "ratingCount": "120"
-            }
           })
         }}
       />
@@ -150,22 +140,23 @@ export default function MCPServerLanding() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="https://pypi.org/project/aimemory-mcp-server/"
+              href="https://github.com/jingchang0623-crypto/aimemory/tree/main/mcp-server"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-colors text-base"
             >
-              📦 Install from PyPI
+              ⭐ Get from GitHub
             </a>
             <a
-              href="https://github.com/jingchang0623-crypto/aimemory"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 border border-gray-200 text-gray-600 font-medium rounded-lg hover:border-gray-300 transition-colors text-base"
+              href="/docs/mcp"
+              className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors text-base"
             >
-              ⭐ View on GitHub
+              📖 Setup Guide
             </a>
           </div>
+          <p className="text-sm text-gray-400 mt-4">
+            PyPI package coming soon — <code className="bg-gray-100 px-1 rounded">pip install aimemory-mcp-server</code> will work once published
+          </p>
         </div>
       </section>
 

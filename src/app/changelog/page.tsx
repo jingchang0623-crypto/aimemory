@@ -18,6 +18,29 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.62.0',
+    date: '2026-05-09',
+    title: 'Round 73 — MCP Server Page PyPI Fix + JSON-LD Cleanup',
+    tags: ['MCP', 'SEO', 'Bugfix'],
+    changes: {
+      fixed: [
+        'MCP Server page: Removed broken PyPI link (404) — now directs users to GitHub until PyPI is published',
+        'JSON-LD schema: Removed fake aggregateRating (was showing 4.8 rating with 120 reviews — unethical SEO)',
+        'JSON-LD schema: Updated softwareVersion from 1.1.0 to 1.2.0 to match actual package',
+      ],
+      improved: [
+        'MCP Server page: Added "PyPI coming soon" note with pip command preview',
+        'SEO integrity: Schema markup now accurately reflects product state',
+      ],
+      noted: [
+        'MCP Server package ready (v1.2.0 in dist/) — awaiting PyPI API token for publication (P1)',
+        'Chrome extension ZIP ready (35KB) — awaiting Chrome Web Store submission (P1)',
+        'Google Analytics infrastructure ready — awaiting GA_MEASUREMENT_ID (P1)',
+        'Strategic bottleneck: Distribution (PyPI, Chrome Store, GA) blocks growth despite product readiness',
+      ],
+    },
+  },
+    {
     version: 'v0.61.0',
     date: '2026-05-09',
     title: 'Round 72 — Google Analytics Infrastructure + MCP Server PyPI Ready',
