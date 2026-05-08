@@ -18,6 +18,21 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.58.0',
+    date: '2026-05-08',
+    title: 'Round 68 — Homepage Stats Update + Product Optimization Review',
+    tags: ['SEO', 'Stats', 'Maintenance'],
+    changes: {
+      added: [
+        'Homepage stats: SEO Guides counter updated 148+ → 149+ (149 blogs now registered)',
+      ],
+      improved: [
+        'Full product audit: reviewed all 149 blogs, 164 sitemap URLs, MCP Server status, Chrome extension availability',
+        'Identified optimization priorities: SEO saturation reached, pivot to product features and distribution needed',
+      ],
+    },
+  },
+  {
     version: 'v0.57.0',
     date: '2026-05-08',
     title: 'Round 67 — Product Audit + Missing Blog Registration Fix + Optimization Roadmap',
