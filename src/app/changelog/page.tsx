@@ -18,6 +18,28 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.61.0',
+    date: '2026-05-09',
+    title: 'Round 72 — Google Analytics Infrastructure + MCP Server PyPI Ready',
+    tags: ['Analytics', 'Infrastructure', 'MCP', 'PyPI'],
+    changes: {
+      added: [
+        'Google Analytics infrastructure: Added GA tracking code to root layout — activates when GA_MEASUREMENT_ID env var is set',
+        'MCP Server validation: Verified wheel package installs correctly in isolated venv, CLI works with FastMCP 3.2.4',
+      ],
+      improved: [
+        'Analytics setup: Ready for GA4 tracking — just need to create property and add measurement ID to .env.local',
+        'MCP Server: Package fully validated (v1.2.0) — ready for PyPI upload with twine once API token is configured',
+        'SEO coverage audit: 147 blogs registered, 164 sitemap URLs — comprehensive keyword coverage achieved',
+      ],
+      noted: [
+        'MCP Server still unpublished to PyPI (P1) — need PyPI API token',
+        'Chrome extension ZIP ready (35KB, 14 files) — need Chrome Web Store submission (P1)',
+        'Google Analytics ready but not active — need GA_MEASUREMENT_ID configuration',
+      ],
+    },
+  },
+    {
     version: 'v0.60.0',
     date: '2026-05-08',
     title: 'Round 71 — MCP Server Package Rebuild + Docs Fix + README GitHub URLs',

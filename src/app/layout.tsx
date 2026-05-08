@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
+
+// Google Analytics - activates when GA_MEASUREMENT_ID env var is set in .env.local
+const GA_ID = process.env.GA_MEASUREMENT_ID;
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -43,6 +47,23 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         {children}
+        {/* Google Analytics - only loads if GA_MEASUREMENT_ID is set */}
+        {GA_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_ID}');
+              `}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );
