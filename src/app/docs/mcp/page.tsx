@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'AI Memory MCP Server - Connect to Claude Desktop, Cursor & More',
   description: 'Set up AI Memory as an MCP server for Claude Desktop, Cursor, Windsurf, and other AI tools. Search your conversation history directly from your AI assistant.',
   keywords: ['MCP server', 'Model Context Protocol', 'Claude Desktop MCP', 'Cursor MCP', 'AI memory server', 'chatgpt history MCP'],
+  alternates: {
+    canonical: 'https://aimemory.pro/docs/mcp',
+  },
 };
 
 export default function MCPDocsPage() {
