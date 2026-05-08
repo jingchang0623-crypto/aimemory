@@ -18,6 +18,27 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.59.0',
+    date: '2026-05-08',
+    title: 'Round 70 — MCP Server PyPI Prep + Chrome Extension Icons Fix',
+    tags: ['MCP', 'PyPI', 'Chrome Extension', 'Bugfix', 'Distribution'],
+    changes: {
+      fixed: [
+        'MCP Server pyproject.toml: GitHub URLs corrected from aimemory/aimemory to jingchang0623-crypto/aimemory — blocking PyPI publish',
+        'Chrome Extension: Generated missing icons (16, 48, 128px) — extension was broken without icons',
+        'Chrome Extension: Created proper public/icon directory structure for WXT framework — icons now included in build output',
+      ],
+      added: [
+        'Chrome Extension v1.0.1: Rebuilt with icons, repackaged ZIP (35KB) for Chrome Web Store submission',
+        'generate_icons.py: Script for creating branded purple/indigo extension icons',
+      ],
+      improved: [
+        'Product audit: Identified MCP Server not published to PyPI (highest priority P0)',
+        'Extension structure: Added extension/public/icon/ for static assets, rebuilt successfully',
+      ],
+    },
+  },
+  {
     version: 'v0.58.0',
     date: '2026-05-08',
     title: 'Round 68 — Homepage Stats Update + Product Optimization Review',

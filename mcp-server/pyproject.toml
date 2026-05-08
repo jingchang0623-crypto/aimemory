@@ -43,9 +43,9 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://aimemory.pro"
-Repository = "https://github.com/aimemory/aimemory"
-Issues = "https://github.com/aimemory/aimemory/issues"
-Documentation = "https://aimemory.pro"
+Repository = "https://github.com/jingchang0623-crypto/aimemory"
+Issues = "https://github.com/jingchang0623-crypto/aimemory/issues"
+Documentation = "https://aimemory.pro/docs/mcp"
 
 [tool.hatch.build.targets.wheel]
 packages = ["aimemory_mcp"]
