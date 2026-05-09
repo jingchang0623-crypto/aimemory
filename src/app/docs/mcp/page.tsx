@@ -23,7 +23,7 @@ export default function MCPDocsPage() {
 
       <main className="max-w-4xl mx-auto px-4 py-12">
         <section className="text-center mb-16">
-          <div className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">MCP v1.2.0 — 7 Tools + HTTP/SSE</div>
+          <div className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">MCP v1.2.0 — Local: 7 Tools • API: 6 Tools</div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">AI Memory MCP Server</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Connect your AI assistants to your conversation history via the Model Context Protocol.
@@ -37,6 +37,10 @@ export default function MCPDocsPage() {
           <p className="text-gray-600 mb-4">
             The <strong>Model Context Protocol (MCP)</strong> is an open standard that lets AI assistants connect to external data sources and tools.
             With AI Memory&apos;s MCP Server, your AI assistant can search through your entire conversation history — across ChatGPT, Claude, DeepSeek, and Gemini.
+          </p>
+          <p className="text-sm text-gray-500 mb-4 border-l-2 border-blue-200 pl-3">
+            <strong>Note:</strong> Tools below are for the <strong>Hosted API</strong> endpoint (aimemory.pro/api/mcp). 
+            For the standalone <strong>Local Server</strong> with 7 tools (save_memory, update_memory, memory_stats), see the &quot;Standalone MCP Server&quot; section below.
           </p>
           <div className="grid md:grid-cols-2 gap-4 mt-6">
             <div className="bg-gray-50 rounded-lg p-4">

@@ -219,7 +219,6 @@ export default function MCPServerLanding() {
               { icon: '📌', name: 'get_memory', desc: 'Retrieve a specific memory by ID. Perfect for referencing exact conversations or insights your AI saved earlier.' },
               { icon: '✏️', name: 'update_memory', desc: 'Edit existing memories — update content, add tags, correct details. Keep your knowledge base accurate.' },
               { icon: '🗑️', name: 'delete_memory', desc: 'Remove outdated or irrelevant memories permanently. Full control over your data.' },
-              { icon: '🧠', name: 'get_context', desc: 'Retrieve the most relevant context from past conversations for any topic. Perfect for continuing old threads.' },
               { icon: '📊', name: 'memory_stats', desc: 'Get total memory count, recent activity, and tag distribution. Monitor what your AI remembers at a glance.' },
             ].map((tool) => (
               <div key={tool.name} className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
@@ -370,6 +369,10 @@ export default function MCPServerLanding() {
                 <div className="flex items-start gap-2">
                   <span className="text-blue-500 mt-1">✓</span>
                   <span className="text-sm text-gray-600">Session-based security</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">✓</span>
+                  <span className="text-sm text-gray-600">Extra tools: get_context, get_conversation</span>
                 </div>
               </div>
               <pre className="bg-gray-900 text-gray-100 rounded-lg p-4 text-sm">{`Endpoint: aimemory.pro/api/mcp`}</pre>
