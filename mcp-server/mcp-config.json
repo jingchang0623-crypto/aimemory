@@ -4,7 +4,7 @@
       "command": "python3.12",
       "args": ["/home/agentuser/aimemory/mcp-server/server.py"],
       "env": {
-        "AIMEMORY_DB": "/home/agentuser/aimemory/mcp-server/aimemory.db"
+        "AIMEMORY_DB": "/home/agentuser/aimemory/data/aimemory.db"
       }
     }
   }
