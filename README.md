@@ -16,16 +16,43 @@ AI Memory is a web tool that helps you manage conversations across ChatGPT, Clau
 - 🏷️ **Smart Organization** — Tags, folders, and automatic categorization
 - 📊 **Conversation Analytics** — Stats, trends, and insights from your AI chats
 
+## Components
+
+### 🌐 Web App (aimemory.pro)
+The main web application for uploading, searching, and browsing your AI conversations. No account required, data stays in your session.
+
+### 🔌 Chrome Extension
+Auto-save your AI conversations from ChatGPT, Claude, DeepSeek, and Gemini as you chat. No manual exports needed.
+
+- **Download:** [ai-memory-extension.zip](https://aimemory.pro/ai-memory-extension.zip)
+- **Supported:** ChatGPT, Claude, DeepSeek, Gemini
+- **Install:** Load unpacked extension in Chrome (Developer mode)
+- **Learn more:** [/chrome-extension](https://aimemory.pro/chrome-extension)
+
+### 📦 MCP Server
+Give your AI assistant persistent memory via the Model Context Protocol. Works with **Claude Desktop**, **Cursor**, **Windsurf**, **VS Code**, and **113+ MCP clients**.
+
+- **Package:** `aimemory-mcp-server`
+- **PyPI:** Coming soon
+- **GitHub Install:** `pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server`
+- **Tools:** 7 memory tools (search, save, list, get, update, delete, stats)
+- **Learn more:** [/mcp-server](https://aimemory.pro/mcp-server)
+
 ## Tech Stack
 
 - **Framework:** Next.js 16 + TailwindCSS
 - **Database:** SQLite with FTS5 (full-text search)
-- **Deployment:** PM2 + Nginx + Let's Encrypt
-- **Server:** Ubuntu on single VPS
+- **Extension:** WXT framework (Manifest V3)
+- **MCP Server:** FastMCP 2.0+ with SQLite + FTS5
+- **Deployment:** PM2 + Nginx + Let's Encrypt on Ubuntu VPS
 
 ## Getting Started
 
 ```bash
+# Clone the repo
+git clone https://github.com/jingchang0623-crypto/aimemory.git
+cd aimemory
+
 # Install dependencies
 npm install
 
@@ -42,50 +69,69 @@ pm2 start ecosystem.config.js
 ## Project Structure
 
 ```
-src/
-├── app/
-│   ├── page.tsx              # Homepage (upload/search/browse)
-│   ├── layout.tsx            # Root layout
-│   ├── blog/                 # SEO blog pages (13 articles)
-│   ├── chrome-extension/     # Chrome extension landing page
-│   └── api/
-│       ├── upload/           # File upload endpoint
-│       ├── search/           # FTS5 search endpoint
-│       └── conversations/    # CRUD for conversations
-├── components/
-│   ├── FileUpload.tsx        # Drag & drop file upload
-│   ├── SearchBox.tsx         # Search interface
-│   ├── ConversationList.tsx  # Browse conversations
-│   └── ConversationDetail.tsx # View conversation
-├── lib/
-│   ├── db.ts                 # SQLite database layer
-│   ├── parser.ts             # ChatGPT/Claude JSON parser
-│   └── parser-txt.ts         # ChatMemo TXT parser
-└── types/
-    └── conversation.ts       # TypeScript types
+aimemory/
+├── src/
+│   ├── app/                    # Next.js app router pages
+│   │   ├── page.tsx            # Homepage (upload/search/browse)
+│   │   ├── blog/               # 151+ SEO blog pages
+│   │   ├── chrome-extension/   # Extension landing page
+│   │   ├── mcp-server/         # MCP Server landing page
+│   │   ├── docs/mcp/           # MCP documentation
+│   │   ├── directory/          # AI tools directory
+│   │   └── api/
+│   │       ├── upload/         # File upload endpoint
+│   │       ├── search/         # FTS5 search endpoint
+│   │       ├── conversations/  # CRUD for conversations
+│   │       └── mcp/            # MCP API endpoint (JSON-RPC 2.0)
+│   ├── components/             # React components
+│   ├── lib/
+│   │   ├── db.ts               # SQLite database layer
+│   │   ├── blog-data.ts        # Blog registry (151 posts)
+│   │   └── sitemap.ts          # Dynamic sitemap (166 URLs)
+│   └── types/                  # TypeScript types
+├── extension/                  # Chrome extension (WXT)
+│   ├── src/
+│   │   ├── entrypoints/
+│   │   │   ├── sidepanel/      # Side panel UI
+│   │   │   └── content/        # Platform content scripts
+│   │   └── lib/
+│   │       └── memory-inject.ts # Memory injection system
+│   └── .output/chrome-mv3/     # Built extension
+├── mcp-server/                 # Python MCP Server
+│   ├── src/aimemory_mcp/
+│   │   └── server.py           # FastMCP server
+│   ├── dist/                   # Built packages
+│   └── pyproject.toml          # Package config (v1.2.0)
+└── public/
+    └── ai-memory-extension.zip # Downloadable extension
 ```
+
+## SEO & Content
+
+- **151+ SEO guides** covering ChatGPT history, export, memory, and MCP topics
+- **166 sitemap URLs** for comprehensive search engine coverage
+- **Multi-language** support (English + Chinese guides)
+- **Programmatic SEO** via directory and comparison pages
 
 ## Research
 
 See [`/docs/research/`](docs/research/) for our market research reports covering:
-- Competitive landscape analysis
-- SEO keyword data
+- Competitive landscape analysis (Mem0, Chat Memo, etc.)
+- SEO keyword research (Google Trends data)
 - Technical feasibility assessment
 - Monetization model research
+- Chrome extension development learnings
+- Memory injection technology path
 
 ## Deployment
 
-The app is deployed on a 2-core VPS with:
+The app is deployed on a single VPS with:
 - **PM2** for process management
 - **Nginx** as reverse proxy
-- **Let's Encrypt** for HTTPS
+- **Let's Encrypt** for SSL
 
-Build command: `npx next build --webpack` (Turbopack doesn't support native modules like better-sqlite3)
+Server: `43.128.84.40` (Ubuntu)
 
 ## License
 
 MIT
-
----
-
-Built with 🧠 by [AIwalker](https://github.com/jingchang0623-crypto)

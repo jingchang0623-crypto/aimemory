@@ -12,9 +12,19 @@ A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that g
 
 ## Installation
 
+### Option 1: GitHub Install (Recommended while PyPI is pending)
+
+```bash
+pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server
+```
+
+### Option 2: PyPI (Coming Soon)
+
 ```bash
 pip install aimemory-mcp-server
 ```
+
+> **Note:** PyPI package is pending release. Use GitHub install for now.
 
 That's it! The `aimemory-mcp-server` command is now available.
 
@@ -86,7 +96,7 @@ Add to `~/.windsurf/config.json`:
 - 🏷️ **Tag-based organization** — categorize memories with tags
 - 💾 **Persistent storage** — memories survive restarts (SQLite)
 - 🔧 **7 core tools** — save, search, list, get, update, delete, stats
-- 🚀 **One-command install** — `pip install aimemory-mcp-server`
+- 🚀 **Easy install** — `pip install git+...` from GitHub (PyPI coming soon)
 - 🪶 **Zero config** — works out of the box with sensible defaults
 
 ---
