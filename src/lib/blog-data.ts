@@ -1710,6 +1710,17 @@ export const blogPosts: BlogPost[] = [
     tags: ['mcp', 'servers', 'guide', 'claude-desktop', 'cursor', 'comparison'],
     lang: 'en',
   },
+  {
+    slug: 'open-source-ai-memory-mcp-server',
+    title: 'Open Source AI Memory MCP Server — Self-Hosted Memory for Claude, Cursor & More (2026)',
+    description: 'Complete guide to open source AI memory MCP servers. Compare AI Memory vs Mem0, set up self-hosted memory, and give your AI assistants persistent context across conversations.',
+    category: 'Guides',
+    date: '2026-05-09',
+    readTime: '15 min',
+    keywords: ['open source ai memory', 'mcp server memory', 'self hosted ai memory', 'ai memory github', 'mem0 alternative', 'mcp memory server', 'claude memory server', 'cursor memory'],
+    tags: ['mcp', 'open-source', 'guide', 'claude-desktop', 'cursor', 'self-hosted', 'comparison'],
+    lang: 'en',
+  },
 
 ];
 

@@ -18,6 +18,28 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.64.0',
+    date: '2026-05-10',
+    title: 'Round 76 — Open Source AI Memory MCP Server Blog',
+    tags: ['MCP', 'SEO', 'Open-Source', 'Positioning'],
+    changes: {
+      added: [
+        'New strategic SEO blog: Open Source AI Memory MCP Server — positioning as Mem0 alternative',
+        'Blog targets "open source ai memory" keyword with Mem0 vs AI Memory comparison',
+        'Covers MCP protocol explanation, self-hosted setup, 113+ client compatibility',
+      ],
+      improved: [
+        'blog-data.ts: Registered 151st blog entry with open-source tag',
+        'Sitemap: Added open-source-ai-memory-mcp-server URL (166 total URLs)',
+      ],
+      noted: [
+        'Strategic positioning: Differentiating from Mem0 as "open source + self-hosted" vs "VC-funded B2B API"',
+        'Distribution remains bottleneck: PyPI (needs token), Chrome Web Store (needs submission), Google Analytics (needs ID)',
+        'SEO content approaching saturation — focus shifting to distribution channels',
+      ],
+    },
+  },
+    {
     version: 'v0.63.0',
     date: '2026-05-09',
     title: 'Round 75 — Windsurf MCP Memory Blog + Homepage Stats Update',
