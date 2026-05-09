@@ -196,6 +196,44 @@ def memory_stats() -> dict:
         conn.close()
 
 
+@mcp.tool()
+def export_memories() -> dict:
+    """Export all memories as JSON for backup or migration.
+
+    Returns:
+        A dict with "count" (number of memories) and "memories" (list of all memory objects).
+        Use this to backup your knowledge base or migrate to another system.
+    """
+    memories = storage.export_memories()
+    return {
+        "count": len(memories),
+        "memories": memories,
+        "exported_at": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),
+    }
+
+
+@mcp.tool()
+def import_memories(memories: list[dict], skip_duplicates: bool = True) -> dict:
+    """Import memories from a JSON list. Useful for restoring backup or bulk import.
+
+    Args:
+        memories: List of memory dicts. Each should have "content" (required), 
+                  optional "tags" (list), and optional "source" (string).
+        skip_duplicates: If True (default), skip memories with content that already exists.
+                        If False, import all memories (may create duplicates).
+
+    Returns:
+        A dict with "imported" count and "skipped" count (duplicates).
+    """
+    result = storage.import_memories(memories, skip_existing=skip_duplicates)
+    return {
+        "success": True,
+        "imported": result["imported"],
+        "skipped": result["skipped"],
+        "message": f"Imported {result['imported']} memories, skipped {result['skipped']} duplicates",
+    }
+
+
 def main():
     """Entry point for the aimemory-mcp-server console script.
 

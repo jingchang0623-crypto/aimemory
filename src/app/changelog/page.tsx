@@ -18,6 +18,28 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.65.0',
+    date: '2026-05-10',
+    title: 'Round 77 — MCP Server v1.3.0 with Export/Import Tools',
+    tags: ['MCP', 'Feature', 'Tooling'],
+    changes: {
+      added: [
+        'New MCP tool: export_memories — backup all memories to JSON',
+        'New MCP tool: import_memories — restore from JSON backup, skip duplicates',
+        'MCP Server upgraded to v1.3.0 with 9 total tools (was 7)',
+      ],
+      improved: [
+        'Homepage stats: Updated MCP Tools count from 7 to 9',
+        'MCP README: Added full documentation for export/import operations',
+      ],
+      noted: [
+        'PyPI publication still pending — requires API token (P1 blocker)',
+        'Chrome Web Store submission still pending — requires $5 fee (P1 blocker)',
+        'SEO content at 151 blogs — approaching saturation, focus on distribution',
+      ],
+    },
+  },
+    {
     version: 'v0.64.0',
     date: '2026-05-10',
     title: 'Round 76 — Open Source AI Memory MCP Server Blog',

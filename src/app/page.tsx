@@ -170,7 +170,7 @@ export default function Home() {
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gray-900">7</div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">9</div>
               <div className="text-xs text-gray-500 mt-1">MCP Tools Available</div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />

@@ -207,10 +207,10 @@ export default function MCPServerLanding() {
         </div>
       </section>
 
-      {/* 7 Tools */}
+      {/* 9 Tools */}
       <section className="pb-20 px-6 bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">7 powerful memory tools</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">9 powerful memory tools</h2>
           <p className="text-gray-500 text-center mb-12">Everything your AI assistant needs to remember, search, and manage your conversations.</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -221,6 +221,8 @@ export default function MCPServerLanding() {
               { icon: '✏️', name: 'update_memory', desc: 'Edit existing memories — update content, add tags, correct details. Keep your knowledge base accurate.' },
               { icon: '🗑️', name: 'delete_memory', desc: 'Remove outdated or irrelevant memories permanently. Full control over your data.' },
               { icon: '📊', name: 'memory_stats', desc: 'Get total memory count, recent activity, and tag distribution. Monitor what your AI remembers at a glance.' },
+              { icon: '📤', name: 'export_memories', desc: 'Backup all memories to JSON. Export your entire knowledge base for migration or safekeeping.' },
+              { icon: '📥', name: 'import_memories', desc: 'Import memories from JSON backup. Batch-load conversations with automatic duplicate detection.' },
             ].map((tool) => (
               <div key={tool.name} className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
                 <div className="text-2xl mb-3">{tool.icon}</div>

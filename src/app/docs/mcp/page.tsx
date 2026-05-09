@@ -40,7 +40,7 @@ export default function MCPDocsPage() {
           </p>
           <p className="text-sm text-gray-500 mb-4 border-l-2 border-blue-200 pl-3">
             <strong>Note:</strong> Tools below are for the <strong>Hosted API</strong> endpoint (aimemory.pro/api/mcp). 
-            For the standalone <strong>Local Server</strong> with 7 tools (save_memory, update_memory, memory_stats), see the &quot;Standalone MCP Server&quot; section below.
+            For the standalone <strong>Local Server</strong> with 9 tools (save_memory, update_memory, memory_stats, export_memories, import_memories), see the &quot;Standalone MCP Server&quot; section below.
           </p>
           <div className="grid md:grid-cols-2 gap-4 mt-6">
             <div className="bg-gray-50 rounded-lg p-4">

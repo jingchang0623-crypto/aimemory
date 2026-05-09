@@ -190,5 +190,68 @@ def delete_memory(memory_id: int) -> bool:
         conn.close()
 
 
+def export_memories() -> list[dict]:
+    """Export all memories as a list of dicts. Useful for backup/migration."""
+    conn = get_connection()
+    try:
+        rows = conn.execute("SELECT * FROM memories ORDER BY created_at DESC").fetchall()
+        return [
+            {
+                "id": r["id"],
+                "content": r["content"],
+                "tags": json.loads(r["tags"]),
+                "source": r["source"],
+                "created_at": r["created_at"],
+                "updated_at": r["updated_at"],
+            }
+            for r in rows
+        ]
+    finally:
+        conn.close()
+
+
+def import_memories(memories: list[dict], skip_existing: bool = True) -> dict:
+    """Import memories from a list of dicts.
+    
+    Args:
+        memories: List of memory dicts with content, tags, source fields.
+        skip_existing: If True, skip duplicates based on content hash. If False, insert all.
+    
+    Returns:
+        Dict with imported_count and skipped_count.
+    """
+    imported = 0
+    skipped = 0
+    now = _now()
+    conn = get_connection()
+    try:
+        for m in memories:
+            content = m.get("content", "")
+            if not content:
+                continue
+            
+            tags = json.dumps(m.get("tags", []))
+            source = m.get("source")
+            
+            if skip_existing:
+                # Check if memory with same content exists
+                existing = conn.execute(
+                    "SELECT id FROM memories WHERE content = ?", (content,)
+                ).fetchone()
+                if existing:
+                    skipped += 1
+                    continue
+            
+            conn.execute(
+                "INSERT INTO memories (content, tags, source, created_at, updated_at) VALUES (?, ?, ?, ?, ?)",
+                (content, tags, source, now, now)
+            )
+            imported += 1
+        conn.commit()
+        return {"imported": imported, "skipped": skipped}
+    finally:
+        conn.close()
+
+
 # Auto-initialize database on import
 init_db()

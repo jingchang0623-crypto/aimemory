@@ -95,7 +95,7 @@ Add to `~/.windsurf/config.json`:
 - 🔍 **Full-text search** — powered by SQLite FTS5 for fast, ranked results
 - 🏷️ **Tag-based organization** — categorize memories with tags
 - 💾 **Persistent storage** — memories survive restarts (SQLite)
-- 🔧 **7 core tools** — save, search, list, get, update, delete, stats
+- 🔧 **9 core tools** — save, search, list, get, update, delete, stats, export, import
 - 🚀 **Easy install** — `pip install git+...` from GitHub (PyPI coming soon)
 - 🪶 **Zero config** — works out of the box with sensible defaults
 
@@ -194,6 +194,38 @@ Add to `~/.windsurf/config.json`:
 ```
 
 Returns total memory count, memories created in the last 7 days, and top tags distribution.
+
+### `export_memories` — Export all memories for backup
+
+```json
+{}
+```
+
+Returns all memories as a JSON list with count and export timestamp. Use this to backup your knowledge base or migrate to another system.
+
+**Returns:**
+- `count`: Number of memories exported
+- `memories`: List of all memory objects (id, content, tags, source, timestamps)
+- `exported_at`: UTC timestamp of export
+
+### `import_memories` — Import memories from backup
+
+```json
+{
+  "memories": [
+    {"content": "User prefers dark mode", "tags": ["preferences"]},
+    {"content": "Project uses PostgreSQL", "tags": ["tech-stack"]}
+  ],
+  "skip_duplicates": true
+}
+```
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `memories` | list[dict] | ✅ | List of memory dicts to import |
+| `skip_duplicates` | bool | ❌ | Skip memories with existing content (default: true) |
+
+**Returns:** `imported` count and `skipped` count (duplicates).
 
 ---
 
