@@ -18,6 +18,28 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.63.0',
+    date: '2026-05-09',
+    title: 'Round 75 — Windsurf MCP Memory Blog + Homepage Stats Update',
+    tags: ['MCP', 'SEO', 'Windsurf'],
+    changes: {
+      added: [
+        'New SEO blog: Windsurf MCP Memory Setup — targeting Windsurf IDE developers wanting AI memory',
+        'Blog covers MCP configuration, 7 memory tools, best practices, troubleshooting',
+      ],
+      improved: [
+        'Homepage stats: Updated SEO Guides count from 149+ to 150+',
+        'Sitemap: Added windsurf-mcp-memory-setup URL (165 total URLs)',
+        'blog-data.ts: Registered Windsurf MCP blog entry with MCP category',
+      ],
+      noted: [
+        'MCP Server v1.2.0 wheel package verified — ready for PyPI upload',
+        'Chrome extension ZIP ready (35KB) — awaiting Chrome Web Store submission (P1)',
+        'DeepSeek market gap identified — no Chinese competitors in MCP memory space',
+      ],
+    },
+  },
+    {
     version: 'v0.62.0',
     date: '2026-05-09',
     title: 'Round 73 — MCP Server Page PyPI Fix + JSON-LD Cleanup',

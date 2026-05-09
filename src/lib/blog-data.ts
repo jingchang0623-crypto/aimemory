@@ -1324,6 +1324,19 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
 
+  // === Windsurf MCP Memory Setup ===
+  {
+    slug: 'windsurf-mcp-memory-setup',
+    title: 'Windsurf MCP Memory Setup — Give Your AI Persistent Memory',
+    description: 'Step-by-step guide to setting up MCP memory server for Windsurf IDE. Give your Windsurf AI assistant persistent memory across all conversations with AI Memory MCP.',
+    category: 'MCP',
+    date: '2026-05-09',
+    readTime: '8 min',
+    keywords: ['windsurf mcp', 'windsurf memory', 'windsurf ai memory', 'windsurf mcp server', 'codeium memory'],
+    tags: ['windsurf', 'mcp', 'memory', 'ide', 'developer', 'coding', 'ai-coding'],
+    lang: 'en',
+  },
+
   // === Ollama Memory ===
   {
     slug: 'ollama-memory',
