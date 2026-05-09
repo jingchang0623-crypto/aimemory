@@ -7,7 +7,7 @@ const slug = 'mcp-server-for-claude';
 export const metadata: Metadata = {
   title: 'MCP Server for Claude Desktop: Complete Setup Guide (2026)',
   description:
-    'Set up an MCP server for Claude Desktop in minutes. Step-by-step guide to installing aimemory-mcp-server, configuring claude_desktop_config.json, and using 7 powerful memory tools.',
+    'Set up an MCP server for Claude Desktop in minutes. Step-by-step guide to installing aimemory-mcp-server, configuring claude_desktop_config.json, and using 9 powerful memory tools.',
   keywords: [
     'mcp server for claude desktop',
     'mcp server for claude',
@@ -333,10 +333,10 @@ export default function MCPServerForClaude() {
         </div>
 
         {/* === Section 4: Tools === */}
-        <h2>Available Tools: 7 MCP Memory Tools</h2>
+        <h2>Available Tools: 9 MCP Memory Tools</h2>
         <p>
           Once your claude desktop MCP server is connected, Claude gains access
-          to these 7 tools for managing your conversation memory:
+          to these 9 tools for managing your conversation memory:
         </p>
 
         <div className="space-y-4 my-6">

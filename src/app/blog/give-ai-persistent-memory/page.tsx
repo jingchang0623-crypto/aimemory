@@ -195,7 +195,7 @@ export default function GiveAIPersistentMemoryPage() {
 {`pip install aimemory-mcp-server`}
       </pre>
       <p>
-        This installs the server with all dependencies. The server exposes 7 MCP tools for complete memory management.
+        This installs the server with all dependencies. The server exposes 9 MCP tools for complete memory management.
       </p>
 
       <h3>Step 2: Start the MCP Server</h3>
