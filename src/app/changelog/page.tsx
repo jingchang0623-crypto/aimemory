@@ -18,6 +18,26 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.69.0',
+    date: '2026-05-11',
+    title: 'Round 83 — Data Consistency Audit & Features Page Update',
+    tags: ['Fix', 'SEO', 'UX'],
+    changes: {
+      improved: [
+        'Features page inline pricing: added Memory Injection and MCP Server to free tier checklist',
+        'Features page: added "View Full Pricing" link to /pricing page',
+        'Blog: mcp-server-for-claude meta description updated 9→12 tools',
+        'Blog: mcp-memory-server version updated v1.1.0→v1.4.0 (12 tools)',
+        'Blog: mcp-ai-memory-developer-guide version updated v1.1.0→v1.4.0',
+      ],
+      noted: [
+        'All blog MCP tool references now consistently show 12 tools',
+        'MCP Server version references updated across all blog content',
+        'Distribution remains #1 bottleneck — PyPI token and Chrome Web Store $5 fee still pending (P1)',
+      ],
+    },
+  },
+  {
     version: 'v0.68.0',
     date: '2026-05-10',
     title: 'Round 81 — Kimi Platform Support & Feature Page Updates',
