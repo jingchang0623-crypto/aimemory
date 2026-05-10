@@ -8,7 +8,7 @@ export interface Message {
 export interface Conversation {
   id: string;
   title: string;
-  platform: 'chatgpt' | 'claude' | 'gemini' | 'deepseek' | 'other';
+  platform: 'chatgpt' | 'claude' | 'gemini' | 'deepseek' | 'kimi' | 'other';
   messages: Message[];
   createdAt: string;
   updatedAt: string;

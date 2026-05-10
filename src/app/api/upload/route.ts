@@ -182,7 +182,7 @@ export async function POST(request: NextRequest) {
 
     if (conversations.length === 0) {
       return NextResponse.json({
-        error: 'No conversations found in file. Make sure you exported from ChatGPT, Claude, or DeepSeek.'
+        error: 'No conversations found in file. Make sure you exported from ChatGPT, Claude, DeepSeek, Gemini, or Kimi.'
       }, { status: 400 });
     }
 

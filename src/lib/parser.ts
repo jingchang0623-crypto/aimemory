@@ -287,6 +287,90 @@ function isGeminiExport(data: any): boolean {
   return false;
 }
 
+// Kimi export format detection and parsing
+interface KimiMessage {
+  role: 'user' | 'assistant';
+  content: string;
+}
+
+interface KimiConversation {
+  id?: string;
+  conversation_id?: string;
+  title?: string;
+  name?: string;
+  create_time?: string | number;
+  update_time?: string | number;
+  created_at?: string;
+  updated_at?: string;
+  messages?: KimiMessage[];
+  chat_messages?: Array<{ role: string; content: string }>;
+}
+
+function isKimiExport(data: any): boolean {
+  // Kimi-style export: kimi_conversations or chat_list with Moonshot markers
+  if (data.kimi_conversations && Array.isArray(data.kimi_conversations)) return true;
+  // ChatMemo-style export with platform marker
+  if (data.platform === 'kimi' || data.source === 'kimi') return true;
+  // Array with Kimi-specific structure (no mapping, no chat_messages Claude style)
+  if (Array.isArray(data) && data.length > 0 && 
+      data[0].messages && !data[0].mapping && !data[0].chat_messages &&
+      (data[0].title?.includes('Kimi') || data[0].source === 'kimi')) return true;
+  return false;
+}
+
+export function parseKimiExport(data: any): Conversation[] {
+  const conversations: Conversation[] = [];
+
+  function parseOne(conv: KimiConversation, index?: number): Conversation {
+    const rawMessages = conv.messages || conv.chat_messages || [];
+    const messages: Message[] = rawMessages.map((msg, i) => ({
+      id: `kimi-${index ?? 0}-${i}`,
+      role: msg.role === 'user' ? 'user' : 'assistant',
+      content: msg.content || '',
+    }));
+
+    const convId = conv.id || conv.conversation_id || uuidv4();
+    const createdAt = conv.create_time || conv.created_at;
+    const updatedAt = conv.update_time || conv.updated_at;
+
+    return {
+      id: convId,
+      title: conv.title || conv.name || 'Kimi Conversation',
+      platform: 'kimi',
+      messages,
+      createdAt: typeof createdAt === 'number' ? new Date(createdAt * 1000).toISOString() : (createdAt || new Date().toISOString()),
+      updatedAt: typeof updatedAt === 'number' ? new Date(updatedAt * 1000).toISOString() : (updatedAt || new Date().toISOString()),
+    };
+  }
+
+  // Handle kimi_conversations wrapper
+  if (data.kimi_conversations && Array.isArray(data.kimi_conversations)) {
+    data.kimi_conversations.forEach((conv: KimiConversation, i: number) => {
+      if (conv.messages || conv.chat_messages) {
+        conversations.push(parseOne(conv, i));
+      }
+    });
+    return conversations;
+  }
+
+  // Handle single conversation with platform marker
+  if ((data.platform === 'kimi' || data.source === 'kimi') && (data.messages || data.chat_messages)) {
+    conversations.push(parseOne(data));
+    return conversations;
+  }
+
+  // Handle array of conversations
+  if (Array.isArray(data)) {
+    data.forEach((item, i) => {
+      if (item.messages || item.chat_messages) {
+        conversations.push(parseOne(item, i));
+      }
+    });
+  }
+
+  return conversations;
+}
+
 function extractGeminiText(msg: GeminiMessage): string {
   if (msg.content) return msg.content;
   if (msg.text) return msg.text;
@@ -353,6 +437,12 @@ export function parseExportFile(data: any): Conversation[] {
     if (results.length > 0) return results;
   }
 
+  // Try Kimi format
+  if (isKimiExport(data)) {
+    const results = parseKimiExport(data);
+    if (results.length > 0) return results;
+  }
+
   // Try Gemini format
   if (isGeminiExport(data)) {
     const results = parseGeminiExport(data);
@@ -368,6 +458,6 @@ export function parseExportFile(data: any): Conversation[] {
     case 'claude':
       return parseClaudeExport(data);
     default:
-      throw new Error('Unable to detect platform. Supported formats: ChatGPT (JSON), Claude (JSON), DeepSeek (JSON), Gemini (JSON via Google Takeout). Please ensure you uploaded a valid export file.');
+      throw new Error('Unable to detect platform. Supported formats: ChatGPT (JSON), Claude (JSON), DeepSeek (JSON), Gemini (JSON via Google Takeout), Kimi (JSON/TXT). Please ensure you uploaded a valid export file.');
   }
 }

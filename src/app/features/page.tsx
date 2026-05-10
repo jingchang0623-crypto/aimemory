@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Features & Pricing - AI Memory',
-  description: 'Explore AI Memory features: import from ChatGPT, Claude, DeepSeek & Gemini. Full-text search, Chrome extension auto-save, session-isolated private storage.',
+  description: 'Explore AI Memory features: import from ChatGPT, Claude, DeepSeek & Gemini. Full-text search, Chrome extension auto-save, memory injection, MCP server, session-isolated private storage.',
   alternates: {
     canonical: 'https://aimemory.pro/features',
   },
@@ -14,7 +14,7 @@ const features = [
   {
     icon: '📥',
     title: 'Multi-Platform Import',
-    description: 'Import conversations from ChatGPT, Claude, DeepSeek, and Gemini. One upload, all your AI history in one place.',
+    description: 'Import conversations from ChatGPT, Claude, DeepSeek, Gemini, and Kimi. One upload, all your AI history in one place.',
   },
   {
     icon: '🔍',
@@ -25,6 +25,11 @@ const features = [
     icon: '🔌',
     title: 'Chrome Extension Auto-Save',
     description: 'Automatically save new conversations as they happen. Never lose an important AI interaction again.',
+  },
+  {
+    icon: '💉',
+    title: 'Memory Injection',
+    description: 'Inject relevant memories directly into ChatGPT, Claude, Gemini, DeepSeek, and Kimi inputs. One-click context retrieval from your conversation history.',
   },
   {
     icon: '🔒',
@@ -39,12 +44,11 @@ const features = [
   {
     icon: '🖥️',
     title: 'MCP Server',
-    description: 'Connect AI Memory to Claude Desktop, Cursor, and 100+ other MCP-compatible AI tools. Search your conversation history directly from your AI assistant.',
+    description: 'Connect AI Memory to Claude Desktop, Cursor, and 113+ other MCP-compatible AI tools. 12 tools for saving, searching, and managing memories.',
   },
 ];
 
 const upcoming = [
-  { icon: '💉', title: 'Memory Injection', description: 'Inject past conversation context into new AI sessions automatically.' },
   { icon: '🧠', title: 'AI Analysis', description: 'Get AI-powered summaries, insights, and knowledge extraction from your conversations.' },
   { icon: '🔄', title: 'Cross-Platform Sync', description: 'Sync your memories across devices with end-to-end encryption.' },
 ];
@@ -56,7 +60,7 @@ const comparison = [
   { feature: 'Session-isolated private storage', aimemory: true, chatmemo: false, aiexporter: true },
   { feature: 'No account required', aimemory: true, chatmemo: false, aiexporter: true },
   { feature: 'Cross-platform unified view', aimemory: true, chatmemo: false, aiexporter: false },
-  { feature: 'Memory injection (upcoming)', aimemory: true, chatmemo: false, aiexporter: false },
+  { feature: 'Memory injection', aimemory: true, chatmemo: false, aiexporter: false },
   { feature: 'MCP Server (100+ clients)', aimemory: true, chatmemo: false, aiexporter: false },
 ];
 

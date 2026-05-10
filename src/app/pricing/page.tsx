@@ -5,7 +5,7 @@ import WaitlistForm from './WaitlistForm';
 
 export const metadata: Metadata = {
   title: 'Pricing - AI Memory | Free Forever, Pro Features Coming',
-  description: 'AI Memory is free for personal use. Import unlimited conversations from ChatGPT, Claude, DeepSeek & Gemini. Pro features coming soon.',
+  description: 'AI Memory is free with all core features: import, search, memory injection, MCP server, and Chrome extension. Pro features coming soon.',
   keywords: ['AI memory pricing', 'chatgpt extension free', 'AI conversation manager pricing'],
   alternates: {
     canonical: 'https://aimemory.pro/pricing',
@@ -46,7 +46,7 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start">
                 <span className="text-green-500 mr-2 mt-1">✓</span>
-                <span>All platforms: ChatGPT, Claude, DeepSeek, Gemini</span>
+                <span>All platforms: ChatGPT, Claude, DeepSeek, Gemini, Kimi</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-500 mr-2 mt-1">✓</span>
@@ -58,15 +58,19 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start">
                 <span className="text-green-500 mr-2 mt-1">✓</span>
+                <span>Memory Injection — inject context into ChatGPT, Claude, Gemini, DeepSeek, Kimi</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2 mt-1">✓</span>
+                <span>MCP Server (12 tools) for Claude Desktop, Cursor, Windsurf</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2 mt-1">✓</span>
                 <span>Session-isolated private storage — only you can access your data</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-500 mr-2 mt-1">✓</span>
                 <span>No account required</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-green-500 mr-2 mt-1">✓</span>
-                <span>MCP Server for AI tool integration</span>
               </li>
             </ul>
             <Link
@@ -91,10 +95,6 @@ export default function PricingPage() {
               <li className="flex items-start">
                 <span className="text-green-500 mr-2 mt-1">✓</span>
                 <span>Everything in Free</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-500 mr-2 mt-1">⚡</span>
-                <span><strong>Memory Injection</strong> — auto-inject context into new AI sessions</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-500 mr-2 mt-1">🧠</span>
@@ -124,7 +124,7 @@ export default function PricingPage() {
           <div className="space-y-6">
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Is AI Memory really free?</h3>
-              <p className="text-gray-600">Yes! The core features — import, search, browse, and Chrome extension auto-save — are free forever. No hidden limits, no bait-and-switch.</p>
+              <p className="text-gray-600">Yes! All core features — import, search, memory injection, Chrome extension, and MCP server — are free forever. No hidden limits, no bait-and-switch.</p>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">When will Pro features launch?</h3>

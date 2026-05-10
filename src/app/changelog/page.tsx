@@ -18,6 +18,26 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.68.0',
+    date: '2026-05-10',
+    title: 'Round 81 — Kimi Platform Support & Feature Page Updates',
+    tags: ['Parser', 'Feature', 'UI'],
+    changes: {
+      added: [
+        'Kimi AI (Moonshot AI) platform support: new JSON parser and TXT auto-detection',
+        'Memory Injection and MCP Server marked as "live" on Features page (no longer upcoming)',
+        'Features page: new Memory Injection feature card with description',
+        'Pricing page: Memory Injection and MCP Server (12 tools) added as free tier features',
+        'Platform detection in TXT parser: auto-detect Kimi, DeepSeek, ChatGPT, Claude, Gemini from filename and content',
+      ],
+      changed: [
+        'Features comparison table: "Memory injection (upcoming)" → "Memory injection"',
+        'Platform listings updated across Features, Pricing, and upload error messages to include Kimi',
+        'Conversation type definition expanded: platform now includes "kimi"',
+      ],
+    },
+  },
+  {
     version: 'v0.67.0',
     date: '2026-05-10',
     title: 'Round 80 — MCP Server v1.4.0 with Batch & Tag Tools',

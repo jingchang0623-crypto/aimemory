@@ -107,6 +107,27 @@ function parseTxtContent(content: string): ParsedMessage[] {
   return messages;
 }
 
+// Try to detect platform from filename or content hints
+function detectTxtPlatform(content: string, filename?: string): 'chatgpt' | 'claude' | 'deepseek' | 'gemini' | 'kimi' | 'other' {
+  // Check filename for platform hints
+  if (filename) {
+    const lowerName = filename.toLowerCase();
+    if (lowerName.includes('kimi') || lowerName.includes('moonshot')) return 'kimi';
+    if (lowerName.includes('deepseek')) return 'deepseek';
+    if (lowerName.includes('chatgpt') || lowerName.includes('gpt')) return 'chatgpt';
+    if (lowerName.includes('claude')) return 'claude';
+    if (lowerName.includes('gemini') || lowerName.includes('bard')) return 'gemini';
+  }
+  
+  // Check content for Kimi-specific markers
+  if (content.includes('Kimi') || content.includes('kimi.moonshot') || 
+      content.includes('Moonshot AI') || content.includes('月之暗面')) {
+    return 'kimi';
+  }
+  
+  return 'other';
+}
+
 // Extract title from filename or first line
 function extractTitle(content: string, filename?: string): string {
   // Try filename first
@@ -140,11 +161,12 @@ export function parseTxtExport(content: string, filename?: string): Conversation
   }
 
   const title = extractTitle(content, filename);
+  const platform = detectTxtPlatform(content, filename);
   
   return [{
     id: uuidv4(),
     title,
-    platform: 'other',
+    platform,
     messages: messages.map(m => ({
       id: uuidv4(),
       role: m.role,
