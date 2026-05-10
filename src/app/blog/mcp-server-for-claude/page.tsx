@@ -7,7 +7,7 @@ const slug = 'mcp-server-for-claude';
 export const metadata: Metadata = {
   title: 'MCP Server for Claude Desktop: Complete Setup Guide (2026)',
   description:
-    'Set up an MCP server for Claude Desktop in minutes. Step-by-step guide to installing aimemory-mcp-server, configuring claude_desktop_config.json, and using 9 powerful memory tools.',
+    'Set up an MCP server for Claude Desktop in minutes. Step-by-step guide to installing aimemory-mcp-server, configuring claude_desktop_config.json, and using 12 powerful memory tools.',
   keywords: [
     'mcp server for claude desktop',
     'mcp server for claude',

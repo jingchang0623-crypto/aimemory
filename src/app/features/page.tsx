@@ -160,8 +160,17 @@ export default function FeaturesPage() {
               <li>✓ Unlimited conversation imports</li>
               <li>✓ Full-text search</li>
               <li>✓ Chrome extension auto-save</li>
+              <li>✓ Memory Injection — inject context into any AI</li>
+              <li>✓ MCP Server (12 tools) for Claude Desktop, Cursor, Windsurf</li>
               <li>✓ Session-isolated private storage</li>
+              <li>✓ No account required</li>
             </ul>
+            <Link
+              href="/pricing"
+              className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+            >
+              View Full Pricing →
+            </Link>
           </div>
         </section>
 
