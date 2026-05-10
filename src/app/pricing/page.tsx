@@ -128,7 +128,7 @@ export default function PricingPage() {
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">When will Pro features launch?</h3>
-              <p className="text-gray-600">We are actively building memory injection, AI analysis, and cloud sync features. Join the waitlist to get early access and a founding member discount.</p>
+              <p className="text-gray-600">We are actively building AI analysis and cloud sync features. Join the waitlist to get early access and a founding member discount.</p>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Will there be a lifetime deal?</h3>
