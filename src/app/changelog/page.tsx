@@ -18,6 +18,31 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.67.0',
+    date: '2026-05-10',
+    title: 'Round 80 — MCP Server v1.4.0 with Batch & Tag Tools',
+    tags: ['MCP', 'Feature', 'Tools'],
+    changes: {
+      added: [
+        'New MCP tool: batch_save_memories — save multiple memories at once (bulk operations)',
+        'New MCP tool: get_all_tags — list all unique tags with usage counts',
+        'New MCP tool: clear_all_memories — delete all memories with warning',
+        'MCP Server upgraded to v1.4.0 with 12 total tools (was 9)',
+      ],
+      improved: [
+        'Homepage stats: Updated MCP Tools count from 9 to 12',
+        'MCP landing page: Added 3 new tools to grid (batch_save, get_all_tags, clear_all)',
+        'MCP docs: Version badge updated to v1.4.0 with 12 tools',
+        'MCP README: Added full documentation for new batch/tag tools',
+      ],
+      noted: [
+        'PyPI publication still pending — requires API token (P1 blocker)',
+        'Chrome Web Store submission still pending — requires $5 fee (P1 blocker)',
+        'pip package rebuilt with v1.4.0 — ready for PyPI upload',
+      ],
+    },
+  },
+    {
     version: 'v0.66.0',
     date: '2026-05-10',
     title: 'Round 79 — MCP Landing Page Data Consistency Fix',

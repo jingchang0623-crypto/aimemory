@@ -253,5 +253,78 @@ def import_memories(memories: list[dict], skip_existing: bool = True) -> dict:
         conn.close()
 
 
+def batch_save_memories(memories: list[dict]) -> dict:
+    """Save multiple memories at once. Optimized for bulk operations.
+    
+    Args:
+        memories: List of memory dicts. Each should have:
+            - content (required): The memory text
+            - tags (optional): List of tag strings
+            - source (optional): Source identifier
+    
+    Returns:
+        Dict with saved count and list of saved memory IDs.
+    """
+    saved_ids = []
+    now = _now()
+    conn = get_connection()
+    try:
+        for m in memories:
+            content = m.get("content", "")
+            if not content:
+                continue
+            tags = json.dumps(m.get("tags", []))
+            source = m.get("source")
+            
+            cursor = conn.execute(
+                "INSERT INTO memories (content, tags, source, created_at, updated_at) VALUES (?, ?, ?, ?, ?)",
+                (content, tags, source, now, now)
+            )
+            saved_ids.append(cursor.lastrowid)
+        conn.commit()
+        return {"saved": len(saved_ids), "ids": saved_ids}
+    finally:
+        conn.close()
+
+
+def get_all_tags() -> dict[str, int]:
+    """Get all unique tags with their usage counts.
+    
+    Returns:
+        Dict mapping tag name to count of memories using that tag.
+    """
+    conn = get_connection()
+    try:
+        rows = conn.execute(
+            "SELECT tags FROM memories WHERE tags != '[]'"
+        ).fetchall()
+        tag_counts: dict[str, int] = {}
+        for row in rows:
+            try:
+                for tag in json.loads(row[0]):
+                    tag_counts[tag] = tag_counts.get(tag, 0) + 1
+            except Exception:
+                pass
+        return dict(sorted(tag_counts.items(), key=lambda x: -x[1]))
+    finally:
+        conn.close()
+
+
+def clear_all_memories() -> dict:
+    """Delete all memories from the database. Use with caution!
+    
+    Returns:
+        Dict with success status and count of deleted memories.
+    """
+    conn = get_connection()
+    try:
+        count = conn.execute("SELECT COUNT(*) FROM memories").fetchone()[0]
+        conn.execute("DELETE FROM memories")
+        conn.commit()
+        return {"success": True, "deleted_count": count}
+    finally:
+        conn.close()
+
+
 # Auto-initialize database on import
 init_db()

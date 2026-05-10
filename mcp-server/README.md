@@ -95,7 +95,7 @@ Add to `~/.windsurf/config.json`:
 - 🔍 **Full-text search** — powered by SQLite FTS5 for fast, ranked results
 - 🏷️ **Tag-based organization** — categorize memories with tags
 - 💾 **Persistent storage** — memories survive restarts (SQLite)
-- 🔧 **9 core tools** — save, search, list, get, update, delete, stats, export, import
+- 🔧 **12 core tools** — save, search, list, get, update, delete, stats, export, import, batch_save, get_tags, clear
 - 🚀 **Easy install** — `pip install git+...` from GitHub (PyPI coming soon)
 - 🪶 **Zero config** — works out of the box with sensible defaults
 
@@ -226,6 +226,46 @@ Returns all memories as a JSON list with count and export timestamp. Use this to
 | `skip_duplicates` | bool | ❌ | Skip memories with existing content (default: true) |
 
 **Returns:** `imported` count and `skipped` count (duplicates).
+
+### `batch_save_memories` — Save multiple memories at once
+
+```json
+{
+  "memories": [
+    {"content": "User prefers dark mode", "tags": ["preferences"]},
+    {"content": "Project uses PostgreSQL", "tags": ["tech-stack"]},
+    {"content": "Team uses GitHub for CI/CD", "tags": ["devops"]}
+  ]
+}
+```
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `memories` | list[dict] | ✅ | List of memory dicts (content required, tags/source optional) |
+
+**Returns:** `saved` count and `ids` list of newly created memory IDs.
+
+Use this for bulk operations — much faster than calling `save_memory` repeatedly. Perfect for extracting key takeaways from a conversation in one call.
+
+### `get_all_tags` — List all unique tags with counts
+
+```json
+{}
+```
+
+**Returns:** `total_tags` count and `tags` dict mapping tag name to usage count (sorted by most-used first).
+
+Use this to discover what categories of memories you have stored. Great for building navigation UI or understanding your knowledge base structure.
+
+### `clear_all_memories` — Delete all memories
+
+```json
+{}
+```
+
+⚠️ **WARNING:** This permanently removes every memory. Export first using `export_memories` if you want to keep a backup.
+
+**Returns:** `success` boolean and `deleted_count` (number of memories removed).
 
 ---
 

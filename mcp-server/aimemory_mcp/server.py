@@ -234,6 +234,70 @@ def import_memories(memories: list[dict], skip_duplicates: bool = True) -> dict:
     }
 
 
+@mcp.tool()
+def batch_save_memories(memories: list[dict]) -> dict:
+    """Save multiple new memories at once. Optimized for bulk operations and AI conversation analysis.
+
+    Args:
+        memories: List of memory dicts. Each should have:
+            - content (required): The memory text to store
+            - tags (optional): List of tag strings, e.g. ["meeting", "project-x"]
+            - source (optional): Source identifier, e.g. "chatgpt-conv-123"
+
+    Returns:
+        A dict with "saved" count and "ids" list of newly created memory IDs.
+        Example: {"saved": 5, "ids": [101, 102, 103, 104, 105]}
+
+    Use this when you have multiple facts or insights to save at once — much faster
+    than calling save_memory repeatedly. Perfect for analyzing a conversation and
+    extracting key takeaways in one batch.
+    """
+    result = storage.batch_save_memories(memories)
+    return {
+        "success": True,
+        "saved": result["saved"],
+        "ids": result["ids"],
+        "message": f"Saved {result['saved']} memories in batch",
+    }
+
+
+@mcp.tool()
+def get_all_tags() -> dict:
+    """Get all unique tags from your memory store with usage counts.
+
+    Returns:
+        A dict with "total_tags" count and "tags" mapping of tag name to usage count,
+        sorted by most-used first. Example: {"total_tags": 12, "tags": {"work": 45, "project": 32, ...}}
+
+    Use this to discover what categories of memories you have stored. Great for
+    building navigation, understanding your knowledge base structure, or finding
+    underused tags.
+    """
+    tags = storage.get_all_tags()
+    return {
+        "total_tags": len(tags),
+        "tags": tags,
+    }
+
+
+@mcp.tool()
+def clear_all_memories() -> dict:
+    """Delete ALL memories from the database. This action cannot be undone!
+
+    ⚠️ WARNING: This permanently removes every memory. Export your data first
+    using export_memories if you want to keep a backup.
+
+    Returns:
+        A dict with "success" boolean and "deleted_count" (number of memories removed).
+    """
+    result = storage.clear_all_memories()
+    return {
+        "success": result["success"],
+        "deleted_count": result["deleted_count"],
+        "message": f"Deleted {result['deleted_count']} memories. This cannot be undone.",
+    }
+
+
 def main():
     """Entry point for the aimemory-mcp-server console script.
 

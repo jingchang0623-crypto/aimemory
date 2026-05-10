@@ -31,7 +31,7 @@ export default function MCPServerLanding() {
             "operatingSystem": "Cross-platform",
             "description": "Open-source MCP server that gives AI assistants persistent memory. Works with Claude Desktop, Cursor, ChatGPT, and 113+ MCP clients.",
             "url": "https://aimemory.pro/mcp-server",
-            "softwareVersion": "1.3.0",
+            "softwareVersion": "1.4.0",
             "offers": {
               "@type": "Offer",
               "price": "0",
@@ -207,10 +207,10 @@ export default function MCPServerLanding() {
         </div>
       </section>
 
-      {/* 9 Tools */}
+      {/* 12 Tools */}
       <section className="pb-20 px-6 bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">9 powerful memory tools</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">12 powerful memory tools</h2>
           <p className="text-gray-500 text-center mb-12">Everything your AI assistant needs to remember, search, and manage your conversations.</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -223,6 +223,9 @@ export default function MCPServerLanding() {
               { icon: '📊', name: 'memory_stats', desc: 'Get total memory count, recent activity, and tag distribution. Monitor what your AI remembers at a glance.' },
               { icon: '📤', name: 'export_memories', desc: 'Backup all memories to JSON. Export your entire knowledge base for migration or safekeeping.' },
               { icon: '📥', name: 'import_memories', desc: 'Import memories from JSON backup. Batch-load conversations with automatic duplicate detection.' },
+              { icon: '📦', name: 'batch_save_memories', desc: 'Save multiple memories at once. Perfect for extracting key takeaways from a conversation in one call.' },
+              { icon: '🏷️', name: 'get_all_tags', desc: 'List all unique tags with usage counts. Discover what categories of memories you have stored.' },
+              { icon: '🧹', name: 'clear_all_memories', desc: 'Delete all memories. ⚠️ Use with caution — export first if you want to keep a backup.' },
             ].map((tool) => (
               <div key={tool.name} className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
                 <div className="text-2xl mb-3">{tool.icon}</div>

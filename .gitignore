@@ -46,3 +46,7 @@ uploads/
 __pycache__/
 *.pyc
 mcp-server/dist/
+
+# Python venvs
+*.venv/
+mcp-server/.venv/
