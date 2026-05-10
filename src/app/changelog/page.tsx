@@ -18,6 +18,23 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.66.0',
+    date: '2026-05-10',
+    title: 'Round 79 — MCP Landing Page Data Consistency Fix',
+    tags: ['MCP', 'Fix', 'Data'],
+    changes: {
+      improved: [
+        'MCP Server landing page: Tools count fixed from 7 to 9 in stats bar',
+        'MCP Server landing page: JSON-LD softwareVersion updated from 1.2.0 to 1.3.0',
+      ],
+      noted: [
+        'PyPI publication still pending — requires API token (P1 blocker)',
+        'Chrome Web Store submission still pending — requires $5 fee (P1 blocker)',
+        'Distribution channels remain the #1 priority bottleneck',
+      ],
+    },
+  },
+    {
     version: 'v0.65.0',
     date: '2026-05-10',
     title: 'Round 77 — MCP Server v1.3.0 with Export/Import Tools',

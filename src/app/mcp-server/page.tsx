@@ -31,7 +31,7 @@ export default function MCPServerLanding() {
             "operatingSystem": "Cross-platform",
             "description": "Open-source MCP server that gives AI assistants persistent memory. Works with Claude Desktop, Cursor, ChatGPT, and 113+ MCP clients.",
             "url": "https://aimemory.pro/mcp-server",
-            "softwareVersion": "1.2.0",
+            "softwareVersion": "1.3.0",
             "offers": {
               "@type": "Offer",
               "price": "0",
@@ -170,7 +170,7 @@ export default function MCPServerLanding() {
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
             <div>
-              <div className="text-2xl font-bold text-gray-900">7</div>
+              <div className="text-2xl font-bold text-gray-900">9</div>
               <div className="text-xs text-gray-500">Tools Included</div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
