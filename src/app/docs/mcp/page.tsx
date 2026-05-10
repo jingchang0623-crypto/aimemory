@@ -40,7 +40,7 @@ export default function MCPDocsPage() {
           </p>
           <p className="text-sm text-gray-500 mb-4 border-l-2 border-blue-200 pl-3">
             <strong>Note:</strong> Tools below are for the <strong>Hosted API</strong> endpoint (aimemory.pro/api/mcp). 
-            For the standalone <strong>Local Server</strong> with 9 tools (save_memory, update_memory, memory_stats, export_memories, import_memories), see the &quot;Standalone MCP Server&quot; section below.
+            For the standalone <strong>Local Server</strong> with 12 tools (search, save, list, get, update, delete, stats, export, import, batch_save, get_all_tags, clear_all), see the &quot;Standalone MCP Server&quot; section below.
           </p>
           <div className="grid md:grid-cols-2 gap-4 mt-6">
             <div className="bg-gray-50 rounded-lg p-4">
@@ -175,7 +175,7 @@ aimemory-mcp-server`}
   }
 }`}
             </pre>
-            <h3 className="text-lg font-semibold text-gray-900 mb-3 mt-6">7 Local Tools</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3 mt-6">12 Local Tools</h3>
             <div className="grid md:grid-cols-2 gap-3 mt-4">
               <div className="bg-gray-50 rounded-lg p-3">
                 <p className="text-sm font-medium text-gray-900">🔍 search_memories</p>
@@ -204,6 +204,26 @@ aimemory-mcp-server`}
               <div className="bg-gray-50 rounded-lg p-3">
                 <p className="text-sm font-medium text-gray-900">📊 memory_stats</p>
                 <p className="text-xs text-gray-500">Get total count, tags, recent activity</p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="text-sm font-medium text-gray-900">📤 export_memories</p>
+                <p className="text-xs text-gray-500">Backup all memories to JSON file</p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="text-sm font-medium text-gray-900">📥 import_memories</p>
+                <p className="text-xs text-gray-500">Restore from JSON backup, skip duplicates</p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="text-sm font-medium text-gray-900">📦 batch_save_memories</p>
+                <p className="text-xs text-gray-500">Save multiple memories at once</p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="text-sm font-medium text-gray-900">🏷️ get_all_tags</p>
+                <p className="text-xs text-gray-500">List all unique tags with usage counts</p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="text-sm font-medium text-gray-900">🧹 clear_all_memories</p>
+                <p className="text-xs text-gray-500">Delete all memories (with warning)</p>
               </div>
             </div>
             <p className="text-sm text-gray-500 mt-4">

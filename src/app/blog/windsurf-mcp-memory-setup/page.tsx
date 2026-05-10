@@ -153,7 +153,7 @@ export default function WindsurfMCPMemorySetup() {
           After saving the MCP configuration, restart Windsurf to load the new server. You should see &quot;AI Memory&quot; in your MCP servers list.
         </p>
         <p className="text-gray-600 mb-6">
-          To verify the connection, open Windsurf&apos;s MCP panel and check that AI Memory shows <strong className="text-gray-900">Connected</strong> status with 7 tools available.
+          To verify the connection, open Windsurf&apos;s MCP panel and check that AI Memory shows <strong className="text-gray-900">Connected</strong> status with 12 tools available.
         </p>
 
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Step 4: Using Memory in Windsurf</h2>
@@ -188,9 +188,9 @@ export default function WindsurfMCPMemorySetup() {
           <p className="text-gray-700 italic">&quot;Search my memories for PostgreSQL connection pool issues&quot;</p>
         </div>
 
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">7 Memory Tools Available</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">12 Memory Tools Available</h2>
         <p className="text-gray-600 mb-4">
-          The AI Memory MCP server provides 7 tools that Windsurf can use:
+          The AI Memory MCP server provides 12 tools that Windsurf can use:
         </p>
         <div className="overflow-x-auto mb-6">
           <table className="w-full border-collapse">

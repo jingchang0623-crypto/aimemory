@@ -64,7 +64,7 @@ export default function GiveAIPersistentMemoryPage() {
         name: 'How do I set up AI Memory MCP Server for persistent memory?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Install the AI Memory MCP Server with pip: "pip install aimemory-mcp-server". Then configure your MCP client (Claude Desktop, Cursor, etc.) to connect to the server. The server exposes 7 tools: save_memory, search_memories, list_memories, update_memory, delete_memory, get_memory, and memory_stats. Once connected, your AI assistant can read and write to its persistent memory store through the MCP protocol. Full setup takes under 5 minutes.',
+          text: 'Install the AI Memory MCP Server with pip: "pip install aimemory-mcp-server". Then configure your MCP client (Claude Desktop, Cursor, etc.) to connect to the server. The server exposes 12 tools: save_memory, search_memories, list_memories, update_memory, delete_memory, get_memory, memory_stats, export_memories, import_memories, batch_save_memories, get_all_tags, and clear_all_memories. Once connected, your AI assistant can read and write to its persistent memory store through the MCP protocol. Full setup takes under 5 minutes.',
         },
       },
       {
@@ -195,7 +195,7 @@ export default function GiveAIPersistentMemoryPage() {
 {`pip install aimemory-mcp-server`}
       </pre>
       <p>
-        This installs the server with all dependencies. The server exposes 9 MCP tools for complete memory management.
+        This installs the server with all dependencies. The server exposes 12 MCP tools for complete memory management.
       </p>
 
       <h3>Step 2: Start the MCP Server</h3>

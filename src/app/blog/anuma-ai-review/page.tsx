@@ -349,7 +349,7 @@ export default function AnumaAiReviewPage() {
         Claude, DeepSeek, Gemini, and Kimi exports, then search across everything with full-text search.
       </p>
       <p className="text-gray-700 mb-4">
-        The <Link href="/docs/mcp" className="text-blue-600 hover:underline">MCP server</Link> (7 tools,
+        The <Link href="/docs/mcp" className="text-blue-600 hover:underline">MCP server</Link> (12 tools,
         113+ clients) lets you inject relevant context from past conversations into any MCP-compatible AI
         client. The{' '}
         <Link href="/chrome-extension" className="text-blue-600 hover:underline">Chrome extension</Link>{' '}

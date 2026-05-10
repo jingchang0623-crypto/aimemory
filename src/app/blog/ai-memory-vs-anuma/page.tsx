@@ -81,7 +81,7 @@ const faqJsonLd = {
       name: 'Which is better for developers: AI Memory or Anuma?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'AI Memory is significantly better for developers. It offers an MCP server (open source, 7 tools), a Chrome extension with memory injection into live AI chats, self-hosting capability, and a SQLite FTS5 backend that developers can query directly. Anuma has no developer API, no MCP support, and no self-hosting option. If you are a developer who wants programmatic access to your AI conversation history, AI Memory is the clear winner.',
+        text: 'AI Memory is significantly better for developers. It offers an MCP server (open source, 12 tools), a Chrome extension with memory injection into live AI chats, self-hosting capability, and a SQLite FTS5 backend that developers can query directly. Anuma has no developer API, no MCP support, and no self-hosting option. If you are a developer who wants programmatic access to your AI conversation history, AI Memory is the clear winner.',
       },
     },
   ],
@@ -90,7 +90,7 @@ const faqJsonLd = {
 const comparisonTable = [
   { feature: 'Pricing (Pro)', aiMemory: '$6.90/mo', anuma: '$19.99/mo', winner: 'ai-memory' },
   { feature: 'Free Tier', aiMemory: 'Full search & upload', anuma: '100 credits/mo', winner: 'ai-memory' },
-  { feature: 'MCP Server', aiMemory: '✅ 7 tools, 113+ clients', anuma: '❌ None', winner: 'ai-memory' },
+  { feature: 'MCP Server', aiMemory: '✅ 12 tools, 113+ clients', anuma: '❌ None', winner: 'ai-memory' },
   { feature: 'Memory Injection', aiMemory: '✅ Into live AI chats', anuma: '❌ Not available', winner: 'ai-memory' },
   { feature: 'Chrome Extension', aiMemory: '✅ WXT framework', anuma: '❌ None', winner: 'ai-memory' },
   { feature: 'Self-Hosting', aiMemory: '✅ Full control', anuma: '❌ SaaS only', winner: 'ai-memory' },
@@ -292,7 +292,7 @@ export default function AiMemoryVsAnumaPage() {
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">MCP Server — AI Memory&apos;s Unique Advantage</h2>
       <p className="text-gray-700 mb-4">
         The <Link href="/mcp-server" className="text-blue-600 hover:underline">AI Memory MCP Server</Link>{' '}
-        is a game-changer for developers. It exposes 7 tools via the Model Context Protocol:
+        is a game-changer for developers. It exposes 12 tools via the Model Context Protocol:
       </p>
       <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-1">
         <li><strong>save_memory</strong> — Store new conversation insights</li>

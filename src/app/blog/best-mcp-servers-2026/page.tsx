@@ -22,7 +22,7 @@ export default function BestMCPServers2026() {
         name: 'What are the best MCP servers for AI assistants in 2026?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The best MCP servers in 2026 include AI Memory MCP (conversation memory, 7 tools), filesystem-mcp (file operations), brave-search-mcp (web search), puppeteer-mcp (browser automation), and github-mcp (repository management). These servers give Claude Desktop, Cursor, and other MCP clients powerful capabilities beyond their native features.',
+          text: 'The best MCP servers in 2026 include AI Memory MCP (conversation memory, 12 tools), filesystem-mcp (file operations), brave-search-mcp (web search), puppeteer-mcp (browser automation), and github-mcp (repository management). These servers give Claude Desktop, Cursor, and other MCP clients powerful capabilities beyond their native features.',
         },
       },
       {
@@ -112,7 +112,7 @@ export default function BestMCPServers2026() {
           </div>
           <p className="text-gray-600 mb-2"><strong className="text-gray-900">Features:</strong></p>
           <ul className="list-disc list-inside text-gray-600 mb-3 space-y-1">
-            <li>7 tools: search_memories, save_memory, list_memories, get_memory, update_memory, delete_memory, memory_stats</li>
+            <li>12 tools: search_memories, save_memory, list_memories, get_memory, update_memory, delete_memory, memory_stats, export_memories, import_memories, batch_save_memories, get_all_tags, clear_all_memories</li>
             <li>Full-text search with SQLite FTS5</li>
             <li>Cross-platform: ChatGPT, Claude, DeepSeek, Gemini exports</li>
             <li>Zero-config local installation</li>

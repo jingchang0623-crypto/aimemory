@@ -66,7 +66,7 @@ export default function MCPServerForClaude() {
         name: 'What tools does the Claude Desktop MCP server provide?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The Claude Desktop MCP server provides 7 tools: search_memory (full-text search), get_context (relevant snippets), list_memories (browse conversations), get_conversation (full conversation by ID), add_memory (save new notes), delete_memory (remove data), and get_stats (memory statistics and platform breakdown).',
+          text: 'The Claude Desktop MCP server provides 12 tools: search_memory (full-text search), get_context (relevant snippets), list_memories (browse conversations), get_conversation (full conversation by ID), add_memory (save new notes), delete_memory (remove data), get_stats (memory statistics), save_memory (store with tags), export_memories (backup to JSON), import_memories (restore from backup), batch_save_memories (bulk save), and get_all_tags (tag overview).',
         },
       },
       {
@@ -333,10 +333,10 @@ export default function MCPServerForClaude() {
         </div>
 
         {/* === Section 4: Tools === */}
-        <h2>Available Tools: 9 MCP Memory Tools</h2>
+        <h2>Available Tools: 12 MCP Memory Tools</h2>
         <p>
           Once your claude desktop MCP server is connected, Claude gains access
-          to these 9 tools for managing your conversation memory:
+          to these 12 tools for managing your conversation memory:
         </p>
 
         <div className="space-y-4 my-6">
