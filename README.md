@@ -35,7 +35,7 @@ Give your AI assistant persistent memory via the Model Context Protocol. Works w
 - **Package:** `aimemory-mcp-server`
 - **PyPI:** Coming soon
 - **GitHub Install:** `pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server`
-- **Tools:** 7 memory tools (search, save, list, get, update, delete, stats)
+- **Tools:** 12 memory tools (search, save, list, get, update, delete, stats, export, import, batch_save, get_all_tags, clear_all)
 - **Learn more:** [/mcp-server](https://aimemory.pro/mcp-server)
 
 ## Tech Stack
@@ -98,10 +98,10 @@ aimemory/
 │   │       └── memory-inject.ts # Memory injection system
 │   └── .output/chrome-mv3/     # Built extension
 ├── mcp-server/                 # Python MCP Server
-│   ├── src/aimemory_mcp/
+│   ├── aimemory_mcp/
 │   │   └── server.py           # FastMCP server
 │   ├── dist/                   # Built packages
-│   └── pyproject.toml          # Package config (v1.2.0)
+│   └── pyproject.toml          # Package config (v1.4.0)
 └── public/
     └── ai-memory-extension.zip # Downloadable extension
 ```
