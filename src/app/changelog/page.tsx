@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.70.0',
+    date: '2026-05-11',
+    title: 'Round 84 — MCP Tools Data Consistency & Quickstart Guide Update',
+    tags: ['Fix', 'MCP', 'Docs'],
+    changes: {
+      fixed: [
+        'MCP Server landing page trust bar: Tools count fixed from 9 to 12 (matches actual v1.4.0)',
+        'MCP Quickstart guide: Tools count updated from 5 to 12 across all references',
+        'MCP Quickstart FAQ JSON-LD: Updated tool list to match 12 actual tools',
+        'MCP Quickstart tools section: Added 7 missing tools (get_memory, memory_stats, export/import, batch_save, get_all_tags, clear_all)',
+      ],
+      noted: [
+        'All MCP Server-facing pages now consistently show 12 tools',
+        'Distribution remains #1 bottleneck — PyPI token and Chrome Web Store $5 fee still pending (P1)',
+      ],
+    },
+  },
+  {
     version: 'v0.69.0',
     date: '2026-05-11',
     title: 'Round 83 — Data Consistency Audit & Features Page Update',

@@ -170,7 +170,7 @@ export default function MCPServerLanding() {
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
             <div>
-              <div className="text-2xl font-bold text-gray-900">9</div>
+              <div className="text-2xl font-bold text-gray-900">12</div>
               <div className="text-xs text-gray-500">Tools Included</div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />

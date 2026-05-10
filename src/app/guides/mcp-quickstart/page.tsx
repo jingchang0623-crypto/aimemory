@@ -32,7 +32,7 @@ export default function MCPQuickstartGuide() {
                 "name": "What is the AI Memory MCP Server?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "The AI Memory MCP Server implements the Model Context Protocol (MCP) to let AI assistants like Claude Desktop, Cursor, and Windsurf search your conversation history. It provides 5 tools: save_memory, search_memories, list_memories, update_memory, and delete_memory."
+                  "text": "The AI Memory MCP Server implements the Model Context Protocol (MCP) to let AI assistants like Claude Desktop, Cursor, and Windsurf search your conversation history. It provides 12 tools: search_memories, save_memory, list_memories, get_memory, update_memory, delete_memory, memory_stats, export_memories, import_memories, batch_save_memories, get_all_tags, and clear_all_memories."
                 }
               },
               {
@@ -64,7 +64,7 @@ export default function MCPQuickstartGuide() {
                 "name": "What is the difference between remote and local MCP mode?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Remote mode uses the hosted endpoint at aimemory.pro/api/mcp via HTTP transport — no local setup needed. Local mode runs a Python server on your machine via stdio transport — gives you full control and offline access. Both provide the same 5 tools."
+                  "text": "Remote mode uses the hosted endpoint at aimemory.pro/api/mcp via HTTP transport — no local setup needed. Local mode runs a Python server on your machine via stdio transport — gives you full control and offline access. Both provide the same 12 tools."
                 }
               },
               {
@@ -436,7 +436,7 @@ export default function MCPQuickstartGuide() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">8. Available Tools</h2>
           <div className="bg-white rounded-xl border border-gray-200 p-8">
             <p className="text-gray-600 mb-6">
-              The AI Memory MCP Server exposes 5 tools that your AI assistant can use:
+              The AI Memory MCP Server exposes 12 tools that your AI assistant can use:
             </p>
             <div className="space-y-4">
               {[
@@ -459,6 +459,12 @@ export default function MCPQuickstartGuide() {
                   params: "limit (default: 20), tag (optional)"
                 },
                 {
+                  name: "get_memory",
+                  icon: "📌",
+                  desc: "Retrieve a specific memory by ID. Perfect for referencing exact conversations or insights.",
+                  params: "memory_id (required)"
+                },
+                {
                   name: "update_memory",
                   icon: "✏️",
                   desc: "Update an existing memory's content and/or tags.",
@@ -469,6 +475,42 @@ export default function MCPQuickstartGuide() {
                   icon: "🗑️",
                   desc: "Permanently delete a memory by its ID.",
                   params: "memory_id (required)"
+                },
+                {
+                  name: "memory_stats",
+                  icon: "📊",
+                  desc: "Get statistics about your memory store: total count, tag distribution, recent activity.",
+                  params: "none"
+                },
+                {
+                  name: "export_memories",
+                  icon: "📤",
+                  desc: "Export all memories as JSON for backup or migration.",
+                  params: "none"
+                },
+                {
+                  name: "import_memories",
+                  icon: "📥",
+                  desc: "Import memories from JSON backup. Automatic duplicate detection.",
+                  params: "memories (required), skip_duplicates (optional)"
+                },
+                {
+                  name: "batch_save_memories",
+                  icon: "📦",
+                  desc: "Save multiple memories at once. Perfect for extracting key takeaways from a conversation.",
+                  params: "memories (required, list of dicts)"
+                },
+                {
+                  name: "get_all_tags",
+                  icon: "🏷️",
+                  desc: "List all unique tags with usage counts. Discover your knowledge base structure.",
+                  params: "none"
+                },
+                {
+                  name: "clear_all_memories",
+                  icon: "🧹",
+                  desc: "Delete ALL memories (use with caution — export first!)",
+                  params: "none"
                 }
               ].map((tool) => (
                 <div key={tool.name} className="bg-gray-50 rounded-lg p-4">
