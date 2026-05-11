@@ -58,7 +58,7 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start">
                 <span className="text-green-500 mr-2 mt-1">✓</span>
-                <span>Memory Injection — inject context into ChatGPT, Claude, Gemini, DeepSeek, Kimi</span>
+                <span>Memory Injection — inject context into ChatGPT, Claude, DeepSeek, Gemini</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-500 mr-2 mt-1">✓</span>

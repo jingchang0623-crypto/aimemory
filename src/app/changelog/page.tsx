@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.73.0',
+    date: '2026-05-11',
+    title: 'Round 89 — PyPI Publishing Attempt + PM Audit',
+    tags: ['PM', 'MCP', 'Distribution'],
+    changes: {
+      added: [
+        'Created git tag v1.4.0 and GitHub Release to trigger PyPI publishing',
+        'Added PYPI-SETUP-GUIDE.md with trusted publishing configuration steps',
+      ],
+      noted: [
+        'PyPI publishing workflow triggered but failed: trusted publisher not configured on PyPI',
+        'Error: "invalid-publisher: valid token, but no corresponding publisher"',
+        'Action needed: Configure trusted publisher at pypi.org/manage/account/publishing/',
+        'MCP Server v1.4.0 package built and ready in dist/ (11.9KB wheel + 10KB tar.gz)',
+      ],
+    },
+  },
+  {
     version: 'v0.72.0',
     date: '2026-05-11',
     title: 'Round 88 — PM Audit & Data Consistency Fix',
