@@ -342,6 +342,98 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Memory Injection Demo — Visual proof of MCP integration */}
+      <section className="py-16 px-6 bg-gradient-to-b from-white to-violet-50/30">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-violet-50 text-violet-600 rounded-full text-sm mb-4">
+              ⚡ Memory Injection
+            </div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              Give your AI a brain that actually remembers
+            </h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">
+              With our MCP Server, your AI assistants can instantly access your stored memories — 
+              no more repeating context every conversation.
+            </p>
+          </div>
+          
+          {/* Demo mockup showing MCP tools in action */}
+          <div className="bg-gray-900 rounded-2xl shadow-2xl overflow-hidden border border-gray-800">
+            {/* Window header */}
+            <div className="flex items-center gap-2 px-4 py-3 bg-gray-800 border-b border-gray-700">
+              <div className="flex gap-1.5">
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+              <span className="text-gray-400 text-sm ml-2">Claude Desktop</span>
+            </div>
+            {/* Chat content */}
+            <div className="p-6 space-y-4">
+              {/* User message */}
+              <div className="flex justify-end">
+                <div className="bg-violet-600 text-white px-4 py-2 rounded-2xl rounded-br-md max-w-md">
+                  <p className="text-sm">What did I tell you about my tech stack last month?</p>
+                </div>
+              </div>
+              {/* Claude response with memory injection */}
+              <div className="flex justify-start">
+                <div className="bg-gray-800 text-gray-100 px-4 py-3 rounded-2xl rounded-bl-md max-w-lg">
+                  <div className="flex items-center gap-2 text-xs text-violet-400 mb-2">
+                    <span>🧠</span>
+                    <span>Used ai_memory_search</span>
+                  </div>
+                  <p className="text-sm leading-relaxed">
+                    Based on your stored memories, you mentioned:
+                  </p>
+                  <ul className="text-sm text-gray-300 mt-2 space-y-1 ml-4 list-disc">
+                    <li>Frontend: React + Next.js 14</li>
+                    <li>Backend: Node.js with Express</li>
+                    <li>Database: PostgreSQL on Railway</li>
+                    <li>Auth: Clerk</li>
+                  </ul>
+                  <p className="text-sm text-gray-400 mt-2 text-xs">
+                    Found in: "Tech Stack Discussion" • DeepSeek • 3 weeks ago
+                  </p>
+                </div>
+              </div>
+              {/* Available tools */}
+              <div className="border-t border-gray-700 pt-4 mt-4">
+                <p className="text-xs text-gray-500 mb-2">12 MCP Memory Tools Available:</p>
+                <div className="flex flex-wrap gap-2">
+                  {['ai_memory_search', 'ai_memory_add', 'ai_memory_get', 'ai_memory_list', 'ai_memory_update', 'ai_memory_delete'].map((tool) => (
+                    <span key={tool} className="text-xs bg-gray-800 text-gray-400 px-2 py-1 rounded font-mono">
+                      {tool}
+                    </span>
+                  ))}
+                  <span className="text-xs text-gray-600 px-2 py-1">+6 more</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* CTA */}
+          <div className="text-center mt-8">
+            <p className="text-sm text-gray-500 mb-4">
+              Works with Claude Desktop, Cursor, Windsurf, Cline, and 113+ MCP clients
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Link
+                href="/mcp-server"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-violet-600 text-white font-medium rounded-lg hover:bg-violet-700 transition-colors text-sm"
+              >
+                <span>Setup MCP Server</span>
+                <span>→</span>
+              </Link>
+              <code className="px-4 py-2.5 bg-gray-100 text-gray-700 rounded-lg text-sm font-mono">
+                pip install aimemory-mcp-server
+              </code>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* MCP Server CTA Section */}
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
