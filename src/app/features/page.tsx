@@ -22,6 +22,11 @@ const features = [
     description: 'Search across all your conversations instantly. Find that one answer from months ago in seconds.',
   },
   {
+    icon: '🏷️',
+    title: 'Tag Management',
+    description: 'Organize conversations with custom tags. Filter, search, and categorize your AI knowledge base.',
+  },
+  {
     icon: '🔌',
     title: 'Chrome Extension Auto-Save',
     description: 'Automatically save new conversations as they happen. Never lose an important AI interaction again.',
@@ -56,6 +61,7 @@ const upcoming = [
 const comparison = [
   { feature: 'Multi-platform import', aimemory: true, chatmemo: false, aiexporter: false },
   { feature: 'Full-text search', aimemory: true, chatmemo: true, aiexporter: false },
+  { feature: 'Tag management', aimemory: true, chatmemo: false, aiexporter: false },
   { feature: 'Chrome extension auto-save', aimemory: true, chatmemo: true, aiexporter: false },
   { feature: 'Session-isolated private storage', aimemory: true, chatmemo: false, aiexporter: true },
   { feature: 'No account required', aimemory: true, chatmemo: false, aiexporter: true },
@@ -159,6 +165,7 @@ export default function FeaturesPage() {
             <ul className="text-left text-gray-600 space-y-2 mb-6">
               <li>✓ Unlimited conversation imports</li>
               <li>✓ Full-text search</li>
+              <li>✓ Tag management — organize your knowledge</li>
               <li>✓ Chrome extension auto-save</li>
               <li>✓ Memory Injection — inject context into any AI</li>
               <li>✓ MCP Server (12 tools) for Claude Desktop, Cursor, Windsurf</li>

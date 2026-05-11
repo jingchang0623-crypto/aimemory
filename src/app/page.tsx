@@ -149,7 +149,7 @@ export default function Home() {
             <span className="text-gray-400">You just can't find them.</span>
           </h1>
           <p className="text-xl text-gray-500 leading-relaxed mb-8 max-w-2xl mx-auto">
-            Hundreds of conversations. Thousands of insights. All buried in ChatGPT, Claude, and DeepSeek — with no way to search across them. <strong className="text-gray-700">Until now.</strong>
+            Hundreds of conversations. Thousands of insights. All buried in ChatGPT, Claude, DeepSeek, Gemini, and Kimi — with no way to search across them. <strong className="text-gray-700">Until now.</strong>
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <button
@@ -283,7 +283,7 @@ export default function Home() {
             <div className="p-6 bg-blue-50/50 rounded-xl border border-blue-100">
               <div className="text-2xl mb-3">🏝️</div>
               <h3 className="font-semibold text-gray-900 mb-2">The platform silo</h3>
-              <p className="text-sm text-gray-600">Your best insights are split across ChatGPT, Claude, and DeepSeek. No way to search them all together.</p>
+              <p className="text-sm text-gray-600">Your best insights are split across ChatGPT, Claude, DeepSeek, Gemini, and Kimi. No way to search them all together.</p>
             </div>
           </div>
         </div>
