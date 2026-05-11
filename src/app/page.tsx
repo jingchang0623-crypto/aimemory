@@ -62,7 +62,7 @@ export default function Home() {
                 "name": "Which AI platforms does AI Memory support?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "AI Memory supports ChatGPT, Claude, DeepSeek, and Gemini. You can import conversations from all these platforms and search them in one unified interface."
+                  "text": "AI Memory supports ChatGPT, Claude, DeepSeek, Gemini, and Kimi. You can import conversations from all these platforms and search them in one unified interface."
                 }
               },
               {
@@ -90,6 +90,24 @@ export default function Home() {
               "@type": "SearchAction",
               "target": "https://aimemory.pro/?q={search_term_string}",
               "query-input": "required name=search_term_string"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "AI Memory Chrome Extension",
+            "applicationCategory": "ProductivityApplication",
+            "operatingSystem": "Chrome, Edge, Brave, Chromium",
+            "description": "Free Chrome extension that auto-saves conversations from ChatGPT, Claude, DeepSeek, and Gemini. 100% private, local storage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
             }
           })
         }}
@@ -140,6 +158,12 @@ export default function Home() {
             >
               Upload Your Chats — It's Free
             </button>
+            <Link
+              href="/ai-memory-extension.zip"
+              className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors text-base"
+            >
+              ⬇️ Get Extension
+            </Link>
             <Link
               href="/blog/chatgpt-history-extension"
               className="px-6 py-3 border border-gray-200 text-gray-600 font-medium rounded-lg hover:border-gray-300 transition-colors text-base"

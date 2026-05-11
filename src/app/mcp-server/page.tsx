@@ -130,6 +130,7 @@ export default function MCPServerLanding() {
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm mb-6">
             <span className="text-base">⚡</span>
             pip install aimemory-mcp-server
+            <span className="ml-1 px-1.5 py-0.5 bg-green-600 text-white text-xs rounded-full font-medium">v1.4.0</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 tracking-tight leading-tight mb-6">
             Give your AI<br />
@@ -478,18 +479,18 @@ export default function MCPServerLanding() {
           <p className="text-gray-400 mb-8">One pip install. Works with Claude, Cursor, ChatGPT, and 113+ tools.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://pypi.org/project/aimemory-mcp-server/"
+              href="https://github.com/jingchang0623-crypto/aimemory/tree/main/mcp-server"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
             >
-              📦 pip install aimemory-mcp-server
+              ⭐ Install from GitHub
             </a>
             <Link
-              href="/"
+              href="/docs/mcp"
               className="inline-block bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition"
             >
-              Upload Conversations →
+              📖 Setup Guide →
             </Link>
           </div>
         </div>

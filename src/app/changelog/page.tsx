@@ -18,6 +18,27 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.71.0',
+    date: '2026-05-11',
+    title: 'Round 85 — CTA Fixes & Homepage UX Improvements',
+    tags: ['UX', 'SEO', 'Fix'],
+    changes: {
+      fixed: [
+        'MCP page bottom CTA: Changed PyPI link (404) → GitHub/docs link to avoid broken UX',
+        'MCP page FAQ JSON-LD: Added v1.4.0 version badge in hero section',
+      ],
+      improved: [
+        'Homepage hero: Added "⬇️ Get Extension" button for direct download (blue button)',
+        'Homepage FAQ JSON-LD: Updated platform list to include Kimi (5 platforms)',
+        'Homepage JSON-LD: Added SoftwareApplication schema for Chrome extension rich snippets',
+      ],
+      noted: [
+        'PyPI publication still pending — requires API token (P1 blocker)',
+        'Chrome Web Store submission still pending — requires $5 fee (P1 blocker)',
+      ],
+    },
+  },
+  {
     version: 'v0.70.0',
     date: '2026-05-11',
     title: 'Round 84 — MCP Tools Data Consistency & Quickstart Guide Update',
