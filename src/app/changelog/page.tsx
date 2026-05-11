@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const releases = [
     {
+    version: 'v0.72.0',
+    date: '2026-05-11',
+    title: 'Round 88 — PM Audit & Data Consistency Fix',
+    tags: ['PM', 'Fix', 'Audit'],
+    changes: {
+      fixed: [
+        'Chrome Extension page: "5 Platforms Supported" → "4 Platforms" (extension ZIP contains 4 content scripts: ChatGPT, Claude, DeepSeek, Gemini)',
+        'PyPI publishing guide: Updated blockers section with Round 87 upload attempt details (403 Forbidden — no valid credentials)',
+      ],
+      noted: [
+        'Full PM audit completed: Product is feature-complete for MVP. No new code P0 tasks identified.',
+        'PyPI upload attempted with twine — got 403 Forbidden (TWINE_PASSWORD/PYPI_API_TOKEN env vars empty in build environment)',
+        'Critical distribution path: PyPI publication + Chrome Web Store + Google Search Console all remain blocked on human actions',
+        '87+ rounds of optimization completed. Code is clean (0 TODOs/FIXMEs). 180 pages generated.',
+      ],
+    },
+  },
+  {
     version: 'v0.71.0',
     date: '2026-05-11',
     title: 'Round 85 — CTA Fixes & Homepage UX Improvements',

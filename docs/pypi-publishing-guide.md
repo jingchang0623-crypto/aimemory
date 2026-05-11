@@ -103,9 +103,11 @@ For future releases:
 
 ## Current Blockers
 
-- Need PyPI account for project creation
-- Need to configure trusted publisher
+- Need valid PyPI API token for upload (TWINE_PASSWORD/PYPI_API_TOKEN env vars not available in build environment)
+- Round 87 attempted `twine upload dist/*` — got 403 Forbidden (empty credentials)
+- GitHub Actions Trusted Publishers workflow exists but needs manual PyPI project creation
 
 **Action Required**: Someone with PyPI account access needs to:
 1. Create the project on PyPI
 2. Add the trusted publisher configuration
+3. OR provide a valid API token for manual upload

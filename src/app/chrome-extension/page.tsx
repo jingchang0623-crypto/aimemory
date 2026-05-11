@@ -55,7 +55,7 @@ export default function ChromeExtension() {
         {/* Stats */}
         <div className="flex flex-wrap justify-center gap-6 mb-12 text-center">
           <div className="px-6 py-3 bg-white rounded-lg border border-gray-200">
-            <div className="text-2xl font-bold text-blue-600">5</div>
+            <div className="text-2xl font-bold text-blue-600">4</div>
             <div className="text-sm text-gray-500">Platforms Supported</div>
           </div>
           <div className="px-6 py-3 bg-white rounded-lg border border-gray-200">
