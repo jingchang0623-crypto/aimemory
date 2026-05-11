@@ -142,11 +142,25 @@ export function getConversation(id: string, sessionId: string) {
   return { ...conv, messages };
 }
 
-export function getAllConversations(sessionId: string, limit = 50, offset = 0) {
+export function getAllConversations(sessionId: string, limit = 50, offset = 0, tag?: string) {
+  if (tag) {
+    // Filter by tag using JSON search (simple contains check)
+    return db.prepare(
+      `SELECT * FROM conversations 
+       WHERE session_id = ? AND tags LIKE ? 
+       ORDER BY updated_at DESC LIMIT ? OFFSET ?`
+    ).all(sessionId, `%"${tag}"%`, limit, offset) as any[];
+  }
   return db.prepare('SELECT * FROM conversations WHERE session_id = ? ORDER BY updated_at DESC LIMIT ? OFFSET ?').all(sessionId, limit, offset) as any[];
 }
 
-export function getConversationCount(sessionId: string) {
+export function getConversationCount(sessionId: string, tag?: string) {
+  if (tag) {
+    const result = db.prepare(
+      'SELECT COUNT(*) as count FROM conversations WHERE session_id = ? AND tags LIKE ?'
+    ).get(sessionId, `%"${tag}"%`) as { count: number };
+    return result.count;
+  }
   const result = db.prepare('SELECT COUNT(*) as count FROM conversations WHERE session_id = ?').get(sessionId) as { count: number };
   return result.count;
 }

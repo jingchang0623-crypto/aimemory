@@ -3,8 +3,7 @@ import { searchConversations, getAllConversations, getConversationCount } from '
 
 function getSessionId(request: NextRequest): string {
   const cookie = request.cookies.get('aim_session');
-  if (cookie?.value) return cookie.value;
-  return '';  // No session = no data
+  return cookie?.value || '';  // No session = no data
 }
 
 export async function GET(request: NextRequest) {
@@ -16,6 +15,7 @@ export async function GET(request: NextRequest) {
 
     const { searchParams } = new URL(request.url);
     const query = searchParams.get('q');
+    const tag = searchParams.get('tag');
     const limit = parseInt(searchParams.get('limit') || '20');
     const offset = parseInt(searchParams.get('offset') || '0');
 
@@ -28,14 +28,15 @@ export async function GET(request: NextRequest) {
         total: results.length,
       });
     } else {
-      const conversations = getAllConversations(sessionId, limit, offset);
-      const total = getConversationCount(sessionId);
+      const conversations = getAllConversations(sessionId, limit, offset, tag || undefined);
+      const total = getConversationCount(sessionId, tag || undefined);
       return NextResponse.json({
         success: true,
         conversations,
         total,
         limit,
         offset,
+        ...(tag ? { tag } : {}),
       });
     }
 

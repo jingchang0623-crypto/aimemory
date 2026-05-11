@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import ExportButton from './ExportButton';
+import TagManager from './TagManager';
 
 interface Message {
   id: string;
@@ -15,12 +16,13 @@ interface Conversation {
   title: string;
   platform: string;
   created_at: string;
+  tags: string;
   messages: Message[];
 }
 
 export default function ConversationDetail({ 
   conversationId,
-  onClose 
+  onClose
 }: { 
   conversationId: string;
   onClose?: () => void;
@@ -44,6 +46,12 @@ export default function ConversationDetail({
     fetchConversation();
   }, [conversationId]);
 
+  const handleTagsChange = (newTags: string[]) => {
+    if (conversation) {
+      setConversation({ ...conversation, tags: JSON.stringify(newTags) });
+    }
+  };
+
   if (isLoading) {
     return (
       <div className="text-center py-8 text-gray-500">
@@ -59,6 +67,14 @@ export default function ConversationDetail({
       </div>
     );
   }
+
+  const parsedTags = (() => {
+    try {
+      return JSON.parse(conversation.tags || '[]');
+    } catch {
+      return [];
+    }
+  })();
 
   return (
     <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
@@ -80,6 +96,15 @@ export default function ConversationDetail({
               ✕
             </button>
           </div>
+        </div>
+        
+        {/* Tags section */}
+        <div className="mt-3 pt-3 border-t border-gray-200">
+          <TagManager
+            conversationId={conversationId}
+            initialTags={parsedTags}
+            onTagsChange={handleTagsChange}
+          />
         </div>
       </div>
 
