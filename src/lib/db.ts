@@ -114,6 +114,14 @@ export function insertMessage(msg: {
 }
 
 export function searchConversations(query: string, sessionId: string, limit = 20) {
+  // Escape FTS5 special characters to prevent syntax errors
+  // FTS5 special chars: ' " * - ^ ( ) { } [ ] ~ : ? ! & | = < > #
+  // We escape by wrapping in double quotes and escaping internal double quotes
+  const escapedQuery = query
+    .replace(/"/g, '""')  // Escape double quotes first
+    .replace(/'/g, "''"); // Escape single quotes
+  const safeQuery = `"${escapedQuery}"`;
+  
   const stmt = db.prepare(`
     SELECT DISTINCT c.*, 
            snippet(messages_fts, 0, '<mark>', '</mark>', '...', 32) as snippet
@@ -124,7 +132,7 @@ export function searchConversations(query: string, sessionId: string, limit = 20
     ORDER BY rank
     LIMIT ?
   `);
-  return stmt.all(query, sessionId, limit) as any[];
+  return stmt.all(safeQuery, sessionId, limit) as any[];
 }
 
 export function getConversation(id: string, sessionId: string) {
