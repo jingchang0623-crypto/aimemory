@@ -124,11 +124,22 @@ export default function Home() {
             <nav className="hidden md:flex items-center gap-6">
               <Link href="/features" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Features</Link>
               <Link href="/chrome-extension" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Extension</Link>
+              <Link href="/mcp-server" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">MCP</Link>
               <Link href="/blog" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Blog</Link>
               <Link href="/pricing" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Pricing</Link>
               <button
                 onClick={scrollToUpload}
                 className="px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition-colors"
+              >
+                Try Free
+              </button>
+            </nav>
+            {/* Mobile nav - simple links */}
+            <nav className="flex md:hidden items-center gap-3">
+              <Link href="/mcp-server" className="text-xs text-gray-500 hover:text-gray-900 transition-colors">MCP</Link>
+              <button
+                onClick={scrollToUpload}
+                className="px-3 py-1.5 bg-gray-900 text-white text-xs font-medium rounded-lg hover:bg-gray-800 transition-colors"
               >
                 Try Free
               </button>

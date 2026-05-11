@@ -18,6 +18,17 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === Guides ===
+  {
+    slug: 'free-ai-memory-tool',
+    title: 'Best Free AI Memory Tool 2026 - Save, Search & Organize AI Conversations',
+    description: 'Discover the best free AI memory tool in 2026. Compare AI Memory, Chat Memo, manual exports, and browser bookmarks for managing ChatGPT, Claude, DeepSeek, Gemini, and Kimi conversations.',
+    category: 'Guides',
+    date: '2026-05-12',
+    readTime: '8 min',
+    tags: ['free', 'ai-memory', 'search', 'organize', 'chatgpt', 'claude', 'deepseek', 'gemini', 'kimi', 'comparison'],
+    lang: 'en',
+  },
   // === Extensions ===
   {
     slug: 'chatgpt-history-extension',
