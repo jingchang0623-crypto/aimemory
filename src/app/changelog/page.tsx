@@ -17,7 +17,27 @@ export const metadata: Metadata = {
 };
 
 const releases = [
-    {
+  {
+    version: 'v0.74.0',
+    date: '2026-05-12',
+    title: 'Round 95 — Chrome Extension Data Accuracy Fix',
+    tags: ['Fix', 'Data Consistency', 'Extension'],
+    changes: {
+      fixed: [
+        'Chrome Extension page: Corrected platform count from 5→4 auto-capture platforms',
+        'Chrome Extension page: Kimi status changed from ✅ Supported → ⏳ Coming Soon',
+        'Chrome Extension metadata: Removed Kimi from auto-save claims in title/description',
+        'MCP Server comparison table: Fixed "4 platforms" → "5 platforms" (MCP searches all uploaded data)',
+      ],
+      noted: [
+        'Root cause: Round 92 incorrectly added Kimi as extension platform without kimi.content.ts',
+        'Extension ZIP contains only 4 content scripts: chatgpt.js, claude.js, deepseek.js, gemini.js',
+        'Kimi IS supported for web app upload (parser.ts has full Kimi parsing)',
+        'Added note: Kimi conversations can be uploaded via web app while extension support is in progress',
+      ],
+    },
+  },
+  {
     version: 'v0.73.0',
     date: '2026-05-11',
     title: 'Round 89 — PyPI Publishing Attempt + PM Audit',
