@@ -46,6 +46,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        {/* Organization JSON-LD for Google Knowledge Panel */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "AI Memory",
+              "url": "https://aimemory.pro",
+              "logo": "https://aimemory.pro/og-image.png",
+              "description": "AI Memory helps users save, search, and organize conversations from ChatGPT, Claude, DeepSeek, Gemini, and Kimi. Free, open-source, 100% private.",
+              "sameAs": [
+                "https://github.com/jingchang0623-crypto/aimemory"
+              ],
+              "foundingDate": "2025",
+              "founder": {
+                "@type": "Person",
+                "name": "AI Memory Team"
+              }
+            })
+          }}
+        />
         {children}
         {/* Google Analytics - only loads if GA_MEASUREMENT_ID is set */}
         {GA_ID && (

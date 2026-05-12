@@ -5,7 +5,7 @@ import WaitlistForm from './WaitlistForm';
 
 export const metadata: Metadata = {
   title: 'Pricing - AI Memory | Free Forever, Pro Features Coming',
-  description: 'AI Memory is free with all core features: import, search, memory injection, MCP server, and Chrome extension. Pro features coming soon.',
+  description: 'AI Memory is free with all core features. Upgrade to Plus ($3.9/mo) for AI summaries and multi-device, or Pro ($7.9/mo) for full AI analysis, cloud sync, and knowledge graph.',
   keywords: ['AI memory pricing', 'chatgpt extension free', 'AI conversation manager pricing'],
   alternates: {
     canonical: 'https://aimemory.pro/pricing',
@@ -43,7 +43,7 @@ export default function PricingPage() {
                 "name": "How much does AI Memory Pro cost?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "AI Memory Pro will cost $6.9/month or $49/year (save 41%). Waitlist members get founding member discounts and early access."
+                  "text": "AI Memory Plus is $3.9/month or $39/year. AI Memory Pro is $7.9/month or $79/year with unlimited AI analysis, cross-platform sync, cloud sync, and knowledge graph. Waitlist members get founding member discounts and early access."
                 }
               },
               {
@@ -91,7 +91,7 @@ export default function PricingPage() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {/* Free Plan */}
           <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 relative">
             <div className="text-center">
@@ -118,7 +118,7 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start">
                 <span className="text-green-500 mr-2 mt-1">✓</span>
-                <span>Memory Injection — inject context into ChatGPT, Claude, DeepSeek, Gemini</span>
+                <span>Memory Injection — inject context into any AI</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-500 mr-2 mt-1">✓</span>
@@ -126,7 +126,7 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start">
                 <span className="text-green-500 mr-2 mt-1">✓</span>
-                <span>Session-isolated private storage — only you can access your data</span>
+                <span>Session-isolated private storage</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-500 mr-2 mt-1">✓</span>
@@ -141,15 +141,15 @@ export default function PricingPage() {
             </Link>
           </div>
 
-          {/* Pro Plan */}
+          {/* Plus Plan */}
           <div className="bg-white border-2 border-blue-500 rounded-2xl p-8 relative shadow-lg">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-500 text-white text-sm font-semibold px-4 py-1 rounded-full">
-              Coming Soon
+              Most Popular
             </div>
             <div className="text-center">
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Pro</h2>
-              <div className="text-5xl font-bold text-gray-900 mb-2">$6.9<span className="text-lg text-gray-500">/mo</span></div>
-              <p className="text-gray-500 mb-8">or $49/year (save 41%)</p>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Plus</h2>
+              <div className="text-5xl font-bold text-gray-900 mb-2">$3.9<span className="text-lg text-gray-500">/mo</span></div>
+              <p className="text-gray-500 mb-8">or $39/year (save 17%)</p>
             </div>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start">
@@ -158,22 +158,70 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start">
                 <span className="text-blue-500 mr-2 mt-1">🧠</span>
-                <span><strong>AI Analysis</strong> — summaries, insights, knowledge extraction</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-500 mr-2 mt-1">🔄</span>
-                <span><strong>Cross-Platform Sync</strong> — memories flow between AI tools</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-500 mr-2 mt-1">🔄</span>
-                <span><strong>Cloud Sync</strong> — encrypted sync across devices</span>
+                <span><strong>AI Summary</strong> — summarize any conversation with AI (50/month)</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-500 mr-2 mt-1">📊</span>
-                <span><strong>Knowledge Graph</strong> — visualize connections across conversations</span>
+                <span><strong>Conversation Stats</strong> — usage analytics & insights</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-blue-500 mr-2 mt-1">📱</span>
+                <span><strong>3 Devices</strong> — access from multiple devices</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-blue-500 mr-2 mt-1">🏷️</span>
+                <span><strong>Auto-Tagging</strong> — AI-powered tag suggestions</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-blue-500 mr-2 mt-1">📧</span>
+                <span><strong>Priority Support</strong></span>
               </li>
             </ul>
             <WaitlistForm />
+          </div>
+
+          {/* Pro Plan */}
+          <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 relative">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-sm font-semibold px-4 py-1 rounded-full">
+              Coming Soon
+            </div>
+            <div className="text-center">
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Pro</h2>
+              <div className="text-5xl font-bold text-gray-900 mb-2">$7.9<span className="text-lg text-gray-500">/mo</span></div>
+              <p className="text-gray-500 mb-8">or $79/year (save 17%)</p>
+            </div>
+            <ul className="space-y-4 mb-8">
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2 mt-1">✓</span>
+                <span>Everything in Plus</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-gray-600 mr-2 mt-1">🧠</span>
+                <span><strong>Unlimited AI Analysis</strong> — summaries, insights, extraction</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-gray-600 mr-2 mt-1">🔄</span>
+                <span><strong>Cross-Platform Sync</strong> — memories flow between AI tools</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-gray-600 mr-2 mt-1">☁️</span>
+                <span><strong>Cloud Sync</strong> — encrypted sync across all devices</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-gray-600 mr-2 mt-1">📊</span>
+                <span><strong>Knowledge Graph</strong> — visualize connections across conversations</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-gray-600 mr-2 mt-1">🔌</span>
+                <span><strong>MCP Cloud Access</strong> — hosted MCP endpoint</span>
+              </li>
+            </ul>
+            <Link
+              href="#"
+              className="block w-full text-center bg-gray-200 text-gray-500 py-3 rounded-lg font-semibold cursor-not-allowed"
+            >
+              Coming Soon
+            </Link>
           </div>
         </div>
 

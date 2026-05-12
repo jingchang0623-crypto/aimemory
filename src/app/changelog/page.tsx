@@ -18,6 +18,29 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.75.0',
+    date: '2026-05-13',
+    title: 'Round 97 — Pricing Restructure & Homepage Stats',
+    tags: ['Pricing', 'SEO', 'Monetization'],
+    changes: {
+      added: [
+        'New Plus tier: $3.9/month ($39/year) — bridges Free and Pro with AI Summary, Stats, 3 Devices',
+        'Organization JSON-LD structured data for improved search appearance',
+      ],
+      improved: [
+        'Homepage stats: Updated SEO Guides from 151+ to 153+ (verified count)',
+        'Pro tier pricing: $6.9→$7.9/month, $49→$79/year (better price anchoring)',
+        'Pricing page: 3-column grid layout for clearer tier comparison',
+        'Pricing FAQ & metadata: Updated with new tier structure',
+      ],
+      noted: [
+        'Monetization research: $3.9 Plus tier creates psychological bridge to Pro',
+        'Pro tier now positioned as "Coming Soon" with Cloud Sync, Knowledge Graph, MCP Cloud Access',
+        'Blog count verified: 153 posts in blog-data.ts',
+      ],
+    },
+  },
+  {
     version: 'v0.74.0',
     date: '2026-05-12',
     title: 'Round 95 — Chrome Extension Data Accuracy Fix',
