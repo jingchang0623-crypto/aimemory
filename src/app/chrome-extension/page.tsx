@@ -217,6 +217,38 @@ export default function ChromeExtension() {
           </div>
         </section>
 
+        {/* Memory Injection Feature */}
+        <section className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-8 mb-12">
+          <div className="flex flex-col md:flex-row gap-6 items-center">
+            <div className="flex-1">
+              <h2 className="text-2xl font-bold mb-2">💉 Memory Injection</h2>
+              <p className="text-gray-600 mb-4">
+                The extension doesn&apos;t just save — it injects. When you&apos;re in ChatGPT, Claude, DeepSeek, or Gemini, 
+                click the injection button to instantly retrieve relevant past conversations and inject them as context. 
+                No more repeating yourself to AI.
+              </p>
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-green-500">✅</span>
+                  <span className="text-sm text-gray-600">One-click context injection into AI inputs</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-green-500">✅</span>
+                  <span className="text-sm text-gray-600">Works across all 4 supported platforms</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-green-500">✅</span>
+                  <span className="text-sm text-gray-600">Search-based — inject the most relevant memories</span>
+                </div>
+              </div>
+            </div>
+            <div className="flex-shrink-0 text-center p-6 bg-purple-100 rounded-lg">
+              <div className="text-3xl mb-2">🧠 → 💬</div>
+              <div className="text-sm text-purple-700 font-medium">Past → Present</div>
+            </div>
+          </div>
+        </section>
+
         {/* MCP Integration CTA */}
         <section className="bg-white rounded-xl border border-gray-200 p-8 mb-12 shadow-sm">
           <div className="flex flex-col md:flex-row gap-6 items-center">
