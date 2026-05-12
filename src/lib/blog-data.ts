@@ -1594,6 +1594,16 @@ export const blogPosts: BlogPost[] = [
     lang: 'zh',
   },
   {
+    slug: 'deepseek-memory-guide-zh',
+    title: 'DeepSeek记忆功能详解：2026最全攻略 | 如何给DeepSeek添加持久记忆',
+    description: 'DeepSeek没有内置记忆功能？2026年最新解决方案！详解DeepSeek记忆限制、5种记忆增强方法、MCP Server配置教程。让DeepSeek拥有ChatGPT级别的持久记忆能力。',
+    category: '中文指南',
+    date: '2026-05-12',
+    readTime: '10 min',
+    tags: ['deepseek', 'memory', 'mcp', '中文', '持久记忆', '记忆增强'],
+    lang: 'zh',
+  },
+  {
     slug: 'github-copilot-memory',
     title: 'GitHub Copilot Memory Guide: Does Copilot Remember Your Code? (2026)',
     description: 'Does GitHub Copilot have memory? Learn how Copilot handles context, its limitations, and how to build persistent memory for your AI coding sessions with AI Memory.',

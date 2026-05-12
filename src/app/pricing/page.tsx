@@ -14,7 +14,67 @@ export const metadata: Metadata = {
 
 export default function PricingPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is AI Memory really free?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! All core features — import, search, memory injection, Chrome extension, and MCP server — are free forever. No hidden limits, no bait-and-switch."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is included in AI Memory Pro?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pro adds AI-powered analysis (summaries, insights, knowledge extraction), cross-platform sync, encrypted cloud sync across devices, and a knowledge graph to visualize connections across your conversations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does AI Memory Pro cost?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Memory Pro will cost $6.9/month or $49/year (save 41%). Waitlist members get founding member discounts and early access."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is my data safe with AI Memory?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "100%. Your data is stored in an isolated session on our server — only you can access it with your session cookie. No tracking, no data selling. You can export or delete everything with one click."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Will there be a lifetime deal for AI Memory Pro?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! AI Memory plans to offer a limited lifetime deal when Pro launches. Waitlist members will get first access to the lifetime deal."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does AI Memory compare to ChatGPT's built-in memory?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Memory works across all AI platforms (ChatGPT, Claude, DeepSeek, Gemini, Kimi) while ChatGPT memory only works within ChatGPT. AI Memory provides full-text search across hundreds of conversations, conversation export, and MCP server integration with 113+ AI clients."
+                }
+              }
+            ]
+          })
+        }}
+      />
+      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">
@@ -156,5 +216,6 @@ export default function PricingPage() {
 
       <Footer />
     </div>
+    </>
   );
 }
