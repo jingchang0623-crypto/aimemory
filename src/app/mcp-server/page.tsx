@@ -431,7 +431,7 @@ export default function MCPServerLanding() {
               <tbody className="divide-y divide-gray-100">
                 {[
                   { feature: 'Setup Time', aimemory: '10 seconds', mem0: '30+ minutes', custom: 'Hours' },
-                  { feature: 'Cross-Platform Search', aimemory: '✅ 4 platforms', mem0: '❌ Single source', custom: '⚠️ Manual' },
+                  { feature: 'Cross-Platform Search', aimemory: '✅ 5 platforms', mem0: '❌ Single source', custom: '⚠️ Manual' },
                   { feature: 'MCP Standard', aimemory: '✅ Native', mem0: '❌ REST API only', custom: '✅ DIY' },
                   { feature: 'Offline Support', aimemory: '✅ Full', mem0: '❌ Cloud only', custom: '⚠️ Depends' },
                   { feature: 'Pricing', aimemory: 'Free', mem0: 'Free tier + $24M VC', custom: 'Dev time' },
