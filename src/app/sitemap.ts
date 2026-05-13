@@ -23,6 +23,8 @@ const staticPages: { path: string; priority: number; changeFrequency: 'yearly' |
   { path: '/compare', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/changelog', priority: 0.7, changeFrequency: 'weekly' },
   { path: '/docs/mcp', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/docs/pypi-setup', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/docs/chrome-web-store', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/guides/getting-started', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/guides/mcp-quickstart', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/feedback', priority: 0.5, changeFrequency: 'yearly' },

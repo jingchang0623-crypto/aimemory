@@ -18,6 +18,33 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.76.0',
+    date: '2026-05-14',
+    title: 'Round 99 — SEO Deep Dive + Product Strategy Review',
+    tags: ['SEO', 'Strategy', 'MCP', 'PM'],
+    changes: {
+      added: [
+        'DeepSeek memory guide: Complete Chinese-language guide for DeepSeek conversation management',
+        'MCP vs Mem0 comparison page with FAQ JSON-LD: Detailed feature comparison targeting "mcp server vs mem0" keyword',
+        'Claude memory export guide: Step-by-step instructions for exporting Claude conversation history',
+        'Dynamic sitemap generation: Auto-discovers all blog slugs from filesystem',
+        'PM audit & optimization plan: Comprehensive research-to-execution pipeline',
+      ],
+      improved: [
+        'MCP Server page: Content polish and CTA improvements for better conversion',
+        'Homepage stats: Updated SEO Guides count to 154+ (152 blogs + 2 guides)',
+        'Sitemap: Dynamic generation ensures all pages are indexed automatically',
+      ],
+      noted: [
+        'Product strategy: 6 research directions completed (SEO, Tech, Monetization, Competitors, Chrome Extension, Memory Injection)',
+        'Key finding: Distribution is the #1 bottleneck — PyPI + Chrome Web Store remain blocked on human actions',
+        'Chrome Extension v1.0.0 is built and ready for Chrome Web Store submission ($5 fee needed)',
+        'MCP Server v1.4.0 is built and ready for PyPI (trusted publisher setup needed on pypi.org)',
+        'Next priority: Unblock PyPI publishing → Chrome Web Store → Google Search Console verification',
+      ],
+    },
+  },
+  {
     version: 'v0.75.0',
     date: '2026-05-13',
     title: 'Round 97 — Pricing Restructure & Homepage Stats',

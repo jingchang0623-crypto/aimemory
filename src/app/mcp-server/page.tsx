@@ -156,7 +156,7 @@ export default function MCPServerLanding() {
             </a>
           </div>
           <p className="text-sm text-gray-500 mt-4">
-            ✓ Available now via GitHub • PyPI release coming soon for <code className="bg-gray-100 px-1 rounded">pip install aimemory-mcp-server</code>
+            ✓ Available now via GitHub • <Link href="/docs/pypi-setup" className="text-blue-600 hover:underline">PyPI setup guide</Link> — help us publish to PyPI
           </p>
         </div>
       </section>
@@ -203,7 +203,7 @@ export default function MCPServerLanding() {
               <span className="text-green-400 text-sm font-mono">aimemory-mcp-server</span>
             </div>
             <p className="text-gray-500 text-xs mt-4">✓ Python 3.8+ &nbsp; ✓ Works on macOS, Linux, Windows &nbsp; ✓ No API keys needed</p>
-            <p className="text-gray-400 text-xs mt-3">💡 Tip: PyPI release coming soon for easier <code className="bg-gray-800 px-1 rounded">pip install aimemory-mcp-server</code></p>
+            <p className="text-gray-400 text-xs mt-3">💡 Want <code className="bg-gray-800 px-1 rounded">pip install aimemory-mcp-server</code>? See our <Link href="/docs/pypi-setup" className="text-blue-400 hover:underline">PyPI setup guide</Link> to help us publish.</p>
           </div>
         </div>
       </section>
