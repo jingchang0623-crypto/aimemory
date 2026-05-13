@@ -194,19 +194,21 @@ Fallback: First message injection → Universal
 3. ✅ Fixed sitemap.ts - now dynamically generates 172 entries
 4. ✅ Verified homepage stats (153+ blog posts, correct)
 
-### Session: 2026-05-14 (Round 101)
+### Session: 2026-05-14 (Round 102)
 
 #### Completed
-1. ✅ Created "AI Memory vs MemPalace" comparison blog (51K+ stars competitor)
-2. ✅ Created "ChatGPT Memory vs Third-Party Tools" defensive SEO blog
-3. ✅ Updated homepage blog count: 154+ → 155+
+1. ✅ Created "AI Memory vs Kumbukum" comparison blog (direct competitor, $15/mo vs free)
+2. ✅ Created "Anthropic Dreaming vs AI Memory" analysis blog (Claude built-in memory)
+3. ✅ Updated homepage blog count: 155+ → 157+
 4. ✅ Build verified, committed, pushed to GitHub
 
-#### Key Research Findings Applied
-- **MemPalace (51.1K stars)**: Local-first, zero telemetry competitor. Positioning: complementary, not direct.
-- **Platform native memory threat (HIGH)**: ChatGPT 1yr recall, Claude free memory, Gemini Import Memory.
-  Defensive content created to address "why third-party memory still matters" keyword space.
-- **Competitive audit from May 12 research**: All findings incorporated into comparison blog.
+#### Key Research Findings Applied (from May 12 & May 14 research)
+- **Kumbukum**: Most direct competitor (browser extension + AI memory + MCP, $15/mo)
+  - Positioning: free vs paid, individual vs team, cross-platform vs browser-only
+- **Anthropic Dreaming**: Major industry event (May 7, 2026)
+  - 6x task completion for Harvey, 50% reduction for Wisedocs
+  - Limitation: Claude-only, no full-text search, no cross-platform
+  - Defensive SEO positioning: "platform memory isn't enough"
 
 #### In Progress
 - 🔄 MCP Server PyPI publication (blocked - needs PyPI credentials)
@@ -232,9 +234,9 @@ Fallback: First message injection → Universal
 
 ## 6. Key Metrics to Track
 
-| Metric | Current | Target (M3) | Target (M6) |
-|--------|---------|-------------|-------------|
-| Blog posts | 153 | 165 | 200 |
+|| Metric | Current | Target (M3) | Target (M6) |
+||--------|---------|-------------|-------------|| 
+|| Blog posts | 157 | 165 | 200 ||
 | Monthly visitors | ~1K | 5K | 15K |
 | Extension users | ~100 | 1K | 5K |
 | MCP installs | 0 | 500 | 2K |
