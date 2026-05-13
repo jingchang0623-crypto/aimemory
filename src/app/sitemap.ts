@@ -736,6 +736,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/mcp-vs-mem0`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/deepseek-memory-guide`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/blog/chatgpt-voice-mode-guide`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
