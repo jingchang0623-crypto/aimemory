@@ -143,14 +143,14 @@ export default function MCPDocsPage() {
               <p className="text-green-800 text-sm font-medium">🆕 New: Install via pip — one command setup</p>
             </div>
             <pre className="bg-gray-900 text-gray-100 rounded-lg p-6 overflow-x-auto text-sm mb-4">
-{`# Install from GitHub (PyPI coming soon)
+{`# Install from GitHub
 pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server
 
 # Run (stdio mode)
 aimemory-mcp-server`}
             </pre>
-            <p className="text-sm text-yellow-600 mt-2 mb-4">
-              📦 PyPI package coming soon — use GitHub install for now. <code className="bg-gray-100 px-1 rounded">pip install aimemory-mcp-server</code> will work once published.
+            <p className="text-sm text-gray-500 mt-2 mb-4">
+              ✅ Available now • PyPI release coming soon for <code className="bg-gray-100 px-1 rounded">pip install aimemory-mcp-server</code>
             </p>
             <h3 className="text-lg font-semibold text-gray-900 mb-3 mt-6">Claude Desktop Config (Local)</h3>
             <pre className="bg-gray-900 text-gray-100 rounded-lg p-6 overflow-x-auto text-sm mb-4">

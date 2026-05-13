@@ -518,6 +518,17 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
   {
+    slug: 'claude-memory-export',
+    title: 'How to Export Claude Memory: Complete Guide to Claude Memory Export',
+    description: 'Learn how to export Claude memory and backup your AI conversations. Claude\'s experimental memory export feature explained, plus how to use AI Memory for permanent storage.',
+    category: 'Export Guides',
+    date: '2026-05-13',
+    readTime: '9 min',
+    keywords: ['claude memory export', 'export claude memory', 'claude memory backup', 'claude conversation export', 'claude ai memory'],
+    tags: ['claude', 'memory', 'export', 'backup', 'cross-platform', 'guide'],
+    lang: 'en',
+  },
+  {
     slug: 'chatgpt-vs-claude-memory',
     title: 'ChatGPT vs Claude Memory: Which AI Remembers Better? (2026)',
     description: 'Complete comparison of ChatGPT memory vs Claude memory — how they work, storage limits, export options, and which AI remembers better.',
