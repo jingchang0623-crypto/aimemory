@@ -18,6 +18,31 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.77.0',
+    date: '2026-05-14',
+    title: 'Round 103 — Blog Registration Fix & Product Status Review',
+    tags: ['SEO', 'Bugfix', 'PM'],
+    changes: {
+      added: [
+        'Registered 4 missing comparison blogs in blog-data.ts that were created but not indexed',
+        'ai-memory-vs-kumbukum: Kumbukum alternative comparison (free vs $15/mo, MCP support)',
+        'ai-memory-vs-mempalace: MemPalace local-first comparison (privacy architecture, self-hosting)',
+        'anthropic-dreaming-memory-vs-ai-memory: Anthropic Dreaming native memory analysis',
+        'chatgpt-memory-vs-third-party-tools: Native vs third-party memory tools guide',
+      ],
+      improved: [
+        'Homepage SEO Guides counter: 157+ → 158+ (now matches actual blog count)',
+        'Sitemap coverage: All 158 blog posts now properly indexed',
+      ],
+      noted: [
+        'Product status: MCP Server v1.4.0 (12 tools) built, NOT on PyPI — needs trusted publisher setup',
+        'Chrome Extension v1.0.0 ready, NOT on Chrome Web Store — needs $5 registration fee',
+        'SEO content saturation: 158 blogs covering all major keywords — pivot to distribution needed',
+        'Key blockers: PyPI credentials and Chrome Web Store registration require human action',
+      ],
+    },
+  },
+  {
     version: 'v0.76.0',
     date: '2026-05-14',
     title: 'Round 99 — SEO Deep Dive + Product Strategy Review',
