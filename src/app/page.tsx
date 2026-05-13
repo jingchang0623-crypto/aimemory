@@ -190,7 +190,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 text-center">
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gray-900">155+</div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">157+</div>
               <div className="text-xs text-gray-500 mt-1">SEO Guides Published</div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
