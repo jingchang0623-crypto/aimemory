@@ -242,7 +242,7 @@ export default function SyncAIConversationsPage() {
               <tr><td className="px-4 py-2">MCP integration</td><td className="px-4 py-2">❌ No</td><td className="px-4 py-2">❌ No</td><td className="px-4 py-2">❌ No</td><td className="px-4 py-2">✅ Yes</td></tr>
               <tr><td className="px-4 py-2">Context injection</td><td className="px-4 py-2">⚠️ Memory only</td><td className="px-4 py-2">❌ No</td><td className="px-4 py-2">❌ No</td><td className="px-4 py-2">✅ Yes</td></tr>
               <tr><td className="px-4 py-2">Self-hosted option</td><td className="px-4 py-2">❌ No</td><td className="px-4 py-2">N/A</td><td className="px-4 py-2">❌ No</td><td className="px-4 py-2">✅ Open source</td></tr>
-              <tr><td className="px-4 py-2">Pricing</td><td className="px-4 py-2">Free (with account)</td><td className="px-4 py-2">Free</td><td className="px-4 py-2">Free</td><td className="px-4 py-2">Free / $6.9/mo</td></tr>
+              <tr><td className="px-4 py-2">Pricing</td><td className="px-4 py-2">Free (with account)</td><td className="px-4 py-2">Free</td><td className="px-4 py-2">Free</td><td className="px-4 py-2">Free / Plus $3.9 / Pro $7.9</td></tr>
             </tbody>
           </table>
         </div>

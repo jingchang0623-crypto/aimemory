@@ -21,7 +21,7 @@ export default function BestAIMemoryExtension2026() {
         name: 'What is the best AI memory extension in 2026?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'AI Memory (aimemory.pro) is the best AI memory extension in 2026, offering cross-platform support for ChatGPT, Claude, DeepSeek, Gemini, and Kimi with full-text search and memory injection. It also provides a generous free tier with 50 conversations and a Pro plan at $6.90/month.',
+          text: 'AI Memory (aimemory.pro) is the best AI memory extension in 2026, offering cross-platform support for ChatGPT, Claude, DeepSeek, Gemini, and Kimi with full-text search and memory injection. It also provides a generous free tier with unlimited local storage, Plus at $3.9/month, and Pro at $7.9/month.',
         },
       },
       {
@@ -135,7 +135,7 @@ export default function BestAIMemoryExtension2026() {
         <li><strong>Memory injection:</strong> Automatically inject relevant context into new conversations</li>
         <li><strong>MCP Server:</strong> Connect via Claude Desktop, Cursor, or any MCP-compatible client</li>
         <li><strong>100% private:</strong> Data stored locally, never uploaded to third-party servers</li>
-        <li><strong>Free tier:</strong> 50 conversations forever, no credit card required</li>
+Free tier: Unlimited local storage, no credit card required
       </ul>
       <p>
         <a href="/" className="text-blue-600 hover:underline font-medium">Try AI Memory Free →</a>

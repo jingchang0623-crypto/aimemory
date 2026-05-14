@@ -405,7 +405,7 @@ export default function MCPAIMemoryDeveloperGuideContent() {
               <h3 className="text-yellow-300 mt-0 text-lg">🔑 Getting Your API Key</h3>
               <p className="text-yellow-200 mb-0">
                 Sign up at <Link href="/" className="text-blue-400 hover:underline">aimemory.pro</Link> and navigate
-                to Settings → API Keys to generate your key. The free tier includes 50 conversations and basic MCP
+                to Settings → API Keys to generate your key. The free tier includes unlimited local storage and basic MCP
                 access. Upgrade to Pro for unlimited conversations and priority connections.
               </p>
             </div>

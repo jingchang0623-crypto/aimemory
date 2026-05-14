@@ -596,7 +596,7 @@ export default function ChatGPTToClaudeMigrationGuide() {
               >
                 Start Your Migration Free →
               </Link>
-              <p className="text-gray-500 text-sm mt-3">50 conversations free forever · No credit card required</p>
+              <p className="text-gray-500 text-sm mt-3">Unlimited conversations free forever · No credit card required</p>
             </div>
 
             {/* FAQ */}

@@ -688,7 +688,7 @@ export default function DeepSeekAICompleteGuide() {
         <p className="text-blue-800 font-medium mb-2">🇨🇳 中文要点</p>
         <p className="text-blue-700">
           AI
-          Memory为DeepSeek用户提供跨平台统一记忆层。通过Chrome扩展自动捕获对话，SQLite全文搜索引擎索引每条消息，记忆注入功能让您可以将DeepSeek的洞察带入ChatGPT或Claude的新对话中。支持本地存储、开源免费，Pro计划仅$6.90/月支持云同步。
+          Memory为DeepSeek用户提供跨平台统一记忆层。通过Chrome扩展自动捕获对话，SQLite全文搜索引擎索引每条消息，记忆注入功能让您可以将DeepSeek的洞察带入ChatGPT或Claude的新对话中。支持本地存储、开源免费，Plus计划$3.9/月支持AI分析, Pro计划$7.9/月支持云同步。
         </p>
       </div>
 

@@ -45,7 +45,7 @@ export default function AIChatHistoryManagerPage() {
         name: 'What is the best AI chat history manager in 2026?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'AI Memory (aimemory.pro) is the best AI chat history manager in 2026. It supports five major AI platforms (ChatGPT, Claude, DeepSeek, Gemini, Kimi), offers full-text search with FTS5, memory injection across all platforms, MCP server integration, and a generous free tier with 50 conversations. For ChatGPT-only users, Chat Memo is a solid free alternative.',
+          text: 'AI Memory (aimemory.pro) is the best AI chat history manager in 2026. It supports five major AI platforms (ChatGPT, Claude, DeepSeek, Gemini, Kimi), offers full-text search with FTS5, memory injection across all platforms, MCP server integration, and a generous free tier with unlimited local storage. For ChatGPT-only users, Chat Memo is a solid free alternative.',
         },
       },
       {
@@ -164,7 +164,7 @@ export default function AIChatHistoryManagerPage() {
         <li><strong>MCP Server:</strong> Connect via Claude Desktop, Cursor, or any MCP-compatible client</li>
         <li><strong>Import &amp; export:</strong> Upload ChatGPT ZIP exports, Claude JSON, or capture in real-time via Chrome extension</li>
         <li><strong>100% private:</strong> Data stored locally, never uploaded to third-party servers</li>
-        <li><strong>Free tier:</strong> 50 conversations forever, no credit card required</li>
+        <li><strong>Free tier:</strong> Unlimited local storage, no credit card required</li>
       </ul>
       <p>
         <a href="/" className="text-blue-600 hover:underline font-medium">Try AI Memory Free →</a>
@@ -462,7 +462,7 @@ export default function AIChatHistoryManagerPage() {
       <p>
         <a href="/" className="text-blue-600 hover:underline">AI Memory (aimemory.pro)</a> is the best AI
         chat history manager in 2026. It supports five major AI platforms, offers full-text search with FTS5,
-        memory injection, MCP server integration, and a generous free tier with 50 conversations. For
+        memory injection, MCP server integration, and a generous free tier with unlimited local storage. For
         ChatGPT-only users, Chat Memo is a solid free alternative.
       </p>
 

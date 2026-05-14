@@ -49,7 +49,7 @@ const faqJsonLd = {
       name: 'Is Anuma cheaper than AI Memory?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Anuma offers a free tier with 100 credits/month, Starter at $9.99/mo (1,000 credits), and Pro at $19.99/mo (2,500 credits). AI Memory offers a free tier with full search and upload capabilities, with Pro at $6.90/month. AI Memory is significantly cheaper for conversation management, but Anuma includes access to multiple AI models in its pricing — a different value proposition.',
+        text: 'Anuma offers a free tier with 100 credits/month, Starter at $9.99/mo (1,000 credits), and Pro at $19.99/mo (2,500 credits). AI Memory offers a free tier with unlimited local storage, Plus at $3.9/month, and Pro at $7.9/month. AI Memory is significantly cheaper for conversation management, but Anuma includes access to multiple AI models in its pricing — a different value proposition.',
       },
     },
     {

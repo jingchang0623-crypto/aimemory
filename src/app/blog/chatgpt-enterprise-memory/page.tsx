@@ -30,7 +30,7 @@ export default function ChatGPTEnterpriseMemory() {
         name: 'How is ChatGPT Enterprise different from ChatGPT Team for memory?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'ChatGPT Enterprise ($60/user/month) offers advanced memory features including workspace-wide memory, admin memory controls, SCIM provisioning, and SSO integration. ChatGPT Team ($25/user/month) has basic memory with shared workspace visibility but lacks enterprise-grade governance. Enterprise also provides unlimited GPT-4o access, longer context windows, and SOC 2 compliance. For organizations needing memory across ChatGPT, Claude, and other AI tools, AI Memory provides cross-platform unified memory at $6.90/month.',
+          text: 'ChatGPT Enterprise ($60/user/month) offers advanced memory features including workspace-wide memory, admin memory controls, SCIM provisioning, and SSO integration. ChatGPT Team ($25/user/month) has basic memory with shared workspace visibility but lacks enterprise-grade governance. Enterprise also provides unlimited GPT-4o access, longer context windows, and SOC 2 compliance. For organizations needing memory across ChatGPT, Claude, and other AI tools, AI Memory provides cross-platform unified memory — free for local storage, Plus at $3.9/month, Pro at $7.9/month.',
         },
       },
       {
@@ -62,7 +62,7 @@ export default function ChatGPTEnterpriseMemory() {
         name: 'What does enterprise AI memory management cost in 2026?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'ChatGPT Enterprise costs approximately $60/user/month (custom pricing for large orgs). ChatGPT Team is $25/user/month. Claude Team is $30/user/month. Running both costs $90/user/month for just two platforms. AI Memory Pro costs $6.90/month for a shared team instance covering all platforms. For a 50-person enterprise, ChatGPT Enterprise alone costs $3,000/month, while adding AI Memory as a cross-platform layer adds only $6.90/month for unified memory across all AI tools.',
+          text: 'ChatGPT Enterprise costs approximately $60/user/month (custom pricing for large orgs). ChatGPT Team is $25/user/month. Claude Team is $30/user/month. Running both costs $90/user/month for just two platforms. AI Memory Plus costs $3.9/month for a shared team instance covering all platforms. For a 50-person enterprise, ChatGPT Enterprise alone costs $3,000/month, while adding AI Memory as a cross-platform layer adds only $3.9/month (Plus) or $7.9/month (Pro) for unified memory across all AI tools.oss all AI tools.',
         },
       },
     ],
@@ -586,7 +586,7 @@ python3 server.py`}
       </ol>
 
       <p>
-        AI Memory is free for up to 50 conversations — enough for a meaningful pilot. The <a href="/" className="text-blue-600 hover:underline">Pro plan at $6.90/month</a> provides unlimited conversations for production deployment. For enterprise teams looking to maximize their AI investment, <a href="/blog/ai-memory-for-teams" className="text-blue-600 hover:underline">team AI memory management</a> and <a href="/blog/ai-memory-for-business" className="text-blue-600 hover:underline">business AI memory</a> are essential next reads.
+        AI Memory is free with unlimited local storage — enough for a meaningful pilot. The <a href="/" className="text-blue-600 hover:underline">Plus plan at $3.9/month</a> adds AI analysis and multi-device support, while <a href="/pricing" className="text-blue-600 hover:underline">Pro at $7.9/month</a> provides cloud sync for production deployment. For enterprise teams looking to maximize their AI investment, <a href="/blog/ai-memory-for-teams" className="text-blue-600 hover:underline">team AI memory management</a> and <a href="/blog/ai-memory-for-business" className="text-blue-600 hover:underline">business AI memory</a> are essential next reads.
       </p>
 
       <Footer />

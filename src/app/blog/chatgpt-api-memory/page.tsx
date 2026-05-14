@@ -62,7 +62,7 @@ export default function ChatGPTAPIMemory() {
         name: 'Is there a free ChatGPT memory API?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'AI Memory offers a free tier that lets you store and search up to 50 conversations. The MCP server is open-source and can be self-hosted. For developers who want programmatic access to their ChatGPT history, AI Memory provides both a web API and MCP tools at no cost for personal use.',
+          text: 'AI Memory offers a free tier that lets you store and search unlimited conversations locally. The MCP server is open-source and can be self-hosted. For developers who want programmatic access to their ChatGPT history, AI Memory provides both a web API and MCP tools at no cost for personal use.',
         },
       },
     ],
@@ -505,7 +505,7 @@ def parse_chatgpt_export(zip_path):
         <li><strong>Search and inject memories</strong> across all your AI conversations</li>
       </ol>
       <p>
-        AI Memory is free for up to 50 conversations. The MCP server is open-source and self-hostable. Start building your cross-platform AI memory system today.
+        AI Memory is free with unlimited local conversation storage. The MCP server is open-source and self-hostable. Start building your cross-platform AI memory system today.
       </p>
 
       <Footer />

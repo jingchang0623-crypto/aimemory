@@ -134,7 +134,7 @@ export default function AIMemoryVsAIContextFlowPage() {
 
         <h3>AI Memory</h3>
         <p>
-          <strong>AI Memory</strong> is a cross-platform AI conversation manager that captures, stores, and retrieves your interactions across 18+ AI platforms. It offers a Chrome extension, MCP server, web dashboard, and memory injection capabilities. AI Memory uses a subscription model at <strong>$6.9/month</strong> with continuous updates and feature additions.
+          <strong>AI Memory</strong> is a cross-platform AI conversation manager that captures, stores, and retrieves your interactions across 18+ AI platforms. It offers a Chrome extension, MCP server, web dashboard, and memory injection capabilities. AI Memory offers a free tier with unlimited local storage, Plus at <strong>$3.9/month</strong>, and Pro at <strong>$7.9/month</strong> with continuous updates and feature additions.
         </p>
 
         <h3>AI Context Flow</h3>
@@ -156,7 +156,7 @@ export default function AIMemoryVsAIContextFlowPage() {
             <tbody className="divide-y divide-gray-200">
               <tr>
                 <td className="px-4 py-2 font-medium">Pricing</td>
-                <td className="px-4 py-2">$6.90/month</td>
+                <td className="px-4 py-2">Free / Plus $3.9 / Pro $7.9</td>
                 <td className="px-4 py-2">$59–$339 (lifetime deal)</td>
               </tr>
               <tr>
@@ -229,7 +229,7 @@ export default function AIMemoryVsAIContextFlowPage() {
           The pricing models couldn&apos;t be more different:
         </p>
         <ul>
-          <li><strong>AI Memory:</strong> $6.90/month (~$82.80/year). Ongoing subscription with continuous updates, new platform integrations, and active support.</li>
+          <li><strong>AI Memory:</strong> Free (unlimited local) / Plus $3.9/month (~$46.80/year) / Pro $7.9/month (~$94.80/year). Ongoing subscription with continuous updates, new platform integrations, and active support.</li>
           <li><strong>AI Context Flow:</strong> $59–$339 one-time lifetime payment (via AppSumo). Pay once, use forever — but with the caveat that the vendor may reduce development effort over time.</li>
         </ul>
         <h3>The Lifetime Deal Tradeoff</h3>
@@ -400,7 +400,7 @@ export default function AIMemoryVsAIContextFlowPage() {
         </div>
 
         <p>
-          <strong>Bottom line:</strong> AI Context Flow&apos;s lifetime deal is tempting if budget is your primary concern and you only use ChatGPT + Claude. But for most users — especially developers and power users who work across multiple AI platforms — <strong>AI Memory</strong> offers dramatically more features, better platform coverage, and a more sustainable long-term product. The $6.9/month is a small price for a tool that grows with you as the AI landscape evolves.
+          <strong>Bottom line:</strong> AI Context Flow&apos;s lifetime deal is tempting if budget is your primary concern and you only use ChatGPT + Claude. But for most users — especially developers and power users who work across multiple AI platforms — <strong>AI Memory</strong> offers dramatically more features, better platform coverage, and a more sustainable long-term product. The free tier covers most needs, and Plus at $3.9/month is a small price for a tool that grows with you as the AI landscape evolves.
         </p>
 
         {/* ── FAQ ── */}
@@ -409,11 +409,11 @@ export default function AIMemoryVsAIContextFlowPage() {
         <div className="space-y-4 my-6">
           <div className="bg-gray-50 rounded-lg p-4">
             <h3 className="font-semibold text-gray-900 mb-2">What is the difference between AI Memory and AI Context Flow?</h3>
-            <p className="text-gray-600 text-sm">AI Memory is a subscription-based cross-platform AI conversation manager ($6.9/month) with MCP server, memory injection, and 18+ platform support. AI Context Flow is a lifetime-deal tool ($59–$339) focused on context management for ChatGPT and Claude with a more manual approach to context injection.</p>
+            <p className="text-gray-600 text-sm">AI Memory is a cross-platform AI conversation manager (Free / Plus $3.9 / Pro $7.9) with MCP server, memory injection, and 18+ platform support. AI Context Flow is a lifetime-deal tool ($59–$339) focused on context management for ChatGPT and Claude with a more manual approach to context injection.</p>
           </div>
           <div className="bg-gray-50 rounded-lg p-4">
             <h3 className="font-semibold text-gray-900 mb-2">Is AI Context Flow cheaper than AI Memory?</h3>
-            <p className="text-gray-600 text-sm">Upfront, yes — AI Context Flow offers lifetime deals from $59 vs AI Memory at $6.9/month. Over 12 months, AI Memory costs ~$82.80. However, AI Memory includes far more features and a sustainable development model. Lifetime deals carry the risk of reduced development and potential product discontinuation.</p>
+            <p className="text-gray-600 text-sm">Upfront, yes — AI Context Flow offers lifetime deals from $59 vs AI Memory Free tier. AI Memory Plus is $3.9/month (~$46.80/year) and Pro is $7.9/month (~$94.80/year). However, AI Memory includes far more features and a sustainable development model. Lifetime deals carry the risk of reduced development and potential product discontinuation.</p>
           </div>
           <div className="bg-gray-50 rounded-lg p-4">
             <h3 className="font-semibold text-gray-900 mb-2">Does AI Context Flow have an MCP server?</h3>

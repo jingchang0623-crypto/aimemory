@@ -416,7 +416,7 @@ export default function Mem0Alternative() {
           <tbody>
             <tr>
               <td className="border border-gray-300 px-4 py-2 font-medium">Free Tier</td>
-              <td className="border border-gray-300 px-4 py-2 text-center">50 conversations</td>
+              <td className="border border-gray-300 px-4 py-2 text-center">Unlimited local</td>
               <td className="border border-gray-300 px-4 py-2 text-center">1,000 API calls/mo</td>
             </tr>
             <tr className="bg-gray-50">

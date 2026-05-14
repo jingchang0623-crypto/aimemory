@@ -263,7 +263,7 @@ export default function ChatGPTMemoryForResearchPage() {
               <tr><td className="px-4 py-2">Context injection</td><td className="px-4 py-2">❌ No</td><td className="px-4 py-2">✅ Via MCP Server</td></tr>
               <tr><td className="px-4 py-2">Export capability</td><td className="px-4 py-2">❌ No</td><td className="px-4 py-2">✅ JSON, TXT, Markdown</td></tr>
               <tr><td className="px-4 py-2">Local/self-hosted option</td><td className="px-4 py-2">❌ No</td><td className="px-4 py-2">✅ Open source</td></tr>
-              <tr><td className="px-4 py-2">Pricing</td><td className="px-4 py-2">Included in Plus ($20/mo)</td><td className="px-4 py-2">Free (50 items), Pro $6.9/mo</td></tr>
+              <tr><td className="px-4 py-2">Pricing</td><td className="px-4 py-2">Included in Plus ($20/mo)</td><td className="px-4 py-2">Free (unlimited local), Plus $3.9/mo, Pro $7.9/mo</td></tr>
             </tbody>
           </table>
         </div>

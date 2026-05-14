@@ -18,6 +18,29 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.83.0',
+    date: '2026-05-15',
+    title: 'Round 109 — Comprehensive Pricing Audit',
+    tags: ['Bugfix', 'Pricing', 'SEO', 'Data Consistency'],
+    changes: {
+      fixed: [
+        '16 blog pages: Fixed remaining "$6.90/month" and "$6.9/month" pricing references',
+        'ai-chat-history-manager: Updated "50 conversations" → "unlimited local storage"',
+        'ai-memory-vs-ai-context-flow: Fixed comparison table pricing and annual cost calculations',
+        'chatgpt-enterprise-memory: Corrected metadata description and inline pricing links',
+        'chatgpt-api-memory: Updated free tier description from "50 conversations" limit',
+        'search-all-ai-chats, chatgpt-projects-guide, claude-artifacts-guide: Fixed footer pricing',
+        'deepseek-ai-complete-guide (中文): Updated pricing from "$6.90/月" to current tiers',
+        'mem0-alternative: Fixed comparison table cell from "50 conversations" to "Unlimited local"',
+      ],
+      noted: [
+        'All pricing references now use Free/Plus $3.9/Pro $7.9 structure',
+        'Only changelog preserves historical pricing documentation',
+        'SEO metadata across 158+ blogs now accurately reflects current product',
+      ],
+    },
+  },
+  {
     version: 'v0.82.0',
     date: '2026-05-15',
     title: 'Round 108 — Pricing Data Consistency Fix',

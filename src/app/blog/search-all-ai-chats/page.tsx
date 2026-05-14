@@ -789,7 +789,7 @@ export default function SearchAllAIChatsPage() {
               </Link>
             </div>
             <p className="text-gray-400 text-sm mt-4">
-              Free tier includes 50 conversations • No credit card required • 100% local storage
+              Free tier includes unlimited conversations • No credit card required • 100% local storage
             </p>
           </div>
         </article>
