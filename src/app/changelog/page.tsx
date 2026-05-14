@@ -18,6 +18,29 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.80.0',
+    date: '2026-05-14',
+    title: 'Round 106 — Memory Injection Guide Blog + Product Audit',
+    tags: ['SEO', 'Content', 'PM'],
+    changes: {
+      added: [
+        'memory-injection-guide: Comprehensive memory injection guide covering browser extension and MCP Server methods (6-question FAQ with JSON-LD)',
+        'Registered memory-injection-guide in blog-data.ts with full SEO metadata',
+        'Homepage counter updated: 159+ → 160+ SEO guides published',
+      ],
+      improved: [
+        'Total blog count: 158 (up from 157)',
+        'CONTENT_COUNT auto-calculated: 158 blogs + 2 guides = 160',
+      ],
+      noted: [
+        'Product audit completed: 158 blogs, 2 guides, 22 static pages, 180 sitemap URLs',
+        'Distribution blockers unchanged: PyPI (needs API token) + Chrome Web Store (needs $5 fee)',
+        'Memory injection is our #1 differentiator but had no dedicated content — now covered',
+        'SEO content saturation: 160 pages — future growth depends on distribution channels',
+      ],
+    },
+  },
+  {
     version: 'v0.79.0',
     date: '2026-05-14',
     title: 'Round 105 — Dynamic Homepage Counter + Centralized Constants',

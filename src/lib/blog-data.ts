@@ -20,6 +20,17 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   // === Guides ===
   {
+    slug: 'memory-injection-guide',
+    title: 'Memory Injection: How to Give Your AI Persistent Context (2026)',
+    description: 'Complete guide to memory injection for AI assistants. Learn how to give ChatGPT, Claude, DeepSeek, Gemini, and Kimi persistent memory across platforms with AI Memory.',
+    category: 'Guides',
+    date: '2026-05-14',
+    readTime: '12 min',
+    keywords: ['memory injection', 'ai memory injection', 'chatgpt persistent memory', 'claude memory injection', 'mcp memory injection', 'cross-platform ai memory'],
+    tags: ['memory-injection', 'mcp', 'chatgpt', 'claude', 'deepseek', 'gemini', 'cross-platform', 'guide'],
+    lang: 'en',
+  },
+  {
     slug: 'free-ai-memory-tool',
     title: 'Best Free AI Memory Tool 2026 - Save, Search & Organize AI Conversations',
     description: 'Discover the best free AI memory tool in 2026. Compare AI Memory, Chat Memo, manual exports, and browser bookmarks for managing ChatGPT, Claude, DeepSeek, Gemini, and Kimi conversations.',
