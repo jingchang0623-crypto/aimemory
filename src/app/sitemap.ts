@@ -28,6 +28,7 @@ const staticPages: { path: string; priority: number; changeFrequency: 'yearly' |
   { path: '/guides/getting-started', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/guides/mcp-quickstart', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/feedback', priority: 0.5, changeFrequency: 'yearly' },
+  { path: '/docs/roadmap', priority: 0.8, changeFrequency: 'monthly' },
 ];
 
 // High-priority blog posts (SEO important)

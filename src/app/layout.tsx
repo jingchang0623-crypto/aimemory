@@ -68,6 +68,42 @@ export default function RootLayout({
             })
           }}
         />
+        {/* SoftwareApplication JSON-LD for Google Rich Results */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "AI Memory",
+              "applicationCategory": "UtilitiesApplication",
+              "operatingSystem": "Web Browser, Chrome, Firefox, Edge",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              },
+              "description": "Save, search, and organize AI conversations from ChatGPT, Claude, DeepSeek, Gemini, and Kimi. Full-text search, Chrome extension, MCP server for Claude Desktop and Cursor. 100% private, free forever.",
+              "url": "https://aimemory.pro",
+              "downloadUrl": "https://aimemory.pro/ai-memory-extension.zip",
+              "softwareVersion": "1.0.0",
+              "softwareRequirements": "Modern web browser or Chrome for extension",
+              "featureList": [
+                "Multi-platform conversation import",
+                "Full-text search with FTS5",
+                "Chrome extension auto-save",
+                "MCP Server for Claude Desktop/Cursor",
+                "Memory injection into AI inputs",
+                "Tag management",
+                "Session-isolated private storage"
+              ]
+            })
+          }}
+        />
+        {/* Google Search Console verification - set NEXT_PUBLIC_GSC_VERIFICATION in .env.local */}
+        {process.env.NEXT_PUBLIC_GSC_VERIFICATION && (
+          <meta name="google-site-verification" content={process.env.NEXT_PUBLIC_GSC_VERIFICATION} />
+        )}
         {children}
         {/* Google Analytics - only loads if GA_MEASUREMENT_ID is set */}
         {GA_ID && (

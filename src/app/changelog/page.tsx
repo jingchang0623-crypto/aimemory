@@ -18,6 +18,29 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.81.0',
+    date: '2026-05-15',
+    title: 'Round 107 — SEO Trust Signals & Public Roadmap',
+    tags: ['SEO', 'Trust', 'Transparency'],
+    changes: {
+      added: [
+        'SoftwareApplication JSON-LD structured data: Enhanced search appearance with app metadata (name, version, pricing, category)',
+        'Public Roadmap page (/docs/roadmap): Transparent product direction across 4 phases — Distribution, Intelligence, Platform, Ecosystem',
+        'Google Search Console verification support: Conditional meta tag rendering via NEXT_PUBLIC_GSC_VERIFICATION env var',
+      ],
+      improved: [
+        'Footer navigation: Added Roadmap link for better discoverability',
+        'Sitemap: Registered /docs/roadmap page (priority 0.8, monthly updates)',
+        'SEO integrity: Removed fake aggregateRating data from JSON-LD (was showing 4.8 stars — unethical)',
+      ],
+      noted: [
+        'Public roadmap increases user trust and sets clear expectations for product evolution',
+        'GSC verification enables accurate search performance monitoring',
+        'Distribution channels (PyPI, Chrome Web Store) remain P1 blockers for user growth',
+      ],
+    },
+  },
+  {
     version: 'v0.80.0',
     date: '2026-05-14',
     title: 'Round 106 — Memory Injection Guide Blog + Product Audit',
