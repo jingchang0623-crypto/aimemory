@@ -8,6 +8,7 @@ import ConversationList from '@/components/ConversationList';
 import ConversationDetail from '@/components/ConversationDetail';
 import StatsDashboard from '@/components/StatsDashboard';
 import ExportButton from '@/components/ExportButton';
+import { CONTENT_COUNT } from '@/lib/constants';
 
 export default function Home() {
   const [refreshTrigger, setRefreshTrigger] = useState(0);
@@ -190,7 +191,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 text-center">
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gray-900">159+</div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">{CONTENT_COUNT}+</div>
               <div className="text-xs text-gray-500 mt-1">SEO Guides Published</div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />

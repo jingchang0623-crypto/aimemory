@@ -18,6 +18,26 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.79.0',
+    date: '2026-05-14',
+    title: 'Round 105 — Dynamic Homepage Counter + Centralized Constants',
+    tags: ['DX', 'Bugfix', 'PM'],
+    changes: {
+      added: [
+        'src/lib/constants.ts: Centralized site-wide constants (CONTENT_COUNT, MCP_TOOLS_COUNT, etc.) for single-source-of-truth',
+        'Homepage SEO counter now reads from shared constant instead of hardcoded value',
+      ],
+      fixed: [
+        'Homepage SEO counter will auto-sync when constants.ts is updated — prevents future count drift',
+        'Avoided 95KB client bundle bloat by isolating constants from full blog-data.ts array',
+      ],
+      noted: [
+        'Distribution blockers remain: PyPI (needs API token) + Chrome Web Store (needs $5 fee)',
+        'Product audit: 157 registered blogs, 22 static pages, 179 sitemap URLs — data consistency verified',
+      ],
+    },
+  },
+  {
     version: 'v0.78.0',
     date: '2026-05-14',
     title: 'Round 104 — Windsurf Memory SEO Blog + Product Optimization Plan',
