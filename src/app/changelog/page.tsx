@@ -18,6 +18,28 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.78.0',
+    date: '2026-05-14',
+    title: 'Round 104 — Windsurf Memory SEO Blog + Product Optimization Plan',
+    tags: ['SEO', 'Content', 'PM'],
+    changes: {
+      added: [
+        'windsurf-memory: Comprehensive Windsurf AI memory management guide (MCP integration, 3-layer memory system, setup tutorial)',
+        'Registered windsurf-memory in blog-data.ts with full SEO metadata',
+        'Product optimization plan: P0/P1/P2 prioritized roadmap for distribution and feature growth',
+      ],
+      improved: [
+        'Total blog count: 158 → 159 SEO guides published',
+        'Windsurf MCP setup coverage: New dedicated guide complements existing MCP documentation',
+      ],
+      noted: [
+        'Distribution blockers unchanged: PyPI trusted publisher + Chrome Web Store $5 fee still require human action',
+        'Next priority: P1 actions (PyPI + Chrome Web Store) will unlock significant user growth',
+        'SEO content saturation: 159 blogs — future growth depends on distribution channels',
+      ],
+    },
+  },
+  {
     version: 'v0.77.0',
     date: '2026-05-14',
     title: 'Round 103 — Blog Registration Fix & Product Status Review',

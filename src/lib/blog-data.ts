@@ -1346,6 +1346,19 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
 
+  // === Windsurf Memory Guide (SEO-focused) ===
+  {
+    slug: 'windsurf-memory',
+    title: 'Windsurf Memory Guide: How to Manage AI Memory in Windsurf (2026)',
+    description: 'Complete guide to Windsurf memory management. Learn how Windsurf AI memory works, manage context across sessions, set up MCP servers, and give Windsurf persistent memory with AI Memory.',
+    category: 'Technical',
+    date: '2026-05-14',
+    readTime: '15 min',
+    keywords: ['windsurf memory', 'windsurf ai memory', 'windsurf mcp memory', 'windsurf context management', 'windsurf persistent memory'],
+    tags: ['windsurf', 'memory', 'mcp', 'context', 'ide', 'developer', 'coding', 'ai-coding', 'codeium'],
+    lang: 'en',
+  },
+
   // === Windsurf MCP Memory Setup ===
   {
     slug: 'windsurf-mcp-memory-setup',
