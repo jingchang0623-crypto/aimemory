@@ -48,7 +48,7 @@ const faqJsonLd = {
       name: 'Is MemoryPlugin cheaper than AI Memory?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'MemoryPlugin costs $60–80/year while AI Memory costs $6.90/month ($82.80/year). MemoryPlugin appears cheaper upfront, but AI Memory offers significantly more features including MCP server, memory injection, local-first storage, and support for 18+ platforms — making the per-feature value much higher.',
+        text: 'MemoryPlugin costs $60–80/year while AI Memory costs $3.9/month ($46.80/year) for Plus or $7.9/month ($94.80/year) for Pro. MemoryPlugin appears cheaper upfront, but AI Memory offers significantly more features including MCP server, memory injection, local-first storage, and support for 18+ platforms — making the per-feature value much higher.',
       },
     },
     {
@@ -158,7 +158,7 @@ export default function AIMemoryVsMemoryPluginPage() {
             <tbody className="divide-y divide-gray-200">
               <tr>
                 <td className="px-4 py-2 font-medium">Pricing</td>
-                <td className="px-4 py-2">$6.90/month (~$82.80/year)</td>
+                <td className="px-4 py-2">Plus $3.9/mo (~$46.80/yr) | Pro $7.9/mo (~$94.80/yr)</td>
                 <td className="px-4 py-2">$60–80/year</td>
               </tr>
               <tr>
@@ -213,10 +213,10 @@ export default function AIMemoryVsMemoryPluginPage() {
         {/* ── Pricing ── */}
         <h2 id="pricing">Pricing Breakdown</h2>
         <p>
-          On the surface, MemoryPlugin appears more affordable at <strong>$60–80/year</strong> compared to AI Memory&apos;s <strong>$6.90/month (~$82.80/year)</strong>. But raw price doesn&apos;t tell the whole story:
+          On the surface, MemoryPlugin appears more affordable at <strong>$60–80/year</strong> compared to AI Memory&apos;s <strong>Plus $3.9/month (~$46.80/year)</strong>. But raw price doesn&apos;t tell the whole story:
         </p>
         <ul>
-          <li><strong>AI Memory at $6.90/mo</strong> gives you access to 18+ platforms, memory injection, an MCP server, local-first storage, full-text search, and data export — all included.</li>
+          <li><strong>AI Memory at $3.9-7.9/mo</strong> gives you access to 18+ platforms, memory injection, an MCP server, local-first storage, full-text search, and data export — all included.</li>
           <li><strong>MemoryPlugin at $60–80/yr</strong> gives you conversation saving, tagging, and basic search within ChatGPT — without memory injection, MCP support, or multi-platform coverage.</li>
         </ul>
         <p>
@@ -345,7 +345,7 @@ export default function AIMemoryVsMemoryPluginPage() {
           </div>
           <div className="bg-gray-50 rounded-lg p-4">
             <h3 className="font-semibold text-gray-900 mb-2">Is MemoryPlugin cheaper than AI Memory?</h3>
-            <p className="text-gray-600 text-sm">MemoryPlugin costs $60–80/year vs AI Memory at $6.90/month (~$82.80/year). MemoryPlugin is slightly cheaper, but AI Memory includes far more features — MCP server, memory injection, 18+ platform support, and local-first storage — making it better value per dollar.</p>
+            <p className="text-gray-600 text-sm">MemoryPlugin costs $60–80/year vs AI Memory at $7.9/month (~$94.80/year). MemoryPlugin is slightly cheaper, but AI Memory includes far more features — MCP server, memory injection, 18+ platform support, and local-first storage — making it better value per dollar.</p>
           </div>
           <div className="bg-gray-50 rounded-lg p-4">
             <h3 className="font-semibold text-gray-900 mb-2">Does MemoryPlugin support Claude or DeepSeek?</h3>

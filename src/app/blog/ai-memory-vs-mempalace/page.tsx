@@ -101,7 +101,7 @@ const comparisonTable = [
   { feature: 'Topic Tunnels', aiMemory: '❌ Not available', mempalace: '✅ Cross-project linking', winner: 'mempalace' },
   { feature: 'Self-Hosting', aiMemory: '✅ Full control', mempalace: '✅ Always local', winner: 'tie' },
   { feature: 'Open Source', aiMemory: '✅ MCP server on GitHub', mempalace: '✅ Full repo open', winner: 'mempalace' },
-  { feature: 'Pricing', aiMemory: 'Free + $6.90/mo Pro', mempalace: 'Free (MIT license)', winner: 'mempalace' },
+  { feature: 'Pricing', aiMemory: 'Free + Plus $3.9 / Pro $7.9', mempalace: 'Free (MIT license)', winner: 'mempalace' },
 ];
 
 export default function AIMemoryVsMemPalacePage() {
@@ -294,7 +294,7 @@ export default function AIMemoryVsMemPalacePage() {
         </div>
         <div className="bg-gray-50 rounded-lg p-6">
           <h4 className="font-bold mb-2">AI Memory</h4>
-          <p className="text-2xl font-bold mb-2">Free + $6.90/mo Pro</p>
+          <p className="text-2xl font-bold mb-2">Free + Plus $3.9 / Pro $7.9</p>
           <p className="text-gray-600">Free tier has full search/upload. Pro adds AI analysis, cloud sync.</p>
         </div>
       </div>

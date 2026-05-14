@@ -54,7 +54,7 @@ export default function SearchAIConversations() {
         name: 'What is the best AI chat search tool in 2026?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'AI Memory (aimemory.pro) is the best AI chat search tool in 2026. It offers cross-platform search across 5 AI platforms, FTS5 full-text indexing for instant results, memory injection to bring past context into new chats, and local-first privacy. It\'s free with a Pro plan at $6.90/month.',
+          text: 'AI Memory (aimemory.pro) is the best AI chat search tool in 2026. It offers cross-platform search across 5 AI platforms, FTS5 full-text indexing for instant results, memory injection to bring past context into new chats, and local-first privacy. It\'s free with a Plus plan at $3.9/month and Pro plan at $7.9/month.',
         },
       },
       {

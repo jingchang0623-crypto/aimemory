@@ -75,7 +75,7 @@ const faqJsonLd = {
       name: 'Is Cline AI memory free?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'AI Memory (aimemory.pro) offers a free plan with up to 50 stored conversations and basic MCP tool access. This is enough for most developers using Cline. The Pro plan ($6.90/month) unlocks unlimited conversations, priority MCP connections, and higher rate limits for power users who code extensively with Cline.',
+        text: 'AI Memory (aimemory.pro) offers a free plan with up to 50 stored conversations and basic MCP tool access. This is enough for most developers using Cline. The Pro plan ($7.9/month) unlocks unlimited conversations, priority MCP connections, and higher rate limits for power users who code extensively with Cline.',
       },
     },
     {

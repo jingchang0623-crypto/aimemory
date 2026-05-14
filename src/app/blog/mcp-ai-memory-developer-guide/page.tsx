@@ -59,7 +59,7 @@ const faqJsonLd = {
       name: 'Is the AI Memory MCP server free to use?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, the AI Memory MCP server is available on the free plan with up to 50 stored conversations and basic MCP tool access. The Pro plan ($6.90/month) unlocks unlimited conversations, priority MCP connections, higher rate limits, and advanced features like bulk import/export and conversation analytics.',
+        text: 'Yes, the AI Memory MCP server is available on the free plan with unlimited local storage and basic MCP tool access. The Pro plan ($7.9/month) unlocks cloud sync, E2EE, priority MCP connections, and advanced features like bulk import/export and conversation analytics.',
       },
     },
   ],

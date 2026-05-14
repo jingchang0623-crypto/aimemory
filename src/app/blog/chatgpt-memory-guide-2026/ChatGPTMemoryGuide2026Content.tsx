@@ -398,7 +398,7 @@ export default function ChatGPTMemoryGuide2026Content() {
                   <tr>
                     <td className="py-2 text-gray-400">Price</td>
                     <td className="py-2 text-green-400">Free (included)</td>
-                    <td className="py-2 text-green-400">Free (50 convos) / $6.90/mo Pro</td>
+                    <td className="py-2 text-green-400">Free (unlimited) / Plus $3.9 / Pro $7.9</td>
                   </tr>
                 </tbody>
               </table>

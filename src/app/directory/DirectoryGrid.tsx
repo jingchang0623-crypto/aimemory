@@ -22,7 +22,7 @@ const tools: Tool[] = [
     logo: '🧠',
     url: 'https://aimemory.pro',
     blogSlug: '/blog/best-ai-memory-extension-2026',
-    pricing: 'Free / $6.9/mo Pro',
+    pricing: 'Free / Plus $3.9 / Pro $7.9',
     isFree: true,
     isRecommended: true,
     platforms: 'ChatGPT, Claude, DeepSeek, Gemini, Kimi',

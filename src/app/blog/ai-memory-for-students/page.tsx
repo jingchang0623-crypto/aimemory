@@ -54,7 +54,7 @@ export default function AIMemoryForStudents() {
         name: 'Is AI Memory free for students?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, AI Memory offers a free plan that supports up to 50 conversations — enough for a full semester of study sessions. The Pro plan at $6.90/month adds unlimited conversations, cloud sync, and priority access. Compared to ChatGPT Plus ($20/month), AI Memory is an affordable add-on that makes your existing AI subscriptions much more useful for studying.',
+          text: 'Yes, AI Memory offers a free plan with unlimited local storage — enough for all your study sessions. The Plus plan at $3.9/month adds AI summaries and multi-device access. The Pro plan at $7.9/month adds cloud sync and E2EE. Compared to ChatGPT Plus ($20/month), AI Memory is an affordable add-on that makes your existing AI subscriptions much more useful for studying.',
         },
       },
       {
@@ -379,7 +379,7 @@ export default function AIMemoryForStudents() {
             <tr>
               <td className="border border-gray-300 px-4 py-3">Cost</td>
               <td className="border border-gray-300 px-4 py-3">Included with Plus ($20/mo)</td>
-              <td className="border border-gray-300 px-4 py-3">Free (50 convos) / $6.90/mo Pro</td>
+              <td className="border border-gray-300 px-4 py-3">Free (unlimited) / Plus $3.9 / Pro $7.9</td>
               <td className="border border-gray-300 px-4 py-3">Free (but time-intensive)</td>
             </tr>
           </tbody>
@@ -501,7 +501,7 @@ export default function AIMemoryForStudents() {
       </p>
       <ol>
         <li><strong>AI assistant of choice</strong> — ChatGPT Plus ($20/mo), Claude Pro ($20/mo), or free tiers of Gemini</li>
-        <li><strong>AI Memory</strong> — Free plan for up to 50 conversations, or Pro ($6.90/mo) for unlimited</li>
+        <li><strong>AI Memory</strong> — Free plan with unlimited local storage, or Pro ($7.9/mo) for cloud sync and AI analysis</li>
         <li><strong>Chrome extension</strong> — Automatic conversation capture (<Link href="/chrome-extension" className="text-blue-600 hover:underline">install here</Link>)</li>
         <li><strong>Monthly export habit</strong> — Export and upload your ChatGPT data once a month as a backup</li>
       </ol>
@@ -526,7 +526,7 @@ export default function AIMemoryForStudents() {
 
       <h3>Is AI Memory free for students?</h3>
       <p>
-        Yes, AI Memory offers a free plan that supports up to 50 conversations — enough for a full semester of study sessions. The Pro plan at $6.90/month adds unlimited conversations, cloud sync, and priority access. Compared to ChatGPT Plus ($20/month), AI Memory is an affordable add-on that makes your existing AI subscriptions much more useful for studying.
+        Yes, AI Memory offers a free plan with unlimited local storage — enough for all your study sessions. The Plus plan at $3.9/month adds AI summaries and multi-device access. The Pro plan at $7.9/month adds cloud sync and E2EE. Compared to ChatGPT Plus ($20/month), AI Memory is an affordable add-on that makes your existing AI subscriptions much more useful for studying.
       </p>
 
       <h3>Can I search my old ChatGPT study conversations?</h3>

@@ -701,7 +701,7 @@ export default function MCPAIMemoryDeveloperGuideContent() {
                   </tr>
                   <tr>
                     <td className="py-2 text-gray-400">Pricing</td>
-                    <td className="py-2 text-green-400">Free / $6.90/mo Pro</td>
+                    <td className="py-2 text-green-400">Free / Plus $3.9 / Pro $7.9</td>
                     <td className="py-2 text-green-400">Free (with ChatGPT)</td>
                     <td className="py-2 text-yellow-400">Free (self-host) / Cloud TBD</td>
                   </tr>
@@ -819,7 +819,7 @@ export default function MCPAIMemoryDeveloperGuideContent() {
             <h3 className="text-xl">Is the AI Memory MCP server free to use?</h3>
             <p>
               Yes. The free plan includes up to 50 stored conversations and basic MCP tool access. The Pro plan
-              ($6.90/month) unlocks unlimited conversations, priority MCP connections, higher rate limits, and
+              ($7.9/month) unlocks cloud sync, E2EE, priority MCP connections, higher rate limits, and
               advanced features. Sign up at <Link href="/" className="text-blue-400 hover:underline">aimemory.pro</Link> to
               get started.
             </p>

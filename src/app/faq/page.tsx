@@ -32,7 +32,7 @@ const faqCategories = [
       },
       {
         q: 'Is AI Memory really free?',
-        a: 'Yes, all core features are completely free with unlimited storage. You can upload, search, and browse your conversations without any limits. The optional Pro plan ($6.9/month) adds cloud sync with end-to-end encryption and advanced AI analysis features.',
+        a: 'Yes, all core features are completely free with unlimited local storage. You can upload, search, and browse your conversations without any limits. The Plus plan ($3.9/month) adds AI summaries and multi-device access. The Pro plan ($7.9/month) adds cloud sync with end-to-end encryption and advanced AI analysis features.',
       },
       {
         q: 'Do I need to install anything?',
@@ -116,7 +116,7 @@ const faqCategories = [
       },
       {
         q: 'What does the Pro plan include?',
-        a: 'The Pro plan ($6.9/month) adds: cloud sync with end-to-end encryption, AI-powered memory analysis and insights, knowledge graph visualization, priority support, and early access to new features.',
+        a: 'The Plus plan ($3.9/month) adds AI summaries, conversation stats, auto-tagging, and 3-device access. The Pro plan ($7.9/month) includes everything in Plus plus: cloud sync with end-to-end encryption, unlimited AI-powered analysis, knowledge graph visualization, and MCP cloud access.',
       },
       {
         q: 'Is there a free trial for Pro?',

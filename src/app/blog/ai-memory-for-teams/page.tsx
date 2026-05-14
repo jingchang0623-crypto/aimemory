@@ -54,7 +54,7 @@ export default function AIMemoryForTeams() {
         name: 'How much does team AI memory cost?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'AI Memory is free for up to 50 conversations. The Pro plan at $6.90/month adds unlimited conversations, cloud sync, and priority MCP server access. ChatGPT Team costs $25/user/month and Claude Team costs $30/user/month — but these only cover their respective platforms. AI Memory bridges all platforms at a fraction of the cost.',
+          text: 'AI Memory is free with unlimited local storage. The Plus plan at $3.9/month adds AI summaries and multi-device access. The Pro plan at $7.9/month adds cloud sync and E2EE. ChatGPT Team costs $25/user/month and Claude Team costs $30/user/month — but these only cover their respective platforms. AI Memory bridges all platforms at a fraction of the cost.',
         },
       },
       {
@@ -206,7 +206,7 @@ export default function AIMemoryForTeams() {
             </tr>
             <tr className="bg-green-50">
               <td className="border border-gray-200 px-4 py-3 font-semibold">AI Memory Pro</td>
-              <td className="border border-gray-200 px-4 py-3 font-semibold">$6.90/month (shared instance)</td>
+              <td className="border border-gray-200 px-4 py-3 font-semibold">Plus $3.9 / Pro $7.9 (shared)</td>
               <td className="border border-gray-200 px-4 py-3 font-semibold">All platforms</td>
             </tr>
           </tbody>
@@ -427,7 +427,7 @@ python3 server.py`}
             </tr>
             <tr>
               <td className="border border-gray-200 px-4 py-3">Cost (10-person team)</td>
-              <td className="border border-gray-200 px-4 py-3">$6.90/mo total</td>
+              <td className="border border-gray-200 px-4 py-3">Plus $3.9 / Pro $7.9 total</td>
               <td className="border border-gray-200 px-4 py-3">$100/mo</td>
               <td className="border border-gray-200 px-4 py-3">$60/mo</td>
               <td className="border border-gray-200 px-4 py-3">Free (self-host)</td>
@@ -467,7 +467,7 @@ python3 server.py`}
         <li><strong>For self-hosting:</strong> Deploy on your own server with the open-source codebase</li>
       </ol>
       <p>
-        AI Memory is free for up to 50 conversations. Pro at $6.90/month for unlimited. Start building your team's collective AI knowledge base today.
+        AI Memory is free with unlimited local storage. Plus at $3.9/month for AI summaries. Pro at $7.9/month for cloud sync. Start building your team's collective AI knowledge base today.
       </p>
 
       <Footer />

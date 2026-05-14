@@ -240,7 +240,7 @@ export default function AIMemoryComparison2026() {
                   <tbody>
                     <tr className="border-b border-gray-800 bg-blue-900/20">
                       <td className="py-3 px-2 text-blue-400 font-medium">AI Memory ⭐</td>
-                      <td className="py-3 px-2 text-gray-300">Free / $6.90/mo</td>
+                      <td className="py-3 px-2 text-gray-300">Free / Plus $3.9 / Pro $7.9</td>
                       <td className="py-3 px-2 text-gray-300">GPT, Claude, DS, Gemini, Kimi</td>
                       <td className="py-3 px-2 text-green-400">✅ Yes</td>
                       <td className="py-3 px-2 text-green-400">✅ Full-text</td>
@@ -306,7 +306,7 @@ export default function AIMemoryComparison2026() {
                 <span className="text-2xl">🏆</span>
                 <span className="bg-blue-900 text-blue-300 text-xs px-2 py-1 rounded-full font-medium">Editor&apos;s Choice</span>
               </div>
-              <p className="text-gray-300 mb-0"><strong className="text-white">Price:</strong> Free (50 conversations) · Pro $6.90/month</p>
+              <p className="text-gray-300 mb-0"><strong className="text-white">Price:</strong> Free (unlimited) · Plus $3.9 · Pro $7.9/moth</p>
               <p className="text-gray-300 mb-0"><strong className="text-white">Platforms:</strong> ChatGPT, Claude, DeepSeek, Gemini, Kimi</p>
               <p className="text-gray-300 mb-0"><strong className="text-white">Open Source:</strong> Yes (MIT license)</p>
             </div>
@@ -549,7 +549,7 @@ export default function AIMemoryComparison2026() {
               >
                 Try AI Memory Free →
               </Link>
-              <p className="text-gray-500 text-sm mt-3">50 conversations free forever · Pro $6.90/month</p>
+              <p className="text-gray-500 text-sm mt-3">Unlimited free forever · Plus $3.9/mo · Pro $7.9/mo</p>
             </div>
 
             {/* FAQ */}

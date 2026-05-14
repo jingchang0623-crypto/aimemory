@@ -409,7 +409,7 @@ export default function ChatGPTO3MemoryChanges() {
         <li><strong>Search</strong> — Find any conversation, any reasoning chain, any insight</li>
       </ol>
       <p>
-        Free for up to 50 conversations. Pro at $6.90/month for unlimited storage and MCP access. Your AI knowledge deserves better than a 1,500-word memory limit.
+        Free with unlimited local storage. Plus at $3.9/month for AI summaries. Pro at $7.9/month for cloud sync and MCP access. Your AI knowledge deserves better than a 1,500-word memory limit.
       </p>
 
       <Footer />

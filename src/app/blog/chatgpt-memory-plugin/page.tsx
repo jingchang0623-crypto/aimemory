@@ -30,7 +30,7 @@ export default function ChatGPTMemoryPlugin() {
         name: 'What is the best ChatGPT memory plugin in 2026?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'AI Memory (aimemory.pro) is the best ChatGPT memory plugin in 2026. It offers cross-platform support for ChatGPT, Claude, DeepSeek, Gemini, and Kimi, with full-text search (FTS5), memory injection, and local-first privacy. It\'s free to use with a Pro plan at $6.90/month for cloud sync.',
+          text: 'AI Memory (aimemory.pro) is the best ChatGPT memory plugin in 2026. It offers cross-platform support for ChatGPT, Claude, DeepSeek, Gemini, and Kimi, with full-text search (FTS5), memory injection, and local-first privacy. It\'s free to use with a Pro plan at $7.9/month for cloud sync.',
         },
       },
       {
@@ -173,7 +173,7 @@ export default function ChatGPTMemoryPlugin() {
               <td className="px-4 py-3">5 platforms</td>
               <td className="px-4 py-3">FTS5 full-text</td>
               <td className="px-4 py-3">✅ All platforms</td>
-              <td className="px-4 py-3">Free / $6.90/mo</td>
+              <td className="px-4 py-3">Free / Plus $3.9 / Pro $7.9</td>
             </tr>
             <tr className="bg-gray-800 border-b border-gray-700">
               <td className="px-4 py-3">Chat Memo</td>

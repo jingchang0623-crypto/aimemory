@@ -88,7 +88,7 @@ const faqJsonLd = {
 };
 
 const comparisonTable = [
-  { feature: 'Pricing (Pro)', aiMemory: '$6.90/mo', anuma: '$19.99/mo', winner: 'ai-memory' },
+  { feature: 'Pricing (Pro)', aiMemory: 'Plus $3.9 / Pro $7.9', anuma: '$19.99/mo', winner: 'ai-memory' },
   { feature: 'Free Tier', aiMemory: 'Full search & upload', anuma: '100 credits/mo', winner: 'ai-memory' },
   { feature: 'MCP Server', aiMemory: '✅ 12 tools, 113+ clients', anuma: '❌ None', winner: 'ai-memory' },
   { feature: 'Memory Injection', aiMemory: '✅ Into live AI chats', anuma: '❌ Not available', winner: 'ai-memory' },
@@ -208,7 +208,7 @@ export default function AiMemoryVsAnumaPage() {
           <h3 className="text-lg font-bold text-gray-900 mb-3">AI Memory</h3>
           <ul className="space-y-2 text-gray-700">
             <li>✅ <strong>Free:</strong> Full upload, search, and browse — no limits</li>
-            <li>💰 <strong>Pro:</strong> $6.90/month — memory injection, cloud sync, priority</li>
+            <li>💰 <strong>Plus:</strong> $3.9/month — AI summaries, multi-device</li>
             <li>🔓 No credit system — unlimited searches and exports</li>
             <li>🏠 Self-host for free forever</li>
           </ul>
@@ -228,7 +228,7 @@ export default function AiMemoryVsAnumaPage() {
         <strong>Key pricing insight:</strong> Anuma&apos;s pricing includes access to multiple AI models, so
         the $19.99/mo replaces paying for ChatGPT Plus ($20) + Claude Pro ($20) + Gemini Advanced ($20)
         separately. However, if you already have subscriptions to these services and just want to manage your
-        conversation history, AI Memory at $6.90/mo is far more cost-effective.
+        conversation history, AI Memory at $3.9-7.9/mo is far more cost-effective.
       </p>
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Privacy & Security Architecture</h2>
@@ -340,7 +340,7 @@ export default function AiMemoryVsAnumaPage() {
           <li>Want memory injection into live AI conversations</li>
           <li>Prefer self-hosting and full data control</li>
           <li>Use multiple AI platforms and need unified search</li>
-          <li>Want a budget-friendly solution ($6.90/mo or free self-hosted)</li>
+          <li>Want a budget-friendly solution ($3.9/mo or free self-hosted)</li>
         </ul>
       </div>
 

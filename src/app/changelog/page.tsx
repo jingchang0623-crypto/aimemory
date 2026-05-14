@@ -18,6 +18,25 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.82.0',
+    date: '2026-05-15',
+    title: 'Round 108 — Pricing Data Consistency Fix',
+    tags: ['Bugfix', 'SEO', 'Pricing'],
+    changes: {
+      fixed: [
+        'Compare page: Updated pricing JSON-LD and visible content from old $6.9/mo to current 3-tier structure',
+        'Directory page: Fixed pricing display and JSON-LD to match Free/Plus/Pro tiers',
+        'FAQ page: Corrected pricing answers to reflect $3.9 Plus and $7.9 Pro tiers',
+        'Getting Started guide: Updated FAQ pricing from outdated $6.9/mo to current tiers',
+        'Student blog: Fixed comparison table and JSON-LD pricing (was showing "50 convos" limit and old $6.90/mo)',
+      ],
+      noted: [
+        'All pages now consistently show: Free (unlimited local), Plus ($3.9/mo), Pro ($7.9/mo)',
+        'Changelog historical entries preserved — they document when pricing was first introduced',
+      ],
+    },
+  },
+  {
     version: 'v0.81.0',
     date: '2026-05-15',
     title: 'Round 107 — SEO Trust Signals & Public Roadmap',

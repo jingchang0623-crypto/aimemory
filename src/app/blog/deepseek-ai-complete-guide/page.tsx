@@ -653,7 +653,7 @@ export default function DeepSeekAICompleteGuide() {
         </li>
         <li>
           <strong>Open Source</strong> — Full source code on GitHub. Free
-          forever with a Pro plan at $6.90/month for cloud features.
+          forever with a Plus plan at $3.9/month for AI summaries, or Pro plan at $7.9/month for cloud sync.
         </li>
       </ul>
 
@@ -788,7 +788,7 @@ export default function DeepSeekAICompleteGuide() {
         </li>
         <li>
           <strong>Low cost</strong> — Free tier covers most personal use
-          cases; Pro plan at $6.90/month is accessible for Chinese users
+          cases; Pro plan at $7.9/month is accessible for Chinese users
         </li>
       </ul>
 
@@ -927,7 +927,7 @@ export default function DeepSeekAICompleteGuide() {
         <p className="text-blue-700 mt-2">
           <strong>AI Memory是免费的吗？</strong>
           是的，AI
-          Memory的基础功能完全免费。Pro计划（$6.90/月）提供云同步和高级功能。
+          Memory的基础功能完全免费。Plus计划（$3.9/月）提供AI摘要，Pro计划（$7.9/月）提供云同步和高级功能。
         </p>
         <p className="text-blue-700 mt-2">
           <strong>我的数据安全吗？</strong>

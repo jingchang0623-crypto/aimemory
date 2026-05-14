@@ -395,7 +395,7 @@ export default function ChatGPTDesktopAppMemoryContent() {
                     <td className="py-2 text-gray-400">Price</td>
                     <td className="py-2 text-green-400">Free (with ChatGPT)</td>
                     <td className="py-2 text-green-400">Free (with ChatGPT)</td>
-                    <td className="py-2 text-green-400">Free (50 convos) / $6.90/mo Pro</td>
+                    <td className="py-2 text-green-400">Free (unlimited) / Plus $3.9 / Pro $7.9</td>
                   </tr>
                 </tbody>
               </table>

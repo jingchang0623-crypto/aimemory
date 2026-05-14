@@ -81,7 +81,7 @@ const faqJsonLd = {
       name: 'What are the best Anuma alternatives?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The best Anuma alternatives depend on your needs: AI Memory (aimemory.pro) for cross-platform conversation management with MCP server and memory injection ($6.90/mo); Supermemory for developer-focused API ($19/mo); Chat Memo for simple Chrome-based ChatGPT saving (free); Mem0 for B2B memory API integration. AI Memory is the top choice if you want to manage existing conversations without switching AI platforms.',
+        text: 'The best Anuma alternatives depend on your needs: AI Memory (aimemory.pro) for cross-platform conversation management with MCP server and memory injection (Free / Plus $3.9 / Pro $7.9); Supermemory for developer-focused API ($19/mo); Chat Memo for simple Chrome-based ChatGPT saving (free); Mem0 for B2B memory API integration. AI Memory is the top choice if you want to manage existing conversations without switching AI platforms.',
       },
     },
   ],
@@ -356,7 +356,7 @@ export default function AnumaAiReviewPage() {
         adds memory injection directly into ChatGPT, Claude, DeepSeek, Gemini, and Kimi web interfaces.
       </p>
       <p className="text-gray-700 mb-2">
-        <strong>Pricing:</strong> Free tier (full search) → Pro at $6.90/mo. Self-host for free.
+        <strong>Pricing:</strong> Free tier (full search) → Plus $3.9/mo → Pro $7.9/mo. Self-host for free.
       </p>
       <p className="text-gray-700 mb-4">
         <strong>Best for:</strong> Users who want to keep their existing AI workflows while adding

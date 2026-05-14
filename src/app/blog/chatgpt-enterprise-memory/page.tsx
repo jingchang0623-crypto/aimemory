@@ -269,7 +269,7 @@ export default function ChatGPTEnterpriseMemory() {
             </tr>
             <tr className="bg-green-50">
               <td className="border border-gray-200 px-4 py-3 font-semibold">Any platform + AI Memory Pro</td>
-              <td className="border border-gray-200 px-4 py-3 font-semibold">Platform cost + $6.90/month</td>
+              <td className="border border-gray-200 px-4 py-3 font-semibold">Platform cost + $3.9-7.9/month</td>
               <td className="border border-gray-200 px-4 py-3 font-semibold">All platforms (unified search)</td>
             </tr>
           </tbody>

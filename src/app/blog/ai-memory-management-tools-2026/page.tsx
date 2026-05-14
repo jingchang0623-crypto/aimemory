@@ -167,7 +167,7 @@ export default function AIMemoryManagementTools2026() {
 
       <h3>1. AI Memory (aimemory.pro) — Best Overall</h3>
       <p>
-        <strong>Price:</strong> Free (50 conversations) | Pro $6.90/month<br />
+        <strong>Price:</strong> Free (unlimited) | Plus $3.9/mo | Pro $7.9/mo<br />
         <strong>Platforms:</strong> ChatGPT, Claude, DeepSeek, Gemini, Kimi<br />
         <strong>Rating:</strong> ⭐ 4.9/5
       </p>
@@ -307,7 +307,7 @@ export default function AIMemoryManagementTools2026() {
           <tbody>
             <tr>
               <td className="border border-gray-300 px-4 py-2 font-medium">Price</td>
-              <td className="border border-gray-300 px-4 py-2 text-center">Free / $6.90</td>
+              <td className="border border-gray-300 px-4 py-2 text-center">Free / Plus $3.9 / Pro $7.9</td>
               <td className="border border-gray-300 px-4 py-2 text-center">Free</td>
               <td className="border border-gray-300 px-4 py-2 text-center">Free / $49</td>
               <td className="border border-gray-300 px-4 py-2 text-center">Free (self-host)</td>
@@ -396,7 +396,7 @@ export default function AIMemoryManagementTools2026() {
         directly in Claude Desktop, Cursor, and other professional tools.
       </p>
       <p>
-        The Pro plan at $6.90/month is a fraction of what you&apos;d spend on AI subscriptions alone,
+        The Plus plan at $3.9/month and Pro plan at $7.9/month are a fraction of what you&apos;d spend on AI subscriptions alone,
         and the free tier lets you try everything with 50 conversations before committing.
       </p>
 
@@ -600,7 +600,7 @@ export default function AIMemoryManagementTools2026() {
         is the best choice in 2026. It&apos;s the only tool that combines multi-platform support for 5
         major AI platforms, full-text search with FTS5, memory injection, MCP server integration, and
         local-first privacy — all with a generous free tier at 50 conversations and an affordable Pro
-        plan at $6.90/month.
+        plan at $7.9/month.
       </p>
       <p>
         Whatever tool you choose, the important thing is to start managing your AI memory now. Your

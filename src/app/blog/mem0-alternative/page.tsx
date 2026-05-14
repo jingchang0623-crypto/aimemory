@@ -30,7 +30,7 @@ export default function Mem0Alternative() {
         name: 'How does Mem0 compare to AI Memory in pricing?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Mem0 offers a free tier for developers and a Pro plan starting at $49/month aimed at businesses building memory-powered applications. AI Memory offers a free tier with 50 conversations and a Pro plan at just $6.90/month, making it significantly more affordable for individual users who want to save and search their AI conversations.',
+          text: 'Mem0 offers a free tier for developers and a Pro plan starting at $49/month aimed at businesses building memory-powered applications. AI Memory offers a free tier with unlimited local storage, a Plus plan at $3.9/month, and a Pro plan at $7.9/month — making it significantly more affordable for individual users who want to save and search their AI conversations.',
         },
       },
       {
@@ -231,7 +231,7 @@ export default function Mem0Alternative() {
             </tr>
             <tr className="bg-gray-50">
               <td className="border border-gray-300 px-4 py-2 font-medium">Price</td>
-              <td className="border border-gray-300 px-4 py-2 text-center">Free / $6.90/mo</td>
+              <td className="border border-gray-300 px-4 py-2 text-center">Free / Plus $3.9 / Pro $7.9</td>
               <td className="border border-gray-300 px-4 py-2 text-center">Free tier / $49/mo</td>
             </tr>
             <tr>
@@ -421,7 +421,7 @@ export default function Mem0Alternative() {
             </tr>
             <tr className="bg-gray-50">
               <td className="border border-gray-300 px-4 py-2 font-medium">Pro Plan</td>
-              <td className="border border-gray-300 px-4 py-2 text-center">$6.90/month</td>
+              <td className="border border-gray-300 px-4 py-2 text-center">Plus $3.9 / Pro $7.9</td>
               <td className="border border-gray-300 px-4 py-2 text-center">$49/month</td>
             </tr>
             <tr>
@@ -438,7 +438,7 @@ export default function Mem0Alternative() {
         </table>
       </div>
       <p>
-        For individual users, AI Memory at <strong>$6.90/month</strong> provides dramatically better value
+        For individual users, AI Memory at <strong>$3.9-7.9/month</strong> provides dramatically better value
         than Mem0&apos;s $49/month plan — and includes features (browser extension, multi-platform support)
         that Mem0 simply doesn&apos;t offer.
       </p>
@@ -506,7 +506,7 @@ export default function Mem0Alternative() {
         persistent AI memory — in a tool I could actually use.&quot;
       </blockquote>
       <blockquote className="border-l-4 border-blue-500 pl-4 italic text-gray-700 my-6">
-        &quot;$49/month for Mem0&apos;s API made no sense for my personal use. AI Memory at $6.90 does
+"$49/month for Mem0's API made no sense for my personal use. AI Memory at $7.90 does
         everything I need and works directly in my browser.&quot;
       </blockquote>
       <blockquote className="border-l-4 border-blue-500 pl-4 italic text-gray-700 my-6">
@@ -568,7 +568,7 @@ export default function Mem0Alternative() {
       </ul>
       <p>
         For the vast majority of AI power users, <strong>AI Memory is the better Mem0 alternative</strong>.
-        It&apos;s faster to set up (2 minutes vs hours), more affordable ($6.90 vs $49/month), more private
+        It&apos;s faster to set up (2 minutes vs hours), more affordable ($7.9 vs $49/month), more private
         (local-first vs cloud), and works directly with the AI platforms you already use.
       </p>
 

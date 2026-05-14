@@ -121,7 +121,7 @@ export default function BestAIMemoryExtension2026() {
 
       <h3>1. AI Memory (aimemory.pro) — Best Overall</h3>
       <p>
-        <strong>Price:</strong> Free (50 conversations) | Pro $6.90/month<br />
+        <strong>Price:</strong> Free (unlimited) | Plus $3.9/mo | Pro $7.9/mo<br />
         <strong>Platforms:</strong> ChatGPT, Claude, DeepSeek, Gemini, Kimi<br />
         <strong>Rating:</strong> ⭐ 4.9/5
       </p>
@@ -233,7 +233,7 @@ export default function BestAIMemoryExtension2026() {
           <tbody>
             <tr>
               <td className="border border-gray-300 px-4 py-2 font-medium">Price</td>
-              <td className="border border-gray-300 px-4 py-2 text-center">Free / $6.90</td>
+              <td className="border border-gray-300 px-4 py-2 text-center">Free / Plus $3.9 / Pro $7.9</td>
               <td className="border border-gray-300 px-4 py-2 text-center">Free</td>
               <td className="border border-gray-300 px-4 py-2 text-center">$3.88/mo</td>
               <td className="border border-gray-300 px-4 py-2 text-center">Free (self-host)</td>
