@@ -20,6 +20,17 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   // === Guides ===
   {
+    slug: 'what-is-memory-injection',
+    title: 'What Is Memory Injection? How to Make AI Remember You (2026)',
+    description: 'Memory injection automatically inserts your past context into AI chats. Learn what it is, how it works with ChatGPT, Claude, DeepSeek, Gemini & Kimi, and why built-in memory falls short.',
+    category: 'Guides',
+    date: '2026-05-15',
+    readTime: '16 min',
+    keywords: ['memory injection', 'what is memory injection', 'ai memory injection', 'chatgpt memory injection', 'claude memory injection', 'how to make ai remember', 'cross-platform ai memory', 'mcp memory injection'],
+    tags: ['memory-injection', 'mcp', 'chatgpt', 'claude', 'deepseek', 'gemini', 'kimi', 'cross-platform', 'guide', 'comparison', 'supermemory', 'mem0'],
+    lang: 'en',
+  },
+  {
     slug: 'memory-injection-guide',
     title: 'Memory Injection: How to Give Your AI Persistent Context (2026)',
     description: 'Complete guide to memory injection for AI assistants. Learn how to give ChatGPT, Claude, DeepSeek, Gemini, and Kimi persistent memory across platforms with AI Memory.',
@@ -570,6 +581,18 @@ export const blogPosts: BlogPost[] = [
     readTime: '15 min',
     keywords: ['gemini memory', 'google gemini memory', 'gemini ai memory', 'gemini memory feature', 'gemini conversation memory', 'google ai memory'],
     tags: ['gemini', 'memory', 'google', 'guide', 'cross-platform'],
+    lang: 'en',
+  },
+  // === Google AI Studio Memory (developer-targeted keyword) ===
+  {
+    slug: 'google-ai-studio-memory',
+    title: 'Google AI Studio Memory - Complete Guide: Save & Export Conversations (2026)',
+    description: 'Complete guide to Google AI Studio memory — how it works, its limitations, how to save and export Google AI Studio conversations, and how AI Memory can manage your AI Studio chat history.',
+    category: 'Guides',
+    date: '2026-05-15',
+    readTime: '14 min',
+    keywords: ['google ai studio memory', 'save google ai studio conversations', 'google ai studio conversation history', 'export google ai studio chats', 'google ai studio memory limit', 'ai studio conversation backup'],
+    tags: ['google', 'ai-studio', 'gemini', 'memory', 'export', 'save', 'guide', 'cross-platform'],
     lang: 'en',
   },
   {
@@ -1830,6 +1853,17 @@ export const blogPosts: BlogPost[] = [
     readTime: '15 min',
     keywords: ['chatgpt memory vs third party', 'chatgpt native memory limitations', 'why use ai memory tool', 'chatgpt memory problems', 'chatgpt memory 1500 word limit', 'claude memory limitations', 'gemini memory import', 'ai memory backup tool', 'chatgpt memory alternative', 'best ai memory manager 2026'],
     tags: ['guide', 'native-memory', 'third-party', 'comparison', 'privacy', 'cross-platform'],
+    lang: 'en',
+  },
+  {
+    slug: 'chatgpt-memory-api',
+    title: 'OpenAI ChatGPT Memory API — Complete Guide for Developers (2026)',
+    description: 'Learn how to use the ChatGPT Memory API to programmatically manage conversation memory. Covers endpoints, code examples, limitations, and how to build your own memory layer with AI Memory + MCP.',
+    category: 'Developer Guides',
+    date: '2026-05-15',
+    readTime: '15 min',
+    keywords: ['chatgpt memory api', 'openai memory api', 'chatgpt persistent memory api', 'chatgpt memory developer guide', 'chatgpt memory integration', 'openai memory endpoints', 'chatgpt memory api tutorial', 'ai memory api'],
+    tags: ['chatgpt', 'memory', 'api', 'developer', 'mcp', 'openai', 'guide', 'integration'],
     lang: 'en',
   },
 
