@@ -8,7 +8,7 @@ import ConversationList from '@/components/ConversationList';
 import ConversationDetail from '@/components/ConversationDetail';
 import StatsDashboard from '@/components/StatsDashboard';
 import ExportButton from '@/components/ExportButton';
-import { CONTENT_COUNT } from '@/lib/constants';
+import { CONTENT_COUNT, AI_PLATFORMS_COUNT, MCP_CLIENTS_COUNT, MCP_TOOLS_COUNT } from '@/lib/constants';
 
 export default function Home() {
   const [refreshTrigger, setRefreshTrigger] = useState(0);
@@ -196,17 +196,17 @@ export default function Home() {
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gray-900">5</div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">{AI_PLATFORMS_COUNT}</div>
               <div className="text-xs text-gray-500 mt-1">AI Platforms Supported</div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gray-900">113+</div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">{MCP_CLIENTS_COUNT}+</div>
               <div className="text-xs text-gray-500 mt-1">MCP Clients Compatible</div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gray-900">12</div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">{MCP_TOOLS_COUNT}</div>
               <div className="text-xs text-gray-500 mt-1">MCP Tools Available</div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden md:block" />
@@ -401,7 +401,7 @@ export default function Home() {
               </div>
               {/* Available tools */}
               <div className="border-t border-gray-700 pt-4 mt-4">
-                <p className="text-xs text-gray-500 mb-2">12 MCP Memory Tools Available:</p>
+                <p className="text-xs text-gray-500 mb-2">{MCP_TOOLS_COUNT} MCP Memory Tools Available:</p>
                 <div className="flex flex-wrap gap-2">
                   {['ai_memory_search', 'ai_memory_add', 'ai_memory_get', 'ai_memory_list', 'ai_memory_update', 'ai_memory_delete'].map((tool) => (
                     <span key={tool} className="text-xs bg-gray-800 text-gray-400 px-2 py-1 rounded font-mono">
@@ -416,9 +416,9 @@ export default function Home() {
           
           {/* CTA */}
           <div className="text-center mt-8">
-            <p className="text-sm text-gray-500 mb-4">
-              Works with Claude Desktop, Cursor, Windsurf, Cline, and 113+ MCP clients
-            </p>
+              <p className="text-sm text-gray-500 mb-4">
+                Works with Claude Desktop, Cursor, Windsurf, Cline, and {MCP_CLIENTS_COUNT}+ MCP clients
+              </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
                 href="/mcp-server"

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 import { useState } from 'react';
+import { MCP_TOOLS_COUNT } from '@/lib/constants';
 
 const tocItems = [
   { id: 'what-is-mcp', title: 'What Is MCP (Model Context Protocol)?' },
@@ -411,9 +412,9 @@ export default function MCPAIMemoryDeveloperGuideContent() {
             </div>
 
             {/* Section 5: Tools Reference */}
-            <h2 id="mcp-tools-reference">MCP Tools Reference (6 Tools)</h2>
+            <h2 id="mcp-tools-reference">MCP Tools Reference ({MCP_TOOLS_COUNT} Tools)</h2>
             <p>
-              The AI Memory MCP server exposes six tools. Each tool has typed parameters and structured JSON responses.
+              The AI Memory MCP server exposes {MCP_TOOLS_COUNT} tools. Each tool has typed parameters and structured JSON responses.
               Here&apos;s the complete reference:
             </p>
 

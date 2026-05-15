@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
+import { MCP_TOOLS_COUNT } from '@/lib/constants';
 
 const slug = 'chatgpt-api-memory';
 
@@ -371,13 +372,20 @@ pip install fastmcp
 # See setup instructions above`}
       </pre>
 
-      <h3>5 MCP Tools Available</h3>
+      <h3>{MCP_TOOLS_COUNT} MCP Tools Available</h3>
       <ul>
-        <li><strong>save_conversation</strong> — Store a full conversation with metadata</li>
-        <li><strong>search_conversations</strong> — FTS5-powered full-text search</li>
-        <li><strong>list_conversations</strong> — Browse with source and date filters</li>
-        <li><strong>update_conversation</strong> — Edit or tag existing memories</li>
-        <li><strong>delete_conversation</strong> — Remove outdated memories</li>
+        <li><strong>save_memory</strong> — Store a new memory with tags and source</li>
+        <li><strong>search_memories</strong> — FTS5-powered full-text search across all memories</li>
+        <li><strong>list_memories</strong> — Browse with platform, date, and tag filters</li>
+        <li><strong>get_memory</strong> — Retrieve a specific memory by ID</li>
+        <li><strong>update_memory</strong> — Edit or tag existing memories</li>
+        <li><strong>delete_memory</strong> — Remove outdated memories</li>
+        <li><strong>memory_stats</strong> — Get total count, activity, tag distribution</li>
+        <li><strong>export_memories</strong> — Backup all memories to JSON</li>
+        <li><strong>import_memories</strong> — Import from JSON backup with dedup</li>
+        <li><strong>batch_save_memories</strong> — Save multiple memories at once</li>
+        <li><strong>get_all_tags</strong> — List all tags with usage counts</li>
+        <li><strong>clear_all_memories</strong> — Delete all memories (use with caution)</li>
       </ul>
 
       <h2>Comparison: Which Approach Is Right for You?</h2>
