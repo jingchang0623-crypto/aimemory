@@ -182,7 +182,7 @@ export default function RoadmapPage() {
               {[
                 'Multi-platform import (ChatGPT, Claude, DeepSeek, Gemini, Kimi)',
                 'Full-text search with FTS5',
-                'Chrome extension with auto-save (ChatGPT, Claude, DeepSeek, Gemini)',
+                'Chrome extension with auto-save (ChatGPT, Claude, DeepSeek, Gemini, Kimi)',
                 'Memory injection into AI chat inputs',
                 'MCP Server v1.4.0 (12 tools)',
                 'Tag management with autocomplete',

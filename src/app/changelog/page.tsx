@@ -18,6 +18,28 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.84.0',
+    date: '2026-05-15',
+    title: 'Round 110 — Kimi Support & PyPI Publishing Infrastructure',
+    tags: ['Feature', 'Distribution', 'Infrastructure'],
+    changes: {
+      added: [
+        'Kimi (Moonshot AI) auto-capture support: New content script for kimi.moonshot.cn',
+        'GitHub Actions workflow for PyPI publishing: Automated release workflow with trusted publishing (OIDC)',
+      ],
+      improved: [
+        'Chrome extension page: Updated to show 5 supported platforms (was 4)',
+        'Chrome extension page: Changed Kimi status from "Coming Soon" to "Supported"',
+        'Roadmap page: Updated "Already Shipped" list to include Kimi',
+        'Extension manifest: Added Kimi host permissions and updated description',
+      ],
+      noted: [
+        'Kimi is a popular Chinese AI assistant — fills a key gap in our China market coverage',
+        'PyPI publish workflow is ready — package can be published on first release tag',
+      ],
+    },
+  },
+  {
     version: 'v0.83.0',
     date: '2026-05-15',
     title: 'Round 109 — Comprehensive Pricing Audit',

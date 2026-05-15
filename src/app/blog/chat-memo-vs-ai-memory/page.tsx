@@ -21,7 +21,7 @@ export default function ChatMemoVsAIMemory() {
         name: 'What is the difference between Chat Memo and AI Memory?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Chat Memo is a Chrome extension that auto-saves AI conversations from 7 platforms including ChatGPT, Gemini, Claude, DeepSeek, Doubao, and Kimi. AI Memory is a web-based tool with a companion extension that covers 4 platforms but offers superior FTS5 full-text search, fuzzy matching, and web-based access from any device.',
+          text: 'Chat Memo is a Chrome extension that auto-saves AI conversations from 7 platforms including ChatGPT, Gemini, Claude, DeepSeek, Doubao, and Kimi. AI Memory is a web-based tool with a companion extension that covers 5 platforms (ChatGPT, Claude, DeepSeek, Gemini, Kimi) but offers superior FTS5 full-text search, fuzzy matching, and web-based access from any device.',
         },
       },
       {
@@ -61,7 +61,7 @@ export default function ChatMemoVsAIMemory() {
         name: 'Which AI platforms does AI Memory support?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'AI Memory currently supports 4 platforms: ChatGPT, Claude, DeepSeek, and Gemini. Chat Memo supports 7 platforms, adding support for Chinese AI platforms like Doubao and Kimi.',
+          text: 'AI Memory currently supports 5 platforms: ChatGPT, Claude, DeepSeek, Gemini, and Kimi. Chat Memo supports 7 platforms, adding support for Chinese AI platforms like Doubao.',
         },
       },
     ],

@@ -5,7 +5,7 @@ export default defineConfig({
   outDir: '.output',
   manifest: {
     name: 'AI Memory Manager',
-    description: 'Save, search, and manage your AI conversations across ChatGPT, Claude, DeepSeek, and Gemini.',
+    description: 'Save, search, and manage your AI conversations across ChatGPT, Claude, DeepSeek, Gemini, and Kimi.',
     version: '1.0.0',
     permissions: ['storage', 'sidePanel', 'activeTab', 'unlimitedStorage'],
     host_permissions: [
@@ -13,7 +13,8 @@ export default defineConfig({
       'https://chatgpt.com/*',
       'https://claude.ai/*',
       'https://chat.deepseek.com/*',
-      'https://gemini.google.com/*'
+      'https://gemini.google.com/*',
+      'https://kimi.moonshot.cn/*'
     ],
     side_panel: {
       default_path: 'sidepanel/index.html'

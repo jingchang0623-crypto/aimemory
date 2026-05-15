@@ -3,15 +3,15 @@ import Link from 'next/link';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'AI Memory Chrome Extension - Auto-Save ChatGPT, Claude, DeepSeek & Gemini',
-  description: 'Free Chrome extension that automatically saves your ChatGPT, Claude, DeepSeek, and Gemini conversations. Full-text search, 100% private, no account required. Download now.',
+  title: 'AI Memory Chrome Extension - Auto-Save ChatGPT, Claude, DeepSeek, Gemini & Kimi',
+  description: 'Free Chrome extension that automatically saves your ChatGPT, Claude, DeepSeek, Gemini, and Kimi conversations. Full-text search, 100% private, no account required. Download now.',
   keywords: ['ChatGPT Chrome extension', 'Claude extension', 'DeepSeek extension', 'Gemini extension', 'Kimi extension', 'AI conversation saver', 'ChatGPT history extension', 'save ChatGPT chats', 'AI memory extension'],
   alternates: {
     canonical: 'https://aimemory.pro/chrome-extension',
   },
   openGraph: {
     title: 'AI Memory Chrome Extension - Auto-Save AI Conversations',
-    description: 'Free extension that automatically saves your ChatGPT, Claude, DeepSeek, and Gemini conversations. Never lose an AI chat again.',
+    description: 'Free extension that automatically saves your ChatGPT, Claude, DeepSeek, Gemini, and Kimi conversations. Never lose an AI chat again.',
     url: 'https://aimemory.pro/chrome-extension',
     type: 'website',
   },
@@ -35,7 +35,7 @@ export default function ChromeExtension() {
             AI Memory Chrome Extension
           </h1>
           <p className="text-xl text-gray-600 mb-6">
-            Automatically save your AI conversations from ChatGPT, Claude, DeepSeek, and Gemini
+            Automatically save your AI conversations from ChatGPT, Claude, DeepSeek, Gemini, and Kimi
           </p>
           <p className="text-gray-500 mb-8 max-w-2xl mx-auto">
             Never lose an important AI conversation again. Our free extension captures every chat automatically — 
@@ -55,7 +55,7 @@ export default function ChromeExtension() {
         {/* Stats */}
         <div className="flex flex-wrap justify-center gap-6 mb-12 text-center">
           <div className="px-6 py-3 bg-white rounded-lg border border-gray-200">
-            <div className="text-2xl font-bold text-blue-600">4</div>
+            <div className="text-2xl font-bold text-blue-600">5</div>
             <div className="text-sm text-gray-500">Auto-Capture Platforms</div>
           </div>
           <div className="px-6 py-3 bg-white rounded-lg border border-gray-200">
@@ -122,12 +122,12 @@ export default function ChromeExtension() {
             </div>
             <div className="text-center p-4 bg-gray-50 rounded-lg border border-gray-100">
               <div className="font-medium text-lg">Kimi</div>
-              <div className="text-sm text-yellow-600 mt-1">⏳ Coming Soon</div>
+              <div className="text-sm text-green-600 mt-1">✅ Supported</div>
               <div className="text-xs text-gray-400 mt-1">kimi.moonshot.cn</div>
             </div>
           </div>
           <p className="text-sm text-gray-400 mt-4 text-center">
-            Kimi auto-capture coming soon. Kimi conversations can be uploaded via the <Link href="/" className="text-blue-500 hover:underline">web app</Link> right now. Also coming: Microsoft Copilot, Perplexity.
+            Also coming soon: Microsoft Copilot, Perplexity.
           </p>
         </section>
 
@@ -223,7 +223,7 @@ export default function ChromeExtension() {
             <div className="flex-1">
               <h2 className="text-2xl font-bold mb-2">💉 Memory Injection</h2>
               <p className="text-gray-600 mb-4">
-                The extension doesn&apos;t just save — it injects. When you&apos;re in ChatGPT, Claude, DeepSeek, or Gemini, 
+                The extension doesn&apos;t just save — it injects. When you&apos;re in ChatGPT, Claude, DeepSeek, Gemini, or Kimi, 
                 click the injection button to instantly retrieve relevant past conversations and inject them as context. 
                 No more repeating yourself to AI.
               </p>
@@ -234,7 +234,7 @@ export default function ChromeExtension() {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-green-500">✅</span>
-                  <span className="text-sm text-gray-600">Works across all 4 supported platforms</span>
+                  <span className="text-sm text-gray-600">Works across all 5 supported platforms</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-green-500">✅</span>
@@ -302,7 +302,7 @@ export default function ChromeExtension() {
             <div className="p-4 bg-gray-50 rounded-lg">
               <h3 className="font-semibold mb-2">What if I use multiple AI platforms?</h3>
               <p className="text-sm text-gray-600">
-                That&apos;s the best use case! The extension saves from all supported platforms into one unified memory. Search across ChatGPT, Claude, DeepSeek, and Gemini together — find solutions no matter which AI you used.
+                That&apos;s the best use case! The extension saves from all supported platforms into one unified memory. Search across ChatGPT, Claude, DeepSeek, Gemini, and Kimi together — find solutions no matter which AI you used.
               </p>
             </div>
           </div>

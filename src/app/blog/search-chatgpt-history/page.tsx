@@ -273,8 +273,8 @@ export default function SearchChatGPTHistory() {
           <tr>
             <td>Cross-platform search</td>
             <td>❌ (ChatGPT only)</td>
-            <td>✅ (4 platforms)</td>
-            <td>✅ (4 platforms)</td>
+            <td>✅ (5 platforms)</td>
+            <td>✅ (5 platforms)</td>
           </tr>
           <tr>
             <td>Date filters</td>

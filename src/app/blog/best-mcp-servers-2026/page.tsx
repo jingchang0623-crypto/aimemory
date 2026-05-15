@@ -334,7 +334,7 @@ export default function BestMCPServers2026() {
           AI Memory MCP solves this by:
         </p>
         <ul className="list-disc list-inside text-gray-600 mb-4 space-y-1">
-          <li>Importing conversations from <strong className="text-gray-900">4 platforms</strong> (ChatGPT, Claude, DeepSeek, Gemini)</li>
+          <li>Importing conversations from <strong className="text-gray-900">5 platforms</strong> (ChatGPT, Claude, DeepSeek, Gemini, Kimi)</li>
           <li>Providing <strong className="text-gray-900">full-text search</strong> across all past chats</li>
           <li>Working with <strong className="text-gray-900">113+ MCP clients</strong> — not just one platform</li>
           <li>Running <strong className="text-gray-900">100% locally</strong> — your data never leaves your machine</li>
