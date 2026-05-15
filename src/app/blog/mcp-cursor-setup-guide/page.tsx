@@ -400,7 +400,7 @@ touch .cursor/mcp.json`}
       <p>
         The <strong>AI Memory MCP server</strong> is one of the most powerful additions to your{' '}
         <strong>cursor mcp server</strong> setup. It lets Cursor search through all your saved AI
-        conversations from ChatGPT, Claude, DeepSeek, Gemini, and other platforms.
+        conversations from ChatGPT, Claude, DeepSeek, Gemini, Kimi, and other platforms.
       </p>
 
       <p>Add this to your <code>.cursor/mcp.json</code>:</p>
@@ -562,7 +562,7 @@ touch .cursor/mcp.json`}
       <p>
         <strong>AI Memory</strong> is one of the most powerful MCP servers you can connect to Cursor.
         It gives your AI coding assistant the ability to search through all your saved conversations
-        from ChatGPT, Claude, DeepSeek, Gemini, and other AI platforms.
+        from ChatGPT, Claude, DeepSeek, Gemini, Kimi, and other AI platforms.
       </p>
 
       <h3>What AI Memory Provides via MCP</h3>

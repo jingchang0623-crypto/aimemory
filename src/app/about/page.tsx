@@ -148,7 +148,7 @@ export default function AboutPage() {
               {
                 icon: '🌍',
                 title: 'Cross-Platform',
-                desc: 'Works with ChatGPT, Claude, DeepSeek, Gemini, and more. One tool for all your AI conversations.',
+                desc: 'Works with ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more. One tool for all your AI conversations.',
               },
               {
                 icon: '🔌',

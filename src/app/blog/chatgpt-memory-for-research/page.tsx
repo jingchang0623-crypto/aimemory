@@ -259,7 +259,7 @@ export default function ChatGPTMemoryForResearchPage() {
             <tbody className="divide-y divide-gray-200">
               <tr><td className="px-4 py-2">Memory capacity</td><td className="px-4 py-2">1,500 words</td><td className="px-4 py-2">Unlimited</td></tr>
               <tr><td className="px-4 py-2">Full conversation search</td><td className="px-4 py-2">❌ No</td><td className="px-4 py-2">✅ Yes (FTS5)</td></tr>
-              <tr><td className="px-4 py-2">Cross-platform support</td><td className="px-4 py-2">❌ ChatGPT only</td><td className="px-4 py-2">✅ ChatGPT, Claude, DeepSeek, Gemini</td></tr>
+              <tr><td className="px-4 py-2">Cross-platform support</td><td className="px-4 py-2">❌ ChatGPT only</td><td className="px-4 py-2">✅ ChatGPT, Claude, DeepSeek, Gemini, Kimi</td></tr>
               <tr><td className="px-4 py-2">Context injection</td><td className="px-4 py-2">❌ No</td><td className="px-4 py-2">✅ Via MCP Server</td></tr>
               <tr><td className="px-4 py-2">Export capability</td><td className="px-4 py-2">❌ No</td><td className="px-4 py-2">✅ JSON, TXT, Markdown</td></tr>
               <tr><td className="px-4 py-2">Local/self-hosted option</td><td className="px-4 py-2">❌ No</td><td className="px-4 py-2">✅ Open source</td></tr>

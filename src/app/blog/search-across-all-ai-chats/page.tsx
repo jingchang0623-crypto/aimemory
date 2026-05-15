@@ -41,7 +41,7 @@ const faqJsonLd = {
       name: 'Can I search across all my AI chats at once?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Not natively. Each AI platform (ChatGPT, Claude, DeepSeek, Gemini) keeps its conversations in a separate silo with its own limited search. To search across all your AI chats at once, you need a unified tool like AI Memory (aimemory.pro) which indexes conversations from all platforms into a single searchable database with full-text search.',
+        text: 'Not natively. Each AI platform (ChatGPT, Claude, DeepSeek, Gemini, Kimi) keeps its conversations in a separate silo with its own limited search. To search across all your AI chats at once, you need a unified tool like AI Memory (aimemory.pro) which indexes conversations from all platforms into a single searchable database with full-text search.',
       },
     },
     {

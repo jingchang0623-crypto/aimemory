@@ -373,7 +373,7 @@ export default function ChatGPTMemoryGuide2026Content() {
                   <tr className="border-b border-gray-800">
                     <td className="py-2 text-gray-400">Cross-platform</td>
                     <td className="py-2 text-red-400">❌ ChatGPT only</td>
-                    <td className="py-2 text-green-400">✅ ChatGPT, Claude, DeepSeek, Gemini</td>
+                    <td className="py-2 text-green-400">✅ ChatGPT, Claude, DeepSeek, Gemini, Kimi</td>
                   </tr>
                   <tr className="border-b border-gray-800">
                     <td className="py-2 text-gray-400">Export data</td>

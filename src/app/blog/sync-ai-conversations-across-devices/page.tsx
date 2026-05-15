@@ -59,7 +59,7 @@ export default function SyncAIConversationsPage() {
         name: 'What is the best way to backup AI conversations?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "The best approach is to regularly export from each AI platform (ChatGPT, Claude, DeepSeek, Gemini) and upload to AI Memory. This creates a searchable backup that works across all platforms and devices. You can also use the AI Memory Chrome extension for automatic capture.",
+          text: "The best approach is to regularly export from each AI platform (ChatGPT, Claude, DeepSeek, Gemini, Kimi) and upload to AI Memory. This creates a searchable backup that works across all platforms and devices. You can also use the AI Memory Chrome extension for automatic capture.",
         },
       },
       {

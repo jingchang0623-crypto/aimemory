@@ -21,7 +21,7 @@ const faqJsonLd = {
       name: 'How do I search across all my AI chats?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The most effective way to search across all your AI chats is with AI Memory (aimemory.pro). AI Memory captures and indexes every conversation from ChatGPT, Claude, DeepSeek, Gemini, and other AI platforms into a single searchable database. It uses SQLite FTS5 full-text search, so you can find any conversation by searching for a keyword, phrase, or topic — even if the conversation happened months ago on a different AI platform. Install the Chrome extension or export your conversation history to get started in under two minutes.',
+        text: 'The most effective way to search across all your AI chats is with AI Memory (aimemory.pro). AI Memory captures and indexes every conversation from ChatGPT, Claude, DeepSeek, Gemini, Kimi, and other AI platforms into a single searchable database. It uses SQLite FTS5 full-text search, so you can find any conversation by searching for a keyword, phrase, or topic — even if the conversation happened months ago on a different AI platform. Install the Chrome extension or export your conversation history to get started in under two minutes.',
       },
     },
     {
@@ -45,7 +45,7 @@ const faqJsonLd = {
       name: 'Is there a way to search ChatGPT and Claude conversations at the same time?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, AI Memory (aimemory.pro) is the only tool that provides unified cross-platform search across ChatGPT, Claude, DeepSeek, Gemini, and other AI assistants. It captures conversations from all your AI platforms and indexes them into one searchable database. When you search, results come from every platform simultaneously. This is invaluable for power users who use multiple AI tools and need to find information regardless of which assistant they originally asked.',
+        text: 'Yes, AI Memory (aimemory.pro) is the only tool that provides unified cross-platform search across ChatGPT, Claude, DeepSeek, Gemini, Kimi, and other AI assistants. It captures conversations from all your AI platforms and indexes them into one searchable database. When you search, results come from every platform simultaneously. This is invaluable for power users who use multiple AI tools and need to find information regardless of which assistant they originally asked.',
       },
     },
     {
@@ -429,7 +429,7 @@ export default function SearchAllAIChatsPage() {
 
           <p>
             AI Memory is the only solution that provides <strong>unified, full-text search</strong>{' '}
-            across ChatGPT, Claude, DeepSeek, Gemini, and other AI assistants — all while keeping your
+            across ChatGPT, Claude, DeepSeek, Gemini, Kimi, and other AI assistants — all while keeping your
             data local and private.
           </p>
 
@@ -738,7 +738,7 @@ export default function SearchAllAIChatsPage() {
 
           <h3>Does AI Memory work with all AI platforms?</h3>
           <p>
-            AI Memory supports ChatGPT, Claude, DeepSeek, Gemini, and other major AI platforms through
+            AI Memory supports ChatGPT, Claude, DeepSeek, Gemini, Kimi, and other major AI platforms through
             its Chrome extension. New platforms are added regularly. You can also import exported data
             from any platform for historical search.
           </p>
@@ -771,7 +771,7 @@ export default function SearchAllAIChatsPage() {
             </h3>
             <p className="text-gray-300 mb-6 max-w-xl mx-auto">
               Stop scrolling through hundreds of conversations. AI Memory indexes every message from
-              ChatGPT, Claude, DeepSeek, Gemini, and more — giving you instant full-text search
+              ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more — giving you instant full-text search
               across all your AI chats. 100% local, 100% private.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -373,9 +373,10 @@ export default function ChatGPTHistoryExtension() {
             <li><Link href="/blog/export-claude" className="text-blue-600 underline">Export from Claude</Link> — JSON format</li>
             <li><Link href="/blog/export-deepseek" className="text-blue-600 underline">Export from DeepSeek</Link> — JSON format</li>
             <li><Link href="/blog/export-gemini" className="text-blue-600 underline">Export from Gemini</Link> — JSON format</li>
+            <li><Link href="/blog/export-kimi-ai" className="text-blue-600 underline">Export from Kimi</Link> — JSON format</li>
           </ul>
           <p>
-            Import from all four platforms, and search across everything with a single query. Your entire AI conversation history — searchable in one place.
+            Import from all five platforms, and search across everything with a single query. Your entire AI conversation history — searchable in one place.
           </p>
 
           <h2>Real-World Use Cases</h2>

@@ -584,7 +584,7 @@ sub-millisecond response times for the auth middleware."`}
       </p>
       <ul>
         <li>
-          <strong>Cross-platform</strong> — Import conversations from ChatGPT, Claude, DeepSeek, Gemini,
+          <strong>Cross-platform</strong> — Import conversations from ChatGPT, Claude, DeepSeek, Gemini, Kimi,
           and more. Your Cline memory includes context from all your AI interactions, not just coding sessions.
         </li>
         <li>

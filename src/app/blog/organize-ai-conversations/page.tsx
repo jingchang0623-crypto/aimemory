@@ -37,7 +37,7 @@ export default function OrganizeAIConversationsPage() {
         name: 'How do I organize my ChatGPT conversations?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'You can organize ChatGPT conversations using its built-in folders and search, but these are limited to titles only. For full-text search, tagging, and cross-platform organization, use a dedicated AI conversation organizer like AI Memory which indexes every message and supports ChatGPT, Claude, DeepSeek, Gemini, and more.',
+          text: 'You can organize ChatGPT conversations using its built-in folders and search, but these are limited to titles only. For full-text search, tagging, and cross-platform organization, use a dedicated AI conversation organizer like AI Memory which indexes every message and supports ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more.',
         },
       },
       {
@@ -264,7 +264,7 @@ export default function OrganizeAIConversationsPage() {
         This is the most effective method for managing AI conversations at scale. The process is simple:
       </p>
       <ol>
-        <li><strong>Export your data</strong> from each AI platform (ChatGPT, Claude, DeepSeek, Gemini)</li>
+        <li><strong>Export your data</strong> from each AI platform (ChatGPT, Claude, DeepSeek, Gemini, Kimi)</li>
         <li><strong>Import into a conversation organizer</strong> like AI Memory</li>
         <li><strong>Search, tag, and categorize</strong> all conversations in one unified interface</li>
       </ol>
@@ -604,7 +604,7 @@ export default function OrganizeAIConversationsPage() {
         limited to titles only. For full-text search, tagging, and cross-platform organization, use
         a dedicated AI conversation organizer like{' '}
         <a href="/" className="text-blue-600 hover:underline">AI Memory</a> which indexes every
-        message and supports ChatGPT, Claude, DeepSeek, Gemini, and more.
+        message and supports ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more.
       </p>
 
       <h3>Can I create folders for AI conversations?</h3>

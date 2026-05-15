@@ -117,7 +117,7 @@ export default function AIMemoryManagementTools2026() {
         <li><strong>Unified storage</strong> — All conversations from every AI platform in one searchable database</li>
         <li><strong>Full-text search</strong> — Find any conversation by keyword, topic, or semantic similarity</li>
         <li><strong>Memory injection</strong> — Automatically feed relevant past context into new conversations</li>
-        <li><strong>Cross-platform support</strong> — Manage memory across ChatGPT, Claude, DeepSeek, Gemini, and more</li>
+        <li><strong>Cross-platform support</strong> — Manage memory across ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more</li>
         <li><strong>Organization</strong> — Tag, categorize, and structure your AI knowledge base</li>
       </ul>
 

@@ -233,7 +233,7 @@ export default function GettingStartedGuide() {
               </div>
               <div className="bg-gray-50 rounded-lg p-4">
                 <h4 className="font-semibold text-gray-900 mb-2">🏷️ Platform Filtering</h4>
-                <p className="text-sm text-gray-600">Filter results by platform (ChatGPT, Claude, DeepSeek, Gemini).</p>
+                <p className="text-sm text-gray-600">Filter results by platform (ChatGPT, Claude, DeepSeek, Gemini, Kimi).</p>
               </div>
               <div className="bg-gray-50 rounded-lg p-4">
                 <h4 className="font-semibold text-gray-900 mb-2">📊 Statistics Dashboard</h4>

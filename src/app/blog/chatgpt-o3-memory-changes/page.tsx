@@ -306,7 +306,7 @@ export default function ChatGPTO3MemoryChanges() {
 
       <h2>Beyond ChatGPT: Cross-Platform Memory</h2>
       <p>
-        If you use multiple AI platforms (ChatGPT, Claude, DeepSeek, Gemini), each has its own memory system. They don't talk to each other. This is where cross-platform memory tools become essential:
+        If you use multiple AI platforms (ChatGPT, Claude, DeepSeek, Gemini, Kimi), each has its own memory system. They don't talk to each other. This is where cross-platform memory tools become essential:
       </p>
 
       <h3>Platform Memory Comparison</h3>

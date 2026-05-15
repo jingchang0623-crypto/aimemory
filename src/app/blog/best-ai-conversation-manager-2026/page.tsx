@@ -44,7 +44,7 @@ export default function BestAIConversationManager2026() {
         name: 'Can I search across multiple AI platforms at once?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes! AI Memory supports importing from ChatGPT, Claude, DeepSeek, Gemini, and others. Once imported, you can search across all platforms with a single query.',
+          text: 'Yes! AI Memory supports importing from ChatGPT, Claude, DeepSeek, Gemini, Kimi, and others. Once imported, you can search across all platforms with a single query.',
         },
       },
       {
@@ -105,7 +105,7 @@ export default function BestAIConversationManager2026() {
           </p>
           <ul>
             <li>✅ Full-text search across all messages</li>
-            <li>✅ Supports ChatGPT, Claude, DeepSeek, Gemini, and more</li>
+            <li>✅ Supports ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more</li>
             <li>✅ 100% local — data never leaves your device</li>
             <li>✅ Free and open-source</li>
             <li>✅ Instant search with ranked results</li>
@@ -309,7 +309,7 @@ export default function BestAIConversationManager2026() {
 
           <h3>Can I search across multiple AI platforms at once?</h3>
           <p>
-            Yes! AI Memory supports importing from ChatGPT, Claude, DeepSeek, Gemini, and others. Once imported, you can search across all platforms with a single query.
+            Yes! AI Memory supports importing from ChatGPT, Claude, DeepSeek, Gemini, Kimi, and others. Once imported, you can search across all platforms with a single query.
           </p>
 
           <h3>Which conversation manager is best for developers?</h3>

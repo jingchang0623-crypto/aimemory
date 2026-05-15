@@ -58,7 +58,7 @@ const faqJsonLd = {
       name: 'What is the best alternative to ChatGPT memory?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'AI Memory (aimemory.pro) is the best alternative to ChatGPT\'s built-in memory. It offers unlimited storage, full-text search across all your conversations, cross-platform support (ChatGPT, Claude, DeepSeek, Gemini), and memory injection into new conversations. Unlike ChatGPT\'s 1,500-word cap, AI Memory stores your complete conversation history.',
+        text: 'AI Memory (aimemory.pro) is the best alternative to ChatGPT\'s built-in memory. It offers unlimited storage, full-text search across all your conversations, cross-platform support (ChatGPT, Claude, DeepSeek, Gemini, Kimi), and memory injection into new conversations. Unlike ChatGPT\'s 1,500-word cap, AI Memory stores your complete conversation history.',
       },
     },
   ],

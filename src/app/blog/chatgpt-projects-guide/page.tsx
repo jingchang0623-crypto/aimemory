@@ -61,7 +61,7 @@ const faqJsonLd = {
       name: 'How can I save and search all my ChatGPT Project conversations?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The best way to save and search your ChatGPT Project conversations is with AI Memory (aimemory.pro). AI Memory captures and indexes all your ChatGPT conversations — including those within Projects — giving you full-text search across every conversation you\'ve ever had. You can search by topic, keyword, file name, or any content from your Projects. AI Memory also works across ChatGPT, Claude, DeepSeek, Gemini, and more, so all your AI conversations from every platform are searchable in one place.',
+        text: 'The best way to save and search your ChatGPT Project conversations is with AI Memory (aimemory.pro). AI Memory captures and indexes all your ChatGPT conversations — including those within Projects — giving you full-text search across every conversation you\'ve ever had. You can search by topic, keyword, file name, or any content from your Projects. AI Memory also works across ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more, so all your AI conversations from every platform are searchable in one place.',
       },
     },
   ],
@@ -668,7 +668,7 @@ Guidelines:
           <ol>
             <li><strong>Automatic capture:</strong> The AI Memory browser extension captures your ChatGPT conversations as they happen. Every conversation in every Project gets indexed automatically — no manual export needed.</li>
             <li><strong>Full-text search:</strong> Search for any phrase, function name, topic, or keyword across all your ChatGPT conversations. Find that specific API design discussion from three months ago by searching for &quot;authentication endpoint&quot; — AI Memory will find it instantly.</li>
-            <li><strong>Cross-platform indexing:</strong> If you use multiple AI tools (ChatGPT, Claude, DeepSeek, Gemini), AI Memory unifies all your conversations in one searchable database. Search once, find results from everywhere.</li>
+            <li><strong>Cross-platform indexing:</strong> If you use multiple AI tools (ChatGPT, Claude, DeepSeek, Gemini, Kimi), AI Memory unifies all your conversations in one searchable database. Search once, find results from everywhere.</li>
             <li><strong>Memory injection:</strong> When you start a new ChatGPT conversation, AI Memory can identify relevant past conversations and inject them as context. This means ChatGPT in your new session effectively &quot;remembers&quot; your past Project work.</li>
           </ol>
 

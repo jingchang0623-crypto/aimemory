@@ -38,7 +38,7 @@ export default function ChatGPTEnterpriseMemory() {
         name: 'Can enterprise teams share AI memory across ChatGPT, Claude, and other platforms?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'ChatGPT Enterprise memory only works within ChatGPT. For cross-platform AI memory, enterprises use tools like AI Memory which supports importing conversations from ChatGPT, Claude, DeepSeek, Gemini, and Copilot. AI Memory offers an MCP server that integrates with developer tools like Claude Desktop, Cursor, and VS Code, enabling teams to search their entire AI conversation history from any tool. Self-hosted deployment ensures data stays within your infrastructure.',
+          text: 'ChatGPT Enterprise memory only works within ChatGPT. For cross-platform AI memory, enterprises use tools like AI Memory which supports importing conversations from ChatGPT, Claude, DeepSeek, Gemini, Kimi, and Copilot. AI Memory offers an MCP server that integrates with developer tools like Claude Desktop, Cursor, and VS Code, enabling teams to search their entire AI conversation history from any tool. Self-hosted deployment ensures data stays within your infrastructure.',
         },
       },
       {
@@ -286,7 +286,7 @@ export default function ChatGPTEnterpriseMemory() {
         The most valuable feature for enterprise teams is unified search across all AI platforms. Instead of remembering which platform you used for a specific conversation, AI Memory provides a single search interface:
       </p>
       <ul>
-        <li><strong>Import from all major platforms</strong> — ChatGPT, Claude, DeepSeek, Gemini, Microsoft Copilot</li>
+        <li><strong>Import from all major platforms</strong> — ChatGPT, Claude, DeepSeek, Gemini, Kimi, Microsoft Copilot</li>
         <li><strong>SQLite FTS5 full-text search</strong> — Fast, accurate search across millions of conversations</li>
         <li><strong>Session-based organization</strong> — Conversations are grouped by source and upload session</li>
         <li><strong>Cross-reference capability</strong> — Find related discussions across different AI platforms</li>

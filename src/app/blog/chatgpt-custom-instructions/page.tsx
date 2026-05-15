@@ -416,7 +416,7 @@ export default function ChatGPTCustomInstructions() {
         </div>
         <div className="bg-gray-800 rounded-xl p-5 border border-gray-700">
           <p className="text-white font-medium mb-2">🌐 AI Memory = Cross-Platform Knowledge</p>
-          <p className="text-gray-400 text-sm">Unified search across ChatGPT, Claude, DeepSeek, Gemini. Never lose context when switching AI tools. Inject relevant memories into any conversation. This is your universal memory layer.</p>
+          <p className="text-gray-400 text-sm">Unified search across ChatGPT, Claude, DeepSeek, Gemini, Kimi. Never lose context when switching AI tools. Inject relevant memories into any conversation. This is your universal memory layer.</p>
         </div>
       </div>
 

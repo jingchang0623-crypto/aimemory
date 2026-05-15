@@ -4,7 +4,7 @@ import BlogLayout from '@/components/BlogLayout';
 export const metadata: Metadata = {
   title: 'How to Backup All Your AI Conversations: Complete Guide (2026)',
   description:
-    'Complete guide to backing up AI conversations across every platform — ChatGPT, Claude, DeepSeek, Gemini, Perplexity, Grok, and Copilot. Learn manual and automated methods to save AI chat history permanently.',
+    'Complete guide to backing up AI conversations across every platform — ChatGPT, Claude, DeepSeek, Gemini, Kimi, Perplexity, Grok, and Copilot. Learn manual and automated methods to save AI chat history permanently.',
   keywords: [
     'backup ai conversations',
     'save ai chat history',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How to Backup All Your AI Conversations: Complete Guide (2026)',
     description:
-      'Complete guide to backing up AI conversations across ChatGPT, Claude, DeepSeek, Gemini, Perplexity, Grok, and Copilot. Manual and automated methods compared.',
+      'Complete guide to backing up AI conversations across ChatGPT, Claude, DeepSeek, Gemini, Kimi, Perplexity, Grok, and Copilot. Manual and automated methods compared.',
     url: 'https://aimemory.pro/blog/backup-all-ai-conversations',
     type: 'article',
   },
@@ -41,7 +41,7 @@ export default function BackupAllAIConversationsPage() {
         name: 'How do I backup all my AI conversations at once?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The most efficient way to backup all AI conversations at once is to use a unified tool like AI Memory, a free Chrome extension that automatically saves conversations from ChatGPT, Claude, DeepSeek, Gemini, and more in real-time. For manual backup, you need to export data separately from each platform: ChatGPT (Settings → Data Controls → Export Data), Claude (Settings → Account → Export), Gemini (takeout.google.com), and others. AI Memory eliminates this fragmentation by capturing everything from every platform into one searchable local database.',
+          text: 'The most efficient way to backup all AI conversations at once is to use a unified tool like AI Memory, a free Chrome extension that automatically saves conversations from ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more in real-time. For manual backup, you need to export data separately from each platform: ChatGPT (Settings → Data Controls → Export Data), Claude (Settings → Account → Export), Gemini (takeout.google.com), and others. AI Memory eliminates this fragmentation by capturing everything from every platform into one searchable local database.',
         },
       },
       {
@@ -49,7 +49,7 @@ export default function BackupAllAIConversationsPage() {
         name: 'Can I backup ChatGPT and Claude conversations together?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes! AI Memory is specifically designed for cross-platform AI conversation backup. It supports ChatGPT, Claude, DeepSeek, Gemini, Perplexity, Grok, Microsoft Copilot, and Kimi — all from a single Chrome extension. Every conversation is automatically saved to your local browser storage with FTS5 full-text search, so you can find any message across any platform instantly. There is no native way to export both into a single file, so a third-party tool is the only unified option.',
+          text: 'Yes! AI Memory is specifically designed for cross-platform AI conversation backup. It supports ChatGPT, Claude, DeepSeek, Gemini, Kimi, Perplexity, Grok, Microsoft Copilot, and Kimi — all from a single Chrome extension. Every conversation is automatically saved to your local browser storage with FTS5 full-text search, so you can find any message across any platform instantly. There is no native way to export both into a single file, so a third-party tool is the only unified option.',
         },
       },
       {
@@ -112,7 +112,7 @@ export default function BackupAllAIConversationsPage() {
         <p className="text-blue-700 mb-0">
           The fastest way to <strong>backup all AI conversations</strong> is with the{' '}
           <a href="/" className="underline font-semibold">AI Memory</a> Chrome extension — it auto-saves every
-          conversation from ChatGPT, Claude, DeepSeek, Gemini, Perplexity, Grok, and Copilot in real-time, stores
+          conversation from ChatGPT, Claude, DeepSeek, Gemini, Kimi, Perplexity, Grok, and Copilot in real-time, stores
           everything locally, and gives you full-text search across your entire history. For manual, one-time exports,
           each platform has its own process (detailed below). This guide covers both approaches so you can build a
           bulletproof <strong>AI conversation backup</strong> strategy.
@@ -486,7 +486,7 @@ export default function BackupAllAIConversationsPage() {
         <li><strong>Instant search across every message</strong> — not just conversation titles, but every word of every message</li>
         <li><strong>Boolean queries</strong> — use AND, OR, NOT, and phrase matching for precise results</li>
         <li><strong>Relevance ranking</strong> — results are sorted by how well they match your query</li>
-        <li><strong>Cross-platform search</strong> — one query finds results from ChatGPT, Claude, DeepSeek, Gemini, and all others</li>
+        <li><strong>Cross-platform search</strong> — one query finds results from ChatGPT, Claude, DeepSeek, Gemini, Kimi, and all others</li>
         <li><strong>Offline capability</strong> — search works completely offline since all data is local</li>
         <li><strong>Zero latency</strong> — even with thousands of conversations, search results appear instantly</li>
       </ul>
@@ -590,7 +590,7 @@ export default function BackupAllAIConversationsPage() {
           <a href="/" className="text-blue-600 underline">aimemory.pro</a> and drag-drop your export file.
         </li>
         <li>
-          <strong>Chat normally</strong> — Every new conversation on ChatGPT, Claude, DeepSeek, Gemini, Perplexity, Grok,
+          <strong>Chat normally</strong> — Every new conversation on ChatGPT, Claude, DeepSeek, Gemini, Kimi, Perplexity, Grok,
           and Copilot is automatically backed up in real-time. Zero effort required.
         </li>
       </ol>
@@ -608,7 +608,7 @@ export default function BackupAllAIConversationsPage() {
       <p>
         The most efficient way to <strong>backup AI conversations</strong> at once is to use a unified tool like{' '}
         <a href="/" className="text-blue-600 underline font-semibold">AI Memory</a>, a free Chrome extension that
-        automatically saves conversations from ChatGPT, Claude, DeepSeek, Gemini, and more in real-time. For manual
+        automatically saves conversations from ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more in real-time. For manual
         backup, you need to export data separately from each platform: ChatGPT (Settings → Data Controls → Export Data),
         Claude (Settings → Account → Export), Gemini (takeout.google.com), and others. AI Memory eliminates this
         fragmentation by capturing everything from every platform into one searchable local database.
@@ -617,7 +617,7 @@ export default function BackupAllAIConversationsPage() {
       <h3>Can I backup ChatGPT and Claude conversations together?</h3>
       <p>
         Yes! <a href="/" className="text-blue-600 underline font-semibold">AI Memory</a> is specifically designed for
-        cross-platform <strong>AI conversation backup</strong>. It supports ChatGPT, Claude, DeepSeek, Gemini, Perplexity,
+        cross-platform <strong>AI conversation backup</strong>. It supports ChatGPT, Claude, DeepSeek, Gemini, Kimi, Perplexity,
         Grok, Microsoft Copilot, and Kimi — all from a single Chrome extension. Every conversation is automatically saved
         to your local browser storage with FTS5 full-text search, so you can find any message across any platform instantly.
         There is no native way to export both into a single file, so a third-party tool is the only unified option.
@@ -687,7 +687,7 @@ export default function BackupAllAIConversationsPage() {
         <p>
           Don&apos;t wait until you lose important conversations. Install{' '}
           <a href="/" className="text-blue-600 underline font-semibold">AI Memory</a> now and get automatic, real-time{' '}
-          <strong>AI conversation backup</strong> across ChatGPT, Claude, DeepSeek, Gemini, Perplexity, Grok, and
+          <strong>AI conversation backup</strong> across ChatGPT, Claude, DeepSeek, Gemini, Kimi, Perplexity, Grok, and
           Copilot — with full-text search, completely free and 100% private.
         </p>
         <p className="mb-0">

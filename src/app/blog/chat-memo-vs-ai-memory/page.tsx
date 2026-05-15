@@ -146,7 +146,7 @@ export default function ChatMemoVsAIMemory() {
                     7 (ChatGPT, Gemini, Claude, DeepSeek, 豆包, Kimi, more)
                   </td>
                   <td className="border border-gray-300 px-4 py-3">
-                    4 (ChatGPT, Claude, DeepSeek, Gemini)
+                    5 (ChatGPT, Claude, DeepSeek, Gemini, Kimi)
                   </td>
                 </tr>
                 <tr>
@@ -284,8 +284,8 @@ export default function ChatMemoVsAIMemory() {
               any device
             </li>
             <li>
-              Mainly use the big four platforms: ChatGPT, Claude, DeepSeek, or
-              Gemini
+              Mainly use the big platforms: ChatGPT, Claude, DeepSeek,
+              Gemini, or Kimi
             </li>
             <li>
               Value a clean, fast search experience over raw platform count

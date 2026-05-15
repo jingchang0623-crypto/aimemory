@@ -642,7 +642,7 @@ export default function ExportGrokAIPage() {
 
       <h3>Can AI Memory combine Grok conversations with other platforms?</h3>
       <p>
-        Absolutely. AI Memory supports Grok, ChatGPT, Claude, DeepSeek, Gemini,
+        Absolutely. AI Memory supports Grok, ChatGPT, Claude, DeepSeek, Gemini, Kimi,
         Perplexity, and many other platforms. Search across all your AI conversations
         in one unified interface with memory injection across platforms.
       </p>

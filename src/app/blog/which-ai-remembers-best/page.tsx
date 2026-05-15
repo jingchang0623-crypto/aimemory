@@ -29,7 +29,7 @@ export default function WhichAIRemembersBest() {
         name: 'Which AI chatbot has the best memory in 2026?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'ChatGPT has the most mature native memory feature with its Memory system that persists facts across conversations. Claude relies on Projects for context persistence. Gemini offers Gems for custom personas but limited cross-conversation memory. DeepSeek has basic conversation history but no dedicated memory feature. For cross-platform memory, AI Memory provides a unified layer across all four.',
+          text: 'ChatGPT has the most mature native memory feature with its Memory system that persists facts across conversations. Claude relies on Projects for context persistence. Gemini offers Gems for custom personas but limited cross-conversation memory. DeepSeek has basic conversation history but no dedicated memory feature. Kimi has basic conversation history via Moonshot AI. For cross-platform memory, AI Memory provides a unified layer across all five.',
         },
       },
       {

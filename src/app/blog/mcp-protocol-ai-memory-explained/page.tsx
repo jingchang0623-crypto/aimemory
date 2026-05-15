@@ -68,7 +68,7 @@ const faqJsonLd = {
       name: 'What MCP tools does aimemory.pro provide for AI memory?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'aimemory.pro\u2019s MCP server exposes four tools: search_memory (full-text search across all your AI conversations from ChatGPT, Claude, DeepSeek, Gemini, and more), add_memory (save new conversations or notes to your memory store), get_context (retrieve relevant context snippets for a given query to inject into AI conversations), and list_memories (browse and paginate your recent saved conversations and memories).',
+        text: 'aimemory.pro\u2019s MCP server exposes four tools: search_memory (full-text search across all your AI conversations from ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more), add_memory (save new conversations or notes to your memory store), get_context (retrieve relevant context snippets for a given query to inject into AI conversations), and list_memories (browse and paginate your recent saved conversations and memories).',
       },
     },
     {

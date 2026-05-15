@@ -61,7 +61,7 @@ const faqJsonLd = {
       name: 'What are the benefits of connecting AI Memory\'s MCP server to my AI tools?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Connecting AI Memory\'s MCP server gives every AI assistant access to your entire conversation history across ChatGPT, Claude, DeepSeek, Gemini, and more. This means you can reference past solutions, avoid repeating questions, maintain context across platforms, and leverage accumulated knowledge without switching tools. It transforms isolated AI chats into a unified, searchable knowledge base accessible from any MCP-compatible client.',
+        text: 'Connecting AI Memory\'s MCP server gives every AI assistant access to your entire conversation history across ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more. This means you can reference past solutions, avoid repeating questions, maintain context across platforms, and leverage accumulated knowledge without switching tools. It transforms isolated AI chats into a unified, searchable knowledge base accessible from any MCP-compatible client.',
       },
     },
   ],
@@ -448,7 +448,7 @@ export default function ConnectMCPToAIPage() {
           <h2 id="connect-other">Connecting MCP to Other AI Clients</h2>
 
           <p>
-            The beauty of MCP is its universality. Beyond the four major platforms above, you can
+            The beauty of MCP is its universality. Beyond the five major platforms above, you can
             connect MCP servers to many other AI clients. Here&apos;s a quick overview of how{' '}
             <strong>MCP server setup</strong> works in other popular tools:
           </p>

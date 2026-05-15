@@ -88,7 +88,7 @@ export default function ChromeWebStoreGuide() {
             <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
               <h3 className="text-lg font-semibold mb-3">📝 Short Description (132 chars max)</h3>
               <div className="bg-gray-950 rounded-lg p-4 font-mono text-sm">
-                <p className="text-green-400">Auto-save AI conversations from ChatGPT, Claude, DeepSeek, Gemini. Full-text search. Free forever.</p>
+                <p className="text-green-400">Auto-save AI conversations from ChatGPT, Claude, DeepSeek, Gemini, Kimi. Full-text search. Free forever.</p>
               </div>
               <p className="text-gray-500 text-xs mt-2">132 characters exactly. Highlights key features and platforms.</p>
             </div>

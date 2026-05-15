@@ -503,7 +503,7 @@ print(f"Exported {len(export_data)} conversations")`}</code>
             <tr>
               <td className="border p-3"><strong>Cross-platform</strong></td>
               <td className="border p-3">ChatGPT only</td>
-              <td className="border p-3"><strong>ChatGPT, Claude, DeepSeek, Gemini</strong></td>
+              <td className="border p-3"><strong>ChatGPT, Claude, DeepSeek, Gemini, Kimi</strong></td>
               <td className="border p-3">ChatGPT only</td>
               <td className="border p-3">Any platform</td>
             </tr>

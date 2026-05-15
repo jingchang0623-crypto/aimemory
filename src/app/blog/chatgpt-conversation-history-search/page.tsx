@@ -44,7 +44,7 @@ export default function ChatGPTConversationHistorySearch() {
         name: 'Can I search across multiple AI platforms at once?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes! AI Memory supports importing from ChatGPT, Claude, DeepSeek, Gemini, and more. You can search all your AI conversations in one place with full-text search.',
+          text: 'Yes! AI Memory supports importing from ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more. You can search all your AI conversations in one place with full-text search.',
         },
       },
       {

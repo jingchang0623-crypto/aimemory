@@ -171,7 +171,7 @@ export default function ChatGPTMemoryVsThirdPartyToolsPage() {
 
       <h3 className="text-xl font-semibold mt-6 mb-3">2. No Cross-Platform Search</h3>
       <p className="text-gray-700 mb-4">
-        This is the single biggest gap. Your AI insights are scattered across ChatGPT, Claude, DeepSeek, Gemini,
+        This is the single biggest gap. Your AI insights are scattered across ChatGPT, Claude, DeepSeek, Gemini, Kimi,
         and Kimi. Each platform&apos;s memory only works within that platform.
       </p>
       <p className="text-gray-700 mb-4">

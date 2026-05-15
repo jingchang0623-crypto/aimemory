@@ -532,7 +532,7 @@ export default function ChatGPTProjectsVsMemoryVsCustomInstructions() {
             <tr>
               <td className="border border-gray-300 p-3">Cross-Platform</td>
               <td className="border border-gray-300 p-3">❌ ChatGPT only</td>
-              <td className="border border-gray-300 p-3">✅ ChatGPT, Claude, DeepSeek, Gemini</td>
+              <td className="border border-gray-300 p-3">✅ ChatGPT, Claude, DeepSeek, Gemini, Kimi</td>
             </tr>
             <tr>
               <td className="border border-gray-300 p-3">Export / Import</td>
@@ -573,7 +573,7 @@ export default function ChatGPTProjectsVsMemoryVsCustomInstructions() {
           platform. With AI Memory, you can:
         </p>
         <ul className="text-gray-700 mb-6">
-          <li>✅ <strong>Search across all your AI conversations</strong> — ChatGPT, Claude, DeepSeek, Gemini</li>
+          <li>✅ <strong>Search across all your AI conversations</strong> — ChatGPT, Claude, DeepSeek, Gemini, Kimi</li>
           <li>✅ <strong>Store unlimited memories</strong> — no 1,500-word cap</li>
           <li>✅ <strong>Export & import freely</strong> — JSON, CSV, Markdown</li>
           <li>✅ <strong>Inject context into any AI chat</strong> — automatic memory injection</li>

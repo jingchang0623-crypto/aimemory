@@ -338,7 +338,7 @@ export default function SecondBrainAI() {
 
       <h3>Cross-Platform Unification</h3>
       <p>
-        AI Memory supports <strong>five major AI platforms</strong>: ChatGPT, Claude, DeepSeek, Gemini,
+        AI Memory supports <strong>five major AI platforms</strong>: ChatGPT, Claude, DeepSeek, Gemini, Kimi,
         and Kimi. Import conversations from all of them into a single, searchable knowledge base. No
         other tool offers this breadth of AI platform support.
       </p>

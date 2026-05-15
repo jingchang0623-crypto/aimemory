@@ -169,7 +169,7 @@ export default function MCPServerBlogPage() {
           <p>AI Memory exposes four MCP tools:</p>
 
           <h3>1. search_memory</h3>
-          <p>Full-text search across all your saved conversations. Filter by platform (ChatGPT, Claude, DeepSeek, Gemini) and limit results.</p>
+          <p>Full-text search across all your saved conversations. Filter by platform (ChatGPT, Claude, DeepSeek, Gemini, Kimi) and limit results.</p>
 
           <h3>2. add_memory</h3>
           <p>Save new conversations or notes directly from your AI assistant. Tag them for easy retrieval later.</p>

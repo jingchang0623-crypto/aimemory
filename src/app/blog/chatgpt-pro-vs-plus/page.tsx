@@ -247,7 +247,7 @@ export default function ChatGptProVsPlusPage() {
             <ul className="space-y-2 text-gray-300 mb-6">
               <li>✅ <strong>Unlimited conversation storage</strong> — no 1,500 word limit</li>
               <li>✅ <strong>Full-text search</strong> across all conversations</li>
-              <li>✅ <strong>Cross-platform</strong> — search ChatGPT, Claude, DeepSeek, Gemini together</li>
+              <li>✅ <strong>Cross-platform</strong> — search ChatGPT, Claude, DeepSeek, Gemini, Kimi together</li>
               <li>✅ <strong>Works with any plan</strong> — Free, Plus, Pro, Team, Enterprise</li>
               <li>✅ <strong>Permanent</strong> — conversations stay accessible even if you change plans</li>
             </ul>

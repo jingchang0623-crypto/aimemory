@@ -576,7 +576,7 @@ export default function ChatGPTMemoryNotWorking() {
             <tr>
               <td className="border border-gray-300 p-3">Cross-Platform</td>
               <td className="border border-gray-300 p-3">❌ ChatGPT only</td>
-              <td className="border border-gray-300 p-3">✅ ChatGPT, Claude, DeepSeek, Gemini</td>
+              <td className="border border-gray-300 p-3">✅ ChatGPT, Claude, DeepSeek, Gemini, Kimi</td>
             </tr>
             <tr>
               <td className="border border-gray-300 p-3">Auto-Deletion</td>
@@ -679,7 +679,7 @@ export default function ChatGPTMemoryNotWorking() {
         <ul className="text-gray-700 mb-6">
           <li>✅ <strong>Unlimited memory storage</strong> — no more 1,500-word cap</li>
           <li>✅ <strong>Full-text search</strong> across every conversation you&apos;ve ever had</li>
-          <li>✅ <strong>Cross-platform context</strong> — works with ChatGPT, Claude, DeepSeek, Gemini</li>
+          <li>✅ <strong>Cross-platform context</strong> — works with ChatGPT, Claude, DeepSeek, Gemini, Kimi</li>
           <li>✅ <strong>Permanent data ownership</strong> — your data, your device</li>
           <li>✅ <strong>Memory injection</strong> — automatically provide context to any AI chat</li>
         </ul>

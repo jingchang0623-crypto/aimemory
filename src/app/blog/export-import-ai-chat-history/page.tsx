@@ -7,7 +7,7 @@ const slug = 'export-import-ai-chat-history';
 export const metadata: Metadata = {
   title: 'How to Export and Import AI Chat History Across Platforms (2026) — Complete Guide',
   description:
-    'Learn how to export and import AI chat history from ChatGPT, Claude, DeepSeek, Gemini, Grok, and more. Transfer conversations between platforms seamlessly with AI Memory.',
+    'Learn how to export and import AI chat history from ChatGPT, Claude, DeepSeek, Gemini, Kimi, Grok, and more. Transfer conversations between platforms seamlessly with AI Memory.',
   keywords: [
     'export import ai chat history',
     'transfer ai conversations',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How to Export and Import AI Chat History Across Platforms (2026)',
     description:
-      'Learn how to export and import AI chat history from ChatGPT, Claude, DeepSeek, Gemini, Grok, and more. Transfer conversations between platforms seamlessly.',
+      'Learn how to export and import AI chat history from ChatGPT, Claude, DeepSeek, Gemini, Kimi, Grok, and more. Transfer conversations between platforms seamlessly.',
     url: 'https://aimemory.pro/blog/export-import-ai-chat-history',
     type: 'article',
   },
@@ -60,7 +60,7 @@ const faqJsonLd = {
       name: 'What is the best way to migrate AI chat history between platforms?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The most efficient method is using AI Memory, which supports auto-capture across ChatGPT, Claude, DeepSeek, Gemini, Grok, Kimi, Copilot, Perplexity, and more. Install the Chrome extension on each platform, and all conversations are automatically saved locally with full-text search. No manual export/import needed.',
+        text: 'The most efficient method is using AI Memory, which supports auto-capture across ChatGPT, Claude, DeepSeek, Gemini, Kimi, Grok, Kimi, Copilot, Perplexity, and more. Install the Chrome extension on each platform, and all conversations are automatically saved locally with full-text search. No manual export/import needed.',
       },
     },
     {
@@ -84,7 +84,7 @@ const faqJsonLd = {
       name: 'Can I use AI Memory to unify all my AI conversations?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. AI Memory is designed as a universal bridge across all AI platforms. The Chrome extension auto-captures conversations from ChatGPT, Claude, DeepSeek, Gemini, Grok, Kimi, Copilot, Perplexity, and more. Everything is stored locally using SQLite FTS5 on WebAssembly, giving you instant full-text search across your entire AI conversation history. You can also inject past context into any AI platform via the extension or MCP server.',
+        text: 'Yes. AI Memory is designed as a universal bridge across all AI platforms. The Chrome extension auto-captures conversations from ChatGPT, Claude, DeepSeek, Gemini, Kimi, Grok, Kimi, Copilot, Perplexity, and more. Everything is stored locally using SQLite FTS5 on WebAssembly, giving you instant full-text search across your entire AI conversation history. You can also inject past context into any AI platform via the extension or MCP server.',
       },
     },
   ],
@@ -95,7 +95,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'How to Export and Import AI Chat History Across Platforms',
   description:
-    'Comprehensive guide to exporting and importing AI chat history from ChatGPT, Claude, DeepSeek, Gemini, Grok, and more. Learn every method to transfer conversations between AI platforms.',
+    'Comprehensive guide to exporting and importing AI chat history from ChatGPT, Claude, DeepSeek, Gemini, Kimi, Grok, and more. Learn every method to transfer conversations between AI platforms.',
   author: {
     '@type': 'Organization',
     name: 'AI Memory',
@@ -185,7 +185,7 @@ export default function ExportImportAIChatHistoryPage() {
 
       <h3>Unified Search</h3>
       <p>
-        When your conversations are spread across ChatGPT, Claude, DeepSeek, Gemini,
+        When your conversations are spread across ChatGPT, Claude, DeepSeek, Gemini, Kimi,
         and Grok, finding a specific discussion becomes nearly impossible. A unified
         export lets you search your entire AI conversation history in one place.
       </p>
@@ -405,7 +405,7 @@ export default function ExportImportAIChatHistoryPage() {
       <p>
         The AI Memory Chrome extension supports{' '}
         <strong>9+ AI platforms</strong> out of the box. Install it once, and every
-        conversation you have on ChatGPT, Claude, DeepSeek, Gemini, Grok, Kimi,
+        conversation you have on ChatGPT, Claude, DeepSeek, Gemini, Kimi, Grok, Kimi,
         Copilot, Perplexity, and more is automatically captured and indexed.
       </p>
 
@@ -569,7 +569,7 @@ export default function ExportImportAIChatHistoryPage() {
 
       <h3>Can I use AI Memory to unify all my AI conversations?</h3>
       <p>
-        Yes. AI Memory supports ChatGPT, Claude, DeepSeek, Gemini, Grok, Kimi,
+        Yes. AI Memory supports ChatGPT, Claude, DeepSeek, Gemini, Kimi, Grok, Kimi,
         Copilot, Perplexity, and more. All conversations are stored locally using
         SQLite FTS5 on WebAssembly, giving you instant full-text search across your
         entire AI conversation history — regardless of which platform it came from.
@@ -579,7 +579,7 @@ export default function ExportImportAIChatHistoryPage() {
 
       <p>
         The era of using a single AI platform is over. Today&apos;s power users switch
-        between ChatGPT, Claude, DeepSeek, Gemini, Grok, and more — sometimes
+        between ChatGPT, Claude, DeepSeek, Gemini, Kimi, Grok, and more — sometimes
         within the same hour. But each platform keeps your conversations locked in
         its own silo, forcing you to repeat context and lose valuable history.
       </p>

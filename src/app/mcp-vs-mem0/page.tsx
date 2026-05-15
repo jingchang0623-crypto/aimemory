@@ -103,7 +103,7 @@ const comparisonFeatures = [
       },
       {
         name: 'Cross-Platform Search',
-        aimemory: '✅ ChatGPT, Claude, DeepSeek, Gemini',
+        aimemory: '✅ ChatGPT, Claude, DeepSeek, Gemini, Kimi',
         mem0: '❌ Single-source only',
         winner: 'aimemory',
       },
@@ -306,7 +306,7 @@ export default function McpVsMem0() {
                   {[
                     'You want zero-config setup (one pip install)',
                     'You need offline/local memory (privacy-first)',
-                    'You want to search across ChatGPT, Claude, DeepSeek, Gemini',
+                    'You want to search across ChatGPT, Claude, DeepSeek, Gemini, Kimi',
                     'You need a completely free solution',
                     'You want 12 tools (not just 3)',
                     'You prefer your data on your own machine',
@@ -433,7 +433,7 @@ export default function McpVsMem0() {
                 {[
                   { icon: '🔍', title: 'Search Past Conversations', desc: '"What did I ask Claude about React patterns last week?"' },
                   { icon: '💾', title: 'Save & Organize', desc: 'Save important insights with tags, browse by topic or date.' },
-                  { icon: '🌐', title: 'Cross-Platform', desc: 'Search across ChatGPT, Claude, DeepSeek, Gemini from one place.' },
+                  { icon: '🌐', title: 'Cross-Platform', desc: 'Search across ChatGPT, Claude, DeepSeek, Gemini, Kimi from one place.' },
                   { icon: '🔒', title: 'Privacy First', desc: 'All data stays on your machine. No cloud dependency.' },
                   { icon: '📦', title: 'Import & Export', desc: 'Upload ChatGPT exports, backup as JSON, migrate freely.' },
                 ].map((item) => (

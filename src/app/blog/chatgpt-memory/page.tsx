@@ -240,7 +240,7 @@ export default function ChatGPTMemoryGuide() {
           <tr>
             <td>Cross-platform</td>
             <td>❌ ChatGPT only</td>
-            <td>✅ ChatGPT, Claude, DeepSeek, Gemini</td>
+            <td>✅ ChatGPT, Claude, DeepSeek, Gemini, Kimi</td>
           </tr>
           <tr>
             <td>Data ownership</td>

@@ -133,7 +133,7 @@ export default function ChatGPTHistoryViewerPage() {
 
       <h3>No Cross-Platform View</h3>
       <p>
-        If you use multiple AI tools — ChatGPT, Claude, DeepSeek, Gemini — there is no unified
+        If you use multiple AI tools — ChatGPT, Claude, DeepSeek, Gemini, Kimi — there is no unified
         view of your AI conversation history. Each platform has its own siloed interface.
       </p>
 

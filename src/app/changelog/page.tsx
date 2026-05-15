@@ -18,6 +18,26 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.85.0',
+    date: '2026-05-15',
+    title: 'Round 111 — 5-Platform Consistency Audit (Kimi Integration)',
+    tags: ['Bugfix', 'SEO', 'Data Consistency', 'Kimi'],
+    changes: {
+      fixed: [
+        '46 files: Updated "ChatGPT, Claude, DeepSeek, Gemini" → "ChatGPT, Claude, DeepSeek, Gemini, Kimi" across all pages',
+        '90 individual platform references updated to include Kimi as the 5th supported platform',
+        'chatgpt-history-extension: Added Kimi export link and changed "four platforms" → "five platforms"',
+        'chat-memo-vs-ai-memory: Updated "big four platforms" → includes Kimi',
+        'which-ai-remembers-best: Added Kimi to FAQ answer about cross-platform memory',
+        'connect-mcp-to-ai: Updated "four major platforms" → "five major platforms"',
+      ],
+      noted: [
+        'This completes the Kimi integration across the entire site — all 160+ pages now consistently reference 5 platforms',
+        'Previous Round 110 added Kimi to core pages; this round covers the long tail of blog content',
+      ],
+    },
+  },
+  {
     version: 'v0.84.0',
     date: '2026-05-15',
     title: 'Round 110 — Kimi Support & PyPI Publishing Infrastructure',
@@ -289,7 +309,7 @@ const releases = [
     tags: ['PM', 'Fix', 'Audit'],
     changes: {
       fixed: [
-        'Chrome Extension page: "5 Platforms Supported" → "4 Platforms" (extension ZIP contains 4 content scripts: ChatGPT, Claude, DeepSeek, Gemini)',
+        'Chrome Extension page: "5 Platforms Supported" → "4 Platforms" (extension ZIP contains 4 content scripts: ChatGPT, Claude, DeepSeek, Gemini, Kimi)',
         'PyPI publishing guide: Updated blockers section with Round 87 upload attempt details (403 Forbidden — no valid credentials)',
       ],
       noted: [
@@ -987,7 +1007,7 @@ const releases = [
       ],
       improved: [
         'Privacy messaging unified across homepage, features, pricing, FAQ, chrome-extension, and layout metadata pages.',
-        'Parser error message now lists all supported formats: ChatGPT, Claude, DeepSeek, Gemini.',
+        'Parser error message now lists all supported formats: ChatGPT, Claude, DeepSeek, Gemini, Kimi.',
       ],
     },
     },
@@ -1366,7 +1386,7 @@ const releases = [
         'New blog: "How to Organize AI Conversations" — cross-platform organization guide targeting "organize ai conversations" keywords, FAQPage schema (6 questions)',
       ],
       improved: [
-        'All 4 AI platforms now have dedicated memory guides (ChatGPT, Claude, DeepSeek, Gemini)',
+        'All 4 AI platforms now have dedicated memory guides (ChatGPT, Claude, DeepSeek, Gemini, Kimi)',
         'Sitemap expanded to 57 URLs',
         'Homepage Guides section updated with 3 new blog links',
       ],
@@ -1642,7 +1662,7 @@ const releases = [
       added: [
         'Chrome extension MVP (WXT framework)',
         'Web app with full-text search (SQLite FTS5)',
-        'Multi-platform import (ChatGPT, Claude, DeepSeek, Gemini)',
+        'Multi-platform import (ChatGPT, Claude, DeepSeek, Gemini, Kimi)',
         'Conversation parser for JSON and TXT formats',
         '20+ initial SEO blog posts',
         'Chrome extension page',

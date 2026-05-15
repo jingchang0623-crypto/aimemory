@@ -30,7 +30,7 @@ export default function AIMemoryForTeams() {
         name: 'What is the best AI memory tool for teams in 2026?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'AI Memory is the best team AI memory tool because it supports cross-platform conversations (ChatGPT, Claude, DeepSeek, Gemini), offers full-text search via SQLite FTS5, provides MCP protocol integration for developer teams, and stores data locally for privacy. For enterprise teams, ChatGPT Team ($25/user/month) and Claude Team ($30/user/month) offer built-in team features, but AI Memory bridges conversations across both platforms.',
+          text: 'AI Memory is the best team AI memory tool because it supports cross-platform conversations (ChatGPT, Claude, DeepSeek, Gemini, Kimi), offers full-text search via SQLite FTS5, provides MCP protocol integration for developer teams, and stores data locally for privacy. For enterprise teams, ChatGPT Team ($25/user/month) and Claude Team ($30/user/month) offer built-in team features, but AI Memory bridges conversations across both platforms.',
         },
       },
       {

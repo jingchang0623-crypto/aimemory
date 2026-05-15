@@ -472,7 +472,7 @@ nano claude_desktop_config.json`}
       <p>
         One of the most powerful MCP servers you can connect to Claude Desktop is{' '}
         <strong>AI Memory</strong>. It gives Claude the ability to search through all your saved
-        conversations from ChatGPT, Claude, DeepSeek, Gemini, and other AI platforms.
+        conversations from ChatGPT, Claude, DeepSeek, Gemini, Kimi, and other AI platforms.
       </p>
 
       <h3>AI Memory MCP Server Configuration</h3>

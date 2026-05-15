@@ -114,7 +114,7 @@ export default function BestMCPServers2026() {
           <ul className="list-disc list-inside text-gray-600 mb-3 space-y-1">
             <li>12 tools: search_memories, save_memory, list_memories, get_memory, update_memory, delete_memory, memory_stats, export_memories, import_memories, batch_save_memories, get_all_tags, clear_all_memories</li>
             <li>Full-text search with SQLite FTS5</li>
-            <li>Cross-platform: ChatGPT, Claude, DeepSeek, Gemini exports</li>
+            <li>Cross-platform: ChatGPT, Claude, DeepSeek, Gemini, Kimi exports</li>
             <li>Zero-config local installation</li>
             <li>100% free and open-source</li>
           </ul>

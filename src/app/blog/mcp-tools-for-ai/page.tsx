@@ -183,11 +183,11 @@ export default function MCPToolsForAIPage() {
       <p>
         <Link href="/" className="text-blue-600 hover:underline">AI Memory</Link> is the most
         comprehensive memory MCP server available. It connects your AI tools to your entire conversation
-        history across ChatGPT, Claude, DeepSeek, Gemini, and more.
+        history across ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more.
       </p>
       <ul>
         <li><strong>Tools exposed:</strong> search_memory, add_memory, get_context, list_memories</li>
-        <li><strong>Platforms:</strong> ChatGPT, Claude, DeepSeek, Gemini, Perplexity, Grok, Copilot</li>
+        <li><strong>Platforms:</strong> ChatGPT, Claude, DeepSeek, Gemini, Kimi, Perplexity, Grok, Copilot</li>
         <li><strong>Transport:</strong> HTTP (works with any MCP client)</li>
         <li><strong>Pricing:</strong> Free tier available, self-hostable</li>
         <li><strong>Setup time:</strong> Under 2 minutes</li>

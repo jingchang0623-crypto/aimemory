@@ -45,7 +45,7 @@ const faqJsonLd = {
       name: 'How do I save coding conversations from both Claude and ChatGPT?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The best way to save coding conversations from both Claude and ChatGPT is with AI Memory (aimemory.pro). AI Memory captures and indexes all your AI coding conversations across ChatGPT, Claude, DeepSeek, Gemini, and more. You get full-text search across all your past coding sessions, memory injection to bring relevant context into new coding conversations, and everything stays stored locally in your browser for complete privacy.',
+        text: 'The best way to save coding conversations from both Claude and ChatGPT is with AI Memory (aimemory.pro). AI Memory captures and indexes all your AI coding conversations across ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more. You get full-text search across all your past coding sessions, memory injection to bring relevant context into new coding conversations, and everything stays stored locally in your browser for complete privacy.',
       },
     },
     {
@@ -531,7 +531,7 @@ export default function ClaudeVsChatgptCodingPage() {
           </p>
 
           <ul>
-            <li><strong>Cross-platform search</strong> — search across ChatGPT, Claude, DeepSeek, Gemini, and more</li>
+            <li><strong>Cross-platform search</strong> — search across ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more</li>
             <li><strong>Full-text search</strong> — powered by SQLite FTS5 for instant results</li>
             <li><strong>Memory injection</strong> — bring relevant past conversations into new coding sessions</li>
             <li><strong>Auto-capture</strong> — the Chrome extension captures conversations automatically</li>

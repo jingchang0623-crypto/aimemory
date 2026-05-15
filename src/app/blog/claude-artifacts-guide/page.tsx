@@ -61,7 +61,7 @@ const faqJsonLd = {
       name: 'How can I save and search my Claude Artifacts across all conversations?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The best way to save and search your Claude Artifacts is with AI Memory (aimemory.pro). AI Memory captures and indexes all your Claude conversations, including every artifact that Claude creates. Once indexed, you can perform full-text search across all your artifacts — find a specific code snippet, document draft, or diagram from any past conversation instantly. AI Memory stores everything locally in your browser for complete privacy, supports memory injection to bring past artifact context into new Claude sessions, and works across ChatGPT, Claude, DeepSeek, Gemini, and more.',
+        text: 'The best way to save and search your Claude Artifacts is with AI Memory (aimemory.pro). AI Memory captures and indexes all your Claude conversations, including every artifact that Claude creates. Once indexed, you can perform full-text search across all your artifacts — find a specific code snippet, document draft, or diagram from any past conversation instantly. AI Memory stores everything locally in your browser for complete privacy, supports memory injection to bring past artifact context into new Claude sessions, and works across ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more.',
       },
     },
   ],
@@ -687,7 +687,7 @@ export default function ClaudeArtifactsGuidePage() {
           <ol>
             <li><strong>Automatic capture:</strong> The AI Memory browser extension (or export/import workflow) captures your Claude conversations as they happen. Every artifact — every code snippet, document, diagram, and website — gets indexed automatically.</li>
             <li><strong>Full-text search:</strong> Search for any phrase, function name, topic, or keyword across all your Claude artifacts. Find that specific React component you built three months ago by searching for &quot;pricing table toggle&quot; — AI Memory will find it instantly.</li>
-            <li><strong>Cross-platform indexing:</strong> If you use multiple AI tools (ChatGPT, Claude, DeepSeek, Gemini), AI Memory unifies all your conversations in one searchable database. Search once, find results from everywhere.</li>
+            <li><strong>Cross-platform indexing:</strong> If you use multiple AI tools (ChatGPT, Claude, DeepSeek, Gemini, Kimi), AI Memory unifies all your conversations in one searchable database. Search once, find results from everywhere.</li>
             <li><strong>Memory injection:</strong> When you start a new Claude conversation, AI Memory can identify relevant past conversations and inject them as context. This means Claude in your new session effectively &quot;remembers&quot; your past artifacts.</li>
           </ol>
 
