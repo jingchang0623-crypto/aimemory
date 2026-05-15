@@ -584,6 +584,17 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
   {
+    slug: 'deepseek-mcp-server',
+    title: 'DeepSeek MCP Server: How to Give DeepSeek AI Persistent Memory (2026)',
+    description: 'Learn how to connect DeepSeek AI to persistent memory using MCP Server. Save conversations, search across history, and give DeepSeek context awareness across sessions.',
+    category: 'Guides',
+    date: '2026-05-15',
+    readTime: '12 min',
+    keywords: ['deepseek mcp', 'deepseek memory server', 'deepseek persistent memory', 'deepseek context', 'mcp deepseek', 'deepseek memory injection'],
+    tags: ['deepseek', 'mcp', 'memory', 'guide', 'server'],
+    lang: 'en',
+  },
+  {
     slug: 'organize-ai-conversations',
     title: 'How to Organize AI Conversations: The Complete Guide (2026)',
     description: 'Learn how to organize your AI conversations across ChatGPT, Claude, DeepSeek and Gemini. Best methods, tools, and tips for managing hundreds of AI chats.',

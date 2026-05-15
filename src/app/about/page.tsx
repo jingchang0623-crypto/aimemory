@@ -138,7 +138,7 @@ export default function AboutPage() {
               {
                 icon: '🔒',
                 title: 'Privacy First',
-                desc: 'Your data stays in your browser. No accounts required. No tracking. Delete anytime.',
+                desc: 'Your data is stored in a private, session-isolated space. No accounts required. No tracking. Delete anytime.',
               },
               {
                 icon: '🆓',
