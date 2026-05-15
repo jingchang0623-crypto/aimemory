@@ -106,7 +106,7 @@ export async function POST(request: NextRequest) {
     // Handle JSON upload
     else if (contentType.includes('application/json')) {
       const body = await request.json();
-      const { fileName: fn, fileType, fileData } = body;
+      const { fileName: fn, fileData } = body;
 
       if (!fn || !fileData) {
         return NextResponse.json({ error: 'Missing fileName or fileData' }, { status: 400 });

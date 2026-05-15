@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Dynamic import to avoid build-time issues
-    const { default: db, searchConversations, getAllConversations, getConversationCount, getConversation, deleteSession } = await import('@/lib/db');
+    const { default: db, searchConversations, getAllConversations, getConversation, deleteSession } = await import('@/lib/db');
 
     const body = await request.json();
     const { method, id: reqId, params } = body;
