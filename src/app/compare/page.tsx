@@ -182,7 +182,7 @@ export default function ComparePage() {
         name: 'Which AI memory tool is most private?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'AI Memory is the most private option because it stores all data locally in your browser using IndexedDB. No data is sent to any server unless you explicitly enable cloud sync (Pro feature with E2EE). Chat Memo and Supermemory store data on their servers. Mem0 requires a cloud API connection.',
+          text: 'AI Memory stores your data in an isolated session on our server — only you can access it with your session cookie. No tracking, no data selling. The Chrome extension can also store data locally in your browser using IndexedDB. Unlike Chat Memo and Supermemory which store data on their servers, AI Memory ensures session isolation so your conversations are private. Mem0 requires a cloud API connection.',
         },
       },
     ],

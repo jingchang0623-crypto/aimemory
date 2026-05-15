@@ -32,7 +32,7 @@ const faqCategories = [
       },
       {
         q: 'Is AI Memory really free?',
-        a: 'Yes, all core features are completely free with unlimited local storage. You can upload, search, and browse your conversations without any limits. The Plus plan ($3.9/month) adds AI summaries and multi-device access. The Pro plan ($7.9/month) adds cloud sync with end-to-end encryption and advanced AI analysis features.',
+        a: 'Yes, all core features are completely free. You can upload, search, and browse your conversations without any limits. The Plus plan ($3.9/month) adds AI summaries and multi-device access. The Pro plan ($7.9/month) adds cloud sync with end-to-end encryption and advanced AI analysis features.',
       },
       {
         q: 'Do I need to install anything?',
@@ -80,7 +80,7 @@ const faqCategories = [
       },
       {
         q: 'Is AI Memory GDPR compliant?',
-        a: 'Yes. AI Memory stores data locally by default, meaning no personal data is processed on our servers. If you use cloud sync, data is end-to-end encrypted and we cannot access it. We don\'t use cookies for tracking, and no data is shared with third parties.',
+        a: 'Yes. AI Memory stores your data in an isolated session on our server — only you can access it with your session cookie. No tracking, no data selling, and no data is shared with third parties. You can export or delete everything with one click at any time.',
       },
     ],
   },
@@ -98,11 +98,11 @@ const faqCategories = [
       },
       {
         q: 'Can I use AI Memory offline?',
-        a: 'Yes! Since all data is stored locally in your browser, AI Memory works completely offline. You can search, browse, and manage your conversations without an internet connection.',
+        a: 'The Chrome extension works offline since it stores data locally in your browser using IndexedDB. The web app at aimemory.pro requires an internet connection since your data is stored in your session on our server. You can always export your data for offline access.',
       },
       {
         q: 'How much data can AI Memory handle?',
-        a: 'AI Memory uses IndexedDB, which typically allows 50MB-2GB of storage depending on your browser. This is enough for thousands of conversations. The system uses full-text search (FTS5) for fast results even with large datasets.',
+        a: 'AI Memory can handle thousands of conversations. The web app uses SQLite FTS5 for lightning-fast full-text search even with large datasets. The Chrome extension uses IndexedDB (50MB-2GB depending on your browser) for local storage. There are no limits on the number of conversations you can import.',
       },
     ],
   },
@@ -112,7 +112,7 @@ const faqCategories = [
     questions: [
       {
         q: 'What\'s included in the free plan?',
-        a: 'The free plan includes unlimited local storage, full-text search across all conversations, export from 5 AI platforms, memory injection, the Chrome extension, and MCP server access. There are no limits on the number of conversations you can store.',
+        a: 'The free plan includes unlimited conversation imports, full-text search across all conversations, export from 5 AI platforms, memory injection, the Chrome extension, and MCP server access. There are no limits on the number of conversations you can store.',
       },
       {
         q: 'What does the Pro plan include?',
@@ -124,7 +124,7 @@ const faqCategories = [
       },
       {
         q: 'Can I cancel anytime?',
-        a: 'Yes, you can cancel your Pro subscription at any time. Your data remains accessible — you just lose access to Pro features like cloud sync. All locally stored data is unaffected.',
+        a: 'Yes, you can cancel your Pro subscription at any time. Your data remains fully accessible — you just lose access to Pro features like cloud sync. All your stored conversations are unaffected.',
       },
     ],
   },
