@@ -79,7 +79,7 @@ export default function ChromeWebStoreGuide() {
             <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
               <h3 className="text-lg font-semibold mb-3">📌 Extension Title (75 chars max)</h3>
               <div className="bg-gray-950 rounded-lg p-4 font-mono text-sm">
-                <p className="text-green-400">AI Memory - Save & Search ChatGPT, Claude, DeepSeek History</p>
+                <p className="text-green-400">AI Memory - Save & Search ChatGPT, Claude, DeepSeek, Gemini, Kimi</p>
               </div>
               <p className="text-gray-500 text-xs mt-2">Contains all key keywords: AI Memory, Save, Search, ChatGPT, Claude, DeepSeek</p>
             </div>
@@ -98,7 +98,7 @@ export default function ChromeWebStoreGuide() {
               <h3 className="text-lg font-semibold mb-3">📄 Detailed Description</h3>
               <div className="bg-gray-950 rounded-lg p-6 text-sm text-gray-300 space-y-4">
                 <p><strong>Your AI conversations, preserved forever.</strong></p>
-                <p>AI Memory automatically saves your conversations from ChatGPT, Claude, DeepSeek, and Gemini as you chat. No more manual exports, no more lost insights.</p>
+                <p>AI Memory automatically saves your conversations from ChatGPT, Claude, DeepSeek, Gemini, and Kimi as you chat. No more manual exports, no more lost insights.</p>
                 
                 <p className="font-semibold mt-4">🔍 Full-Text Search</p>
                 <p>Search across hundreds of conversations instantly. Find that one solution you discussed months ago — no matter which AI you used.</p>
@@ -113,6 +113,7 @@ export default function ChromeWebStoreGuide() {
                   <li>Claude (claude.ai)</li>
                   <li>DeepSeek (chat.deepseek.com)</li>
                   <li>Gemini (gemini.google.com)</li>
+                  <li>Kimi (kimi.moonshot.cn)</li>
                 </ul>
                 
                 <p className="font-semibold mt-4">🧠 Memory Injection</p>

@@ -5,11 +5,11 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'About AI Memory - Our Mission to Preserve AI Conversations',
   description:
-    'AI Memory is a free tool that helps you save, search, and manage conversations from ChatGPT, Claude, DeepSeek, and more. Learn about our mission.',
+    'AI Memory is a free tool that helps you save, search, and manage conversations from ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more. Learn about our mission.',
   openGraph: {
     title: 'About AI Memory - Our Mission to Preserve AI Conversations',
     description:
-      'AI Memory is a free tool that helps you save, search, and manage conversations from ChatGPT, Claude, DeepSeek, and more.',
+      'AI Memory is a free tool that helps you save, search, and manage conversations from ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more.',
     url: 'https://aimemory.pro/about',
     type: 'website',
   },
@@ -37,7 +37,7 @@ export default function AboutPage() {
         priceCurrency: 'USD',
       },
       description:
-        'Save, search, and manage your ChatGPT, Claude, and DeepSeek conversations. Free browser-based tool with Chrome extension.',
+        'Save, search, and manage your ChatGPT, Claude, DeepSeek, Gemini, and Kimi conversations. Free browser-based tool with Chrome extension.',
       url: 'https://aimemory.pro',
     },
   };
@@ -119,7 +119,7 @@ export default function AboutPage() {
           <h3>2. Chrome Extension (Auto-Capture)</h3>
           <p>
             Our Chrome extension works in the background to automatically save
-            new conversations from ChatGPT, Claude, DeepSeek, and Gemini as you
+            new conversations from ChatGPT, Claude, DeepSeek, Gemini, and Kimi as you
             chat. No manual export needed.
           </p>
 

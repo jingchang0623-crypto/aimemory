@@ -18,6 +18,26 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.86.0',
+    date: '2026-05-15',
+    title: 'Round 112 — Data Consistency Audit (MCP Clients + Kimi Coverage)',
+    tags: ['Bugfix', 'SEO', 'Data Consistency'],
+    changes: {
+      fixed: [
+        'Features page: MCP Server "(100+ clients)" → "(113+ clients)" in comparison table',
+        'Features page metadata: Added Kimi to description',
+        'About page: Chrome Extension section now includes Kimi in platform list',
+        'About page metadata: Added Kimi to all descriptions (meta, OpenGraph, JSON-LD)',
+        'docs/chrome-web-store: Updated extension title, detailed description, and platform list with Kimi',
+        'docs/mcp: Added Kimi to platform support in MCP description and FAQ',
+      ],
+      noted: [
+        'These pages were missed in Round 111\'s 46-file Kimi sweep — now fully consistent',
+        'All core pages now correctly show: 5 platforms (ChatGPT, Claude, DeepSeek, Gemini, Kimi) + 113+ MCP clients',
+      ],
+    },
+  },
+  {
     version: 'v0.85.0',
     date: '2026-05-15',
     title: 'Round 111 — 5-Platform Consistency Audit (Kimi Integration)',

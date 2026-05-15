@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Features & Pricing - AI Memory',
-  description: 'Explore AI Memory features: import from ChatGPT, Claude, DeepSeek & Gemini. Full-text search, Chrome extension auto-save, memory injection, MCP server, session-isolated private storage.',
+  description: 'Explore AI Memory features: import from ChatGPT, Claude, DeepSeek, Gemini & Kimi. Full-text search, Chrome extension auto-save, memory injection, MCP server, session-isolated private storage.',
   alternates: {
     canonical: 'https://aimemory.pro/features',
   },
@@ -67,7 +67,7 @@ const comparison = [
   { feature: 'No account required', aimemory: true, chatmemo: false, aiexporter: true },
   { feature: 'Cross-platform unified view', aimemory: true, chatmemo: false, aiexporter: false },
   { feature: 'Memory injection', aimemory: true, chatmemo: false, aiexporter: false },
-  { feature: 'MCP Server (100+ clients)', aimemory: true, chatmemo: false, aiexporter: false },
+  { feature: 'MCP Server (113+ clients)', aimemory: true, chatmemo: false, aiexporter: false },
 ];
 
 function CheckIcon() {

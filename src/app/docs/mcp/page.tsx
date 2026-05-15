@@ -36,7 +36,7 @@ export default function MCPDocsPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">What is MCP?</h2>
           <p className="text-gray-600 mb-4">
             The <strong>Model Context Protocol (MCP)</strong> is an open standard that lets AI assistants connect to external data sources and tools.
-            With AI Memory&apos;s MCP Server, your AI assistant can search through your entire conversation history — across ChatGPT, Claude, DeepSeek, and Gemini.
+            With AI Memory&apos;s MCP Server, your AI assistant can search through your entire conversation history — across ChatGPT, Claude, DeepSeek, Gemini, and Kimi.
           </p>
           <p className="text-sm text-gray-500 mb-4 border-l-2 border-blue-200 pl-3">
             <strong>Note:</strong> Tools below are for the <strong>Hosted API</strong> endpoint (aimemory.pro/api/mcp). 
@@ -313,7 +313,7 @@ Content-Type: application/json
             </div>
             <div className="bg-white rounded-xl border border-gray-200 p-6">
               <h3 className="font-semibold text-gray-900 mb-2">Which platforms are supported?</h3>
-              <p className="text-gray-600">AI Memory supports ChatGPT, Claude, DeepSeek, and Gemini. You can import conversations from all platforms and search them through the MCP interface.</p>
+              <p className="text-gray-600">AI Memory supports ChatGPT, Claude, DeepSeek, Gemini, and Kimi. You can import conversations from all platforms and search them through the MCP interface.</p>
             </div>
           </div>
         </section>
