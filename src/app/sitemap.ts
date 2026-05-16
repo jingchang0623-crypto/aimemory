@@ -14,6 +14,7 @@ const staticPages: { path: string; priority: number; changeFrequency: 'yearly' |
   { path: '/mcp-vs-mem0', priority: 0.95, changeFrequency: 'monthly' },
   { path: '/deepseek-memory-guide', priority: 0.95, changeFrequency: 'monthly' },
   { path: '/deepseek-ai-memory', priority: 0.95, changeFrequency: 'monthly' },
+  { path: '/ai-conversation-backup', priority: 0.95, changeFrequency: 'monthly' },
   { path: '/directory', priority: 0.95, changeFrequency: 'weekly' },
   { path: '/mcp-directory', priority: 0.95, changeFrequency: 'weekly' },
   { path: '/pricing', priority: 0.8, changeFrequency: 'monthly' },
@@ -54,6 +55,8 @@ const highPriorityBlogSlugs = [
   'backup-all-ai-conversations',
   'claude-desktop-mcp-setup',
   'chatgpt-memory-plugin',
+  'chatgpt-conversation-disappeared',
+  'recover-deleted-chatgpt-conversation',
 ];
 
 function getBlogSlugs(): string[] {

@@ -18,8 +18,52 @@ export const metadata: Metadata = {
 };
 
 export default function DeepSeekAIMemory() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Does DeepSeek have memory like ChatGPT?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No, DeepSeek does not have built-in memory. Unlike ChatGPT\'s memory feature, DeepSeek starts every conversation fresh without remembering past context. You need to manually provide context or use AI Memory to give DeepSeek persistent memory across conversations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How can I give DeepSeek persistent memory?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'There are 3 free ways: (1) Use the AI Memory Chrome Extension to automatically save and inject DeepSeek conversations, (2) Upload exported DeepSeek conversations to aimemory.pro for search and injection, (3) Install the AI Memory MCP Server to search conversations from Claude Desktop, Cursor, and 113+ MCP clients.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can DeepSeek remember previous conversations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'DeepSeek cannot natively remember previous conversations. Each new chat starts with no context. To make DeepSeek remember, use AI Memory tools: the Chrome Extension captures conversations automatically, the web app lets you upload and search history, and the MCP Server enables cross-platform memory injection.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is there a DeepSeek memory plugin or extension?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, the AI Memory Chrome Extension is the best DeepSeek memory plugin. It automatically saves every DeepSeek conversation, provides full-text search, and can inject past context into new chats. It also works with ChatGPT, Claude, Gemini, and Kimi for unified cross-platform memory.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      {/* JSON-LD FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <Link href="/" className="text-2xl font-bold text-gray-900">
