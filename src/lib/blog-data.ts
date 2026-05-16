@@ -20,6 +20,17 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   // === Guides ===
   {
+    slug: 'gpt-5-chatgpt-memory-guide',
+    title: 'GPT-5 ChatGPT Memory Guide 2026 — What You Need to Know',
+    description: 'Is GPT-5 coming? Will it fix ChatGPT memory limits? Complete guide to GPT-5 memory features, ChatGPT memory workarounds, and how to prepare your AI memory strategy for the next model.',
+    category: 'Guides',
+    date: '2026-05-17',
+    readTime: '12 min',
+    keywords: ['gpt-5', 'gpt5', 'chatgpt gpt-5', 'gpt-5 memory', 'gpt-5 release date 2026', 'chatgpt memory limit', 'gpt-5 vs gpt-4', 'openai gpt-5', 'chatgpt memory full fix', 'ai memory management'],
+    tags: ['gpt-5', 'gpt5', 'chatgpt', 'memory', 'openai', 'guide', 'ai-memory', 'future'],
+    lang: 'en',
+  },
+  {
     slug: 'what-is-memory-injection',
     title: 'What Is Memory Injection? How to Make AI Remember You (2026)',
     description: 'Memory injection automatically inserts your past context into AI chats. Learn what it is, how it works with ChatGPT, Claude, DeepSeek, Gemini & Kimi, and why built-in memory falls short.',
