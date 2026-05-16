@@ -596,6 +596,7 @@ No accounts required. No third-party access. Your conversations are stored in an
               { title: 'Give AI Persistent Memory', href: '/blog/give-ai-persistent-memory' },
               { title: 'Gemini Memory Guide', href: '/blog/gemini-memory' },
               { title: 'DeepSeek Memory Guide', href: '/blog/deepseek-memory' },
+              { title: 'DeepSeek AI Memory', href: '/blog/deepseek-ai-memory' },
               { title: 'Organize AI Conversations', href: '/blog/organize-ai-conversations' },
               { title: 'ChatGPT Memory Not Working', href: '/blog/chatgpt-memory-not-working' },
               { title: 'Transfer ChatGPT to Claude', href: '/blog/transfer-chatgpt-to-claude' },

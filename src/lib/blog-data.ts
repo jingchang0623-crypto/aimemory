@@ -618,6 +618,17 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
   {
+    slug: 'deepseek-ai-memory',
+    title: 'DeepSeek AI Memory: 3 Free Ways to Give DeepSeek Persistent Memory (2026)',
+    description: 'DeepSeek doesn\'t remember past conversations. Learn 3 free methods to give DeepSeek AI persistent memory: web upload, Chrome extension, and MCP server integration.',
+    category: 'Guides',
+    date: '2026-05-16',
+    readTime: '8 min',
+    keywords: ['deepseek ai memory', 'deepseek persistent memory', 'deepseek conversation history', 'deepseek remember me', 'deepseek chat memory', 'deepseek持久记忆'],
+    tags: ['deepseek', 'memory', 'guide', 'chrome-extension', 'mcp', 'cross-platform'],
+    lang: 'en',
+  },
+  {
     slug: 'organize-ai-conversations',
     title: 'How to Organize AI Conversations: The Complete Guide (2026)',
     description: 'Learn how to organize your AI conversations across ChatGPT, Claude, DeepSeek and Gemini. Best methods, tools, and tips for managing hundreds of AI chats.',

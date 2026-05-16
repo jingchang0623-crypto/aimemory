@@ -45,7 +45,7 @@ export default function ChromeExtension() {
             href="/ai-memory-extension.zip"
             className="inline-block px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-blue-700 transition-colors mb-4"
           >
-            ⬇️ Download Extension (v1.0)
+            ⬇️ Download Extension (v1.1.0)
           </a>
           <p className="text-sm text-gray-400">
             Works with Chrome, Edge, Brave, and other Chromium browsers
@@ -99,7 +99,7 @@ export default function ChromeExtension() {
           <p className="text-gray-600 mb-6">
             One extension works across all major AI chat platforms — your conversations unified in one searchable place.
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             <div className="text-center p-4 bg-gray-50 rounded-lg border border-gray-100">
               <div className="font-medium text-lg">ChatGPT</div>
               <div className="text-sm text-green-600 mt-1">✅ Supported</div>
