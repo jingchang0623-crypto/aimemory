@@ -1,6 +1,6 @@
 # AI Memory Product Optimization Plan
 **Generated**: 2026-05-14
-**Last Updated**: 2026-05-16 18:49
+**Last Updated**: 2026-05-16 22:15
 **Status**: Active Execution
 
 ---
@@ -41,9 +41,9 @@ User Layer:  Chat Memo (10K users), AI Exporter (80K users)
 ### Site Health
 - **URL**: https://aimemory.pro
 - **Status**: HTTP 200 ✓
-- **Blog posts**: 170
-- **Total pages**: 189
-- **Sitemap**: Dynamic generation (just fixed) ✓
+- **Blog posts**: 168 (verified via Node.js: `blogPosts.length`)
+- **Total pages**: 189 (168 blog + 21 static)
+- **Sitemap**: Dynamic generation ✓ (193 URLs including all blog posts)
 
 ### Key Files
 - MCP Server: `/mcp-server/` - version 1.4.0, ready but NOT on PyPI. README updated to promote PyPI as primary install.
@@ -191,7 +191,39 @@ Fallback: First message injection → Universal
 
 ## 4. Execution Log
 
-### Session: 2026-05-16 (Round 117 - Cron Job)
+### Session: 2026-05-16 (Round 119 - Cron Job)
+
+#### Completed
+1. ✅ Fixed BLOG_COUNT in constants.ts 170→168 (was incorrectly set due to grep miscount: `grep -c 'slug:'` counted interface definition and function parameter)
+2. ✅ Verified actual blog count: Node.js confirmed `blogPosts.length = 168` (not 170)
+3. ✅ Verified blog page displays "168 articles" correctly (matches actual count)
+4. ✅ Updated OPTIMIZATION-PLAN.md with correct blog count
+5. ✅ All changes committed and pushed (db1fdf7)
+
+#### Root Cause Analysis: BLOG_COUNT Discrepancy
+- **Previous wrong count (170)**: `grep -c 'slug:' src/lib/blog-data.ts` counted:
+  - Line 7: `slug: string;` (interface definition)
+  - Lines 23-1929: 168 actual blog entries
+  - Line 1965: `getBlogPost(slug:` (function parameter)
+  - Total: 170 matches (but only 168 are actual blog posts)
+- **Correct count (168)**: Verified via Node.js `blogPosts.length`
+- **Blog page display**: "168 articles" ✓ (correct)
+
+#### Verified Memory Injection Status
+- ChatGPT content script: `setupInjectionListener()` called ✓
+- Claude content script: `setupInjectionListener()` called ✓
+- Gemini content script: wired ✓
+- DeepSeek content script: wired ✓
+- Kimi content script: wired ✓
+
+#### In Progress
+- 🔄 MCP Server PyPI publication (blocked — needs user: `python3 -m twine upload dist/*` with PyPI API token)
+- 🔄 Chrome Web Store submission (blocked — needs $5 developer fee payment)
+- 🔄 npm run build (timeout >60s, need to restart PM2 after build to serve updated homepage stat "170+ SEO Guides")
+
+---
+
+### Session: 2026-05-16 (Round 118 - Cron Job)
 
 #### Completed
 1. ✅ Fixed BLOG_COUNT in constants.ts 168→170 (was stale, now matches blog-data.ts)
