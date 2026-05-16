@@ -5,7 +5,7 @@
  */
 
 // Content counts - update manually when adding new blogs/guides
-export const BLOG_COUNT = 169; // Actual blog posts in blog-data.ts (verified via Node.js)
+export const BLOG_COUNT = 169; // Actual blog posts in blog-data.ts (verified via grep "^\s*slug:" | grep -v "string")
 export const GUIDE_PAGES = 2; // /guides/getting-started, /guides/mcp-quickstart
 export const CONTENT_COUNT = BLOG_COUNT + GUIDE_PAGES; // Total "SEO Guides" for homepage (171)
 
