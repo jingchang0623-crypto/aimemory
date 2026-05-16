@@ -1912,6 +1912,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['mem0', 'comparison', 'ai-memory', 'pricing', 'mcp', 'open-source', 'b2b', 'api', 'developer', 'individual'],
     lang: 'en',
   },
+  // === Backup DeepSeek Chat History ===
+  {
+    slug: 'backup-deepseek-chat-history',
+    title: 'How to Backup DeepSeek Chat History - Complete Guide 2026',
+    description: 'Step-by-step guide to backup your DeepSeek AI chat history. Learn 4 proven methods to save DeepSeek conversations including AI Memory, Chrome extension, manual backup, and MCP server integration.',
+    category: 'Guides',
+    date: '2026-05-16',
+    readTime: '18 min',
+    keywords: ['backup deepseek', 'deepseek chat history', 'deepseek对话备份', 'deepseek聊天记录保存', 'save deepseek conversations', 'deepseek backup', 'export deepseek conversations', 'deepseek data backup'],
+    tags: ['deepseek', 'backup', 'guide', 'memory', 'chrome-extension', 'mcp', 'cross-platform', 'chinese'],
+    lang: 'en',
+  },
 
 ];
 
