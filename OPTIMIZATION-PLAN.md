@@ -1,6 +1,6 @@
 # AI Memory Product Optimization Plan
 **Generated**: 2026-05-14
-**Last Updated**: 2026-05-14 04:06
+**Last Updated**: 2026-05-16 12:32
 **Status**: Active Execution
 
 ---
@@ -41,12 +41,12 @@ User Layer:  Chat Memo (10K users), AI Exporter (80K users)
 ### Site Health
 - **URL**: https://aimemory.pro
 - **Status**: HTTP 200 ✓
-- **Blog posts**: 153
-- **Total pages**: 172
+- **Blog posts**: 170
+- **Total pages**: 189
 - **Sitemap**: Dynamic generation (just fixed) ✓
 
 ### Key Files
-- MCP Server: `/mcp-server/` - version 1.4.0, ready but NOT on PyPI
+- MCP Server: `/mcp-server/` - version 1.4.0, ready but NOT on PyPI. README updated to promote PyPI as primary install.
 - Chrome Extension: `/extension/` (WXT) + `/chrome-extension/` (vanilla)
 - Web App: Next.js + SQLite
 
@@ -64,6 +64,11 @@ User Layer:  Chat Memo (10K users), AI Exporter (80K users)
 ---
 
 ## 3. Optimization Plans by Priority
+
+**New P0 Task Priorities (updated 2026-05-16):**
+- **P0-A**: PyPI Trusted Publishing Setup (blocked on user action - need PyPI account + OIDC trusted publisher)
+- **P0-B**: Chrome Extension build verification
+- **P0-C**: Memory injection code wiring (dead code in extension/src/lib/memory-inject.ts)
 
 ### 🔴 P0: Immediate Execution (This Session)
 
@@ -186,6 +191,16 @@ Fallback: First message injection → Universal
 
 ## 4. Execution Log
 
+### Session: 2026-05-16 (Round 116)
+
+#### Completed
+1. ✅ Updated MCP Server README - promoted PyPI as primary install method (was "Coming Soon")
+2. ✅ Created "Mem0 vs AI Memory" comparison blog post (32KB, 1500+ words, 7 FAQs, JSON-LD)
+3. ✅ Created "How to Backup DeepSeek Chat History" guide blog post (1200+ words, bilingual)
+4. ✅ Created "Best AI Memory Tools 2026" roundup blog post (10+ tools compared)
+5. ✅ Updated BLOG_COUNT to 170 (from 167)
+6. ✅ All builds passed, all changes committed and pushed
+
 ### Session: 2026-05-13
 
 #### Completed
@@ -225,18 +240,18 @@ Fallback: First message injection → Universal
 
 ## 5. Next Session Priorities
 
-1. **MCP Server to PyPI** - Highest impact, ready code
-2. **Chrome Web Store** - $5 fee, quick submission
-3. **SEO Content** - 3 high-priority blog posts
-4. **DeepSeek Support** - Blue ocean opportunity
+1. **PyPI Trusted Publishing** - Blocked on user action (create PyPI account, add OIDC trusted publisher)
+2. **Chrome Extension Build Verification** - Blocked on $5 developer fee
+3. **Memory Injection Wiring** - Wire up existing dead code in extension/src/lib/memory-inject.ts
+4. **E2EE Cloud Sync** - Begin implementation (core paid conversion lever)
 
 ---
 
 ## 6. Key Metrics to Track
 
 || Metric | Current | Target (M3) | Target (M6) |
-||--------|---------|-------------|-------------|| 
-|| Blog posts | 157 | 165 | 200 ||
+||--------|---------|-------------|-------------|
+| Blog posts | 170 | 185 | 210 |
 | Monthly visitors | ~1K | 5K | 15K |
 | Extension users | ~100 | 1K | 5K |
 | MCP installs | 0 | 500 | 2K |
