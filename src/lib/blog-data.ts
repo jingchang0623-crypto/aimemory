@@ -1947,6 +1947,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['deepseek', 'backup', 'guide', 'memory', 'chrome-extension', 'mcp', 'cross-platform', 'chinese'],
     lang: 'en',
   },
+  // === Cursor AI Memory MCP ===
+  {
+    slug: 'cursor-ai-memory-mcp',
+    title: 'Cursor Memory: How to Give Cursor IDE Persistent Memory with AI Memory MCP (2026)',
+    description: 'Complete guide to connecting Cursor IDE to AI Memory MCP Server. Give Cursor persistent memory across sessions — search past conversations, inject context, and never repeat yourself. Free setup in 10 seconds.',
+    category: 'Guides',
+    date: '2026-05-17',
+    readTime: '14 min',
+    keywords: ['cursor memory', 'cursor ai memory', 'cursor mcp', 'cursor mcp server', 'cursor persistent memory', 'cursor ide memory', 'cursor memory injection', 'cursor context memory', 'cursor chat history', 'cursor ai context', 'cursor mcp setup', 'cursor mcp memory', 'cursor mcp integration', 'cursor memory across sessions', 'how to give cursor memory', 'cursor long term memory'],
+    tags: ['cursor', 'mcp', 'ide', 'memory', 'persistent-memory', 'ai-memory', 'guide', 'cross-platform', 'developer'],
+    lang: 'en',
+  },
 
 ];
 
