@@ -102,7 +102,7 @@ export default function PyPISetupGuide() {
                 <p><span className="text-gray-500">PyPI Project Name:</span> <span className="text-green-400">aimemory-mcp-server</span></p>
                 <p><span className="text-gray-500">Owner:</span> <span className="text-green-400">jingchang0623-crypto</span></p>
                 <p><span className="text-gray-500">Repository:</span> <span className="text-green-400">aimemory</span></p>
-                <p><span className="text-gray-500">Workflow name:</span> <span className="text-green-400">publish-pypi.yml</span></p>
+                <p><span className="text-gray-500">Workflow name:</span> <span className="text-green-400">publish.yml</span></p>
                 <p><span className="text-gray-500">Environment name:</span> <span className="text-green-400">(leave blank)</span></p>
               </div>
             </div>
@@ -161,7 +161,7 @@ export default function PyPISetupGuide() {
                 <ul className="list-disc list-inside text-gray-400 text-sm mt-2 ml-4">
                   <li>Owner matches exactly: <code className="text-blue-400">jingchang0623-crypto</code></li>
                   <li>Repository matches exactly: <code className="text-blue-400">aimemory</code></li>
-                  <li>Workflow filename matches: <code className="text-blue-400">publish-pypi.yml</code></li>
+                  <li>Workflow filename matches: <code className="text-blue-400">publish.yml</code></li>
                   <li>Environment name is blank (not &quot;production&quot; or anything else)</li>
                 </ul>
               </div>

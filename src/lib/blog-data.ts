@@ -1959,6 +1959,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['cursor', 'mcp', 'ide', 'memory', 'persistent-memory', 'ai-memory', 'guide', 'cross-platform', 'developer'],
     lang: 'en',
   },
+  // === AI Memory for Researchers ===
+  {
+    slug: 'ai-memory-for-researchers',
+    title: 'AI Memory for Researchers: Manage Literature Reviews & Citations with ChatGPT, Claude & DeepSeek (2026)',
+    description: 'Complete guide for researchers on using AI memory to manage literature reviews, citations, and research notes across ChatGPT, Claude, and DeepSeek. Boost your academic productivity in 2026.',
+    category: 'Use Cases',
+    date: '2026-05-17',
+    readTime: '18 min',
+    keywords: ['ai memory for researchers', 'literature review ai', 'ai citations management', 'chatgpt academic research', 'claude research assistant', 'deepseek literature review', 'research workflow ai', 'academic productivity ai', 'ai research tools 2026', 'manage research notes ai'],
+    tags: ['ai-memory', 'researchers', 'literature-review', 'citations', 'academic', 'chatgpt', 'claude', 'deepseek', 'productivity', 'research'],
+    lang: 'en',
+  },
 
 ];
 

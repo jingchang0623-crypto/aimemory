@@ -53,7 +53,7 @@ function tryParseExport(data: any): any[] | null {
 }
 
 // Process ZIP file: find and parse JSON files inside
-async function processZip(fileContent: string): Promise<any[]> {
+async function processZip(fileContent: Buffer): Promise<any[]> {
   const zip = await JSZip.loadAsync(fileContent);
   let conversations: any[] = [];
 
@@ -81,8 +81,8 @@ export async function POST(request: NextRequest) {
   try {
     const sessionId = getSessionId(request);
     const contentType = request.headers.get('content-type') || '';
-    let fileName: string;
-    let fileContent: string;
+    let fileName: string = '';
+    let fileContent: string | Buffer;
 
     // Handle FormData upload
     if (contentType.includes('multipart/form-data')) {
@@ -101,7 +101,12 @@ export async function POST(request: NextRequest) {
       }
 
       fileName = file.name;
-      fileContent = await file.text();
+      // Use arrayBuffer for binary files (ZIP), text for others
+      if (file.name?.toLowerCase().endsWith('.zip')) {
+        fileContent = Buffer.from(await file.arrayBuffer());
+      } else {
+        fileContent = await file.text();
+      }
     }
     // Handle JSON upload
     else if (contentType.includes('application/json')) {
@@ -116,13 +121,14 @@ export async function POST(request: NextRequest) {
 
       if (fileData.startsWith('data:')) {
         const base64 = fileData.split(',')[1];
-        const buffer = Buffer.from(base64, 'base64');
-        if (buffer.length > MAX_FILE_SIZE) {
+        // For data URLs from client, decode after checking size
+        const raw = Buffer.from(base64, 'base64');
+        if (raw.length > MAX_FILE_SIZE) {
           return NextResponse.json({
-            error: `File too large (${(buffer.length / 1024 / 1024).toFixed(1)}MB). Maximum is 50MB.`
+            error: `File too large (${(raw.length / 1024 / 1024).toFixed(1)}MB). Maximum is 50MB.`
           }, { status: 413 });
         }
-        fileContent = buffer.toString('utf-8');
+        fileContent = raw.toString('utf-8');
       } else {
         if (fileData.length > MAX_FILE_SIZE) {
           return NextResponse.json({ error: 'File too large. Maximum is 50MB.' }, { status: 413 });
@@ -140,7 +146,7 @@ export async function POST(request: NextRequest) {
     // Handle ZIP files (ChatGPT export format)
     if (lowerFileName.endsWith('.zip')) {
       try {
-        conversations = await processZip(fileContent);
+        conversations = await processZip(fileContent as Buffer);
       } catch (e) {
         return NextResponse.json({
           error: e instanceof Error ? e.message : 'Failed to process ZIP file'
@@ -150,7 +156,7 @@ export async function POST(request: NextRequest) {
     // Handle TXT files
     else if (lowerFileName.endsWith('.txt') || lowerFileName.endsWith('.text') || lowerFileName.endsWith('.md')) {
       try {
-        conversations = parseTxtExport(fileContent, fileName);
+        conversations = parseTxtExport(fileContent as string, fileName);
       } catch (e) {
         return NextResponse.json({
           error: e instanceof Error ? e.message : 'Failed to parse TXT file'
@@ -161,7 +167,7 @@ export async function POST(request: NextRequest) {
     else if (lowerFileName.endsWith('.json')) {
       let data;
       try {
-        data = JSON.parse(fileContent);
+        data = JSON.parse(fileContent as string);
       } catch {
         return NextResponse.json({ error: 'Invalid JSON file' }, { status: 400 });
       }
