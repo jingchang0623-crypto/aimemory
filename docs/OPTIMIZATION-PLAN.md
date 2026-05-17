@@ -2,11 +2,22 @@
 
 > 本文档由定时 cron 任务自动生成，记录每轮产品优化决策和执行结果。
 
-## 本轮执行摘要 (Round 123)
+## 本轮执行摘要 (Round 123 — 2026-05-17)
 
 **执行时间**: 2026-05-17 13:54 UTC  
 **触发方式**: 定时 cron 任务  
-**模型**: tc-code-latest
+
+### ✅ 本轮完成
+
+| 任务 | 文件 | 变更内容 | 提交 |
+|------|------|---------|------|
+| **P0: 定价与研究对齐** | `src/app/pricing/page.tsx` | Plus $3.9→$6.9/mo, $39→$69/年；FAQ JSON-LD同步更新 | 47134dd |
+| **P0: 首页MCP误导修复** | `src/app/page.tsx` (两处) | `pip install`→GitHub install + "PyPI coming soon"提示 | 47134dd |
+| **P0: detectPlatform类型修复** | `src/lib/parser.ts` | 返回类型添加 `deepseek\|gemini\|kimi`，函数体添加检测逻辑 | bc9a640 |
+| **P0: DeepSeek页面MCP修复** | `src/app/deepseek-ai-memory/page.tsx` | 安装命令改为GitHub URL + PyPI提示 | cca951e |
+| **P0: AI备份页面MCP修复** | `src/app/ai-conversation-backup/page.tsx` | 安装命令改为GitHub URL | cca951e |
+| **P0: MCP Server页面全面修复** | `src/app/mcp-server/page.tsx` (4处) | Hero区、FAQ JSON-LD、FAQ内容区安装命令更新 | cca951e |
+| **文档更新** | `docs/OPTIMIZATION-PLAN.md` | 首次创建，完整优化方案和工作记录 | cca951e |
 
 ### 研究进展摘要
 
