@@ -428,9 +428,12 @@ export default function Home() {
                 <span>→</span>
               </Link>
               <code className="px-4 py-2.5 bg-gray-100 text-gray-700 rounded-lg text-sm font-mono">
-                pip install aimemory-mcp-server
+                pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server
               </code>
             </div>
+            <p className="text-xs text-gray-400 mt-3">
+              PyPI release coming soon. <Link href="/docs/pypi-setup" className="underline hover:text-gray-600">Help us publish</Link>
+            </p>
           </div>
         </div>
       </section>
@@ -450,8 +453,9 @@ export default function Home() {
           </p>
           <div className="bg-gray-900 rounded-xl p-6 mb-8 text-left max-w-xl mx-auto">
             <code className="text-green-400 text-sm font-mono">
-              <span className="text-gray-500">$ </span>pip install aimemory-mcp-server
+              <span className="text-gray-500">$ </span>pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server
             </code>
+            <p className="text-gray-500 text-xs mt-3">PyPI package coming soon — use GitHub install for now</p>
           </div>
           <Link
             href="/mcp-server"

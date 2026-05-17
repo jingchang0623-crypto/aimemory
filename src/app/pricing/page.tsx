@@ -5,7 +5,7 @@ import WaitlistForm from './WaitlistForm';
 
 export const metadata: Metadata = {
   title: 'Pricing - AI Memory | Free Forever, Pro Features Coming',
-  description: 'AI Memory is free with all core features. Upgrade to Plus ($3.9/mo) for AI summaries and multi-device, or Pro ($7.9/mo) for full AI analysis, cloud sync, and knowledge graph.',
+  description: 'AI Memory is free with all core features. Upgrade to Plus ($6.9/mo) for AI summaries and multi-device, or Pro ($7.9/mo) for full AI analysis, cloud sync, and knowledge graph.',
   keywords: ['AI memory pricing', 'chatgpt extension free', 'AI conversation manager pricing'],
   alternates: {
     canonical: 'https://aimemory.pro/pricing',
@@ -43,7 +43,7 @@ export default function PricingPage() {
                 "name": "How much does AI Memory Pro cost?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "AI Memory Plus is $3.9/month or $39/year. AI Memory Pro is $7.9/month or $79/year with unlimited AI analysis, cross-platform sync, cloud sync, and knowledge graph. Waitlist members get founding member discounts and early access."
+                  "text": "AI Memory Plus is $6.9/month or $69/year. AI Memory Pro is $7.9/month or $79/year with unlimited AI analysis, cross-platform sync, cloud sync, and knowledge graph. Waitlist members get founding member discounts and early access."
                 }
               },
               {
@@ -148,8 +148,8 @@ export default function PricingPage() {
             </div>
             <div className="text-center">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Plus</h2>
-              <div className="text-5xl font-bold text-gray-900 mb-2">$3.9<span className="text-lg text-gray-500">/mo</span></div>
-              <p className="text-gray-500 mb-8">or $39/year (save 17%)</p>
+              <div className="text-5xl font-bold text-gray-900 mb-2">$6.9<span className="text-lg text-gray-500">/mo</span></div>
+              <p className="text-gray-500 mb-8">or $69/year (save 17%)</p>
             </div>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start">
