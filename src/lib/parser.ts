@@ -47,7 +47,7 @@ interface ClaudeConversation {
   chat_messages: ClaudeMessage[];
 }
 
-export function detectPlatform(data: any): 'chatgpt' | 'claude' | 'unknown' {
+export function detectPlatform(data: any): 'chatgpt' | 'claude' | 'deepseek' | 'gemini' | 'kimi' | 'unknown' {
   // ChatGPT export has 'mapping' field
   if (data.mapping && data.current_node) {
     return 'chatgpt';
@@ -59,6 +59,18 @@ export function detectPlatform(data: any): 'chatgpt' | 'claude' | 'unknown' {
   // Check if it's an array of conversations (ChatGPT bulk export)
   if (Array.isArray(data) && data.length > 0 && data[0].mapping) {
     return 'chatgpt';
+  }
+  // DeepSeek export detection
+  if (isDeepSeekExport(data)) {
+    return 'deepseek';
+  }
+  // Gemini export detection
+  if (isGeminiExport(data)) {
+    return 'gemini';
+  }
+  // Kimi export detection
+  if (isKimiExport(data)) {
+    return 'kimi';
   }
   return 'unknown';
 }
