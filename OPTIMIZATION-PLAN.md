@@ -191,25 +191,31 @@ Fallback: First message injection → Universal
 
 ## 4. Execution Log
 
-### Session: 2026-05-17 (Round 121 - Cron Job)
+### Session: 2026-05-17 (Round 122 - Cron Job)
 
 #### Completed
-1. ✅ Updated BLOG_COUNT in constants.ts 169→170 (verified via `grep "^\s\+slug:"` = 170 actual blog posts)
-2. ✅ Updated CONTENT_COUNT to 172 (170 blogs + 2 guide pages)
-3. ✅ Verified npm run build succeeds with updated constants
-4. ✅ All changes committed and pushed (26f51f2)
+1. ✅ Discovered BLOG_COUNT 170→171 (actual grep showed 171 blog posts, not 170)
+2. ✅ Updated BLOG_COUNT in constants.ts 170→171
+3. ✅ CONTENT_COUNT auto-updated to 173 (171 blogs + 2 guides)
+4. ✅ Created Chrome Web Store submission checklist (docs/CHROME-WEB-STORE-CHECKLIST.md)
+5. ✅ Verified Chrome extension builds successfully (v1.1.0, 38.5 KB, 5 platform content scripts)
+6. ✅ Cleaned up duplicate GitHub workflow (publish-pypi.yml removed, publish.yml kept as canonical)
+7. ✅ Verified publish.yml uses OIDC Trusted Publishing (more secure than API token)
+8. ✅ npm run build passes with all constants updated
+9. ✅ Updated OPTIMIZATION-PLAN.md with Round 122 results
 
 #### Verified Status
-- Tag Management UI: ✅ Fully implemented (TagManager.tsx + /api/tags route + ConversationDetail integration)
-- Memory Injection: ✅ Fully functional in Chrome extension (5 content scripts wired)
-- MCP Server: ✅ v1.4.0 built (wheel + tar.gz in dist/), README updated with PyPI install
-- Organization JSON-LD: ✅ Added to layout.tsx
-- Roadmap page: ✅ Exists at /docs/roadmap with comprehensive phases
-- About page: ✅ Complete with mission, principles, team info
+- BLOG_COUNT: 171 ✅ (matches actual blog-data.ts slug count)
+- CONTENT_COUNT: 173 ✅ (171 blogs + 2 guides)
+- Homepage displays: `173+ SEO Guides Published`
+- Chrome Extension build: ✅ v1.1.0 built and zipped (5 content scripts for ChatGPT/Claude/DeepSeek/Gemini/Kimi)
+- MCP Server: ✅ v1.4.0 built, GitHub Actions workflow ready for PyPI Trusted Publishing
+- Memory Injection: ✅ Wired in all 5 content scripts
+- Blog count verified: `grep -c 'slug:'` = 171 (excludes interface defs and function params)
 
 #### Remaining P0 Blockers (Require User Action)
-- 🔄 MCP Server PyPI publication (needs PyPI account + Trusted Publisher OIDC setup)
-- 🔄 Chrome Web Store submission (needs $5 developer fee payment)
+- 🔄 MCP Server PyPI publication (needs: 1. PyPI account registration 2. Enable 2FA 3. Create API token OR setup OIDC Trusted Publisher in PyPI settings)
+- 🔄 Chrome Web Store submission (needs: 1. $5 developer fee payment 2. Upload assets per checklist at docs/CHROME-WEB-STORE-CHECKLIST.md)
 - 🔄 Stripe payment integration (needs Stripe account + webhook setup)
 
 ---

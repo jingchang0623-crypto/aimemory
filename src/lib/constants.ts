@@ -5,9 +5,9 @@
  */
 
 // Content counts - update manually when adding new blogs/guides
-export const BLOG_COUNT = 170; // Actual blog posts in blog-data.ts (verified via grep "^\s*slug:")
+export const BLOG_COUNT = 171; // Actual blog posts in blog-data.ts (verified via grep "^\s*slug:")
 export const GUIDE_PAGES = 2; // /guides/getting-started, /guides/mcp-quickstart
-export const CONTENT_COUNT = BLOG_COUNT + GUIDE_PAGES; // Total "SEO Guides" for homepage (172)
+export const CONTENT_COUNT = BLOG_COUNT + GUIDE_PAGES; // Total "SEO Guides" for homepage (173)
 
 // MCP Server stats
 export const MCP_CLIENTS_COUNT = 113; // MCP-compatible clients (Claude, Cursor, Windsurf, etc.)
