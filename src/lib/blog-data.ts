@@ -1982,7 +1982,40 @@ export const blogPosts: BlogPost[] = [
     tags: ['ai-memory', 'writers', 'writing', 'character-development', 'plot-notes', 'chatgpt', 'claude', 'deepseek', 'productivity', 'creative-writing'],
     lang: 'en',
   },
-
+  // === Round 127 New Blogs ===
+  {
+    slug: 'chatgpt-projects-vs-memory',
+    title: 'ChatGPT Projects vs Memory: Which Should You Use? (2026)',
+    description: 'ChatGPT Projects vs Memory: complete comparison. Learn the differences, limitations (1500 words), and why combining both with AI Memory gives you the best of all worlds.',
+    category: 'AI Platform Guides',
+    date: '2026-05-18',
+    readTime: '11 min',
+    keywords: ['chatgpt projects vs memory', 'chatgpt projects memory', 'chatgpt memory vs projects', 'chatgpt projects limitation', 'chatgpt memory limitation', 'chatgpt projects vs custom instructions'],
+    tags: ['chatgpt', 'projects', 'memory', 'comparison', 'openai', 'limitation', '1500-words'],
+    lang: 'en',
+  },
+  {
+    slug: 'automate-chatgpt-export',
+    title: 'How to Automate ChatGPT Export: Save Conversations Automatically (2026)',
+    description: 'Learn how to automatically export ChatGPT conversations. Compare browser extensions, API methods, and scheduling tools. Never lose a ChatGPT conversation again with automated backups.',
+    category: 'AI Platform Guides',
+    date: '2026-05-18',
+    readTime: '10 min',
+    keywords: ['automate chatgpt export', 'automatic chatgpt backup', 'chatgpt auto export extension', 'save chatgpt conversations automatically', 'chatgpt export automation', 'chatgpt backup tool'],
+    tags: ['chatgpt', 'export', 'automation', 'backup', 'extension', 'api', 'guide'],
+    lang: 'en',
+  },
+  {
+    slug: 'google-ai-studio-memory-guide',
+    title: 'Google AI Studio Memory: How to Save & Manage Your AI Conversations (2026)',
+    description: 'Complete guide to Google AI Studio memory. Learn how AI Studio stores conversations, memory limitations, and how to export and manage your Google AI Studio chats.',
+    category: 'AI Platform Guides',
+    date: '2026-05-18',
+    readTime: '12 min',
+    keywords: ['google ai studio memory', 'save google ai studio conversations', 'google ai studio conversation history', 'export google ai studio chats', 'google ai studio memory limit', 'ai studio conversation backup'],
+    tags: ['google', 'ai-studio', 'gemini', 'memory', 'export', 'google-takeout', 'guide'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

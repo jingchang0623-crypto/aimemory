@@ -57,6 +57,9 @@ const highPriorityBlogSlugs = [
   'chatgpt-memory-plugin',
   'chatgpt-conversation-disappeared',
   'recover-deleted-chatgpt-conversation',
+  'chatgpt-projects-vs-memory',
+  'automate-chatgpt-export',
+  'google-ai-studio-memory-guide',
 ];
 
 function getBlogSlugs(): string[] {

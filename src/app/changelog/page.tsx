@@ -18,6 +18,33 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.87.0',
+    date: '2026-05-18',
+    title: 'Round 127 — 3 New SEO Blogs (ChatGPT Projects, Auto Export, Google AI Studio)',
+    tags: ['SEO', 'Content', 'Growth'],
+    changes: {
+      added: [
+        'ChatGPT Projects vs Memory 2026: Comparison guide targeting "chatgpt projects vs memory" keyword (high search volume)',
+        'Automate ChatGPT Export: Guide to automatic backup solutions targeting "automate chatgpt export" long-tail keyword',
+        'Google AI Studio Memory Guide: Emerging platform coverage targeting "google ai studio memory" (low competition)',
+        '3 new blog entries registered in blog-data.ts with full SEO metadata (JSON-LD, keywords, tags)',
+        'Added all 3 blogs to sitemap.ts highPriorityBlogSlugs for SEO priority 0.9',
+      ],
+      improved: [
+        'BLOG_COUNT: 172 → 175 (now 175 total blog posts)',
+        'CONTENT_COUNT: 174 → 177 (175 blogs + 2 guides)',
+        'Homepage counter: Now displays "177+ SEO Guides Published"',
+        'Build verified: 175 blog pages + 21 static = 196 total pages (exit code 0)',
+      ],
+      noted: [
+        'SEO content expansion: 175 blogs covering all major AI memory keywords',
+        'Next milestone: 185 blogs (15 more) to hit M3 target of 185 blog posts',
+        'Distribution blockers unchanged: PyPI (needs OIDC trusted publisher) + Chrome Web Store (needs $5 fee)',
+        'All 3 blogs feature 5+ FAQ with JSON-LD structured data for rich snippets',
+      ],
+    },
+  },
+  {
     version: 'v0.86.0',
     date: '2026-05-15',
     title: 'Round 112 — Data Consistency Audit (MCP Clients + Kimi Coverage)',
