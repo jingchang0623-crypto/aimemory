@@ -60,7 +60,7 @@ export default function MCPServerLanding() {
                 "name": "How do I install the AI Memory MCP server?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Install with one command: pip install aimemory-mcp-server. Then add the configuration to your MCP client (Claude Desktop, Cursor, etc.) and restart. The server runs locally on your machine with full offline support."
+                  "text": "Install with one command: pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server (PyPI release coming soon). Then add the configuration to your MCP client (Claude Desktop, Cursor, etc.) and restart. The server runs locally on your machine with full offline support."
                 }
               },
               {
@@ -127,11 +127,12 @@ export default function MCPServerLanding() {
       {/* Hero */}
       <section className="pt-20 pb-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm mb-6">
-            <span className="text-base">⚡</span>
-            pip install aimemory-mcp-server
-            <span className="ml-1 px-1.5 py-0.5 bg-green-600 text-white text-xs rounded-full font-medium">v1.4.0</span>
-          </div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm mb-6">
+              <span className="text-base">⚡</span>
+              pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server
+              <span className="ml-1 px-1.5 py-0.5 bg-green-600 text-white text-xs rounded-full font-medium">v1.4.0</span>
+              <span className="ml-1 px-1.5 py-0.5 bg-blue-100 text-blue-700 text-xs rounded-full font-medium">GitHub</span>
+            </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 tracking-tight leading-tight mb-6">
             Give your AI<br />
             <span className="text-blue-600">persistent memory.</span>
@@ -457,7 +458,7 @@ export default function MCPServerLanding() {
           <div className="space-y-4">
             {[
               { q: 'What is an MCP server for AI memory?', a: 'An MCP (Model Context Protocol) server for AI memory is a tool that gives AI assistants like Claude Desktop and Cursor persistent memory by connecting them to your conversation history. AI Memory\'s MCP server lets any MCP-compatible AI search, save, and retrieve memories across all your AI conversations.' },
-              { q: 'How do I install the AI Memory MCP server?', a: 'Install with one command: pip install aimemory-mcp-server. Then add the configuration to your MCP client (Claude Desktop, Cursor, etc.) and restart. The server runs locally on your machine with full offline support.' },
+              { q: 'How do I install the AI Memory MCP server?', a: 'Install with one command: pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server (PyPI release coming soon). Then add the configuration to your MCP client (Claude Desktop, Cursor, etc.) and restart. The server runs locally on your machine with full offline support.' },
               { q: 'Which AI tools support MCP servers?', a: 'Over 113 AI clients support MCP servers, including Claude Desktop, Cursor, Windsurf, VS Code (with Cline/Continue), Zed, and many more. The Model Context Protocol is an open standard supported by the entire AI ecosystem.' },
               { q: 'Is the AI Memory MCP server free?', a: 'Yes, the AI Memory MCP server is completely free and open-source. You can install it via pip, run it locally, and connect it to any MCP client at no cost. There are no usage limits or hidden fees.' },
               { q: 'Does the MCP server work offline?', a: 'Yes, the standalone MCP server runs entirely on your local machine. Your conversation data stays in a local SQLite database — no cloud connection required. You can also use the hosted version at aimemory.pro/api/mcp for cloud-based access.' },
