@@ -1,9 +1,14 @@
 import BlogLayout from '@/components/BlogLayout';
 
-export const metadata = {
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
   title: 'AI Agent Memory Management: How to Give Agents Persistent Memory (2026)',
   description: 'Complete guide to AI agent memory management. Learn how to give AI agents persistent memory across conversations with ChatGPT, Claude, Cursor, and other AI tools.',
   keywords: 'ai agent memory, ai agent memory management, persistent memory for ai agents, ai agent context, autonomous agent memory, ai agent memory storage, llm agent memory',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-agent-memory-management',
+  },
 };
 
 const content = `# AI Agent Memory Management: How to Give Agents Persistent Memory (2026)
