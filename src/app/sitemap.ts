@@ -60,6 +60,14 @@ const highPriorityBlogSlugs = [
   'chatgpt-projects-vs-memory',
   'automate-chatgpt-export',
   'google-ai-studio-memory-guide',
+  'cherry-studio-vs-ai-memory',
+  'deepseek-memory-management',
+  'memory-injection-guide',
+  'claude-code-vs-cursor-memory',
+  'ai-memory-for-product-managers',
+  'mcp-memory-for-ai-agents',
+  'ai-memory-injection-guide',
+  'chatgpt-vs-claude-vs-gemini-memory-comparison-2026',
 ];
 
 function getBlogSlugs(): string[] {

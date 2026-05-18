@@ -2,12 +2,12 @@ import BlogLayout from '@/components/BlogLayout';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
-const slug = 'memory-injection-guide';
+const slug = 'ai-memory-injection-guide';
 
 export const metadata: Metadata = {
   title: 'Memory Injection: How to Give Your AI Persistent Context (2026) | AI Memory Blog',
   alternates: {
-    canonical: 'https://aimemory.pro/blog/memory-injection-guide',
+    canonical: 'https://aimemory.pro/blog/ai-memory-injection-guide',
   },
 };
 
