@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     url: 'https://aimemory.pro/blog/ai-persistent-memory',
     type: 'article',
   },
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-persistent-memory',
+  },
 };
 
 export default function PersistentMemoryBlog() {
