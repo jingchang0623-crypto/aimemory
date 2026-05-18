@@ -2074,7 +2074,7 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
   {
-    slug: 'ai-memory-injection-guide',
+    slug: 'ai-memory-injection-cross-context',
     title: 'AI Memory Injection: How to Give Your AI Persistent Context Across Conversations (2026)',
     description: 'Complete guide to AI memory injection. Learn how to give ChatGPT, Claude, DeepSeek, and other AI assistants persistent memory across conversations using MCP Server and browser extensions.',
     category: 'Guides',
@@ -2085,7 +2085,7 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
   {
-    slug: 'ai-memory-comparison-2026',
+    slug: 'chatgpt-vs-claude-vs-gemini-comparison-2026',
     title: 'ChatGPT vs Claude vs Gemini Memory Comparison 2026 — Which AI Remembers Best?',
     description: 'Complete comparison of ChatGPT memory, Claude memory, and Gemini memory features in 2026. Compare memory limits, cross-platform sync, export options, and find the best AI memory tool.',
     category: 'Comparisons',
