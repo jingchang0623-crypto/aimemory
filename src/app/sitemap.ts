@@ -69,6 +69,7 @@ const highPriorityBlogSlugs = [
   'ai-memory-injection-guide',
   'chatgpt-vs-claude-vs-gemini-memory-comparison-2026',
   'ai-agent-memory-management',
+  'ai-memory-for-freelancers-2026',
 ];
 
 function getBlogSlugs(): string[] {
