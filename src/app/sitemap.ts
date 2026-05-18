@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
-import fs from 'fs';
-import path from 'path';
+import * as fs from 'fs';
+import * as path from 'path';
 
 const baseUrl = 'https://aimemory.pro';
 
@@ -68,6 +68,7 @@ const highPriorityBlogSlugs = [
   'mcp-memory-for-ai-agents',
   'ai-memory-injection-guide',
   'chatgpt-vs-claude-vs-gemini-memory-comparison-2026',
+  'ai-agent-memory-management',
 ];
 
 function getBlogSlugs(): string[] {

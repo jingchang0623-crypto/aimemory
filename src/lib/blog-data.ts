@@ -2106,6 +2106,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['memory', 'persistent-memory', 'cross-platform', 'chatgpt', 'claude', 'deepseek', 'guide'],
     lang: 'en',
   },
+  // === NEW: AI Agent Memory (Round 129 - 2026-05-18) ===
+  {
+    slug: 'ai-agent-memory-management',
+    title: 'AI Agent Memory Management: How to Give Agents Persistent Memory (2026)',
+    description: 'Complete guide to AI agent memory management. Learn how to give AI agents persistent memory across conversations with ChatGPT, Claude, Cursor, and other AI tools.',
+    category: 'Guides',
+    date: '2026-05-18',
+    readTime: '18 min',
+    keywords: ['ai agent memory', 'ai agent memory management', 'persistent memory for ai agents', 'ai agent context', 'autonomous agent memory', 'ai agent memory storage', 'llm agent memory'],
+    tags: ['ai-agent', 'memory-management', 'mcp', 'cursor', 'claude', 'autonomous-agents', 'guide', 'tutorial'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */
