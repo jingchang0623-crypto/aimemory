@@ -1,5 +1,4 @@
 import BlogLayout from '@/components/BlogLayout';
-import { BlogPost } from '@/lib/blog-data';
 
 export const metadata = {
   title: 'AI Agent Memory Management: How to Give Agents Persistent Memory (2026)',
@@ -7,14 +6,7 @@ export const metadata = {
   keywords: 'ai agent memory, ai agent memory management, persistent memory for ai agents, ai agent context, autonomous agent memory, ai agent memory storage, llm agent memory',
 };
 
-const post: BlogPost = {
-  slug: 'ai-agent-memory-management',
-  title: 'AI Agent Memory Management: How to Give Agents Persistent Memory (2026)',
-  description: 'Complete guide to AI agent memory management. Learn how to give AI agents persistent memory across conversations with ChatGPT, Claude, Cursor, and other AI tools.',
-  date: '2026-05-18',
-  tags: ['AI Agent', 'Memory Management', 'MCP', 'Tutorial'],
-  content: `
-# AI Agent Memory Management: How to Give Agents Persistent Memory (2026)
+const content = `# AI Agent Memory Management: How to Give Agents Persistent Memory (2026)
 
 AI agents are only as smart as what they remember. But here's the problem: **most AI agents have zero memory between sessions**.
 
@@ -350,9 +342,18 @@ With the MCP standard and tools like AI Memory, you can give any agent (Claude, 
 - [Cursor AI Memory MCP: Persistent Context for Coding](/blog/cursor-ai-memory-mcp)
 - [AI Persistent Memory: Cross-Platform Context](/blog/ai-persistent-memory)
 - [ChatGPT vs Claude vs DeepSeek Memory Comparison](/blog/chatgpt-vs-claude-vs-deepseek)
-  `,
-};
+`;
 
 export default function AIAgentMemoryPage() {
-  return <BlogLayout post={post} />;
+  return (
+    <BlogLayout
+      slug="ai-agent-memory-management"
+      title="AI Agent Memory Management: How to Give Agents Persistent Memory (2026)"
+      date="2026-05-18"
+      category="Guides"
+      readTime="18 min"
+    >
+      {content}
+    </BlogLayout>
+  );
 }
