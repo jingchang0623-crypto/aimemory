@@ -18,6 +18,18 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === NEW: Cross-Platform AI Memory Guide (Round 131 - 2026-05-19) ===
+  {
+    slug: 'cross-platform-ai-memory-guide',
+    title: 'Cross-Platform AI Memory Guide (2026) — Unified Memory for ChatGPT, Claude & Gemini',
+    description: 'Learn how to create unified AI memory across ChatGPT, Claude, DeepSeek, Gemini, and Kimi. Stop losing context when switching AI platforms.',
+    category: 'Guides',
+    date: '2026-05-19',
+    readTime: '14 min',
+    keywords: ['cross-platform ai memory', 'unified ai memory', 'ai memory across platforms', 'sync chatgpt claude gemini memory', 'multi-platform ai memory', 'ai memory migration', 'chatgpt claude shared memory', 'universal ai memory', 'ai context across platforms'],
+    tags: ['cross-platform', 'unified-memory', 'chatgpt', 'claude', 'gemini', 'deepseek', 'memory-injection', 'guide', 'tutorial', 'mcp'],
+    lang: 'en',
+  },
   // === Guides ===
   {
     slug: 'gpt-5-chatgpt-memory-guide',
