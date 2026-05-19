@@ -86,7 +86,7 @@ export default function DeepSeekMCPServer() {
             </p>
             <div className="bg-gray-900 rounded-lg p-4 not-prose">
               <code className="text-green-400 text-sm">
-                pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server
+                pip install aimemory-mcp-server
               </code>
             </div>
 

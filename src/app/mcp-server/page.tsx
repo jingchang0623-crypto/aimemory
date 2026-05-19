@@ -60,7 +60,7 @@ export default function MCPServerLanding() {
                 "name": "How do I install the AI Memory MCP server?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Install with one command: pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server (PyPI release coming soon). Then add the configuration to your MCP client (Claude Desktop, Cursor, etc.) and restart. The server runs locally on your machine with full offline support."
+                  "text": "Install with one command: pip install aimemory-mcp-server (PyPI: aimemory-mcp-server v1.5.0 published). Then add the configuration to your MCP client (Claude Desktop, Cursor, etc.) and restart. The server runs locally on your machine with full offline support."
                 }
               },
               {
@@ -129,7 +129,7 @@ export default function MCPServerLanding() {
         <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm mb-6">
               <span className="text-base">⚡</span>
-              pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server
+              pip install aimemory-mcp-server
               <span className="ml-1 px-1.5 py-0.5 bg-green-600 text-white text-xs rounded-full font-medium">v1.5.0</span>
               <span className="ml-1 px-1.5 py-0.5 bg-blue-100 text-blue-700 text-xs rounded-full font-medium">GitHub</span>
             </div>
@@ -197,7 +197,7 @@ export default function MCPServerLanding() {
           <div className="bg-gray-900 rounded-xl p-8">
             <div className="flex items-center gap-2 mb-4">
               <span className="text-green-400 text-sm font-mono">$</span>
-              <span className="text-green-400 text-sm font-mono break-all">pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server</span>
+              <span className="text-green-400 text-sm font-mono break-all">pip install aimemory-mcp-server</span>
             </div>
             <div className="flex items-center gap-2 mb-4">
               <span className="text-green-400 text-sm font-mono">$</span>

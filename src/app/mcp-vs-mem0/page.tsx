@@ -505,7 +505,7 @@ export default function McpVsMem0() {
               📖 Setup Guide →
             </Link>
           </div>
-          <p className="text-gray-500 text-sm mt-4">pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server</p>
+          <p className="text-gray-500 text-sm mt-4">pip install aimemory-mcp-server</p>
         </div>
       </section>
 

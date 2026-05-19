@@ -246,7 +246,7 @@ export default function DeepSeekAIMemoryBlog() {
             <p>pip install aimemory-mcp-server</p>
             <br />
             <p className="text-green-400"># Or from GitHub</p>
-            <p>pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server</p>
+            <p>pip install aimemory-mcp-server</p>
           </div>
 
           <p className="text-gray-700 mt-4">

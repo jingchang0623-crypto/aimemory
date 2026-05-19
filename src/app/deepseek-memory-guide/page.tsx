@@ -91,7 +91,7 @@ const methods = [
     title: 'Method 3: MCP Server',
     subtitle: 'Most powerful — connect DeepSeek context to Claude, Cursor, and more',
     steps: [
-      'Install AI Memory MCP Server: pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server',
+      'Install AI Memory MCP Server: pip install aimemory-mcp-server',
       'Upload your DeepSeek conversations to aimemory.pro (or save via API)',
       'Configure MCP in Claude Desktop, Cursor, or any MCP client',
       'Ask Claude/Cursor to "search my DeepSeek conversations about [topic]"',

@@ -304,8 +304,8 @@ export default function GoogleAIStudioMemoryGuide() {
           <p>
             Want to use your AI Studio conversations in Claude? Use the <strong>AI Memory MCP Server</strong>:
           </p>
-          <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code>{`# Install from PyPI (coming soon) or GitHub
-pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server
+          <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code>{`# Install from PyPI (v1.5.0 published) or GitHub
+pip install aimemory-mcp-server
 
 # Add to Claude Desktop config
 {

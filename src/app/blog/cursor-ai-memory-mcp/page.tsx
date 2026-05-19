@@ -31,7 +31,7 @@ export default function CursorAIMemoryMCP() {
         name: 'How to add MCP memory to Cursor?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Adding MCP memory to Cursor is simple: First, install the AI Memory MCP Server with "pip install aimemory-mcp-server" (or "pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server"). Then in Cursor, go to Settings → MCP → Add New MCP Server. Set Name to "AI Memory", Type to "stdio", and Command to "aimemory-mcp-server". Click Save, restart Cursor, and you\'ll have persistent memory.',
+          text: 'Adding MCP memory to Cursor is simple: First, install the AI Memory MCP Server with "pip install aimemory-mcp-server" (or "pip install aimemory-mcp-server"). Then in Cursor, go to Settings → MCP → Add New MCP Server. Set Name to "AI Memory", Type to "stdio", and Command to "aimemory-mcp-server". Click Save, restart Cursor, and you\'ll have persistent memory.',
         },
       },
       {
@@ -128,7 +128,7 @@ export default function CursorAIMemoryMCP() {
       </pre>
       <p className="text-sm text-gray-500">Or, if you prefer the GitHub install:</p>
       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
-        <code>{`pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server`}</code>
+        <code>{`pip install aimemory-mcp-server`}</code>
       </pre>
       <p>This installs the <code>aimemory-mcp-server</code> package along with all dependencies.</p>
 

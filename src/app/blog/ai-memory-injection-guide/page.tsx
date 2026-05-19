@@ -233,7 +233,7 @@ export default function MemoryInjectionGuide() {
 
       <h3>Option 2: MCP Server (Developer Setup)</h3>
       <ol>
-        <li><strong>Install the MCP server:</strong> <code>pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server</code></li>
+        <li><strong>Install the MCP server:</strong> <code>pip install aimemory-mcp-server</code></li>
         <li><strong>Configure Claude Desktop:</strong> Add to <code>claude_desktop_config.json</code>: <code>{'{"mcpServers": {"ai-memory": {"command": "aimemory-mcp-server"}}}'}</code></li>
         <li><strong>Restart Claude Desktop:</strong> Your AI now has 12 memory tools: search, save, list, get, update, delete, stats, export, import, batch_save, get_all_tags, and clear_all</li>
       </ol>

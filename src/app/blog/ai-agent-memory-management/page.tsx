@@ -178,7 +178,7 @@ The AI Memory MCP Server provides 12 tools for agent memory management:
 ### Step 1: Install the MCP Server
 
 \`\`\`bash
-pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server
+pip install aimemory-mcp-server
 \`\`\`
 
 *(PyPI publication in progress — will soon be \`pip install aimemory-mcp-server\`)*

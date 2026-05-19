@@ -213,7 +213,7 @@ export default function CrossPlatformAIMemoryGuide() {
         If you use <strong>Claude Desktop, Cursor, or Windsurf</strong> for coding, set up the 
         <a href="https://aimemory.pro/mcp-server" className="text-blue-600 hover:underline">MCP Server</a>:
       </p>
-      <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code>pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server</code></pre>
+      <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code>pip install aimemory-mcp-server</code></pre>
       
       <p>
         Now Claude Desktop can search your memory directly:

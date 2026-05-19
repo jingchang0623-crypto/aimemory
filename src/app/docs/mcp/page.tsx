@@ -144,7 +144,7 @@ export default function MCPDocsPage() {
             </div>
             <pre className="bg-gray-900 text-gray-100 rounded-lg p-6 overflow-x-auto text-sm mb-4">
 {`# Install from GitHub
-pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server
+pip install aimemory-mcp-server
 
 # Run (stdio mode)
 aimemory-mcp-server`}
@@ -231,7 +231,7 @@ aimemory-mcp-server`}
             </div>
             <p className="text-sm text-gray-500 mt-4">
               Source code: <a href="https://github.com/jingchang0623-crypto/aimemory" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">GitHub</a> • 
-              Install: <code className="bg-gray-100 px-1 rounded">pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server</code>
+              Install: <code className="bg-gray-100 px-1 rounded">pip install aimemory-mcp-server</code>
             </p>
           </div>
         </section>

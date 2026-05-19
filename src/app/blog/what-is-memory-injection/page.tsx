@@ -621,7 +621,7 @@ export default function WhatIsMemoryInjectionPage() {
         <li>
           <strong>For desktop tools:</strong> Install the MCP Server and configure your AI
           client. Run:{' '}
-          <code>pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server</code>
+          <code>pip install aimemory-mcp-server</code>
         </li>
       </ol>
 

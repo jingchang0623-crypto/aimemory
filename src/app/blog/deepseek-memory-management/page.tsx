@@ -177,7 +177,7 @@ export default function DeepSeekMemoryManagement() {
         This gives DeepSeek persistent memory across all conversations:
       </p>
       <ol>
-        <li>Install the MCP Server: <code>pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server</code></li>
+        <li>Install the MCP Server: <code>pip install aimemory-mcp-server</code></li>
         <li>Configure it as an MCP tool in your AI client</li>
         <li>Use <code>ai_memory_search</code> to retrieve relevant past conversations</li>
         <li>Use <code>ai_memory_add</code> to store new insights permanently</li>

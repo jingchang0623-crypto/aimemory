@@ -342,7 +342,7 @@ export default function PersistentMemoryBlog() {
 pip install aimemory-mcp-server
 
 # Or install from GitHub (current method)
-pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server
+pip install aimemory-mcp-server
 
 # Add to Claude Desktop config
 {

@@ -231,7 +231,7 @@ export default function AIMemoryForFreelancers2026() {
         If you use Cursor, Claude Desktop, or Windsurf, set up the 
         <a href="https://aimemory.pro/mcp-server" className="text-blue-600 hover:underline">MCP Server</a> for persistent memory across all your AI tools:
       </p>
-      <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code>pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server</code></pre>
+      <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code>pip install aimemory-mcp-server</code></pre>
 
       <h2>The ROI for Freelancers: Time Saved</h2>
 

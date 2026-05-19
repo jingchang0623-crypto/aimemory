@@ -335,7 +335,7 @@ export default function AIResearchersGuide() {
           <div className="bg-gray-900 border border-gray-700 rounded-lg p-4 my-4">
             <pre className="text-green-300 text-sm m-0 overflow-x-auto">
 {`# Install MCP Server
-pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server
+pip install aimemory-mcp-server
 
 # Claude Desktop config
 {

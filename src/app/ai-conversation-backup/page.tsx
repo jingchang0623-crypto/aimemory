@@ -180,7 +180,7 @@ export default function AIConversationBackup() {
             </p>
             <div className="bg-gray-900 text-gray-100 p-4 rounded-lg mb-4 font-mono text-sm overflow-x-auto">
               <p className="text-green-400"># Install MCP server</p>
-              <p>pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server</p>
+              <p>pip install aimemory-mcp-server</p>
             </div>
             <a
               href="/mcp-server"

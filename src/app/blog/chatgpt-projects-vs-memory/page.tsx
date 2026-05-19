@@ -320,8 +320,8 @@ export default function ChatGPTProjectsVsMemory() {
           <p>
             Want to inject your memories directly into Claude, Cursor, or any MCP-compatible AI? Use the <strong>AI Memory MCP Server</strong>:
           </p>
-          <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto"><code>{`# Install from PyPI (coming soon) or GitHub
-pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server
+          <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto"><code>{`# Install from PyPI (v1.5.0 published) or GitHub
+pip install aimemory-mcp-server
 
 # Add to Claude Desktop config
 {
