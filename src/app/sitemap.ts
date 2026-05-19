@@ -71,6 +71,7 @@ const highPriorityBlogSlugs = [
   'ai-agent-memory-management',
   'ai-memory-for-freelancers-2026',
   'cross-platform-ai-memory-guide',
+  'ai-memory-tools-comparison-2026',
 ];
 
 function getBlogSlugs(): string[] {
