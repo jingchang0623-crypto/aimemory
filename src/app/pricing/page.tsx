@@ -183,7 +183,7 @@ export default function PricingPage() {
           {/* Pro Plan */}
           <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 relative">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-sm font-semibold px-4 py-1 rounded-full">
-              Coming Soon
+              Planned
             </div>
             <div className="text-center">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Pro</h2>
@@ -216,12 +216,7 @@ export default function PricingPage() {
                 <span><strong>MCP Cloud Access</strong> — hosted MCP endpoint</span>
               </li>
             </ul>
-            <Link
-              href="#"
-              className="block w-full text-center bg-gray-200 text-gray-500 py-3 rounded-lg font-semibold cursor-not-allowed"
-            >
-              Coming Soon
-            </Link>
+            <WaitlistForm />
           </div>
         </div>
 

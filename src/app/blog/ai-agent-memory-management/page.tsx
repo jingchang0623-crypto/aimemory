@@ -333,7 +333,7 @@ With the MCP standard and tools like AI Memory, you can give any agent (Claude, 
 
 **Ready to give your agents persistent memory?**
 
-1. **Install**: \`pip install aimemory-mcp-server\` (or GitHub install)
+1. **Install**: <code>pip install aimemory-mcp-server</code> (available on PyPI)
 2. **Connect**: Add to Claude Desktop, Cursor, or any MCP client
 3. **Search**: Agents automatically retrieve relevant memories
 

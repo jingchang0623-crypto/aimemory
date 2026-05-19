@@ -126,11 +126,7 @@ export default function CursorAIMemoryMCP() {
       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
         <code>{`pip install aimemory-mcp-server`}</code>
       </pre>
-      <p className="text-sm text-gray-500">Or, if you prefer the GitHub install:</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
-        <code>{`pip install aimemory-mcp-server`}</code>
-      </pre>
-      <p>This installs the <code>aimemory-mcp-server</code> package along with all dependencies.</p>
+      <p>This installs the <code>aimemory-mcp-server</code> package from PyPI along with all dependencies.</p>
 
       <h3>Step 2: Add MCP Server to Cursor</h3>
       <ol>

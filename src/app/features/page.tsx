@@ -115,9 +115,9 @@ export default function FeaturesPage() {
           </div>
         </section>
 
-        {/* Upcoming */}
+        {/* Coming Soon → Planned Features */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Coming Soon</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Planned Features</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {upcoming.map((u) => (
               <div key={u.title} className="bg-blue-50 rounded-xl border border-blue-100 p-6">

@@ -455,7 +455,7 @@ export default function Home() {
             <code className="text-green-400 text-sm font-mono">
               <span className="text-gray-500">$ </span>pip install aimemory-mcp-server
             </code>
-            <p className="text-gray-500 text-xs mt-3">PyPI package: aimemory-mcp-server v1.5.0 — use GitHub install for now</p>
+            <p className="text-gray-500 text-xs mt-3">Available on <a href="https://pypi.org/project/aimemory-mcp-server/" className="text-violet-400 hover:text-violet-300 underline" target="_blank" rel="noopener noreferrer">PyPI</a> — packaged and ready for production</p>
           </div>
           <Link
             href="/mcp-server"

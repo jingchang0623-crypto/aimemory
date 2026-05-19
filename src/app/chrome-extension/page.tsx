@@ -127,7 +127,7 @@ export default function ChromeExtension() {
             </div>
           </div>
           <p className="text-sm text-gray-400 mt-4 text-center">
-            Also coming soon: Microsoft Copilot, Perplexity.
+            More platforms in development: Microsoft Copilot, Perplexity.
           </p>
         </section>
 
