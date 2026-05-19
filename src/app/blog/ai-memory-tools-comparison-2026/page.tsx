@@ -1,4 +1,12 @@
+import type { Metadata } from 'next';
 import BlogLayout from '../../../components/BlogLayout';
+
+export const metadata: Metadata = {
+  title: 'AI Memory Tools Comparison (2026) — AI Memory vs Mem0 vs Chat Memo vs MemoryPlugin',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-memory-tools-comparison-2026',
+  },
+};
 
 export default function AIMemoryToolsComparison2026() {
   return (
