@@ -693,3 +693,53 @@ curl https://aimemory.pro/sitemap.xml | grep -c "<url>"
 cd /home/agentuser/aimemory/extension
 npm run build
 ```
+
+---
+
+### Session: 2026-05-20 (Round 134 - Cron Job - PyPI Content Sync + Pricing Fix)
+
+#### Completed
+1. ✅ **Website content audit** — Fixed 6 files with outdated PyPI/GitHub references
+2. ✅ **Pricing page (pricing/page.tsx)** — Changed "Coming Soon" badge → "Planned"; replaced disabled CTA button with WaitlistForm for Pro plan
+3. ✅ **Features page (features/page.tsx)** — Changed "Coming Soon" → "Planned Features"
+4. ✅ **Homepage (page.tsx)** — Removed "use GitHub install for now" text; added PyPI link
+5. ✅ **Chrome Extension page (chrome-extension/page.tsx)** — Changed "Also coming soon" → "More platforms in development"
+6. ✅ **cursor-ai-memory-mcp blog** — Removed confusing duplicate "GitHub install" section
+7. ✅ **ai-agent-memory-management blog** — Updated "(or GitHub install)" → "(available on PyPI)"
+8. ✅ **Chrome Web Store submission prep** — Created `CWS-SUBMISSION.md` with full ASO strategy, asset checklist, keyword matrix, and expected impact
+9. ✅ **npm run build passed** (207 static routes)
+10. ✅ **Git commit + push** (commit `455dab1`)
+11. ✅ **CWS-SUBMISSION.md** saved to repository
+
+#### Files Modified
+- `src/app/pricing/page.tsx` — "Coming Soon" → "Planned" + WaitlistForm for Pro
+- `src/app/features/page.tsx` — "Coming Soon" → "Planned Features"
+- `src/app/page.tsx` — Removed "use GitHub install for now" + added PyPI link
+- `src/app/chrome-extension/page.tsx` — "Also coming soon" → "More platforms in development"
+- `src/app/blog/cursor-ai-memory-mcp/page.tsx` — Removed duplicate GitHub install
+- `src/app/blog/ai-agent-memory-management/page.tsx` — "(or GitHub install)" → "(available on PyPI)"
+- `CWS-SUBMISSION.md` — **NEW**: Chrome Web Store submission preparation document
+
+#### Verified Status
+- ✅ Build: 207 static routes passed
+- ✅ PyPI: aimemory-mcp-server v1.5.0 verified
+- ✅ All "Coming Soon" → "Planned" across all pages
+- ✅ WaitlistForm now active for Pro plan
+- ✅ Chrome Extension: v1.1.0 built (5 content scripts)
+- ✅ Memory Injection: Wired in all 5 platforms
+
+#### Remaining P0-P1 Blockers
+| Priority | Task | Status | Dependency |
+|----------|------|--------|------------|
+| 🔴 P0 | Chrome Web Store submission | **Prepared (CWS-SUBMISSION.md)** | Needs $5 developer fee (user action) |
+| 🔴 P0 | Stripe payment integration | NOT STARTED | Needs Stripe account (user action) |
+| 🟡 P1 | Chinese market SEO (zh/ pages) | NOT STARTED | Research complete |
+| 🟡 P1 | Weibull decay model | PLANNING | Research complete |
+| 🟢 P2 | Vector search (hybrid FTS5+vector) | RESEARCH | Needs technical feasibility study |
+
+#### New Research Insights Applied (2026-05-20)
+- **omem (197 stars, Rust)** 11-stage hybrid retrieval raises baseline for AI memory product quality
+- **OpenViking (24.2k stars, ByteDance)** is the existential competitive threat — differentiate via Web UI + CWS + Chinese platforms
+- **Weibull decay model** is now a standard feature across top-tier memory products
+- Chrome Web Store is the #1 missed distribution channel; CWS-SUBMISSION.md prepares for immediate action when user pays $5
+```
