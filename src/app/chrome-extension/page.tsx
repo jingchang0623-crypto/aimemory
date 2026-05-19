@@ -42,7 +42,7 @@ export default function ChromeExtension() {
             no manual exports, no copy-paste, no lost insights.
           </p>
           <a 
-            href="/ai-memory-extension.zip"
+            href="/ai-memory-extension-v1.1.0.zip"
             className="inline-block px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-blue-700 transition-colors mb-4"
           >
             ⬇️ Download Extension (v1.1.0)

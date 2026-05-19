@@ -95,7 +95,7 @@ Add to `~/.windsurf/config.json`:
 - 🔍 **Full-text search** — powered by SQLite FTS5 for fast, ranked results
 - 🏷️ **Tag-based organization** — categorize memories with tags
 - 💾 **Persistent storage** — memories survive restarts (SQLite)
-- 🔧 **12 core tools** — save, search, list, get, update, delete, stats, export, import, batch_save, get_tags, clear
+    "🔧 **12 core tools** — save, search, list, get, update, delete, stats, export, import, batch_save, get_tags, clear\n
 - 🚀 **Easy install** — `pip install aimemory-mcp-server` from PyPI
 - 🪶 **Zero config** — works out of the box with sensible defaults
 

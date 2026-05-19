@@ -139,5 +139,111 @@ def delete_memory(memory_id: int) -> dict:
     return {"success": False, "message": f"Memory with id {memory_id} not found"}
 
 
+@mcp.tool()
+def get_memory(memory_id: int) -> dict:
+    """Retrieve a single memory by its ID.
+
+    Args:
+        memory_id: The ID of the memory to retrieve (required).
+
+    Returns:
+        The memory object with id, content, tags, source, created_at, and updated_at fields.
+    """
+    memory = storage.get_memory(memory_id)
+    if memory is None:
+        return {"error": f"Memory with id {memory_id} not found"}
+    return {
+        "id": memory.id,
+        "content": memory.content,
+        "tags": memory.tags,
+        "source": memory.source,
+        "created_at": memory.created_at,
+        "updated_at": memory.updated_at,
+    }
+
+
+@mcp.tool()
+def memory_stats() -> dict:
+    """Get memory store statistics.
+
+    Returns total memory count, memories created in the last 7 days,
+    and top tags distribution.
+
+    Returns:
+        A dict with "total", "recent_7_days", and "top_tags" fields.
+    """
+    return storage.memory_stats()
+
+
+@mcp.tool()
+def export_memories() -> dict:
+    """Export all memories for backup.
+
+    Returns all memories as a JSON list with count and export timestamp.
+    Use this to backup your knowledge base or migrate to another system.
+
+    Returns:
+        A dict with "count", "exported_at", and "memories" (list of all memory objects).
+    """
+    return storage.export_memories()
+
+
+@mcp.tool()
+def import_memories(memories: list[dict], skip_duplicates: bool = True) -> dict:
+    """Import memories from a backup.
+
+    Args:
+        memories: List of memory dicts to import. Each dict should have "content" (required)
+                  and optionally "tags", "source".
+        skip_duplicates: Skip memories with content that already exists (default: True).
+
+    Returns:
+        A dict with "imported" count and "skipped" count.
+    """
+    return storage.import_memories(memories, skip_duplicates)
+
+
+@mcp.tool()
+def batch_save_memories(memories: list[dict]) -> dict:
+    """Save multiple memories at once.
+
+    Much faster than calling save_memory repeatedly. Perfect for extracting
+    key takeaways from a conversation in one call.
+
+    Args:
+        memories: List of memory dicts. Each must have "content", optionally "tags" and "source".
+
+    Returns:
+        A dict with "saved" count and "ids" list of newly created memory IDs.
+    """
+    return storage.batch_save_memories(memories)
+
+
+@mcp.tool()
+def get_all_tags() -> dict:
+    """List all unique tags with usage counts.
+
+    Use this to discover what categories of memories you have stored.
+    Great for building navigation UI or understanding your knowledge base structure.
+
+    Returns:
+        A dict with "total_tags" count and "tags" dict mapping tag name to usage count.
+    """
+    return storage.get_all_tags()
+
+
+@mcp.tool()
+def clear_all_memories() -> dict:
+    """⚠️ Delete ALL memories. This cannot be undone.
+
+    Permanently removes every memory. Export first using export_memories
+    if you want to keep a backup.
+
+    Returns:
+        A dict with "success" boolean and "deleted_count" (number of memories removed).
+    """
+    return storage.clear_all_memories()
+
+
 if __name__ == "__main__":
     mcp.run(transport="stdio")

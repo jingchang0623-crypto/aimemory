@@ -18,6 +18,30 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.88.0',
+    date: '2026-05-19',
+    title: 'Round 128 — MCP Server v1.5.0 (12 Tools) + Chrome Extension v1.1.0 + SEO Monitor',
+    tags: ['MCP', 'Chrome Extension', 'SEO', 'Growth'],
+    changes: {
+      added: [
+        'MCP Server v1.5.0: Added 6 new tools (get_memory, memory_stats, export_memories, import_memories, batch_save_memories, get_all_tags, clear_all_memories) — now 12 total tools',
+        'Chrome Extension v1.1.0: Updated download link with developer mode install guide (skipping $5 Web Store fee)',
+        'SEO Monitor: Daily cron job tracking Googlebot/DuckDuckBot/bingbot crawl activity + page indexing',
+        'sitemap.xml: Now auto-generated with 208 URLs (184 blogs + 24 static pages)',
+      ],
+      improved: [
+        'MCP Server README: Fixed tool count (7→12) and added full documentation for all 12 MCP tools',
+        'Chrome Extension page: Updated download link to /ai-memory-extension-v1.1.0.zip with proper versioning',
+        'Storage layer: Added 7 new functions to storage.py (get_memory, memory_stats, export/import, batch_save, get_all_tags, clear_all_memories)',
+      ],
+      noted: [
+        'PyPI publish: MCP Server v1.5.0 built (sdist + wheel) — awaiting PYPI_API_TOKEN in .env.local',
+        'SEO: Googlebot (18 visits), DuckDuckBot (21 visits), bingbot (3 visits) crawling aimemory.pro',
+        'Next milestone: PyPI publish + first 1000 organic visits → 10% paid = break-even',
+      ],
+    },
+  },
+  {
     version: 'v0.87.0',
     date: '2026-05-18',
     title: 'Round 127 — 3 New SEO Blogs (ChatGPT Projects, Auto Export, Google AI Studio)',

@@ -178,5 +178,162 @@ def delete_memory(memory_id: int) -> bool:
         conn.close()
 
 
+def get_memory(memory_id: int) -> Optional[Memory]:
+    """Get a single memory by ID. Returns Memory or None if not found."""
+    conn = get_connection()
+    try:
+        row = conn.execute("SELECT * FROM memories WHERE id = ?", (memory_id,)).fetchone()
+        if row:
+            return Memory(**dict(row))
+        return None
+    finally:
+        conn.close()
+
+
+def memory_stats() -> dict:
+    """Get memory store statistics: total count, recent count (7 days), top tags."""
+    conn = get_connection()
+    try:
+        total = conn.execute("SELECT COUNT(*) as cnt FROM memories").fetchone()["cnt"]
+
+        # Last 7 days
+        from datetime import timedelta
+        seven_days_ago = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat()
+        recent = conn.execute(
+            "SELECT COUNT(*) as cnt FROM memories WHERE created_at >= ?", (seven_days_ago,)
+        ).fetchone()["cnt"]
+
+        # Top tags
+        rows = conn.execute("SELECT tags FROM memories").fetchall()
+        tag_counts = {}
+        for row in rows:
+            try:
+                tags = json.loads(row["tags"])
+                for tag in tags:
+                    tag_counts[tag] = tag_counts.get(tag, 0) + 1
+            except (json.JSONDecodeError, TypeError):
+                continue
+        top_tags = sorted(tag_counts.items(), key=lambda x: x[1], reverse=True)[:10]
+
+        return {
+            "total": total,
+            "recent_7_days": recent,
+            "top_tags": [{"tag": t, "count": c} for t, c in top_tags],
+        }
+    finally:
+        conn.close()
+
+
+def export_memories() -> dict:
+    """Export all memories as a JSON-serializable dict."""
+    conn = get_connection()
+    try:
+        rows = conn.execute("SELECT * FROM memories ORDER BY id").fetchall()
+        memories = [Memory(**dict(r)) for r in rows]
+        return {
+            "count": len(memories),
+            "exported_at": _now(),
+            "memories": [
+                {
+                    "id": m.id,
+                    "content": m.content,
+                    "tags": json.loads(m.tags) if m.tags else [],
+                    "source": m.source,
+                    "created_at": m.created_at,
+                    "updated_at": m.updated_at,
+                }
+                for m in memories
+            ],
+        }
+    finally:
+        conn.close()
+
+
+def import_memories(memories: list[dict], skip_duplicates: bool = True) -> dict:
+    """Import memories from a list of dicts. Returns imported/skipped counts."""
+    imported = 0
+    skipped = 0
+    conn = get_connection()
+    try:
+        existing_contents = set()
+        if skip_duplicates:
+            rows = conn.execute("SELECT content FROM memories").fetchall()
+            existing_contents = {r["content"] for r in rows}
+
+        for mem in memories:
+            content = mem.get("content", "")
+            if skip_duplicates and content in existing_contents:
+                skipped += 1
+                continue
+            tags = json.dumps(mem.get("tags", []))
+            now = _now()
+            conn.execute(
+                "INSERT INTO memories (content, tags, source, created_at, updated_at) VALUES (?, ?, ?, ?, ?)",
+                (content, tags, mem.get("source"), now, now),
+            )
+            existing_contents.add(content)
+            imported += 1
+
+        conn.commit()
+        return {"imported": imported, "skipped": skipped}
+    finally:
+        conn.close()
+
+
+def batch_save_memories(memories: list[dict]) -> dict:
+    """Save multiple memories at once. Returns saved count and list of IDs."""
+    conn = get_connection()
+    try:
+        ids = []
+        now = _now()
+        for mem in memories:
+            content = mem.get("content", "")
+            tags = json.dumps(mem.get("tags", []))
+            source = mem.get("source")
+            cursor = conn.execute(
+                "INSERT INTO memories (content, tags, source, created_at, updated_at) VALUES (?, ?, ?, ?, ?)",
+                (content, tags, source, now, now),
+            )
+            ids.append(cursor.lastrowid)
+        conn.commit()
+        return {"saved": len(ids), "ids": ids}
+    finally:
+        conn.close()
+
+
+def get_all_tags() -> dict:
+    """List all unique tags with usage counts."""
+    conn = get_connection()
+    try:
+        rows = conn.execute("SELECT tags FROM memories").fetchall()
+        tag_counts = {}
+        for row in rows:
+            try:
+                tags = json.loads(row["tags"])
+                for tag in tags:
+                    tag_counts[tag] = tag_counts.get(tag, 0) + 1
+            except (json.JSONDecodeError, TypeError):
+                continue
+        sorted_tags = sorted(tag_counts.items(), key=lambda x: x[1], reverse=True)
+        return {
+            "total_tags": len(sorted_tags),
+            "tags": {tag: count for tag, count in sorted_tags},
+        }
+    finally:
+        conn.close()
+
+
+def clear_all_memories() -> dict:
+    """Delete ALL memories. Returns count of deleted memories."""
+    conn = get_connection()
+    try:
+        count = conn.execute("SELECT COUNT(*) as cnt FROM memories").fetchone()["cnt"]
+        conn.execute("DELETE FROM memories")
+        conn.commit()
+        return {"success": True, "deleted_count": count}
+    finally:
+        conn.close()
+
+
 # Auto-initialize database on import
 init_db()

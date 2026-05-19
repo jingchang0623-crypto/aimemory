@@ -31,7 +31,7 @@ export default function MCPServerLanding() {
             "operatingSystem": "Cross-platform",
             "description": "Open-source MCP server that gives AI assistants persistent memory. Works with Claude Desktop, Cursor, ChatGPT, and 113+ MCP clients.",
             "url": "https://aimemory.pro/mcp-server",
-            "softwareVersion": "1.4.0",
+            "softwareVersion": "1.5.0",
             "offers": {
               "@type": "Offer",
               "price": "0",
@@ -130,7 +130,7 @@ export default function MCPServerLanding() {
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm mb-6">
               <span className="text-base">⚡</span>
               pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server
-              <span className="ml-1 px-1.5 py-0.5 bg-green-600 text-white text-xs rounded-full font-medium">v1.4.0</span>
+              <span className="ml-1 px-1.5 py-0.5 bg-green-600 text-white text-xs rounded-full font-medium">v1.5.0</span>
               <span className="ml-1 px-1.5 py-0.5 bg-blue-100 text-blue-700 text-xs rounded-full font-medium">GitHub</span>
             </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 tracking-tight leading-tight mb-6">
