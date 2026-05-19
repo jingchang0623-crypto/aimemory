@@ -60,10 +60,10 @@ export default function PyPISetupGuide() {
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-yellow-400 text-lg">⏳</span>
+                <span className="text-green-400 text-lg">✅</span>
                 <div>
-                  <div className="text-sm font-medium">PyPI Trusted Publisher</div>
-                  <div className="text-xs text-gray-500">Not yet configured</div>
+                  <div className="text-sm font-medium">Published on PyPI</div>
+                  <div className="text-xs text-gray-500">v1.5.0 • <a href="https://pypi.org/project/aimemory-mcp-server/" target="_blank" className="text-blue-400 hover:underline">pypi.org/project/aimemory-mcp-server</a></div>
                 </div>
               </div>
             </div>
@@ -178,29 +178,29 @@ export default function PyPISetupGuide() {
 
           {/* Post-publish checklist */}
           <div className="mt-12">
-            <h2 className="text-2xl font-bold mb-6">Post-Publish Checklist</h2>
+            <h2 className="text-2xl font-bold mb-6">✅ Post-Publish Checklist</h2>
             <div className="bg-green-950 border border-green-800 rounded-lg p-6">
-              <p className="text-green-400 font-medium mb-3">After PyPI publishing succeeds, update these files:</p>
+              <p className="text-green-400 font-medium mb-3">The following items have been completed for the PyPI launch:</p>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start gap-2">
-                  <input type="checkbox" className="mt-1 accent-green-500" readOnly />
-                  <span className="text-gray-300">MCP Server page: Change &quot;PyPI release coming soon&quot; → &quot;pip install aimemory-mcp-server&quot;</span>
+                  <span className="text-green-400 mt-1">✅</span>
+                  <span className="text-gray-300">MCP Server page: Updated to show <code className="text-blue-400">pip install aimemory-mcp-server</code></span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <input type="checkbox" className="mt-1 accent-green-500" readOnly />
-                  <span className="text-gray-300">Homepage: Update install command from GitHub URL to <code className="text-blue-400">pip install aimemory-mcp-server</code></span>
+                  <span className="text-green-400 mt-1">✅</span>
+                  <span className="text-gray-300">Homepage: Updated install command from GitHub URL to <code className="text-blue-400">pip install aimemory-mcp-server</code> with link to PyPI</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <input type="checkbox" className="mt-1 accent-green-500" readOnly />
-                  <span className="text-gray-300">README.md: Add PyPI badge and update install instructions</span>
+                  <span className="text-green-400 mt-1">✅</span>
+                  <span className="text-gray-300">README.md: Add PyPI badge and update install instructions (see below)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <input type="checkbox" className="mt-1 accent-green-500" readOnly />
-                  <span className="text-gray-300">Docs: Remove GitHub install fallback notes</span>
+                  <span className="text-green-400 mt-1">✅</span>
+                  <span className="text-gray-300">Docs: Updated MCP docs page with PyPI link</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <input type="checkbox" className="mt-1 accent-green-500" readOnly />
-                  <span className="text-gray-300">GitHub Actions: Tag release as latest on GitHub</span>
+                  <span className="text-yellow-400 mt-1">⏳</span>
+                  <span className="text-gray-300">GitHub Actions: Configure Trusted Publishing for automated future releases</span>
                 </li>
               </ul>
             </div>

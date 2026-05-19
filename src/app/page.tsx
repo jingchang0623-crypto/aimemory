@@ -432,7 +432,7 @@ export default function Home() {
               </code>
             </div>
             <p className="text-xs text-gray-400 mt-3">
-              PyPI release coming soon. <Link href="/docs/pypi-setup" className="underline hover:text-gray-600">Help us publish</Link>
+              Already on PyPI: <code className="bg-gray-100 px-2 py-1 rounded">pip install aimemory-mcp-server</code> — <Link href="https://pypi.org/project/aimemory-mcp-server/" target="_blank" className="underline hover:text-gray-600">View on PyPI</Link>
             </p>
           </div>
         </div>

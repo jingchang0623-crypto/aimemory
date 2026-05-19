@@ -186,7 +186,7 @@ export default function DeepSeekAIMemory() {
                 Connect DeepSeek memories to Claude, Cursor, and 113+ MCP clients for cross-platform access.
               </p>
               <ol className="list-decimal list-inside space-y-2 text-gray-700">
-                <li>Install: <code className="bg-gray-100 px-2 py-1 rounded">pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server</code> (PyPI release coming soon)</li>
+                <li>Install: <code className="bg-gray-100 px-2 py-1 rounded">pip install aimemory-mcp-server</code> (available on <Link href="https://pypi.org/project/aimemory-mcp-server/" target="_blank" className="text-blue-600 hover:underline">PyPI</Link>)</li>
                 <li>Upload DeepSeek conversations to aimemory.pro</li>
                 <li>Configure MCP in Claude Desktop, Cursor, or any MCP client</li>
                 <li>Ask Claude/Cursor to "search my DeepSeek conversations about [topic]"</li>

@@ -157,7 +157,7 @@ export default function MCPServerLanding() {
             </a>
           </div>
           <p className="text-sm text-gray-500 mt-4">
-            ✓ Available now via GitHub • <Link href="/docs/pypi-setup" className="text-blue-600 hover:underline">PyPI setup guide</Link> — help us publish to PyPI
+            ✓ Available now via <Link href="/docs/pypi-setup" className="text-blue-600 hover:underline">PyPI</Link> • <code className="bg-gray-100 px-1 rounded text-xs">pip install aimemory-mcp-server</code>
           </p>
         </div>
       </section>
@@ -204,7 +204,7 @@ export default function MCPServerLanding() {
               <span className="text-green-400 text-sm font-mono">aimemory-mcp-server</span>
             </div>
             <p className="text-gray-500 text-xs mt-4">✓ Python 3.8+ &nbsp; ✓ Works on macOS, Linux, Windows &nbsp; ✓ No API keys needed</p>
-            <p className="text-gray-400 text-xs mt-3">💡 Want <code className="bg-gray-800 px-1 rounded">pip install aimemory-mcp-server</code>? See our <Link href="/docs/pypi-setup" className="text-blue-400 hover:underline">PyPI setup guide</Link> to help us publish.</p>
+            <p className="text-gray-400 text-xs mt-3">💡 Already on PyPI: <code className="bg-gray-800 px-1 rounded">pip install aimemory-mcp-server</code> — <Link href="https://pypi.org/project/aimemory-mcp-server/" className="text-blue-400 hover:underline" target="_blank">View on PyPI</Link></p>
           </div>
         </div>
       </section>
@@ -458,7 +458,7 @@ export default function MCPServerLanding() {
           <div className="space-y-4">
             {[
               { q: 'What is an MCP server for AI memory?', a: 'An MCP (Model Context Protocol) server for AI memory is a tool that gives AI assistants like Claude Desktop and Cursor persistent memory by connecting them to your conversation history. AI Memory\'s MCP server lets any MCP-compatible AI search, save, and retrieve memories across all your AI conversations.' },
-              { q: 'How do I install the AI Memory MCP server?', a: 'Install with one command: pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server (PyPI release coming soon). Then add the configuration to your MCP client (Claude Desktop, Cursor, etc.) and restart. The server runs locally on your machine with full offline support.' },
+              { q: 'How do I install the AI Memory MCP server?', a: 'Install with one command: pip install aimemory-mcp-server (available on PyPI). Then add the configuration to your MCP client (Claude Desktop, Cursor, etc.) and restart. The server runs locally on your machine with full offline support.' },
               { q: 'Which AI tools support MCP servers?', a: 'Over 113 AI clients support MCP servers, including Claude Desktop, Cursor, Windsurf, VS Code (with Cline/Continue), Zed, and many more. The Model Context Protocol is an open standard supported by the entire AI ecosystem.' },
               { q: 'Is the AI Memory MCP server free?', a: 'Yes, the AI Memory MCP server is completely free and open-source. You can install it via pip, run it locally, and connect it to any MCP client at no cost. There are no usage limits or hidden fees.' },
               { q: 'Does the MCP server work offline?', a: 'Yes, the standalone MCP server runs entirely on your local machine. Your conversation data stays in a local SQLite database — no cloud connection required. You can also use the hosted version at aimemory.pro/api/mcp for cloud-based access.' },

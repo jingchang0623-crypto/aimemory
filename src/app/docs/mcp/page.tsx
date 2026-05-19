@@ -150,7 +150,7 @@ pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirector
 aimemory-mcp-server`}
             </pre>
             <p className="text-sm text-gray-500 mt-2 mb-4">
-              ✅ Available now • PyPI release coming soon for <code className="bg-gray-100 px-1 rounded">pip install aimemory-mcp-server</code>
+              ✅ Available on <Link href="https://pypi.org/project/aimemory-mcp-server/" target="_blank" className="text-blue-600 hover:underline">PyPI</Link>: <code className="bg-gray-100 px-1 rounded">pip install aimemory-mcp-server</code>
             </p>
             <h3 className="text-lg font-semibold text-gray-900 mb-3 mt-6">Claude Desktop Config (Local)</h3>
             <pre className="bg-gray-900 text-gray-100 rounded-lg p-6 overflow-x-auto text-sm mb-4">
