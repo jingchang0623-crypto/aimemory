@@ -74,6 +74,7 @@ const highPriorityBlogSlugs = [
   'ai-memory-tools-comparison-2026',
   'kimi-jiyi-kongjian',
   'ai-duihua-jiyi-guanli',
+  'ai-memory-best-practices-2026',
 ];
 
 function getBlogSlugs(): string[] {
