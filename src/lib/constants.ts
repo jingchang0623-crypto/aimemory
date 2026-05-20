@@ -4,8 +4,8 @@
  * Update when adding new content pages.
  */
 
-// Content counts - update manually when adding new blogs/guides
-export const BLOG_COUNT = 187; // Actual blog posts in blog-data.ts (2026-05-19: added ai-memory-tools-comparison-2026, 186+1) 
+// Content counts - update manually when adding new content pages
+export const BLOG_COUNT = 187; // Actual blog posts in blog-data.ts (updated 2026-05-20: removed duplicate ai-memory-for-teams)
 export const GUIDE_PAGES = 2; // /guides/getting-started, /guides/mcp-quickstart
 export const CONTENT_COUNT = BLOG_COUNT + GUIDE_PAGES; // Total "SEO Guides" for homepage (189)
 

@@ -72,6 +72,8 @@ const highPriorityBlogSlugs = [
   'ai-memory-for-freelancers-2026',
   'cross-platform-ai-memory-guide',
   'ai-memory-tools-comparison-2026',
+  'kimi-jiyi-kongjian',
+  'ai-duihua-jiyi-guanli',
 ];
 
 function getBlogSlugs(): string[] {

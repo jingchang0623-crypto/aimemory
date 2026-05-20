@@ -1177,18 +1177,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['chatgpt', 'api', 'developer', 'mcp', 'technical', 'memory', 'integration'],
     lang: 'en',
   },
-  // === AI Memory for Teams (B2B keyword) ===
-  {
-    slug: 'ai-memory-for-teams',
-    title: 'AI Memory for Teams: Share & Search Team AI Conversations (2026)',
-    description: 'Guide to team AI memory management. Share ChatGPT, Claude, and DeepSeek conversations across your team. Cross-platform search, MCP integration, and secure team deployment.',
-    category: 'Teams',
-    date: '2026-05-02',
-    readTime: '16 min',
-    keywords: ['ai memory for teams', 'team ai memory', 'share chatgpt conversations', 'team ai chat', 'collaborative ai memory', 'chatgpt team memory'],
-    tags: ['teams', 'collaboration', 'enterprise', 'chatgpt', 'claude', 'sharing', 'deployment'],
-    lang: 'en',
-  },
+
   // === ChatGPT o3 Memory Changes (timeliness keyword) ===
   {
     slug: 'chatgpt-o3-memory-changes',
@@ -2130,6 +2119,42 @@ export const blogPosts: BlogPost[] = [
     readTime: '12 min',
     keywords: ['best ai memory tool 2026', 'ai memory tools comparison', 'top ai memory tools', 'ai context flow vs chat memo', 'mem0 alternative', 'ai memory extension', 'best chatgpt memory tool', 'ai memory management 2026'],
     tags: ['comparison', 'top-10', 'ai-memory', 'mem0', 'ai-context-flow', 'chat-memo', 'memoryplugin', 'review', 'guide', 'chatgpt', 'claude'],
+    lang: 'en',
+  },
+  // === NEW: Chinese SEO - Kimi记忆空间 (Round 134 - 2026-05-20) ===
+  {
+    slug: 'kimi-jiyi-kongjian',
+    title: 'Kimi记忆空间使用教程（2026）：开启、关闭、查看、管理完整指南',
+    description: 'Kimi记忆空间怎么开启？完整教程教你如何使用Kimi记忆功能、查看历史记忆、管理AI对话记忆。支持跨平台同步到ChatGPT、Claude、DeepSeek。',
+    category: '中文指南',
+    date: '2026-05-20',
+    readTime: '8 min',
+    keywords: ['Kimi记忆空间', 'Kimi记忆怎么开启', 'Kimi记忆空间使用教程', 'Kimi AI记忆管理', 'Kimi记忆功能', 'Kimi记忆怎么关闭', 'Kimi记忆空间在哪里', 'Kimi对话记忆'],
+    tags: ['kimi', 'chinese', 'guide', 'memory-space', 'jiyi', '教程', '记忆空间', '中文'],
+    lang: 'zh',
+  },
+  // === NEW: Chinese SEO - AI对话记忆管理 (Round 134 - 2026-05-20) ===
+  {
+    slug: 'ai-duihua-jiyi-guanli',
+    title: 'AI对话记忆管理完全指南（2026）：跨平台保存与搜索',
+    description: 'AI对话记忆怎么管理？完整教程教你如何保存、搜索、同步ChatGPT、Claude、DeepSeek、Gemini、Kimi的对话记忆。免费工具推荐。',
+    category: '中文指南',
+    date: '2026-05-20',
+    readTime: '12 min',
+    keywords: ['AI对话记忆', 'AI记忆管理', '跨平台AI工具', 'ChatGPT记忆', 'Claude记忆', 'AI对话保存', 'AI记忆助手', 'AI对话搜索'],
+    tags: ['chinese', 'guide', 'memory-management', 'cross-platform', 'chatgpt', 'claude', 'deepseek', 'gemini', 'kimi', '中文'],
+    lang: 'zh',
+  },
+  // === NEW: AI Memory for Teams (Round 135 - 2026-05-20) ===
+  {
+    slug: 'ai-memory-for-teams',
+    title: 'AI Memory for Teams: Build a Shared AI Knowledge Base (2026)',
+    description: 'Learn how teams can build a shared AI knowledge base with AI Memory. Stop losing team context across ChatGPT, Claude, and Cursor sessions.',
+    category: 'Team & Collaboration',
+    date: '2026-05-20',
+    readTime: '11 min',
+    keywords: ['ai memory for teams', 'team ai knowledge base', 'shared ai memory', 'team collaboration ai', 'ai context sharing', 'cursor team memory', 'claude team workspace', 'chatgpt team memory', 'ai memory pro', 'team ai tools'],
+    tags: ['teams', 'collaboration', 'knowledge-base', 'shared-memory', 'cursor', 'claude', 'chatgpt', 'pro', 'mcp'],
     lang: 'en',
   },
 ];
