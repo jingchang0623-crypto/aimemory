@@ -18,6 +18,31 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.89.0',
+    date: '2026-05-20',
+    title: 'Round 134 — Tag Management Page (Dedicated UI)',  
+    tags: ['Feature', 'UX', 'Productivity'],
+    changes: {
+      added: [
+        'New dedicated Tags page (/tags) — browse all tags with usage counts, click to see tagged conversations',
+        'Tag Management UI: Integrated with existing TagManager component for full CRUD operations',
+        'Tag Stats panel: Total tags, total uses, most-used tag summary',
+        'Tag-filtered conversation browsing: Click any tag to see all conversations in a side panel',
+        'How-to guide section on Tags page explaining tag workflow',
+      ],
+      improved: [
+        'Tag Management is now a first-class feature with dedicated navigation destination',
+        'Conversation tagging now discoverable and accessible from a dedicated page',
+        'Tag count and frequency visualization helps users understand their knowledge distribution',
+      ],
+      noted: [
+        'Next milestone: Auto-tagging (AI-powered tag suggestions) — planned for Plus tier',
+        'Tag Management was the #1 missing P0 feature based on previous product audits',
+        'Features page already listed Tag Management as a key feature — now fully live',
+      ],
+    },
+  },
+  {
     version: 'v0.88.0',
     date: '2026-05-19',
     title: 'Round 128 — MCP Server v1.5.0 (12 Tools) + Chrome Extension v1.1.0 + SEO Monitor',

@@ -248,6 +248,7 @@ export default function McpVsMem0() {
             </Link>
             <nav className="hidden md:flex items-center gap-6">
               <Link href="/mcp-server" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">MCP Server</Link>
+              <Link href="/tags" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Tags</Link>
               <Link href="/compare" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Compare</Link>
               <Link href="/docs/mcp" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Docs</Link>
               <Link

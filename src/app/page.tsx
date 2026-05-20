@@ -124,6 +124,7 @@ export default function Home() {
             </Link>
             <nav className="hidden md:flex items-center gap-6">
               <Link href="/features" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Features</Link>
+              <Link href="/tags" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Tags</Link>
               <Link href="/chrome-extension" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Extension</Link>
               <Link href="/mcp-server" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">MCP</Link>
               <Link href="/blog" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Blog</Link>

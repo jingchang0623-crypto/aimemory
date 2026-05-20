@@ -110,6 +110,7 @@ export default function MCPServerLanding() {
             </Link>
             <nav className="hidden md:flex items-center gap-6">
               <Link href="/features" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Features</Link>
+              <Link href="/tags" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Tags</Link>
               <Link href="/mcp-server" className="text-sm text-gray-900 font-medium">MCP Server</Link>
               <Link href="/docs/mcp" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Docs</Link>
               <Link href="/blog" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Blog</Link>

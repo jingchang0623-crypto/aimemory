@@ -145,6 +145,7 @@ export default function DeepseekMemoryGuide() {
             </Link>
             <nav className="hidden md:flex items-center gap-6">
               <Link href="/features" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Features</Link>
+              <Link href="/tags" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Tags</Link>
               <Link href="/chrome-extension" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Extension</Link>
               <Link href="/blog/deepseek-memory" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Blog</Link>
               <Link
