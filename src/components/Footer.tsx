@@ -30,6 +30,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-3">Compare</h4>
             <ul className="space-y-2 text-sm">
+              <li><Link href="/tools" className="hover:text-white transition">Tools Directory</Link></li>
               <li><Link href="/blog/chat-memo-vs-ai-memory" className="hover:text-white transition">vs Chat Memo</Link></li>
               <li><Link href="/blog/chatgpt-vs-claude" className="hover:text-white transition">ChatGPT vs Claude</Link></li>
               <li><Link href="/blog/best-ai-conversation-manager-2026" className="hover:text-white transition">Best AI Manager</Link></li>

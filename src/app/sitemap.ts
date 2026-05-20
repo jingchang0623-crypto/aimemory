@@ -31,10 +31,12 @@ const staticPages: { path: string; priority: number; changeFrequency: 'yearly' |
   { path: '/guides/mcp-quickstart', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/feedback', priority: 0.5, changeFrequency: 'yearly' },
   { path: '/docs/roadmap', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/tools', priority: 0.95, changeFrequency: 'weekly' },
 ];
 
 // High-priority blog posts (SEO important)
 const highPriorityBlogSlugs = [
+  'ai-memory-vs-claude-project-knowledge',
   'chatgpt-history-extension',
   'chatgpt-export-extension',
   'export-chatgpt',

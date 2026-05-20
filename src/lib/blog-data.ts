@@ -18,6 +18,19 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === NEW: AI Memory vs Claude Project Knowledge (Round 137 - 2026-05-21) ===
+  {
+    slug: 'ai-memory-vs-claude-project-knowledge',
+    title: 'AI Memory vs Claude Project Knowledge: Which Is Better for 2026?',
+    description:
+      'Compare AI Memory vs Claude Project Knowledge in 2026. Discover why cross-platform memory beats single-platform knowledge bases. Features, pricing, and migration guide included.',
+    category: 'Comparison',
+    date: '2026-05-21',
+    readTime: '15 min',
+    keywords: ['ai memory vs claude project knowledge', 'claude projects vs memory', 'claude project knowledge vs chatgpt memory', 'best ai memory tool 2026', 'claude projects review', 'cross-platform ai memory', 'claude memory limitation'],
+    tags: ['claude', 'claude-projects', 'ai-memory', 'comparison', 'cross-platform', 'memory-injection', 'mcp'],
+    lang: 'en',
+  },
   // === NEW: Cross-Platform AI Memory Guide (Round 131 - 2026-05-19) ===
   {
     slug: 'cross-platform-ai-memory-guide',

@@ -18,9 +18,35 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.90.0',
+    date: '2026-05-21',
+    title: 'Round 136 — AI Memory Tools Directory + SEO Blog Expansion',
+    tags: ['Feature', 'SEO', 'Content'],
+    changes: {
+      added: [
+        'New AI Memory Tools Directory page (/tools) — interactive comparison tool for AI memory solutions (Mem0, Zep, LangChain, etc.)',
+        'New SEO blog: "AI Memory vs Claude Project Knowledge" — targeting emerging comparison keyword',
+        'Fixed BLOG_COUNT constant mismatch (was 188, now 191 to match actual blog count)',
+        'Added /tools page to sitemap with high priority (0.95) for SEO',
+        'Added new blog to highPriorityBlogSlugs in sitemap for fast indexing',
+        'Tools Directory link added to Footer "Compare" section for navigation',
+      ],
+      improved: [
+        'SEO visibility: Tools Directory page targets high-value "AI memory tools" keyword cluster',
+        'Content freshness: New blog positions AI Memory vs Claude Projects for cross-platform advantage',
+        'Constant accuracy: BLOG_COUNT now correctly reflects actual published content (191 blogs)',
+      ],
+      noted: [
+        'Tools Directory page features 10+ AI memory solutions with interactive filtering by platform, features, and pricing',
+        'New blog highlights key differentiator: AI Memory works across ChatGPT, Claude, and other platforms vs Claude Projects limited to single platform',
+        'Next milestone: Round 137 — Google Search Console verification + Chrome Web Store submission (pending $5 fee)',
+      ],
+    },
+  },
+  {
     version: 'v0.89.0',
     date: '2026-05-20',
-    title: 'Round 134 — Tag Management Page (Dedicated UI)',  
+    title: 'Round 134 — Tag Management Page (Dedicated UI)',    
     tags: ['Feature', 'UX', 'Productivity'],
     changes: {
       added: [
@@ -38,7 +64,6 @@ const releases = [
       noted: [
         'Next milestone: Auto-tagging (AI-powered tag suggestions) — planned for Plus tier',
         'Tag Management was the #1 missing P0 feature based on previous product audits',
-        'Features page already listed Tag Management as a key feature — now fully live',
       ],
     },
   },
