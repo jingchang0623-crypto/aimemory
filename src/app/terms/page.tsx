@@ -48,10 +48,11 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-3">3. Free Service</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-3">3. Service Tiers</h2>
             <p className="text-gray-700 leading-relaxed">
-              AI Memory is provided free of charge. There are no paid plans, subscriptions, or in-app
-              purchases at this time.
+              AI Memory core features (import, search, memory injection, Chrome extension, MCP server) are
+              free forever. Optional paid plans (Plus and Pro) with AI-powered analysis, cloud sync, and
+              knowledge graph are in development. See our <a href="/pricing" className="text-blue-600 hover:underline">Pricing</a> page for details.
             </p>
           </section>
 

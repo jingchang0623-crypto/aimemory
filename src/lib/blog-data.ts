@@ -653,17 +653,6 @@ export const blogPosts: BlogPost[] = [
   },
   // === Round 116: Best AI Memory Tools 2026 ===
   {
-    slug: 'best-ai-memory-tools-2026',
-    title: 'Best AI Memory Tools 2026 — Top 10 Compared',
-    description: 'Comprehensive comparison of the top 10 AI memory tools in 2026. Compare AI Memory, Mem0, Kumbukum, MemoryPlugin, and more with pricing, features, and use cases.',
-    category: 'Comparisons',
-    date: '2026-05-16',
-    readTime: '15 min',
-    keywords: ['best ai memory tools 2026', 'ai memory comparison', 'chatgpt memory alternatives', 'best ai conversation manager', 'ai memory tools review', 'mem0 comparison', 'persistent ai memory'],
-    tags: ['comparison', 'mem0', 'kumbukum', 'memoryplugin', 'mcp', 'chatgpt', 'claude', 'deepseek', 'gemini', 'kimi', 'review'],
-    lang: 'en',
-  },
-  {
     slug: 'deepseek-ai-memory',
     title: 'DeepSeek AI Memory: 3 Free Ways to Give DeepSeek Persistent Memory (2026)',
     description: 'DeepSeek doesn\'t remember past conversations. Learn 3 free methods to give DeepSeek AI persistent memory: web upload, Chrome extension, and MCP server integration.',
@@ -674,7 +663,6 @@ export const blogPosts: BlogPost[] = [
     tags: ['deepseek', 'memory', 'guide', 'chrome-extension', 'mcp', 'cross-platform'],
     lang: 'en',
   },
-  // --- Round 115: New SEO content ---
   {
     slug: 'chatgpt-conversation-disappeared',
     title: 'ChatGPT Conversation Disappeared? 6 Ways to Find It (2026)',
@@ -2083,28 +2071,6 @@ export const blogPosts: BlogPost[] = [
     readTime: '13 min',
     keywords: ['deepseek memory', 'deepseek save conversations', 'deepseek chat history', 'deepseek export', 'deepseek memory management', 'deepseek v3 memory', 'deepseek r1 memory', 'deepseek conversation backup', 'deepseek chat search', 'save deepseek chats', 'deepseek memory tool', 'deepseek conversation export', 'how to save deepseek conversations'],
     tags: ['deepseek', 'memory', 'export', 'guide', 'management', 'v3', 'r1', 'search', 'ai-memory'],
-    lang: 'en',
-  },
-  {
-    slug: 'ai-memory-injection-cross-context',
-    title: 'AI Memory Injection: How to Give Your AI Persistent Context Across Conversations (2026)',
-    description: 'Complete guide to AI memory injection. Learn how to give ChatGPT, Claude, DeepSeek, and other AI assistants persistent memory across conversations using MCP Server and browser extensions.',
-    category: 'Guides',
-    date: '2026-05-18',
-    readTime: '15 min',
-    keywords: ['memory injection', 'ai memory injection', 'persistent ai memory', 'memory injection explained', 'how memory injection works', 'ai context injection', 'mcp memory injection', 'chatgpt memory injection', 'claude memory injection', 'deepseek memory injection', 'ai persistent context', 'what is memory injection'],
-    tags: ['memory-injection', 'mcp', 'persistent-memory', 'guide', 'chatgpt', 'claude', 'deepseek', 'ai-memory', 'context', 'tutorial'],
-    lang: 'en',
-  },
-  {
-    slug: 'chatgpt-vs-claude-vs-gemini-comparison-2026',
-    title: 'ChatGPT vs Claude vs Gemini Memory Comparison 2026 — Which AI Remembers Best?',
-    description: 'Complete comparison of ChatGPT memory, Claude memory, and Gemini memory features in 2026. Compare memory limits, cross-platform sync, export options, and find the best AI memory tool.',
-    category: 'Comparisons',
-    date: '2026-05-18',
-    readTime: '12 min read',
-    keywords: ['chatgpt vs claude vs gemini memory', 'chatgpt memory comparison', 'claude memory features', 'gemini memory limits', 'best ai memory tool 2026', 'ai memory comparison chart'],
-    tags: ['chatgpt', 'claude', 'gemini', 'memory', 'comparison', 'ai-memory', 'guide'],
     lang: 'en',
   },
   {
