@@ -2216,6 +2216,40 @@ export const blogPosts: BlogPost[] = [
     tags: ['privacy', 'security', 'e2ee', 'encryption', 'pro', 'guide'],
     lang: 'en',
   },
+  // === NEW: Chinese SEO Blogs (Round 140 - 2026-05-21) ===
+  {
+    slug: 'chatgpt-jiyi-yiman-zenme-jiejue',
+    title: 'ChatGPT记忆已满怎么解决？5种方法彻底解决 | AI Memory',
+    description: 'ChatGPT记忆已满怎么办？本文提供5种解决方案：删除旧记忆、使用AI Memory导出备份、跨平台管理等。彻底解决ChatGPT 1500词记忆限制问题。',
+    category: '中文指南',
+    date: '2026-05-21',
+    readTime: '6 min',
+    keywords: ['ChatGPT记忆已满', 'ChatGPT记忆满了怎么办', 'ChatGPT memory full', 'ChatGPT记忆限制', 'AI对话备份', 'ChatGPT记忆管理'],
+    tags: ['chatgpt', 'memory-full', 'solutions', 'backup', 'chinese', 'guide', '中文'],
+    lang: 'zh',
+  },
+  {
+    slug: 'kimi-jiyi-shangkong-jian-using-guide',
+    title: 'Kimi智能助手记忆功能完全指南：使用技巧与最佳实践 | AI Memory',
+    description: 'Kimi智能助手记忆功能怎么用？本文详解Kimi记忆空间的使用方法、设置技巧、记忆管理最佳实践。让Kimi真正记住你的偏好和项目信息。',
+    category: '中文指南',
+    date: '2026-05-21',
+    readTime: '7 min',
+    keywords: ['Kimi记忆功能', 'Kimi智能助手', 'Kimi记忆空间', 'Kimi使用教程', 'AI对话记忆', 'Kimi记忆管理'],
+    tags: ['kimi', 'memory', 'guide', 'chinese', '智能助手', '记忆空间', '中文'],
+    lang: 'zh',
+  },
+  {
+    slug: 'deepseek-duihua-daochu-jiaocheng',
+    title: 'DeepSeek对话历史导出教程：完整步骤与跨平台管理 | AI Memory',
+    description: 'DeepSeek怎么导出对话记录？完整教程教你如何在DeepSeek中导出全部对话历史，并使用AI Memory实现跨平台统一管理。支持ChatGPT、Claude、Kimi。',
+    category: '中文指南',
+    date: '2026-05-21',
+    readTime: '6 min',
+    keywords: ['DeepSeek对话导出', 'DeepSeek导出教程', 'DeepSeek历史记录', 'DeepSeek记忆', 'AI对话导出', 'DeepSeek数据备份', 'DeepSeek管理'],
+    tags: ['deepseek', 'export', 'tutorial', 'chinese', '跨平台', '对话管理', '中文'],
+    lang: 'zh',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

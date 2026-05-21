@@ -420,7 +420,14 @@ export default function Home() {
               <p className="text-sm text-gray-500 mb-4">
                 Works with Claude Desktop, Cursor, Windsurf, Cline, and {MCP_CLIENTS_COUNT}+ MCP clients
               </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+            {/* PyPI Version Badge */}
+            <a href="https://pypi.org/project/aimemory-mcp-server/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1 bg-gray-50 text-gray-500 rounded-full text-xs border border-gray-200">
+              <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+              <span className="font-medium">PyPI v1.5.0</span>
+            </a>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mt-4">
               <Link
                 href="/mcp-server"
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-violet-600 text-white font-medium rounded-lg hover:bg-violet-700 transition-colors text-sm"
@@ -428,12 +435,19 @@ export default function Home() {
                 <span>Setup MCP Server</span>
                 <span>→</span>
               </Link>
-              <code className="px-4 py-2.5 bg-gray-100 text-gray-700 rounded-lg text-sm font-mono">
-                pip install aimemory-mcp-server
-              </code>
+              <div className="relative group">
+                <code id="pip-command" className="px-4 py-2.5 bg-gray-100 text-gray-700 rounded-lg text-sm font-mono cursor-pointer hover:bg-gray-200 transition-colors" onClick={() => navigator.clipboard.writeText('pip install aimemory-mcp-server')} title="Click to copy">
+                  pip install aimemory-mcp-server
+                </code>
+                <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                  Click to copy
+                </span>
+              </div>
             </div>
             <p className="text-xs text-gray-400 mt-3">
-              Already on PyPI: <code className="bg-gray-100 px-2 py-1 rounded">pip install aimemory-mcp-server</code> — <Link href="https://pypi.org/project/aimemory-mcp-server/" target="_blank" className="underline hover:text-gray-600">View on PyPI</Link>
+              ✅ Live on PyPI: <code className="bg-gray-100 px-2 py-1 rounded">pip install aimemory-mcp-server</code> — <Link href="https://pypi.org/project/aimemory-mcp-server/" target="_blank" className="underline hover:text-gray-600">v1.5.0 (5/19/2026)</Link>
+              <span className="mx-2">·</span>
+              <span className="text-green-600 font-medium">MIT License · MIT</span>
             </p>
           </div>
         </div>
