@@ -17,7 +17,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default function MCPServerLanding() {
+async function getGitHubStars() {
+  try {
+    const res = await fetch('https://aimemory.pro/api/github-stars', { 
+      next: { revalidate: 3600 } // Cache for 1 hour
+    });
+    if (!res.ok) return 0;
+    const data = await res.json();
+    return data.stars || 0;
+  } catch {
+    return 0;
+  }
+}
+
+export default async function MCPServerLanding() {
+  const githubStars = await getGitHubStars();
+  
   return (
     <>
       <script
@@ -132,7 +147,18 @@ export default function MCPServerLanding() {
               <span className="text-base">⚡</span>
               pip install aimemory-mcp-server
               <span className="ml-1 px-1.5 py-0.5 bg-green-600 text-white text-xs rounded-full font-medium">v1.5.0</span>
-              <span className="ml-1 px-1.5 py-0.5 bg-blue-100 text-blue-700 text-xs rounded-full font-medium">GitHub</span>
+              {githubStars > 0 ? (
+                <a
+                  href="https://github.com/jingchang0623-crypto/aimemory"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-1 px-1.5 py-0.5 bg-blue-100 text-blue-700 text-xs rounded-full font-medium hover:bg-blue-200 transition-colors inline-flex items-center gap-1"
+                >
+                  ⭐ {githubStars}
+                </a>
+              ) : (
+                <span className="ml-1 px-1.5 py-0.5 bg-blue-100 text-blue-700 text-xs rounded-full font-medium">GitHub</span>
+              )}
             </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 tracking-tight leading-tight mb-6">
             Give your AI<br />
