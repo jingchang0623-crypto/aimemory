@@ -5,7 +5,7 @@
  */
 
 // Content counts - update manually when adding new content pages
-export const BLOG_COUNT = 197; // Actual blog posts in blog-data.ts (updated 2026-05-21: Round 140: +3 Chinese SEO blogs)
+export const BLOG_COUNT = 196; // Actual blog posts in blog-data.ts (updated 2026-05-22: fix mismatch - was 197)
 export const GUIDE_PAGES = 2; // /guides/getting-started, /guides/mcp-quickstart
 export const CONTENT_COUNT = BLOG_COUNT + GUIDE_PAGES; // Total "SEO Guides" for homepage (196)
 

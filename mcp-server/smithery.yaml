@@ -1,0 +1,21 @@
+# Smithery configuration for AI Memory MCP Server
+# Enables one-click install in Cursor, Windsurf, and other MCP clients
+# See: https://smithery.ai/docs/config
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      dbPath:
+        type: string
+        description: "Custom path to the AI Memory SQLite database (default: ~/.aimemory/memory.db)"
+        default: "~/.aimemory/memory.db"
+    additionalProperties: false
+  commandFunction:
+    type: sh
+    command: |
+      if [ -n "$AIMEMORY_DB" ]; then
+        export AIMEMORY_DB="$AIMEMORY_DB"
+      fi
+      aimemory-mcp-server

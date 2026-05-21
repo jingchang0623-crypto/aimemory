@@ -33,7 +33,7 @@ Auto-save your AI conversations from ChatGPT, Claude, DeepSeek, and Gemini as yo
 Give your AI assistant persistent memory via the Model Context Protocol. Works with **Claude Desktop**, **Cursor**, **Windsurf**, **VS Code**, and **113+ MCP clients**.
 
 - **Package:** `aimemory-mcp-server`
-- **PyPI:** Coming soon
+- **PyPI:** v1.5.0 Live (https://pypi.org/project/aimemory-mcp-server/)
 - **GitHub Install:** `pip install git+https://github.com/jingchang0623-crypto/aimemory.git#subdirectory=mcp-server`
 - **Tools:** 12 memory tools (search, save, list, get, update, delete, stats, export, import, batch_save, get_all_tags, clear_all)
 - **Learn more:** [/mcp-server](https://aimemory.pro/mcp-server)

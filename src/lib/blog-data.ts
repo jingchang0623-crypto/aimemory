@@ -18,6 +18,19 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === NEW: Superpower Chat vs AI Memory (Round 141 - 2026-05-22) ===
+  {
+    slug: 'superpower-chat-vs-ai-memory-privacy-alternative',
+    title: 'Superpower Chat vs AI Memory (2026) — Privacy-First Alternative',
+    description:
+      'Superpower Chat privacy controversy explained. Compare features, privacy practices, and why AI Memory is the trusted alternative for AI conversation management.',
+    category: 'AI Tool Comparisons',
+    date: '2026-05-22',
+    readTime: '10 min',
+    keywords: ['superpower chat alternative', 'superpower chat privacy', 'ai memory vs superpower chat', 'chatgpt extension privacy', 'private ai conversation manager'],
+    tags: ['superpower-chat', 'privacy', 'ai-memory', 'comparison', 'chrome-extension', 'open-source'],
+    lang: 'en',
+  },
   // === NEW: AI Memory vs Claude Project Knowledge (Round 137 - 2026-05-21) ===
   {
     slug: 'ai-memory-vs-claude-project-knowledge',

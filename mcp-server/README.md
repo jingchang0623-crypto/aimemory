@@ -4,9 +4,36 @@
 [![Python versions](https://img.shields.io/pypi/pyversions/aimemory-mcp-server.svg)](https://pypi.org/project/aimemory-mcp-server/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue.svg)](https://modelcontextprotocol.io/)
+[![Smithery](https://smithery.ai/badge/aimemory-mcp-server)](https://smithery.ai/server/aimemory-mcp-server)
 [![Homepage](https://img.shields.io/badge/Web-aimemory.pro-purple.svg)](https://aimemory.pro)
 
 A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that gives AI assistants **persistent memory**. Works with **Claude Desktop**, **Cursor**, **VS Code**, **Windsurf**, and **113+ MCP clients**.
+
+---
+
+## 🚀 Quick Install (One-Click)
+
+### Smithery (Cursor, Windsurf, Claude Desktop)
+
+```bash
+npx @smithery/cli install aimemory-mcp-server --client cursor
+# or for windsurf:
+npx @smithery/cli install aimemory-mcp-server --client windsurf
+```
+
+### VS Code / Continue
+
+Add to your MCP settings:
+```json
+{
+  "mcpServers": {
+    "ai-memory": {
+      "command": "npx",
+      "args": ["-y", "@smithery/cli@latest", "run", "aimemory-mcp-server", "--client", "vscode"]
+    }
+  }
+}
+```
 
 ---
 
@@ -390,6 +417,32 @@ pip install fastmcp>=2.0.0
 ### Database locked errors
 
 Only one process should write to the database at a time. If you see lock errors, ensure you don't have multiple server instances running.
+
+---
+
+## 📋 MCP Registry
+
+Register this server in the official [MCP Registry](https://github.com/modelcontextprotocol/registry) to make it discoverable:
+
+1. Fork the [MCP Registry repository](https://github.com/modelcontextprotocol/registry)
+2. Add to `servers.json`:
+```json
+{
+  "io.github.jingchang0623-crypto/ai-memory": {
+    "name": "AI Memory MCP Server",
+    "description": "Persistent memory for AI assistants with cross-platform conversation search",
+    "repository": "https://github.com/jingchang0623-crypto/aimemory",
+    "homepage": "https://aimemory.pro",
+    "license": "MIT",
+    "tags": ["memory", "search", "conversation", "cross-platform"],
+    "install": {
+      "type": "pip",
+      "package": "aimemory-mcp-server"
+    }
+  }
+}
+```
+3. Submit a Pull Request
 
 ---
 
