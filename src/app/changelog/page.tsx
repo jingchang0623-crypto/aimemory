@@ -18,6 +18,23 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.91.0',
+    date: '2026-05-21',
+    title: 'Round 137 — GitHub Stars Integration + MCP Page Enhancement',
+    tags: ['Feature', 'SEO', 'MCP'],
+    changes: {
+      added: [
+        'New API endpoint /api/github-stars for dynamic GitHub repository star count',
+        'GitHub stars display on MCP Server page (shows live star count from GitHub API)',
+        'Server-side caching for GitHub API (1 hour cache to respect rate limits)',
+      ],
+      improved: [
+        'MCP Server page hero section now shows live GitHub stars badge when available',
+        'Better social proof on MCP page to improve conversion',
+      ],
+    },
+  },
+  {
     version: 'v0.90.0',
     date: '2026-05-21',
     title: 'Round 136 — AI Memory Tools Directory + SEO Blog Expansion',
