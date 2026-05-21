@@ -18,6 +18,29 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.93.0',
+    date: '2026-05-21',
+    title: 'Round 139 — Privacy Blog + Duplicate Slug Fix + Data Quality',
+    tags: ['Content', 'SEO', 'Bugfix', 'Data Quality'],
+    changes: {
+      added: [
+        'New SEO privacy blog: "AI Memory Pro Privacy & Security Guide (2026)" — targets "ai memory privacy" keyword cluster (Privacy category, zero competition)',
+        'Privacy comparison table: AI Memory vs Mem0 vs ChatGPT Memory across 4 dimensions (local-first, E2EE, open source, no account)',
+        'FAQPage JSON-LD with 6 Q&A pairs on privacy/E2EE/data security',
+        'Article JSON-LD schema for rich SERP snippets',
+        'Chrome extension permissions explainer section for user trust',
+        'Max privacy setup guide: 5-step checklist for security-conscious users',
+      ],
+      improved: [
+        'Fixed duplicate blog slug: ai-memory-tools-comparison-2026 → ai-memory-vs-echoes-supermemory-mem0-2026 (two entries shared the same slug)',
+        'BLOG_COUNT: 193 → 194 (new privacy blog registered)',
+        'CONTENT_COUNT: 195 → 196 (homepage counter auto-updated)',
+        'Sitemap: Added new blog URL with 0.9 priority for fast indexing',
+        'High-priority blog slugs list: Added ai-memory-pro-privacy-guide',
+      ],
+    },
+  },
+  {
     version: 'v0.92.0',
     date: '2026-05-21',
     title: 'Round 138 — AI Memory Tools Comparison Blog (SEO P0)',

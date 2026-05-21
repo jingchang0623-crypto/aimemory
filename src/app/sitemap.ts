@@ -73,10 +73,11 @@ const highPriorityBlogSlugs = [
   'ai-agent-memory-management',
   'ai-memory-for-freelancers-2026',
   'cross-platform-ai-memory-guide',
-  'ai-memory-tools-comparison-2026',
+  'ai-memory-vs-echoes-supermemory-mem0-2026',
   'kimi-jiyi-kongjian',
   'ai-duihua-jiyi-guanli',
   'ai-memory-best-practices-2026',
+  'ai-memory-pro-privacy-guide',
 ];
 
 function getBlogSlugs(): string[] {
