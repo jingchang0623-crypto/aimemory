@@ -5,9 +5,9 @@
  */
 
 // Content counts - update manually when adding new content pages
-export const BLOG_COUNT = 190; // Actual blog posts in blog-data.ts (updated 2026-05-21: added ai-memory-for-remote-teams-2026)
+export const BLOG_COUNT = 191; // Actual blog posts in blog-data.ts (updated 2026-05-21: added ai-memory-tools-comparison-2026)
 export const GUIDE_PAGES = 2; // /guides/getting-started, /guides/mcp-quickstart
-export const CONTENT_COUNT = BLOG_COUNT + GUIDE_PAGES; // Total "SEO Guides" for homepage (192)
+export const CONTENT_COUNT = BLOG_COUNT + GUIDE_PAGES; // Total "SEO Guides" for homepage (193)
 
 // MCP Server stats
 export const MCP_CLIENTS_COUNT = 113; // MCP-compatible clients (Claude, Cursor, Windsurf, etc.)
