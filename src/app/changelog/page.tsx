@@ -18,6 +18,20 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.92.0',
+    date: '2026-05-21',
+    title: 'Round 138 — AI Memory Tools Comparison Blog (SEO P0)',
+    tags: ['Content', 'SEO'],
+    changes: {
+      added: [
+        'New SEO comparison blog: "AI Memory Tools Comparison 2026" — aimemory.pro vs Echoes vs Supermemory vs Mem0',
+        'Feature comparison table with 7 categories across 4 tools for SERP featured snippet targeting',
+        'FAQPage JSON-LD structured data (5 Q&A pairs) for rich snippet eligibility',
+        'Article JSON-LD schema for enhanced search results display',
+      ],
+    },
+  },
+  {
     version: 'v0.91.0',
     date: '2026-05-21',
     title: 'Round 137 — GitHub Stars Integration + MCP Page Enhancement',
