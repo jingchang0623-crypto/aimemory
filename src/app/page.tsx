@@ -278,6 +278,24 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Never lose an AI conversation - Backup CTA */}
+      <section className="py-16 px-6 bg-gradient-to-br from-violet-50 to-purple-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="text-4xl mb-4">💾</div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">Never Lose an AI Conversation Again</h2>
+          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+            Your AI insights are valuable. Don't let them disappear when ChatGPT hits its 1,500-word memory limit
+            or when conversations get buried. Backup all your chats from ChatGPT, Claude, DeepSeek, and Gemini.
+          </p>
+          <a
+            href="/blog/ai-conversation-backup-2026"
+            className="inline-flex items-center gap-2 bg-violet-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-violet-700 transition-colors"
+          >
+            📖 Read the Backup Guide →
+          </a>
+        </div>
+      </section>
+
       {/* The real problem — Relatable scenarios */}
       <section className="pb-20 px-6">
         <div className="max-w-4xl mx-auto">
