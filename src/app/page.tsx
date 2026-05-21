@@ -539,6 +539,13 @@ export default function Home() {
               </div>
             )}
             {activeTab === 'stats' && <StatsDashboard refreshTrigger={refreshTrigger} />}
+            {activeTab === 'stats' && (
+              <div className="text-center mt-4">
+                <Link href="/stats" className="text-sm text-violet-600 hover:text-violet-700 font-medium inline-flex items-center gap-1">
+                  View full stats dashboard →
+                </Link>
+              </div>
+            )}
           </div>
 
           {/* Conversation Detail Modal */}
@@ -755,6 +762,7 @@ No accounts required. No third-party access. Your conversations are stored in an
             <Link href="/features" className="hover:text-gray-600 transition-colors">Features</Link>
             <Link href="/chrome-extension" className="hover:text-gray-600 transition-colors">Extension</Link>
             <Link href="/blog" className="hover:text-gray-600 transition-colors">Blog</Link>
+            <Link href="/stats" className="hover:text-gray-600 transition-colors">Stats</Link>
             <Link href="/pricing" className="hover:text-gray-600 transition-colors">Pricing</Link>
             <Link href="/changelog" className="hover:text-gray-600 transition-colors">Changelog</Link>
             <Link href="/docs/mcp" className="hover:text-gray-600 transition-colors">MCP Server</Link>
