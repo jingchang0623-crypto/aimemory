@@ -18,6 +18,19 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === NEW: AI Memory for Developers 2026 (2026-05-22) ===
+  {
+    slug: 'ai-memory-for-developers-2026',
+    title: 'AI Memory for Developers: Manage Code Conversations Across AI Tools (2026)',
+    description:
+      'Developers using ChatGPT, Claude, and Cursor — stop losing your AI coding conversations. Learn how to manage AI memory across all your development tools with AI Memory.',
+    category: 'For Developers',
+    date: '2026-05-22',
+    readTime: '12 min',
+    keywords: ['ai memory for developers', 'developer ai memory management', 'chatgpt for coding memory', 'claude developer memory', 'cursor ai memory', 'ai coding assistant memory', 'save coding conversations', 'developer productivity ai memory', 'ai context for developers', 'mcp server for developers'],
+    tags: ['developer', 'coding', 'cursor', 'claude', 'chatgpt', 'mcp', 'productivity', 'trending'],
+    lang: 'en',
+  },
   // === NEW: AI Conversation Backup 2026 (2026-05-22) ===
   {
     slug: 'ai-conversation-backup-2026',

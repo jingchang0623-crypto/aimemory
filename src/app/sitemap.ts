@@ -79,6 +79,7 @@ const highPriorityBlogSlugs = [
   'ai-memory-best-practices-2026',
   'ai-memory-pro-privacy-guide',
   'ai-conversation-backup-2026',
+  'ai-memory-for-developers-2026',
 ];
 
 function getBlogSlugs(): string[] {
