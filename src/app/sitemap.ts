@@ -81,6 +81,26 @@ const highPriorityBlogSlugs = [
   'ai-memory-pro-privacy-guide',
   'ai-conversation-backup-2026',
   'ai-memory-for-developers-2026',
+  // Chinese pages
+  'ai-duihua-daochu',
+  'ai-duihua-jiyi-guanli',
+  'kimi-jiyi-kongjian',
+  'kimi-jiyi-shangkong-jian-using-guide',
+  'export-kimi-ai',
+  'deepseek-ai-memory',
+  'deepseek-memory-guide',
+  // More high-value SEO pages
+  'ai-memory-tools-comparison-2026',
+  'best-ai-memory-tools-2026',
+  'best-ai-conversation-manager-2026',
+  'ai-memory-comparison-2026',
+  'chatgpt-vs-claude-vs-gemini-memory-comparison-2026',
+  'what-is-memory-injection',
+  'ai-memory-injection-guide',
+  'open-source-ai-memory-mcp-server',
+  'mcp-protocol-ai-memory-explained',
+  'self-hosted-ai-memory',
+  'ai-persistent-memory',
 ];
 
 function getBlogSlugs(): string[] {
