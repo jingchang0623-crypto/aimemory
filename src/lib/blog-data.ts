@@ -2277,40 +2277,16 @@ export const blogPosts: BlogPost[] = [
     tags: ['deepseek', 'export', 'tutorial', 'chinese', '跨平台', '对话管理', '中文'],
     lang: 'zh',
   },
-  // === NEW: DeepSeek对话保存完整指南 (2026-05-22, Chinese SEO) ===
+  // === NEW: Kimi记忆空间常见问题 (2026-05-22, Chinese SEO) ===
   {
-    slug: 'zh/deepseek-duihua-baocun',
-    title: 'DeepSeek对话保存完整指南 — 3种方法(2026)',
-    description: 'DeepSeek对话怎么保存？详细介绍3种保存DeepSeek对话记录的方法：Chrome扩展自动保存、手动导出、API备份。防止对话丢失！',
+    slug: 'kimi-jiyi-changjian-wenti',
+    title: 'Kimi记忆空间常见问题：开启、关闭、删除、找回 | AI Memory',
+    description: 'Kimi记忆空间在哪里？怎么开启/关闭？记忆消失了怎么找回？本文解答Kimi AI记忆功能的10个常见问题，并教你如何导出备份。',
     category: '中文指南',
     date: '2026-05-22',
     readTime: '8 min',
-    keywords: ['DeepSeek对话保存', 'DeepSeek聊天记录导出', 'DeepSeek历史记录备份', 'DeepSeek对话导出教程'],
-    tags: ['deepseek', 'save', 'backup', 'tutorial', 'chinese', '中文', '备份'],
-    lang: 'zh',
-  },
-  // === NEW: AI对话记录丢失怎么办 (2026-05-22, Chinese SEO) ===
-  {
-    slug: 'zh/ai-duihua-jilu-diushi',
-    title: 'AI对话记录丢失怎么办？2026最全恢复与备份指南',
-    description: 'ChatGPT、DeepSeek、Claude对话记录突然消失？详解AI对话丢失的5种恢复方法，以及如何自动备份防止再次丢失。',
-    category: '中文指南',
-    date: '2026-05-22',
-    readTime: '10 min',
-    keywords: ['AI对话丢失怎么办', 'AI聊天记录丢失恢复', 'ChatGPT对话丢失', 'DeepSeek记录消失', 'Claude对话恢复'],
-    tags: ['backup', 'recovery', 'tutorial', 'chinese', '中文', '备份', '恢复'],
-    lang: 'zh',
-  },
-  // === NEW: AI聊天记录导出工具推荐 (2026-05-22, Chinese SEO) ===
-  {
-    slug: 'zh/ai-liaotian-jilu-daochu',
-    title: 'AI聊天记录导出工具推荐 — 2026年最佳选择',
-    description: 'ChatGPT、DeepSeek、Claude聊天记录怎么导出？对比5款AI对话导出工具，推荐最佳免费方案。',
-    category: '中文指南',
-    date: '2026-05-22',
-    readTime: '12 min',
-    keywords: ['AI聊天记录导出', 'ChatGPT导出工具', 'DeepSeek聊天记录导出', 'AI对话导出工具推荐', '跨平台AI导出工具'],
-    tags: ['export', 'comparison', 'tools', 'chinese', '中文', '推荐', '导出'],
+    keywords: ['Kimi记忆空间', 'Kimi记忆消失', 'Kimi记忆怎么删除', 'Kimi记忆在哪里', 'Kimi AI记忆功能', 'Kimi记忆空间关闭', 'Kimi记忆备份', 'Kimi对话记忆'],
+    tags: ['kimi', 'memory', 'faq', 'tutorial', 'chinese', '中文', '常见问题'],
     lang: 'zh',
   },
 ];
