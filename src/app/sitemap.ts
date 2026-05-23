@@ -33,6 +33,8 @@ const staticPages: { path: string; priority: number; changeFrequency: 'yearly' |
   { path: '/docs/roadmap', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/tools', priority: 0.95, changeFrequency: 'weekly' },
   { path: '/demo/memory-injection', priority: 0.9, changeFrequency: 'monthly' },
+  // Chinese pages
+  { path: '/zh/mcp-server', priority: 0.9, changeFrequency: 'monthly' },
 ];
 
 // High-priority blog posts (SEO important)

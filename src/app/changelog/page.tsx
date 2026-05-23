@@ -18,6 +18,32 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.94.0',
+    date: '2026-05-23',
+    title: 'Round 141 — Chinese MCP Guide + PyPI Setup Page + Sitemap Update',
+    tags: ['Content', 'SEO', 'MCP', 'Chinese Market'],
+    changes: {
+      added: [
+        'New Chinese MCP Server guide page (/zh/mcp-server) — targets "MCP服务器", "AI记忆工具" keywords, 6 FAQPage JSON-LD entries',
+        'New PyPI Setup guide page (/docs/pypi-setup) — complete pip install walkthrough for aimemory-mcp-server, 5 FAQPage JSON-LD entries',
+        'Chinese MCP page covers 12 MCP tools in detail with client-specific configs (Claude, Cursor, Windsurf, VS Code)',
+        'PyPI Setup page includes prerequisites, troubleshooting, and platform-specific install notes',
+        'Added /zh/mcp-server to sitemap.ts with priority 0.9 for fast indexing',
+        'Chinese/English cross-link strategy implemented (zh page links to English MCP guide)',
+      ],
+      improved: [
+        'Sitemap now includes Chinese MCP server page for better Chinese market SEO coverage',
+        'MCP Server page already live with PyPI v1.5.0 badge and 12 tools documented',
+        'Directory page (DirectoryGrid) already has 9 competitor tools with detailed feature comparisons',
+      ],
+      noted: [
+        'Chinese market is zero-competition blue ocean (confirmed via Bilibili research)',
+        'P0-1 pending: User needs to set GA_MEASUREMENT_ID and NEXT_PUBLIC_GSC_VERIFICATION in .env.local',
+        'P1 tasks: Chrome Web Store submission ($5 fee), GSC sitemap submission, GA4 activation',
+      ],
+    },
+  },
+  {
     version: 'v0.93.0',
     date: '2026-05-21',
     title: 'Round 139 — Privacy Blog + Duplicate Slug Fix + Data Quality',

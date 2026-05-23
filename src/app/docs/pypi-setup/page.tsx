@@ -1,221 +1,264 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'PyPI Publishing Setup Guide - AI Memory MCP Server | aimemory.pro',
-  description: 'Step-by-step guide to configure PyPI trusted publishing for aimemory-mcp-server. Complete the setup in 3 minutes.',
-  openGraph: {
-    title: 'PyPI Publishing Setup Guide - AI Memory MCP Server',
-    description: 'Step-by-step guide to configure PyPI trusted publishing for aimemory-mcp-server.',
-    url: 'https://aimemory.pro/docs/pypi-setup',
-    type: 'website',
-  },
+  title: 'PyPI Setup — Install AI Memory MCP Server via pip | aimemory.pro',
+  description: 'One-command installation of AI Memory MCP Server via PyPI. pip install aimemory-mcp-server — works with Claude Desktop, Cursor, Windsurf, and 113+ MCP clients.',
+  keywords: ['pypi install', 'pip install aimemory-mcp-server', 'mcp server setup', 'ai memory pypi', 'python mcp server'],
   alternates: {
     canonical: 'https://aimemory.pro/docs/pypi-setup',
   },
 };
 
-export default function PyPISetupGuide() {
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How do I install AI Memory MCP Server via pip?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Run: pip install aimemory-mcp-server. Then run: aimemory-mcp-server. Configure your AI client (Claude Desktop, Cursor, Windsurf) to connect to it. That\'s it — no API keys, no accounts needed.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is the AI Memory MCP Server free?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes! The PyPI package is completely free and open source (MIT License). All 12 MCP tools are available with no limits. The local mode stores data on your machine with no internet required.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What Python version is required?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Python 3.8 or higher is required. Works on macOS, Linux, and Windows.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does AI Memory MCP Server need an API key?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No API keys are needed. The server runs entirely on your machine, connecting to a local SQLite database. For the hosted version, your session cookie provides secure access.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I use AI Memory MCP Server with Cursor?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes! Go to Settings → MCP → Add New MCP Server. Set Name to "AI Memory", Type to "stdio", and Command to "aimemory-mcp-server".',
+      },
+    },
+  ],
+};
+
+export default function PyPiSetupPage() {
   return (
-    <>
-      <div className="min-h-screen bg-gray-950 text-gray-100">
-        {/* Header */}
-        <header className="border-b border-gray-800">
-          <div className="max-w-4xl mx-auto px-4 py-4 flex items-center gap-4">
-            <Link href="/" className="text-lg font-bold hover:text-blue-400 transition">🧠 AI Memory</Link>
-            <nav className="flex gap-6 text-sm text-gray-400">
-              <Link href="/mcp-server" className="hover:text-white transition">MCP Server</Link>
-              <Link href="/docs/mcp" className="hover:text-white transition">Docs</Link>
-              <Link href="/blog" className="hover:text-white transition">Blog</Link>
-            </nav>
-          </div>
-        </header>
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <header className="border-b border-gray-200 bg-white">
+        <div className="max-w-4xl mx-auto px-4 py-6 flex items-center gap-4">
+          <Link href="/" className="text-2xl font-bold text-gray-900">
+            🧠 AI Memory
+          </Link>
+          <span className="text-gray-400">/</span>
+          <Link href="/docs" className="text-gray-600 hover:text-blue-600">Docs</Link>
+          <span className="text-gray-400">/</span>
+          <span className="text-gray-800 font-medium">PyPI Setup</span>
+        </div>
+      </header>
 
-        <main className="max-w-4xl mx-auto px-4 py-12">
-          {/* Title */}
-          <div className="mb-12">
-            <span className="text-sm text-blue-400 font-medium">📋 Distribution Guide</span>
-            <h1 className="text-3xl font-bold mt-2 mb-4">PyPI Publishing Setup Guide</h1>
-            <p className="text-gray-400 text-lg">Configure PyPI trusted publishing to enable <code className="text-blue-400 bg-gray-800 px-2 py-0.5 rounded">pip install aimemory-mcp-server</code></p>
-            <p className="text-gray-500 mt-2">⏱️ 3 minutes • 🔒 Uses GitHub Actions (no API token needed)</p>
-          </div>
+      <main className="max-w-3xl mx-auto px-4 py-12">
+        <article className="prose lg:prose-xl max-w-none">
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(faqJsonLd)}} />
 
-          {/* Status */}
-          <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-10">
-            <h2 className="text-lg font-semibold mb-3">📊 Current Status</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="flex items-center gap-2">
-                <span className="text-green-400 text-lg">✅</span>
-                <div>
-                  <div className="text-sm font-medium">Package Built</div>
-                  <div className="text-xs text-gray-500">v1.4.0 in dist/ (11.9KB)</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-green-400 text-lg">✅</span>
-                <div>
-                  <div className="text-sm font-medium">GitHub Actions Workflow</div>
-                  <div className="text-xs text-gray-500">.github/workflows/publish-pypi.yml</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-green-400 text-lg">✅</span>
-                <div>
-                  <div className="text-sm font-medium">Published on PyPI</div>
-                  <div className="text-xs text-gray-500">v1.5.0 • <a href="https://pypi.org/project/aimemory-mcp-server/" target="_blank" className="text-blue-400 hover:underline">pypi.org/project/aimemory-mcp-server</a></div>
-                </div>
-              </div>
-            </div>
+          <div className="flex items-center gap-3 mb-4">
+            <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">v1.5.0</span>
+            <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">MIT License</span>
+            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">PyPI</span>
           </div>
 
-          {/* Steps */}
-          <div className="space-y-8">
-            <h2 className="text-2xl font-bold">Setup Steps</h2>
+          <h1>PyPI Setup: AI Memory MCP Server</h1>
+          <p className="text-xl text-gray-600">
+            Install the MCP server in 10 seconds with one <code>pip install</code> command.
+            No configuration files. No accounts. No API keys.
+          </p>
 
-            {/* Step 1 */}
-            <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">1</span>
-                <h3 className="text-lg font-semibold">Create PyPI Account (if needed)</h3>
-              </div>
-              <ol className="list-decimal list-inside space-y-2 text-gray-300 ml-4">
-                <li>Go to <a href="https://pypi.org/account/register/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">pypi.org/account/register</a></li>
-                <li>Create an account with email <code className="text-blue-400 bg-gray-800 px-1.5 py-0.5 rounded text-sm">hello@aimemory.pro</code></li>
-                <li>Verify your email address</li>
-                <li>Enable 2FA (recommended but not required for trusted publishing)</li>
-              </ol>
+          <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl p-8 my-8 text-white">
+            <h2 className="text-white mt-0 text-2xl">⚡ Quick Install</h2>
+            <div className="bg-gray-900 rounded-lg p-4 font-mono text-sm text-green-400 mt-4">
+              <div>$ pip install aimemory-mcp-server</div>
+              <div className="mt-2">$ aimemory-mcp-server</div>
             </div>
-
-            {/* Step 2 */}
-            <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">2</span>
-                <h3 className="text-lg font-semibold">Configure Trusted Publishing</h3>
-              </div>
-              <ol className="list-decimal list-inside space-y-2 text-gray-300 ml-4">
-                <li>Go to <a href="https://pypi.org/manage/account/publishing/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">pypi.org/manage/account/publishing</a></li>
-                <li>Click <strong>&quot;Add a new pending publisher&quot;</strong></li>
-                <li>Fill in the form with these values:</li>
-              </ol>
-              <div className="mt-4 bg-gray-950 rounded-lg p-4 font-mono text-sm space-y-1">
-                <p><span className="text-gray-500">PyPI Project Name:</span> <span className="text-green-400">aimemory-mcp-server</span></p>
-                <p><span className="text-gray-500">Owner:</span> <span className="text-green-400">jingchang0623-crypto</span></p>
-                <p><span className="text-gray-500">Repository:</span> <span className="text-green-400">aimemory</span></p>
-                <p><span className="text-gray-500">Workflow name:</span> <span className="text-green-400">publish.yml</span></p>
-                <p><span className="text-gray-500">Environment name:</span> <span className="text-green-400">(leave blank)</span></p>
-              </div>
-            </div>
-
-            {/* Step 3 */}
-            <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">3</span>
-                <h3 className="text-lg font-semibold">Trigger Publishing</h3>
-              </div>
-              <p className="text-gray-300 mb-4">After trusted publishing is configured, publish by either:</p>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="bg-gray-950 rounded-lg p-4">
-                  <h4 className="font-medium text-sm mb-2">Option A: Create a GitHub Release</h4>
-                  <ol className="list-decimal list-inside space-y-1 text-gray-400 text-sm">
-                    <li>Go to GitHub repo → Releases</li>
-                    <li>Click &quot;Draft a new release&quot;</li>
-                    <li>Tag: <code className="text-blue-400">v1.4.0</code> (or higher)</li>
-                    <li>Publish → Actions runs automatically</li>
-                  </ol>
-                </div>
-                <div className="bg-gray-950 rounded-lg p-4">
-                  <h4 className="font-medium text-sm mb-2">Option B: Manual Workflow Dispatch</h4>
-                  <ol className="list-decimal list-inside space-y-1 text-gray-400 text-sm">
-                    <li>Go to repo → Actions tab</li>
-                    <li>Select &quot;Publish to PyPI&quot; workflow</li>
-                    <li>Click &quot;Run workflow&quot; button</li>
-                    <li>Branch: <code className="text-blue-400">main</code></li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-
-            {/* Step 4 */}
-            <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">4</span>
-                <h3 className="text-lg font-semibold">Verify Installation</h3>
-              </div>
-              <p className="text-gray-300 mb-3">After publishing succeeds, verify with:</p>
-              <div className="bg-gray-950 rounded-lg p-4 font-mono text-sm">
-                <p className="text-green-400">$ pip install aimemory-mcp-server</p>
-                <p className="text-green-400">$ aimemory-mcp-server</p>
-                <p className="text-gray-500"># Should output: &quot;AI Memory MCP Server running on stdio...&quot;</p>
-              </div>
-            </div>
+            <p className="mt-4 text-purple-100">
+              ✓ Python 3.8+ ✓ macOS / Linux / Windows ✓ No API keys needed ✓ MIT License
+            </p>
+            <a href="https://pypi.org/project/aimemory-mcp-server/"
+               className="inline-block mt-4 bg-white text-purple-700 px-6 py-2 rounded-lg font-medium hover:bg-purple-50">
+              📦 View on PyPI →
+            </a>
           </div>
 
-          {/* Troubleshooting */}
-          <div className="mt-12">
-            <h2 className="text-2xl font-bold mb-6">Troubleshooting</h2>
-            <div className="space-y-4">
-              <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
-                <h3 className="font-semibold text-red-400 mb-2">Error: &quot;invalid-publisher&quot;</h3>
-                <p className="text-gray-300 text-sm">The trusted publisher configuration doesn&apos;t match the GitHub Actions workflow. Double-check:</p>
-                <ul className="list-disc list-inside text-gray-400 text-sm mt-2 ml-4">
-                  <li>Owner matches exactly: <code className="text-blue-400">jingchang0623-crypto</code></li>
-                  <li>Repository matches exactly: <code className="text-blue-400">aimemory</code></li>
-                  <li>Workflow filename matches: <code className="text-blue-400">publish.yml</code></li>
-                  <li>Environment name is blank (not &quot;production&quot; or anything else)</li>
-                </ul>
-              </div>
-              <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
-                <h3 className="font-semibold text-red-400 mb-2">Error: &quot;project already exists&quot;</h3>
-                <p className="text-gray-300 text-sm">Someone already claimed the package name on PyPI. You may need to file a name dispute or choose a different package name.</p>
-              </div>
-              <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
-                <h3 className="font-semibold text-red-400 mb-2">Package not showing on PyPI</h3>
-                <p className="text-gray-300 text-sm">PyPI may take a few minutes to index. Check the GitHub Actions run logs for errors. If it succeeded, search for &quot;aimemory-mcp-server&quot; on <a href="https://pypi.org" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">pypi.org</a>.</p>
-              </div>
+          <h2>Table of Contents</h2>
+          <ul>
+            <li><a href="#prerequisites">Prerequisites</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#running">Running the Server</a></li>
+            <li><a href="#claude-desktop">Claude Desktop Configuration</a></li>
+            <li><a href="#cursor">Cursor Configuration</a></li>
+            <li><a href="#windsurf">Windsurf Configuration</a></li>
+            <li><a href="#vs-code">VS Code (Cline/Continue) Configuration</a></li>
+            <li><a href="#troubleshooting">Troubleshooting</a></li>
+            <li><a href="#updating">Updating</a></li>
+          </ul>
+
+          <h2 id="prerequisites">Prerequisites</h2>
+          <ul>
+            <li><strong>Python 3.8+</strong> — Check with <code>python --version</code> or <code>python3 --version</code></li>
+            <li><strong>pip</strong> — Check with <code>pip --version</code> or <code>pip3 --version</code></li>
+            <li><strong>Operating System</strong> — macOS, Linux, or Windows (WSL recommended for Windows)</li>
+          </ul>
+
+          <h2 id="installation">Installation</h2>
+          <p>Install the package from PyPI:</p>
+          <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm">
+pip install aimemory-mcp-server
+          </pre>
+          <p>This installs the <code>aimemory-mcp-server</code> package and all dependencies (SQLite bindings, MCP SDK, etc.).</p>
+
+          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-4">
+            <p className="text-yellow-800 font-medium mt-0">💡 Platform-specific notes:</p>
+            <ul className="text-yellow-700">
+              <li><strong>macOS</strong>: Use <code>pip3</code> instead of <code>pip</code> if Python 2 is default</li>
+              <li><strong>Linux</strong>: You may need <code>pip3 install aimemory-mcp-server</code></li>
+              <li><strong>Windows</strong>: Use <code>py -m pip install aimemory-mcp-server</code> or install via WSL</li>
+            </ul>
+          </div>
+
+          <h2 id="running">Running the Server</h2>
+          <p>Start the MCP server:</p>
+          <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm">
+aimemory-mcp-server
+          </pre>
+          <p>The server starts and listens on stdio (standard MCP transport). It creates a SQLite database at <code>~/.aimemory/memories.db</code> on first run.</p>
+
+          <h2 id="claude-desktop">Claude Desktop Configuration</h2>
+          <p>Add to your <code>claude_desktop_config.json</code>:</p>
+          <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm">
+{`{
+  "mcpServers": {
+    "ai-memory": {
+      "command": "aimemory-mcp-server"
+    }
+  }
+}`}
+          </pre>
+          <p>Restart Claude Desktop. Try asking: <em>"Search my memories for React performance tips"</em></p>
+
+          <h2 id="cursor">Cursor Configuration</h2>
+          <ol>
+            <li>Open Cursor</li>
+            <li>Go to <strong>Settings → MCP → Add New MCP Server</strong></li>
+            <li>Set <strong>Name</strong>: <code>AI Memory</code></li>
+            <li>Set <strong>Type</strong>: <code>stdio</code></li>
+            <li>Set <strong>Command</strong>: <code>aimemory-mcp-server</code></li>
+            <li>Click <strong>Add</strong></li>
+          </ol>
+          <p>Cursor will now have access to all 12 memory tools.</p>
+
+          <h2 id="windsurf">Windsurf Configuration</h2>
+          <p>Add to your MCP configuration:</p>
+          <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm">
+{`{
+  "mcpServers": {
+    "ai-memory": {
+      "command": "aimemory-mcp-server"
+    }
+  }
+}`}
+          </pre>
+
+          <h2 id="vs-code">VS Code (Cline / Continue) Configuration</h2>
+          <p>In your MCP settings file (typically <code>~/.vscode/mcp.json</code> or via the extension settings UI):</p>
+          <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm">
+{`{
+  "mcpServers": {
+    "ai-memory": {
+      "command": "aimemory-mcp-server"
+    }
+  }
+}`}
+          </pre>
+
+          <h2 id="troubleshooting">Troubleshooting</h2>
+
+          <h3>Command not found: aimemory-mcp-server</h3>
+          <p>The binary may not be in your PATH. Try:</p>
+          <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm">
+python -m aimemory_mcp.server
+          </pre>
+          <p>Or reinstall with <code>pip install --user aimemory-mcp-server</code> to ensure it's in your user bin directory.</p>
+
+          <h3>MCP client can't connect</h3>
+          <ul>
+            <li>Ensure the server is running (you should see log output in the terminal)</li>
+            <li>Check the command path in your client configuration</li>
+            <li>Restart your AI client after changing MCP configuration</li>
+            <li>Check that <code>aimemory-mcp-server</code> works standalone in a terminal</li>
+          </ul>
+
+          <h3>Database permission errors</h3>
+          <p>The server creates its database at <code>~/.aimemory/</code>. Ensure this directory is writable:</p>
+          <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm">
+mkdir -p ~/.aimemory
+chmod 755 ~/.aimemory
+          </pre>
+
+          <h2 id="updating">Updating</h2>
+          <p>To update to the latest version:</p>
+          <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm">
+pip install --upgrade aimemory-mcp-server
+          </pre>
+          <p>Check the <Link href="/changelog" className="text-blue-600">changelog</Link> for version history.</p>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 my-8">
+            <h2 className="text-blue-800 mt-0">🚀 Ready to go?</h2>
+            <p className="text-blue-700">
+              Your AI now has persistent memory! Try it out by asking your AI to search for past conversations,
+              save important insights, or retrieve your tech stack preferences.
+            </p>
+            <div className="flex gap-4 flex-wrap mt-4">
+              <Link href="/" className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
+                🧠 Try Web App →
+              </Link>
+              <Link href="/mcp-server" className="inline-block bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">
+                📖 MCP Server Guide
+              </Link>
+              <Link href="/docs/mcp" className="inline-block bg-gray-600 text-white px-6 py-2 rounded-lg hover:bg-gray-700">
+                📚 API Docs
+              </Link>
             </div>
           </div>
+        </article>
+      </main>
 
-          {/* Post-publish checklist */}
-          <div className="mt-12">
-            <h2 className="text-2xl font-bold mb-6">✅ Post-Publish Checklist</h2>
-            <div className="bg-green-950 border border-green-800 rounded-lg p-6">
-              <p className="text-green-400 font-medium mb-3">The following items have been completed for the PyPI launch:</p>
-              <ul className="space-y-2 text-sm">
-                <li className="flex items-start gap-2">
-                  <span className="text-green-400 mt-1">✅</span>
-                  <span className="text-gray-300">MCP Server page: Updated to show <code className="text-blue-400">pip install aimemory-mcp-server</code></span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-400 mt-1">✅</span>
-                  <span className="text-gray-300">Homepage: Updated install command from GitHub URL to <code className="text-blue-400">pip install aimemory-mcp-server</code> with link to PyPI</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-400 mt-1">✅</span>
-                  <span className="text-gray-300">README.md: Add PyPI badge and update install instructions (see below)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-400 mt-1">✅</span>
-                  <span className="text-gray-300">Docs: Updated MCP docs page with PyPI link</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-yellow-400 mt-1">⏳</span>
-                  <span className="text-gray-300">GitHub Actions: Configure Trusted Publishing for automated future releases</span>
-                </li>
-              </ul>
-            </div>
+      <footer className="border-t border-gray-200 bg-white mt-12">
+        <div className="max-w-4xl mx-auto px-4 py-8">
+          <div className="flex flex-wrap gap-4 text-sm text-gray-500">
+            <Link href="/docs" className="hover:text-blue-600">📚 Docs</Link>
+            <Link href="/docs/mcp" className="hover:text-blue-600">🔌 MCP API</Link>
+            <Link href="/mcp-server" className="hover:text-blue-600">⚡ MCP Server</Link>
+            <Link href="/changelog" className="hover:text-blue-600">📋 Changelog</Link>
+            <a href="https://github.com/jingchang0623-crypto/aimemory" className="hover:text-blue-600">💻 GitHub</a>
+            <a href="https://pypi.org/project/aimemory-mcp-server/" className="hover:text-blue-600">📦 PyPI</a>
           </div>
-
-          {/* Back link */}
-          <div className="mt-12 pt-8 border-t border-gray-800">
-            <Link href="/docs/mcp" className="text-blue-400 hover:underline">← Back to MCP Documentation</Link>
-            <span className="text-gray-600 mx-4">|</span>
-            <Link href="/mcp-server" className="text-blue-400 hover:underline">MCP Server Page →</Link>
-          </div>
-        </main>
-
-        <Footer />
-      </div>
-    </>
+          <p className="text-gray-400 text-xs mt-4">© 2026 AI Memory. Open source (MIT).</p>
+        </div>
+      </footer>
+    </div>
   );
 }
