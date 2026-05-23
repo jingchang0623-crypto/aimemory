@@ -18,6 +18,28 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.96.0',
+    date: '2026-05-24',
+    title: 'Round 143 — P0 Bug Fixes + Blog Count Fix',
+    tags: ['Product', 'Fix', 'SEO'],
+    changes: {
+      fixed: [
+        'Extension notification icon: Removed broken iconUrl reference (now uses empty string for basic notifications)',
+        'Pricing WaitlistForm: Added plan parameter to track which plan users are interested in (Lifetime, Plus, Pro)',
+        'BLOG_COUNT constant: Updated 204 → 207 to match actual registered blog entries in blog-data.ts',
+        'CONTENT_COUNT: Updated to 209 (207 blog + 2 guide pages)',
+      ],
+      improved: [
+        'Homepage now shows "209+ SEO Guides Published" (accurate count)',
+      ],
+      noted: [
+        'Codebase is clean: all changes committed and pushed to origin/main',
+        'BLOG_COUNT now accurately reflects blog-data.ts entries (207 total)',
+        'Ready for next P0 tasks: Chrome Web Store submission, extension v1.2.0',
+      ],
+    },
+  },
+  {
     version: 'v0.95.0',
     date: '2026-05-23',
     title: 'Round 142 — P0 Product Optimization Sprint',
