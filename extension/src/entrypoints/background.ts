@@ -1,12 +1,12 @@
 import { browser } from 'wxt/browser';
 import { defineBackground } from 'wxt/utils/define-background';
-import { saveConversation, searchConversations, listConversations, getConversation, deleteConversation, getStats, saveMemories, listMemories, deleteMemory, getMemoryStats } from '../lib/storage';
+import { saveConversation, searchConversations, listConversations, getConversation, deleteConversation, getStats, saveMemories, listMemories, deleteMemory, getMemoryStats, saveMemory } from '../lib/storage';
 import type { Conversation, CaptureEvent, ChatGPTMemory, MemoryCaptureEvent } from '../lib/types';
 
 export default defineBackground(() => {
   console.log('[AI Memory] Background service worker started');
 
-  // Enable side panel on install
+  // Create context menu for saving selected text
   browser.runtime.onInstalled.addListener(async () => {
     console.log('[AI Memory] Extension installed');
     // Side panel is configured via manifest, but we can set options
@@ -17,6 +17,55 @@ export default defineBackground(() => {
         });
       } catch (e) {
         console.warn('[AI Memory] Could not configure side panel:', e);
+      }
+    }
+
+    // Create context menu item for saving selected text
+    try {
+      await browser.contextMenus.create({
+        id: 'save-selected-text',
+        title: 'Save selected text to AI Memory',
+        contexts: ['selection'],
+      });
+      console.log('[AI Memory] Context menu created');
+    } catch (e) {
+      console.warn('[AI Memory] Could not create context menu:', e);
+    }
+  });
+
+  // Handle context menu clicks
+  browser.contextMenus.onClicked.addListener(async (info, tab) => {
+    if (info.menuItemId === 'save-selected-text' && info.selectionText) {
+      const selectedText = info.selectionText.trim();
+      if (!selectedText) return;
+
+      const memory: ChatGPTMemory = {
+        id: `snippet-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`,
+        content: selectedText,
+        category: 'highlight',
+        createdAt: Date.now(),
+        updatedAt: Date.now(),
+        source: 'chatgpt-dom',
+      };
+
+      try {
+        await saveMemory(memory);
+        console.log('[AI Memory] Saved selected text snippet:', selectedText.substring(0, 50) + '...');
+        
+        // Notify sidepanel of new memory
+        browser.runtime.sendMessage({ type: 'NEW_MEMORY_SAVED', memory }).catch(() => {});
+        
+        // Show notification
+        if (browser.notifications) {
+          browser.notifications.create({
+            type: 'basic',
+            iconUrl: browser.runtime.getURL('icon/128.png'),
+            title: 'AI Memory',
+            message: 'Selected text saved to your memory!',
+          }).catch(() => {});
+        }
+      } catch (err) {
+        console.error('[AI Memory] Failed to save selected text:', err);
       }
     }
   });

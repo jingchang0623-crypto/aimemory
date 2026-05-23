@@ -18,6 +18,31 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.95.0',
+    date: '2026-05-23',
+    title: 'Round 142 — P0 Product Optimization Sprint',
+    tags: ['Product', 'Pricing', 'Extension', 'SEO'],
+    changes: {
+      added: [
+        'Pricing page: Added Lifetime Deal $99 option (LTD) with amber gradient card, includes AI Summary, 3 Devices, Auto-Tagging, Priority Support, and future Pro upgrades',
+        'Chrome Web Store guide: Updated extension version from v1.0.0 to v1.1.0, corrected ZIP filename path (ai-memory-extension-1.1.0-chrome.zip)',
+        'Chrome Extension: Added context menu "Save selected text to AI Memory" (requires contextMenus permission)',
+        'Extension background.ts: New context menu click handler saves highlighted text as memory snippets with category "highlight"',
+        'Extension: Added notifications when text is saved successfully',
+      ],
+      improved: [
+        'BLOG_COUNT constant fixed: 203 → 204 (matches actual blog directory count)',
+        'Pricing page layout: Changed from 3-column to 4-column grid to accommodate Lifetime deal card',
+        'Extension manifest: Added contextMenus permission for text highlighting feature',
+      ],
+      noted: [
+        'Memory Injection already marked as "Ready" on homepage and features page (no "Coming Soon" badges found)',
+        'Extension v1.1.0 ZIP ready at extension/.output/ai-memory-extension-1.1.0-chrome.zip',
+        'P1 tasks remaining: Chrome Web Store submission ($5 fee), chat history import, extension v1.2.0 with highlight UI',
+      ],
+    },
+  },
+  {
     version: 'v0.94.0',
     date: '2026-05-23',
     title: 'Round 141 — Chinese MCP Guide + PyPI Setup Page + Sitemap Update',

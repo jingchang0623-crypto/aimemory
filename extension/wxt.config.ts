@@ -7,7 +7,7 @@ export default defineConfig({
     name: 'AI Memory Manager',
     description: 'Save, search, and manage your AI conversations across ChatGPT, Claude, DeepSeek, Gemini, and Kimi.',
     version: '1.1.0',
-    permissions: ['storage', 'sidePanel', 'activeTab', 'unlimitedStorage'],
+    permissions: ['storage', 'sidePanel', 'activeTab', 'unlimitedStorage', 'contextMenus'],
     host_permissions: [
       'https://chat.openai.com/*',
       'https://chatgpt.com/*',

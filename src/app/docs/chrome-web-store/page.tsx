@@ -46,7 +46,7 @@ export default function ChromeWebStoreGuide() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="flex items-center gap-2">
                 <span className="text-green-400">✅</span>
-                <span className="text-gray-300">Extension built (v1.0.0)</span>
+                <span className="text-gray-300">Extension built (v1.1.0)</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-green-400">✅</span>
@@ -204,7 +204,7 @@ export default function ChromeWebStoreGuide() {
                   <span className="bg-blue-600 text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-sm">2</span>
                   <span className="font-medium">Create New Item</span>
                 </div>
-                <p className="text-gray-400 text-sm ml-10">Click &quot;New Item&quot; and upload the ZIP file from <code className="text-blue-400 bg-gray-800 px-1 rounded">extension/.output/ai-memory-extension-1.0.0-chrome.zip</code></p>
+                <p className="text-gray-400 text-sm ml-10">Click &quot;New Item&quot; and upload the ZIP file from <code className="text-blue-400 bg-gray-800 px-1 rounded">extension/.output/ai-memory-extension-1.1.0-chrome.zip</code></p>
               </div>
               
               <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">

@@ -91,7 +91,7 @@ export default function PricingPage() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {/* Free Plan */}
           <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 relative">
             <div className="text-center">
@@ -139,6 +139,53 @@ export default function PricingPage() {
             >
               Get Started Free
             </Link>
+          </div>
+
+          {/* Lifetime Deal */}
+          <div className="bg-gradient-to-br from-amber-50 to-yellow-50 border-2 border-amber-400 rounded-2xl p-8 relative shadow-lg">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-500 text-white text-sm font-semibold px-4 py-1 rounded-full">
+              🔥 Limited Offer
+            </div>
+            <div className="text-center">
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Lifetime</h2>
+              <div className="text-5xl font-bold text-amber-600 mb-2">$99<span className="text-lg text-gray-500">/once</span></div>
+              <p className="text-amber-600 font-medium mb-8">Pay once, use forever</p>
+            </div>
+            <ul className="space-y-4 mb-8">
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2 mt-1">✓</span>
+                <span>Everything in Free</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-500 mr-2 mt-1">🧠</span>
+                <span><strong>AI Summary</strong> — summarize any conversation (50/month)</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-500 mr-2 mt-1">📊</span>
+                <span><strong>Conversation Stats</strong> — usage analytics</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-500 mr-2 mt-1">📱</span>
+                <span><strong>3 Devices</strong> — access from multiple devices</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-500 mr-2 mt-1">🏷️</span>
+                <span><strong>Auto-Tagging</strong> — AI-powered tag suggestions</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-500 mr-2 mt-1">📧</span>
+                <span><strong>Priority Support</strong></span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-500 mr-2 mt-1">🎁</span>
+                <span><strong>Future Pro Features</strong> — free upgrades</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2 mt-1">✓</span>
+                <span><strong>No recurring fees</strong> — ever</span>
+              </li>
+            </ul>
+            <WaitlistForm plan="Lifetime" />
           </div>
 
           {/* Plus Plan */}
