@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export default function WaitlistForm() {
+export default function WaitlistForm({ plan }: { plan?: string }) {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error' | 'duplicate'>('idle');
   const [message, setMessage] = useState('');
@@ -16,7 +16,7 @@ export default function WaitlistForm() {
       const res = await fetch('/api/waitlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email.trim(), source: 'pricing' }),
+        body: JSON.stringify({ email: email.trim(), source: 'pricing', plan: plan || 'unknown' }),
       });
       const data = await res.json();
 

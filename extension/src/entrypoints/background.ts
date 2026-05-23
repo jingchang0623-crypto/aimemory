@@ -59,7 +59,7 @@ export default defineBackground(() => {
         if (browser.notifications) {
           browser.notifications.create({
             type: 'basic',
-            iconUrl: browser.runtime.getURL('icon/128.png'),
+            iconUrl: '',  // Icon not needed for basic notification
             title: 'AI Memory',
             message: 'Selected text saved to your memory!',
           }).catch(() => {});
