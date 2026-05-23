@@ -115,6 +115,8 @@ const highPriorityBlogSlugs = [
   'mcp-protocol-ai-memory-explained',
   'self-hosted-ai-memory',
   'ai-persistent-memory',
+  // New high-priority SEO pages (2026-05-24)
+  'ai-memory-injection-2026',
 ];
 
 function getBlogSlugs(): string[] {

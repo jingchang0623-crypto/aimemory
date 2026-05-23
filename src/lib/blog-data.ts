@@ -30,6 +30,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['tutorial', 'claude', 'import', 'memory', 'trending'],
     lang: 'en',
   },
+  // === NEW: AI Memory Injection Guide (2026-05-24) ===
+  {
+    slug: 'ai-memory-injection-2026',
+    title: 'AI Memory Injection: Give Your AI Persistent Context from Past Conversations (2026)',
+    description: 'Learn how AI memory injection works and how to give your AI persistent context from past conversations. Complete guide with MCP integration, Chrome extension setup, and cross-platform memory management.',
+    category: 'Tutorial',
+    date: '2026-05-24',
+    readTime: '12 min',
+    keywords: ['ai memory injection', 'memory injection mcp', 'give ai persistent context', 'ai context injection', 'chatgpt memory injection', 'claude memory injection', 'persistent ai context', 'memory injection tool', 'ai memory cross-platform', 'mcp memory injection'],
+    tags: ['tutorial', 'memory', 'injection', 'mcp', 'cross-platform', 'trending'],
+    lang: 'en',
+  },
   // === NEW: How to Search ChatGPT History (2026-05-23) ===
   {
     slug: 'chatgpt-conversation-history-search',
