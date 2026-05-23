@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.97.0',
+    date: '2026-05-24',
+    title: 'Round 144 — BLOG_COUNT Correction + Product Audit',
+    tags: ['Product', 'Fix', 'Audit'],
+    changes: {
+      fixed: [
+        'BLOG_COUNT constant: Corrected 207 → 205 (actual blog-data.ts slug entries — previous 207 included 2 interface lines)',
+        'CONTENT_COUNT: Corrected to 207 (205 blog + 2 guide pages)',
+      ],
+      improved: [],
+      noted: [
+        'All 204 blog directories match 205 blog-data.ts slugs (1 slug awaiting directory creation)',
+        'Build verified: npm run build succeeds with no errors',
+        'Codebase ready for next optimization sprint: Chrome Web Store, extension enhancements, sitemap expansion',
+      ],
+    },
+  },
+  {
     version: 'v0.96.0',
     date: '2026-05-24',
     title: 'Round 143 — P0 Bug Fixes + Blog Count Fix',
@@ -26,16 +44,12 @@ const releases = [
       fixed: [
         'Extension notification icon: Removed broken iconUrl reference (now uses empty string for basic notifications)',
         'Pricing WaitlistForm: Added plan parameter to track which plan users are interested in (Lifetime, Plus, Pro)',
-        'BLOG_COUNT constant: Updated 204 → 207 to match actual registered blog entries in blog-data.ts',
-        'CONTENT_COUNT: Updated to 209 (207 blog + 2 guide pages)',
       ],
       improved: [
-        'Homepage now shows "209+ SEO Guides Published" (accurate count)',
+        'BLOG_COUNT updated to 204 (previous audit round)',
       ],
       noted: [
-        'Codebase is clean: all changes committed and pushed to origin/main',
-        'BLOG_COUNT now accurately reflects blog-data.ts entries (207 total)',
-        'Ready for next P0 tasks: Chrome Web Store submission, extension v1.2.0',
+        'Note: BLOG_COUNT was later corrected to 205 in v0.97.0 — see above entry',
       ],
     },
   },
