@@ -24,8 +24,8 @@ const releases = [
     tags: ['Product', 'Fix', 'Audit'],
     changes: {
       fixed: [
-        'BLOG_COUNT constant: Corrected 207 → 205 (actual blog-data.ts slug entries — previous 207 included 2 interface lines)',
-        'CONTENT_COUNT: Corrected to 207 (205 blog + 2 guide pages)',
+        'BLOG_COUNT constant: Corrected 207 → 204 (actual blog-data.ts slug entries — previous 207 included interface line + function param)',
+        'CONTENT_COUNT: Corrected to 206 (204 blog + 2 guide pages)',
       ],
       improved: [],
       noted: [
