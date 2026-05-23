@@ -2289,6 +2289,66 @@ export const blogPosts: BlogPost[] = [
     tags: ['kimi', 'memory', 'faq', 'tutorial', 'chinese', '中文', '常见问题'],
     lang: 'zh',
   },
+  // === NEW: ChatGPT记忆满了怎么办 (2026-05-22, Chinese SEO) ===
+  {
+    slug: 'chatgpt-jiyi-gao-le-zenmeban',
+    title: 'ChatGPT记忆满了怎么办？2026最新解决方法（附备份教程）',
+    description: 'ChatGPT记忆满了无法保存新信息？详解5种释放记忆空间的方法，以及如何导出备份所有对话记录防止丢失。',
+    category: '中文指南',
+    date: '2026-05-22',
+    readTime: '10 min',
+    keywords: ['ChatGPT记忆满了', 'ChatGPT记忆满', 'ChatGPT memory full', 'ChatGPT记忆限制', '释放ChatGPT记忆空间'],
+    tags: ['chatgpt', 'memory', 'backup', 'export', 'tutorial', 'chinese', '中文', '记忆管理'],
+    lang: 'zh',
+  },
+  // === NEW: DeepSeek记忆管理指南 (2026-05-22, Chinese SEO) ===
+  {
+    slug: 'deepseek-jiyi-guanli-zhinan',
+    title: 'DeepSeek记忆管理完整指南（2026）— 保存、导出、备份',
+    description: 'DeepSeek怎么管理对话记忆？介绍DeepSeek记忆功能的使用方法，以及如何导出备份对话记录到AI Memory实现跨平台管理。',
+    category: '中文指南',
+    date: '2026-05-22',
+    readTime: '9 min',
+    keywords: ['DeepSeek记忆管理', 'DeepSeek记忆功能', 'DeepSeek对话保存', 'DeepSeek记忆导出', 'DeepSeek备份教程'],
+    tags: ['deepseek', 'memory', 'backup', 'export', 'tutorial', 'chinese', '中文', '记忆管理'],
+    lang: 'zh',
+  },
+  // === NEW: Claude记忆输入怎么用 (2026-05-22, Chinese SEO) ===
+  {
+    slug: 'claude-jiyi-shuruzenme-yong',
+    title: 'Claude记忆输入怎么用？让AI真正记住你的项目信息',
+    description: 'Claude记忆输入功能详解：如何设置、使用技巧、与ChatGPT记忆对比，以及如何用AI Memory实现更强大的跨平台记忆。',
+    category: '中文指南',
+    date: '2026-05-22',
+    readTime: '8 min',
+    keywords: ['Claude记忆输入', 'Claude记忆功能', 'Claude使用技巧', 'Claude项目知识', 'Claude记忆设置'],
+    tags: ['claude', 'memory', 'tutorial', 'chinese', '中文', '记忆设置'],
+    lang: 'zh',
+  },
+  // === NEW: AI对话导出工具评测 (2026-05-22, Chinese SEO) ===
+  {
+    slug: 'ai-duihua-daochu-gongju-pingce',
+    title: 'AI对话导出工具横向评测（2026）— 哪款最好用？',
+    description: '对比5款主流AI对话导出工具：ChatGPT Export、AI Memory、Chat Memo、MemoryPlugin、AI Exporter，帮你选最佳方案。',
+    category: '中文指南',
+    date: '2026-05-22',
+    readTime: '11 min',
+    keywords: ['AI对话导出工具', 'AI导出工具评测', 'ChatGPT导出工具对比', 'AI记忆工具推荐', '跨平台AI导出'],
+    tags: ['comparison', 'review', 'tools', 'export', 'chinese', '中文', '工具评测'],
+    lang: 'zh',
+  },
+  // === NEW: Gemini记忆功能使用教程 (2026-05-22, Chinese SEO) ===
+  {
+    slug: 'gemini-jiyi-gongneng-shiyong',
+    title: 'Gemini记忆功能使用教程 — Google AI记忆怎么用？',
+    description: 'Gemini有记忆功能吗？详解Gemini对话历史管理、与ChatGPT记忆对比，以及如何用AI Memory统一管理所有AI对话。',
+    category: '中文指南',
+    date: '2026-05-22',
+    readTime: '8 min',
+    keywords: ['Gemini记忆功能', 'Gemini使用教程', 'Google AI记忆', 'Gemini对话管理', 'Gemini记忆设置'],
+    tags: ['gemini', 'google', 'memory', 'tutorial', 'chinese', '中文', '记忆教程'],
+    lang: 'zh',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

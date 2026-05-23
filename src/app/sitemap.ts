@@ -91,6 +91,12 @@ const highPriorityBlogSlugs = [
   'deepseek-memory-guide',
   // More high-value SEO pages
   'ai-memory-tools-comparison-2026',
+  // New Chinese SEO blog pages (2026-05-22)
+  'ai-duihua-daochu-gongju-pingce',
+  'chatgpt-jiyi-gao-le-zenmeban',
+  'claude-jiyi-shuruzenme-yong',
+  'deepseek-jiyi-guanli-zhinan',
+  'gemini-jiyi-gongneng-shiyong',
   'best-ai-memory-tools-2026',
   'best-ai-conversation-manager-2026',
   'ai-memory-comparison-2026',
