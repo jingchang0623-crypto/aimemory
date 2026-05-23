@@ -34,7 +34,17 @@ const staticPages: { path: string; priority: number; changeFrequency: 'yearly' |
   { path: '/tools', priority: 0.95, changeFrequency: 'weekly' },
   { path: '/demo/memory-injection', priority: 0.9, changeFrequency: 'monthly' },
   // Chinese pages
+  { path: '/zh', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/zh/mcp-server', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/zh/ai-duihua-daochu', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/zh/ai-duihua-jilu-diushi', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/zh/ai-liaotian-jilu-daochu', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/zh/chatgpt-jiyi-gao-le', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/zh/claude-jiyi-shezhi', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/zh/deepseek-duihua-baocun', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/zh/deepseek-jiyi-baocun', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/zh/gemini-jiyi-ruhe-yong', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/zh/kimi-jiyi-changjian-wenti', priority: 0.8, changeFrequency: 'monthly' },
 ];
 
 // High-priority blog posts (SEO important)
@@ -93,6 +103,9 @@ const highPriorityBlogSlugs = [
   'deepseek-memory-guide',
   // More high-value SEO pages
   'ai-memory-tools-comparison-2026',
+  // New high-priority SEO pages (2026-05-23)
+  'chatgpt-conversation-history-search',
+  'claude-memory-import',
   // New Chinese SEO blog pages (2026-05-22)
   'ai-duihua-daochu-gongju-pingce',
   'chatgpt-jiyi-gao-le-zenmeban',

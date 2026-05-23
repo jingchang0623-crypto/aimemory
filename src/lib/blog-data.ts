@@ -18,6 +18,30 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === NEW: Claude Memory Import (2026-05-23) ===
+  {
+    slug: 'claude-memory-import',
+    title: 'Claude Memory Import: Complete Guide 2026 (Step-by-Step)',
+    description: 'Learn how to import Claude memory from other AI platforms. Complete guide to Claude memory import, export, and cross-platform AI memory management.',
+    category: 'Tutorial',
+    date: '2026-05-23',
+    readTime: '10 min',
+    keywords: ['claude memory import', 'import claude memory', 'claude memory export', 'claude memory backup', 'claude memory from chatgpt', 'claude memory settings', 'claude memory transfer', 'claude ai memory import', 'claude memory management'],
+    tags: ['tutorial', 'claude', 'import', 'memory', 'trending'],
+    lang: 'en',
+  },
+  // === NEW: How to Search ChatGPT History (2026-05-23) ===
+  {
+    slug: 'chatgpt-conversation-history-search',
+    title: 'How to Search ChatGPT History — Complete Guide 2026',
+    description: 'Learn how to search your ChatGPT conversation history effectively. Find old chats, use advanced search techniques, and discover cross-platform AI memory tools.',
+    category: 'Tutorial',
+    date: '2026-05-23',
+    readTime: '12 min',
+    keywords: ['search ChatGPT history', 'find old ChatGPT conversations', 'ChatGPT history search', 'search ChatGPT chats', 'ChatGPT conversation search', 'find ChatGPT chat', 'ChatGPT search tool', 'browse ChatGPT history'],
+    tags: ['tutorial', 'chatgpt', 'search', 'history', 'trending'],
+    lang: 'en',
+  },
   // === NEW: AI Memory for Developers 2026 (2026-05-22) ===
   {
     slug: 'ai-memory-for-developers-2026',
