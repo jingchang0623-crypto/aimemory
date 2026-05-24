@@ -2397,6 +2397,30 @@ export const blogPosts: BlogPost[] = [
     tags: ['gemini', 'google', 'memory', 'tutorial', 'chinese', '中文', '记忆教程'],
     lang: 'zh',
   },
+  // === NEW: AI对话保存工具 (2026-05-24, Chinese SEO) ===
+  {
+    slug: 'ai-duihua-baocun-gongju',
+    title: 'AI对话保存工具 — 永久保存ChatGPT/Claude/DeepSeek对话',
+    description: '免费AI对话保存工具，一键保存ChatGPT、Claude、DeepSeek、Gemini对话记录。支持全文搜索、跨平台管理、记忆注入，100%隐私安全。',
+    category: '中文指南',
+    date: '2026-05-24',
+    readTime: '6 min',
+    keywords: ['AI对话保存', 'AI对话保存工具', 'ChatGPT对话保存', 'Claude对话保存', 'AI聊天记录保存', 'AI对话管理工具', 'AI对话导出', 'AI记忆管理'],
+    tags: ['中文', '对话保存', '备份', 'tutorial', 'chinese'],
+    lang: 'zh',
+  },
+  // === NEW: DeepSeek记忆导出 (2026-05-24, Chinese SEO) ===
+  {
+    slug: 'deepseek-memory-export-guide-zh',
+    title: 'DeepSeek记忆导出详解 — 完整中文教程（2026）',
+    description: 'DeepSeek记忆怎么导出？完整中文教程介绍DeepSeek对话导出、备份与管理方法。支持JSON、TXT格式，一键导入AI Memory进行跨平台搜索。',
+    category: '中文指南',
+    date: '2026-05-24',
+    readTime: '8 min',
+    keywords: ['DeepSeek记忆导出', 'DeepSeek对话导出', 'DeepSeek备份', 'DeepSeek记忆管理', 'DeepSeek导出教程', 'DeepSeek对话保存', 'DeepSeek AI记忆'],
+    tags: ['deepseek', 'export', '备份', '中文', 'chinese', 'tutorial'],
+    lang: 'zh',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

@@ -117,6 +117,9 @@ const highPriorityBlogSlugs = [
   'ai-persistent-memory',
   // New high-priority SEO pages (2026-05-24)
   'ai-memory-injection-2026',
+  // Chinese SEO pages (2026-05-24)
+  'ai-duihua-baocun-gongju',
+  'deepseek-memory-export-guide-zh',
 ];
 
 function getBlogSlugs(): string[] {
