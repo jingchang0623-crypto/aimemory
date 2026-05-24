@@ -2421,6 +2421,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['deepseek', 'export', '备份', '中文', 'chinese', 'tutorial'],
     lang: 'zh',
   },
+  // === NEW: ChatGPT Memory Limit Guide (2026-05-24, English SEO) ===
+  {
+    slug: 'chatgpt-memory-limit-2026',
+    title: 'ChatGPT Memory Limit: Complete Guide to Backup & Search All Conversations (2026)',
+    description: 'ChatGPT has a 1,500-word memory limit. Here\'s how to backup, search, and manage unlimited AI conversations across ChatGPT, Claude, DeepSeek, Gemini, and Kimi.',
+    category: 'Guides & Tutorials',
+    date: '2026-05-24',
+    readTime: '12 min',
+    keywords: ['chatgpt memory limit', 'chatgpt memory limit 2026', 'chatgpt memory full', 'chatgpt 1500 word limit', 'chatgpt conversation backup', 'chatgpt history search', 'chatgpt memory overflow', 'chatgpt memory management', 'ai conversation backup', 'chatgpt memory full fix'],
+    tags: ['chatgpt', 'memory', 'backup', 'guide', 'tutorial', 'memory-limit', 'productivity'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */
