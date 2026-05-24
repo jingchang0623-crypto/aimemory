@@ -281,6 +281,68 @@ def get_all_tags() -> dict:
 
 
 @mcp.tool()
+def inject_memory(query: str, max_memories: int = 5, format: str = "context") -> dict:
+    """Search relevant memories and return them formatted for AI context injection.
+
+    This is the core "memory injection" feature — it finds memories relevant to the
+    current conversation and formats them so they can be injected into the AI's context.
+    Use this at the start of conversations or when you need relevant background.
+
+    Args:
+        query: The search query describing what context you need. 
+               Examples: "user preferences for Python", "previous meeting notes", 
+               "coding standards discussed before".
+        max_memories: Maximum number of memories to return (default: 5, max: 20).
+        format: Output format: "context" (formatted for prompt injection) or 
+                "list" (simple list of memories). Default: "context".
+
+    Returns:
+        A dict with "query", "count", "memories" (list), and "injected_context" 
+        (a formatted string ready to inject into the AI prompt).
+
+    Usage example:
+        To inject memories into your context, call this tool and then include
+        the `injected_context` string at the start of your system prompt or
+        user message. Format: "=== Relevant Memories ===\n{injected_context}"
+    """
+    max_memories = min(max(1, max_memories), 20)
+    results = storage.search_memories(query, max_memories)
+    
+    memories_list = [
+        {
+            "id": m.id,
+            "content": m.content,
+            "tags": m.tags,
+            "source": m.source,
+            "created_at": m.created_at,
+        }
+        for m in results
+    ]
+    
+    # Format for context injection
+    if format == "context" and memories_list:
+        context_parts = ["=== Relevant Memories ==="]
+        for i, mem in enumerate(memories_list, 1):
+            tags_str = f" [tags: {', '.join(mem['tags'])}]" if mem['tags'] else ""
+            source_str = f" (source: {mem['source']})" if mem['source'] else ""
+            context_parts.append(f"[{i}] {mem['content']}{tags_str}{source_str}")
+        context_parts.append("=== End of Memories ===")
+        injected_context = "\n".join(context_parts)
+    elif format == "context":
+        injected_context = "No relevant memories found."
+    else:
+        injected_context = ""
+    
+    return {
+        "query": query,
+        "count": len(memories_list),
+        "memories": memories_list,
+        "injected_context": injected_context,
+        "usage_hint": "Copy the 'injected_context' string and paste it into your AI's system prompt or current message to provide relevant background." if injected_context else "",
+    }
+
+
+@mcp.tool()
 def clear_all_memories() -> dict:
     """Delete ALL memories from the database. This action cannot be undone!
 

@@ -203,6 +203,30 @@ export default function ChineseLandingPage() {
             </Link>
           </div>
 
+          {/* Guides Section */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+              平台指南
+            </h2>
+            <div className="grid md:grid-cols-3 gap-4">
+              <Link href="/zh/doubao-jiyi-guanli" className="bg-white p-6 rounded-xl border border-gray-100 hover:shadow-md transition">
+                <div className="text-3xl mb-2">🎯</div>
+                <h3 className="font-semibold text-gray-900">豆包记忆管理</h3>
+                <p className="text-sm text-gray-600 mt-1">解决豆包记忆缺陷，跨平台管理</p>
+              </Link>
+              <Link href="/zh/deepseek-duihua-daochu-jiaocheng" className="bg-white p-6 rounded-xl border border-gray-100 hover:shadow-md transition">
+                <div className="text-3xl mb-2">📤</div>
+                <h3 className="font-semibold text-gray-900">DeepSeek对话导出</h3>
+                <p className="text-sm text-gray-600 mt-1">完整教程保存DeepSeek聊天记录</p>
+              </Link>
+              <Link href="/zh/kimi-jiyi-kongjian-guanli" className="bg-white p-6 rounded-xl border border-gray-100 hover:shadow-md transition">
+                <div className="text-3xl mb-2">🌙</div>
+                <h3 className="font-semibold text-gray-900">Kimi记忆空间管理</h3>
+                <p className="text-sm text-gray-600 mt-1">管理Kimi对话记录，跨平台搜索</p>
+              </Link>
+            </div>
+          </div>
+
           {/* SEO FAQ */}
           <div className="mt-16 max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">

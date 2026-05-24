@@ -1,0 +1,15 @@
+Chrome Web Store Screenshot Requirements:
+- Format: PNG, JPEG
+- Size: 1280x800 or 640x400 (recommended: 1280x800)
+- Max size: 1.2MB per screenshot
+- Minimum: 1 screenshot, Maximum: 5 screenshots
+
+Recommended Screenshots:
+1. popup.html - Main extension popup showing saved conversations count
+2. chatgpt.com - Auto-save in action (showing notification)
+3. aimemory.pro/search - Search results across platforms
+4. aimemory.pro/upload - Upload interface
+
+Take screenshots using Chrome DevTools:
+- F12 → Ctrl+Shift+P → "Capture full size screenshot"
+- Or use browser extension "Full Page Screen Capture"

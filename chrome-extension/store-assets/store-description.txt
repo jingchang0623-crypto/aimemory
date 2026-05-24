@@ -1,0 +1,35 @@
+🧠 AI Memory - Save & Search AI Conversations
+
+Automatically save your ChatGPT, Claude, DeepSeek, Gemini, and Kimi conversations. Search across all your AI chats instantly.
+
+🚀 KEY FEATURES:
+• Auto-save conversations from 5 AI platforms (ChatGPT, Claude, DeepSeek, Gemini, Kimi)
+• Full-text search across all saved conversations
+• One-click export to aimemory.pro for advanced search
+• No account required - works instantly
+• 100% private - your data stays in your browser
+
+🎯 WHY CHOOSE AI MEMORY?
+✅ Supports MORE platforms than any other extension (5 vs 1-2)
+✅ Works with ChatGPT, Claude, DeepSeek, Gemini, and Kimi
+✅ Zero setup - install and go
+✅ Free forever - no hidden costs
+✅ Open source - transparent and trustworthy
+
+📊 PERFECT FOR:
+• Developers who use multiple AI tools
+• Researchers managing AI conversation history
+• Power users who need to search across platforms
+• Anyone who wants to "give AI a memory"
+
+🔒 PRIVACY FIRST:
+No tracking. No data selling. Your conversations are stored locally in your browser or uploaded to your private session on aimemory.pro.
+
+🌐 WEB APP:
+Visit https://aimemory.pro for advanced features:
+• MCP Server (12 tools for Claude Desktop, Cursor, 113+ clients)
+• Memory Injection - inject context into any AI
+• Tag management and organization
+
+Version: 1.0.0
+Open Source: https://github.com/jingchang0623-crypto/aimemory

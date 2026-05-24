@@ -45,6 +45,10 @@ const staticPages: { path: string; priority: number; changeFrequency: 'yearly' |
   { path: '/zh/deepseek-jiyi-baocun', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/zh/gemini-jiyi-ruhe-yong', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/zh/kimi-jiyi-changjian-wenti', priority: 0.8, changeFrequency: 'monthly' },
+  // New Chinese SEO landing pages (2026-05-25)
+  { path: '/zh/doubao-jiyi-guanli', priority: 0.9, changeFrequency: 'weekly' },
+  { path: '/zh/deepseek-duihua-daochu-jiaocheng', priority: 0.9, changeFrequency: 'weekly' },
+  { path: '/zh/kimi-jiyi-kongjian-guanli', priority: 0.9, changeFrequency: 'weekly' },
 ];
 
 // High-priority blog posts (SEO important)
