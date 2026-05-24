@@ -403,16 +403,6 @@ export const blogPosts: BlogPost[] = [
     lang: 'en',
   },
   {
-    slug: 'chatgpt-conversation-history-search',
-    title: 'How to Search ChatGPT Conversation History',
-    description: 'Search through all your ChatGPT conversations with full-text search. Find any answer instantly.',
-    category: 'Guides',
-    date: '2026-04-25',
-    readTime: '7 min',
-    tags: ['chatgpt', 'search', 'history', 'guide'],
-    lang: 'en',
-  },
-  {
     slug: 'chatgpt-context-window-limit',
     title: 'ChatGPT Context Window Limit Explained',
     description: "Understanding ChatGPT's context window limits and how they affect your conversations.",
