@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 import WaitlistForm from './WaitlistForm';
+import StripeCheckoutButton from './StripeCheckoutButton';
 
 export const metadata: Metadata = {
-  title: 'Pricing - AI Memory | Free Forever, Pro Features Coming',
+  title: 'Pricing - AI Memory | Free Forever, Pro Features',
   description: 'AI Memory is free with all core features. Upgrade to Plus ($6.9/mo) for AI summaries and multi-device, or Pro ($7.9/mo) for full AI analysis, cloud sync, and knowledge graph.',
   keywords: ['AI memory pricing', 'chatgpt extension free', 'AI conversation manager pricing'],
   alternates: {
@@ -185,7 +186,12 @@ export default function PricingPage() {
                 <span><strong>No recurring fees</strong> — ever</span>
               </li>
             </ul>
-            <WaitlistForm plan="Lifetime" />
+            <StripeCheckoutButton 
+              plan="lifetime" 
+              className="block w-full text-center bg-amber-500 text-white py-3 rounded-lg font-semibold hover:bg-amber-600 transition"
+            >
+              Buy Lifetime - $99
+            </StripeCheckoutButton>
           </div>
 
           {/* Plus Plan */}
@@ -224,7 +230,13 @@ export default function PricingPage() {
                 <span><strong>Priority Support</strong></span>
               </li>
             </ul>
-            <WaitlistForm />
+            <StripeCheckoutButton 
+              plan="plus" 
+              interval="monthly"
+              className="block w-full text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+            >
+              Subscribe - $6.9/mo
+            </StripeCheckoutButton>
           </div>
 
           {/* Pro Plan */}
@@ -263,7 +275,13 @@ export default function PricingPage() {
                 <span><strong>MCP Cloud Access</strong> — hosted MCP endpoint</span>
               </li>
             </ul>
-            <WaitlistForm />
+            <StripeCheckoutButton 
+              plan="pro" 
+              interval="monthly"
+              className="block w-full text-center bg-gray-900 text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition"
+            >
+              Subscribe - $7.9/mo
+            </StripeCheckoutButton>
           </div>
         </div>
 

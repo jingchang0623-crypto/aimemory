@@ -126,6 +126,8 @@ const highPriorityBlogSlugs = [
   'deepseek-memory-export-guide-zh',
   // New high-priority SEO pages (2026-05-24)
   'ai-memory-vs-chatgpt-memory-2026',
+  // New high-priority SEO pages (2026-05-25)
+  'rag-for-personal-ai-memory',
 ];
 
 function getBlogSlugs(): string[] {

@@ -18,6 +18,18 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === NEW: RAG for Personal AI Memory (2026-05-25) ===
+  {
+    slug: 'rag-for-personal-ai-memory',
+    title: 'RAG for Personal AI Memory: Build Your Own Memory System (2026)',
+    description: 'Learn how RAG (Retrieval-Augmented Generation) powers personal AI memory systems. Complete guide to building your own AI memory with vector search, FTS5, and MCP Server.',
+    category: 'Guides',
+    date: '2026-05-25',
+    readTime: '12 min',
+    keywords: ['rag for personal ai memory', 'personal rag system', 'rag ai memory', 'retrieval augmented generation personal memory', 'ai memory rag implementation', 'build personal ai memory system', 'vector search ai memory', 'rag vs memory injection', 'personal knowledge management rag', 'ai memory retrieval system'],
+    tags: ['guides', 'rag', 'memory', 'technical', 'mcp', 'vector-search'],
+    lang: 'en',
+  },
   // === NEW: ChatGPT Memory Full Fix Guide (2026-05-24) ===
   {
     slug: 'chatgpt-memory-full-fix-guide-2026',
