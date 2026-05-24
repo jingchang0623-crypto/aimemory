@@ -18,6 +18,18 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === NEW: ChatGPT Memory Full Fix Guide (2026-05-24) ===
+  {
+    slug: 'chatgpt-memory-full-fix-guide-2026',
+    title: 'ChatGPT Memory Full Fix Guide 2026 — Step-by-Step Solutions',
+    description: 'Learn how to fix ChatGPT memory full errors. Complete guide to clearing, expanding, and managing ChatGPT memory limits with step-by-step instructions.',
+    category: 'Tutorial',
+    date: '2026-05-24',
+    readTime: '8 min',
+    keywords: ['chatgpt memory full', 'chatgpt memory full fix', 'chatgpt memory limit reached', 'chatgpt memory full error', 'how to clear chatgpt memory', 'chatgpt memory full solution', 'chatgpt memory upgrade', 'chatgpt memory management 2026'],
+    tags: ['tutorial', 'chatgpt', 'memory', 'fix', 'trending'],
+    lang: 'en',
+  },
   // === NEW: Claude Memory Import (2026-05-23) ===
   {
     slug: 'claude-memory-import',
