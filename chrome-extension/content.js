@@ -12,6 +12,7 @@
     if (url.includes('claude.ai')) return 'claude';
     if (url.includes('chat.deepseek.com')) return 'deepseek';
     if (url.includes('gemini.google.com')) return 'gemini';
+    if (url.includes('kimi.moonshot.cn')) return 'kimi';
     return 'unknown';
   }
   
@@ -39,6 +40,9 @@
           break;
         case 'gemini':
           conversation = captureGemini();
+          break;
+        case 'kimi':
+          conversation = captureKimi();
           break;
       }
       
@@ -171,6 +175,36 @@
       id: `gemini_${Date.now()}`,
       title,
       platform: 'gemini',
+      messages,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString()
+    };
+  }
+  
+  function captureKimi() {
+    const title = document.querySelector('.chat-title')?.textContent?.trim() || 
+                  document.title.replace(' - Kimi', '').trim();
+    
+    const messages = [];
+    const messageEls = document.querySelectorAll('[class*="message"], [class*="chat-message"]');
+    
+    messageEls.forEach(el => {
+      const isUser = el.classList.contains('user') || 
+                     el.querySelector('[class*="user"], [class*="human"]');
+      const content = el.querySelector('[class*="content"], [class*="text"]')?.textContent?.trim();
+      
+      if (content) {
+        messages.push({
+          role: isUser ? 'user' : 'assistant',
+          content
+        });
+      }
+    });
+    
+    return {
+      id: `kimi_${Date.now()}`,
+      title,
+      platform: 'kimi',
       messages,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString()

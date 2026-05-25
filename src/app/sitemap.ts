@@ -134,6 +134,8 @@ const highPriorityBlogSlugs = [
   'ai-jiyi-gongju-duibi-2026',
   // New team collaboration blog (2026-05-25)
   'ai-memory-for-teams-2026',
+  // New productivity blog (2026-05-26)
+  'ai-memory-for-productivity-2026',
 ];
 
 function getBlogSlugs(): string[] {

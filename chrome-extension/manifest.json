@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "AI Memory - Save & Search AI Conversations",
-  "version": "1.0.0",
+  "name": "AI Memory - ChatGPT & Claude History Manager",
+  "version": "1.1.0",
+  "version_name": "1.1.0",
   "description": "Automatically save your ChatGPT, Claude, DeepSeek and Gemini conversations. Search across all your AI chats.",
   "permissions": [
     "storage",
@@ -13,7 +14,8 @@
     "https://chatgpt.com/*",
     "https://claude.ai/*",
     "https://chat.deepseek.com/*",
-    "https://gemini.google.com/*"
+    "https://gemini.google.com/*",
+    "https://kimi.moonshot.cn/*"
   ],
   "background": {
     "service_worker": "background.js"
@@ -25,7 +27,8 @@
         "https://chatgpt.com/*",
         "https://claude.ai/*",
         "https://chat.deepseek.com/*",
-        "https://gemini.google.com/*"
+        "https://gemini.google.com/*",
+        "https://kimi.moonshot.cn/*"
       ],
       "js": ["content.js"],
       "css": ["content.css"]
