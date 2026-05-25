@@ -2447,6 +2447,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['comparison', 'chatgpt', 'memory', 'ai-memory', 'trending'],
     lang: 'en',
   },
+  // === NEW: Claude Memory Management Guide (2026-05-25, English SEO) ===
+  {
+    slug: 'claude-memory-management-2026',
+    title: 'Claude Memory Management: Complete Guide to Save & Organize Conversations (2026)',
+    description: 'Complete guide to Claude memory management in 2026. Learn how to save, search, and organize Claude conversations across projects, export chats, and use MCP for persistent memory across sessions.',
+    category: 'Guides & Tutorials',
+    date: '2026-05-25',
+    readTime: '14 min',
+    keywords: ['claude memory management', 'claude conversation management', 'claude ai memory', 'save claude conversations', 'claude export chat', 'claude project knowledge', 'claude memory limit', 'claude conversation history', 'organize claude chats', 'claude ai conversation backup', 'claude memory tool', 'claude persistent memory', 'claude chat organization', 'ai conversation manager claude', 'claude cross-session memory'],
+    tags: ['claude', 'memory', 'guide', 'tutorial', 'mcp', 'backup', 'productivity'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */
