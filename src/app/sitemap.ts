@@ -128,6 +128,8 @@ const highPriorityBlogSlugs = [
   'ai-memory-vs-chatgpt-memory-2026',
   // New high-priority SEO pages (2026-05-25)
   'rag-for-personal-ai-memory',
+  // New high-priority comparison blog (2026-05-25)
+  'best-ai-memory-tools-2026-complete-guide',
 ];
 
 function getBlogSlugs(): string[] {
