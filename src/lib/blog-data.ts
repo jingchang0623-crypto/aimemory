@@ -18,6 +18,18 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === NEW: AI记忆工具对比2026 (2026-05-25) ===
+  {
+    slug: 'ai-jiyi-gongju-duibi-2026',
+    title: 'AI记忆工具对比2026 — AI Memory vs Chat Memo vs Mem0 vs MemoryPlugin',
+    description: '2026年最全面的AI对话记忆工具对比评测。AI Memory、Chat Memo、Mem0、MemoryPlugin等10+工具的功能、价格、平台支持详细对比。',
+    category: 'Comparison',
+    date: '2026-05-25',
+    readTime: '12 min',
+    keywords: ['ai记忆工具对比', 'ai memory vs chat memo', 'ai memory vs mem0', '最好的ai记忆工具2026', 'chatgpt记忆工具对比', 'claude记忆工具推荐', 'deepseek记忆管理工具', 'kimi对话记忆工具', '豆包记忆功能替代', 'ai对话记忆工具评测'],
+    tags: ['对比', '评测', '中文', '工具推荐'],
+    lang: 'zh',
+  },
   // === NEW: Best AI Memory Tools 2026 (2026-05-25) ===
   {
     slug: 'best-ai-memory-tools-2026-complete-guide',
