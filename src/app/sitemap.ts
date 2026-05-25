@@ -132,6 +132,8 @@ const highPriorityBlogSlugs = [
   'best-ai-memory-tools-2026-complete-guide',
   // New Chinese comparison blog (2026-05-25)
   'ai-jiyi-gongju-duibi-2026',
+  // New team collaboration blog (2026-05-25)
+  'ai-memory-for-teams-2026',
 ];
 
 function getBlogSlugs(): string[] {
