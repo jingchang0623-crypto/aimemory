@@ -18,6 +18,18 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === NEW: AI Memory for Teams & Collaboration (2026-05-25) ===
+  {
+    slug: 'ai-memory-for-teams-2026',
+    title: 'AI Memory for Teams & Collaboration (2026) — Shared AI Knowledge',
+    description: 'Learn how teams can share and collaborate on AI conversations. Complete guide to team AI memory management, shared conversation history, and collaborative AI workflows in 2026.',
+    category: 'Guides',
+    date: '2026-05-25',
+    readTime: '10 min',
+    keywords: ['ai memory for teams', 'team ai memory', 'shared ai conversations', 'collaborative ai tools', 'ai memory enterprise', 'team chatgpt management', 'shared ai memory', 'team collaboration ai', 'ai conversation sharing', 'enterprise ai memory'],
+    tags: ['guides', 'teams', 'collaboration', 'enterprise', 'ai memory'],
+    lang: 'en',
+  },
   // === NEW: AI记忆工具对比2026 (2026-05-25) ===
   {
     slug: 'ai-jiyi-gongju-duibi-2026',
