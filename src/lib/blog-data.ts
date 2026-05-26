@@ -30,6 +30,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['marketers', 'ai-memory', 'marketing', 'content-strategy', 'seo', 'chatgpt', 'claude', 'use-case'],
     lang: 'en',
   },
+  // === NEW: AI Memory for Data Scientists (2026-05-26) ===
+  {
+    slug: 'ai-memory-for-data-scientists-2026',
+    title: 'AI Memory for Data Scientists: Organize ML Experiments & Research (2026)',
+    description: 'Organize your ML experiments, research papers, and data analysis workflows across ChatGPT, Claude, DeepSeek, and Gemini. Complete guide for data scientists.',
+    category: 'Use Cases',
+    date: '2026-05-26',
+    readTime: '13 min',
+    keywords: ['ai memory for data scientists', 'data science ai tools', 'chatgpt for data science', 'claude for data scientists', 'ml experiment tracking', 'data science workflow', 'ai for data analysis', 'chatgpt data science projects', 'claude data science', 'ai memory data science 2026', 'machine learning experiment management', 'ai research organization'],
+    tags: ['data-scientists', 'ai-memory', 'data-science', 'machine-learning', 'ml-experiments', 'research', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
   // === NEW: AI Memory for Teams & Collaboration (2026-05-25) ===
   {
     slug: 'ai-memory-for-teams-2026',
