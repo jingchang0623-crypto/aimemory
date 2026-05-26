@@ -5,6 +5,9 @@ import { BLOG_COUNT } from '@/lib/constants';
 export const metadata = {
   title: 'AI Memory for Remote Teams 2026: Shared AI Knowledge Across Time Zones',
   description: 'How remote teams use AI memory to share context across time zones. Stop repeating project details in every handoff. Cross-platform memory for ChatGPT, Claude, DeepSeek.',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-memory-for-remote-teams-2026',
+  },
   keywords: [
     'ai memory for remote teams',
     'remote team ai memory',

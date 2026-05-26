@@ -4,6 +4,9 @@ import FAQJsonLd from '@/components/FAQJsonLd';
 export const metadata = {
   title: 'AI Memory for Freelancers 2026: Manage Client Context Across Projects',
   description: 'How freelancers use AI memory to track client preferences, code patterns, and project history. Stop re-explaining context in every ChatGPT session. Works with Claude & DeepSeek.',
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-memory-for-freelancers-2026',
+  },
   keywords: [
     'ai memory for freelancers',
     'freelancer ai tools 2026',
