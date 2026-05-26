@@ -18,6 +18,18 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === NEW: AI Memory for Marketers (2026-05-26) ===
+  {
+    slug: 'ai-memory-for-marketers-2026',
+    title: 'AI Memory for Marketers: Organize Campaigns & Copy with AI (2026)',
+    description: 'Learn how marketers can organize campaigns, copy, SEO research, and content strategy with AI Memory. Complete guide to AI marketing tools, campaign management, and content strategy across ChatGPT, Claude, and DeepSeek.',
+    category: 'Use Cases',
+    date: '2026-05-26',
+    readTime: '14 min',
+    keywords: ['ai memory for marketers', 'marketing ai tools', 'ai for digital marketing', 'chatgpt for marketers', 'claude for marketing', 'marketing productivity ai', 'ai marketing tools 2026', 'ai content strategy', 'marketers ai memory', 'chatgpt marketing copy', 'ai for seo research', 'marketing campaign organization'],
+    tags: ['marketers', 'ai-memory', 'marketing', 'content-strategy', 'seo', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
   // === NEW: AI Memory for Teams & Collaboration (2026-05-25) ===
   {
     slug: 'ai-memory-for-teams-2026',

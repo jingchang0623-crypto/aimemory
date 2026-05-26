@@ -140,6 +140,8 @@ const highPriorityBlogSlugs = [
   'cursor-windsurf-ai-memory-guide-2026',
   // New AI Memory for Freelancers 2026 (2026-05-26)
   'ai-memory-for-freelancers-2026',
+  // New AI Memory for Marketers 2026 (2026-05-26)
+  'ai-memory-for-marketers-2026',
 ];
 
 function getBlogSlugs(): string[] {
