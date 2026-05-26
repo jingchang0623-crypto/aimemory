@@ -136,6 +136,8 @@ const highPriorityBlogSlugs = [
   'ai-memory-for-teams-2026',
   // New productivity blog (2026-05-26)
   'ai-memory-for-productivity-2026',
+  // New Cursor & Windsurf AI Memory Guide (2026-05-26)
+  'cursor-windsurf-ai-memory-guide-2026',
 ];
 
 function getBlogSlugs(): string[] {

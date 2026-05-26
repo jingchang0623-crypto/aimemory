@@ -5,7 +5,7 @@
  */
 
 // Content counts - update manually when adding new content pages
-export const BLOG_COUNT = 216; // Registered blog entries in blog-data.ts (2026-05-26: +ai-memory-for-productivity-2026)
+export const BLOG_COUNT = 217; // Registered blog entries in blog-data.ts (2026-05-26: +cursor-windsurf-ai-memory-guide-2026)
 export const GUIDE_PAGES = 2; // /guides/getting-started, /guides/mcp-quickstart
 export const CONTENT_COUNT = BLOG_COUNT + GUIDE_PAGES; // Total "SEO Guides" for homepage (216)
 

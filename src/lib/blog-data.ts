@@ -2507,6 +2507,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['claude', 'memory', 'guide', 'tutorial', 'mcp', 'backup', 'productivity'],
     lang: 'en',
   },
+  // === NEW: Cursor & Windsurf AI Memory Guide (2026-05-26, English SEO) ===
+  {
+    slug: 'cursor-windsurf-ai-memory-guide-2026',
+    title: 'Cursor & Windsurf AI Memory Guide (2026) — Persistent Context for AI Coding',
+    description: 'Complete guide to adding persistent memory to Cursor and Windsurf with MCP Server. Never re-explain your codebase again — give your AI coding assistant permanent context.',
+    category: 'AI Platform Guides',
+    date: '2026-05-26',
+    readTime: '14 min',
+    keywords: ['cursor ai memory', 'windsurf ai memory', 'cursor memory mcp', 'windsurf memory mcp', 'persistent memory cursor', 'persistent memory windsurf', 'cursor ai context', 'windsurf ai context', 'mcp server cursor', 'mcp server windsurf', 'ai coding assistant memory', 'cursor memory setup'],
+    tags: ['cursor', 'windsurf', 'mcp', 'memory', 'coding', 'ai-tools', 'productivity'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

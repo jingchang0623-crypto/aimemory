@@ -18,6 +18,29 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.98.0',
+    date: '2026-05-26',
+    title: 'Round 155 — Cursor & Windsurf AI Memory Guide + MCP SEO',
+    tags: ['SEO', 'Blog', 'MCP', 'Developers'],
+    changes: {
+      added: [
+        'New blog: Cursor & Windsurf AI Memory Guide (2026) — 14 min read, 12 MCP tools covered',
+        'Target keywords: cursor ai memory, windsurf ai memory, cursor memory mcp, persistent memory cursor/windsurf',
+        'Homepage link added to Guides & Resources section',
+        'Added to highPriorityBlogSlugs in sitemap.ts for SEO priority 0.9',
+      ],
+      improved: [
+        'BLOG_COUNT: 216 → 217 (new blog entry)',
+        'CONTENT_COUNT: 218 total SEO guides (217 blogs + 2 guide pages)',
+      ],
+      noted: [
+        'SEO strategy: Target AI coding assistant users (Cursor/Windsurf) who need persistent context',
+        'MCP Server v1.5.0 live on PyPI — 113+ clients, 12 memory tools',
+        'Chrome Extension v1.1.0 built — pending $5 Chrome Web Store fee for launch',
+      ],
+    },
+  },
+  {
     version: 'v0.97.0',
     date: '2026-05-24',
     title: 'Round 144 — BLOG_COUNT Correction + Product Audit',

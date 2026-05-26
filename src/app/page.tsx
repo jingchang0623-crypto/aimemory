@@ -760,6 +760,7 @@ No accounts required. No third-party access. Your conversations are stored in an
               { title: 'MCP Server for Claude', href: '/blog/mcp-server-for-claude' },
               { title: 'Search All AI Chats', href: '/blog/search-across-all-ai-chats' },
               { title: 'MCP Installation Guide', href: '/blog/mcp-server-installation-guide' },
+              { title: 'Cursor & Windsurf AI Memory', href: '/blog/cursor-windsurf-ai-memory-guide-2026' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
                 {link.title}
