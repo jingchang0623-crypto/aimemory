@@ -150,6 +150,8 @@ const highPriorityBlogSlugs = [
   'ai-memory-for-students-2026',
   // New AI Memory for Teachers 2026 (2026-05-27)
   'ai-memory-for-teachers-2026',
+  // New AI Memory for Business Professionals 2026 (2026-05-27)
+  'ai-memory-for-business-professionals-2026',
 ];
 
 function getBlogSlugs(): string[] {
