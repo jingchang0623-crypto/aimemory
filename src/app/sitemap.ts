@@ -84,6 +84,7 @@ const highPriorityBlogSlugs = [
   'memory-injection-guide',
   'claude-code-vs-cursor-memory',
   'ai-memory-for-product-managers',
+  'ai-memory-for-product-managers-2026',
   'mcp-memory-for-ai-agents',
   'ai-memory-injection-guide',
   'ai-agent-memory-management',
@@ -152,6 +153,12 @@ const highPriorityBlogSlugs = [
   'ai-memory-for-teachers-2026',
   // New AI Memory for Business Professionals 2026 (2026-05-27)
   'ai-memory-for-business-professionals-2026',
+  // New Professional Niche Blog Posts (2026-05-27)
+  'ai-memory-for-devops-2026',
+  'ai-memory-for-healthcare-2026',
+  'ai-memory-for-lawyers-2026',
+  'ai-memory-for-product-managers-2026',
+  'ai-memory-for-designers-2026',
 ];
 
 function getBlogSlugs(): string[] {

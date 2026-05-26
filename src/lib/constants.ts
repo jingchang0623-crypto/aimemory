@@ -5,7 +5,7 @@
  */
 
 // Content counts - update manually when adding new content pages
-export const BLOG_COUNT = 226; // Registered blog entries in blog-data.ts (2026-05-27: verified)
+export const BLOG_COUNT = 231; // Registered blog entries in blog-data.ts (2026-05-27: +5 professional niches)
 export const GUIDE_PAGES = 2; // /guides/getting-started, /guides/mcp-quickstart
 export const CONTENT_COUNT = BLOG_COUNT + GUIDE_PAGES; // Total "SEO Guides" for homepage (228)
 
