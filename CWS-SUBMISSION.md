@@ -176,9 +176,9 @@ Made with ❤️ for the AI community.
 ## 🖼️ Visual Assets Checklist
 
 ### Icons (Required)
-- [ ] **icon16.png** (16x16) — `/chrome-extension/icons/icon16.png`
-- [ ] **icon48.png** (48x48) — `/chrome-extension/icons/icon48.png`
-- [ ] **icon128.png** (128x128) — `/chrome-extension/icons/icon128.png`
+- [x] **icon16.png** (16x16) — `/chrome-extension/icons/icon16.png` ✅
+- [x] **icon48.png** (48x48) — `/chrome-extension/icons/icon48.png` ✅
+- [x] **icon128.png** (128x128) — `/chrome-extension/icons/icon128.png` ✅
 
 ### Screenshots (Required — at least 1, max 5)
 **Size**: 1280x800 or 640x400 (recommended: 1280x800)
@@ -225,28 +225,28 @@ Made with ❤️ for the AI community.
 
 ---
 
-## 📋 Pre-Submission Checklist
+### Pre-Submission Checklist
 
 ### Code & Assets
-- [ ] `manifest.json` version updated to 1.1.0
-- [ ] All icons present (16, 48, 128)
-- [ ] No console errors in extension
-- [ ] No sensitive data in code (API keys, etc.)
-- [ ] `content.js` handles all 5 platforms
+- [x] `manifest.json` version updated to 1.1.0 ✅
+- [x] All icons present (16, 48, 128) ✅
+- [x] No console errors in extension ✅
+- [x] No sensitive data in code (API keys, etc.) ✅
+- [x] `content.js` handles all 5 platforms ✅
 
 ### Store Listing
-- [ ] Extension name ≤ 45 characters
-- [ ] Summary ≤ 132 characters
-- [ ] Description formatted with line breaks
-- [ ] Screenshots taken (1280x800)
-- [ ] Privacy policy URL added
+- [x] Extension name ≤ 45 characters ✅ (44 chars)
+- [x] Summary ≤ 132 characters ✅ (107 chars)
+- [x] Description formatted with line breaks ✅
+- [ ] Screenshots taken (1280x800) — **NEEDED FOR SUBMISSION**
+- [x] Privacy policy URL added ✅ (https://aimemory.pro/privacy)
 
 ### Compliance
-- [ ] No deceptive installation methods
-- [ ] No misleading statements
-- [ ] Single purpose clearly stated
-- [ ] Permissions justified (storage, activeTab, scripting)
-- [ ] No prohibited content (cryptocurrency mining, etc.)
+- [x] No deceptive installation methods ✅
+- [x] No misleading statements ✅
+- [x] Single purpose clearly stated ✅
+- [x] Permissions justified (storage, activeTab, scripting) ✅
+- [x] No prohibited content ✅
 
 ### After $5 Payment
 - [ ] Chrome Web Store Developer Account created
@@ -298,4 +298,5 @@ Made with ❤️ for the AI community.
 ---
 
 **Status**: Ready for packaging and submission (pending $5 developer fee)
-**Last Updated**: 2026-05-20
+**Last Updated**: 2026-05-27
+**Blocking Item**: Screenshots needed for CWS submission (1280x800, at least 1, max 5)

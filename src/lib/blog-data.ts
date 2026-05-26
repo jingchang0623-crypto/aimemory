@@ -18,6 +18,18 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === NEW: AI Memory for Teachers (2026-05-27) ===
+  {
+    slug: 'ai-memory-for-teachers-2026',
+    title: 'AI Memory for Teachers: Organize Lesson Plans & Educational Resources (2026)',
+    description: 'Learn how teachers can organize lesson plans, curriculum materials, and educational resources with AI Memory. Complete guide to AI teaching tools, classroom management, and lesson planning across ChatGPT, Claude, and DeepSeek.',
+    category: 'Use Cases',
+    date: '2026-05-27',
+    readTime: '12 min',
+    keywords: ['ai memory for teachers', 'teacher ai tools', 'ai for lesson planning', 'chatgpt for teachers', 'claude for education', 'ai teaching assistant', 'lesson plan organization', 'educational ai tools 2026', 'ai for curriculum development', 'teacher productivity ai', 'ai memory teacher 2026'],
+    tags: ['teachers', 'ai-memory', 'education', 'lesson-planning', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
   // === NEW: AI Memory for Marketers (2026-05-26) ===
   {
     slug: 'ai-memory-for-marketers-2026',
