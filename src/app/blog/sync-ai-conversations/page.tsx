@@ -162,7 +162,7 @@ export default function SyncAIConversations() {
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-4 my-4">
           <h3 className="text-sm font-semibold text-white mb-2">How It Works</h3>
           <ol className="text-sm text-gray-300 space-y-2 list-decimal list-inside">
-            <li>Install the extension from <Link href="/chrome-extension" className="text-purple-400">ai-memory-extension.zip</Link></li>
+            <li>Install the extension from <Link href="/chrome-extension" className="text-purple-400">ai-memory-extension-v1.1.0.zip</Link></li>
             <li>Chat normally on ChatGPT, Claude, DeepSeek, or Gemini</li>
             <li>Conversations are automatically captured and indexed</li>
             <li>Search across all platforms from the side panel</li>

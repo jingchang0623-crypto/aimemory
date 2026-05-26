@@ -172,10 +172,10 @@ export default function Home() {
               Upload Your Chats — It's Free
             </button>
             <Link
-              href="/ai-memory-extension.zip"
+              href="/ai-memory-extension-v1.1.0.zip"
               className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors text-base"
             >
-              ⬇️ Get Extension
+              ⬇️ Get Extension (v1.1.0)
             </Link>
             <Link
               href="/blog/chatgpt-history-extension"

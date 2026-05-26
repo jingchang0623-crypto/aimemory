@@ -334,10 +334,10 @@ export default function ChromeExtension() {
             Download the extension and never lose an important AI conversation again.
           </p>
           <a 
-            href="/ai-memory-extension.zip"
+            href="/ai-memory-extension-v1.1.0.zip"
             className="inline-block px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
           >
-            ⬇️ Download Free Extension
+            ⬇️ Download Free Extension (v1.1.0)
           </a>
         </div>
       </main>

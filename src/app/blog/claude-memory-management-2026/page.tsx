@@ -234,7 +234,7 @@ export default function ClaudeMemoryManagement2026() {
           <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-6 my-6">
             <h3 className="mt-0">Method 2: Auto-Save with Chrome Extension (Recommended)</h3>
             <ol>
-              <li>Download the <a href="/ai-memory-extension.zip">AI Memory Chrome Extension</a></li>
+              <li>Download the <a href="/ai-memory-extension-v1.1.0.zip">AI Memory Chrome Extension</a></li>
               <li>Load it in Chrome via chrome://extensions (Developer Mode)</li>
               <li>Chat normally with Claude at claude.ai</li>
               <li>Conversations are automatically captured and saved</li>
@@ -426,7 +426,7 @@ pip install aimemory-mcp-server
               <a href="/" className="inline-block bg-white text-blue-600 font-semibold px-6 py-2.5 rounded-lg hover:bg-blue-50 transition-colors">
                 📤 Upload Your Chats
               </a>
-              <a href="/ai-memory-extension.zip" className="inline-block bg-white/20 text-white border border-white/30 font-semibold px-6 py-2.5 rounded-lg hover:bg-white/30 transition-colors">
+              <a href="/ai-memory-extension-v1.1.0.zip" className="inline-block bg-white/20 text-white border border-white/30 font-semibold px-6 py-2.5 rounded-lg hover:bg-white/30 transition-colors">
                 ⬇️ Get Chrome Extension
               </a>
               <a href="/mcp-server" className="inline-block bg-white/20 text-white border border-white/30 font-semibold px-6 py-2.5 rounded-lg hover:bg-white/30 transition-colors">

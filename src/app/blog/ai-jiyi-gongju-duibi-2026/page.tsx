@@ -209,7 +209,7 @@ export default function AIJiyiGongjuDuibi2026() {
       <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-lg my-6">
         <h3 className="text-xl font-bold mb-4">方法2：Chrome扩展（自动化）</h3>
         <ol className="list-decimal pl-6">
-          <li><a href="/ai-memory-extension.zip" className="text-blue-600 hover:underline">下载AI Memory扩展</a></li>
+          <li><a href="/ai-memory-extension-v1.1.0.zip" className="text-blue-600 hover:underline">下载AI Memory扩展</a></li>
           <li>解压后加载到Chrome（chrome://extensions → 开发者模式 → 加载已解压）</li>
           <li>自动捕获所有AI对话，无需手动导出</li>
         </ol>
