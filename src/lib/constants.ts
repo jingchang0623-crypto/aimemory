@@ -5,9 +5,9 @@
  */
 
 // Content counts - update manually when adding new content pages
-export const BLOG_COUNT = 235; // Registered blog entries in blog-data.ts (2026-05-27: 235 total, 3 new niche blogs added)
+export const BLOG_COUNT = 237; // Registered blog entries in blog-data.ts (2026-05-27: 237 total)
 export const GUIDE_PAGES = 2; // /guides/getting-started, /guides/mcp-quickstart
-export const CONTENT_COUNT = BLOG_COUNT + GUIDE_PAGES; // Total "SEO Guides" for homepage (235)
+export const CONTENT_COUNT = BLOG_COUNT + GUIDE_PAGES; // Total "SEO Guides" for homepage (239)
 
 // MCP Server stats
 export const MCP_CLIENTS_COUNT = 113; // MCP-compatible clients (Claude, Cursor, Windsurf, etc.)
