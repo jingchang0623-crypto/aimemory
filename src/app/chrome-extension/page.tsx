@@ -52,6 +52,29 @@ export default function ChromeExtension() {
           </p>
         </div>
 
+        {/* Chrome Web Store Coming Soon */}
+        <div className="bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 rounded-xl p-6 mb-12 text-center">
+          <div className="text-4xl mb-3">🏪</div>
+          <h2 className="text-2xl font-bold text-green-800 mb-2">Coming to Chrome Web Store</h2>
+          <p className="text-green-700 mb-4 max-w-2xl mx-auto">
+            We&apos;re preparing our Chrome Web Store submission. One-click install, automatic updates, and verified publisher status — coming soon!
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 mb-4">
+            <div className="px-4 py-2 bg-white rounded-lg border border-green-200 text-sm text-green-700">
+              ✅ Package Ready (v1.1.0 - 39.6KB)
+            </div>
+            <div className="px-4 py-2 bg-white rounded-lg border border-green-200 text-sm text-green-700">
+              ✅ Store Assets Prepared
+            </div>
+            <div className="px-4 py-2 bg-white rounded-lg border border-green-200 text-sm text-green-700">
+              ⏳ $5 Registration Fee (Pending)
+            </div>
+          </div>
+          <p className="text-xs text-green-600">
+            Want early access? <a href="mailto:contact@aimemory.pro" className="underline font-medium">Contact us</a> to join the beta tester list.
+          </p>
+        </div>
+
         {/* Stats */}
         <div className="flex flex-wrap justify-center gap-6 mb-12 text-center">
           <div className="px-6 py-3 bg-white rounded-lg border border-gray-200">

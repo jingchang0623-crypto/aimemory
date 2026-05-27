@@ -38,12 +38,12 @@
     38|    38|    38|    38|
     39|    39|    39|    39|## 2. Current Product Status
     40|    40|    40|    40|
-    41|    41|    41|    41|### Site Health
-    42|    42|    42|    42|- **URL**: https://aimemory.pro
-    43|    43|    43|    43|- **Status**: HTTP 200 ✓
-- **Blog posts**: 234 (2026-05-27: +1 marketers blog)
-    45|- **Total pages**: 236 (234 blog + 2 guides)
-    46|- **Sitemap**: Dynamic generation ✓ (See sitemap.ts for all URLs)
+### Site Health
+- **URL**: https://aimemory.pro
+- **Status**: HTTP 200 ✓
+- **Blog posts**: 237 (2026-05-27: +3 new niche blogs: HR/Recruiters, Sales, Entrepreneurs)
+- **Total pages**: 239 (237 blog + 2 guides)
+- **Sitemap**: Dynamic generation ✓ (See sitemap.ts for all URLs)
     47|    47|    47|    47|
     48|    48|    48|    48|### Key Files
     49|    49|    49|    49|- MCP Server: `/mcp-server/` - version 1.5.0, **PUBLISHED on PyPI** (verified 2026-05-19). All pages updated to promote `pip install aimemory-mcp-server`.

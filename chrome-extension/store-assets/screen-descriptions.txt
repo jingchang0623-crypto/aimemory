@@ -1,0 +1,5 @@
+1. Side Panel Main View - Shows all saved conversations with search bar at top
+2. Search Results - Filtered conversations appear instantly as you type
+3. Memory Injection UI - Click inject button to add context to AI input
+4. Platform Filter - Filter conversations by ChatGPT, Claude, DeepSeek, Gemini, Kimi
+5. Export Dialog - Choose format (JSON/TXT) and export to aimemory.pro
