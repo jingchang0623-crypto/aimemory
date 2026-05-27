@@ -674,3 +674,35 @@
 - **MCP Server**: PyPI v1.5.0 ✅ https://pypi.org/project/aimemory-mcp-server/
 - **Chrome Extension**: v1.1.0 built ✅ (awaiting CWS submission)
 - **GitHub**: https://github.com/jingchang0623-crypto/aimemory ✅
+
+### Session: 2026-05-27 (Cron Job - P0 Feature Completion)
+
+#### Completed
+1. ✅ **Fixed BLOG_COUNT in constants.ts** — Updated from 235 to 237 to match blog-data.ts registry
+2. ✅ **Created /api/export endpoint** — Supports JSON and Markdown formats, single conversation or all conversations export
+3. ✅ **Created /api/github-stars endpoint** — Dynamic GitHub stars display with 1-hour cache
+4. ✅ **Created src/lib/export.ts utility** — Shared functions: getSessionId, jsonToMarkdown, getAllConversations
+5. ✅ **ExportButton component now fully functional** — Connected to working API, supports JSON/Markdown export
+6. ✅ **npm run build passed** (62 pages static + dynamic routes)
+7. ✅ **Git commit + push** (commit d01055c)
+
+#### Files Modified/Created
+- `src/lib/constants.ts` — Fixed BLOG_COUNT 235→237
+- `src/app/api/export/route.ts` — **NEW**: Full export API (JSON/Markdown, single/all)
+- `src/app/api/github-stars/route.ts` — **NEW**: GitHub stars API with caching
+- `src/lib/export.ts` — **NEW**: Export utility functions
+
+#### Verified Status
+- ✅ Build: 62 static pages + dynamic routes passed
+- ✅ Export API: Tested (JSON/Markdown formats)
+- ✅ GitHub Stars API: Ready (will display on MCP Server page)
+- ✅ Pushed to GitHub: https://github.com/jingchang0623-crypto/aimemory
+
+#### P0 Status Update
+| Priority | Task | Status |
+|----------|------|--------|
+| 🔴 P0 | Export API (Web UI) | ✅ **DONE (2026-05-27)** |
+| 🔴 P0 | GitHub Stars API | ✅ **DONE (2026-05-27)** |
+| 🔴 P0 | Chrome Web Store submission | **Prepared** — Needs $5 fee |
+| 🔴 P0 | Memory Injection Demo page | **Next to implement** |
+
