@@ -2693,6 +2693,42 @@ export const blogPosts: BlogPost[] = [
     tags: ['marketers', 'ai-memory', 'marketing', 'productivity', 'chatgpt', 'claude', 'use-case'],
     lang: 'en',
   },
+  // === NEW: AI Memory for HR & Recruiters (2026-05-27) ===
+  {
+    slug: 'ai-memory-for-hr-recruiters-2026',
+    title: 'AI Memory for HR & Recruiters: Organize Candidates & Interviews (2026)',
+    description: 'Learn how HR professionals and recruiters can organize candidate profiles, interview notes, and job descriptions with AI Memory. Complete guide to HR AI tools across ChatGPT, Claude, and DeepSeek.',
+    category: 'Use Cases',
+    date: '2026-05-27',
+    readTime: '13 min',
+    keywords: ['ai memory for hr professionals', 'ai for recruiters 2026', 'ai for candidate screening', 'chatgpt for hr', 'claude for interview notes', 'hr productivity ai', 'ai recruitment tools', 'ai for job descriptions', 'chatgpt hr use cases', 'ai memory hr 2026', 'recruiting ai assistant', 'interview question organizer ai'],
+    tags: ['hr', 'recruiters', 'ai-memory', 'recruiting', 'productivity', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
+  // === NEW: AI Memory for Sales Professionals (2026-05-27) ===
+  {
+    slug: 'ai-memory-for-sales-professionals-2026',
+    title: 'AI Memory for Sales Professionals: Organize Leads & Cold Emails (2026)',
+    description: 'Learn how sales professionals can organize lead research, cold email templates, and objection handling with AI Memory. Complete guide to sales AI tools across ChatGPT, Claude, and DeepSeek.',
+    category: 'Use Cases',
+    date: '2026-05-27',
+    readTime: '12 min',
+    keywords: ['ai memory for sales professionals', 'sales ai tools 2026', 'ai for lead generation', 'chatgpt for sales', 'claude for cold emails', 'sales productivity ai', 'ai sales assistant', 'ai for objection handling', 'chatgpt sales use cases', 'ai memory sales 2026', 'crm ai tools', 'sales email templates ai'],
+    tags: ['sales', 'lead-generation', 'ai-memory', 'productivity', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
+  // === NEW: AI Memory for Entrepreneurs (2026-05-27) ===
+  {
+    slug: 'ai-memory-for-entrepreneurs-2026',
+    title: 'AI Memory for Entrepreneurs: Organize Strategy & Pitch Decks (2026)',
+    description: 'Learn how entrepreneurs can organize business strategy, pitch deck content, and market research with AI Memory. Complete guide to entrepreneurship AI tools across ChatGPT, Claude, and DeepSeek.',
+    category: 'Use Cases',
+    date: '2026-05-27',
+    readTime: '14 min',
+    keywords: ['ai memory for entrepreneurs', 'entrepreneurship ai tools 2026', 'ai for business strategy', 'chatgpt for entrepreneurs', 'claude for pitch decks', 'startup productivity ai', 'ai business planning', 'ai for market research', 'chatgpt startup use cases', 'ai memory entrepreneurship 2026', 'business model canvas ai', 'startup founder tools ai'],
+    tags: ['entrepreneurs', 'startup', 'ai-memory', 'business-strategy', 'productivity', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */
