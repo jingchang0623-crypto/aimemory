@@ -5,19 +5,22 @@ export const metadata = {
   title: 'AI Memory for Healthcare Professionals: Organize Medical Research & Clinical Notes (2026)',
   description: 'Learn how healthcare professionals can organize medical research, clinical notes, and patient case documentation with AI Memory. Complete guide to healthcare AI tools across ChatGPT, Claude, and DeepSeek.',
   keywords: [
-    'ai memory for healthcare professionals',
+    'ai memory for healthcare',
     'healthcare ai tools 2026',
     'ai for medical research',
     'chatgpt for healthcare',
-    'claude for clinical notes',
-    'medical productivity ai',
-    'ai patient case organizer',
-    'healthcare documentation ai',
-    'ai for doctors',
-    'chatgpt medical research',
+    'claude for clinical documentation',
+    'healthcare productivity ai',
+    'ai medical research organizer',
+    'clinical notes documentation ai',
+    'ai for patient case management',
+    'chatgpt medical education',
     'ai memory healthcare 2026',
-    'medical record organization ai',
+    'healthcare knowledge management ai',
   ],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-memory-for-healthcare-2026',
+  },
 };
 
 const blogPost = {

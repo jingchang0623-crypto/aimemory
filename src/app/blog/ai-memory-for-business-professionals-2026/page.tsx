@@ -18,6 +18,9 @@ export const metadata = {
     'ai memory business 2026',
     'business document organization ai',
   ],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-memory-for-business-professionals-2026',
+  },
 };
 
 const blogPost = {

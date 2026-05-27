@@ -9,15 +9,18 @@ export const metadata = {
     'legal ai tools 2026',
     'ai for legal research',
     'chatgpt for lawyers',
-    'claude for legal analysis',
+    'claude for legal documentation',
     'legal productivity ai',
     'ai case brief organizer',
-    'legal document organization ai',
-    'ai for attorneys',
-    'chatgpt legal research',
-    'ai memory legal 2026',
-    'law firm productivity ai',
+    'legal document management ai',
+    'ai for compliance research',
+    'chatgpt legal writing',
+    'ai memory lawyers 2026',
+    'legal knowledge management ai',
   ],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-memory-for-lawyers-2026',
+  },
 };
 
 const blogPost = {

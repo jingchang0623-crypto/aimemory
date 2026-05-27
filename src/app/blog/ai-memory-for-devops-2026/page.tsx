@@ -7,17 +7,20 @@ export const metadata = {
   keywords: [
     'ai memory for devops',
     'devops ai tools 2026',
-    'ai for devops engineers',
+    'ai for infrastructure management',
     'chatgpt for devops',
-    'claude for infrastructure',
+    'claude for system administration',
     'devops productivity ai',
-    'ai runbook manager',
-    'infrastructure as code ai',
-    'devops troubleshooting ai',
+    'ai runbook organizer',
+    'infrastructure documentation ai',
+    'ai for site reliability',
+    'chatgpt troubleshooting',
     'ai memory devops 2026',
-    'kubernetes ai assistant',
-    'terraform ai memory',
+    'devops knowledge management ai',
   ],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-memory-for-devops-2026',
+  },
 };
 
 const blogPost = {

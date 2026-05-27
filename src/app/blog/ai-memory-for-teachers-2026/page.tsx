@@ -21,6 +21,9 @@ export const metadata = {
     'educational resource management',
     'chatgpt lesson plans',
   ],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-memory-for-teachers-2026',
+  },
 };
 
 const blogPost = {

@@ -18,6 +18,9 @@ export const metadata = {
     'ai memory pm 2026',
     'product specs organization ai',
   ],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-memory-for-product-managers-2026',
+  },
 };
 
 const blogPost = {

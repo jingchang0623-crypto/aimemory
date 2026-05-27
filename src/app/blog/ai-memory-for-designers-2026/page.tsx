@@ -18,6 +18,9 @@ export const metadata = {
     'ai memory design 2026',
     'design system organization ai',
   ],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-memory-for-designers-2026',
+  },
 };
 
 const blogPost = {
