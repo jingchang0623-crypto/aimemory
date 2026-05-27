@@ -6,7 +6,7 @@ import StripeCheckoutButton from './StripeCheckoutButton';
 
 export const metadata: Metadata = {
   title: 'Pricing - AI Memory | Free Forever, Pro Features',
-  description: 'AI Memory is free with all core features. Upgrade to Plus ($6.9/mo) for AI summaries and multi-device, or Pro ($7.9/mo) for full AI analysis, cloud sync, and knowledge graph.',
+  description: 'AI Memory is free with all core features. Upgrade to Plus ($9.9/mo) for AI summaries and multi-device, or Pro ($19.9/mo) for full AI analysis, cross-platform sync, and knowledge graph.',
   keywords: ['AI memory pricing', 'chatgpt extension free', 'AI conversation manager pricing'],
   alternates: {
     canonical: 'https://aimemory.pro/pricing',
@@ -44,7 +44,7 @@ export default function PricingPage() {
                 "name": "How much does AI Memory Pro cost?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "AI Memory Plus is $6.9/month or $69/year. AI Memory Pro is $7.9/month or $79/year with unlimited AI analysis, cross-platform sync, cloud sync, and knowledge graph. Waitlist members get founding member discounts and early access."
+                  "text": "AI Memory Plus is $9.9/month or $99/year. AI Memory Pro is $19.9/month or $199/year with unlimited AI analysis, cross-platform sync, cloud sync, and knowledge graph. Waitlist members get founding member discounts and early access."
                 }
               },
               {
@@ -201,8 +201,8 @@ export default function PricingPage() {
             </div>
             <div className="text-center">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Plus</h2>
-              <div className="text-5xl font-bold text-gray-900 mb-2">$6.9<span className="text-lg text-gray-500">/mo</span></div>
-              <p className="text-gray-500 mb-8">or $69/year (save 17%)</p>
+              <div className="text-5xl font-bold text-gray-900 mb-2">$9.9<span className="text-lg text-gray-500">/mo</span></div>
+              <p className="text-gray-500 mb-8">or $99/year (save 17%)</p>
             </div>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start">
@@ -235,19 +235,19 @@ export default function PricingPage() {
               interval="monthly"
               className="block w-full text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
             >
-              Subscribe - $6.9/mo
+              Subscribe - $9.9/mo
             </StripeCheckoutButton>
           </div>
 
           {/* Pro Plan */}
           <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 relative">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-sm font-semibold px-4 py-1 rounded-full">
-              Planned
+              Coming Soon
             </div>
             <div className="text-center">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Pro</h2>
-              <div className="text-5xl font-bold text-gray-900 mb-2">$7.9<span className="text-lg text-gray-500">/mo</span></div>
-              <p className="text-gray-500 mb-8">or $79/year (save 17%)</p>
+              <div className="text-5xl font-bold text-gray-900 mb-2">$19.9<span className="text-lg text-gray-500">/mo</span></div>
+              <p className="text-gray-500 mb-8">or $199/year (save 17%)</p>
             </div>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start">
@@ -280,7 +280,7 @@ export default function PricingPage() {
               interval="monthly"
               className="block w-full text-center bg-gray-900 text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition"
             >
-              Subscribe - $7.9/mo
+              Subscribe - $19.9/mo
             </StripeCheckoutButton>
           </div>
         </div>
@@ -294,7 +294,7 @@ export default function PricingPage() {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div className="bg-white rounded-xl p-5 shadow-sm">
-                <div className="text-3xl font-bold text-gray-900 mb-1">234</div>
+                <div className="text-3xl font-bold text-gray-900 mb-1">237</div>
                 <div className="text-sm text-gray-500">Blog Posts & Guides</div>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm">
@@ -329,12 +329,16 @@ export default function PricingPage() {
               <p className="text-gray-600">Yes! All core features — import, search, memory injection, Chrome extension, and MCP server — are free forever. No hidden limits, no bait-and-switch.</p>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">When will Pro features launch?</h3>
-              <p className="text-gray-600">We are actively building AI analysis and cloud sync features. Join the waitlist to get early access and a founding member discount.</p>
+              <h3 className="font-semibold text-gray-900 mb-2">What&apos;s included in Plus ($9.9/mo)?</h3>
+              <p className="text-gray-600">Plus adds AI-powered conversation summaries (50/month), usage analytics, auto-tagging with AI suggestions, and access from up to 3 devices.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">What&apos;s coming in Pro ($19.9/mo)?</h3>
+              <p className="text-gray-600">Pro will include unlimited AI analysis, cross-platform sync with end-to-end encryption, knowledge graph visualization, and hosted MCP cloud endpoint. Expected launch in Q3 2026.</p>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Will there be a lifetime deal?</h3>
-              <p className="text-gray-600">Yes! We plan to offer a limited lifetime deal when Pro launches. Waitlist members will get first access.</p>
+              <p className="text-gray-600">Yes! We offer a limited lifetime deal at $99 (one-time payment) that includes all current Pro features when they launch. Lock in your price now.</p>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Is my data safe?</h3>

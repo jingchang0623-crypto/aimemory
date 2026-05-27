@@ -24,7 +24,7 @@ const phases = [
     status: 'current',
     description: 'Making AI Memory easy to discover and install across all platforms.',
     items: [
-      { title: 'MCP Server on PyPI', detail: 'pip install aimemory-mcp-server — one-command setup for Claude Desktop, Cursor, and 113+ MCP clients.', status: 'ready' },
+      { title: 'MCP Server on PyPI', detail: 'pip install aimemory-mcp-server — one-command setup for Claude Desktop, Cursor, and 113+ MCP clients.', status: 'shipped' },
       { title: 'Chrome Web Store Launch', detail: 'One-click install for the Chrome extension. No more "load unpacked" workaround.', status: 'ready' },
       { title: 'Google Search Console', detail: 'Verify site ownership for indexing analytics and sitemap submission.', status: 'ready' },
       { title: 'Product Hunt Launch', detail: 'Day-one launch with early-adopter positioning and community engagement.', status: 'planned' },
@@ -126,7 +126,7 @@ export default function RoadmapPage() {
             What we&apos;re building, why, and when. This roadmap is driven by user feedback and our vision for the future of AI conversation management.
           </p>
           <p className="text-sm text-gray-500">
-            Last updated: May 2026 • <Link href="/changelog" className="text-blue-600 underline">View Changelog</Link>
+            Last updated: May 28, 2026 • <Link href="/changelog" className="text-blue-600 underline">View Changelog</Link>
           </p>
         </section>
 
@@ -183,13 +183,16 @@ export default function RoadmapPage() {
                 'Multi-platform import (ChatGPT, Claude, DeepSeek, Gemini, Kimi)',
                 'Full-text search with FTS5',
                 'Chrome extension with auto-save (ChatGPT, Claude, DeepSeek, Gemini, Kimi)',
-                'Memory injection into AI chat inputs',
-                'MCP Server v1.4.0 (12 tools)',
+                'Memory injection into AI chat inputs (all 5 platforms)',
+                'MCP Server v1.5.0 (12 tools) on PyPI',
                 'Tag management with autocomplete',
-                'Conversation export (JSON, TXT, CSV)',
-                'Stats dashboard',
-                '160+ SEO guides & documentation',
+                'Conversation export (JSON, TXT, CSV, Markdown)',
+                'Export API (JSON/Markdown formats)',
+                'GitHub Stars API integration',
+                'Memory Injection Demo page',
+                '237+ SEO guides & documentation',
                 'Session-isolated private storage',
+                'Delete data API (GDPR compliance)',
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2">
                   <span className="text-green-500 mt-0.5">✓</span>
