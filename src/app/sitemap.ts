@@ -31,6 +31,7 @@ const staticPages: { path: string; priority: number; changeFrequency: 'yearly' |
   { path: '/guides/mcp-quickstart', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/feedback', priority: 0.5, changeFrequency: 'yearly' },
   { path: '/docs/roadmap', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/docs/memory-injection-demo', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/tools', priority: 0.95, changeFrequency: 'weekly' },
   { path: '/demo/memory-injection', priority: 0.9, changeFrequency: 'monthly' },
   // Chinese pages
