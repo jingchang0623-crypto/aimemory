@@ -50,17 +50,29 @@
     50|    50|    50|    50|- Chrome Extension: `/extension/` (WXT) + `/chrome-extension/` (vanilla)
     51|    51|    51|    51|- Web App: Next.js + SQLite
     52|    52|    52|    52|
-    53|    53|    53|    53|### Pending from Strategy (2026-04-26)
-    54|    54|    54|    54|| Priority | Task | Status |
-    55|    55|    55|    55||----------|------|--------|
-    56|    56|    56|    56|| 🔴 P0 | MCP Server PyPI publication | ✅ DONE (v1.5.0 on PyPI, verified 2026-05-19) |
-    57|    57|    57|    57|| 🔴 P0 | Chrome Web Store listing | NOT DONE (blocked: needs $5 fee) |
-    58|    58|    58|    58|| 🔴 P0 | ChatGPT memory export (DOM interception) | ✅ DONE (extension v1.1.0 built) |
-    59|    59|    59|    59|| 🔴 P0 | Tag Management UI (dedicated page + nav) | ✅ DONE (2026-05-20) |
-    60|    60|    60|    60|| 🟡 P1 | DeepSeek support | ✅ DONE (code exists) |
-    61|    61|    61|    61|| 🟡 P1 | Memory AI analysis | NOT DONE |
-    62|    62|    62|    62|| 🟢 P2 | Memory injection | ✅ DONE (wired in extension v1.1.0) |
-    63|    63|    63|    63|| 🟢 P2 | E2EE cloud sync | NOT DONE |
+### Pending from Strategy (2026-04-26)
+| Priority | Task | Status |
+|----------|------|--------|
+| 🔴 P0 | MCP Server PyPI publication | ✅ DONE (v1.5.0 on PyPI, verified 2026-05-19) |
+| 🔴 P0 | Chrome Web Store listing | NOT DONE (blocked: needs $5 fee) |
+| 🔴 P0 | ChatGPT memory export (DOM interception) | ✅ DONE (extension v1.1.0 built) |
+| 🔴 P0 | Tag Management UI (dedicated page + nav) | ✅ DONE (2026-05-20) |
+| 🔴 P0 | Web UI Export API (JSON/Markdown) | ✅ DONE (2026-05-27) |
+| 🔴 P0 | GitHub Stars API (dynamic display) | ✅ DONE (2026-05-27) |
+| 🟡 P1 | DeepSeek support | ✅ DONE (code exists) |
+| 🟡 P1 | Memory AI analysis | NOT DONE |
+| 🟡 P1 | Google Analytics / Search Console | NOT DONE |
+| 🟢 P2 | Memory injection | ✅ DONE (wired in extension v1.1.0) |
+| 🟢 P2 | E2EE cloud sync | NOT DONE |
+| 🟢 P2 | Knowledge graph visualization | NOT DONE |
+
+### P0 Tasks Completed (2026-05-27)
+- ✅ **BLOG_COUNT fix**: Updated constants.ts from 235 to 237 (matches blog-data.ts)
+- ✅ **Export API**: Created `/api/export` with JSON/Markdown support (single + bulk)
+- ✅ **GitHub Stars API**: Created `/api/github-stars` with 1-hour cache
+- ✅ **Export utility**: Created `src/lib/export.ts` (shared functions)
+- ✅ **Build verified**: `npm run build` passes (62 static pages)
+- ✅ **Deployed**: PM2 restarted, https://aimemory.pro HTTP 200
     64|    64|    64|    64|
     65|    65|    65|    65|---
     66|    66|    66|    66|
