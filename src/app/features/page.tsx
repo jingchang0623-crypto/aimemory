@@ -54,8 +54,8 @@ const features = [
 ];
 
 const upcoming = [
-  { icon: '🧠', title: 'AI Analysis', description: 'Get AI-powered summaries, insights, and knowledge extraction from your conversations.' },
-  { icon: '🔄', title: 'Cross-Platform Sync', description: 'Sync your memories across devices with end-to-end encryption.' },
+  { icon: '🧠', title: 'AI Analysis', description: 'Get AI-powered summaries, insights, and knowledge extraction from your conversations.', features: ['Conversation summarization (50/month in Plus)', 'Auto-tagging with AI suggestions', 'Key insight extraction', 'Topic clustering across conversations'] },
+  { icon: '🔄', title: 'Cross-Platform Sync', description: 'Sync your memories across devices with end-to-end encryption.', features: ['End-to-end encrypted cloud storage', 'Sync across ChatGPT, Claude, DeepSeek, Gemini, Kimi', 'Works with MCP Server for 113+ AI clients', 'Pro tier: unlimited devices'] },
 ];
 
 const comparison = [
@@ -118,12 +118,22 @@ export default function FeaturesPage() {
         {/* Coming Soon → Planned Features */}
         <section className="mb-16">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Planned Features</h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {upcoming.map((u) => (
               <div key={u.title} className="bg-blue-50 rounded-xl border border-blue-100 p-6">
                 <div className="text-3xl mb-3">{u.icon}</div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{u.title}</h3>
-                <p className="text-gray-600 text-sm">{u.description}</p>
+                <p className="text-gray-600 text-sm mb-4">{u.description}</p>
+                {u.features && (
+                  <ul className="space-y-1">
+                    {u.features.map((f: string) => (
+                      <li key={f} className="text-xs text-gray-600 flex items-start">
+                        <span className="text-blue-500 mr-1.5 mt-0.5">•</span>
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
           </div>

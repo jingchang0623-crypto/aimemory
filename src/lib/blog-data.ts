@@ -2681,6 +2681,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['designers', 'ai-memory', 'ui-ux', 'productivity', 'chatgpt', 'claude', 'use-case'],
     lang: 'en',
   },
+  // === NEW: AI Memory for Marketers (2026-05-27) ===
+  {
+    slug: 'ai-memory-for-marketers-2026',
+    title: 'AI Memory for Marketers: Organize Campaigns, Copy & Analytics (2026)',
+    description: 'Learn how marketers can organize campaign briefs, copy variations, A/B test results, and analytics insights with AI Memory. Complete guide to AI marketing tools across ChatGPT, Claude, and DeepSeek.',
+    category: 'Use Cases',
+    date: '2026-05-27',
+    readTime: '14 min',
+    keywords: ['ai memory for marketers', 'marketing ai tools 2026', 'ai for marketing campaigns', 'chatgpt for marketers', 'claude for copywriting', 'marketing productivity ai', 'ai campaign organizer', 'marketing ai assistant 2026', 'content calendar ai tools', 'marketing analytics ai', 'ai memory marketing 2026', 'marketing automation ai'],
+    tags: ['marketers', 'ai-memory', 'marketing', 'productivity', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

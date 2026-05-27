@@ -285,6 +285,40 @@ export default function PricingPage() {
           </div>
         </div>
 
+        {/* Social Proof - Trusted by Thousands */}
+        <div className="mt-20">
+          <div className="bg-gradient-to-r from-gray-50 to-purple-50 rounded-2xl p-10 border border-gray-200">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Trusted by the AI Community</h2>
+              <p className="text-gray-600">Join thousands of developers, marketers, and researchers using AI Memory</p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+              <div className="bg-white rounded-xl p-5 shadow-sm">
+                <div className="text-3xl font-bold text-gray-900 mb-1">234</div>
+                <div className="text-sm text-gray-500">Blog Posts & Guides</div>
+              </div>
+              <div className="bg-white rounded-xl p-5 shadow-sm">
+                <div className="text-3xl font-bold text-gray-900 mb-1">113+</div>
+                <div className="text-sm text-gray-500">MCP-Compatible Clients</div>
+              </div>
+              <div className="bg-white rounded-xl p-5 shadow-sm">
+                <div className="text-3xl font-bold text-gray-900 mb-1">12</div>
+                <div className="text-sm text-gray-500">MCP Server Tools</div>
+              </div>
+              <div className="bg-white rounded-xl p-5 shadow-sm">
+                <div className="text-3xl font-bold text-gray-900 mb-1">5</div>
+                <div className="text-sm text-gray-500">AI Platforms Supported</div>
+              </div>
+            </div>
+            <div className="mt-6 text-center">
+              <p className="text-sm text-gray-400">
+                🐙 Open source on <a href="https://github.com/jingchang0623-crypto/aimemory" className="text-purple-600 hover:underline" target="_blank" rel="noopener noreferrer">GitHub</a> 
+                {' · '}📦 <a href="https://pypi.org/project/aimemory-mcp-server/" className="text-purple-600 hover:underline" target="_blank" rel="noopener noreferrer">PyPI</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* FAQ */}
         <div className="mt-20 max-w-2xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Pricing FAQ</h2>
