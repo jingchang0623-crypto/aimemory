@@ -41,8 +41,8 @@
     41|    41|    41|    41|### Site Health
     42|    42|    42|    42|- **URL**: https://aimemory.pro
     43|    43|    43|    43|- **Status**: HTTP 200 ✓
-    44|    44|    44|    44|- **Blog posts**: 226 (verified via grep: `grep -c "slug:" src/lib/blog-data.ts`)
-    45|- **Total pages**: 228 (226 blog + 2 guides)
+- **Blog posts**: 234 (2026-05-27: +1 marketers blog)
+    45|- **Total pages**: 236 (234 blog + 2 guides)
     46|- **Sitemap**: Dynamic generation ✓ (See sitemap.ts for all URLs)
     47|    47|    47|    47|
     48|    48|    48|    48|### Key Files
