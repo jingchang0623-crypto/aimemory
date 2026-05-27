@@ -132,7 +132,14 @@ const highPriorityBlogSlugs = [
   // New high-priority comparison blog (2026-05-25)
   'best-ai-memory-tools-2026-complete-guide',
   // New Chinese comparison blog (2026-05-25)
-  'ai-jiyi-gongju-duibi-2026',
+  'ai-jiyi-gongju-bijiao-2026',
+  // New professional niche blogs (2026-05-27)
+  'ai-memory-for-devops-2026',
+  'ai-memory-for-healthcare-2026',
+  'ai-memory-for-lawyers-2026',
+  'ai-memory-for-product-managers-2026',
+  'ai-memory-for-designers-2026',
+  'ai-memory-for-finance-accounting-2026',
   // New team collaboration blog (2026-05-25)
   'ai-memory-for-teams-2026',
   // New productivity blog (2026-05-26)
@@ -153,12 +160,6 @@ const highPriorityBlogSlugs = [
   'ai-memory-for-teachers-2026',
   // New AI Memory for Business Professionals 2026 (2026-05-27)
   'ai-memory-for-business-professionals-2026',
-  // New Professional Niche Blog Posts (2026-05-27)
-  'ai-memory-for-devops-2026',
-  'ai-memory-for-healthcare-2026',
-  'ai-memory-for-lawyers-2026',
-  'ai-memory-for-product-managers-2026',
-  'ai-memory-for-designers-2026',
 ];
 
 function getBlogSlugs(): string[] {

@@ -18,6 +18,18 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === NEW: AI Memory for Finance & Accounting (2026-05-27) ===
+  {
+    slug: 'ai-memory-for-finance-accounting-2026',
+    title: 'AI Memory for Finance & Accounting: Organize Models & Audit Trails (2026)',
+    description: 'Learn how finance and accounting professionals can organize financial models, audit trails, and compliance docs with AI Memory. Complete guide to AI finance tools across ChatGPT, Claude, and DeepSeek.',
+    category: 'Use Cases',
+    date: '2026-05-27',
+    readTime: '13 min',
+    keywords: ['ai memory for finance professionals', 'ai for accounting 2026', 'ai for financial modeling', 'chatgpt for accountants', 'claude for financial analysis', 'accounting ai tools', 'ai audit trail management', 'financial modeling ai assistant', 'ai for tax research', 'chatgpt finance use cases', 'ai memory accounting 2026', 'excel financial model ai'],
+    tags: ['finance', 'accounting', 'ai-memory', 'financial-modeling', 'compliance', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
   // === NEW: AI Memory for Business Professionals (2026-05-27) ===
   {
     slug: 'ai-memory-for-business-professionals-2026',
