@@ -756,3 +756,62 @@
 3. Memory AI analysis feature
 4. E2EE cloud sync (Pro feature)
 5. Knowledge graph visualization
+
+## Execution Log - 2026-05-28 (Cron Job)
+
+### P0 Tasks Completed
+
+#### P0-1: Update Roadmap Page ✅
+- Changed MCP Server on PyPI status from 'ready' to 'shipped' (v1.5.0 is live on PyPI)
+- Updated "Last updated" date to May 28, 2026
+- Expanded "Already Shipped" section with:
+  - Export API (JSON/Markdown formats)
+  - GitHub Stars API integration
+  - Memory Injection Demo page
+  - Delete data API (GDPR compliance)
+  - Markdown export format support
+- Updated blog count to 237+
+
+#### P0-2: Update Features Page ✅
+- Verified Memory Injection correctly listed in "Current Features" (not "Planned Features")
+- Confirmed "Planned Features" section only contains AI Analysis and Cross-Platform Sync (accurate)
+
+#### P0-3: Update Pricing Page ✅
+- **Pricing Changes** (based on竞品 research):
+  - Plus: $6.9/mo → $9.9/mo (yearly: $69 → $99)
+  - Pro: $7.9/mo → $19.9/mo (yearly: $79 → $199)
+  - Lifetime: $99 (unchanged)
+- Updated metadata description with new prices
+- Updated FAQ structured data (JSON-LD) with correct pricing
+- Changed Pro badge from "Planned" to "Coming Soon"
+- Updated blog count from 234 to 237 in social proof section
+- Rewrote FAQ section:
+  - Added "What's included in Plus ($9.9/mo)?"
+  - Added "What's coming in Pro ($19.9/mo)?" with Q3 2026 launch timeline
+  - Kept lifetime deal and data safety questions
+  - Removed outdated "When will Pro features launch?" question
+
+### Deployment
+- npm run build: ✅ Passed
+- Git commit: `35f31b0 fix: update product pages to reflect actual feature status`
+- Git push: ✅ Successfully pushed to origin/main
+- PM2 restart: ✅ aimemory process restarted (id: 1)
+- Verification: ✅ https://aimemory.pro/pricing shows updated prices
+
+### Key Decisions
+1. **Pricing Strategy**: Adjusted prices to better align with market research. $9.9/mo Plus positions between basic tools and premium offerings. $19.9/mo Pro creates clear value separation for advanced features.
+2. **Pro Timeline**: Set Q3 2026 expectation in FAQ to manage user expectations while maintaining interest.
+3. **Roadmap Accuracy**: Marked MCP Server as "shipped" since v1.5.0 is live on PyPI with 12 tools.
+
+### Remaining P1/P2 Tasks (Not Executed - External Dependencies)
+- P1: Chrome Web Store submission ($5 fee required)
+- P1: Google Search Console / Analytics setup (requires Google account verification)
+- P1: Stripe payment integration (requires API keys and setup)
+- P2: E2EE cloud sync implementation
+- P2: Knowledge graph visualization
+- P2: DeepSeek support expansion
+
+### Next Steps
+- Monitor pricing page conversion rates after deployment
+- Prepare Chrome Web Store assets for P1 submission
+- Begin Stripe integration for payment processing
