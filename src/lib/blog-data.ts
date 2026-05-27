@@ -42,18 +42,6 @@ export const blogPosts: BlogPost[] = [
     tags: ['business-professionals', 'ai-memory', 'business-strategy', 'productivity', 'chatgpt', 'claude', 'use-case'],
     lang: 'en',
   },
-  // === NEW: AI Memory for Product Managers (2026-05-27) ===
-  {
-    slug: 'ai-memory-for-product-managers-2026',
-    title: 'AI Memory for Product Managers: Organize PRDs, Roadmaps & Strategy (2026)',
-    description: 'Learn how product managers can organize PRD docs, product strategy, and roadmap planning with AI Memory. Complete guide to product management AI tools across ChatGPT, Claude, and DeepSeek.',
-    category: 'Use Cases',
-    date: '2026-05-27',
-    readTime: '14 min',
-    keywords: ['ai memory for product managers', 'product management ai tools 2026', 'ai for product development', 'chatgpt for pm', 'claude for product strategy', 'pm productivity ai', 'ai prd organizer', 'product roadmap ai tools', 'ai for product owners', 'chatgpt product management', 'ai memory pm 2026', 'product specs organization ai'],
-    tags: ['product-managers', 'ai-memory', 'product-management', 'productivity', 'chatgpt', 'claude', 'use-case', 'prd', 'roadmap'],
-    lang: 'en',
-  },
   // === NEW: AI Memory for Teachers (2026-05-27) ===
   {
     slug: 'ai-memory-for-teachers-2026',
@@ -64,18 +52,6 @@ export const blogPosts: BlogPost[] = [
     readTime: '12 min',
     keywords: ['ai memory for teachers', 'teacher ai tools', 'ai for lesson planning', 'chatgpt for teachers', 'claude for education', 'ai teaching assistant', 'lesson plan organization', 'educational ai tools 2026', 'ai for curriculum development', 'teacher productivity ai', 'ai memory teacher 2026'],
     tags: ['teachers', 'ai-memory', 'education', 'lesson-planning', 'chatgpt', 'claude', 'use-case'],
-    lang: 'en',
-  },
-  // === NEW: AI Memory for Marketers (2026-05-26) ===
-  {
-    slug: 'ai-memory-for-marketers-2026',
-    title: 'AI Memory for Marketers: Organize Campaigns & Copy with AI (2026)',
-    description: 'Learn how marketers can organize campaigns, copy, SEO research, and content strategy with AI Memory. Complete guide to AI marketing tools, campaign management, and content strategy across ChatGPT, Claude, and DeepSeek.',
-    category: 'Use Cases',
-    date: '2026-05-26',
-    readTime: '14 min',
-    keywords: ['ai memory for marketers', 'marketing ai tools', 'ai for digital marketing', 'chatgpt for marketers', 'claude for marketing', 'marketing productivity ai', 'ai marketing tools 2026', 'ai content strategy', 'marketers ai memory', 'chatgpt marketing copy', 'ai for seo research', 'marketing campaign organization'],
-    tags: ['marketers', 'ai-memory', 'marketing', 'content-strategy', 'seo', 'chatgpt', 'claude', 'use-case'],
     lang: 'en',
   },
   // === NEW: AI Memory for Data Scientists (2026-05-26) ===
@@ -2292,18 +2268,6 @@ export const blogPosts: BlogPost[] = [
     readTime: '18 min',
     keywords: ['ai agent memory', 'ai agent memory management', 'persistent memory for ai agents', 'ai agent context', 'autonomous agent memory', 'ai agent memory storage', 'llm agent memory'],
     tags: ['ai-agent', 'memory-management', 'mcp', 'cursor', 'claude', 'autonomous-agents', 'guide', 'tutorial'],
-    lang: 'en',
-  },
-  // === NEW: AI Memory for Freelancers (Round 130 - 2026-05-19) ===
-  {
-    slug: 'ai-memory-for-freelancers-2026',
-    title: 'AI Memory for Freelancers & Solo Entrepreneurs (2026) — Manage Client Context',
-    description: 'How freelancers and solo entrepreneurs can use AI memory tools to manage client context across ChatGPT, Claude, DeepSeek, and Gemini. Stop repeating yourself in every AI conversation.',
-    category: 'Guides',
-    date: '2026-05-19',
-    readTime: '10 min',
-    keywords: ['ai memory for freelancers', 'ai memory for solo entrepreneurs', 'freelancer ai tools 2026', 'manage client context with ai', 'ai memory for consultants', 'freelance ai memory management', 'ai context management for freelancers', 'chatgpt for freelancers memory', 'claude for freelancers', 'best ai tools for freelancers 2026'],
-    tags: ['freelancers', 'solo-entrepreneurs', 'client-management', 'memory', 'productivity', 'guide', 'tutorial', 'chatgpt', 'claude', 'deepseek'],
     lang: 'en',
   },
   // === NEW: AI Memory Tools Comparison (Round 132 - 2026-05-19) ===
