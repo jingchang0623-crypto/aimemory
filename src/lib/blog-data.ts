@@ -2705,6 +2705,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['entrepreneurs', 'startup', 'ai-memory', 'business-strategy', 'productivity', 'chatgpt', 'claude', 'use-case'],
     lang: 'en',
   },
+  // === NEW: AI Memory for Consultants & Strategy Advisors (2026-05-28) ===
+  {
+    slug: 'ai-memory-for-consultants-strategy-advisors-2026',
+    title: 'AI Memory for Consultants & Strategy Advisors: Organize Client Insights & Strategy Frameworks (2026)',
+    description: 'Learn how consultants and strategy advisors can organize client insights, frameworks, and strategic analysis with AI Memory. Complete guide to consulting AI tools across ChatGPT, Claude, and DeepSeek.',
+    category: 'Use Cases',
+    date: '2026-05-28',
+    readTime: '14 min',
+    keywords: ['ai memory for consultants', 'ai memory for strategy advisors', 'consulting ai tools 2026', 'ai for strategy consulting', 'chatgpt for consultants', 'claude for strategic analysis', 'consultant productivity ai', 'ai client insights organizer', 'strategy framework ai tools', 'ai memory consulting 2026', 'management consulting ai assistant', 'ai for business strategy consulting'],
+    tags: ['consultants', 'strategy', 'ai-memory', 'client-insights', 'frameworks', 'productivity', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
 ];
 
 /** Get related posts by tag overlap. Excludes the current post. */

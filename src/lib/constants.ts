@@ -5,7 +5,7 @@
  */
 
 // Content counts - update manually when adding new content pages
-export const BLOG_COUNT = 233; // Registered blog entries in blog-data.ts (2026-05-28: 233 unique slugs after dedup)
+export const BLOG_COUNT = 236; // Registered blog entries in blog-data.ts (2026-05-28: 236 unique slugs after dedup)
 export const GUIDE_PAGES = 2; // /guides/getting-started, /guides/mcp-quickstart
 export const CONTENT_COUNT = BLOG_COUNT + GUIDE_PAGES; // Total "SEO Guides" for homepage (235)
 
