@@ -18,6 +18,18 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === NEW: AI Memory for Consultants & Strategy Advisors (2026-05-28) ===
+  {
+    slug: 'ai-memory-for-consultants-2026',
+    title: 'AI Memory for Consultants & Strategy Advisors: Client Context & Frameworks (2026)',
+    description: 'Learn how consultants and strategy advisors can organize client contexts, strategic frameworks, and meeting insights with AI Memory. Complete guide for consultants using ChatGPT, Claude, and DeepSeek.',
+    category: 'Use Cases',
+    date: '2026-05-28',
+    readTime: '14 min',
+    keywords: ['ai memory for consultants', 'consultant ai tools 2026', 'strategy advisor ai tools', 'client context management ai', 'consulting frameworks ai', 'chatgpt for consultants', 'claude for strategy advisors', 'consultant productivity ai', 'ai tools for management consultants', 'strategic framework organizer', 'client meeting insights ai', 'consulting engagement ai memory'],
+    tags: ['consultants', 'strategy-advisors', 'client-context', 'frameworks', 'productivity', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
   // === NEW: AI Memory for Customer Support Teams (2026-05-28) ===
   {
     slug: 'ai-memory-for-customer-support-2026',
