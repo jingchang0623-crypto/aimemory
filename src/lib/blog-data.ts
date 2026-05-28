@@ -2753,20 +2753,19 @@ export const blogPosts: BlogPost[] = [
     tags: ['consultants', 'strategy', 'ai-memory', 'client-insights', 'frameworks', 'productivity', 'chatgpt', 'claude', 'use-case'],
     lang: 'en',
   },
-  // === NEW: AI Memory for Real Estate Agents (2026-05-28) ===
+  // === NEW: AI Memory for Coaches & Trainers (2026-05-28) ===
   {
-    slug: 'ai-memory-for-real-estate-agents-2026',
-    title: 'AI Memory for Real Estate Agents: Organize Listings & Client Preferences (2026)',
-    description: 'Learn how real estate agents can organize property listings, client preferences, and conversation history with AI Memory. Complete guide to real estate AI tools across ChatGPT, Claude, and DeepSeek.',
+    slug: 'ai-memory-for-coaches-2026',
+    title: 'AI Memory for Coaches & Trainers: Organize Sessions & Client Progress (2026)',
+    description: 'Learn how coaches and trainers can organize session notes, client progress, and training programs with AI Memory. Complete guide to coaching AI tools across ChatGPT, Claude, and DeepSeek.',
     category: 'Use Cases',
     date: '2026-05-28',
     readTime: '13 min',
-    keywords: ['ai memory for real estate agents', 'real estate ai tools 2026', 'property listing ai', 'client preference memory ai', 'real estate conversation management', 'chatgpt for real estate agents', 'claude for property listings', 'real estate productivity ai', 'ai for real estate agents', 'real estate client management ai', 'ai memory real estate 2026', 'property listing management ai', 'real estate agent tools ai', 'client preferences ai tools'],
-    tags: ['real-estate', 'ai-memory', 'property-listings', 'client-preferences', 'productivity', 'chatgpt', 'claude', 'use-case'],
+    keywords: ['ai memory for coaches', 'coaches ai tools 2026', 'coach client progress tracker', 'ai for life coaches', 'ai memory coaching 2026', 'chatgpt for coaches', 'claude for training programs', 'coaching session notes ai', 'client preference memory ai', 'trainer productivity ai', 'health coach ai memory', 'personal trainer ai tools'],
+    tags: ['coaches', 'trainers', 'ai-memory', 'client-progress', 'training', 'productivity', 'chatgpt', 'claude', 'use-case'],
     lang: 'en',
   },
 ];
-
 /** Get related posts by tag overlap. Excludes the current post. */
 export function getRelatedPosts(currentSlug: string, limit = 4): BlogPost[] {
   const current = blogPosts.find(p => p.slug === currentSlug);
