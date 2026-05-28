@@ -18,6 +18,18 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === NEW: AI Memory for Customer Support Teams (2026-05-28) ===
+  {
+    slug: 'ai-memory-for-customer-support-2026',
+    title: 'AI Memory for Customer Support: Organize Responses & Ticket Insights (2026)',
+    description: 'Learn how customer support teams can organize response templates, ticket insights, and customer context with AI Memory. Complete guide to AI support tools across ChatGPT, Claude, and DeepSeek.',
+    category: 'Use Cases',
+    date: '2026-05-28',
+    readTime: '13 min',
+    keywords: ['ai memory for customer support', 'customer support ai tools 2026', 'ai for support ticket analysis', 'chatgpt for customer support', 'claude for response templates', 'support productivity ai', 'ai ticket insights organizer', 'customer context ai tools', 'chatgpt support responses', 'ai memory customer service 2026', 'help desk ai assistant', 'customer support automation ai'],
+    tags: ['customer-support', 'ai-memory', 'support-teams', 'productivity', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
   // === NEW: AI Memory for Finance & Accounting (2026-05-27) ===
   {
     slug: 'ai-memory-for-finance-accounting-2026',
