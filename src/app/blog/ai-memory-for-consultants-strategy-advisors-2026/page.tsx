@@ -17,6 +17,9 @@ export const metadata = {
     'management consulting ai assistant',
     'ai for business strategy consulting'
   ],
+  alternates: {
+    canonical: 'https://aimemory.pro/blog/ai-memory-for-consultants-strategy-advisors-2026',
+  },
 };
 
 const blogPost = {
