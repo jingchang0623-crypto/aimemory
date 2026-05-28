@@ -22,7 +22,7 @@ const competitors = [
     name: 'AI Memory',
     logo: '🧠',
     highlight: true,
-    pricing: 'Free | Plus $3.9/mo | Pro $7.9/mo',
+    pricing: 'Free | Plus $9.9/mo | Pro $19.9/mo',
     platforms: 'ChatGPT, Claude, DeepSeek, Gemini, Kimi',
     features: {
       export: true,
@@ -166,7 +166,7 @@ export default function ComparePage() {
         name: 'Is AI Memory free?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, AI Memory\'s core features are completely free with unlimited local storage. The Plus plan ($3.9/month) adds AI summary, stats, and auto-tagging. The Pro plan ($7.9/month) adds unlimited AI analysis, cloud sync with end-to-end encryption, and knowledge graph visualization. All export, search, and memory injection features are free.',
+          text: 'Yes, AI Memory\'s core features are completely free with unlimited local storage. The Plus plan ($9.9/month) adds AI summary, stats, and auto-tagging. The Pro plan ($19.9/month) adds unlimited AI analysis, cloud sync with end-to-end encryption, and knowledge graph visualization. All export, search, and memory injection features are free.',
         },
       },
       {
