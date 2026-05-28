@@ -2765,6 +2765,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['coaches', 'trainers', 'ai-memory', 'client-progress', 'training', 'productivity', 'chatgpt', 'claude', 'use-case'],
     lang: 'en',
   },
+  // === NEW: AI Memory for Startup Founders (2026-05-28) ===
+  {
+    slug: 'ai-memory-for-startup-founders-2026',
+    title: 'AI Memory for Startup Founders: Pitch Decks & Investor Research (2026)',
+    description: 'Learn how startup founders can organize pitch decks, investor research, and product roadmap conversations with AI Memory. Complete guide to startup AI tools across ChatGPT, Claude, and DeepSeek.',
+    category: 'Use Cases',
+    date: '2026-05-28',
+    readTime: '13 min',
+    keywords: ['ai memory for startup founders', 'startup founder tools ai 2026', 'pitch deck ai assistant', 'investor research ai', 'ai for startup founders 2026', 'chatgpt for startups', 'claude for pitch decks', 'startup productivity ai', 'ai memory startup 2026', 'founder conversation management', 'startup strategy ai tools', 'venture capital ai tools', 'product roadmap ai'],
+    tags: ['startup-founders', 'ai-memory', 'pitch-decks', 'investor-research', 'productivity', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
 ];
 /** Get related posts by tag overlap. Excludes the current post. */
 export function getRelatedPosts(currentSlug: string, limit = 4): BlogPost[] {
