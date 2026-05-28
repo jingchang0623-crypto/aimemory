@@ -2777,6 +2777,30 @@ export const blogPosts: BlogPost[] = [
     tags: ['startup-founders', 'ai-memory', 'pitch-decks', 'investor-research', 'productivity', 'chatgpt', 'claude', 'use-case'],
     lang: 'en',
   },
+  // === NEW: AI Memory for Medical Professionals (2026-05-29) ===
+  {
+    slug: 'ai-memory-for-medical-professionals-2026',
+    title: 'AI Memory for Medical Professionals: Patient Context & Research Notes (2026)',
+    description: 'Learn how medical professionals, doctors, and healthcare workers can organize patient context, research notes, and clinical insights with AI Memory. Complete guide to healthcare AI tools across ChatGPT, Claude, and DeepSeek.',
+    category: 'Use Cases',
+    date: '2026-05-29',
+    readTime: '14 min',
+    keywords: ['ai memory for medical professionals', 'ai memory for doctors', 'healthcare ai tools 2026', 'clinical notes organizer', 'patient context management', 'medical research ai assistant', 'hipaa compliant ai tools', 'doctor ai memory'],
+    tags: ['medical-professionals', 'healthcare', 'patient-context', 'clinical-notes', 'productivity', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
+  // === NEW: AI Memory for Engineers (2026-05-29) ===
+  {
+    slug: 'ai-memory-for-engineers-2026',
+    title: 'AI Memory for Engineers: Technical Documentation & Code Context (2026)',
+    description: 'Learn how engineers can organize technical documentation, code context, and engineering decisions with AI Memory. Complete guide to engineering AI tools across ChatGPT, Claude, and DeepSeek.',
+    category: 'Use Cases',
+    date: '2026-05-29',
+    readTime: '13 min',
+    keywords: ['ai memory for engineers', 'engineering ai tools 2026', 'technical documentation organizer', 'code context management', 'ai for software engineers', 'engineering decision tracker', 'chatgpt for engineers', 'claude for developers'],
+    tags: ['engineers', 'technical-documentation', 'code-context', 'engineering-decisions', 'productivity', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
 ];
 /** Get related posts by tag overlap. Excludes the current post. */
 export function getRelatedPosts(currentSlug: string, limit = 4): BlogPost[] {
