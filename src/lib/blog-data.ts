@@ -18,6 +18,30 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // === NEW: AI Memory for Journalists & Content Creators (2026-05-28) ===
+  {
+    slug: 'ai-memory-for-journalists-2026',
+    title: 'AI Memory for Journalists & Content Creators: Organize Research & Interviews (2026)',
+    description: 'Learn how journalists and content creators can organize interview transcripts, research notes, and editorial calendars with AI Memory. Complete guide for media professionals using ChatGPT, Claude, and DeepSeek.',
+    category: 'Use Cases',
+    date: '2026-05-28',
+    readTime: '13 min',
+    keywords: ['ai memory for journalists', 'content creator ai tools 2026', 'editorial calendar ai', 'interview transcription ai', 'article research ai tools', 'journalist productivity ai', 'chatgpt for journalists', 'claude for content creators', 'media research ai tools', 'editorial workflow ai', 'ai writing assistant for journalists', 'content planning ai tools'],
+    tags: ['journalists', 'content-creators', 'editorial', 'interviews', 'productivity', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
+  // === NEW: AI Memory for Real Estate Agents (2026-05-28) ===
+  {
+    slug: 'ai-memory-for-real-estate-agents-2026',
+    title: 'AI Memory for Real Estate Agents: Organize Listings & Client Preferences (2026)',
+    description: 'Learn how real estate agents can organize property listings, client preferences, and conversation history with AI Memory. Complete guide to real estate AI tools across ChatGPT, Claude, and DeepSeek.',
+    category: 'Use Cases',
+    date: '2026-05-28',
+    readTime: '13 min',
+    keywords: ['ai memory for real estate agents', 'real estate ai tools 2026', 'property listing ai', 'client preference memory ai', 'real estate conversation management', 'chatgpt for real estate agents', 'claude for property listings', 'real estate productivity ai', 'ai for real estate agents', 'real estate client management ai', 'client preferences ai tools', 'property listing management ai'],
+    tags: ['real-estate', 'ai-memory', 'property-listings', 'client-preferences', 'productivity', 'chatgpt', 'claude', 'use-case'],
+    lang: 'en',
+  },
   // === NEW: AI Memory for Consultants & Strategy Advisors (2026-05-28) ===
   {
     slug: 'ai-memory-for-consultants-2026',
