@@ -18,6 +18,26 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.98.1',
+    date: '2026-05-29',
+    title: 'Round 156 — Pricing Optimization + Blog Count Correction',
+    tags: ['Pricing', 'Fix', 'SEO'],
+    changes: {
+      improved: [
+        'Pricing Page: Plus plan $9.9/mo → $6.9/mo (aligned with research recommendation)',
+        'Pricing Page: Pro plan $19.9/mo → $9.9/mo (aligned with research recommendation)',
+        'Pricing Page: Lifetime deal $99 → $49 (one-time, aligned with research recommendation)',
+        'Yearly plans updated: Plus $99/yr → $69/yr, Pro $199/yr → $99/yr',
+        'BLOG_COUNT: 241 → 243 (corrected to match actual blog-data.ts entries)',
+        'CONTENT_COUNT: 243 → 245 total SEO guides (243 blogs + 2 guide pages)',
+      ],
+      noted: [
+        'All pricing now reflects research-based optimal price points for conversion maximization',
+        'Homepage counter shows 245+ SEO guides (up from 243)',
+      ],
+    },
+  },
+  {
     version: 'v0.98.0',
     date: '2026-05-26',
     title: 'Round 155 — Cursor & Windsurf AI Memory Guide + MCP SEO',
