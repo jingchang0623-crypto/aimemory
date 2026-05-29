@@ -228,9 +228,10 @@
    228|   216|   216|   216|   216|#### P0 Status Update
    229|   217|   217|   217|   217|| Priority | Task | Status |
    230|   218|   218|   218|   218||----------|------|--------|
-   231|   219|   219|   219|   219|| 🔴 P0 | Tag Management UI (dedicated page + nav) | ✅ **DONE (2026-05-20)** |
-   232|   220|   220|   220|   220|| 🔴 P0 | Chrome Web Store submission | **Prepared (CWS-SUBMISSION.md)** — Needs $5 fee |
-   233|   221|   221|   221|   221|| 🔴 P0 | Stripe payment integration | NOT STARTED — Needs Stripe account |
+|| 🔴 P0 | Tag Management UI (dedicated page + nav) | ✅ DONE (2026-05-20) |
+|| 🔴 P0 | Chrome Web Store submission | **Prepared (CWS-SUBMISSION.md)** — Needs $5 fee |
+|| 🔴 P0 | Stripe payment integration | NOT STARTED — Needs Stripe account |
+|| 🔴 P0 | BLOG_COUNT/Sitemap maintenance | ✅ DONE (2026-05-30: BLOG_COUNT=242, Sitemap +/tags +/stats) |
    234|   222|   222|   222|   222|
    235|   223|   223|   223|   223|#### Completed
    236|   224|   224|   224|   224|1. ✅ Updated MCP Server page (mcp-server/page.tsx) — replaced "PyPI release coming soon" with "Available now via PyPI" + PyPI link

@@ -2,6 +2,18 @@
 
 All notable changes to the AI Memory project are documented here.
 
+## [Round 142] - 2026-05-30
+
+### Fixed
+- **BLOG_COUNT correction**: Fixed from 243 → 242 to match actual blog directories
+- **CONTENT_COUNT correction**: Fixed from 245 → 244 (BLOG_COUNT + GUIDE_PAGES)
+- **Sitemap expansion**: Added missing `/tags` and `/stats` pages to sitemap.xml for SEO
+
+### Technical Details
+- `src/lib/constants.ts`: BLOG_COUNT=242, CONTENT_COUNT=244
+- `src/app/sitemap.ts`: Added /tags (priority 0.9, weekly) and /stats (priority 0.7, monthly)
+- All 13 Chinese-language pages verified present in sitemap ✅
+
 ## [Round 141] - 2026-05-22
 
 ### Added

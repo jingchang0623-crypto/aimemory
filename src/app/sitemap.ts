@@ -34,6 +34,8 @@ const staticPages: { path: string; priority: number; changeFrequency: 'yearly' |
   { path: '/docs/memory-injection-demo', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/tools', priority: 0.95, changeFrequency: 'weekly' },
   { path: '/demo/memory-injection', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/tags', priority: 0.9, changeFrequency: 'weekly' },
+  { path: '/stats', priority: 0.7, changeFrequency: 'monthly' },
   // Chinese pages
   { path: '/zh', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/zh/mcp-server', priority: 0.9, changeFrequency: 'monthly' },
