@@ -6,7 +6,7 @@ import StripeCheckoutButton from './StripeCheckoutButton';
 
 export const metadata: Metadata = {
   title: 'Pricing - AI Memory | Free Forever, Pro Features',
-  description: 'AI Memory is free with all core features. Upgrade to Plus ($9.9/mo) for AI summaries and multi-device, or Pro ($19.9/mo) for full AI analysis, cross-platform sync, and knowledge graph.',
+  description: 'AI Memory is free with all core features. Upgrade to Plus ($6.9/mo) for AI summaries and multi-device, or Pro ($9.9/mo) for full AI analysis, cross-platform sync, and knowledge graph.',
   keywords: ['AI memory pricing', 'chatgpt extension free', 'AI conversation manager pricing'],
   alternates: {
     canonical: 'https://aimemory.pro/pricing',
@@ -44,7 +44,7 @@ export default function PricingPage() {
                 "name": "How much does AI Memory Pro cost?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "AI Memory Plus is $9.9/month or $99/year. AI Memory Pro is $19.9/month or $199/year with unlimited AI analysis, cross-platform sync, cloud sync, and knowledge graph. Waitlist members get founding member discounts and early access."
+                  "text": "AI Memory Plus is $6.9/month or $69/year. AI Memory Pro is $9.9/month or $99/year with unlimited AI analysis, cross-platform sync, cloud sync, and knowledge graph. Waitlist members get founding member discounts and early access."
                 }
               },
               {
@@ -149,7 +149,7 @@ export default function PricingPage() {
             </div>
             <div className="text-center">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Lifetime</h2>
-              <div className="text-5xl font-bold text-amber-600 mb-2">$99<span className="text-lg text-gray-500">/once</span></div>
+              <div className="text-5xl font-bold text-amber-600 mb-2">$49<span className="text-lg text-gray-500">/once</span></div>
               <p className="text-amber-600 font-medium mb-8">Pay once, use forever</p>
             </div>
             <ul className="space-y-4 mb-8">
@@ -190,7 +190,7 @@ export default function PricingPage() {
               plan="lifetime" 
               className="block w-full text-center bg-amber-500 text-white py-3 rounded-lg font-semibold hover:bg-amber-600 transition"
             >
-              Buy Lifetime - $99
+              Buy Lifetime - $49
             </StripeCheckoutButton>
           </div>
 
@@ -201,8 +201,8 @@ export default function PricingPage() {
             </div>
             <div className="text-center">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Plus</h2>
-              <div className="text-5xl font-bold text-gray-900 mb-2">$9.9<span className="text-lg text-gray-500">/mo</span></div>
-              <p className="text-gray-500 mb-8">or $99/year (save 17%)</p>
+              <div className="text-5xl font-bold text-gray-900 mb-2">$6.9<span className="text-lg text-gray-500">/mo</span></div>
+              <p className="text-gray-500 mb-8">or $69/year (save 17%)</p>
             </div>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start">
@@ -235,7 +235,7 @@ export default function PricingPage() {
               interval="monthly"
               className="block w-full text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
             >
-              Subscribe - $9.9/mo
+              Subscribe - $6.9/mo
             </StripeCheckoutButton>
           </div>
 
@@ -246,8 +246,8 @@ export default function PricingPage() {
             </div>
             <div className="text-center">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Pro</h2>
-              <div className="text-5xl font-bold text-gray-900 mb-2">$19.9<span className="text-lg text-gray-500">/mo</span></div>
-              <p className="text-gray-500 mb-8">or $199/year (save 17%)</p>
+              <div className="text-5xl font-bold text-gray-900 mb-2">$9.9<span className="text-lg text-gray-500">/mo</span></div>
+              <p className="text-gray-500 mb-8">or $99/year (save 17%)</p>
             </div>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start">
@@ -280,7 +280,7 @@ export default function PricingPage() {
               interval="monthly"
               className="block w-full text-center bg-gray-900 text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition"
             >
-              Subscribe - $19.9/mo
+              Subscribe - $9.9/mo
             </StripeCheckoutButton>
           </div>
         </div>
@@ -329,16 +329,16 @@ export default function PricingPage() {
               <p className="text-gray-600">Yes! All core features — import, search, memory injection, Chrome extension, and MCP server — are free forever. No hidden limits, no bait-and-switch.</p>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">What&apos;s included in Plus ($9.9/mo)?</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">What&apos;s included in Plus ($6.9/mo)?</h3>
               <p className="text-gray-600">Plus adds AI-powered conversation summaries (50/month), usage analytics, auto-tagging with AI suggestions, and access from up to 3 devices.</p>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">What&apos;s coming in Pro ($19.9/mo)?</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">What&apos;s coming in Pro ($9.9/mo)?</h3>
               <p className="text-gray-600">Pro will include unlimited AI analysis, cross-platform sync with end-to-end encryption, knowledge graph visualization, and hosted MCP cloud endpoint. Expected launch in Q3 2026.</p>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Will there be a lifetime deal?</h3>
-              <p className="text-gray-600">Yes! We offer a limited lifetime deal at $99 (one-time payment) that includes all current Pro features when they launch. Lock in your price now.</p>
+              <p className="text-gray-600">Yes! We offer a limited lifetime deal at $49 (one-time payment) that includes all current Pro features when they launch. Lock in your price now.</p>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Is my data safe?</h3>
