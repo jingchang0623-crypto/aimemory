@@ -123,7 +123,7 @@ export default function NotebookLMExportGuide() {
     <BlogLayout slug={slug} title="How to Export NotebookLM Conversations & Notes (2026 Guide)" category="Guides" date="2026-05-01" readTime="11 min">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/label+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }} />
 
       <p className="lead">
         Google NotebookLM has become an essential tool for researchers, students, and professionals who work
