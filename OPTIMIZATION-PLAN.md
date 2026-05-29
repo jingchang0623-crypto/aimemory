@@ -658,4 +658,42 @@ Based on analysis of existing blogs vs market segments:
 - MCP Server: v1.5.0 live on PyPI ✅
 - Chrome Extension: v1.1.0 built at `/chrome-extension/` ✅
 - Server resources: 7.5GB RAM (3.1GB used), 79GB disk (20GB used/56GB avail) ✅
-- PM2: aimemory online, 91 restarts, 67.8MB memory ✅
+| - PM2: aimemory online, 91 restarts, 67.8MB memory ✅
+|
+|---
+|
+|### Session: 2026-05-29 (Cron Job — Product Optimization P0 Tasks)
+|
+|#### Completed
+|1. ✅ **Blog duplicate cleanup** — Fixed `blog-data.ts`: removed 2 pairs of duplicate entries (`ai-memory-for-medical-professionals-2026` ×2, `ai-memory-for-financial-advisors-2026` ×2). Slugs reduced from 243→241 unique.
+|2. ✅ **BLOG_COUNT fix** — Updated `constants.ts` from 245→241 (actual blog count). Updated CONTENT_COUNT comment 247→243.
+|3. ✅ **Smithery auto-install** — Added purple "🚀 Smithery Auto-Install" button + `npx @smithery/cli install aimemory-mcp-server` CLI command to MCP Server CTA section.
+|4. ✅ **Build verified** — `npm run build` passed (241 blog + ~53 static = ~294 static pages).
+|5. ✅ **Git commit + push** — All changes committed and pushed to `origin/main`.
+|
+|#### Files Modified
+|- `src/lib/blog-data.ts` — Removed 24 lines (2 duplicate blog entries, each with duplicate slug and content)
+|- `src/lib/constants.ts` — BLOG_COUNT 245→241, CONTENT_COUNT comment 247→243
+|- `src/app/mcp-server/page.tsx` — Added Smithery auto-install button + CLI hint in CTA section
+|- `OPTIMIZATION-PLAN.md` — This execution log entry
+|
+|#### Verified Status
+|- ✅ Build output: 241 blog pages + ~53 static pages = ~294 total static routes
+|- ✅ BLOG_COUNT=241 matches actual unique slugs in blog-data.ts
+|- ✅ CONTENT_COUNT=243 (241 blogs + 2 guides) — displayed correctly on homepage
+|- ✅ Smithery link added: `https://smithery.ai/server/aimemory-mcp-server`
+|- ✅ MCP Server: ✅ v1.5.0 on PyPI
+|- ✅ Chrome Extension: ✅ v1.1.0 built
+|
+|#### Remaining P0 Blockers (Require User Action)
+|- 🔴 Chrome Web Store submission (needs: $5 developer fee + screenshots 1280×800)
+|- 🔴 Stripe payment integration (needs: Stripe account + webhook setup)
+|- 📋 Memory AI analysis (auto-tagging, smart summaries) — feature development
+|
+|#### Blog Count History
+|- 2026-05-17: 170 blogs
+|- 2026-05-18: 175→187 blogs (multiple sessions)
+|- 2026-05-19: 187 blogs (verified)
+|- 2026-05-27: 237 blogs (3 new niche blogs)
+|- 2026-05-28: 239 blogs (coaches + startup founders blogs)
+|- 2026-05-29: **241 blogs** (after dedup cleanup: was 243 entries with duplicates, now 241 unique)

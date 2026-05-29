@@ -2801,30 +2801,6 @@ export const blogPosts: BlogPost[] = [
     tags: ['engineers', 'technical-documentation', 'code-context', 'engineering-decisions', 'productivity', 'chatgpt', 'claude', 'use-case'],
     lang: 'en',
   },
-  // === NEW: AI Memory for Medical Professionals 2026 (2026-05-29, Healthcare SEO) ===
-  {
-    slug: 'ai-memory-for-medical-professionals-2026',
-    title: 'AI Memory for Medical Professionals: Organize Patient Notes & Research (2026)',
-    description: 'How medical professionals use AI Memory to organize patient notes, research papers, and clinical workflows. Complete guide for ChatGPT, Claude, and DeepSeek in healthcare.',
-    category: 'Healthcare',
-    date: '2026-05-29',
-    readTime: '14 min',
-    keywords: ['ai memory for medical professionals', 'medical ai tools', 'chatgpt for doctors', 'claude for healthcare', 'clinical note organization', 'medical research ai', 'healthcare ai workflow', 'patient note management', 'ai for medical research 2026', 'medical ai memory', 'clinical decision support ai', 'healthcare data organization'],
-    tags: ['medical-professionals', 'healthcare', 'ai-memory', 'clinical-notes', 'medical-research', 'patient-care', 'chatgpt', 'claude', 'use-case'],
-    lang: 'en',
-  },
-  // === NEW: AI Memory for Engineers 2026 (2026-05-29, Engineering SEO) ===
-  {
-    slug: 'ai-memory-for-engineers-2026',
-    title: 'AI Memory for Engineers: Organize Technical Docs & Code Reviews (2026)',
-    description: 'How engineers use AI Memory to organize technical documentation, code reviews, and system design discussions. Complete guide for ChatGPT, Claude, and DeepSeek.',
-    category: 'Engineering',
-    date: '2026-05-29',
-    readTime: '13 min',
-    keywords: ['ai memory for engineers', 'engineering ai tools', 'chatgpt for software engineers', 'claude for engineers', 'technical documentation ai', 'code review ai tools', 'system design ai', 'engineering workflow', 'ai for engineers 2026', 'technical memory management', 'software engineering ai', 'engineering knowledge base'],
-    tags: ['engineers', 'software-engineering', 'ai-memory', 'technical-docs', 'code-review', 'system-design', 'chatgpt', 'claude', 'use-case'],
-    lang: 'en',
-  },
 ];
 /** Get related posts by tag overlap. Excludes the current post. */
 export function getRelatedPosts(currentSlug: string, limit = 4): BlogPost[] {

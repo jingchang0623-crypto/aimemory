@@ -182,9 +182,20 @@ export default async function MCPServerLanding() {
             >
               📖 Setup Guide
             </a>
+            <a
+              href="https://smithery.ai/server/aimemory-mcp-server"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-purple-600 text-white font-medium rounded-lg hover:bg-purple-700 transition-colors text-base"
+            >
+              🚀 Smithery Auto-Install
+            </a>
           </div>
           <p className="text-sm text-gray-500 mt-4">
             ✓ Available now via <Link href="/docs/pypi-setup" className="text-blue-600 hover:underline">PyPI</Link> • <code className="bg-gray-100 px-1 rounded text-xs">pip install aimemory-mcp-server</code>
+          </p>
+          <p className="text-xs text-gray-400 mt-2">
+            Or use Smithery for one-click install in Cursor, Windsurf, Claude Desktop: <code className="bg-gray-100 px-1 rounded text-xs">npx @smithery/cli install aimemory-mcp-server</code>
           </p>
         </div>
       </section>
