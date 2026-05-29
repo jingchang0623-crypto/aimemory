@@ -18,6 +18,32 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.98.3',
+    date: '2026-05-29',
+    title: 'Product Optimization — Smithery CTA + Stats Fix',
+    tags: ['Product', 'Fix', 'MCP', 'SEO'],
+    changes: {
+      fixed: [
+        'BLOG_COUNT: 241 → 243 (corrected to match actual blog-data.ts slug count)',
+        'CONTENT_COUNT: 243 → 245 total SEO guides (fixed homepage counter mismatch)',
+        'Homepage now shows correct "243+ SEO Guides Published"',
+      ],
+      added: [
+        'Homepage: Smithery one-click install CTA for MCP Server (npx @smithery/cli install aimemory-mcp-server)',
+        'Homepage: Smithery.ai link with badge and install command display',
+        'Smithery integration enables zero-config MCP setup for 113+ clients',
+      ],
+      improved: [
+        'MCP Section: Better visual hierarchy with PyPI + Smithery dual installation paths',
+        'Constants: Added inline comments with date and slug count for easier maintenance',
+      ],
+      noted: [
+        'Smithery.ai now lists aimemory-mcp-server with one-click install for Cursor, Windsurf, Claude Desktop',
+        'P0 optimization tasks part of weekly product audit (cron job 2026-05-29)',
+      ],
+    },
+  },
+  {
     version: 'v0.98.2',
     date: '2026-05-29',
     title: 'Round 157 — Medical Professionals & Engineers SEO Blogs',

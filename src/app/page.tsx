@@ -490,6 +490,29 @@ export default function Home() {
             </code>
             <p className="text-gray-500 text-xs mt-3">Available on <a href="https://pypi.org/project/aimemory-mcp-server/" className="text-violet-400 hover:text-violet-300 underline" target="_blank" rel="noopener noreferrer">PyPI</a> — packaged and ready for production</p>
           </div>
+          {/* Smithery One-Click Install */}
+          <div className="bg-violet-50 border border-violet-200 rounded-xl p-6 mb-8 max-w-xl mx-auto">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-2xl">🚀</span>
+              <h3 className="font-semibold text-violet-900">One-Click Install via Smithery</h3>
+            </div>
+            <p className="text-sm text-violet-700 mb-4">
+              No manual setup needed. Smithery auto-configures AI Memory MCP for Cursor, Windsurf, Claude Desktop, and more.
+            </p>
+            <div className="bg-gray-900 rounded-lg p-4 mb-3">
+              <code className="text-green-400 text-sm font-mono">
+                <span className="text-gray-500">$ </span>npx @smithery/cli install aimemory-mcp-server
+              </code>
+            </div>
+            <a 
+              href="https://smithery.ai/server/aimemory-mcp-server"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-violet-600 hover:text-violet-700 font-medium"
+            >
+              View on Smithery →
+            </a>
+          </div>
           <Link
             href="/mcp-server"
             className="inline-flex items-center gap-2 text-violet-600 font-medium hover:text-violet-700 transition-colors"
