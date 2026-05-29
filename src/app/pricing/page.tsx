@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { CONTENT_COUNT } from '@/lib/constants';
 import Footer from '@/components/Footer';
 import WaitlistForm from './WaitlistForm';
 import StripeCheckoutButton from './StripeCheckoutButton';
@@ -294,7 +295,7 @@ export default function PricingPage() {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div className="bg-white rounded-xl p-5 shadow-sm">
-              <div className="text-3xl font-bold text-gray-900 mb-1">244</div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">{CONTENT_COUNT}</div>
               <div className="text-sm text-gray-500">Blog Posts & Guides</div>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm">
