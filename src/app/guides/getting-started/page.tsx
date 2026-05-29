@@ -48,7 +48,7 @@ export default function GettingStartedGuide() {
                 "name": "Is AI Memory free to use?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, AI Memory is completely free for local use. You can upload unlimited conversations, search across all your AI chats, and use the Chrome extension at no cost. All data stays on your device. Plus plan ($9.9/month) adds AI summaries. Pro plan ($19.9/month) adds cloud sync and AI analysis."
+                  "text": "Yes, AI Memory is completely free for local use. You can upload unlimited conversations, search across all your AI chats, and use the Chrome extension at no cost. All data stays on your device. Plus plan ($6.9/month) adds AI summaries. Pro plan ($9.9/month) adds cloud sync and AI analysis."
                 }
               },
               {
@@ -394,7 +394,7 @@ Prefix:            prog*  (matches "program", "programming")`}</pre>
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {[
-              { q: "How much does AI Memory cost?", a: "AI Memory is completely free for local use with unlimited conversations. The Plus plan at $9.9/month adds AI summaries and multi-device access. The Pro plan at $19.9/month adds cloud sync and AI analysis." },
+              { q: "How much does AI Memory cost?", a: "AI Memory is completely free for local use with unlimited conversations. The Plus plan at $6.9/month adds AI summaries and multi-device access. The Pro plan at $9.9/month adds cloud sync and AI analysis." },
               { q: "Is my data sent to external servers?", a: "No. All data is stored locally in your browser using SQLite. The Chrome extension processes everything on your device. No conversation data ever leaves your machine." },
               { q: "Can I use AI Memory offline?", a: "Yes! The web version works entirely in your browser after the initial page load. The Chrome extension works offline too — it stores conversations locally and syncs when you're back online." },
               { q: "What file formats are supported?", a: "AI Memory supports ChatGPT ZIP exports, Claude JSON exports, DeepSeek exports, and generic JSON conversation formats. The system auto-detects the format." },

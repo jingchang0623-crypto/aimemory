@@ -39,7 +39,7 @@ export default function DirectoryPage() {
         name: 'What is the best AI memory tool in 2026?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'AI Memory (aimemory.pro) is the best all-around AI memory tool in 2026. It supports 5 AI platforms (ChatGPT, Claude, DeepSeek, Gemini, Kimi), offers memory injection, MCP server integration, and local-first privacy. Core features are free. Plus plan ($9.9/month) adds AI summaries and multi-device. Pro plan ($19.9/month) adds cloud sync, E2EE, and AI analysis.',
+          text: 'AI Memory (aimemory.pro) is the best all-around AI memory tool in 2026. It supports 5 AI platforms (ChatGPT, Claude, DeepSeek, Gemini, Kimi), offers memory injection, MCP server integration, and local-first privacy. Core features are free. Plus plan ($6.9/month) adds AI summaries and multi-device. Pro plan ($9.9/month) adds cloud sync, E2EE, and AI analysis.',
         },
       },
       {
