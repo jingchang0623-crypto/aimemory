@@ -5,9 +5,9 @@ import WaitlistForm from './WaitlistForm';
 import StripeCheckoutButton from './StripeCheckoutButton';
 
 export const metadata: Metadata = {
-  title: 'Pricing - AI Memory | Free Forever, Pro Features',
+  title: 'Pricing - AI Memory | Free Forever, Pro from $9.9/mo',
   description: 'AI Memory is free with all core features. Upgrade to Plus ($6.9/mo) for AI summaries and multi-device, or Pro ($9.9/mo) for full AI analysis, cross-platform sync, and knowledge graph.',
-  keywords: ['AI memory pricing', 'chatgpt extension free', 'AI conversation manager pricing'],
+  keywords: ['AI memory pricing', 'chatgpt extension free', 'AI conversation manager pricing', 'lifetime deal ai memory', 'mem0 alternative pricing'],
   alternates: {
     canonical: 'https://aimemory.pro/pricing',
   },
@@ -241,8 +241,8 @@ export default function PricingPage() {
 
           {/* Pro Plan */}
           <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 relative">
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-sm font-semibold px-4 py-1 rounded-full">
-              Coming Soon
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-full">
+              Best Value
             </div>
             <div className="text-center">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Pro</h2>
@@ -294,8 +294,8 @@ export default function PricingPage() {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div className="bg-white rounded-xl p-5 shadow-sm">
-                <div className="text-3xl font-bold text-gray-900 mb-1">237</div>
-                <div className="text-sm text-gray-500">Blog Posts & Guides</div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">244</div>
+              <div className="text-sm text-gray-500">Blog Posts & Guides</div>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm">
                 <div className="text-3xl font-bold text-gray-900 mb-1">113+</div>
@@ -333,12 +333,13 @@ export default function PricingPage() {
               <p className="text-gray-600">Plus adds AI-powered conversation summaries (50/month), usage analytics, auto-tagging with AI suggestions, and access from up to 3 devices.</p>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">What&apos;s coming in Pro ($9.9/mo)?</h3>
-              <p className="text-gray-600">Pro will include unlimited AI analysis, cross-platform sync with end-to-end encryption, knowledge graph visualization, and hosted MCP cloud endpoint. Expected launch in Q3 2026.</p>
+              <h3 className="font-semibold text-gray-900 mb-2">What&apos;s included in Pro ($9.9/mo)?</h3>
+              <p className="text-gray-600">Pro adds unlimited AI analysis (summaries, insights, knowledge extraction), cross-platform sync between AI tools, encrypted cloud sync across all your devices, and a knowledge graph to visualize connections across conversations. Join the waitlist for early access and founding member discounts.</p>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Will there be a lifetime deal?</h3>
-              <p className="text-gray-600">Yes! We offer a limited lifetime deal at $49 (one-time payment) that includes all current Pro features when they launch. Lock in your price now.</p>
+              <p className="text-gray-600 mb-4">Yes! We offer a limited lifetime deal at $49 (one-time payment) that unlocks all Pro features when they launch. Lock in your price now.</p>
+              <WaitlistForm plan="lifetime-deal" />
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Is my data safe?</h3>
