@@ -18,6 +18,44 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.98.5',
+    date: '2026-05-30',
+    title: 'BLOG_COUNT Fix — Align Constants with Actual Directories',
+    tags: ['Fix', 'SEO', 'Maintenance'],
+    changes: {
+      fixed: [
+        'BLOG_COUNT: 244 → 243 (aligned with actual blog directory count using ls src/app/blog/)',
+        'CONTENT_COUNT comment: 246 → 245 (corrected for 243 blogs + 2 guide pages)',
+        'Constants now accurately reflect filesystem state for better maintainability',
+      ],
+      noted: [
+        'blog-data.ts still has 244 entries — needs cleanup to remove stale slugs',
+        'BLOG_COUNT constants fix ensures homepage shows correct "245+ SEO Guides" counter',
+      ],
+    },
+  },
+  {
+    version: 'v0.98.4',
+    date: '2026-05-30',
+    title: 'Mem0 vs AI Memory Comparison Blog + Pricing Improvements',
+    tags: ['SEO', 'Blog', 'Pricing'],
+    changes: {
+      added: [
+        'New blog post: Mem0 vs AI Memory Tools Comparison 2026 (SEO comparison keyword)',
+        'Pricing page: Replace "Coming Soon" badge with "Best Value" on Pro plan',
+        'Pricing page: Add WaitlistForm to Lifetime Deal section',
+      ],
+      improved: [
+        'BLOG_COUNT: 243 → 244, CONTENT_COUNT: 245 → 246',
+        'Pricing metadata with Mem0 alternative keywords',
+        'Stats display update (244 blog posts)',
+      ],
+      noted: [
+        'Mem0 comparison blog targets "mem0 vs" and "AI memory tools comparison 2026" keywords',
+      ],
+    },
+  },
+  {
     version: 'v0.98.3',
     date: '2026-05-29',
     title: 'Product Optimization — Smithery CTA + Stats Fix',
