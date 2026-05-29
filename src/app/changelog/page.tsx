@@ -18,6 +18,31 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.98.2',
+    date: '2026-05-29',
+    title: 'Round 157 — Medical Professionals & Engineers SEO Blogs',
+    tags: ['SEO', 'Blog', 'Healthcare', 'Engineering'],
+    changes: {
+      added: [
+        'New blog: AI Memory for Medical Professionals 2026 — 14 min read, clinical workflow focus',
+        'Target keywords: ai memory for medical professionals, medical ai tools, chatgpt for doctors, healthcare ai workflow',
+        'New blog: AI Memory for Engineers 2026 — 13 min read, technical documentation focus',
+        'Target keywords: ai memory for engineers, engineering ai tools, chatgpt for software engineers, technical documentation ai',
+        'Both blogs added to highPriorityBlogSlugs in sitemap.ts for SEO priority 0.9',
+      ],
+      improved: [
+        'BLOG_COUNT: 243 → 245 (2 new blog entries)',
+        'CONTENT_COUNT: 245 → 247 total SEO guides (245 blogs + 2 guide pages)',
+        'Homepage counter now shows 247+ SEO guides',
+      ],
+      noted: [
+        'Healthcare niche: Targets doctors, nurses, medical researchers with patient note & research organization',
+        'Engineering niche: Targets software engineers, system architects with technical docs & code review organization',
+        'Both blogs follow proven SEO structure with 12+ keywords and 9 tags each',
+      ],
+    },
+  },
+  {
     version: 'v0.98.1',
     date: '2026-05-29',
     title: 'Round 156 — Pricing Optimization + Blog Count Correction',
