@@ -2,6 +2,19 @@
 
 All notable changes to the AI Memory project are documented here.
 
+## [Round 145] - 2026-05-30
+
+### Fixed
+- **BLOG_COUNT fix**: Updated from 242 → 244 to match actual blog-data.ts entries (244 slugs)
+- **CONTENT_COUNT auto-updated**: Now correctly shows 246 (244 blogs + 2 guides)
+
+### Technical Details
+- `src/lib/constants.ts`: BLOG_COUNT=244, CONTENT_COUNT=246
+- Build verified: `npm run build` passes
+- Homepage now displays correct count: "246+ SEO Guides Published"
+
+---
+
 ## [Round 144] - 2026-05-30
 
 ### Fixed
