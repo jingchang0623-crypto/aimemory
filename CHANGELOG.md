@@ -2,6 +2,22 @@
 
 All notable changes to the AI Memory project are documented here.
 
+## [Round 143] - 2026-05-30
+
+### Added
+- **MCP Server v1.5.1 released**: Enhanced tool descriptions with usage examples for all 13 tools (save, search, list, update, delete, get, stats, export, import, batch_save, get_all_tags, inject_memory, clear_all)
+- **Cross-platform keywords**: Added `chatgpt-memory`, `deepseek-memory`, `cross-platform-memory`, `ai-conversation-search`, `memory-injection` keywords to PyPI package metadata
+- **Extension package.json**: Updated version from 1.1.0 → 1.2.0 to match built ZIP
+
+### Fixed
+- **Chrome extension download links**: Fixed both download button hrefs to point to correct filename (`ai-memory-extension-1.2.0.zip` instead of `ai-memory-extension-v1.2.0.zip`)
+
+### Technical Details
+- MCP Server v1.5.1 published to PyPI (commit: 086ef2b)
+- Extension download page: `/chrome-extension` version references now consistent
+- Build verified: `npm run build` passes (242 blog entries)
+- Git push: all changes pushed to origin/main
+
 ## [Round 142] - 2026-05-30
 
 ### Fixed
