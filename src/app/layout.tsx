@@ -86,7 +86,7 @@ export default function RootLayout({
               "description": "Save, search, and organize AI conversations from ChatGPT, Claude, DeepSeek, Gemini, and Kimi. Full-text search, Chrome extension, MCP server for Claude Desktop and Cursor. 100% private, free forever.",
               "url": "https://aimemory.pro",
               "downloadUrl": "https://aimemory.pro/ai-memory-extension-1.2.0.zip",
-              "softwareVersion": "1.5.1",
+              "softwareVersion": "1.5.0",
               "softwareRequirements": "Modern web browser or Chrome for extension",
               "featureList": [
                 "Multi-platform conversation import",

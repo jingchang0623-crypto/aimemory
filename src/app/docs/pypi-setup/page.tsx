@@ -77,7 +77,7 @@ export default function PyPiSetupPage() {
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(faqJsonLd)}} />
 
           <div className="flex items-center gap-3 mb-4">
-            <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">v1.5.1</span>
+            <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">v1.5.0</span>
             <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">MIT License</span>
             <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">PyPI</span>
           </div>

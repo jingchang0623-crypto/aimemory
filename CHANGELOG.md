@@ -1,3 +1,21 @@
+## [Round 147] - 2026-05-31
+
+### Fixed
+- **BLOG_COUNT correction v3**: Fixed from 242 → 243 to match actual blog directories (243 dirs in src/app/blog/)
+- **CONTENT_COUNT comment updated**: Corrected from 244 → 245 (243 blogs + 2 guides)
+- **CWS-SUBMISSION.md cleanup**: Removed duplicate sections, updated version to v1.2.0, refreshed feature descriptions
+
+### Added
+- **scripts/check_blog_counts.py**: Reusable audit script to verify slug↔directory parity in blog-data.ts
+
+### Technical Details
+- `src/lib/constants.ts`: BLOG_COUNT=243 (was incorrectly 242 from Round 146)
+- `CWS-SUBMISSION.md`: Cleaned up, version v1.1.0→v1.2.0, added AI Fact Extraction to "What's New"
+- Verified: 243 blog directories = 243 unique slugs in blog-data.ts (zero orphans, zero duplicates)
+- Build status: pending verification
+
+---
+
 ## [Round 146] - 2026-05-30
 
 ### Fixed

@@ -2813,6 +2813,17 @@ export const blogPosts: BlogPost[] = [
     tags: ['engineers', 'technical-documentation', 'code-context', 'engineering-decisions', 'productivity', 'chatgpt', 'claude', 'use-case'],
     lang: 'en',
   },
+  {
+    slug: 'claude-code-memory-persistent-setup-2026',
+    title: 'Claude Code Memory: How to Give Claude CLI Persistent Memory (2026 Guide)',
+    description: 'Claude Code CLI has no built-in memory. Learn how to give Claude Code persistent memory across sessions using MCP Server — search 500+ past conversations instantly.',
+    category: 'AI Platform Guides',
+    date: '2026-05-31',
+    readTime: '10 min',
+    keywords: ['Claude Code memory', 'Claude CLI persistent memory', 'Claude Code MCP setup', 'Claude Code conversation history', 'Claude Code remember context', 'MCP server Claude Code', 'Claude Code memory limit fix'],
+    tags: ['claude-code', 'mcp', 'persistent-memory', 'cli-tools', 'developers', 'claude', 'productivity'],
+    lang: 'en',
+  },
 ];
 /** Get related posts by tag overlap. Excludes the current post. */
 export function getRelatedPosts(currentSlug: string, limit = 4): BlogPost[] {

@@ -14,10 +14,6 @@ cd /home/agentuser/aimemory/chrome-extension && zip -r ../ai-memory-extension-cw
 
 ### Extension Name (45 chars max)
 ```
-AI Memory - ChatGPT, Claude & DeepSeek History
-```
-**Character count**: 49 → **TOO LONG**, use:
-```
 AI Memory - ChatGPT & Claude History Manager
 ```
 **Character count**: 44 ✅
@@ -114,14 +110,13 @@ Organize conversations with custom tags. Filter, search, and categorize your AI 
 
 ---
 
-📦 WHAT'S NEW (v1.1.0)
+🆕 WHAT'S NEW (v1.2.0)
 
-- ✅ Added DeepSeek support
-- ✅ Added Gemini support
-- ✅ Added Kimi support
-- ✅ Memory injection for all 5 platforms
-- ✅ Improved auto-save reliability
+- ✅ Added AI Fact Extraction — automatically extracts key facts from conversations
+- ✅ Improved memory injection for all 5 platforms
 - ✅ Updated icons and UI
+- ✅ Enhanced auto-save reliability
+- ✅ Better error handling
 
 ---
 
@@ -228,7 +223,7 @@ Made with ❤️ for the AI community.
 ### Pre-Submission Checklist
 
 ### Code & Assets
-- [x] `manifest.json` version updated to 1.1.0 ✅
+- [x] `manifest.json` version updated to 1.2.0 ✅
 - [x] All icons present (16, 48, 128) ✅
 - [x] No console errors in extension ✅
 - [x] No sensitive data in code (API keys, etc.) ✅
@@ -298,5 +293,5 @@ Made with ❤️ for the AI community.
 ---
 
 **Status**: Ready for packaging and submission (pending $5 developer fee)
-**Last Updated**: 2026-05-27
+**Last Updated**: 2026-05-31
 **Blocking Item**: Screenshots needed for CWS submission (1280x800, at least 1, max 5)

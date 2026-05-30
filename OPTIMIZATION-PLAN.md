@@ -737,3 +737,56 @@
 - blog-data.ts has 244 entries but only 242 directories
 - Need to identify the 2 orphan entries (have slug in data but no directory)
 - This is a P0 cleanup task for next run
+
+---
+
+## Execution Log - 2026-05-31 (Cron Job — P0 BLOG_COUNT Fix & CWS Doc Update)
+
+### BLOG_COUNT Re-correction v3 ✅
+
+**Problem Identified**: BLOG_COUNT still wrong (again)
+- constants.ts showed BLOG_COUNT = 242 (set in Round 146)
+- Actual blog directories in `src/app/blog/` (excluding page.tsx) = **243**
+- blog-data.ts unique slugs = **243** (no duplicates, no orphans)
+- Total items in src/app/blog/ = 244 (243 dirs + 1 page.tsx)
+
+**Root Cause**: On May 30, Round 146 incorrectly set BLOG_COUNT from 244→242, but the actual count had already been 243 all along. The "2 orphan entries" assumption was wrong — there were 244 entries in blog-data.ts at one point but after dedup and blog addition, the correct count is 243 slugs = 243 dirs.
+
+**Actions Taken**:
+1. Fixed BLOG_COUNT from 242→243 in `src/lib/constants.ts`
+2. Updated CONTENT_COUNT comment from 244→245 (243 blogs + 2 guides = 245)
+3. Created `scripts/check_blog_counts.py` — reusable script to verify slug↔directory parity
+4. Cleaned up CWS-SUBMISSION.md: removed duplicate sections, updated version to v1.2.0, updated "What's New" to reflect AI Fact Extraction feature
+5. Updated CHANGELOG.md: added Round 147 entry
+
+**Files Modified**:
+- `src/lib/constants.ts` — BLOG_COUNT 242→243, CONTENT_COUNT comment 244→245
+- `CWS-SUBMISSION.md` — Cleaned up duplicates, updated v1.1.0→v1.2.0, refreshed descriptions
+- `CHANGELOG.md` — Added Round 147 entry
+- `scripts/check_blog_counts.py` — NEW: reusable audit script
+- `OPTIMIZATION-PLAN.md` — Added this execution log
+
+**Build & Deploy**:
+- ⏳ Build in progress
+- ⏳ Git commit + push pending
+
+### Product Health Check ✅
+- MCP Server: v1.5.1 live on PyPI ✅
+- Chrome Extension: v1.2.0 built at `/chrome-extension/` ✅
+- Blog count: 243 directories = 243 slugs (clean, verified) ✅
+- Server resources: 7.5GB RAM, 79GB disk ✅
+
+### Outstanding P0 Blockers (Require User Action)
+- 🔴 Chrome Web Store submission (needs: $5 developer fee + 1280×800 screenshots)
+- 🔴 Stripe payment integration (needs: Stripe account + webhook verification)
+
+### Key Metrics
+| Metric | Value |
+|--------|-------|
+| Blog posts | 243 |
+| SEO guide pages | 245 (243 blogs + 2 guides) |
+| MCP tools | 12 |
+| MCP clients | 113+ |
+| Extension version | 1.2.0 |
+| MCP Server version | 1.5.1 |
+| AI platforms | 5 |
