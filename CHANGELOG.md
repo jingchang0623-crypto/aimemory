@@ -2,6 +2,22 @@
 
 All notable changes to the AI Memory project are documented here.
 
+## [Round 144] - 2026-05-30
+
+### Fixed
+- **Version consistency across entire site**: Updated 16 files to resolve version drift
+  - Homepage download link: `v1.1.0` → `v1.2.0` (correct filename without "v" prefix)
+  - layout.tsx JSON-LD: `downloadUrl` and `softwareVersion` updated
+  - MCP Server version: `v1.5.0` → `v1.5.1` across all pages (homepage, /mcp-server, /docs/mcp, blog posts, Chinese pages)
+  - Chrome extension version: `v1.1.0` → `v1.2.0` across blog posts and comparison tables
+  - PyPI date updated from `5/19/2026` to `5/30/2026`
+
+### Technical Details
+- 16 files modified, 25 insertions(+), 25 deletions(-)
+- Build verified: `npm run build` passes (303 static pages)
+- PM2 restarted, live site verified at aimemory.pro
+- Git push: `ab37a98` pushed to origin/main
+
 ## [Round 143] - 2026-05-30
 
 ### Added
