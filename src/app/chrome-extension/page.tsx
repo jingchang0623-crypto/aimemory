@@ -43,7 +43,7 @@ export default function ChromeExtension() {
             no manual exports, no copy-paste, no lost insights.
           </p>
           <a 
-            href="/ai-memory-extension-v1.2.0.zip"
+            href="/ai-memory-extension-1.2.0.zip"
             className="inline-block px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-blue-700 transition-colors mb-4"
           >
             ⬇️ Download Extension (v1.2.0)
@@ -368,7 +368,7 @@ export default function ChromeExtension() {
             Download the extension and never lose an important AI conversation again.
           </p>
           <a 
-            href="/ai-memory-extension-v1.2.0.zip"
+            href="/ai-memory-extension-1.2.0.zip"
             className="inline-block px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
           >
             ⬇️ Download Free Extension (v1.2.0)
