@@ -239,7 +239,7 @@ export default function SuperpowerChatVsAIMemory() {
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="px-4 py-3 text-sm">MCP Server (113+ clients)</td>
-                  <td className="text-center px-4 py-3"><span className="text-green-600 font-bold">✅ Yes (PyPI v1.5.0)</span></td>
+                  <td className="text-center px-4 py-3"><span className="text-green-600 font-bold">✅ Yes (PyPI v1.5.1)</span></td>
                   <td className="text-center px-4 py-3"><span className="text-red-600">❌ No</span></td>
                 </tr>
                 <tr>
@@ -319,7 +319,7 @@ export default function SuperpowerChatVsAIMemory() {
 
           <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm mb-6">
             <code>
-{`# Install MCP Server (PyPI v1.5.0)
+{`# Install MCP Server (PyPI v1.5.1)
 pip install aimemory-mcp-server
 
 # Add to Claude Desktop config:

@@ -213,7 +213,7 @@ export default function McpMemoryForAiAgents() {
       <h3>Step 1: Install the MCP Server</h3>
       <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto not-prose"><code>{`pip install aimemory-mcp-server
 
-# Once published to PyPI (v1.5.0 published):
+# Once published to PyPI (v1.5.1 published):
 # pip install aimemory-mcp-server`}</code></pre>
 
       <h3>Step 2: Connect Your Agent</h3>

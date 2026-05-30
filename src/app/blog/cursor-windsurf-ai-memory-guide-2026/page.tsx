@@ -148,7 +148,7 @@ $ pip install aimemory-mcp-server
 
 # Verify installation
 $ aimemory-mcp-server --version
-aimemory-mcp-server v1.5.0`}</code></pre>
+aimemory-mcp-server v1.5.1`}</code></pre>
 
           <h3>Step 2: Add to Cursor MCP Settings</h3>
           <p>Open Cursor and navigate to <strong>Settings → MCP → Add New MCP Server</strong>:</p>

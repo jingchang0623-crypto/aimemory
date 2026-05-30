@@ -184,7 +184,7 @@ export default function RoadmapPage() {
                 'Full-text search with FTS5',
                 'Chrome extension with auto-save (ChatGPT, Claude, DeepSeek, Gemini, Kimi)',
                 'Memory injection into AI chat inputs (all 5 platforms)',
-                'MCP Server v1.5.0 (12 tools) on PyPI',
+                'MCP Server v1.5.1 (12 tools) on PyPI',
                 'Tag management with autocomplete',
                 'Conversation export (JSON, TXT, CSV, Markdown)',
                 'Export API (JSON/Markdown formats)',

@@ -292,7 +292,7 @@ export default function MCPMemoryServer() {
             <li><strong>Endpoint:</strong> <code className="bg-gray-800 px-1 rounded">https://aimemory.pro/api/mcp</code></li>
             <li><strong>Database:</strong> SQLite with FTS5 full-text search and WAL mode</li>
             <li><strong>Authentication:</strong> Session cookie (aim_session) — no API keys needed</li>
-            <li><strong>Version:</strong> MCP Protocol 2024-11-05, Server v1.5.0 (12 tools)</li>
+            <li><strong>Version:</strong> MCP Protocol 2024-11-05, Server v1.5.1 (12 tools)</li>
             <li><strong>Tools:</strong> 6 (search_memory, get_context, list_memories, get_conversation, add_memory, delete_memory)</li>
           </ul>
         </div>

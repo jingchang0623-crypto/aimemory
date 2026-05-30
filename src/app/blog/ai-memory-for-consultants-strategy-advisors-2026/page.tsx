@@ -310,7 +310,7 @@ pip install aimemory-mcp-server
           <Link href="/mcp-server" className="block p-6 bg-purple-50 border border-purple-200 rounded-xl hover:bg-purple-100 transition-colors">
             <div className="text-2xl mb-3">⚡</div>
             <h3 className="font-semibold text-gray-900 mb-2">Install MCP Server</h3>
-            <p className="text-sm text-gray-600">pip install aimemory-mcp-server (v1.5.0)</p>
+            <p className="text-sm text-gray-600">pip install aimemory-mcp-server (v1.5.1)</p>
           </Link>
         </div>
 

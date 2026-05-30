@@ -218,9 +218,9 @@ export default function MemoryInjectionDemo() {
                   ['客户端兼容', '✅ 113+', '⚠️ 有限', '⚠️ 有限'],
                   ['本地优先', '✅ 是', '❌ 否', '❌ 否'],
                   ['开源', '✅ MIT', '✅ MIT', '✅ MIT'],
-                  ['PyPI发布', '✅ v1.5.0', '✅ 是', '❌ 否'],
+                  ['PyPI发布', '✅ v1.5.1', '✅ 是', '❌ 否'],
                   ['网页端搜索', '✅ 是', '❌ 否', '❌ 否'],
-                  ['Chrome扩展', '✅ v1.1.0', '❌ 否', '✅ 是'],
+                  ['Chrome扩展', '✅ v1.2.0', '❌ 否', '✅ 是'],
                   ['中文支持', '✅ 完整', '⚠️ 有限', '❌ 否'],
                 ].map(([feature, aimemory, mem0, supermemory], i) => (
                   <tr key={i} className="border-b border-gray-100">

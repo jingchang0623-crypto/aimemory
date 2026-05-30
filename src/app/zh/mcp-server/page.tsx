@@ -94,7 +94,7 @@ export default function ZhMcpPage() {
             </div>
             <p className="text-gray-700 mt-3">
               ✓ Python 3.8+ ✓ macOS/Linux/Windows ✓ 无需API密钥<br />
-              <span className="text-purple-600 font-bold">已发布至PyPI v1.5.0</span> — 12个MCP工具，免费开源
+              <span className="text-purple-600 font-bold">已发布至PyPI v1.5.1</span> — 12个MCP工具，免费开源
             </p>
           </div>
 
@@ -243,7 +243,7 @@ export default function ZhMcpPage() {
                 📖 English MCP Guide
               </Link>
               <a href="https://pypi.org/project/aimemory-mcp-server/" className="inline-block bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">
-                📦 PyPI v1.5.0
+                📦 PyPI v1.5.1
               </a>
             </div>
           </div>

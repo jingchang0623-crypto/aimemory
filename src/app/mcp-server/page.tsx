@@ -75,7 +75,7 @@ export default async function MCPServerLanding() {
                 "name": "How do I install the AI Memory MCP server?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Install with one command: pip install aimemory-mcp-server (PyPI: aimemory-mcp-server v1.5.0 published). Then add the configuration to your MCP client (Claude Desktop, Cursor, etc.) and restart. The server runs locally on your machine with full offline support."
+                  "text": "Install with one command: pip install aimemory-mcp-server (PyPI: aimemory-mcp-server v1.5.1 published). Then add the configuration to your MCP client (Claude Desktop, Cursor, etc.) and restart. The server runs locally on your machine with full offline support."
                 }
               },
               {
@@ -146,7 +146,7 @@ export default async function MCPServerLanding() {
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm mb-6">
               <span className="text-base">⚡</span>
               pip install aimemory-mcp-server
-              <span className="ml-1 px-1.5 py-0.5 bg-green-600 text-white text-xs rounded-full font-medium">v1.5.0</span>
+              <span className="ml-1 px-1.5 py-0.5 bg-green-600 text-white text-xs rounded-full font-medium">v1.5.1</span>
               {githubStars > 0 ? (
                 <a
                   href="https://github.com/jingchang0623-crypto/aimemory"

@@ -100,7 +100,7 @@ export default function MCPAIMemoryDeveloperGuideContent() {
               <h2 className="text-blue-300 mt-0 text-lg">⚡ TL;DR — MCP AI Memory Integration</h2>
               <ul className="text-blue-200 space-y-1">
                 <li><strong>What it is:</strong> An open protocol (JSON-RPC 2.0 over HTTP) that lets any AI client access shared tools</li>
-                <li><strong>Endpoint:</strong> <code className="text-blue-300">https://aimemory.pro/api/mcp</code> — server name: aimemory-mcp v1.5.0</li>
+                <li><strong>Endpoint:</strong> <code className="text-blue-300">https://aimemory.pro/api/mcp</code> — server name: aimemory-mcp v1.5.1</li>
                 <li><strong>Protocol:</strong> MCP version <code className="text-blue-300">2024-11-05</code>, streamable-http transport</li>
                 <li><strong>6 Tools:</strong> search_memory, add_memory, get_context, list_memories, get_conversation, delete_memory</li>
                 <li><strong>Clients:</strong> Claude Desktop, Cursor, ChatGPT, Windsurf, Cline, Continue.dev</li>
@@ -132,7 +132,7 @@ export default function MCPAIMemoryDeveloperGuideContent() {
               Each session is isolated via a unique <strong>session ID</strong> returned in response headers, ensuring that
               one user&apos;s memory operations never bleed into another&apos;s. The AI Memory MCP server implements protocol
               version <code className="text-blue-400">2024-11-05</code> and identifies itself as{' '}
-              <code className="text-blue-400">aimemory-mcp v1.5.0</code>.
+              <code className="text-blue-400">aimemory-mcp v1.5.1</code>.
             </p>
 
             {/* Section 2: Why MCP matters for memory */}

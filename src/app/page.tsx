@@ -172,10 +172,10 @@ export default function Home() {
               Upload Your Chats — It's Free
             </button>
             <Link
-              href="/ai-memory-extension-v1.1.0.zip"
+              href="/ai-memory-extension-1.2.0.zip"
               className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors text-base"
             >
-              ⬇️ Get Extension (v1.1.0)
+              ⬇️ Get Extension (v1.2.0)
             </Link>
             <Link
               href="/blog/chatgpt-history-extension"
@@ -442,7 +442,7 @@ export default function Home() {
             {/* PyPI Version Badge */}
             <a href="https://pypi.org/project/aimemory-mcp-server/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1 bg-gray-50 text-gray-500 rounded-full text-xs border border-gray-200">
               <span className="w-2 h-2 bg-green-400 rounded-full"></span>
-              <span className="font-medium">PyPI v1.5.0</span>
+              <span className="font-medium">PyPI v1.5.1</span>
             </a>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-4">
@@ -463,7 +463,7 @@ export default function Home() {
               </div>
             </div>
             <p className="text-xs text-gray-400 mt-3">
-              ✅ Live on PyPI: <code className="bg-gray-100 px-2 py-1 rounded">pip install aimemory-mcp-server</code> — <Link href="https://pypi.org/project/aimemory-mcp-server/" target="_blank" className="underline hover:text-gray-600">v1.5.0 (5/19/2026)</Link>
+              ✅ Live on PyPI: <code className="bg-gray-100 px-2 py-1 rounded">pip install aimemory-mcp-server</code> — <Link href="https://pypi.org/project/aimemory-mcp-server/" target="_blank" className="underline hover:text-gray-600">v1.5.1 (5/30/2026)</Link>
               <span className="mx-2">·</span>
               <span className="text-green-600 font-medium">MIT License · MIT</span>
             </p>
