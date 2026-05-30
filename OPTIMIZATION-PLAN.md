@@ -767,8 +767,10 @@
 - `OPTIMIZATION-PLAN.md` — Added this execution log
 
 **Build & Deploy**:
-- ⏳ Build in progress
-- ⏳ Git commit + push pending
+- ✅ Build passes: `npm run build` (exit 0)
+- ✅ Git push: commit a429050 pushed to origin/main
+- ⚠️ Server deploy: needs `pm2 restart aimemory` on 43.128.84.40 (SSH access required)
+- ⚠️ Homepage will show "245+ SEO Guides" after server restart (currently shows 244+ due to cached build)
 
 ### Product Health Check ✅
 - MCP Server: v1.5.1 live on PyPI ✅
