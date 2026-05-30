@@ -116,11 +116,30 @@
     }
     
     .conv-item {
+      padding: 8px 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    
+    .conv-title-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 8px 0;
-      border-bottom: 1px solid #f3f4f6;
+    }
+    
+    .conv-facts {
+      font-size: 11px;
+      color: #6b7280;
+      margin-top: 4px;
+      padding: 4px 8px;
+      background: #f0fdf4;
+      border-radius: 4px;
+      line-height: 1.4;
+    }
+    
+    .conv-fact-badge {
+      font-size: 10px;
+      color: #059669;
+      font-weight: 600;
     }
     
     .conv-item:last-child {
@@ -194,8 +213,8 @@
       <div class="stat-label">Saved Today</div>
     </div>
     <div class="stat-card">
-      <div class="stat-number" id="platform-count">0</div>
-      <div class="stat-label">Platforms</div>
+      <div class="stat-number" id="facts-count">0</div>
+      <div class="stat-label">Facts Extracted</div>
     </div>
   </div>
   

@@ -24,6 +24,48 @@
     }, 2000); // Wait 2 seconds after last change
   }
   
+  // Extract key facts from conversation (Mem0-style)
+  function extractKeyFacts(messages) {
+    const facts = [];
+    const codeBlocks = [];
+    const preferences = [];
+    
+    messages.forEach(msg => {
+      const content = msg.content || '';
+      
+      // Extract code blocks
+      const codeMatches = content.match(/```[\s\S]*?```/g);
+      if (codeMatches) {
+        codeBlocks.push(...codeMatches.map(c => c.replace(/```/g, '').trim()));
+      }
+      
+      // Extract numbered lists (often key points)
+      const listMatches = content.match(/^\d+[\.\)]\s+.+$/gm);
+      if (listMatches && listMatches.length >= 3) {
+        facts.push(`Key points: ${listMatches.slice(0, 3).join('; ')}`);
+      }
+      
+      // Extract preferences (I prefer, I want, I need, etc.)
+      const prefRegex = /(I\s+(prefer|want|need|like|use|recommend))\s+([^.!?]{10,100})/gi;
+      let match;
+      while ((match = prefRegex.exec(content)) !== null) {
+        preferences.push(match[0].trim());
+      }
+      
+      // Extract decisions (Let's use, We'll use, I'll go with)
+      const decisionRegex = /(Let'?s use|We'?ll use|I'?ll go with|I decided to|The solution is)\s+([^.!?]{10,100})/gi;
+      while ((match = decisionRegex.exec(content)) !== null) {
+        facts.push(`Decision: ${match[0].trim()}`);
+      }
+    });
+    
+    return {
+      facts: [...new Set(facts)].slice(0, 10), // Max 10 unique facts
+      codeBlocks: [...new Set(codeBlocks)].slice(0, 5), // Max 5 code blocks
+      preferences: [...new Set(preferences)].slice(0, 5) // Max 5 preferences
+    };
+  }
+  
   async function captureConversation() {
     try {
       let conversation = null;
@@ -47,14 +89,19 @@
       }
       
       if (conversation && conversation.messages.length > 0) {
+        // Extract key facts (Mem0-style)
+        const extractedData = extractKeyFacts(conversation.messages);
+        conversation.extractedData = extractedData;
+        conversation.factsCount = (extractedData.facts.length + extractedData.codeBlocks.length + extractedData.preferences.length);
+        
         // Save to local storage
         const key = `aimemory_${Date.now()}`;
         await chrome.storage.local.set({ [key]: conversation });
         
-        // Update badge
+        // Update badge with fact count
         updateBadge();
         
-        console.log('[AI Memory] Saved conversation:', conversation.title);
+        console.log('[AI Memory] Saved conversation:', conversation.title, `(${conversation.factsCount} facts extracted)`);
       }
     } catch (error) {
       console.error('[AI Memory] Error capturing conversation:', error);

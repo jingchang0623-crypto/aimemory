@@ -3,15 +3,15 @@ import Link from 'next/link';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'AI Memory Chrome Extension - Auto-Save ChatGPT, Claude, DeepSeek, Gemini & Kimi',
-  description: 'Free Chrome extension that automatically saves your ChatGPT, Claude, DeepSeek, Gemini, and Kimi conversations. Full-text search, 100% private, no account required. Download now.',
-  keywords: ['ChatGPT Chrome extension', 'Claude extension', 'DeepSeek extension', 'Gemini extension', 'Kimi extension', 'AI conversation saver', 'ChatGPT history extension', 'save ChatGPT chats', 'AI memory extension'],
+  title: 'AI Memory Chrome Extension v1.2.0 - Auto-Save with AI Fact Extraction',
+  description: 'Free Chrome extension v1.2.0 with AI fact extraction! Automatically saves your ChatGPT, Claude, DeepSeek, Gemini, and Kimi conversations. Extracts key facts, code snippets, and preferences from your chats. 100% private, no account required. Download now.',
+  keywords: ['ChatGPT Chrome extension', 'Claude extension', 'DeepSeek extension', 'Gemini extension', 'Kimi extension', 'AI conversation saver', 'ChatGPT history extension', 'save ChatGPT chats', 'AI memory extension', 'AI fact extraction', 'auto extract AI facts', 'Mem0 Chrome extension'],
   alternates: {
     canonical: 'https://aimemory.pro/chrome-extension',
   },
   openGraph: {
-    title: 'AI Memory Chrome Extension - Auto-Save AI Conversations',
-    description: 'Free extension that automatically saves your ChatGPT, Claude, DeepSeek, Gemini, and Kimi conversations. Never lose an AI chat again.',
+    title: 'AI Memory Chrome Extension v1.2.0 - Auto-Save with AI Fact Extraction',
+    description: 'Free extension v1.2.0 with auto fact extraction! Saves and extracts key facts from ChatGPT, Claude, DeepSeek, Gemini, and Kimi conversations.',
     url: 'https://aimemory.pro/chrome-extension',
     type: 'website',
   },
@@ -38,14 +38,15 @@ export default function ChromeExtension() {
             Automatically save your AI conversations from ChatGPT, Claude, DeepSeek, Gemini, and Kimi
           </p>
           <p className="text-gray-500 mb-8 max-w-2xl mx-auto">
-            Never lose an important AI conversation again. Our free extension captures every chat automatically — 
+            Never lose an important AI conversation again. Our free extension v1.2.0 now captures every chat automatically and 
+            extracts key facts, code snippets, and preferences — 
             no manual exports, no copy-paste, no lost insights.
           </p>
           <a 
-            href="/ai-memory-extension-v1.1.0.zip"
+            href="/ai-memory-extension-v1.2.0.zip"
             className="inline-block px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-blue-700 transition-colors mb-4"
           >
-            ⬇️ Download Extension (v1.1.0)
+            ⬇️ Download Extension (v1.2.0)
           </a>
           <p className="text-sm text-gray-400">
             Works with Chrome, Edge, Brave, and other Chromium browsers
@@ -61,7 +62,10 @@ export default function ChromeExtension() {
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-4">
             <div className="px-4 py-2 bg-white rounded-lg border border-green-200 text-sm text-green-700">
-              ✅ Package Ready (v1.1.0 - 39.6KB)
+              ✅ Package Ready (v1.2.0 - 51KB)
+            </div>
+            <div className="px-4 py-2 bg-white rounded-lg border border-green-200 text-sm text-green-700">
+              ✅ AI Fact Extraction (NEW!)
             </div>
             <div className="px-4 py-2 bg-white rounded-lg border border-green-200 text-sm text-green-700">
               ✅ Store Assets Prepared
@@ -98,6 +102,13 @@ export default function ChromeExtension() {
             <h3 className="font-semibold text-lg mb-2">Auto-Save Conversations</h3>
             <p className="text-sm text-gray-600">
               Automatically captures conversations as you chat — no manual action needed. Every message saved in real-time.
+            </p>
+          </div>
+          <div className="text-center p-6 bg-white rounded-xl border border-gray-200 shadow-sm">
+            <div className="text-4xl mb-4">🧠</div>
+            <h3 className="font-semibold text-lg mb-2">AI Fact Extraction</h3>
+            <p className="text-sm text-gray-600">
+              NEW in v1.2.0! Automatically extracts key facts, code snippets, and preferences from your conversations — Mem0-style intelligence.
             </p>
           </div>
           <div className="text-center p-6 bg-white rounded-xl border border-gray-200 shadow-sm">
@@ -357,10 +368,10 @@ export default function ChromeExtension() {
             Download the extension and never lose an important AI conversation again.
           </p>
           <a 
-            href="/ai-memory-extension-v1.1.0.zip"
+            href="/ai-memory-extension-v1.2.0.zip"
             className="inline-block px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
           >
-            ⬇️ Download Free Extension (v1.1.0)
+            ⬇️ Download Free Extension (v1.2.0)
           </a>
         </div>
       </main>
