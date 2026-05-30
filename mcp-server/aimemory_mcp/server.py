@@ -1,11 +1,14 @@
 """
-AI Memory MCP Server
+AI Memory MCP Server v1.5.1
 
 A Model Context Protocol (MCP) server that provides persistent memory capabilities
-for AI assistants. Works with Claude Desktop, Cursor, VS Code, and 113+ MCP clients.
+for AI assistants. Works with Claude Desktop, Cursor, VS Code, Windsurf, and 113+ MCP clients.
+Supports cross-platform memory search across ChatGPT, Claude, DeepSeek, Gemini, and Kimi.
 
 Transport: stdio (local) or HTTP/SSE (remote via AIMEMORY_TRANSPORT=http)
 Storage: SQLite + FTS5 full-text search
+Tools: 13 (save, search, list, update, delete, get, stats, export, import, batch_save,
+       get_all_tags, inject_memory, clear_all)
 """
 
 from fastmcp import FastMCP
@@ -18,12 +21,22 @@ mcp = FastMCP("AI Memory")
 
 @mcp.tool()
 def save_memory(content: str, tags: Optional[list[str]] = None, source: Optional[str] = None) -> dict:
-    """Save a new memory to the knowledge base.
+    """Save a new memory to your knowledge base.
+
+    Use this to store important facts, preferences, code snippets, meeting notes,
+    or any conversation takeaways that you want to remember for future sessions.
+    The memory will be searchable via full-text search (FTS5) and can be
+    retrieved by any MCP-connected AI assistant.
+
+    Examples of what to save:
+    - "User prefers Python over JavaScript for backend work" (preference)
+    - "Team uses PostgreSQL for all new projects" (fact)
+    - "```python\\ndef hello(): print('hi')```" (code snippet)
 
     Args:
-        content: The memory content to store (required). Can be any text: facts, notes, preferences, etc.
-        tags: Optional list of tags for categorization, e.g. ["work", "meeting", "todo"].
-        source: Optional source identifier, e.g. a URL, file path, or conversation ID.
+        content: The memory content to store (required). Can be any text: facts, notes, preferences, code, etc.
+        tags: Optional list of tags for categorization, e.g. ["work", "meeting", "python", "preference"].
+        source: Optional source identifier, e.g. "chatgpt-conv-123", "claude-session-456", or platform name.
 
     Returns:
         The saved memory object with id, content, tags, source, created_at, and updated_at fields.
@@ -41,12 +54,21 @@ def save_memory(content: str, tags: Optional[list[str]] = None, source: Optional
 
 @mcp.tool()
 def search_memories(query: str, limit: int = 10) -> dict:
-    """Search memories using full-text search.
+    """Search your memory store using full-text search (FTS5).
 
-    Searches across content, tags, and source fields. Results are ranked by relevance.
+    Searches across content, tags, and source fields. Results are ranked by
+    relevance score. This is the primary way your AI assistant retrieves
+    past information — use it to find relevant context from conversations
+    across ChatGPT, Claude, DeepSeek, Gemini, Kimi, and more.
 
     Args:
-        query: Search query string. Supports FTS5 syntax (e.g. "python AND tutorial", "NEAR/3").
+        query: Search query string. Supports FTS5 syntax:
+            - Simple: "python tutorial" (words appearing anywhere)
+            - AND: "python AND machine learning" (both terms required)
+            - OR: "react OR vue" (either term matches)
+            - Phrase: "exact phrase match" (exact phrase in quotes)
+            - NEAR: "NEAR/3(word1 word2)" (words within 3 tokens)
+            - Prefix: "prog*" (matches "program", "programming", etc.)
         limit: Maximum number of results to return (default: 10, max: 100).
 
     Returns:
@@ -282,28 +304,36 @@ def get_all_tags() -> dict:
 
 @mcp.tool()
 def inject_memory(query: str, max_memories: int = 5, format: str = "context") -> dict:
-    """Search relevant memories and return them formatted for AI context injection.
+    """Search relevant memories and return them formatted for AI context injection (CORE FEATURE).
 
     This is the core "memory injection" feature — it finds memories relevant to the
     current conversation and formats them so they can be injected into the AI's context.
     Use this at the start of conversations or when you need relevant background.
 
+    WHY THIS MATTERS: Most MCP memory servers just store/search. AI Memory formats
+    the results READY for injection — saving you prompt engineering work.
+
     Args:
-        query: The search query describing what context you need. 
-               Examples: "user preferences for Python", "previous meeting notes", 
-               "coding standards discussed before".
+        query: The search query describing what context you need.
+               Examples: "user preferences for Python", "previous meeting notes",
+               "coding standards discussed before", "user's past debugging approaches".
         max_memories: Maximum number of memories to return (default: 5, max: 20).
-        format: Output format: "context" (formatted for prompt injection) or 
-                "list" (simple list of memories). Default: "context".
+        format: Output format:
+            - "context" (default): Formatted as "=== Relevant Memories ===\\n[1] content...\\n===" ready to inject
+            - "list": Simple list of memory objects for programmatic use
 
     Returns:
-        A dict with "query", "count", "memories" (list), and "injected_context" 
-        (a formatted string ready to inject into the AI prompt).
+        A dict with:
+            - "query": The original search query
+            - "count": Number of memories found
+            - "memories": List of memory objects (id, content, tags, source)
+            - "injected_context": A formatted string ready to inject into the AI prompt
+            - "usage_hint": Instructions on how to use the injected context
 
     Usage example:
-        To inject memories into your context, call this tool and then include
-        the `injected_context` string at the start of your system prompt or
-        user message. Format: "=== Relevant Memories ===\n{injected_context}"
+        Call this tool, then copy the `injected_context` string and paste it
+        into your system prompt like:
+        "Here are relevant memories from past conversations:\\n{injected_context}"
     """
     max_memories = min(max(1, max_memories), 20)
     results = storage.search_memories(query, max_memories)

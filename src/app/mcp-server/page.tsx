@@ -46,7 +46,7 @@ export default async function MCPServerLanding() {
             "operatingSystem": "Cross-platform",
             "description": "Open-source MCP server that gives AI assistants persistent memory. Works with Claude Desktop, Cursor, ChatGPT, and 113+ MCP clients.",
             "url": "https://aimemory.pro/mcp-server",
-            "softwareVersion": "1.5.0",
+            "softwareVersion": "1.5.1",
             "offers": {
               "@type": "Offer",
               "price": "0",

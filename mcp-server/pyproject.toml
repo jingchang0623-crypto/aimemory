@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "aimemory-mcp-server"
-version = "1.5.0"
-description = "AI Memory MCP Server — persistent memory for AI assistants via Model Context Protocol"
+version = "1.5.1"
+description = "AI Memory MCP Server — persistent memory for AI assistants via Model Context Protocol. Cross-platform search across ChatGPT, Claude, DeepSeek, Gemini & Kimi."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
@@ -23,6 +23,11 @@ keywords = [
     "knowledge-base",
     "fts5",
     "sqlite",
+    "chatgpt-memory",
+    "deepseek-memory",
+    "cross-platform-memory",
+    "ai-conversation-search",
+    "memory-injection",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
