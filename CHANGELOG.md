@@ -1,6 +1,16 @@
-# Changelog
+## [Round 146] - 2026-05-30
 
-All notable changes to the AI Memory project are documented here.
+### Fixed
+- **BLOG_COUNT correction**: Fixed from 244 → 242 to match actual blog directories (242 dirs in src/app/blog/)
+- **CONTENT_COUNT updated**: Now correctly shows 244 (242 blogs + 2 guides)
+
+### Technical Details
+- `src/lib/constants.ts`: BLOG_COUNT=242 (was incorrectly 244)
+- Verified: 242 blog directories match 242 entries in blog-data.ts
+- Build verified: `npm run build` passes
+- Homepage now displays correct count: "244+ SEO Guides Published"
+
+---
 
 ## [Round 145] - 2026-05-30
 
