@@ -181,6 +181,8 @@ const highPriorityBlogSlugs = [
   'ai-memory-for-medical-professionals-2026',
   // New AI Memory for Engineers 2026 (2026-05-29)
   'ai-memory-for-engineers-2026',
+  // New Mem0 vs AI Memory Tools Comparison (2026-05-30)
+  'mem0-vs-ai-memory-tools-comparison-2026',
 ];
 
 function getBlogSlugs(): string[] {
