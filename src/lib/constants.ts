@@ -5,9 +5,9 @@
  */
 
 // Content counts - update manually when adding new content pages
-export const BLOG_COUNT = 244; // Actual blog directories in src/app/blog/ (2026-05-31: 244 dirs)
+export const BLOG_COUNT = 245; // Actual blog directories in src/app/blog/ (2026-06-01: 245 dirs)
 export const GUIDE_PAGES = 2; // /guides/getting-started, /guides/mcp-quickstart
-export const CONTENT_COUNT = BLOG_COUNT + GUIDE_PAGES; // Total "SEO Guides" for homepage (246)
+export const CONTENT_COUNT = BLOG_COUNT + GUIDE_PAGES; // Total "SEO Guides" for homepage (247)
 
 // MCP Server stats
 export const MCP_CLIENTS_COUNT = 113; // MCP-compatible clients (Claude, Cursor, Windsurf, etc.)
