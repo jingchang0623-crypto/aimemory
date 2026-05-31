@@ -5,7 +5,7 @@
  */
 
 // Content counts - update manually when adding new content pages
-export const BLOG_COUNT = 243; // Actual blog directories in src/app/blog/ (2026-05-31: 243 dirs)
+export const BLOG_COUNT = 245; // Actual blog directories in src/app/blog/ (2026-05-31: 245 dirs)
 export const GUIDE_PAGES = 2; // /guides/getting-started, /guides/mcp-quickstart
 export const CONTENT_COUNT = BLOG_COUNT + GUIDE_PAGES; // Total "SEO Guides" for homepage (245)
 

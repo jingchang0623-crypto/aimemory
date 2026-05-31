@@ -18,6 +18,30 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: 'v0.99.9',
+    date: '2026-05-31',
+    title: 'Round 147 — BLOG_COUNT + New DeepSeek vs ChatGPT Blog',
+    tags: ['SEO', 'Blog', 'Fix', 'Product', 'Audit'],
+    changes: {
+      added: [
+        'New blog post: DeepSeek Memory vs ChatGPT Memory Comparison 2026 (targets "deepseek memory vs chatgpt memory" keyword)',
+        'SEO content expansion: DeepSeek China market gap coverage (no local memory tool competitors)',
+      ],
+      fixed: [
+        'BLOG_COUNT: 243 → 245 (aligned with actual blog directory count = 245)',
+        'CONTENT_COUNT auto-calculated: 245 blogs + 2 guide pages = 247',
+        'Homepage counter now shows accurate "247+ SEO Guides"',
+      ],
+      noted: [
+        'Pricing page: StripeCheckoutButton implemented but NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY not set — "Coming Soon" persists',
+        'Memory Injection: Code exists in extension (memory-inject.ts) for 5 platforms, MCP Server v1.5.1 live on PyPI with 12 tools',
+        'Chrome Web Store: Extension package v1.2.0 ready, $5 registration fee still pending',
+        'Product audit: Features page correctly shows Memory Injection as ✓ in Free tier (implemented via MCP)',
+        'DeepSeek China market: No local competitor offering memory management for DeepSeek users',
+      ],
+    },
+  },
+  {
     version: 'v0.98.5',
     date: '2026-05-30',
     title: 'BLOG_COUNT Fix — Align Constants with Actual Directories',
