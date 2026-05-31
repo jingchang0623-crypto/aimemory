@@ -1,3 +1,20 @@
+## [Round 149] - 2026-06-01
+
+### Fixed
+- **BLOG_COUNT correction v5**: Fixed from 244 → 245 to match actual blog directories (245 dirs in src/app/blog/)
+- **CONTENT_COUNT comment updated**: Corrected from 246 → 247 (245 blogs + 2 guides)
+- **blog-data.ts orphan fix**: Added missing `deepseek-memory-vs-chatgpt-memory-2026` entry (existed on disk but not in registry)
+
+### Technical Details
+- `src/lib/constants.ts`: BLOG_COUNT=245 (was incorrectly 244 from Round 148)
+- `src/lib/blog-data.ts`: Added deepseek-memory-vs-chatgpt-memory-2026 entry (14 lines)
+- Verified: 245 blog directories = 245 unique slugs in blog-data.ts (zero orphans, zero duplicates)
+- Build verified: `npm run build` passes (305 static pages in ~8s)
+- Homepage displays "247+ SEO Guides Published" after server restart (↺ 137)
+- Commit: `0bd18c7` pushed to origin/main
+
+---
+
 ## [Round 148] - 2026-05-31
 
 ### Fixed
