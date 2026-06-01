@@ -2848,6 +2848,17 @@ export const blogPosts: BlogPost[] = [
     tags: ['chatgpt', 'memory-issues', 'troubleshoot', 'fix-guide', 'chatgpt-memory', 'ai-tools', 'backup', 'use-case'],
     lang: 'en',
   },
+  {
+    slug: 'smithery-mcp-auto-install-guide',
+    title: 'Smithery MCP Auto-Install Guide: One-Click AI Memory Setup (2026)',
+    description: 'Learn how to auto-install AI Memory MCP Server with Smithery CLI. One command sets up persistent memory for Claude Desktop, Cursor, Windsurf, and 113+ MCP clients. Step-by-step guide.',
+    category: 'MCP',
+    date: '2026-06-01',
+    readTime: '10 min',
+    keywords: ['smithery mcp server', 'smithery install mcp', 'mcp auto install', 'smithery cli install', 'one click mcp setup', 'smithery claude desktop', 'smithery cursor setup', 'mcp server quick install', 'npx smithery install', 'smithery ai memory', 'auto install mcp server', 'smithery windsurf', 'mcp protocol setup 2026', 'smithery tutorial', 'ai memory mcp smithery'],
+    tags: ['smithery', 'mcp', 'auto-install', 'mcp-setup', 'claude-desktop', 'cursor', 'windsurf', 'one-click-setup', 'open-source'],
+    lang: 'en',
+  },
 ];
 /** Get related posts by tag overlap. Excludes the current post. */
 export function getRelatedPosts(currentSlug: string, limit = 4): BlogPost[] {

@@ -187,6 +187,8 @@ const highPriorityBlogSlugs = [
   'mem0-vs-ai-memory-tools-comparison-2026',
   // New high-priority SEO pages (2026-06-01)
   'chatgpt-memory-not-working-fix-2026',
+  // New Smithery MCP Auto-Install Guide (2026-06-01)
+  'smithery-mcp-auto-install-guide',
 ];
 
 function getBlogSlugs(): string[] {
