@@ -50,3 +50,7 @@ mcp-server/dist/
 # Python venvs
 *.venv/
 mcp-server/.venv/
+
+# build artifacts
+*.zip
+extension/.output/

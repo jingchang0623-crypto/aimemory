@@ -2836,6 +2836,18 @@ export const blogPosts: BlogPost[] = [
     tags: ['deepseek', 'chatgpt', 'memory-comparison', 'ai-tools', 'cross-platform', 'feature-comparison', 'china-ai', 'deepseek-v3'],
     lang: 'en',
   },
+  // === NEW: ChatGPT Memory Not Working Fix (2026-06-01) ===
+  {
+    slug: 'chatgpt-memory-not-working-fix-2026',
+    title: 'ChatGPT Memory Not Working? 7 Fixes & Better Alternatives (2026)',
+    description: 'ChatGPT memory not working? Here are 7 proven fixes for memory issues, plus a better solution: backup conversations with AI Memory for unlimited search across ChatGPT, Claude, DeepSeek & Gemini.',
+    category: 'AI Platform Guides',
+    date: '2026-06-01',
+    readTime: '14 min',
+    keywords: ['chatgpt memory not working', 'chatgpt memory disappeared', 'chatgpt memory issues 2026', 'chatgpt memory reset', 'chatgpt memory not saving', 'chatgpt memory lost', 'chatgpt memory problems', 'chatgpt memory alternative', 'chatgpt memory fix', 'chatgpt memory not loading', 'chatgpt memory troubleshoot', 'chatgpt memory backup tool'],
+    tags: ['chatgpt', 'memory-issues', 'troubleshoot', 'fix-guide', 'chatgpt-memory', 'ai-tools', 'backup', 'use-case'],
+    lang: 'en',
+  },
 ];
 /** Get related posts by tag overlap. Excludes the current post. */
 export function getRelatedPosts(currentSlug: string, limit = 4): BlogPost[] {

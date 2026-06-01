@@ -1,3 +1,26 @@
+## [Round 150] - 2026-06-01
+
+### Added
+- **New SEO blog post**: `chatgpt-memory-not-working-fix-2026` targeting high-volume keyword "chatgpt memory not working" (12 SEO keywords, 14 min read)
+- **Sitemap update**: Added new blog to `highPriorityBlogSlugs` array in sitemap.ts for priority crawling
+
+### Fixed
+- **BLOG_COUNT sync**: Confirmed 245 directories = 245 blog-data.ts entries (zero orphans, zero duplicates)
+- **CONTENT_COUNT comment**: Fixed from "(246)" → "(247)" to match actual calculation (245 + 2 = 247)
+- **Extension manifest version**: Fixed wxt.config.ts version from "1.1.0" → "1.2.0" to match package.json
+
+### Technical Details
+- `src/app/blog/chatgpt-memory-not-working-fix-2026/page.tsx`: NEW FILE (20,700 bytes, 12 keywords)
+- `src/lib/blog-data.ts`: Added new entry (slug, title, description, category "AI Platform Guides", date 2026-06-01, readTime 14 min)
+- `src/lib/constants.ts`: BLOG_COUNT=245 (unchanged, already correct), CONTENT_COUNT comment fixed to (247)
+- `src/app/sitemap.ts`: Added `'chatgpt-memory-not-working-fix-2026'` to highPriorityBlogSlugs array
+- `extension/wxt.config.ts`: manifest version 1.1.0 → 1.2.0
+- `ai-memory-extension-cws-v1.2.0.zip`: NEW FILE (38,833 bytes, correct manifest version)
+- Verified: 245 blog directories = 245 unique slugs in blog-data.ts
+- Extension build: `npm run build` in /extension succeeds (109.29 kB total size)
+
+---
+
 ## [Round 149] - 2026-06-01
 
 ### Fixed

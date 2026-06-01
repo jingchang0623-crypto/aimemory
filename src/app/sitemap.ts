@@ -185,6 +185,8 @@ const highPriorityBlogSlugs = [
   'deepseek-memory-vs-chatgpt-memory-2026',
   // New high-priority SEO pages (2026-05-30)
   'mem0-vs-ai-memory-tools-comparison-2026',
+  // New high-priority SEO pages (2026-06-01)
+  'chatgpt-memory-not-working-fix-2026',
 ];
 
 function getBlogSlugs(): string[] {
