@@ -9,11 +9,13 @@ interface BlogLayoutProps {
   category?: string;
   date?: string;
   readTime?: string;
+  description?: string;
   tags?: string[];
+  lang?: string;
   children: React.ReactNode;
 }
 
-export default function BlogLayout({ slug, title, category, date, readTime, children }: BlogLayoutProps) {
+export default function BlogLayout({ slug, title, category, date, readTime, description, lang, children }: BlogLayoutProps) {
   const related = getRelatedPosts(slug, 4);
 
   const breadcrumbJsonLd = {
