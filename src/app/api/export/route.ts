@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getConversation } from '@/lib/db';
-import { getSessionId, jsonToMarkdown, getAllConversations } from '@/lib/export';
+import { getSessionId, jsonToMarkdown, jsonToMemoryMd, getAllConversations } from '@/lib/export';
 
 export async function GET(request: NextRequest) {
   const sessionId = getSessionId(request);
@@ -18,7 +18,15 @@ export async function GET(request: NextRequest) {
 
       const messages = conversation.messages || [];
       
-      if (format === 'markdown') {
+      if (format === 'memory-md') {
+        const memoryMd = jsonToMemoryMd(conversation, messages);
+        return new NextResponse(memoryMd, {
+          headers: {
+            'Content-Type': 'text/markdown',
+            'Content-Disposition': `attachment; filename="${conversation.title || 'conversation'}.memory.md"`,
+          },
+        });
+      } else if (format === 'markdown') {
         const markdown = jsonToMarkdown(conversation, messages);
         return new NextResponse(markdown, {
           headers: {
@@ -44,7 +52,19 @@ export async function GET(request: NextRequest) {
       // Export all conversations
       const conversations = getAllConversations(sessionId, 10000, 0);
       
-      if (format === 'markdown') {
+      if (format === 'memory-md') {
+        const allMemoryMd = conversations.map((conv: any) => {
+          const messages = getConversation(conv.id, sessionId)?.messages || [];
+          return jsonToMemoryMd(conv, messages);
+        }).join('\n\n---\n\n');
+        
+        return new NextResponse(allMemoryMd, {
+          headers: {
+            'Content-Type': 'text/markdown',
+            'Content-Disposition': 'attachment; filename="ai-memory-export-all.md"',
+          },
+        });
+      } else if (format === 'markdown') {
         const allMarkdown = conversations.map((conv: any) => {
           const messages = getConversation(conv.id, sessionId)?.messages || [];
           return jsonToMarkdown(conv, messages);

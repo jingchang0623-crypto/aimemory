@@ -2859,6 +2859,28 @@ export const blogPosts: BlogPost[] = [
     tags: ['smithery', 'mcp', 'auto-install', 'mcp-setup', 'claude-desktop', 'cursor', 'windsurf', 'one-click-setup', 'open-source'],
     lang: 'en',
   },
+  {
+    slug: 'kimi-memory-space-guide-2026',
+    title: 'Kimi记忆空间详解：开启方法、用不了怎么办、记忆长度限制 | 2026最新攻略',
+    description: 'Kimi记忆空间在哪开启？用不了怎么解决？2026年最新Kimi记忆功能全攻略！详解记忆空间开启方法、记忆长度限制（最多10,000字）、5种让Kimi拥有持久记忆的方法。',
+    category: '中文指南',
+    date: '2026-06-01',
+    readTime: '8分钟',
+    keywords: ['Kimi记忆', 'Kimi记忆空间', 'Kimi记忆空间开启', 'Kimi记忆空间用不了', 'Kimi记忆长度', 'Kimi记忆限制', 'Kimi持久记忆', 'Kimi记忆功能', 'Kimi对话记忆', 'AI记忆工具', 'AI Memory', 'aimemory.pro', 'MCP Server'],
+    tags: ['kimi', 'memory-space', 'chinese-guide', 'ai-memory', 'mcp', 'troubleshoot'],
+    lang: 'zh',
+  },
+  {
+    slug: 'chatgpt-memory-full-solution-2026',
+    title: 'ChatGPT记忆已满怎么解决？2026年5种最佳解决方案',
+    description: 'ChatGPT提示"记忆已满"怎么办？2026年最新5种解决方案！导出对话到AI Memory、删除旧记忆、优化对话结构、使用记忆管理工具、升级Plus套餐。彻底解决ChatGPT记忆限制问题。',
+    category: '中文指南',
+    date: '2026-06-01',
+    readTime: '10分钟',
+    keywords: ['ChatGPT记忆已满', 'GPT记忆已满', 'ChatGPT memory full', 'ChatGPT内存已满', 'ChatGPT记忆满了怎么办', 'ChatGPT记忆限制', 'ChatGPT 1500字限制', 'ChatGPT记忆管理', 'ChatGPT导出对话', 'AI记忆工具'],
+    tags: ['chatgpt', 'memory-full', 'chinese-guide', 'ai-memory', 'troubleshoot'],
+    lang: 'zh',
+  },
 ];
 /** Get related posts by tag overlap. Excludes the current post. */
 export function getRelatedPosts(currentSlug: string, limit = 4): BlogPost[] {

@@ -12,7 +12,7 @@ export default function ExportButton({ conversationId, conversationTitle, varian
   const [showMenu, setShowMenu] = useState(false);
   const [exporting, setExporting] = useState(false);
 
-  const handleExport = async (format: 'markdown' | 'json') => {
+  const handleExport = async (format: 'memory-md' | 'markdown' | 'json') => {
     setExporting(true);
     setShowMenu(false);
     try {
@@ -29,7 +29,8 @@ export default function ExportButton({ conversationId, conversationTitle, varian
       const blob = await response.blob();
       const disposition = response.headers.get('Content-Disposition') || '';
       const filenameMatch = disposition.match(/filename="?([^"]+)"?/);
-      const filename = filenameMatch?.[1] || `ai-memory-export.${format === 'markdown' ? 'md' : 'json'}`;
+      const ext = format === 'markdown' ? 'md' : format === 'memory-md' ? 'memory.md' : 'json';
+      const filename = filenameMatch?.[1] || `ai-memory-export.${ext}`;
 
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
@@ -69,7 +70,13 @@ export default function ExportButton({ conversationId, conversationTitle, varian
         {showMenu && (
           <>
             <div className="fixed inset-0 z-40" onClick={() => setShowMenu(false)} />
-            <div className="absolute right-0 top-full mt-1 z-50 bg-white rounded-lg shadow-lg border border-gray-200 py-1 min-w-[120px]">
+            <div className="absolute right-0 top-full mt-1 z-50 bg-white rounded-lg shadow-lg border border-gray-200 py-1 min-w-[140px]">
+              <button
+                onClick={() => handleExport('memory-md')}
+                className="w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 flex items-center gap-2"
+              >
+                🧠 Memory.md
+              </button>
               <button
                 onClick={() => handleExport('markdown')}
                 className="w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 flex items-center gap-2"
@@ -112,7 +119,13 @@ export default function ExportButton({ conversationId, conversationTitle, varian
       {showMenu && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setShowMenu(false)} />
-          <div className="absolute right-0 top-full mt-1 z-50 bg-white rounded-lg shadow-lg border border-gray-200 py-1 min-w-[120px]">
+          <div className="absolute right-0 top-full mt-1 z-50 bg-white rounded-lg shadow-lg border border-gray-200 py-1 min-w-[140px]">
+            <button
+              onClick={() => handleExport('memory-md')}
+              className="w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 flex items-center gap-2"
+            >
+              🧠 Memory.md
+            </button>
             <button
               onClick={() => handleExport('markdown')}
               className="w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 flex items-center gap-2"

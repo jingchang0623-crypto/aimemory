@@ -19,6 +19,37 @@ export function getSessionId(request: Request): string {
   return 'public'; // Fallback
 }
 
+export function jsonToMemoryMd(conversation: any, messages: any[]): string {
+  let md = `# ${conversation.title || 'Untitled Conversation'}\n\n`;
+  md += `> Platform: ${conversation.platform || 'Unknown'} | `;
+  md += `Date: ${conversation.created_at || 'Unknown'} | `;
+  if (conversation.tags) {
+    const tags = JSON.parse(conversation.tags || '[]');
+    if (tags.length > 0) {
+      md += `Tags: ${tags.join(', ')}\n`;
+    } else {
+      md += `\n`;
+    }
+  } else {
+    md += `\n`;
+  }
+  md += `\n---\n\n`;
+
+  // Memory.md format: structured as Q&A pairs
+  let userName = 'User';
+  let assistantName = 'Assistant';
+
+  for (const msg of messages) {
+    if (msg.role === 'user') {
+      md += `## ${userName}\n\n${msg.content || ''}\n\n`;
+    } else if (msg.role === 'assistant') {
+      md += `## ${assistantName}\n\n${msg.content || ''}\n\n`;
+    }
+  }
+
+  return md;
+}
+
 export function jsonToMarkdown(conversation: any, messages: any[]): string {
   let md = `# ${conversation.title || 'Untitled Conversation'}\n\n`;
   md += `**Platform**: ${conversation.platform || 'Unknown'}\n`;
